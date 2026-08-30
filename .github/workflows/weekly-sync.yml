@@ -1,0 +1,86 @@
+name: "📅 Týdenní aktualizace"
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Neděle 04:20 v Praze při letním čase (02:20 UTC).
+    # Přes zimní čas poběží v 03:20 místního času, což provozně nevadí.
+    - cron: "20 2 * * 0"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-data-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    name: "Aktualizovat týdenní zdroje"
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: "Načíst repozitář"
+        uses: actions/checkout@v5
+
+      - name: "Nastavit Node.js"
+        uses: actions/setup-node@v5
+        with:
+          node-version: "24"
+          cache: npm
+
+      - name: "Nainstalovat závislosti"
+        run: npm ci
+
+      - name: "Spustit týdenní synchronizaci"
+        run: npm run sync:weekly
+
+      - name: "Ověřit JSON datasety"
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          import path from 'node:path';
+          const dir = 'data';
+          const files = fs.readdirSync(dir).filter(f => f.endsWith('.json'));
+          if (!files.length) throw new Error('Ve složce data nejsou žádné JSON datasety.');
+          for (const file of files) {
+            const full = path.join(dir, file);
+            const text = fs.readFileSync(full, 'utf8');
+            if (!text.trim()) throw new Error(`${file} je prázdný.`);
+            JSON.parse(text);
+          }
+          console.log(`OK: ověřeno ${files.length} JSON datasetů.`);
+          NODE
+
+      - name: "Zjistit změny"
+        id: changes
+        run: |
+          if git diff --quiet -- data/; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: "Uložit aktualizovaná data"
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "Praha 8 v přehledech – automat"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git commit -m "Týdenní aktualizace dat"
+          git push
+
+      - name: "Souhrn"
+        if: always()
+        run: |
+          if [ "${{ job.status }}" != "success" ]; then
+            echo "## ❌ Týdenní aktualizace selhala" >> "$GITHUB_STEP_SUMMARY"
+            echo "Existující data v repozitáři nebyla nahrazena neúspěšným během." >> "$GITHUB_STEP_SUMMARY"
+          elif [ "${{ steps.changes.outputs.changed }}" = "true" ]; then
+            echo "## ✅ Týdenní aktualizace dokončena" >> "$GITHUB_STEP_SUMMARY"
+            echo "Změněné datasety byly zkontrolovány a uloženy do repozitáře." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "## ✅ Týdenní kontrola dokončena" >> "$GITHUB_STEP_SUMMARY"
+            echo "Ve sledovaných datech nebyly nalezeny žádné změny." >> "$GITHUB_STEP_SUMMARY"
+          fi
