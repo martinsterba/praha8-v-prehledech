@@ -72,6 +72,27 @@ async function polishBodiesNames(app){
   }
 }
 
+function polishBodiesUi(app){
+  // Nadpisy sekcí jsou samy o sobě dostatečné; drobné kicker popisky zde nepoužíváme.
+  for(const kicker of app.querySelectorAll('.section > .section-head .kicker'))kicker.remove();
+
+  // Odkaz vede na oficiální web konkrétního orgánu.
+  for(const link of app.querySelectorAll('.body-links a')){
+    if(/^detail\b/i.test(link.textContent||''))setTextIfChanged(link,'web ↗');
+  }
+
+  // Správné skloňování počtu orgánů: 1 orgán, 2–4 orgány, jinak orgánů.
+  for(const count of app.querySelectorAll('.section > .section-head > p')){
+    const match=(count.textContent||'').trim().match(/^(\d+)\s+orgánů$/i);
+    if(!match)continue;
+    const n=Number(match[1]);
+    const form=n===1?'orgán':(n>=2&&n<=4?'orgány':'orgánů');
+    setTextIfChanged(count,`${n} ${form}`);
+  }
+
+  void polishBodiesNames(app);
+}
+
 function polishProductionUi(){
   const app=document.querySelector('#app');
   if(!app)return;
@@ -91,11 +112,7 @@ function polishProductionUi(){
     }
   }
 
-  if(location.hash==='#/organy'){
-    // Nadpisy sekcí jsou samy o sobě dostatečné; drobné kicker popisky zde nepoužíváme.
-    for(const kicker of app.querySelectorAll('.section > .section-head .kicker'))kicker.remove();
-    void polishBodiesNames(app);
-  }
+  if(location.hash==='#/organy')polishBodiesUi(app);
 }
 
 const app=document.querySelector('#app');
