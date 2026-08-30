@@ -4,12 +4,11 @@ let bodiesSourcePromise=null;
 let bodiesPolishRunning=false;
 let contractsNamesPromise=null;
 let contractsNamesRunning=false;
+let homeNewsPromise=null;
+let homeNewsRunning=false;
 
 function bodyNameForDisplay(value=''){
   let name=String(value||'').replace(/\s+/g,' ').trim();
-  // Zdroj orgánů už používá správné pořadí:
-  // titul před jménem → jméno → příjmení → titul za jménem.
-  // Zde pouze sjednotíme interpunkci u titulů za jménem.
   name=name.replace(/\.\s+(?=(?:Ph\.D\.|CSc\.|DrSc\.|DBA|MBA|MPA|DiS\.?|M\.A\.|LL\.M\.|Th\.D\.)\b)/g,', ');
   name=name.replace(/\s*,\s*/g,', ');
   return name;
@@ -129,6 +128,66 @@ async function polishContractPartnerNames(app){
   }
 }
 
+function loadHomeNews(){
+  if(!homeNewsPromise){
+    homeNewsPromise=fetch(`data/novinky.json?v=${Date.now()}`,{cache:'no-store'})
+      .then(r=>r.ok?r.json():[])
+      .catch(()=>[]);
+  }
+  return homeNewsPromise;
+}
+
+async function polishHomeNews(app){
+  if(homeNewsRunning)return;
+  homeNewsRunning=true;
+  try{
+    if(!(location.hash===''||location.hash==='#/'||location.hash==='#'))return;
+    const grid=app.querySelector('.news-home-grid');
+    if(!grid)return;
+    const source=await loadHomeNews();
+    if(!Array.isArray(source)||!source.length)return;
+    const rows=[...source]
+      .sort((a,b)=>(b.date||'').localeCompare(a.date||'')||(b.title||'').localeCompare(a.title||'','cs'))
+      .slice(0,3);
+    const signature=rows.map(x=>`${x.date||''}|${x.title||''}|${x.url||''}`).join('||');
+    if(grid.dataset.latestNewsSignature===signature)return;
+
+    grid.replaceChildren(...rows.map(x=>{
+      const a=document.createElement('a');
+      a.href=x.url||'#';
+      a.target='_blank';
+      a.rel='noreferrer';
+      const small=document.createElement('small');
+      if(x.date){
+        const d=new Date(`${x.date}T12:00:00`);
+        small.textContent=Number.isNaN(d.valueOf())?'':new Intl.DateTimeFormat('cs-CZ').format(d);
+      }
+      const b=document.createElement('b');
+      b.textContent=x.title||'';
+      a.append(small,b);
+      return a;
+    }));
+    grid.dataset.latestNewsSignature=signature;
+  }finally{
+    homeNewsRunning=false;
+  }
+}
+
+function polishVotingHeadings(app){
+  for(const el of app.querySelectorAll('h2,h3,h4,h5,strong,b,small,p,div')){
+    if(el.children.length)continue;
+    const text=(el.textContent||'').replace(/\s+/g,' ').trim();
+    if(text==='Hlasování'){
+      setTextIfChanged(el,'Výsledek hlasování');
+      el.classList.add('voting-mini-heading');
+    }else if(text==='Výsledek hlasování'){
+      el.classList.add('voting-mini-heading');
+    }else if(/^Jak hlasovali jednotliví zastupitelé\??$/i.test(text)){
+      el.classList.add('voting-mini-heading');
+    }
+  }
+}
+
 function polishProductionUi(){
   const app=document.querySelector('#app');
   if(!app)return;
@@ -150,11 +209,12 @@ function polishProductionUi(){
 
   if(location.hash==='#/organy')polishBodiesUi(app);
   if(location.hash.startsWith('#/smlouvy'))void polishContractPartnerNames(app);
+  polishVotingHeadings(app);
 
-  // Na homepage je samotný nadpis dostatečný; pomocný štítek „Princip“ nepotřebujeme.
   if(location.hash===''||location.hash==='#/'||location.hash==='#'){
     const principle=app.querySelector('.home-principle .kicker');
     if(principle)principle.remove();
+    void polishHomeNews(app);
   }
 }
 
