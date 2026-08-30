@@ -1,0 +1,119 @@
+name: "▶ Ruční aktualizace"
+
+on:
+  workflow_dispatch:
+    inputs:
+      dataset:
+        description: "Co chcete aktualizovat?"
+        required: true
+        type: choice
+        options:
+          - volby
+          - rozpocet
+
+permissions:
+  contents: write
+
+concurrency:
+  group: manual-data-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    name: "Aktualizovat: ${{ inputs.dataset }}"
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Stáhnout projekt
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Nastavit Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Nainstalovat závislosti
+        run: npm ci
+
+      - name: Najít Chrome
+        shell: bash
+        run: |
+          if command -v google-chrome >/dev/null 2>&1; then
+            echo "PUPPETEER_EXECUTABLE_PATH=$(command -v google-chrome)" >> "$GITHUB_ENV"
+          elif command -v chromium >/dev/null 2>&1; then
+            echo "PUPPETEER_EXECUTABLE_PATH=$(command -v chromium)" >> "$GITHUB_ENV"
+          elif command -v chromium-browser >/dev/null 2>&1; then
+            echo "PUPPETEER_EXECUTABLE_PATH=$(command -v chromium-browser)" >> "$GITHUB_ENV"
+          else
+            echo "Chrome/Chromium nebyl nalezen; pokračuji, protože některé ruční úlohy ho nepotřebují."
+          fi
+
+      - name: Spustit aktualizaci
+        shell: bash
+        run: |
+          set -euo pipefail
+          case "${{ inputs.dataset }}" in
+            volby)
+              npm run sync:elections
+              ;;
+            rozpocet)
+              npm run sync:budget
+              ;;
+            *)
+              echo "Neznámý dataset: ${{ inputs.dataset }}"
+              exit 1
+              ;;
+          esac
+
+      - name: Ověřit JSON data
+        shell: bash
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          import path from 'node:path';
+          const dir = 'data';
+          const files = fs.readdirSync(dir).filter(f => f.endsWith('.json'));
+          for (const file of files) {
+            JSON.parse(fs.readFileSync(path.join(dir, file), 'utf8'));
+          }
+          console.log(`OK: ${files.length} JSON souborů je syntakticky v pořádku.`);
+          NODE
+
+      - name: Zkontrolovat změny
+        id: changes
+        shell: bash
+        run: |
+          if git diff --quiet -- data; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "Žádná data se nezměnila."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "Data se změnila a budou uložena do repozitáře."
+            git diff --stat -- data
+          fi
+
+      - name: Uložit změny do GitHubu
+        if: steps.changes.outputs.changed == 'true'
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git commit -m "Data: ruční aktualizace ${{ inputs.dataset }}"
+          git pull --rebase origin main
+          git push origin HEAD:main
+
+      - name: Výsledek
+        shell: bash
+        run: |
+          if [ "${{ steps.changes.outputs.changed }}" = "true" ]; then
+            echo "### ✅ Ruční aktualizace dokončena" >> "$GITHUB_STEP_SUMMARY"
+            echo "Dataset **${{ inputs.dataset }}** byl aktualizován a změny byly uloženy do větve \`main\`." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "### ✅ Ruční kontrola dokončena" >> "$GITHUB_STEP_SUMMARY"
+            echo "Dataset **${{ inputs.dataset }}** neobsahoval žádné změny. Repozitář zůstal beze změny." >> "$GITHUB_STEP_SUMMARY"
+          fi
