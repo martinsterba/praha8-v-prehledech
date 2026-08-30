@@ -1,0 +1,110 @@
+name: "🌙 Denní aktualizace"
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Každý den 03:10 UTC = 05:10 v Praze v létě / 04:10 v zimě.
+    - cron: "10 3 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-data-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    name: "Aktualizovat denní zdroje"
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: "Načíst repozitář"
+        uses: actions/checkout@v5
+
+      - name: "Nastavit Node.js"
+        uses: actions/setup-node@v5
+        with:
+          node-version: "24"
+          cache: npm
+
+      - name: "Nainstalovat závislosti"
+        run: npm ci
+
+      - name: "Nainstalovat Chrome pro datový sync"
+        id: chrome
+        uses: browser-actions/setup-chrome@v2
+
+      - name: "Denní sync bez Registru smluv"
+        env:
+          PUPPETEER_EXECUTABLE_PATH: ${{ steps.chrome.outputs.chrome-path }}
+        run: node scripts/sync-praha8.mjs --usneseni-incremental --info106 --noticeboard --news --fast
+
+      - name: "Zjistit stav Registru smluv"
+        id: contracts
+        run: |
+          if [ -f data/contracts-sync-state.json ]; then
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+            echo "Registr smluv: produkční základ nalezen."
+          else
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+            echo "Registr smluv: produkční základ zatím neexistuje, inkrementální sync bezpečně přeskakuji."
+          fi
+
+      - name: "Registr smluv – nové změny"
+        if: steps.contracts.outputs.ready == 'true'
+        run: npm run sync:contracts:new
+
+      - name: "Ověřit JSON datasety"
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          import path from 'node:path';
+          const dir = 'data';
+          const files = fs.readdirSync(dir).filter(f => f.endsWith('.json'));
+          if (!files.length) throw new Error('Ve složce data nejsou žádné JSON datasety.');
+          for (const file of files) {
+            const full = path.join(dir, file);
+            const text = fs.readFileSync(full, 'utf8');
+            if (!text.trim()) throw new Error(`${file} je prázdný.`);
+            JSON.parse(text);
+          }
+          console.log(`OK: ověřeno ${files.length} JSON datasetů.`);
+          NODE
+
+      - name: "Zjistit změny"
+        id: changes
+        run: |
+          if git diff --quiet -- data/; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: "Uložit aktualizovaná data"
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "Praha 8 v přehledech – automat"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git commit -m "Denní aktualizace dat"
+          git push
+
+      - name: "Souhrn"
+        if: always()
+        run: |
+          if [ "${{ job.status }}" != "success" ]; then
+            echo "## ❌ Denní aktualizace selhala" >> "$GITHUB_STEP_SUMMARY"
+            echo "Existující data v repozitáři nebyla nahrazena neúspěšným během." >> "$GITHUB_STEP_SUMMARY"
+          elif [ "${{ steps.changes.outputs.changed }}" = "true" ]; then
+            echo "## ✅ Denní aktualizace dokončena" >> "$GITHUB_STEP_SUMMARY"
+            echo "Změněné datasety byly zkontrolovány a uloženy do repozitáře." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "## ✅ Denní kontrola dokončena" >> "$GITHUB_STEP_SUMMARY"
+            echo "Ve sledovaných datech nebyly nalezeny žádné změny." >> "$GITHUB_STEP_SUMMARY"
+          fi
+          if [ "${{ steps.contracts.outputs.ready }}" != "true" ]; then
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            echo "ℹ️ Registr smluv je zatím přeskočen, dokud nevytvoříme kompletní produkční historický základ." >> "$GITHUB_STEP_SUMMARY"
+          fi
