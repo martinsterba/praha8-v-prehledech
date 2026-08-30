@@ -44,13 +44,35 @@ jobs:
       - name: "Zjistit stav Registru smluv"
         id: contracts
         run: |
-          if [ -f data/contracts-sync-state.json ]; then
-            echo "ready=true" >> "$GITHUB_OUTPUT"
-            echo "Registr smluv: produkční základ nalezen."
-          else
-            echo "ready=false" >> "$GITHUB_OUTPUT"
-            echo "Registr smluv: produkční základ zatím neexistuje, inkrementální sync bezpečně přeskakuji."
-          fi
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const files = [
+            'data/smlouvy.json',
+            'data/smlouvy-subjekty.json',
+            'data/contract-entities.json',
+            'data/contracts-sync-state.json'
+          ];
+          let ready = files.every(fs.existsSync);
+          if (ready) {
+            try {
+              const p8 = JSON.parse(fs.readFileSync('data/smlouvy.json', 'utf8'));
+              const entities = JSON.parse(fs.readFileSync('data/smlouvy-subjekty.json', 'utf8'));
+              const registry = JSON.parse(fs.readFileSync('data/contract-entities.json', 'utf8'));
+              const state = JSON.parse(fs.readFileSync('data/contracts-sync-state.json', 'utf8'));
+              ready = p8?.meta?.historyComplete === true
+                && Array.isArray(p8?.contracts)
+                && entities?.entities?.length === 40
+                && registry?.entities?.length === 40
+                && Object.keys(state?.dumps || {}).length > 0;
+            } catch {
+              ready = false;
+            }
+          }
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, `ready=${ready}\n`);
+          console.log(ready
+            ? 'Registr smluv: kompletní produkční základ MČ + 40 subjektů nalezen.'
+            : 'Registr smluv: kompletní produkční základ není připraven, inkrementální sync bezpečně přeskakuji.');
+          NODE
 
       - name: "Registr smluv – nové změny"
         if: steps.contracts.outputs.ready == 'true'
@@ -106,5 +128,5 @@ jobs:
           fi
           if [ "${{ steps.contracts.outputs.ready }}" != "true" ]; then
             echo "" >> "$GITHUB_STEP_SUMMARY"
-            echo "ℹ️ Registr smluv je zatím přeskočen, dokud nevytvoříme kompletní produkční historický základ." >> "$GITHUB_STEP_SUMMARY"
+            echo "ℹ️ Registr smluv je přeskočen, protože chybí kompletní produkční základ MČ Praha 8 + 40 subjektů." >> "$GITHUB_STEP_SUMMARY"
           fi
