@@ -7,7 +7,7 @@ const root=resolve(import.meta.dirname,'..');
 const DATA=resolve(root,'data','hlasovani.json');
 const SOURCES=resolve(root,'data','hlasovani-zdroje.json');
 const PAGE='https://www.praha8.cz/Prehledy-hlasovani.html';
-const UA='Praha8-v-prehledech/3.0.11 (+public-data-indexer; public sources only)';
+const UA='Praha8-v-prehledech/3.0.12 (+public-data-indexer; public sources only)';
 const BOOTSTRAP=process.argv.includes('--bootstrap');
 const PLAN=process.argv.includes('--plan');
 const FIRST=process.argv.includes('--first');
@@ -76,7 +76,7 @@ async function baseWorks(page,base){
   try{
     const r=await page.goto(`${base}0001.html`,{waitUntil:'domcontentloaded',timeout:30000});
     if((r?.status()||0)>=400)return false;
-    return await page.evaluate(()=>/Výsledek hlasování č\./i.test(document.body?.innerText||''));
+    return await page.evaluate(()=>/Výsledek hlasování/i.test(document.body?.innerText||''));
   }catch{return false}
 }
 
@@ -88,13 +88,25 @@ async function findExportBase(discoveryPage,votePage,source){
   return '';
 }
 
-async function parseCurrentVote(page,url,source,exportBase){
-  const data=await page.evaluate(()=>{
+async function parseCurrentVote(page,url,source,exportBase,fallbackNumber){
+  const data=await page.evaluate((fallbackNumber)=>{
     const text=(document.body?.innerText||'').replace(/\r/g,'');
     const lines=text.split('\n').map(x=>x.trim()).filter(Boolean);
-    const titleLine=lines.find(x=>/Výsledek hlasování č\./i.test(x))||'';
+    const titleLine=lines.find(x=>/Výsledek hlasování/i.test(x))||'';
     if(!titleLine)return null;
-    const head=titleLine.match(/Výsledek hlasování č\.\s*(\d+)\s*-\s*bod č\.\s*([^\s]+)\s*-\s*(.*)/i);
+
+    let number=fallbackNumber;
+    let item='';
+    let title='';
+
+    let head=titleLine.match(/Výsledek hlasování č\.\s*(\d+)\s*-\s*bod č\.\s*([^\s]+)\s*-\s*(.*)/i);
+    if(head){
+      number=Number(head[1]); item=head[2]||''; title=head[3]||'';
+    } else {
+      head=titleLine.match(/Výsledek hlasování(?:\s+\d{1,2}\.\d{1,2}\.\d{4})?\s*-?\s*bod č\.\s*([^\s]+)\s*-\s*(.*)/i);
+      if(head){item=head[1]||''; title=head[2]||''}
+    }
+
     const total=label=>{const m=text.match(new RegExp(label+'\\s*:\\s*(\\d+)','i'));return m?Number(m[1]):null};
     const votes=[];
     for(const row of document.querySelectorAll('tr')){
@@ -104,8 +116,8 @@ async function parseCurrentVote(page,url,source,exportBase){
       const name=[...cells.slice(0,vi)].reverse().find(x=>/^[\p{L}.]+(?:\s+[\p{L}.]+)+$/u.test(x) && !/^\d+$/.test(x));
       if(name)votes.push({name,vote:cells[vi]});
     }
-    return {titleLine,number:head?Number(head[1]):null,item:head?.[2]||'',title:head?.[3]||'',present:total('PŘÍTOMNÝCH'),for:total('PRO'),against:total('PROTI'),abstained:total('ZDRŽELO SE'),notVoting:total('NEHLASOVALO'),absent:total('NEPŘÍTOMNÝCH'),votes};
-  });
+    return {titleLine,number,item,title,present:total('PŘÍTOMNÝCH'),for:total('PRO'),against:total('PROTI'),abstained:total('ZDRŽELO SE'),notVoting:total('NEHLASOVALO'),absent:total('NEPŘÍTOMNÝCH'),votes};
+  },fallbackNumber);
   if(!data?.number)return null;
   const complete=[data.present,data.for,data.against,data.abstained,data.notVoting,data.absent].every(Number.isFinite);
   if(!complete)throw new Error(`Hlasování č. ${data.number}: chybí souhrnné počty.`);
@@ -126,7 +138,7 @@ async function crawlSource(discoveryPage,votePage,source){
     const status=response?.status()||0;
     if(status===404){misses++;if(items.length&&misses>=STOP)break;if(!items.length&&n>=STOP)break;continue}
     if(status>=400)throw new Error(`${status} ${url}`);
-    const x=await parseCurrentVote(votePage,url,source,exportBase);
+    const x=await parseCurrentVote(votePage,url,source,exportBase,n);
     if(!x){misses++;if(items.length&&misses>=STOP)break;if(!items.length&&n>=STOP)break;continue}
     misses=0;items.push(x);
     console.log(`      #${x.number}${x.item?` · bod ${x.item}`:''} · PRO ${x.for} · PROTI ${x.against} · ZDRŽEL SE ${x.abstained} · NEHLASOVAL ${x.notVoting} · přítomných ${x.present} · jmenovitých ${x.votes.length}`);
@@ -134,7 +146,7 @@ async function crawlSource(discoveryPage,votePage,source){
   return {items:[...new Map(items.map(x=>[`${x.date}|${x.number}`,x])).values()],exportBase};
 }
 
-console.log(`\nHLASOVÁNÍ ZMČ PRAHA 8 — ${BOOTSTRAP?'KOMPLETNÍ BOOTSTRAP':'INKREMENTÁLNÍ SYNC'} — v3.0.11`);
+console.log(`\nHLASOVÁNÍ ZMČ PRAHA 8 — ${BOOTSTRAP?'KOMPLETNÍ BOOTSTRAP':'INKREMENTÁLNÍ SYNC'} — v3.0.12`);
 console.log('─────────────────────────────────────────────────────────');
 let sources=discoverSources(await fetchText(PAGE));
 if(FIRST)sources=sources.slice(0,1);
