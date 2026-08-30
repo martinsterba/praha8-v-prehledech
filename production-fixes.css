@@ -17,3 +17,26 @@
 
 /* Mezera mezi pořadovým číslem a názvem subjektu bez mandátu. */
 .no-mandate span b{margin-right:.28em}
+
+/* Homepage */
+.news-home-head>a{font-weight:700!important}
+.hero>.kicker{
+  font-size:14px;
+  transform:translateY(-8px);
+  margin-bottom:8px;
+}
+
+/* Komise a výbory – jednodušší seznam a stejné zacházení se jmény jako u zastupitelů. */
+.body-card .person-line>b{font-weight:400!important}
+.body-chair{
+  border:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  padding-left:0!important;
+  padding-right:0!important;
+}
+.body-secretary>span{display:block}
+
+/* Školy – informační box blíž k souhrnu a text ve dvou řádcích. */
+.school-source-note.production-data-note{margin-top:-6px}
+.school-source-note.production-data-note>div+div{margin-top:4px}
