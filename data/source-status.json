@@ -62,12 +62,12 @@
   "resolutions": {
     "status": "data načtena",
     "count": 15992,
-    "updated": "2026-08-30T14:50:41.324Z",
+    "updated": "2026-08-30T16:46:05.678Z",
     "mode": "aktualizováno"
   },
   "voting": {
     "status": "průběžná open data",
-    "count": 5,
+    "count": 1207,
     "updated": "2026-08-21T12:00:00Z",
     "mode": "mezipaměť"
   },
