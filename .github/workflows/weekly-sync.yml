@@ -33,7 +33,13 @@ jobs:
       - name: "Nainstalovat závislosti"
         run: npm ci
 
+      - name: "Nainstalovat Chrome pro datový sync"
+        id: chrome
+        uses: browser-actions/setup-chrome@v2
+
       - name: "Spustit týdenní synchronizaci"
+        env:
+          PUPPETEER_EXECUTABLE_PATH: ${{ steps.chrome.outputs.chrome-path }}
         run: npm run sync:weekly
 
       - name: "Ověřit JSON datasety"
