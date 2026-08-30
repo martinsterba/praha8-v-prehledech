@@ -15,7 +15,6 @@
 .budget-source-note a,
 .production-data-note a{font-weight:700}
 
-/* Mezera mezi pořadovým číslem a názvem subjektu bez mandátu. */
 .no-mandate span b{margin-right:.28em}
 
 /* Homepage */
@@ -36,8 +35,6 @@
   padding-right:0!important;
 }
 .body-secretary>span{display:block}
-
-/* Bez čar mezi jednotlivými lidmi a s kompaktním původním rozestupem. */
 .body-members li,
 .body-members li+li{
   border-top:0!important;
@@ -47,22 +44,15 @@
   margin-top:0!important;
   margin-bottom:0!important;
 }
-
-/* Jednotlivé obsahové části mají stejný vnitřní odstup jako karty škol a organizací.
-   Čára leží na skutečné hranici dvou bloků, takže má stejnou mezeru nad i pod sebou. */
 .body-chair,
 .body-members,
-.body-secretary{
-  margin:0!important;
-}
+.body-secretary{margin:0!important}
 .body-chair,
 .body-members{
   padding-top:18px!important;
   padding-bottom:18px!important;
 }
-.body-secretary{
-  padding-top:18px!important;
-}
+.body-secretary{padding-top:18px!important}
 .body-chair + .body-members,
 .body-members + .body-members,
 .body-members + .body-secretary,
@@ -70,10 +60,20 @@
   border-top:1px solid var(--line,#dedede)!important;
 }
 .body-chair + .body-members::before,
-.body-members + .body-members::before{
-  content:none!important;
+.body-members + .body-members::before{content:none!important}
+
+/* Hlasování – malé mezititulky ve stejném stylu jako Gesce / Kontakt / Firmy. */
+.voting-mini-heading{
+  display:block!important;
+  margin:16px 0 8px!important;
+  font-size:11px!important;
+  line-height:1.25!important;
+  font-weight:700!important;
+  letter-spacing:.08em!important;
+  text-transform:uppercase!important;
+  color:var(--muted,#6c6c6c)!important;
 }
 
-/* Školy – informační box blíž k souhrnu a text ve dvou řádcích. */
+/* Školy */
 .school-source-note.production-data-note{margin-top:-6px}
 .school-source-note.production-data-note>div+div{margin-top:4px}
