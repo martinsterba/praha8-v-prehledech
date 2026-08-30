@@ -18,12 +18,30 @@ const run=args=>new Promise((ok,fail)=>{
   child.on('error',fail);
   child.on('exit',code=>code===0?ok():fail(new Error(`Synchronizace skončila s kódem ${code}.`)));
 });
+const runWithRetry=async(args,{attempts=3,delayMs=5000,label='Synchronizace'}={})=>{
+  let lastError;
+  for(let attempt=1;attempt<=attempts;attempt++){
+    try{
+      if(attempt>1)console.log(`\n↻ ${label}: opakovaný pokus ${attempt}/${attempts}…`);
+      await run(args);
+      return;
+    }catch(error){
+      lastError=error;
+      if(attempt===attempts)break;
+      console.warn(`\n⚠️ ${label} selhala (pokus ${attempt}/${attempts}). Za ${Math.round(delayMs/1000)} s zkusím znovu.`);
+      await new Promise(resolve=>setTimeout(resolve,delayMs));
+    }
+  }
+  throw lastError;
+};
 
 console.log('\nTÝDENNÍ SYNCHRONIZACE — zachování rolí mezi datovými sadami HMP');
 console.log('────────────────────────────────────────────────────────────');
 
-// První běh načte zastupitelstvo Prahy 8, HMP funkce, Parlament a organizace.
-await run(['--people','--bodies','--hmp-functions','--national-roles','--organizations','--fast']);
+// První běh načte zastupitelstvo Prahy 8, HMP funkce a Parlament.
+// Organizace běží samostatně, aby dočasně pomalá stránka Prahy 8 nezahodila
+// několikaminutový úspěšný běh ostatních zdrojů.
+await run(['--people','--bodies','--hmp-functions','--national-roles','--fast']);
 const afterFunctions=await readJson(peoplePath,[]);
 const preserved=new Map(afterFunctions.map(p=>[personKey(p.name),{
   magistrateRoles:p.magistrateRoles||[],
@@ -31,6 +49,10 @@ const preserved=new Map(afterFunctions.map(p=>[personKey(p.name),{
 }]));
 const hmpFunctionPeople=afterFunctions.filter(p=>(p.magistrateRoles||[]).length).length;
 if(!hmpFunctionPeople)throw new Error('HMP funkce se nenačetly ani u jednoho člověka; týdenní dataset nepřepisuji jako úspěšný.');
+
+// Web Prahy 8 občas odpovídá déle než 30 s. U organizací proto dovolíme
+// až tři celé pokusy. Každý neúspěšný pokus zůstává bezpečný a data nepřepíše.
+await runWithRetry(['--organizations','--fast'],{attempts:3,delayMs:5000,label:'Organizace a firmy Prahy 8'});
 
 // Druhý běh načte firmy HMP. Původní synchronizátor při tomto samostatném kroku
 // vytváří nový lide.json, proto po něm vrátíme funkce z předchozího úspěšného kroku.
