@@ -1,0 +1,282 @@
+{
+  "meta": {
+    "year": 2021,
+    "censusDate": "2021-03-26",
+    "territory": "Praha 8",
+    "territoryCode": "500208",
+    "territoryTypeCode": "44",
+    "updated": "2026-08-23",
+    "source": "Český statistický úřad – Sčítání 2021",
+    "sourceUrl": "https://csu.gov.cz/produkty/vysledky-scitani-2021-otevrena-data",
+    "note": "Obyvatelstvo je uváděno podle obvyklého pobytu."
+  },
+  "population": {
+    "total": 104921,
+    "men": 50412,
+    "women": 54509,
+    "ageGroups": [
+      {
+        "label": "0–14 let",
+        "value": 14798
+      },
+      {
+        "label": "15–64 let",
+        "value": 67327
+      },
+      {
+        "label": "65 a více let",
+        "value": 22796
+      }
+    ],
+    "age5": [
+      {
+        "label": "0–4 let",
+        "value": 5202
+      },
+      {
+        "label": "5–9 let",
+        "value": 4735
+      },
+      {
+        "label": "10–14 let",
+        "value": 4861
+      },
+      {
+        "label": "15–19 let",
+        "value": 3915
+      },
+      {
+        "label": "20–24 let",
+        "value": 4894
+      },
+      {
+        "label": "25–29 let",
+        "value": 8107
+      },
+      {
+        "label": "30–34 let",
+        "value": 8943
+      },
+      {
+        "label": "35–39 let",
+        "value": 8083
+      },
+      {
+        "label": "40–44 let",
+        "value": 9063
+      },
+      {
+        "label": "45–49 let",
+        "value": 8827
+      },
+      {
+        "label": "50–54 let",
+        "value": 6019
+      },
+      {
+        "label": "55–59 let",
+        "value": 5168
+      },
+      {
+        "label": "60–64 let",
+        "value": 4308
+      },
+      {
+        "label": "65–69 let",
+        "value": 5810
+      },
+      {
+        "label": "70–74 let",
+        "value": 6901
+      },
+      {
+        "label": "75–79 let",
+        "value": 5536
+      },
+      {
+        "label": "80–84 let",
+        "value": 2471
+      },
+      {
+        "label": "85–89 let",
+        "value": 1319
+      },
+      {
+        "label": "90–94 let",
+        "value": 629
+      },
+      {
+        "label": "95–99 let",
+        "value": 117
+      },
+      {
+        "label": "100 a více let",
+        "value": 13
+      }
+    ]
+  },
+  "housing": {
+    "housesTotal": 6230,
+    "housesOccupied": 5896,
+    "familyHousesOccupied": 2907,
+    "apartmentHousesOccupied": 2792,
+    "otherBuildingsOccupied": 197,
+    "flatsTotal": 59449,
+    "flatsOccupied": 52307,
+    "flatsUnoccupied": 7142
+  },
+  "datasets": [
+    "Obyvatelstvo podle pohlaví",
+    "Obyvatelstvo podle věkových skupin",
+    "Obyvatelstvo podle pětiletých věkových skupin a pohlaví",
+    "Obyvatelstvo podle vzdělání",
+    "Obyvatelstvo podle ekonomické aktivity a pohlaví",
+    "Hospodařící domácnosti podle velikosti a typu domácnosti",
+    "Vyjíždějící do zaměstnání a školy podle hlavního dopravního prostředku",
+    "Domy podle obydlenosti a druhu domu",
+    "Byty podle obydlenosti"
+  ],
+  "education": {
+    "population15plus": 90123,
+    "groups": [
+      {
+        "label": "Základní a neukončené",
+        "value": 7144
+      },
+      {
+        "label": "Střední bez maturity",
+        "value": 17028
+      },
+      {
+        "label": "Střední s maturitou",
+        "value": 29477
+      },
+      {
+        "label": "Vyšší odborné / konzervatoř",
+        "value": 1959
+      },
+      {
+        "label": "Vysokoškolské",
+        "value": 28652
+      },
+      {
+        "label": "Bez vzdělání",
+        "value": 345
+      },
+      {
+        "label": "Nezjištěno",
+        "value": 5518
+      }
+    ]
+  },
+  "economicActivity": {
+    "labourForce": 60641,
+    "outsideLabourForce": 42479,
+    "groups": [
+      {
+        "label": "Zaměstnaní",
+        "value": 57921
+      },
+      {
+        "label": "Nezaměstnaní",
+        "value": 2720
+      },
+      {
+        "label": "Nepracující důchodci",
+        "value": 20076
+      },
+      {
+        "label": "Žáci a studenti",
+        "value": 12531
+      },
+      {
+        "label": "Na rodičovské dovolené",
+        "value": 1713
+      },
+      {
+        "label": "Ostatní s vlastním zdrojem",
+        "value": 247
+      },
+      {
+        "label": "Nezjištěno",
+        "value": 1801
+      }
+    ]
+  },
+  "households": {
+    "total": 54765,
+    "single": 26590,
+    "family": 26406,
+    "sizes": [
+      {
+        "label": "1 člen",
+        "value": 26590
+      },
+      {
+        "label": "2 členové",
+        "value": 15665
+      },
+      {
+        "label": "3 členové",
+        "value": 6443
+      },
+      {
+        "label": "4 členové",
+        "value": 4848
+      },
+      {
+        "label": "5 členů",
+        "value": 991
+      },
+      {
+        "label": "6 členů",
+        "value": 173
+      },
+      {
+        "label": "7 a více členů",
+        "value": 55
+      }
+    ]
+  },
+  "commuting": {
+    "total": 51770,
+    "modes": [
+      {
+        "label": "Městská hromadná doprava",
+        "value": 26663
+      },
+      {
+        "label": "Automobil - řidič",
+        "value": 9163
+      },
+      {
+        "label": "Žádný (pouze pěšky)",
+        "value": 5649
+      },
+      {
+        "label": "Automobil - spolucestující",
+        "value": 1135
+      },
+      {
+        "label": "Jízdní kolo",
+        "value": 654
+      },
+      {
+        "label": "Autobus (kromě MHD)",
+        "value": 454
+      },
+      {
+        "label": "Vlak",
+        "value": 335
+      },
+      {
+        "label": "Jiný dopravní prostředek",
+        "value": 203
+      },
+      {
+        "label": "Motocykl",
+        "value": 103
+      }
+    ]
+  }
+}

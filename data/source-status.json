@@ -1,0 +1,86 @@
+{
+  "people": {
+    "status": "čeká na naplnění",
+    "count": 0,
+    "updated": null,
+    "mode": "nenačteno"
+  },
+  "hmp": {
+    "status": "čeká na naplnění",
+    "count": 0,
+    "updated": null,
+    "mode": "výchozí balíček"
+  },
+  "organizations": {
+    "status": "čeká na naplnění",
+    "count": 0,
+    "updated": null,
+    "mode": "nenačteno"
+  },
+  "bodies": {
+    "status": "čeká na naplnění",
+    "count": 0,
+    "updated": null,
+    "mode": "nenačteno"
+  },
+  "resolutions": {
+    "status": "průběžná open data",
+    "count": 8,
+    "updated": "2026-08-21T12:00:00Z",
+    "mode": "mezipaměť"
+  },
+  "voting": {
+    "status": "data načtena",
+    "count": 5,
+    "updated": "2026-08-21T12:00:00Z",
+    "mode": "výchozí balíček"
+  },
+  "info106": {
+    "status": "čeká na naplnění",
+    "count": 0,
+    "updated": null,
+    "mode": "výchozí balíček"
+  },
+  "noticeboard": {
+    "status": "čeká na naplnění",
+    "count": 0,
+    "updated": null,
+    "mode": "výchozí balíček"
+  },
+  "elections": {
+    "status": "čeká na naplnění",
+    "count": 0,
+    "updated": null,
+    "mode": "nenačteno"
+  },
+  "contracts": {
+    "status": "čeká na naplnění",
+    "count": 0,
+    "updated": null,
+    "mode": "výchozí balíček"
+  },
+  "p8Companies": {
+    "status": "čeká na naplnění",
+    "count": 0,
+    "updated": null,
+    "mode": "nenačteno"
+  },
+  "hmpFunctions": {
+    "status": "čeká na naplnění",
+    "count": 0,
+    "updated": null,
+    "mode": "nenačteno"
+  },
+  "hmpCompanies": {
+    "status": "čeká na naplnění",
+    "count": 0,
+    "updated": null,
+    "mode": "nenačteno"
+  },
+  "nationalRoles": {
+    "status": "čeká na naplnění",
+    "count": 0,
+    "updated": null,
+    "mode": "nenačteno"
+  }
+}

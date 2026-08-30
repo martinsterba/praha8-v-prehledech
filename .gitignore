@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# macOS
+.DS_Store
+
+# Logs and temporary files
+*.log
+*.tmp
+.cache/
+tmp/
+
+# Large/raw working data must never be committed
+*.zip
+*.tar
+*.tar.gz
+*.xml.gz
+*.csv.gz
+raw-data/
+downloads/
+
+# Local environment / secrets
+.env
+.env.*
+!.env.example

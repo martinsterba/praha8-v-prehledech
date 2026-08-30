@@ -1,0 +1,7 @@
+{
+  "updated": "2026-08-21",
+  "mode": "starter",
+  "note": "v0.3: datový balíček obsahuje kompletní současné zastupitelstvo (45 členů) a 40 organizací/škol zřízených MČ; sync aktualizuje živá data.",
+  "people": 45,
+  "organizations": 40
+}

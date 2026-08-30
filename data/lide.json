@@ -1,0 +1,633 @@
+[
+  {
+    "name": "Bína Tomáš Bc.",
+    "role": "zastupitel",
+    "club": "ODS",
+    "areas": [],
+    "email": "tomas.bina@praha8.cz",
+    "url": "https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html",
+    "magistrateRoles": [],
+    "hmpCompanyRoles": []
+  },
+  {
+    "name": "Blahunková Dana RNDr.",
+    "role": "zastupitelka",
+    "club": "8ŽIJE A PRAHA SOBĚ",
+    "areas": [],
+    "email": "dana.blahunkova@praha8.cz",
+    "url": "https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html",
+    "magistrateRoles": [],
+    "hmpCompanyRoles": []
+  },
+  {
+    "name": "Buršík Ondřej Ing., MPA",
+    "role": "zastupitel",
+    "club": "8ŽIJE A PRAHA SOBĚ",
+    "areas": [],
+    "email": "ondrej.bursik@praha8.cz",
+    "url": "https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html",
+    "magistrateRoles": [
+      {
+        "role": "člen",
+        "body": "Výbor pro bezpečnost a pro prevenci kriminality ZHMP",
+        "url": "https://praha.eu/vybory"
+      }
+    ],
+    "hmpCompanyRoles": []
+  },
+  {
+    "name": "Cibulka Martin Mgr., DiS.",
+    "role": "zastupitel",
+    "club": "ODS",
+    "areas": [],
+    "email": "martin.cibulka@praha8.cz",
+    "url": "https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html",
+    "magistrateRoles": [],
+    "hmpCompanyRoles": []
+  },
+  {
+    "name": "Dvořáková Jana Mgr. Bc.",
+    "role": "zastupitelka",
+    "club": "SPD a Trikolora pro Osmičku",
+    "areas": [],
+    "email": "jana.dvorakova3@praha8.cz",
+    "url": "https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html",
+    "magistrateRoles": [],
+    "hmpCompanyRoles": []
+  },
+  {
+    "name": "Fichtner Matěj PhDr. Ing., MBA",
+    "role": "místostarosta",
+    "club": "ANO",
+    "areas": [
+      "Školství",
+      "Dotační projekty a čerpání dotací",
+      "Servisní středisko pro správu svěřeného majetku MČ Praha 8"
+    ],
+    "email": "matej.fichtner@praha8.cz",
+    "url": "https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html",
+    "magistrateRoles": [],
+    "hmpCompanyRoles": []
+  },
+  {
+    "name": "Fišer Michal, MBA",
+    "role": "zastupitel",
+    "club": "ANO",
+    "areas": [],
+    "email": "michal.fiser@praha8.cz",
+    "url": "https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html",
+    "hmpCompanyRoles": [
+      {
+        "role": "člen představenstva",
+        "body": "Technologie hlavního města Prahy, a.s.",
+        "url": "https://praha.eu/technologie-hlavniho-mesta-prahy-a-s"
+      }
+    ],
+    "magistrateRoles": []
+  },
+  {
+    "name": "Franc Pavel Mgr.",
+    "role": "zastupitel",
+    "club": "Piráti",
+    "areas": [],
+    "email": "pavel.franc@praha8.cz",
+    "url": "https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html",
+    "magistrateRoles": [],
+    "hmpCompanyRoles": []
+  },
+  {
+    "name": "Garlík Bohumír prof. Ing., CSc., DBA",
+    "role": "zastupitel",
+    "club": "ANO",
+    "areas": [],
+    "email": "bohumir.garlik@praha8.cz",
+    "url": "https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html",
+    "magistrateRoles": [],
+    "hmpCompanyRoles": []
+  },
+  {
+    "name": "Gregor Adam Mgr.",
+    "role": "zastupitel",
+    "club": "ANO",
+    "areas": [],
+    "email": "adam.gregor@praha8.cz",
+    "url": "https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html",
+    "magistrateRoles": [],
+    "hmpCompanyRoles": []
+  },
+  {
+    "name": "Gros Ondřej",
+    "role": "starosta",
+    "club": "ODS",
+    "areas": [
+      "Životní prostředí",
+      "Finance",
+      "Audit",
+      "Hospodářská správa",
+      "Osmá servisní a.s.",
+      "IPODEC - ČISTÉ MĚSTO a.s."
+    ],
+    "email": "ondrej.gros@praha8.cz",
+    "url": "https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html",
+    "magistrateRoles": [],
+    "hmpCompanyRoles": []
+  },
+  {
+    "name": "Hřebík Tomáš Ing., Ph.D.",
+    "role": "místostarosta",
+    "club": "Společně pro Prahu 8",
+    "areas": [
+      "Architekt MČ",
+      "Strategický rozvoj",
+      "Organizace zřízené MČ"
+    ],
+    "email": "tomas.hrebik@praha8.cz",
+    "url": "https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html",
+    "magistrateRoles": [],
+    "hmpCompanyRoles": []
+  },
+  {
+    "name": "Janovský Michal Mgr.",
+    "role": "zastupitel",
+    "club": "Patrioti",
+    "areas": [],
+    "email": "michal.janovsky@praha8.cz",
+    "url": "https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html",
+    "magistrateRoles": [],
+    "hmpCompanyRoles": []
+  },
+  {
+    "name": "Jedlička Martin Ing.",
+    "role": "radní",
+    "club": "Společně pro Prahu 8",
+    "areas": [
+      "Doprava"
+    ],
+    "email": "martin.jedlicka@praha8.cz",
+    "url": "https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html",
+    "magistrateRoles": [],
+    "hmpCompanyRoles": []
+  },
+  {
+    "name": "Jiran Jakub Mgr.",
+    "role": "zastupitel",
+    "club": "Piráti",
+    "areas": [],
+    "email": "jakub.jiran@praha8.cz",
+    "url": "https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html",
+    "hmpCompanyRoles": [
+      {
+        "role": "místopředseda dozorčí rady",
+        "body": "Dopravní podnik hl. m. Prahy, a.s.",
+        "url": "https://praha.eu/dopravni-podnik-hl-m-prahy-a-s"
+      }
+    ],
+    "magistrateRoles": []
+  },
+  {
+    "name": "Kolátor Jan Mgr.",
+    "role": "zastupitel",
+    "club": "Piráti",
+    "areas": [],
+    "email": "jan.kolator@praha8.cz",
+    "url": "https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html",
+    "magistrateRoles": [],
+    "hmpCompanyRoles": []
+  },
+  {
+    "name": "Kotrbová Jarmila",
+    "role": "zastupitelka",
+    "club": "ANO",
+    "areas": [],
+    "email": "jarmila.kotrbova@praha8.cz",
+    "url": "https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html",
+    "magistrateRoles": [],
+    "hmpCompanyRoles": []
+  },
+  {
+    "name": "Kroutil Anna Ing.",
+    "role": "zastupitelka",
+    "club": "ANO",
+    "areas": [],
+    "email": "anna.kroutil@praha8.cz",
+    "url": "https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html",
+    "magistrateRoles": [],
+    "hmpCompanyRoles": []
+  },
+  {
+    "name": "Ludková Vladimíra Mgr.",
+    "role": "místostarostka",
+    "club": "ODS",
+    "areas": [
+      "Zdravotnictví a sociální služby",
+      "SOS Praha 8",
+      "Gerontologické centrum"
+    ],
+    "email": "vladimira.ludkova@praha8.cz",
+    "url": "https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html",
+    "otherRoles": [
+      {
+        "label": "Senátorka Parlamentu ČR",
+        "url": "https://www.senat.cz/senatori/index.php?lng=cz&par_3=465"
+      }
+    ],
+    "magistrateRoles": [
+      {
+        "role": "členka",
+        "body": "Výbor pro rodinnou politiku a sociální oblast ZHMP",
+        "url": "https://praha.eu/vybory"
+      }
+    ],
+    "hmpCompanyRoles": []
+  },
+  {
+    "name": "Márová Jitka Bc., DiS.",
+    "role": "zastupitelka",
+    "club": "ODS",
+    "areas": [],
+    "email": "jitka.marova@praha8.cz",
+    "url": "https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html",
+    "magistrateRoles": [],
+    "hmpCompanyRoles": []
+  },
+  {
+    "name": "Mikulenka Tomáš",
+    "role": "zastupitel",
+    "club": "ODS",
+    "areas": [],
+    "email": "tomas.mikulenka@praha8.cz",
+    "url": "https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html",
+    "magistrateRoles": [],
+    "hmpCompanyRoles": []
+  },
+  {
+    "name": "Mrázek Tomáš Bc.",
+    "role": "zastupitel",
+    "club": "ODS",
+    "areas": [],
+    "email": "tomas.mrazek@praha8.cz",
+    "url": "https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html",
+    "magistrateRoles": [],
+    "hmpCompanyRoles": []
+  },
+  {
+    "name": "Musílek Václav JUDr.",
+    "role": "zastupitel",
+    "club": "SPD a Trikolora pro Osmičku",
+    "areas": [],
+    "email": "vaclav.musilek@praha8.cz",
+    "url": "https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html",
+    "magistrateRoles": [],
+    "hmpCompanyRoles": []
+  },
+  {
+    "name": "Musilová Barbora PhDr.",
+    "role": "zastupitelka",
+    "club": "8ŽIJE A PRAHA SOBĚ",
+    "areas": [],
+    "email": "barbora.musilova@praha8.cz",
+    "url": "https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html",
+    "magistrateRoles": [],
+    "hmpCompanyRoles": []
+  },
+  {
+    "name": "Němeček Tomáš Mgr. et Mgr.",
+    "role": "zastupitel",
+    "club": "8ŽIJE A PRAHA SOBĚ",
+    "areas": [],
+    "email": "tomas.nemecek@praha8.cz",
+    "url": "https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html",
+    "magistrateRoles": [
+      {
+        "role": "člen",
+        "body": "Výbor pro dotační vztahy a vztahy k městským částem ZHMP",
+        "url": "https://praha.eu/vybory"
+      }
+    ],
+    "hmpCompanyRoles": []
+  },
+  {
+    "name": "Nepil Radomír",
+    "role": "místostarosta",
+    "club": "ANO",
+    "areas": [
+      "Majetek",
+      "Územní rozvoj a výstavba",
+      "Fond rozvoje",
+      "OSMS, Správa tepelného hospodářství",
+      "Výstavba ZŠ na Rohanském nábřeží"
+    ],
+    "email": "radomir.nepil@praha8.cz",
+    "url": "https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html",
+    "magistrateRoles": [
+      {
+        "role": "zastupitel hl. města Prahy",
+        "body": "",
+        "url": "https://praha.eu/zastupitelstvo"
+      },
+      {
+        "role": "člen",
+        "body": "Výbor pro dotační vztahy a vztahy k městským částem ZHMP",
+        "url": "https://praha.eu/vybory"
+      },
+      {
+        "role": "člen",
+        "body": "Výbor pro územní rozvoj ZHMP",
+        "url": "https://praha.eu/vybory"
+      },
+      {
+        "role": "člen",
+        "body": "Komise Rady hl. m. Prahy pro nový územní plán",
+        "url": "https://praha.eu/komise_rady_hmp"
+      }
+    ],
+    "hmpCompanyRoles": [
+      {
+        "role": "člen dozorčí rady",
+        "body": "Pražské služby, a.s.",
+        "url": "https://praha.eu/prazske-sluzby-a-s"
+      }
+    ]
+  },
+  {
+    "name": "Novák Michal, MBA",
+    "role": "zastupitel",
+    "club": "Piráti",
+    "areas": [],
+    "email": "michal.novak@praha8.cz",
+    "url": "https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html",
+    "magistrateRoles": [],
+    "hmpCompanyRoles": []
+  },
+  {
+    "name": "Novák Vítězslav Mgr.",
+    "role": "zastupitel",
+    "club": "SPD a Trikolora pro Osmičku",
+    "areas": [],
+    "email": "vitezslav.novak@praha8.cz",
+    "url": "https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html",
+    "magistrateRoles": [
+      {
+        "role": "člen",
+        "body": "Výbor finanční ZHMP",
+        "url": "https://praha.eu/vybory"
+      }
+    ],
+    "hmpCompanyRoles": []
+  },
+  {
+    "name": "Novotná Hana Mgr.",
+    "role": "zastupitelka",
+    "club": "Společně pro Prahu 8",
+    "areas": [],
+    "email": "hana.novotna@praha8.cz",
+    "url": "https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html",
+    "magistrateRoles": [],
+    "hmpCompanyRoles": []
+  },
+  {
+    "name": "Paulus Libor Mgr.",
+    "role": "zastupitel",
+    "club": "ODS",
+    "areas": [],
+    "email": "libor.paulus@praha8.cz",
+    "url": "https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html",
+    "magistrateRoles": [],
+    "hmpCompanyRoles": []
+  },
+  {
+    "name": "Roubíček Martin Mgr.",
+    "role": "zastupitel",
+    "club": "ODS",
+    "areas": [],
+    "email": "martin.roubicek@praha8.cz",
+    "url": "https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html",
+    "magistrateRoles": [],
+    "hmpCompanyRoles": []
+  },
+  {
+    "name": "Slabihoudek Tomáš Ing.",
+    "role": "zastupitel",
+    "club": "Společně pro Prahu 8",
+    "areas": [],
+    "email": "tomas.slabihoudek@praha8.cz",
+    "url": "https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html",
+    "magistrateRoles": [
+      {
+        "role": "radní hl. města Prahy",
+        "body": "",
+        "url": "https://praha.eu/rada"
+      },
+      {
+        "role": "zastupitel hl. města Prahy",
+        "body": "",
+        "url": "https://praha.eu/zastupitelstvo"
+      },
+      {
+        "role": "člen",
+        "body": "Výbor pro dopravu ZHMP",
+        "url": "https://praha.eu/vybory"
+      },
+      {
+        "role": "člen",
+        "body": "Výbor pro dotační vztahy a vztahy k městským částem ZHMP",
+        "url": "https://praha.eu/vybory"
+      },
+      {
+        "role": "člen",
+        "body": "Výbor finanční ZHMP",
+        "url": "https://praha.eu/vybory"
+      },
+      {
+        "role": "člen",
+        "body": "Výbor kontrolní ZHMP",
+        "url": "https://praha.eu/vybory"
+      },
+      {
+        "role": "člen",
+        "body": "Povodňová komise hl. m. Prahy",
+        "url": "https://praha.eu"
+      }
+    ],
+    "hmpCompanyRoles": []
+  },
+  {
+    "name": "Slávka Ivo Mgr.",
+    "role": "zastupitel",
+    "club": "Piráti",
+    "areas": [],
+    "email": "ivo.slavka@praha8.cz",
+    "url": "https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html",
+    "magistrateRoles": [],
+    "hmpCompanyRoles": []
+  },
+  {
+    "name": "Slobodník Josef Bc.",
+    "role": "místostarosta",
+    "club": "ODS",
+    "areas": [
+      "Informatika"
+    ],
+    "email": "josef.slobodnik@praha8.cz",
+    "url": "https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html",
+    "magistrateRoles": [],
+    "hmpCompanyRoles": []
+  },
+  {
+    "name": "Solomonová Jana Mgr. et Mgr. BcA.",
+    "role": "radní",
+    "club": "ANO",
+    "areas": [
+      "Kultura, mládež a volný čas",
+      "Sportovní akce a projekty",
+      "Granty v oblasti kultury a volnočasových aktivit",
+      "Vnější vztahy a komunikace",
+      "Památková péče",
+      "Rodinná politika",
+      "Osmička pro rodinu"
+    ],
+    "email": "jana.solomonova@praha8.cz",
+    "url": "https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html",
+    "magistrateRoles": [],
+    "hmpCompanyRoles": []
+  },
+  {
+    "name": "Stránský Václav",
+    "role": "zastupitel",
+    "club": "8ŽIJE A PRAHA SOBĚ",
+    "areas": [],
+    "email": "vaclav.stransky@praha8.cz",
+    "url": "https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html",
+    "magistrateRoles": [
+      {
+        "role": "člen",
+        "body": "Výbor pro územní rozvoj ZHMP",
+        "url": "https://praha.eu/vybory"
+      }
+    ],
+    "hmpCompanyRoles": []
+  },
+  {
+    "name": "Šimbera Jan Mgr., Ph.D.",
+    "role": "zastupitel",
+    "club": "8ŽIJE A PRAHA SOBĚ",
+    "areas": [],
+    "email": "jan.simbera@praha8.cz",
+    "url": "https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html",
+    "magistrateRoles": [
+      {
+        "role": "člen",
+        "body": "Výbor pro energetiku ZHMP",
+        "url": "https://praha.eu/vybory"
+      }
+    ],
+    "hmpCompanyRoles": []
+  },
+  {
+    "name": "Štěrba Martin Mgr.",
+    "role": "zastupitel",
+    "club": "Piráti",
+    "areas": [],
+    "email": "martin.sterba@praha8.cz",
+    "url": "https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html",
+    "magistrateRoles": [
+      {
+        "role": "předseda",
+        "body": "Komise pro veřejnou dopravu RHMP",
+        "url": "https://praha.eu/komise_rady_hmp"
+      }
+    ],
+    "hmpCompanyRoles": []
+  },
+  {
+    "name": "Štorek Jan",
+    "role": "zastupitel",
+    "club": "ANO",
+    "areas": [],
+    "email": "jan.storek@praha8.cz",
+    "url": "https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html",
+    "magistrateRoles": [],
+    "hmpCompanyRoles": []
+  },
+  {
+    "name": "Švarc Michal Bc.",
+    "role": "zastupitel",
+    "club": "Patrioti",
+    "areas": [],
+    "email": "michal.svarc@praha8.cz",
+    "url": "https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html",
+    "magistrateRoles": [],
+    "hmpCompanyRoles": []
+  },
+  {
+    "name": "Tatranský Tomáš Mgr.",
+    "role": "zastupitel",
+    "club": "Společně pro Prahu 8",
+    "areas": [],
+    "email": "tomas.tatransky@praha8.cz",
+    "url": "https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html",
+    "magistrateRoles": [],
+    "hmpCompanyRoles": []
+  },
+  {
+    "name": "Trník Michal, M.A.",
+    "role": "zastupitel",
+    "club": "8ŽIJE A PRAHA SOBĚ",
+    "areas": [],
+    "email": "michal.trnik@praha8.cz",
+    "url": "https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html",
+    "magistrateRoles": [
+      {
+        "role": "člen",
+        "body": "Výbor pro strategické investice ZHMP",
+        "url": "https://praha.eu/vybory"
+      }
+    ],
+    "hmpCompanyRoles": []
+  },
+  {
+    "name": "Tůmová Ilona, DiS.",
+    "role": "zastupitelka",
+    "club": "8ŽIJE A PRAHA SOBĚ",
+    "areas": [],
+    "email": "ilona.tumova@praha8.cz",
+    "url": "https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html",
+    "magistrateRoles": [],
+    "hmpCompanyRoles": []
+  },
+  {
+    "name": "Vítek Jiří",
+    "role": "místostarosta",
+    "club": "Patrioti",
+    "areas": [
+      "Bezpečnost",
+      "Grantová politika pro sport",
+      "Sportovní investice (hala Burešova)"
+    ],
+    "email": "jiri.vitek@praha8.cz",
+    "url": "https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html",
+    "magistrateRoles": [],
+    "hmpCompanyRoles": []
+  },
+  {
+    "name": "Vojtíšková Vladislava MVDr. Bc.",
+    "role": "zastupitelka",
+    "club": "8ŽIJE A PRAHA SOBĚ",
+    "areas": [],
+    "email": "vladislava.vojtiskova@praha8.cz",
+    "url": "https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html",
+    "magistrateRoles": [
+      {
+        "role": "členka",
+        "body": "Výbor pro strategický a hospodářský rozvoj a podporu podnikání a inovací ZHMP",
+        "url": "https://praha.eu/vybory"
+      },
+      {
+        "role": "členka",
+        "body": "Výbor pro zahraniční vztahy a EU fondy ZHMP",
+        "url": "https://praha.eu/vybory"
+      }
+    ],
+    "hmpCompanyRoles": []
+  }
+]

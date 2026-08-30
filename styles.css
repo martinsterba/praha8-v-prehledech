@@ -1,0 +1,423 @@
+:root{--bg:#f6f6f2;--ink:#11110f;--muted:#6f706a;--line:#d9dad3;--card:#fff;--accent:#11110f;--soft:#ecece5;--good:#315f3b;--warn:#8a651b;--max:1220px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 Inter,system-ui,sans-serif}a{color:inherit;text-decoration:none}button,input,select{font:inherit}.topbar{height:70px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:30px;padding:0 max(24px,calc((100vw - var(--max))/2));position:sticky;top:0;background:rgba(246,246,242,.94);backdrop-filter:blur(14px);z-index:20}.brand{font:700 20px/1 Space Grotesk,sans-serif;white-space:nowrap}.brand span{font-weight:600;color:var(--muted)}.nav{display:flex;gap:24px;margin-left:auto;align-items:center}.nav a,.nav button{border:0;background:none;padding:8px 0;cursor:pointer;font-weight:600;color:#333}.nav a:hover,.nav button:hover{color:#000}.search-open{border:1px solid var(--line);background:transparent;border-radius:999px;width:38px;height:38px;font-size:22px;cursor:pointer}.mega{position:fixed;z-index:19;top:70px;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);padding:26px max(24px,calc((100vw - var(--max))/2));box-shadow:0 15px 35px #0000000b}.mega-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.mega a{padding:14px;border-radius:12px}.mega a:hover{background:var(--soft)}.mega b{display:block}.mega small{color:var(--muted)}main{min-height:70vh}.wrap{max-width:var(--max);margin:auto;padding:58px 24px 90px}.hero{padding:90px 0 55px}.kicker{text-transform:uppercase;letter-spacing:.12em;font-size:12px;font-weight:800;color:var(--muted)}h1,h2,h3{font-family:Space Grotesk,sans-serif;letter-spacing:-.035em;margin:0}.hero h1{font-size:clamp(48px,8vw,108px);line-height:.93;max-width:1050px}.hero h1 span{color:#77786f}.hero p{font-size:19px;max-width:750px;color:#4d4e49;margin:30px 0}.actions{display:flex;gap:10px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--ink);padding:11px 16px;border-radius:999px;font-weight:700}.btn.primary{background:var(--ink);color:#fff}.stats{border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:grid;grid-template-columns:repeat(4,1fr)}.stat{padding:24px 20px;border-right:1px solid var(--line)}.stat:last-child{border-right:0}.stat strong{font:700 34px/1 Space Grotesk}.stat span{display:block;color:var(--muted);margin-top:8px}.section{padding:60px 0;border-bottom:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;gap:25px;align-items:end;margin-bottom:25px}.section h2,.page-head h1{font-size:clamp(32px,4vw,54px)}.section-head p,.page-head p{max-width:680px;color:var(--muted)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{background:var(--card);border:1px solid var(--line);border-radius:17px;padding:22px;min-height:185px;transition:.15s transform,.15s box-shadow}.card:hover{transform:translateY(-2px);box-shadow:0 15px 35px #0000000c}.card .icon{font-size:26px}.card h3{font-size:21px;margin:18px 0 8px}.card p{color:var(--muted);margin:0}.card .more{display:block;margin-top:18px;font-weight:700}.page-head{padding:62px 0 25px;border-bottom:1px solid var(--line)}.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:25px 0}.toolbar input,.toolbar select{background:white;border:1px solid var(--line);border-radius:10px;padding:10px 12px}.toolbar input{min-width:270px;flex:1}.list{display:grid;gap:9px}.item{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px;display:grid;grid-template-columns:175px 1fr auto;gap:18px;align-items:start}.meta{font-size:13px;color:var(--muted)}.item h3{font:600 17px/1.35 Inter;margin:0 0 8px;letter-spacing:0}.chips{display:flex;gap:6px;flex-wrap:wrap}.chip{font-size:12px;padding:4px 8px;background:var(--soft);border-radius:999px;color:#50514c}.source{font-size:13px;font-weight:700;white-space:nowrap}.promise-status{font-weight:800;font-size:12px;text-transform:uppercase;letter-spacing:.07em}.promise-status.open{color:var(--warn)}.promise-status.done{color:var(--good)}.empty{padding:50px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:14px}.notice{background:#efefe8;border:1px solid var(--line);padding:17px;border-radius:14px;margin:22px 0;color:#55564f}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}.money{font:700 28px Space Grotesk}.person{display:flex;gap:14px;align-items:center}.avatar{width:45px;height:45px;border-radius:50%;display:grid;place-items:center;background:var(--soft);font-weight:800}.table{width:100%;border-collapse:collapse;background:white;border-radius:14px;overflow:hidden;border:1px solid var(--line)}.table th,.table td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line)}.table th{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}.table tr:last-child td{border-bottom:0}.sourcebox{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;margin-bottom:12px}.sourcebox code{font-size:12px;word-break:break-all}footer{max-width:var(--max);margin:auto;padding:35px 24px 60px;border-top:1px solid var(--line);display:flex;justify-content:space-between;color:var(--muted)}.footer-links{display:flex;gap:20px}dialog{width:min(780px,calc(100vw - 30px));border:0;border-radius:18px;padding:0;box-shadow:0 30px 80px #0003}dialog::backdrop{background:#1118;backdrop-filter:blur(3px)}.search-shell{padding:0}.search-head{display:flex;border-bottom:1px solid var(--line)}.search-head input{flex:1;border:0;padding:22px;font-size:20px;outline:0}.search-head button{border:0;background:none;width:60px;font-size:28px;cursor:pointer}.search-results{max-height:65vh;overflow:auto;padding:12px}.search-hit{display:block;padding:13px;border-radius:10px}.search-hit:hover{background:var(--soft)}.search-hit small{color:var(--muted);display:block}.updated{font-size:12px;color:var(--muted)}
+@media(max-width:850px){.nav{display:none}.topbar{padding:0 18px}.search-open{margin-left:auto}.wrap{padding-left:18px;padding-right:18px}.hero{padding-top:55px}.stats{grid-template-columns:1fr 1fr}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--line)}.cards,.grid2{grid-template-columns:1fr}.item{grid-template-columns:1fr}.item .source{justify-self:start}.mega-grid{grid-template-columns:1fr}.section-head{display:block}footer{display:block}.footer-links{margin-top:20px;flex-direction:column;gap:8px}}
+.error-notice{background:#fff1ee;border-color:#e3b8ad;color:#6f2f22}.org-section{padding-top:38px}.org-section .table code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px}.org-section .section-head{margin-bottom:18px}
+
+/* v1.1: people and organizations */
+.people-section{margin-top:44px}.people-cards{margin-top:22px}.club-block{margin-top:34px}.club-head{display:flex;align-items:end;justify-content:space-between;border-bottom:1px solid var(--line,#ddd);padding-bottom:10px}.club-head h3{margin:0;font-size:28px}.club-head span{color:#777}.person-contact{margin:14px 0 0;font-size:13px}.person-contact a{color:inherit;text-decoration:none;border-bottom:1px solid #bbb}.table-wrap{overflow-x:auto}.table td small{color:#777}.table a{white-space:nowrap}@media(max-width:760px){.club-head{align-items:start}.club-head h3{font-size:22px}.table{min-width:900px}}
+
+/* v1.2: hierarchy, political clubs, commissions and company boards */
+.person-card h3{margin:0;font-size:20px}.person-badges{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-top:6px}.role-badge,.club-label,.member-club{font-size:11px;border:1px solid var(--line);border-radius:999px;padding:3px 7px;color:#55564f;background:#fafaf7}.role-badge{font-weight:750;color:var(--ink)}.chair-badge{background:var(--ink);color:white;border-color:var(--ink)}.areas{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);display:flex;gap:6px;flex-wrap:wrap}.areas-label{width:100%;font-size:10px;text-transform:uppercase;letter-spacing:.1em;font-weight:800;color:var(--muted);margin-bottom:2px}.area-pill{font-size:12px;line-height:1.25;padding:6px 9px;background:var(--soft);border-radius:8px;color:#484943}.body-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.body-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px}.body-top{display:flex;justify-content:space-between;gap:18px;align-items:start;border-bottom:1px solid var(--line);padding-bottom:13px}.body-top h3{font-size:22px}.body-top a{font-size:12px;font-weight:700;white-space:nowrap}.body-chair{margin-top:16px;padding:13px;background:var(--soft);border-radius:11px}.body-card small{display:block;text-transform:uppercase;letter-spacing:.08em;font-size:10px;font-weight:800;color:var(--muted);margin-bottom:5px}.body-members{margin-top:16px}.body-card ul{list-style:none;padding:0;margin:8px 0 0;display:grid;gap:6px}.body-card li{padding:7px 0;border-bottom:1px solid #eeeeea}.body-card li:last-child{border-bottom:0}.member-club{margin-left:5px}.body-card details{margin-top:14px;color:#55564f}.body-card summary{cursor:pointer;font-weight:650}.body-secretary{margin-top:15px;padding-top:12px;border-top:1px solid var(--line)}.org-section td>div small{display:block;text-transform:uppercase;letter-spacing:.07em;font-size:10px;font-weight:750;color:var(--muted);margin-bottom:3px}
+@media(max-width:850px){.body-grid{grid-template-columns:1fr}}
+
+/* v1.4: company bodies + ownership */
+.company-bodies{display:grid;gap:12px;min-width:260px}.company-bodies ul{list-style:none;margin:4px 0 0;padding:0;display:grid;gap:4px}.company-bodies li{line-height:1.35}.company-role{font-size:11px;color:var(--muted)}.ownership-badge{display:inline-block;margin-top:6px;padding:4px 8px;border-radius:999px;background:var(--ink);color:#fff;font-size:11px;font-weight:750}.org-section .table td:nth-child(4){min-width:320px}
+
+/* v1.5: seat balance, memberships, cleaner company/person UX */
+.balance-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:18px}.balance-grid>div{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px}.balance-grid strong{font:700 42px/1 Space Grotesk;display:block}.balance-grid span{font-weight:800;display:block;margin-top:6px}.balance-grid small{color:var(--muted);display:block;margin-top:4px}.seat-map{display:grid;grid-template-columns:repeat(15,18px);gap:6px;align-items:center}.seat-dot{width:18px;height:18px;border-radius:50%;display:block}.seat-dot.coalition{background:var(--ink)}.seat-dot.opposition{background:#c9cac2;border:1px solid #aeb0a7}.areas-visual{background:linear-gradient(180deg,#f7f7f1,#efefe8);border:1px solid var(--line);border-radius:13px;padding:13px;margin-top:16px}.areas-visual .areas-label{margin-bottom:7px}.areas-visual .area-pill{background:#fff;border:1px solid #dedfd7}.memberships{margin-top:15px;padding-top:13px;border-top:1px solid var(--line)}.membership-row{font-size:12px;line-height:1.35;padding:5px 0;color:#4f504b}.club-head small{display:block;color:var(--muted);margin-top:4px}.person-line{display:flex;align-items:center;gap:7px;flex-wrap:wrap}.company-bodies>div{padding:10px 12px;background:#fafaf7;border:1px solid #e5e5df;border-radius:10px}.company-bodies li{display:flex;flex-direction:column;align-items:flex-start;gap:3px;padding:5px 0}.company-bodies .person-line{width:100%}.company-role{display:block;font-size:11px;color:var(--muted)}.org-section .table td:nth-child(4){min-width:360px}.org-section .table th:last-child,.org-section .table td:last-child{min-width:95px}.club-block .person-card .areas{display:none}
+@media(max-width:850px){.balance-grid{grid-template-columns:1fr}.seat-map{grid-template-columns:repeat(9,18px)}}
+
+/* v1.6: richer people cards, party seat visualization, committee materials */
+.function-group{margin-top:14px;padding-top:13px;border-top:1px solid var(--line)}
+.function-group .membership-row{padding:4px 0;font-size:12px;line-height:1.4}
+.function-group a{color:inherit;text-decoration:none;border-bottom:1px solid #c8c9c2}
+.contact-group{margin-top:18px;padding-top:16px}
+.council-functions{margin-top:16px}
+.area-list{display:grid;gap:6px;width:100%}
+.area-line{background:#fff;border:1px solid #dedfd7;border-radius:9px;padding:7px 9px;font-size:12px;line-height:1.3}
+.areas-visual{display:block}
+.areas-visual .areas-label{display:block;width:auto}
+.seat-stack{display:flex;width:100%;height:28px;overflow:hidden;border-radius:999px;background:#e5e5df;border:1px solid var(--line)}
+.seat-segment{height:100%;display:block;min-width:2px;border-right:1px solid rgba(255,255,255,.6)}
+.seat-stack-caption{font-size:11px;color:var(--muted);margin-top:7px}
+.party-list{display:flex;flex-wrap:wrap;gap:7px 12px;margin-top:12px}
+.party-legend{font-size:12px;display:inline-flex;align-items:center;gap:6px;color:#55564f}
+.party-legend i,.club-title i{width:10px;height:10px;border-radius:50%;display:inline-block;flex:0 0 auto}
+.party-legend b{color:var(--ink)}
+.club-title{display:flex;align-items:center;gap:9px}
+.club-title i{width:13px;height:13px}
+.body-links{display:flex;gap:9px;flex-wrap:wrap;justify-content:flex-end}
+.body-links a{font-size:12px;font-weight:700;white-space:nowrap}
+.body-role{font-size:11px;color:var(--muted);display:block;margin-top:2px}
+.citizen-members{margin-top:16px;padding-top:12px;border-top:1px solid var(--line)}
+.vote-chips .vote-for{font-weight:750}.vote-against{border-style:dashed}.vote-abstain{background:#f5f5ef}
+@media(max-width:760px){.body-links{justify-content:flex-start}.seat-stack{height:22px}}
+
+/* v1.7: clearer political legend, stacked portfolios and role hierarchy */
+.party-list{display:grid;grid-template-columns:1fr;gap:8px;margin-top:14px}
+.party-legend{display:grid;grid-template-columns:12px 1fr auto;align-items:center;column-gap:10px;width:100%}
+.party-legend i{margin:0}
+.party-name{min-width:0}
+.area-list{display:flex;flex-direction:column;gap:7px}
+.area-line{display:block;width:100%}
+.function-group .membership-row+ .membership-row{border-top:1px solid #efefe9}
+@media(max-width:760px){.party-legend{grid-template-columns:12px 1fr auto}.balance-grid>div{padding:16px}}
+/* v1.8 UX refinements */
+.party-legend{grid-template-columns:12px minmax(0,1fr) auto;column-gap:12px;padding:4px 0}.party-legend .party-name{margin-left:2px}.party-count{font-size:12px;font-weight:750;color:var(--ink);white-space:nowrap}.area-list{display:grid;gap:0}.area-line{display:block;padding:7px 0;border-top:1px solid #e5e5de;font-size:13px;line-height:1.3}.area-line:first-child{border-top:0}.council-balance .party-list{display:grid;gap:2px;margin-top:10px}
+
+/* v1.9 */
+.party-legend{display:flex!important;align-items:center;gap:10px!important;padding:5px 0!important}.party-legend i{flex:0 0 10px}.party-legend .party-name{margin:0!important;flex:1}.party-count{margin-left:auto}.areas-visual{padding:16px 17px!important}.area-line{padding:8px 2px!important}.brand{display:flex;align-items:center;gap:9px}.brand-mark{width:25px;height:25px;border-radius:7px;border:1px solid var(--ink);display:inline-grid;place-items:center;font-size:11px;font-weight:900;letter-spacing:-.08em}
+
+/* v1.9.2: jednodušší gesce rady */
+.council-areas-list{margin:6px 0 0 0;padding:0 0 0 18px;display:block!important;list-style:disc}
+.council-areas-list .area-line{display:list-item!important;background:none!important;border:0!important;border-radius:0!important;padding:3px 0!important;margin:0;font-size:13px;line-height:1.42}
+.council-areas-list .area-line::marker{font-size:.8em}
+.people-section .person-card .areas-visual{background:transparent!important;border:0!important;border-radius:0!important;padding:0!important;margin-top:16px!important}
+.people-section .person-card .areas-visual .areas-label{margin-bottom:3px!important}
+/* v2.0: homepage expansion, committee UX and transparency sections */
+.stats{grid-template-columns:repeat(3,1fr)}
+.stat:nth-child(3n){border-right:0}.stat:nth-child(-n+3){border-bottom:1px solid var(--line)}
+.compact-stats{margin:28px 0;grid-template-columns:repeat(3,1fr)}
+.compact-stats .stat{border-bottom:0}
+.body-top-stacked{display:block}
+.body-links-badges{justify-content:flex-start;margin-top:9px}
+.body-links-badges a{display:inline-flex;padding:4px 8px;border-radius:999px;background:var(--soft);font-size:11px;border:0}
+.magazine-callout .btn{margin-top:8px}
+@media(max-width:850px){.stats,.compact-stats{grid-template-columns:1fr 1fr}.stat:nth-child(3n){border-right:1px solid var(--line)}.stat:nth-child(2n){border-right:0}.stat{border-bottom:1px solid var(--line)}}
+/* v2.1 — homepage grid + Volby + Registr smluv */
+.stats{grid-template-columns:repeat(3,1fr)}
+.stats .stat{border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stats .stat:nth-child(3n){border-right:0}
+.stats .stat:nth-last-child(-n+3){border-bottom:0}
+.compact-stats{grid-template-columns:repeat(3,1fr)}
+.mandate-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.mandate-row{display:flex;align-items:center;justify-content:space-between;gap:18px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.mandate-row b{display:block}.mandate-row small{display:block;color:var(--muted);margin-top:3px}.mandate-row strong{font:700 30px/1 Space Grotesk}
+.source-inline{display:inline-block;margin-top:18px;font-weight:700;font-size:13px}
+.ranking{display:grid;gap:8px}.rank-row{display:grid;grid-template-columns:36px 1fr auto;gap:12px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:13px;padding:14px 16px}.rank-row>span{font:700 22px Space Grotesk;color:var(--muted)}.rank-row small{color:var(--muted)}
+@media(max-width:850px){.stats{grid-template-columns:1fr 1fr}.stats .stat,.stats .stat:nth-child(3n){border-right:1px solid var(--line);border-bottom:1px solid var(--line)}.stats .stat:nth-child(2n){border-right:0}.stats .stat:nth-last-child(-n+2){border-bottom:0}.mandate-grid{grid-template-columns:1fr}.rank-row{grid-template-columns:32px 1fr}.rank-row small{grid-column:2}}
+/* seven headline stats: 4 + 3, with separators also on the second row */
+.stats{grid-template-columns:repeat(4,1fr)}
+.stats .stat{border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stats .stat:nth-child(4n){border-right:0}
+.stats .stat:nth-child(n+5){border-bottom:0}
+.stats .stat:last-child{border-right:0}
+@media(max-width:850px){.stats{grid-template-columns:1fr 1fr}.stats .stat,.stats .stat:nth-child(4n){border-right:1px solid var(--line);border-bottom:1px solid var(--line)}.stats .stat:nth-child(2n){border-right:0}.stats .stat:last-child{border-right:0;border-bottom:0}}
+/* v2.1.11 — election extras, cleaner contracts, voting status */
+.vote-against{border:0!important;outline:0!important;background:#f2f2ec}
+.vote-title-row{display:flex;align-items:flex-start;gap:10px;justify-content:space-between}
+.vote-status{display:inline-flex;align-items:center;border-radius:999px;padding:4px 9px;font-size:11px;font-weight:800;white-space:nowrap}
+.vote-status.approved{background:#e7f2e9;color:#24522f}
+.vote-status.rejected{background:#f7e7e5;color:#8c2e27}
+.no-mandate{margin-top:18px;padding-top:16px;border-top:1px solid var(--line)}
+.no-mandate>small{display:block;text-transform:uppercase;letter-spacing:.08em;font-size:10px;font-weight:800;color:var(--muted);margin-bottom:9px}
+.no-mandate>div{display:flex;gap:7px;flex-wrap:wrap}
+.no-mandate span{display:inline-flex;padding:5px 9px;background:#ecece5;border-radius:999px;font-size:12px;color:#565750}
+.page-summary{display:flex;align-items:baseline;gap:10px;margin-top:20px;color:var(--muted)}
+.page-summary strong{font:700 30px/1 Space Grotesk;color:var(--ink)}
+.contract-list .item{border:0;border-bottom:1px solid var(--line);border-radius:0;background:transparent;padding:20px 0}
+.contract-list .item:first-child{border-top:1px solid var(--line)}
+.contract-meta{display:flex;gap:22px;flex-wrap:wrap;margin-top:10px}
+.contract-meta>div{display:grid;gap:2px}
+.contract-meta small{text-transform:uppercase;letter-spacing:.07em;font-size:10px;color:var(--muted);font-weight:800}
+.contract-meta b{font-size:12px;font-weight:650}
+.resolution-text{margin:8px 0 0;color:#50514c;font-size:13px;line-height:1.5;max-width:760px}
+@media(max-width:700px){.vote-title-row{display:block}.vote-status{margin-top:8px}.contract-meta{display:grid;gap:10px}}
+/* v2.1.12 — consistent homepage separators + data collection status */
+.home-stats::after{content:"";display:block;border-left:1px solid var(--line);min-height:100%}
+.status-table td:first-child b{display:block}.status-table td:first-child small{display:block;color:var(--muted);margin-top:3px}
+.data-status{display:inline-flex;padding:4px 8px;border-radius:999px;font-size:11px;font-weight:800;white-space:nowrap}.data-status.ok{background:#e7f2e9;color:#24522f}.data-status.pending{background:#f4eee1;color:#7a5b17}.status-table-wrap{overflow:auto}
+@media(max-width:850px){.home-stats::after{display:none}.status-table{min-width:720px}}
+/* v2.1.13 — final homepage grid, election cleanup and ranking */
+@media(min-width:851px){
+  .home-stats .stat:last-child{border-right:1px solid var(--line)!important}
+  .home-stats::after{display:none!important}
+}
+.no-mandate{border-top:0!important;padding-top:0!important;margin-top:20px}
+.rank-party{display:block!important;margin-top:4px;color:var(--muted)}
+
+/* v2.1.14 — homepage stat panel + election ranking pills */
+.home-stats{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;border-top:1px solid var(--line)!important;border-bottom:1px solid var(--line)!important}
+.home-stats .stat{border-right:1px solid var(--line)!important;border-bottom:1px solid var(--line)!important}
+.home-stats .stat:nth-child(4n){border-right:0!important}
+.home-stats .stat:nth-child(n+5){border-bottom:0!important}
+.home-stats .stat:last-child{border-right:1px solid var(--line)!important}
+.rank-person{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.rank-party-pill{display:inline-flex;padding:4px 8px;background:var(--soft);border-radius:999px;font-size:11px;color:#50514c;line-height:1.2}
+@media(max-width:850px){.home-stats .stat:nth-child(4n){border-right:1px solid var(--line)!important}.home-stats .stat:nth-child(2n){border-right:0!important}.home-stats .stat:nth-child(n+5){border-bottom:1px solid var(--line)!important}.home-stats .stat:last-child{border-bottom:0!important}}
+/* v2.1.17 — election ranking, historical percentages and coalition context */
+.mandate-row{display:grid!important;grid-template-columns:30px minmax(0,1fr) auto!important;justify-content:initial!important}
+.election-rank{font:700 15px/1 Space Grotesk;color:var(--muted);align-self:start;padding-top:2px}
+.election-coalition{margin-top:20px;padding:16px 18px;background:#f6f6f1;border-radius:14px}
+.election-coalition>small{display:block;text-transform:uppercase;letter-spacing:.08em;font-size:10px;font-weight:800;color:var(--muted);margin-bottom:9px}
+.coalition-pills{display:flex;gap:7px;flex-wrap:wrap}.coalition-pills span{display:inline-flex;padding:5px 9px;border-radius:999px;background:#fff;border:1px solid var(--line);font-size:12px;font-weight:650}
+.election-coalition p{margin:9px 0 0;font-size:12px;color:var(--muted)}
+.no-mandate span b{font-weight:800;color:var(--muted)}
+/* v2.2.2 — kompletní Registr smluv */
+.contract-stats .stat strong{font-size:clamp(22px,2.4vw,36px)}
+.partner-tabs{display:flex;gap:8px;margin:0 0 14px;flex-wrap:wrap}.partner-tab{border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 12px;font:700 12px inherit;cursor:pointer}.partner-tab.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+.partner-ranking{display:grid;gap:8px}.partner-row{display:grid;grid-template-columns:34px minmax(0,1fr) auto;align-items:center;gap:12px;background:#fff;border:1px solid var(--line);border-radius:13px;padding:13px 15px}.partner-rank{font:700 19px Space Grotesk;color:var(--muted)}.partner-row b{display:block}.partner-row small{display:block;color:var(--muted);margin-top:2px}.partner-numbers{text-align:right}.partner-numbers strong{display:block;font:700 16px Space Grotesk}
+.contract-toolbar{grid-template-columns:minmax(240px,2fr) 1fr 1fr}.pagination{display:flex;justify-content:center;align-items:center;gap:6px;margin:22px 0;flex-wrap:wrap}.pagination button{border:1px solid var(--line);background:#fff;border-radius:9px;padding:8px 11px;cursor:pointer}.pagination button.active{background:var(--ink);color:#fff;border-color:var(--ink)}.pagination button:disabled{opacity:.35;cursor:default}.pagination span{color:var(--muted)}
+@media(max-width:700px){.partner-row{grid-template-columns:28px 1fr}.partner-numbers{grid-column:2;text-align:left}.contract-toolbar{grid-template-columns:1fr}}
+/* v2.3.0 — finance dashboard */
+.money-dashboard{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;margin:24px 0 12px}
+.money-stat{padding:22px 20px;min-height:142px;display:flex;flex-direction:column;justify-content:space-between;border-right:1px solid var(--line);text-decoration:none;color:inherit}
+.money-stat:last-child{border-right:0}.money-stat>small{font-size:11px;text-transform:uppercase;letter-spacing:.08em;font-weight:800;color:var(--muted)}.money-stat>strong{font:700 clamp(25px,2.8vw,40px)/1 Space Grotesk;margin:13px 0}.money-stat>span{font-size:11px;line-height:1.35;color:var(--muted)}
+.kindex-card{background:#f6f6f1}.kindex-card:hover{background:#efefe7}.kindex-value{display:flex;align-items:baseline;gap:10px;margin:9px 0}.kindex-value strong{font:700 42px/1 Space Grotesk}.kindex-value b{font:700 18px/1 Space Grotesk;color:var(--muted)}
+.data-note{margin:0 0 28px;padding:11px 14px;border-radius:11px;background:#f4eee1;color:#6a541f;font-size:12px;line-height:1.45}.recipient-section{margin-top:30px}
+@media(max-width:900px){.money-dashboard{grid-template-columns:1fr 1fr}.money-stat{border-bottom:1px solid var(--line)}.money-stat:nth-child(2n){border-right:0}.money-stat:nth-last-child(-n+2){border-bottom:0}}
+@media(max-width:560px){.money-dashboard{grid-template-columns:1fr}.money-stat{border-right:0!important;border-bottom:1px solid var(--line)!important}.money-stat:last-child{border-bottom:0!important}}
+
+/* v2.3.6 — finance clarity + grouped sources */
+.money-dashboard{grid-template-columns:minmax(260px,1.25fr) repeat(3,minmax(180px,1fr))}
+.money-stat>strong{font-size:clamp(24px,2.25vw,36px);white-space:nowrap;letter-spacing:-.04em}
+.recipient-section .section-head{align-items:start}.recipient-section .section-head p{max-width:610px;margin-top:0}
+.source-group{padding:46px 0;border-bottom:1px solid var(--line)}
+.source-group:first-child{padding-top:12px}.source-group-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:20px}.source-group-head h2{font-size:clamp(28px,3.2vw,42px)}.source-group-head p{max-width:590px;color:var(--muted);margin:0}
+.source-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.source-grid .sourcebox{margin:0;min-height:150px}.sourcebox h3{font-size:19px;margin-bottom:8px}.sourcebox p{color:var(--muted);margin:0 0 14px}.sources-section{padding-top:36px}
+@media(max-width:1050px){.money-dashboard{grid-template-columns:1fr 1fr}.money-stat{border-bottom:1px solid var(--line)}.money-stat:nth-child(2n){border-right:0}.money-stat:nth-last-child(-n+2){border-bottom:0}.money-stat>strong{font-size:clamp(27px,4vw,38px)}}
+@media(max-width:700px){.source-grid{grid-template-columns:1fr}.source-group-head{display:block}.source-group-head p{margin-top:10px}}
+
+
+/* v2.3.7 – přehlednější stav datových zdrojů */
+.status-overview{padding-bottom:18px}
+.status-group{margin:28px 0 0;border:1px solid var(--line);border-radius:20px;background:rgba(255,255,255,.62);overflow:hidden}
+.status-group-head{display:flex;align-items:end;justify-content:space-between;gap:24px;padding:22px 24px 18px;border-bottom:1px solid var(--line)}
+.status-group-head h3{font-size:24px;margin:2px 0 0}
+.status-group-summary{text-align:right;display:flex;flex-direction:column;gap:2px}
+.status-group-summary b{font-size:24px;line-height:1}
+.status-group-summary span{font-size:12px;color:var(--muted)}
+.status-card-list{display:grid;grid-template-columns:1fr}
+.status-card{display:grid;grid-template-columns:minmax(0,1fr) 190px 190px;align-items:center;gap:20px;padding:17px 24px;border-bottom:1px solid var(--line)}
+.status-card:last-child{border-bottom:0}
+.status-card-title{font-size:15px;font-weight:800}
+.status-card-meta{font-size:11px;color:var(--muted);margin-top:4px}
+.status-card-number{font-size:23px;font-weight:800;text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.status-card-state{text-align:right}
+.data-status.review{background:#eef0e5;color:#5d6123}
+.status-group-note{margin:0 24px 20px;padding:12px 14px;border-radius:12px;background:#f5efe2;color:#76591a;font-size:12px;line-height:1.45}
+@media(max-width:760px){
+ .status-group-head{align-items:start;display:block}
+ .status-group-summary{text-align:left;margin-top:14px}
+ .status-card{grid-template-columns:1fr auto;gap:8px 14px}
+ .status-card-main{grid-column:1/2}
+ .status-card-number{grid-column:2/3;grid-row:1/2}
+ .status-card-state{grid-column:1/3;text-align:left}
+}
+.data-qa{display:inline-flex;margin-top:6px;padding:3px 7px;border-radius:999px;background:#f4eee1;color:#7a5b17;font-size:10px;font-weight:800;white-space:nowrap}
+.status-card-state{display:flex;flex-direction:column;align-items:flex-end}
+@media(max-width:760px){.status-card-state{align-items:flex-start}}
+
+
+/* v2.7.0 — smlouvy organizací a městských firem */
+.finance-link-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.entity-overview-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;margin:24px 0 12px}
+.entity-overview-stats>div{padding:20px 22px;border-right:1px solid var(--line);display:flex;flex-direction:column;gap:8px;min-height:128px;justify-content:space-between}
+.entity-overview-stats>div:last-child{border-right:0}.entity-overview-stats small{text-transform:uppercase;letter-spacing:.08em;font-size:10px;font-weight:800;color:var(--muted)}.entity-overview-stats strong{font:700 clamp(25px,2.4vw,38px)/1 Space Grotesk;letter-spacing:-.04em}.entity-overview-stats span{font-size:11px;color:var(--muted)}
+.entity-toolbar{grid-template-columns:minmax(260px,2fr) 1fr 1fr;margin-top:28px}.entity-contract-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:12px}.entity-contract-card{display:flex;flex-direction:column;gap:14px;padding:20px 22px;background:#fff;border:1px solid var(--line);border-radius:16px;text-decoration:none;color:inherit;transition:transform .15s ease,box-shadow .15s ease}.entity-contract-card:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(0,0,0,.06)}.entity-card-top{display:flex;justify-content:space-between;gap:18px}.entity-card-top small{text-transform:uppercase;letter-spacing:.07em;font-size:10px;font-weight:800;color:var(--muted)}.entity-card-top h3{font-size:18px;line-height:1.2;margin:5px 0 0}.entity-arrow{font-size:22px;color:var(--muted)}.entity-contract-card code{font-size:11px;color:var(--muted)}.entity-card-stats{display:grid;grid-template-columns:92px 92px minmax(0,1fr);gap:12px;padding-top:14px;border-top:1px solid var(--line)}.entity-card-stats div{display:flex;flex-direction:column;gap:3px}.entity-card-stats strong{font:700 16px/1.2 Space Grotesk}.entity-card-stats span,.entity-card-foot{font-size:10px;color:var(--muted)}.entity-card-foot{margin-top:auto}.back-link{display:inline-block;margin:4px 0 18px;text-decoration:none;font-weight:700;font-size:12px}.entity-detail-head{margin-top:0}.entity-money-dashboard{grid-template-columns:repeat(4,minmax(0,1fr))}.date-stat{font-size:clamp(21px,2.2vw,32px)!important}
+@media(max-width:900px){.entity-contract-grid{grid-template-columns:1fr}.entity-overview-stats{grid-template-columns:1fr 1fr}.entity-overview-stats>div{border-bottom:1px solid var(--line)}.entity-overview-stats>div:nth-child(2){border-right:0}.entity-overview-stats>div:last-child{grid-column:1/-1;border-bottom:0}.entity-money-dashboard{grid-template-columns:1fr 1fr}}
+@media(max-width:650px){.finance-link-grid{grid-template-columns:1fr}.entity-toolbar{grid-template-columns:1fr}.entity-overview-stats{grid-template-columns:1fr}.entity-overview-stats>div{border-right:0!important;grid-column:auto!important}.entity-card-stats{grid-template-columns:1fr 1fr}.entity-card-stats div:last-child{grid-column:1/-1}.entity-money-dashboard{grid-template-columns:1fr}}
+
+/* v2.7.1 — UI polish and stable public copy */
+.home-stats .stat strong{font-size:clamp(28px,3vw,40px);white-space:nowrap;letter-spacing:-.04em}
+.home-stats .stat span{font-size:14px;line-height:1.35;max-width:230px}
+.section-head h2{line-height:1.02}
+.home-stats + .section .section-head h2{line-height:.94}
+.registry-home-links{margin-top:16px;border-top:1px solid var(--line);padding-top:4px}
+.registry-home-links .more{margin-top:10px;font-size:13px;line-height:1.3}
+.registry-home-card{min-height:230px}
+.status-group-summary span{font-size:13px;color:var(--muted)}
+@media(max-width:1100px){.home-stats .stat strong{font-size:30px}.actions .btn{font-size:13px}}
+
+/* v2.7.2: homepage stats 3 × 3 */
+.home-stats{grid-template-columns:repeat(3,1fr)!important}
+.home-stats .stat{min-height:122px;display:flex;flex-direction:column;justify-content:flex-start}
+.home-stats .stat:nth-child(3n){border-right:0!important}
+.home-stats .stat:nth-child(4n){border-right:1px solid var(--line)!important}
+.home-stats .stat:nth-child(n+7){border-bottom:0!important}
+.home-stats .stat:nth-child(7),.home-stats .stat:nth-child(8),.home-stats .stat:nth-child(9){border-bottom:0!important}
+@media(max-width:850px){
+ .home-stats{grid-template-columns:1fr 1fr!important}
+ .home-stats .stat{border-right:1px solid var(--line)!important;border-bottom:1px solid var(--line)!important}
+ .home-stats .stat:nth-child(2n){border-right:0!important}
+ .home-stats .stat:nth-child(3n){border-right:1px solid var(--line)!important}
+ .home-stats .stat:nth-child(8){border-bottom:1px solid var(--line)!important}
+ .home-stats .stat:nth-child(9){border-bottom:0!important;border-right:0!important}
+}
+
+/* v2.7.3 — čisté 3×3 homepage statistiky a sjednocené prázdné stavy */
+.home-stats{
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+}
+.home-stats::after{display:none!important;content:none!important}
+.home-stats .stat{
+  border-right:1px solid var(--line)!important;
+  border-bottom:1px solid var(--line)!important;
+}
+.home-stats .stat:nth-child(3n){border-right:0!important}
+.home-stats .stat:nth-child(n+7){border-bottom:0!important}
+.home-stats .stat span{max-width:none!important}
+.missing-data-notice{margin-top:24px}
+@media(max-width:850px){
+  .home-stats{grid-template-columns:1fr 1fr!important}
+  .home-stats .stat,.home-stats .stat:nth-child(3n){border-right:1px solid var(--line)!important;border-bottom:1px solid var(--line)!important}
+  .home-stats .stat:nth-child(2n){border-right:0!important}
+  .home-stats .stat:nth-child(n+7){border-bottom:1px solid var(--line)!important}
+  .home-stats .stat:last-child{border-right:0!important;border-bottom:0!important}
+}
+@media(max-width:560px){
+  .home-stats{grid-template-columns:1fr!important}
+  .home-stats .stat{border-right:0!important;border-bottom:1px solid var(--line)!important}
+  .home-stats .stat:last-child{border-bottom:0!important}
+}
+
+/* v2.7.4 — desktop 3×3 separators: override legacy nth-child(n+5) rule */
+@media(min-width:851px){
+  .home-stats .stat:nth-child(-n+6){border-bottom:1px solid var(--line)!important}
+  .home-stats .stat:nth-child(n+7){border-bottom:0!important}
+}
+
+/* v2.8 — Usnesení + hlasování, stránkování, Sčítání 2021 */
+.decision-tabs{display:flex;gap:8px;margin:0 0 22px;border-bottom:1px solid var(--line,#ddd);padding-bottom:10px}
+.decision-tabs button{appearance:none;border:1px solid var(--line,#d9d9d4);background:transparent;border-radius:999px;padding:9px 14px;font:inherit;font-weight:700;cursor:pointer}
+.decision-tabs button.active{background:#111;color:#fff;border-color:#111}
+.census-home-strip{margin:22px 0 0;padding:22px 26px;border:1px solid var(--line,#d9d9d4);border-radius:18px;display:flex;align-items:center;justify-content:space-between;gap:24px;text-decoration:none;color:inherit;background:rgba(255,255,255,.45);position:relative;z-index:2;cursor:pointer}
+.census-home-strip>div{display:grid;gap:4px}.census-home-strip strong{font-size:clamp(24px,3vw,38px);letter-spacing:-.035em}.census-home-strip span{color:var(--muted,#6f706b)}.census-home-strip>b{white-space:nowrap}
+.census-dashboard{margin-top:24px}
+.census-bars{display:grid;gap:18px;max-width:900px}.census-bar-row{display:grid;grid-template-columns:minmax(160px,220px) 1fr;gap:20px;align-items:center}.census-bar-row>div:first-child{display:flex;justify-content:space-between;gap:12px}.census-bar-row span{color:var(--muted,#6f706b);font-size:14px}.census-bar-track{height:12px;border-radius:999px;background:#e9e9e5;overflow:hidden}.census-bar-track i{display:block;height:100%;background:#111;border-radius:inherit}
+.census-housing-grid .card{display:block}.census-kpi-list{display:grid;gap:12px;margin-top:18px}.census-kpi-list span{display:block;padding-top:12px;border-top:1px solid var(--line,#deded9)}.census-kpi-list b{font-size:20px;margin-right:6px}
+@media(max-width:720px){.decision-tabs{overflow:auto}.census-home-strip{align-items:flex-start;flex-direction:column}.census-bar-row{grid-template-columns:1fr;gap:8px}.census-bar-row>div:first-child{justify-content:flex-start;gap:14px}}
+
+/* v2.8.1: usnesení + hlasování v jednom feedu */
+.resolution-with-vote{align-items:start}.vote-inline{margin-top:16px;padding-top:14px;border-top:1px solid var(--line,#ddd)}
+.vote-inline-head{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:10px;font-size:13px}
+.vote-inline-head a{color:inherit;text-decoration:none;font-weight:700}.muted-vote{color:var(--muted,#6d6d68);font-size:13px}
+.individual-votes{margin-top:12px;border-top:1px dashed var(--line,#ddd);padding-top:10px}.individual-votes summary{cursor:pointer;font-weight:750;font-size:13px}
+.individual-vote-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:12px}.individual-vote-grid>div{padding:12px;border:1px solid var(--line,#ddd);border-radius:10px}.individual-vote-grid p{margin:6px 0 0;font-size:13px;line-height:1.45}
+.compact-notice{margin:0 0 18px}
+.census-split>div{min-width:0}.census-split h3{margin:0 0 14px}.census-split .census-bar-row{grid-template-columns:minmax(180px,1fr) 1.2fr}
+@media(max-width:720px){.individual-vote-grid{grid-template-columns:1fr}.census-split .census-bar-row{grid-template-columns:1fr}}
+
+/* v2.8.2 — datové zdroje */
+.status-group-head .kicker{color:var(--muted);letter-spacing:.11em}
+.status-group-head h3{font-size:clamp(24px,3vw,34px);letter-spacing:-.025em}
+
+/* v2.8.3 – Sčítání + datové zdroje polish */
+.census-home-strip{background:#fff!important}
+.status-group-head .kicker{font-size:11px;letter-spacing:.1em;color:var(--muted);font-weight:800;text-transform:uppercase}
+.status-group-head h3{font-size:clamp(30px,3.3vw,44px);line-height:1.02;letter-spacing:-.035em;margin:4px 0 0}
+.status-card-number{white-space:nowrap}
+.status-card-number-text{font-size:17px;line-height:1.15;white-space:nowrap}
+@media(max-width:900px){.status-card-number-text{font-size:15px}}
+
+/* v2.8.4 — Jak to funguje: kompaktnější názvy institucí */
+.status-group-head h3{font-size:clamp(24px,2.2vw,32px)!important;line-height:1.08!important;letter-spacing:-.025em!important}
+
+/* v2.8.5 — Sčítání 2021: přehlednější témata a karty */
+.census-method{margin-top:12px;margin-bottom:8px}
+.census-topic-card{background:#fff;border:1px solid var(--line,#d9d9d4);border-radius:16px;padding:22px 24px;min-width:0}
+.census-topic-card h3{margin:0 0 16px}
+.census-wide-card{max-width:980px}
+.census-wide-card .census-bars{max-width:none}
+.census-age-grid{gap:22px}
+.census-age-grid .census-topic-card{height:100%}
+.census-age-grid .census-bars{gap:15px}
+.census-housing-grid{gap:22px}
+.census-housing-grid .card{border:1px solid var(--line,#d9d9d4);border-radius:16px;padding:22px 24px;background:#fff}
+@media(max-width:720px){.census-topic-card,.census-housing-grid .card{padding:18px}.census-age-grid,.census-housing-grid{gap:14px}}
+/* v2.9 — školy a ostatní organizace */
+.school-summary,.org-split-summary{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);border-radius:18px;background:var(--card);overflow:hidden;margin:24px 0 40px}.org-split-summary{grid-template-columns:repeat(2,1fr)}.school-summary>div,.org-split-summary>div{padding:24px 28px;border-right:1px solid var(--line)}.school-summary>div:last-child,.org-split-summary>div:last-child{border-right:0}.school-summary strong,.org-split-summary strong{display:block;font-size:32px;line-height:1;margin-bottom:8px}.school-summary span,.org-split-summary span{color:var(--muted);font-size:14px}.school-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.school-card{border:1px solid var(--line);border-radius:18px;background:var(--card);padding:24px;min-width:0}.school-card-head{display:flex;justify-content:space-between;gap:18px;align-items:flex-start}.school-card-head small,.school-director small{display:block;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;font-size:11px;font-weight:700}.school-card h3{font-size:20px;line-height:1.25;margin:5px 0 0}.school-card-head a{white-space:nowrap}.school-address,.school-data-note{color:var(--muted);font-size:14px}.school-director{margin:18px 0}.school-director b{display:block;margin-top:4px}.school-metrics{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);margin-top:20px;padding-top:18px;gap:12px}.school-metric strong{display:block;font-size:20px}.school-metric span{font-size:12px;color:var(--muted)}
+@media(max-width:800px){.school-grid{grid-template-columns:1fr}.school-summary{grid-template-columns:1fr}.school-summary>div,.org-split-summary>div{border-right:0;border-bottom:1px solid var(--line)}.school-summary>div:last-child,.org-split-summary>div:last-child{border-bottom:0}.school-metrics{grid-template-columns:repeat(2,1fr)}}
+
+.school-contacts{display:flex;flex-wrap:wrap;gap:6px 14px;margin:-2px 0 12px;font-size:13px;color:var(--muted)}
+.school-contacts a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+.school-preschool{margin-top:12px;padding-top:12px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;align-items:baseline}
+.school-preschool small{color:var(--muted)}
+.school-preschool b{font-size:13px}
+
+/* v2.9.3 — souhrnné boxy škol a organizací */
+.single-summary{display:flex;align-items:baseline;gap:18px;border:1px solid var(--line);border-radius:18px;background:var(--card);padding:26px 28px;margin:24px 0 40px}.single-summary strong{font-size:42px;line-height:1}.single-summary span{color:var(--muted);font-size:16px;line-height:1.45}.single-summary span b{color:var(--text)}
+.school-identity{display:flex;gap:28px;flex-wrap:wrap;margin:16px 0 6px}.school-identity span{display:block}.school-identity small{display:block;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;font-size:10px;font-weight:700;margin-bottom:3px}.school-identity b,.school-identity code{font-size:13px}
+@media(max-width:700px){.single-summary{align-items:flex-start;flex-direction:column;gap:8px}.single-summary strong{font-size:36px}}
+/* v2.10.0 — news, organization cards, finance hierarchy */
+.school-web{display:grid;gap:4px;margin:16px 0 2px}.school-web small,.org-leadership>small{display:block;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;font-size:11px;font-weight:700}.school-web a{font-weight:700;overflow-wrap:anywhere}.news-home-strip{margin:22px 0 0;padding:24px 26px;border:1px solid var(--line);border-radius:18px;background:#fff}.news-home-head{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:18px}.news-home-head strong{font-size:clamp(24px,3vw,38px);letter-spacing:-.035em}.news-home-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}.news-home-grid a{display:grid;gap:7px;padding:18px 20px 2px 0;text-decoration:none;color:inherit}.news-home-grid a+a{border-left:1px solid var(--line);padding-left:20px}.news-home-grid small,.news-card small{color:var(--muted)}.news-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.news-card,.org-card{border:1px solid var(--line);border-radius:18px;background:var(--card);padding:24px}.news-card h3,.org-card h3{font-size:20px;line-height:1.3;margin:7px 0 10px}.news-card p{color:var(--muted);line-height:1.55}.org-card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.org-card-head{display:flex;justify-content:space-between;gap:18px;align-items:flex-start}.org-card-head small{color:var(--muted);text-transform:uppercase;letter-spacing:.06em;font-size:11px;font-weight:700}.org-leadership{margin:18px 0;padding-top:16px;border-top:1px solid var(--line)}.org-leadership>small{margin-bottom:7px}.org-web{display:inline-block;margin-top:8px;font-weight:700;overflow-wrap:anywhere}.budget-hero{margin:24px 0 44px;border:1px solid var(--line);border-radius:20px;background:var(--card);padding:32px}.budget-hero .money{font-size:clamp(44px,7vw,76px);margin:8px 0 14px}.budget-hero h2{max-width:800px;font-size:22px}.budget-hero p{color:var(--muted)}.finance-contract-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+@media(max-width:800px){.news-home-grid,.news-list,.org-card-grid,.finance-contract-grid{grid-template-columns:1fr}.news-home-grid a+a{border-left:0;border-top:1px solid var(--line);padding-left:0}.news-home-head{align-items:flex-start;flex-direction:column}}
+
+/* v2.10.1 */
+.school-director .identity-value,.school-web a,.identity-value{font-weight:400}.school-director .identity-value{display:block;margin-top:4px}.ownership-inline{display:block;margin-top:8px;color:var(--muted);font-size:12px;font-weight:600}.org-registry{display:inline-block;margin:16px 0 2px;font-weight:700}.org-card-head{display:block}.org-card .school-web{margin-top:16px}.news-list-linear{grid-template-columns:1fr}.news-row{display:grid;grid-template-columns:170px minmax(0,1fr) auto;gap:22px;align-items:start}.news-row h3{margin-top:0}.news-meta{display:grid;gap:7px}.news-meta span{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}.news-row>a{white-space:nowrap}.news-toolbar{margin-bottom:10px}@media(max-width:800px){.news-row{grid-template-columns:1fr}.news-row>a{white-space:normal}}
+/* v2.10.3 — sjednocení karet škol, organizací a městských firem */
+.org-card .school-identity .identity-value{font-size:13px;font-weight:400}
+.org-card .company-bodies>div>small{display:block;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;font-size:11px;font-weight:700;margin-bottom:7px}
+.org-card .company-bodies .person-line>span:first-child{font-weight:400}
+.org-card .ownership-badge{display:inline-block;margin-top:9px;padding:5px 9px;border:1px solid var(--ink);border-radius:7px;background:transparent;color:var(--ink);font-size:11px;font-weight:700}
+.org-card .org-registry{margin-top:15px}
+.org-card h3{max-width:31ch;overflow-wrap:normal;word-break:normal;text-wrap:balance}
+
+/* v2.10.4: sjednocení právní formy + plný ownership badge */
+.school-identity .identity-value{font-size:13px!important;line-height:1.35;font-weight:400!important}
+.org-card .ownership-badge{display:inline-block;margin-top:9px;padding:5px 9px;border:1px solid var(--ink);border-radius:7px;background:var(--ink);color:#fff;font-size:11px;font-weight:700}
+
+/* v2.10.5: identita školy/organizace — stejné písmo, velikost a řádkování */
+.school-identity{align-items:flex-start}
+.school-identity>span{display:flex;flex-direction:column;align-items:flex-start}
+.school-identity .identity-value{display:block;font-family:Inter,system-ui,sans-serif!important;font-size:13px!important;font-weight:400!important;line-height:1.5!important;margin:0!important;padding:0!important}
+.school-identity small{line-height:1.5}
+
+/* v2.11.0: dva jednoduché grafy schváleného rozpočtu 2026 */
+.budget-chart-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.budget-chart-card{border:1px solid var(--line);border-radius:18px;background:var(--card);padding:24px}.budget-chart-card h3{font-size:24px;margin:0 0 3px}.budget-chart-card>p{color:var(--muted);margin:0 0 22px}.budget-bars{display:grid;gap:15px}.budget-bar-row{display:grid;gap:6px}.budget-bar-label{display:flex;justify-content:space-between;gap:16px;align-items:baseline;font-size:13px}.budget-bar-label b{font-weight:650}.budget-bar-label span{color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}.budget-bar-track{height:9px;border-radius:999px;background:var(--soft);overflow:hidden}.budget-bar-track i{display:block;height:100%;border-radius:inherit;background:var(--ink)}.budget-source-note{margin-top:14px;color:var(--muted);font-size:13px;line-height:1.55}.budget-source-note a{font-weight:700}.budget-chart-card:nth-child(2) .budget-bars{gap:11px}
+@media(max-width:800px){.budget-chart-grid{grid-template-columns:1fr}.budget-bar-label{align-items:flex-start}.budget-bar-label b{max-width:65%}}
+
+/* v2.11.1: odkaz na schválený rozpočet v hero boxu */
+.budget-approved-link{display:inline-block;margin-top:10px;font-size:12px;font-weight:700;letter-spacing:.04em;color:var(--ink);text-decoration:none}
+.budget-approved-link:hover{text-decoration:underline}
+
+/* v2.11.12 — finální typografie homepage + členění datových zdrojů */
+.home-principle h2{line-height:.94}
+.sources-intro{padding:54px 0 26px;border-bottom:1px solid var(--line);margin-bottom:12px}
+.sources-intro h2{font-size:clamp(32px,4vw,54px);line-height:1.02;margin:0}
+.sources-intro p{max-width:680px;color:var(--muted);margin:12px 0 0}
+@media(max-width:850px){.sources-intro{padding-top:42px}}
+
+/* v2.11.13: final polishing */
+.status-overview .section-head{align-items:flex-start}
+.status-overview .section-head p{margin-top:8px}
+.sources-intro{display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:start}
+.sources-intro p{margin:8px 0 0;max-width:680px}
+footer{gap:32px}
+.footer-col{display:flex;flex-direction:column;gap:5px;max-width:50%}
+.footer-right{align-items:flex-end;text-align:right}
+.footer-right .footer-links{justify-content:flex-end}
+.footer-right>span a{font-weight:650;color:var(--ink)}
+@media(max-width:850px){.sources-intro{grid-template-columns:1fr;gap:8px}.sources-intro p{margin-top:0}.footer-col{max-width:none}.footer-right{align-items:flex-start;text-align:left}.footer-right .footer-links{justify-content:flex-start}}
+
+/* v2.11.14 — sjednocení spodní linie dvousloupcových nadpisů */
+.status-overview .section-head,
+.sources-intro,
+.source-group-head{align-items:end}
+.status-overview .section-head p,
+.sources-intro p,
+.source-group-head p{margin-top:0;margin-bottom:0}
+.home-principle .source-inline{font-size:15px;font-weight:700;line-height:1.4}
+@media(max-width:850px){
+  .status-overview .section-head,
+  .sources-intro,
+  .source-group-head{align-items:start}
+}
+
+
+/* v2.11.15 — optické zarovnání dvousloupcových hlaviček */
+@media(min-width:851px){
+  .source-group-head p{position:relative;top:-7px}
+  .sources-intro p{position:relative;top:-7px}
+  .status-overview .section-head p{position:relative;top:-7px}
+  .home-context-section .section-head p{position:relative;top:-7px;margin-top:0;margin-bottom:0}
+}
+
+/* v2.11.16 — systémové zarovnání poslední základní linie dvousloupcových bloků */
+@media(min-width:851px){
+  .status-overview .section-head,
+  .sources-intro,
+  .source-group-head,
+  .home-context-section .section-head{
+    align-items:last baseline;
+  }
+  .status-overview .section-head p,
+  .sources-intro p,
+  .source-group-head p,
+  .home-context-section .section-head p{
+    position:static;
+    top:auto;
+    margin-top:0;
+    margin-bottom:0;
+  }
+}

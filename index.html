@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Praha 8 v přehledech — veřejná data městské části přehledně, dohledatelně a s odkazy na zdroje." />
+  <title>Praha 8 v přehledech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#/">Praha 8 <span>v přehledech</span></a>
+    <nav class="nav" aria-label="Hlavní navigace">
+      <button class="nav-group" data-menu="radnice">Usnesení</button>
+      <button class="nav-group" data-menu="penize">Registr smluv</button>
+      <button class="nav-group" data-menu="lide">Volené orgány a městské firmy</button>
+      <a href="#/zdroje">Datové zdroje</a>
+    </nav>
+    <button class="search-open" id="searchOpen" aria-label="Hledat">⌕</button>
+  </header>
+
+  <div class="mega" id="mega" hidden></div>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer>
+    <div class="footer-col"><strong>Praha 8 v přehledech</strong><span>Veřejná data. Čitelně.</span></div>
+    <div class="footer-col footer-right"><div class="footer-links"><a href="#/zdroje">Zdroje a metodika</a><a href="https://www.praha8.cz" target="_blank" rel="noreferrer">Oficiální web MČ Praha 8 ↗</a></div><span>Projekt ve svém volném čase vytvořil <a href="https://www.sterba.eu" target="_blank" rel="noreferrer">Martin Štěrba</a> v roce 2026.</span></div>
+  </footer>
+
+  <dialog id="searchDialog">
+    <form method="dialog" class="search-shell">
+      <div class="search-head"><input id="globalSearch" autocomplete="off" placeholder="Hledat usnesení, jméno, firmu, téma…" autofocus><button aria-label="Zavřít">×</button></div>
+      <div id="searchResults" class="search-results"></div>
+    </form>
+  </dialog>
+
+  <script type="module" src="app.js?v=2.8.3"></script>
+</body>
+</html>

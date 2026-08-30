@@ -1,0 +1,68 @@
+{
+  "year": 2026,
+  "approved": "2026-02-18",
+  "unit": "tis. Kč",
+  "totalIncome": 1497008.3,
+  "totalExpenses": 1497008.3,
+  "source": "https://m.praha8.cz/file/CUK/Rozpocet-2026-priloha-c-2-usneseni.pdf",
+  "income": [
+    {
+      "label": "Daňové příjmy",
+      "value": 248200.0
+    },
+    {
+      "label": "Nedaňové příjmy",
+      "value": 81100.0
+    },
+    {
+      "label": "Kapitálové příjmy",
+      "value": 8000.0
+    },
+    {
+      "label": "Přijaté dotace",
+      "value": 1159708.3
+    }
+  ],
+  "expenses": [
+    {
+      "label": "01 Rozvoj obce",
+      "value": 40949.0
+    },
+    {
+      "label": "02 Městská infrastruktura",
+      "value": 122404.0
+    },
+    {
+      "label": "03 Doprava",
+      "value": 34040.0
+    },
+    {
+      "label": "04 Školství, mládež a sport",
+      "value": 557021.0
+    },
+    {
+      "label": "05 Zdravotnictví a sociální oblast",
+      "value": 121276.0
+    },
+    {
+      "label": "06 Kultura a cestovní ruch",
+      "value": 37455.0
+    },
+    {
+      "label": "07 Bezpečnost",
+      "value": 3030.0
+    },
+    {
+      "label": "08 Hospodářství",
+      "value": 92700.0
+    },
+    {
+      "label": "09 Vnitřní správa",
+      "value": 480254.0
+    },
+    {
+      "label": "10 Pokladní správa",
+      "value": 7879.3
+    }
+  ]
+}

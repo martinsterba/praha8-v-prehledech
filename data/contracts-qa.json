@@ -1,0 +1,24 @@
+{
+  "generatedAt": "2026-08-23T10:10:44.377Z",
+  "scope": "",
+  "total": 0,
+  "referencePublicSearchCount": null,
+  "validationStatus": "unknown",
+  "bySignedMonth": {},
+  "uniqueVersionIds": 0,
+  "duplicateVersionIds": [],
+  "repeatedContractIds": [],
+  "withKnownValue": 0,
+  "withoutKnownValue": 0,
+  "knownValueCzk": 0,
+  "uniqueCounterparties": null,
+  "missingFields": {
+    "signed": 0,
+    "subject": 0,
+    "counterparty": 0,
+    "url": 0,
+    "publisherIco": 0
+  },
+  "wrongPublisherIco": 0,
+  "sample": []
+}

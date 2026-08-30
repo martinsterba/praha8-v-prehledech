@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "asOf": "2025-09-30",
+  "schoolYear": "2025/2026",
+  "sources": {
+    "primary": "https://www.praha8.cz/file/LgK/Pocty-trid-a-zaku-ZS-SO-P8-ke-dni-30-09-2025.pdf",
+    "preschool": "https://www.praha8.cz/file/JfK/Pocty-deti-MS-MC-Praha-8-ke-dni-30-09-2025.pdf"
+  },
+  "primary": [
+    {"match":"bedrichovska 1","classes":26,"pupils":566},
+    {"match":"buresova 14","classes":33,"pupils":832},
+    {"match":"dolakova 1","classes":18,"pupils":357},
+    {"match":"glowackeho 6","classes":33,"pupils":749},
+    {"match":"hlivicka 1","classes":23,"pupils":528},
+    {"match":"hovorcovicka 11","classes":23,"pupils":601},
+    {"match":"libcicka 10","classes":19,"pupils":390},
+    {"match":"lyckovo namesti 6","classes":36,"pupils":860},
+    {"match":"na sutce 28","classes":22,"pupils":458},
+    {"match":"palmovka 8","classes":15,"pupils":276},
+    {"match":"svidnicka 1a","classes":27,"pupils":532},
+    {"match":"u skolske zahrady 4","classes":18,"pupils":393},
+    {"match":"za invalidovnou 3","classes":16,"pupils":315},
+    {"match":"zenklova 52","classes":42,"pupils":968},
+    {"match":"zernosecka 3","classes":25,"pupils":607}
+  ],
+  "preschool": [
+    {"match":"bojasova 1","preschoolClasses":8,"preschoolChildren":155},
+    {"match":"chabarovicka 2","preschoolClasses":6,"preschoolChildren":124},
+    {"match":"klicanska 20","preschoolClasses":4,"preschoolChildren":100},
+    {"match":"korycanska 14","preschoolClasses":7,"preschoolChildren":126},
+    {"match":"kotlaska 3","preschoolClasses":4,"preschoolChildren":94},
+    {"match":"krynicka 2","preschoolClasses":8,"preschoolChildren":171},
+    {"match":"lesenska 2","preschoolClasses":4,"preschoolChildren":95},
+    {"match":"libcicka 6","preschoolClasses":7,"preschoolChildren":154},
+    {"match":"na korabe 2","preschoolClasses":5,"preschoolChildren":118},
+    {"match":"na pesinach 13","preschoolClasses":4,"preschoolChildren":92},
+    {"match":"na presypu 4","preschoolClasses":4,"preschoolChildren":100},
+    {"match":"poznanska 32","preschoolClasses":5,"preschoolChildren":120},
+    {"match":"resovska 8","preschoolClasses":5,"preschoolChildren":122},
+    {"match":"sokolovska 182","preschoolClasses":5,"preschoolChildren":119},
+    {"match":"simunkova 13","preschoolClasses":5,"preschoolChildren":120},
+    {"match":"siskova 2","preschoolClasses":8,"preschoolChildren":165},
+    {"match":"stepnicna 1","preschoolClasses":4,"preschoolChildren":96},
+    {"match":"u sluncove 10a","preschoolClasses":4,"preschoolChildren":95},
+    {"match":"bedrichovska 1","preschoolClasses":2,"preschoolChildren":43},
+    {"match":"dolakova 1","preschoolClasses":4,"preschoolChildren":86},
+    {"match":"hlivicka 1","preschoolClasses":4,"preschoolChildren":93},
+    {"match":"lyckovo namesti 6","preschoolClasses":6,"preschoolChildren":129},
+    {"match":"u skolske zahrady 4","preschoolClasses":2,"preschoolChildren":47},
+    {"match":"za invalidovnou 3","preschoolClasses":2,"preschoolChildren":48}
+  ]
+}
