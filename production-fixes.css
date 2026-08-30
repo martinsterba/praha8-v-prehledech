@@ -44,19 +44,30 @@
   border-bottom:0!important;
 }
 
-/* Čára jen mezi obsahovými částmi karty a opticky přesně uprostřed. */
+/* Jednotlivé obsahové části mají stejný vnitřní odstup jako karty škol a organizací.
+   Čára leží na skutečné hranici dvou bloků, takže má stejnou mezeru nad i pod sebou. */
+.body-chair,
+.body-members,
+.body-secretary{
+  margin:0!important;
+}
+.body-chair,
+.body-members{
+  padding-top:18px!important;
+  padding-bottom:18px!important;
+}
+.body-secretary{
+  padding-top:18px!important;
+}
 .body-chair + .body-members,
-.body-members + .body-members{
-  border-top:0!important;
-  padding-top:0!important;
-  margin-top:0!important;
+.body-members + .body-members,
+.body-members + .body-secretary,
+.body-chair + .body-secretary{
+  border-top:1px solid var(--line,#dedede)!important;
 }
 .body-chair + .body-members::before,
 .body-members + .body-members::before{
-  content:"";
-  display:block;
-  border-top:1px solid var(--line,#dedede);
-  margin:16px 0;
+  content:none!important;
 }
 
 /* Školy – informační box blíž k souhrnu a text ve dvou řádcích. */
