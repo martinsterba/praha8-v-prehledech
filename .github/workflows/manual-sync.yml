@@ -10,6 +10,7 @@ on:
         options:
           - volby
           - rozpocet
+          - Sčítání 2021
 
 permissions:
   contents: write
@@ -62,6 +63,9 @@ jobs:
               ;;
             rozpocet)
               npm run sync:budget
+              ;;
+            "Sčítání 2021")
+              npm run sync:census
               ;;
             *)
               echo "Neznámý dataset: ${{ inputs.dataset }}"
