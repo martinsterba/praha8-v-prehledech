@@ -43,12 +43,20 @@
   border-top:0!important;
   border-bottom:0!important;
 }
-/* Čára jen mezi obsahovými částmi karty. */
+
+/* Čára jen mezi obsahovými částmi karty a opticky přesně uprostřed. */
 .body-chair + .body-members,
 .body-members + .body-members{
-  border-top:1px solid var(--line,#dedede)!important;
-  padding-top:14px!important;
-  margin-top:14px!important;
+  border-top:0!important;
+  padding-top:0!important;
+  margin-top:0!important;
+}
+.body-chair + .body-members::before,
+.body-members + .body-members::before{
+  content:"";
+  display:block;
+  border-top:1px solid var(--line,#dedede);
+  margin:16px 0;
 }
 
 /* Školy – informační box blíž k souhrnu a text ve dvou řádcích. */
