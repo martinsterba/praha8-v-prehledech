@@ -20,6 +20,8 @@ jobs:
     steps:
       - name: "Načíst repozitář"
         uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
       - name: "Nastavit Node.js"
         uses: actions/setup-node@v5
         with:
@@ -65,11 +67,28 @@ jobs:
       - name: "Uložit aktualizovaná data"
         if: steps.changes.outputs.changed == 'true'
         run: |
+          set -euo pipefail
           git config user.name "Praha 8 v přehledech – automat"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/
           git commit -m "Denní aktualizace dat"
-          git push
+
+          # Mezi startem synchronizace a uložením může do main přibýt jiný commit
+          # (např. ruční úprava webu). Před push proto vždy integrujeme aktuální main.
+          # Pokud někdo zapíše do main přesně mezi pull a push, zkusíme to znovu.
+          for attempt in 1 2 3; do
+            echo "Uložení do main: pokus ${attempt}/3"
+            git pull --rebase origin main
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            if [ "$attempt" -lt 3 ]; then
+              echo "Main se mezitím změnil, za 5 s opakuji rebase a push."
+              sleep 5
+            fi
+          done
+          echo "Data se nepodařilo bezpečně uložit ani na třetí pokus."
+          exit 1
       - name: "Souhrn"
         if: always()
         run: |
