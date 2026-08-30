@@ -26,7 +26,7 @@
   margin-bottom:8px;
 }
 
-/* Komise a výbory – jednodušší seznam a stejné zacházení se jmény jako u zastupitelů. */
+/* Komise a výbory */
 .body-card .person-line>b{font-weight:400!important}
 .body-chair{
   border:0!important;
@@ -36,6 +36,20 @@
   padding-right:0!important;
 }
 .body-secretary>span{display:block}
+
+/* Bez čar mezi jednotlivými lidmi. */
+.body-members li,
+.body-members li+li{
+  border-top:0!important;
+  border-bottom:0!important;
+}
+/* Čára jen mezi obsahovými částmi karty. */
+.body-chair + .body-members,
+.body-members + .body-members{
+  border-top:1px solid var(--line,#dedede)!important;
+  padding-top:14px!important;
+  margin-top:14px!important;
+}
 
 /* Školy – informační box blíž k souhrnu a text ve dvou řádcích. */
 .school-source-note.production-data-note{margin-top:-6px}
