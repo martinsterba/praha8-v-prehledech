@@ -7,7 +7,7 @@ const root=resolve(import.meta.dirname,'..');
 const DATA=resolve(root,'data','hlasovani.json');
 const SOURCES=resolve(root,'data','hlasovani-zdroje.json');
 const PAGE='https://www.praha8.cz/Prehledy-hlasovani.html';
-const UA='Praha8-v-prehledech/3.0.10 (+public-data-indexer; public sources only)';
+const UA='Praha8-v-prehledech/3.0.11 (+public-data-indexer; public sources only)';
 const BOOTSTRAP=process.argv.includes('--bootstrap');
 const PLAN=process.argv.includes('--plan');
 const FIRST=process.argv.includes('--first');
@@ -20,21 +20,24 @@ async function readJson(path,fallback){try{return JSON.parse(await readFile(path
 async function atomicJson(path,data){const tmp=`${path}.tmp`;await writeFile(tmp,JSON.stringify(data,null,2));await rename(tmp,path)}
 
 function findChrome(){
-  const candidates=[
-    '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
-    '/Applications/Google Chrome Canary.app/Contents/MacOS/Google Chrome Canary',
-    '/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge',
-    '/Applications/Chromium.app/Contents/MacOS/Chromium',
-    process.env.PUPPETEER_EXECUTABLE_PATH
-  ].filter(Boolean);
+  const candidates=['/Applications/Google Chrome.app/Contents/MacOS/Google Chrome','/Applications/Google Chrome Canary.app/Contents/MacOS/Google Chrome Canary','/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge','/Applications/Chromium.app/Contents/MacOS/Chromium',process.env.PUPPETEER_EXECUTABLE_PATH].filter(Boolean);
   const hit=candidates.find(existsSync);
   if(!hit)throw new Error('Nenašel jsem Chrome/Edge. Nainstalujte Chrome nebo nastavte PUPPETEER_EXECUTABLE_PATH.');
   return hit;
 }
 
-function fallbackExportBase(date=''){
-  const compact=String(date).replaceAll('-','');
-  return /^\d{8}$/.test(compact)?`https://praha8.cz/podklady_mc/ZMC${compact}audiohlasovani/export/html/`:'';
+function exportCandidates(date='',discovered=''){
+  const out=[];
+  if(discovered)out.push(discovered);
+  const m=String(date).match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if(m){
+    const [,y,mo,da]=m;
+    const modern=`${y}${mo}${da}`;
+    const legacy=`${y}${Number(mo)}${Number(da)}`;
+    out.push(`https://praha8.cz/podklady_mc/ZMC${modern}audiohlasovani/export/html/`);
+    out.push(`https://praha8.cz/podklady_mc/ZMC${legacy}audiohlasovani/export/html/`);
+  }
+  return [...new Set(out.filter(Boolean))];
 }
 
 function discoverSources(html){
@@ -54,24 +57,35 @@ function normalizeExportBase(url=''){
   return m?.[1]||'';
 }
 
-async function findExportBase(page,source){
+async function discoverExportBase(page,source){
   await page.goto(source.url,{waitUntil:'domcontentloaded',timeout:30000});
   await new Promise(r=>setTimeout(r,250));
-  const frameUrls=page.frames().map(f=>f.url());
-  for(const u of frameUrls){const base=normalizeExportBase(u);if(base)return base}
+  for(const u of page.frames().map(f=>f.url())){const base=normalizeExportBase(u);if(base)return base}
   const candidates=await page.evaluate(()=>{
     const vals=[];
-    for(const el of document.querySelectorAll('a,iframe,frame,object,embed')){
-      for(const a of ['href','src','data']){const v=el.getAttribute(a);if(v)vals.push(v)}
-    }
+    for(const el of document.querySelectorAll('a,iframe,frame,object,embed'))for(const a of ['href','src','data']){const v=el.getAttribute(a);if(v)vals.push(v)}
     const html=document.documentElement.innerHTML||'';
     for(const m of html.matchAll(/(?:https?:\/\/[^\s"'<>]+|\/[^\s"'<>]+)?podklady_mc\/[^\s"'<>]+?\/export\/html\/(?:index\.html)?/gi))vals.push(m[0]);
     return vals;
   });
-  for(const raw of candidates){
-    try{const base=normalizeExportBase(new URL(raw,source.url).href);if(base)return base}catch{}
+  for(const raw of candidates){try{const base=normalizeExportBase(new URL(raw,source.url).href);if(base)return base}catch{}}
+  return '';
+}
+
+async function baseWorks(page,base){
+  try{
+    const r=await page.goto(`${base}0001.html`,{waitUntil:'domcontentloaded',timeout:30000});
+    if((r?.status()||0)>=400)return false;
+    return await page.evaluate(()=>/Výsledek hlasování č\./i.test(document.body?.innerText||''));
+  }catch{return false}
+}
+
+async function findExportBase(discoveryPage,votePage,source){
+  const discovered=await discoverExportBase(discoveryPage,source);
+  for(const base of exportCandidates(source.date,discovered)){
+    if(await baseWorks(votePage,base))return base;
   }
-  return fallbackExportBase(source.date);
+  return '';
 }
 
 async function parseCurrentVote(page,url,source,exportBase){
@@ -90,19 +104,7 @@ async function parseCurrentVote(page,url,source,exportBase){
       const name=[...cells.slice(0,vi)].reverse().find(x=>/^[\p{L}.]+(?:\s+[\p{L}.]+)+$/u.test(x) && !/^\d+$/.test(x));
       if(name)votes.push({name,vote:cells[vi]});
     }
-    return {
-      titleLine,
-      number:head?Number(head[1]):null,
-      item:head?.[2]||'',
-      title:head?.[3]||'',
-      present:total('PŘÍTOMNÝCH'),
-      for:total('PRO'),
-      against:total('PROTI'),
-      abstained:total('ZDRŽELO SE'),
-      notVoting:total('NEHLASOVALO'),
-      absent:total('NEPŘÍTOMNÝCH'),
-      votes
-    };
+    return {titleLine,number:head?Number(head[1]):null,item:head?.[2]||'',title:head?.[3]||'',present:total('PŘÍTOMNÝCH'),for:total('PRO'),against:total('PROTI'),abstained:total('ZDRŽELO SE'),notVoting:total('NEHLASOVALO'),absent:total('NEPŘÍTOMNÝCH'),votes};
   });
   if(!data?.number)return null;
   const complete=[data.present,data.for,data.against,data.abstained,data.notVoting,data.absent].every(Number.isFinite);
@@ -111,8 +113,9 @@ async function parseCurrentVote(page,url,source,exportBase){
 }
 
 async function crawlSource(discoveryPage,votePage,source){
-  const exportBase=await findExportBase(discoveryPage,source);
-  if(!exportBase)throw new Error('nenalezen hlasovací export.');
+  const exportBase=await findExportBase(discoveryPage,votePage,source);
+  if(!exportBase)throw new Error('nenalezen funkční hlasovací export.');
+  console.log(`      zdroj: ${exportBase}`);
   const items=[];
   let misses=0;
   const MAX=250, STOP=5;
@@ -125,15 +128,13 @@ async function crawlSource(discoveryPage,votePage,source){
     if(status>=400)throw new Error(`${status} ${url}`);
     const x=await parseCurrentVote(votePage,url,source,exportBase);
     if(!x){misses++;if(items.length&&misses>=STOP)break;if(!items.length&&n>=STOP)break;continue}
-    misses=0;
-    items.push(x);
-    if(n===1)console.log(`      0001: ${x.present} přítomných · ${x.for} pro · ${x.against} proti · ${x.abstained} zdrželo · ${x.notVoting} nehlasovalo · ${x.votes.length} jmenovitých hlasů`);
-    if(n%25===0)console.log(`      prověřeno ${n} čísel · nalezeno ${items.length} hlasování…`);
+    misses=0;items.push(x);
+    console.log(`      #${x.number}${x.item?` · bod ${x.item}`:''} · PRO ${x.for} · PROTI ${x.against} · ZDRŽEL SE ${x.abstained} · NEHLASOVAL ${x.notVoting} · přítomných ${x.present} · jmenovitých ${x.votes.length}`);
   }
   return {items:[...new Map(items.map(x=>[`${x.date}|${x.number}`,x])).values()],exportBase};
 }
 
-console.log(`\nHLASOVÁNÍ ZMČ PRAHA 8 — ${BOOTSTRAP?'KOMPLETNÍ BOOTSTRAP':'INKREMENTÁLNÍ SYNC'} — v3.0.10`);
+console.log(`\nHLASOVÁNÍ ZMČ PRAHA 8 — ${BOOTSTRAP?'KOMPLETNÍ BOOTSTRAP':'INKREMENTÁLNÍ SYNC'} — v3.0.11`);
 console.log('─────────────────────────────────────────────────────────');
 let sources=discoverSources(await fetchText(PAGE));
 if(FIRST)sources=sources.slice(0,1);
@@ -157,12 +158,10 @@ try{
       const {items,exportBase}=await crawlSource(discoveryPage,votePage,s);
       if(!items.length)throw new Error('nenalezeno žádné hlasování.');
       fresh.push(...items); processed.push({...s,exportBase});
-      console.log(`      ✅ nalezeno ${items.length} hlasování.`);
+      console.log(`      ✅ ${items.length} hlasování · ${items.length} výsledků.`);
     }catch(e){console.log(`      ⚠ zasedání nebylo uloženo: ${e.message}`)}
   }
-} finally {
-  await browser.close();
-}
+} finally {await browser.close()}
 
 if(FIRST)process.exit(fresh.length?0:1);
 if(!fresh.length)throw new Error('Z žádného zasedání se nepodařilo načíst hlasování. Existující dataset nebyl přepsán.');
