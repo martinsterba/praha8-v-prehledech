@@ -2,7 +2,7 @@ import {writeFile,readFile,mkdir} from 'node:fs/promises';
 import {resolve} from 'node:path';
 
 const root=resolve(import.meta.dirname,'..');
-const UA='Praha8Prehledy/3.0.15 (+public-data-indexer; public sources only)';
+const UA='Praha8Prehledy/3.0.16 (+public-data-indexer; public sources only)';
 const FEEDS=[
   ['Aktuality z městské části','https://www.praha8.cz/rss/490'],
   ['Doprava','https://www.praha8.cz/rss/73567'],
@@ -14,8 +14,6 @@ const FEEDS=[
   ['Informace z úřadu','https://www.praha8.cz/rss/67326']
 ];
 
-// RSS na Praze 8 někdy neobsahuje všechny položky, které jsou už zveřejněné
-// v oficiálním přehledu. Proto nejdůležitější přehledy čteme souběžně s RSS.
 const LISTINGS=[
   ['Aktuality z městské části','https://www.praha8.cz/are_490?size=1'],
   ['Doprava','https://www.praha8.cz/Aktuality-z-dopravy.html?size=1'],
@@ -39,13 +37,11 @@ const parseDate=s=>{const d=new Date(s);return Number.isNaN(d.valueOf())?'':d.to
 const isoCz=s=>{const m=String(s||'').match(/(\d{1,2})\.\s*(\d{1,2})\.\s*(20\d{2})/);return m?`${m[3]}-${m[2].padStart(2,'0')}-${m[1].padStart(2,'0')}`:''};
 const absolute=(href,base)=>{try{return new URL(href,base).href}catch{return ''}};
 const canonicalUrl=url=>{try{const u=new URL(url);u.protocol='https:';u.hostname=u.hostname.replace(/^m\./i,'www.');u.hash='';u.search='';return u.href.replace(/\/$/,'')}catch{return String(url||'')}};
+const titleKey=title=>String(title||'').toLocaleLowerCase('cs-CZ').normalize('NFKC').replace(/[„“”"'’]/g,'').replace(/[^\p{L}\p{N}]+/gu,' ').replace(/\s+/g,' ').trim();
 const fetchText=async url=>{const r=await fetch(url,{headers:{'user-agent':UA,'accept':'text/html,application/rss+xml,application/xml,*/*'}});if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.text()};
 
 function parseListing(html,base,channel){
   const items=[];
-  // Na přehledech Prahy 8 je datum u položky krátce za odkazem na detail.
-  // Bereme jen odkazy na detailní HTML stránky a vyžadujeme datum v okolním bloku,
-  // čímž odfiltrujeme navigaci, stránkování i menu.
   for(const m of html.matchAll(/<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi)){
     const title=clean(m[2]);
     if(title.length<8 || title.length>220 || /^(další|předchozí|úvodní|občan|kontakty?|více|detail)$/i.test(title))continue;
@@ -90,16 +86,18 @@ cutoff.setHours(0,0,0,0);
 cutoff.setDate(cutoff.getDate()-6);
 const cutoffDate=cutoff.toISOString().slice(0,10);
 
-// Stejný článek může být v hlavním přehledu i tematické rubrice. Preferujeme
-// bohatší popis, ale jeden článek zobrazíme pouze jednou.
-const byUrl=new Map();
+// Praha 8 může publikovat stejný článek pod více URL v různých rubrikách.
+// Deduplikujeme proto primárně podle normalizovaného názvu, nikoli jen URL.
+const uniqueMap=new Map();
 for(const x of all){
   if(!x.date||x.date<cutoffDate)continue;
-  const key=canonicalUrl(x.url);
-  const prev=byUrl.get(key);
-  if(!prev || String(x.description||'').length>String(prev.description||'').length)byUrl.set(key,{...x,url:key});
+  const key=titleKey(x.title)||canonicalUrl(x.url);
+  const prev=uniqueMap.get(key);
+  if(!prev){uniqueMap.set(key,{...x,url:canonicalUrl(x.url)});continue}
+  const preferCurrent=(x.date||'')>(prev.date||'') || ((x.date||'')===(prev.date||'') && String(x.description||'').length>String(prev.description||'').length);
+  if(preferCurrent)uniqueMap.set(key,{...x,url:canonicalUrl(x.url)});
 }
-const items=[...byUrl.values()].sort((a,b)=>(b.date||'').localeCompare(a.date||'')||(b.title||'').localeCompare(a.title||'','cs'));
+const items=[...uniqueMap.values()].sort((a,b)=>(b.date||'').localeCompare(a.date||'')||(b.title||'').localeCompare(a.title||'','cs'));
 
 await mkdir(resolve(root,'data'),{recursive:true});
 await writeFile(resolve(root,'data/novinky.json'),JSON.stringify(items,null,2));
