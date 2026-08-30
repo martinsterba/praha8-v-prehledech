@@ -84,10 +84,10 @@
     "mode": "aktualizováno"
   },
   "elections": {
-    "status": "čeká na naplnění",
-    "count": 0,
-    "updated": null,
-    "mode": "nenačteno"
+    "status": "data načtena",
+    "count": 8,
+    "updated": "2026-08-30T17:12:42.648Z",
+    "mode": "aktualizováno"
   },
   "census2021": {
     "status": "čeká na naplnění",

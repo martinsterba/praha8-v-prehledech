@@ -1,4 +1,986 @@
 {
-  "years": [],
-  "longest": []
+  "years": [
+    {
+      "year": 2022,
+      "source": "https://www.volby.cz/pls/kv2022/kv1111?xjazyk=CZ&xid=1&xdz=5&xnumnuts=1100&xobec=500208&xstat=0&xvyber=0",
+      "xmlUrl": "https://www.volby.cz/pls/kv2022/vysledky_obec?cislo_obce=500208&datumvoleb=20220923",
+      "parties": [
+        {
+          "id": "53",
+          "name": "Občanská demokratická strana",
+          "percent": "19.28",
+          "seats": 10
+        },
+        {
+          "id": "768",
+          "name": "ANO 2011",
+          "percent": "17.98",
+          "seats": 9
+        },
+        {
+          "id": "1586",
+          "name": "8ŽIJE a PRAHA SOBĚ, kandidáti podpoření podpisy občanů",
+          "percent": "17.04",
+          "seats": 9
+        },
+        {
+          "id": "720",
+          "name": "Česká pirátská strana",
+          "percent": "11.60",
+          "seats": 6
+        },
+        {
+          "id": "659",
+          "name": "Společně pro Prahu 8 - TOP 09 a Starostové a nezávislí",
+          "percent": "11.19",
+          "seats": 5
+        },
+        {
+          "id": "1549",
+          "name": "PATRIOTI PRO PRAHU 8",
+          "percent": "6.80",
+          "seats": 3
+        },
+        {
+          "id": "1487",
+          "name": "SPD a Trikolora pro Osmičku",
+          "percent": "5.98",
+          "seats": 3
+        },
+        {
+          "id": "1260",
+          "name": "Libeňský mourek",
+          "percent": "4.23",
+          "seats": 0
+        },
+        {
+          "id": "699",
+          "name": "ČSSD, KDU-ČSL a Zelení s podporou Osmičky sobě",
+          "percent": "3.49",
+          "seats": 0
+        },
+        {
+          "id": "47",
+          "name": "Komunistická strana Čech a Moravy",
+          "percent": "1.31",
+          "seats": 0
+        },
+        {
+          "id": "566",
+          "name": "Praha 8 bez chaosu s krizovými manažery",
+          "percent": "0.90",
+          "seats": 0
+        },
+        {
+          "id": "1572",
+          "name": "LEPŠÍ OSMIČKA PRO LIDI A ZVÍŘATA",
+          "percent": "0.20",
+          "seats": 0
+        }
+      ],
+      "turnout": "41.78",
+      "seats": 45,
+      "coalition": {
+        "members": [
+          "ODS",
+          "ANO",
+          "Společně pro Prahu 8 – TOP 09 a Starostové a nezávislí",
+          "Patrioti pro Prahu 8"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "year": 2018,
+      "source": "https://www.volby.cz/pls/kv2018/kv1111?xjazyk=CZ&xid=1&xdz=5&xnumnuts=1100&xobec=500208&xstat=0&xvyber=0",
+      "xmlUrl": "https://www.volby.cz/pls/kv2018/vysledky_obec?cislo_obce=500208&datumvoleb=20181005",
+      "parties": [
+        {
+          "id": "1101",
+          "name": "Občanská demokratická strana + Svobodní",
+          "percent": "17.38",
+          "seats": 9
+        },
+        {
+          "id": "720",
+          "name": "Česká pirátská strana",
+          "percent": "15.86",
+          "seats": 8
+        },
+        {
+          "id": "1316",
+          "name": "OSMIČKA ŽIJE, nezávislí kandidáti podpoření podpisy občanů",
+          "percent": "14.70",
+          "seats": 8
+        },
+        {
+          "id": "768",
+          "name": "ANO 2011",
+          "percent": "14.43",
+          "seats": 8
+        },
+        {
+          "id": "659",
+          "name": "TOP 09 a Starostové a nezávislí - spojené síly pro Prahu 8",
+          "percent": "11.29",
+          "seats": 6
+        },
+        {
+          "id": "479",
+          "name": "OSMIČKA SOBĚ - ZELENÍ, KDU-ČSL a nezávislí",
+          "percent": "6.06",
+          "seats": 3
+        },
+        {
+          "id": "1317",
+          "name": "PATRIOTI PRO PRAHU 8",
+          "percent": "5.63",
+          "seats": 3
+        },
+        {
+          "id": "47",
+          "name": "Komunistická strana Čech a Moravy",
+          "percent": "4.81",
+          "seats": 0
+        },
+        {
+          "id": "7",
+          "name": "Česká strana sociálně demokratická",
+          "percent": "4.18",
+          "seats": 0
+        },
+        {
+          "id": "1114",
+          "name": "Svoboda a přímá demokracie - Tomio Okamura (SPD)",
+          "percent": "3.50",
+          "seats": 0
+        },
+        {
+          "id": "551",
+          "name": "STAROSTOVÉ PRO PRAHU",
+          "percent": "2.11",
+          "seats": 0
+        },
+        {
+          "id": "482",
+          "name": "S.O.S ZA PRÁVA ZVÍŘAT - sdružení DSZ a NK",
+          "percent": "0.06",
+          "seats": 0
+        }
+      ],
+      "turnout": "43.74",
+      "seats": 45,
+      "coalition": {
+        "members": [
+          "ODS",
+          "Spojené síly pro Prahu 8 (TOP 09 a STAN)",
+          "Patrioti pro Prahu 8"
+        ],
+        "note": "menšinová koalice s podporou ANO"
+      }
+    },
+    {
+      "year": 2014,
+      "source": "https://www.volby.cz/pls/kv2014/kv1111?xjazyk=CZ&xid=1&xdz=5&xnumnuts=1100&xobec=500208&xstat=0&xvyber=0",
+      "xmlUrl": "https://www.volby.cz/pls/kv2014/vysledky_obec?cislo_obce=500208&datumvoleb=20141010",
+      "parties": [
+        {
+          "id": "768",
+          "name": "ANO 2011",
+          "percent": "20.39",
+          "seats": 11
+        },
+        {
+          "id": "53",
+          "name": "Občanská demokratická strana",
+          "percent": "17.96",
+          "seats": 9
+        },
+        {
+          "id": "721",
+          "name": "TOP 09",
+          "percent": "13.67",
+          "seats": 7
+        },
+        {
+          "id": "7",
+          "name": "Česká strana sociálně demokratická",
+          "percent": "10.65",
+          "seats": 5
+        },
+        {
+          "id": "47",
+          "name": "Komunistická strana Čech a Moravy",
+          "percent": "9.15",
+          "seats": 5
+        },
+        {
+          "id": "355",
+          "name": "Osmička sobě, KDU-ČSL a osobnosti Prahy 8",
+          "percent": "7.99",
+          "seats": 4
+        },
+        {
+          "id": "5",
+          "name": "Strana zelených",
+          "percent": "7.42",
+          "seats": 4
+        },
+        {
+          "id": "524",
+          "name": "PATRIOTI - VOLBA PRO PRAHU 8",
+          "percent": "4.20",
+          "seats": 0
+        },
+        {
+          "id": "714",
+          "name": "Strana svobodných občanů",
+          "percent": "2.79",
+          "seats": 0
+        },
+        {
+          "id": "1052",
+          "name": "Nezávislé fórum",
+          "percent": "2.60",
+          "seats": 0
+        },
+        {
+          "id": "791",
+          "name": "Pro Prahu",
+          "percent": "1.79",
+          "seats": 0
+        },
+        {
+          "id": "720",
+          "name": "Česká pirátská strana",
+          "percent": "0.64",
+          "seats": 0
+        },
+        {
+          "id": "155",
+          "name": "DOMOV",
+          "percent": "0.29",
+          "seats": 0
+        },
+        {
+          "id": "792",
+          "name": "Úsvit přímé demokracie",
+          "percent": "0.25",
+          "seats": 0
+        },
+        {
+          "id": "1006",
+          "name": "Občanská konzervativní strana",
+          "percent": "0.19",
+          "seats": 0
+        },
+        {
+          "id": "794",
+          "name": "Romská demokratická strana",
+          "percent": "0.02",
+          "seats": 0
+        }
+      ],
+      "turnout": "36.12",
+      "seats": 45,
+      "coalition": {
+        "members": [
+          "ANO",
+          "ČSSD",
+          "Strana zelených"
+        ],
+        "note": "s podporou KSČM"
+      }
+    },
+    {
+      "year": 2010,
+      "source": "https://www.volby.cz/pls/kv2010/kv1111?xjazyk=CZ&xid=1&xdz=5&xnumnuts=1100&xobec=500208&xstat=0&xvyber=0",
+      "xmlUrl": "https://www.volby.cz/pls/kv2010/vysledky_obec?cislo_obce=500208&datumvoleb=20101015",
+      "parties": [
+        {
+          "id": "53",
+          "name": "Občanská demokratická strana",
+          "percent": "27.70",
+          "seats": 14
+        },
+        {
+          "id": "721",
+          "name": "TOP 09",
+          "percent": "21.81",
+          "seats": 10
+        },
+        {
+          "id": "7",
+          "name": "Česká strana sociálně demokratická",
+          "percent": "20.19",
+          "seats": 11
+        },
+        {
+          "id": "47",
+          "name": "Komunistická strana Čech a Moravy",
+          "percent": "10.00",
+          "seats": 5
+        },
+        {
+          "id": "5",
+          "name": "Strana zelených",
+          "percent": "7.72",
+          "seats": 3
+        },
+        {
+          "id": "666",
+          "name": "Volba pro Prahu 8",
+          "percent": "6.03",
+          "seats": 2
+        },
+        {
+          "id": "144",
+          "name": "Věci veřejné",
+          "percent": "4.78",
+          "seats": 0
+        },
+        {
+          "id": "1",
+          "name": "Křesťanská a demokratická unie - Československá strana lidová",
+          "percent": "0.93",
+          "seats": 0
+        },
+        {
+          "id": "724",
+          "name": "Strana Práv Občanů ZEMANOVCI",
+          "percent": "0.83",
+          "seats": 0
+        }
+      ],
+      "turnout": "40.52",
+      "seats": 45,
+      "coalition": {
+        "members": [
+          "ODS",
+          "TOP 09"
+        ],
+        "note": "od roku 2012 také Volba pro Prahu 8"
+      }
+    },
+    {
+      "year": 2006,
+      "source": "https://www.volby.cz/pls/kv2006/kv1111?xjazyk=CZ&xid=1&xdz=5&xnumnuts=1100&xobec=500208&xstat=0&xvyber=0",
+      "xmlUrl": "https://www.volby.cz/pls/kv2006/vysledky_obec?cislo_obce=500208&datumvoleb=20061020",
+      "parties": [
+        {
+          "id": "53",
+          "name": "Občanská demokratická strana",
+          "percent": "47.77",
+          "seats": 27
+        },
+        {
+          "id": "7",
+          "name": "Česká strana sociálně demokratická",
+          "percent": "14.97",
+          "seats": 8
+        },
+        {
+          "id": "47",
+          "name": "Komunistická strana Čech a Moravy",
+          "percent": "10.64",
+          "seats": 5
+        },
+        {
+          "id": "5",
+          "name": "Strana zelených",
+          "percent": "10.14",
+          "seats": 4
+        },
+        {
+          "id": "129",
+          "name": "SNK Evropští demokraté",
+          "percent": "4.69",
+          "seats": 0
+        },
+        {
+          "id": "146",
+          "name": "Nezávislí pro Prahu",
+          "percent": "4.55",
+          "seats": 1
+        },
+        {
+          "id": "88",
+          "name": "Volba Pro Prahu 8",
+          "percent": "3.46",
+          "seats": 0
+        },
+        {
+          "id": "1",
+          "name": "Křesťanská a demokratická unie - Československá strana lidová",
+          "percent": "3.20",
+          "seats": 0
+        },
+        {
+          "id": "601",
+          "name": "SONOB se Zelenými (www.zeleniasonob.cz)za ochranu bydlení a proti zdražování nájemného",
+          "percent": "0.44",
+          "seats": 0
+        },
+        {
+          "id": "171",
+          "name": "STRANA ROVNOST ŠANCÍ",
+          "percent": "0.12",
+          "seats": 0
+        },
+        {
+          "id": "55",
+          "name": "Koruna Česká (monarchistická strana Čech, Moravy a Slezska)",
+          "percent": "0.02",
+          "seats": 0
+        }
+      ],
+      "turnout": "38.76",
+      "seats": 45,
+      "coalition": {
+        "members": [
+          "ODS"
+        ],
+        "note": "samostatné vedení radnice"
+      }
+    },
+    {
+      "year": 2002,
+      "source": "https://www.volby.cz/pls/kv2002/kv1111?xjazyk=CZ&xid=1&xdz=5&xnumnuts=1100&xobec=500208&xstat=0&xvyber=0",
+      "xmlUrl": "https://www.volby.cz/pls/kv2002/vysledky_obec?cislo_obce=500208&datumvoleb=20021101",
+      "parties": [
+        {
+          "id": "53",
+          "name": "Občanská demokratická strana",
+          "percent": "33.15",
+          "seats": 18
+        },
+        {
+          "id": "7",
+          "name": "Česká strana sociálně demokratická",
+          "percent": "15.02",
+          "seats": 7
+        },
+        {
+          "id": "47",
+          "name": "Komunistická strana Čech a Moravy",
+          "percent": "14.01",
+          "seats": 6
+        },
+        {
+          "id": "427",
+          "name": "Demokraté Jana Kasla",
+          "percent": "12.10",
+          "seats": 6
+        },
+        {
+          "id": "88",
+          "name": "NEZÁVISLÍ",
+          "percent": "10.40",
+          "seats": 4
+        },
+        {
+          "id": "102",
+          "name": "Unie svobody - Demokratická unie",
+          "percent": "5.55",
+          "seats": 3
+        },
+        {
+          "id": "1",
+          "name": "Křesťanská a demokratická unie - Československá strana lidová",
+          "percent": "4.83",
+          "seats": 0
+        },
+        {
+          "id": "292",
+          "name": "SOS - Strana zelených (Moderní město)",
+          "percent": "3.45",
+          "seats": 1
+        },
+        {
+          "id": "129",
+          "name": "Sdružení nezávislých",
+          "percent": "1.37",
+          "seats": 0
+        },
+        {
+          "id": "98",
+          "name": "Pravý Blok",
+          "percent": "0.12",
+          "seats": 0
+        }
+      ],
+      "turnout": "31.08",
+      "seats": 45,
+      "coalition": {
+        "members": [
+          "ODS",
+          "ČSSD"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "year": 1998,
+      "source": "https://volby.gov.cz/pls/kv1998/kv1111?xjazyk=CZ&xid=0&xdz=5&xnumnuts=1100&xobec=500208",
+      "electedSource": "https://volby.gov.cz/pls/kv1998/kv21111?xjazyk=CZ&xid=0&xv=22&xdz=5&xnumnuts=1100&xobec=500208&xstrana=0",
+      "xmlUrl": "",
+      "parties": [
+        {
+          "id": "ods",
+          "name": "Občanská demokratická strana",
+          "short": "ODS",
+          "percent": "37.91",
+          "seats": 19
+        },
+        {
+          "id": "cssd",
+          "name": "Česká strana sociálně demokratická",
+          "short": "ČSSD",
+          "percent": "20.48",
+          "seats": 9
+        },
+        {
+          "id": "us",
+          "name": "Unie svobody",
+          "short": "US",
+          "percent": "19.58",
+          "seats": 10
+        },
+        {
+          "id": "kscm",
+          "name": "Komunistická strana Čech a Moravy",
+          "short": "KSČM",
+          "percent": "13.84",
+          "seats": 5
+        },
+        {
+          "id": "kdu",
+          "name": "Křesťanská a demokratická unie - Československá strana lidová",
+          "short": "KDU-ČSL",
+          "percent": "5.45",
+          "seats": 2
+        },
+        {
+          "id": "oda",
+          "name": "Občanská demokratická aliance",
+          "short": "ODA",
+          "percent": "1.22",
+          "seats": 0
+        },
+        {
+          "id": "sz",
+          "name": "Strana zelených",
+          "short": "SZ",
+          "percent": "0.82",
+          "seats": 0
+        },
+        {
+          "id": "spr-sdcr",
+          "name": "Koalice SPR-RSČ, SDČR",
+          "short": "SPR-RSČ + SDČR",
+          "percent": "0.26",
+          "seats": 0
+        },
+        {
+          "id": "ha",
+          "name": "H.A.",
+          "short": "H.A.",
+          "percent": "0.26",
+          "seats": 0
+        },
+        {
+          "id": "szj",
+          "name": "SŽJ",
+          "short": "SŽJ",
+          "percent": "0.19",
+          "seats": 0
+        }
+      ],
+      "turnout": "",
+      "seats": 45,
+      "coalition": {
+        "members": [
+          "ODS",
+          "ČSSD"
+        ],
+        "note": ""
+      },
+      "note": "Historické výsledky stran jsou uložené jako ověřený statický snapshot ČSÚ."
+    },
+    {
+      "year": 1994,
+      "source": "https://www.volby.cz/pls/kv1994/kv1111?xjazyk=CZ&xid=1&xdz=5&xnumnuts=1100&xobec=500208&xstat=0&xvyber=0",
+      "xmlUrl": "https://www.volby.cz/pls/kv1994/vysledky_obec?cislo_obce=500208&datumvoleb=19941118",
+      "parties": [
+        {
+          "id": "obcanska demokraticka strana",
+          "name": "Občanská demokratická strana",
+          "percent": "",
+          "seats": 19
+        },
+        {
+          "id": "komunisticka str.cech a moravy",
+          "name": "Komunistická str.Čech a Moravy",
+          "percent": "",
+          "seats": 8
+        },
+        {
+          "id": "koalice kdu-csl, oda",
+          "name": "Koalice KDU-ČSL, ODA",
+          "percent": "",
+          "seats": 6
+        },
+        {
+          "id": "ceska str.socialne demokrat.",
+          "name": "Česká str.sociálně demokrat.",
+          "percent": "",
+          "seats": 5
+        },
+        {
+          "id": "demokraticka unie",
+          "name": "Demokratická unie",
+          "percent": "",
+          "seats": 3
+        },
+        {
+          "id": "koalice kds, kan",
+          "name": "Koalice KDS, KAN",
+          "percent": "",
+          "seats": 2
+        },
+        {
+          "id": "svobodni demokrate(oh)",
+          "name": "Svobodní demokraté(OH)",
+          "percent": "",
+          "seats": 2
+        }
+      ],
+      "turnout": "49.36",
+      "seats": 45,
+      "coalition": null
+    }
+  ],
+  "longest": [
+    {
+      "name": "Martin Roubíček",
+      "years": [
+        2022,
+        2018,
+        2014,
+        2010,
+        2006,
+        2002,
+        1998
+      ],
+      "party": "ODS",
+      "partiesByYear": {
+        "1998": "Občanská demokratická strana"
+      },
+      "parties": [
+        "ODS"
+      ],
+      "terms": 7,
+      "yearsServed": 28
+    },
+    {
+      "name": "Ondřej Gros",
+      "years": [
+        2022,
+        2018,
+        2014,
+        2010,
+        2006,
+        2002,
+        1998
+      ],
+      "party": "ODS",
+      "partiesByYear": {
+        "1998": "Občanská demokratická strana"
+      },
+      "parties": [
+        "ODS"
+      ],
+      "terms": 7,
+      "yearsServed": 28
+    },
+    {
+      "name": "Josef Slobodník",
+      "years": [
+        2022,
+        2018,
+        2014,
+        2010,
+        2006
+      ],
+      "party": "ODS",
+      "partiesByYear": {},
+      "parties": [
+        "ODS"
+      ],
+      "terms": 5,
+      "yearsServed": 20
+    },
+    {
+      "name": "Tomáš Bína",
+      "years": [
+        2022,
+        2018,
+        2014,
+        2010,
+        2006
+      ],
+      "party": "ODS",
+      "partiesByYear": {},
+      "parties": [
+        "ODS"
+      ],
+      "terms": 5,
+      "yearsServed": 20
+    },
+    {
+      "name": "Tomáš Mrázek",
+      "years": [
+        2022,
+        2018,
+        2014,
+        2010,
+        2006
+      ],
+      "party": "ODS",
+      "partiesByYear": {},
+      "parties": [
+        "ODS"
+      ],
+      "terms": 5,
+      "yearsServed": 20
+    },
+    {
+      "name": "Vladimíra Ludková",
+      "years": [
+        2022,
+        2018,
+        2014,
+        2010,
+        2006
+      ],
+      "party": "ODS",
+      "partiesByYear": {},
+      "parties": [
+        "ODS"
+      ],
+      "terms": 5,
+      "yearsServed": 20
+    },
+    {
+      "name": "Matěj Fichtner",
+      "years": [
+        2022,
+        2018,
+        2014,
+        2010
+      ],
+      "party": "TOP 09",
+      "partiesByYear": {},
+      "parties": [
+        "ANO",
+        "TOP 09"
+      ],
+      "terms": 4,
+      "yearsServed": 16
+    },
+    {
+      "name": "Tomáš Slabihoudek",
+      "years": [
+        2022,
+        2018,
+        2014,
+        2010
+      ],
+      "party": "TOP 09 + STAN",
+      "partiesByYear": {},
+      "parties": [
+        "TOP 09 + STAN"
+      ],
+      "terms": 4,
+      "yearsServed": 16
+    },
+    {
+      "name": "Anna Kroutil",
+      "years": [
+        2022,
+        2018,
+        2014
+      ],
+      "party": "ANO",
+      "partiesByYear": {},
+      "parties": [
+        "ANO"
+      ],
+      "terms": 3,
+      "yearsServed": 12
+    },
+    {
+      "name": "Bohumír Garlík",
+      "years": [
+        2022,
+        2018,
+        2014
+      ],
+      "party": "ANO",
+      "partiesByYear": {},
+      "parties": [
+        "ANO"
+      ],
+      "terms": 3,
+      "yearsServed": 12
+    },
+    {
+      "name": "Dana Blahunková",
+      "years": [
+        2022,
+        2018,
+        2014
+      ],
+      "party": "8ŽIJE A PRAHA SOBĚ",
+      "partiesByYear": {},
+      "parties": [
+        "8ŽIJE A PRAHA SOBĚ"
+      ],
+      "terms": 3,
+      "yearsServed": 12
+    },
+    {
+      "name": "Jiří Vítek",
+      "years": [
+        2022,
+        2018,
+        2002
+      ],
+      "party": "Patrioti",
+      "partiesByYear": {},
+      "parties": [
+        "Patrioti"
+      ],
+      "terms": 3,
+      "yearsServed": 12
+    },
+    {
+      "name": "Michal Fišer",
+      "years": [
+        2022,
+        2018,
+        2014
+      ],
+      "party": "ANO",
+      "partiesByYear": {},
+      "parties": [
+        "ANO"
+      ],
+      "terms": 3,
+      "yearsServed": 12
+    },
+    {
+      "name": "Michal Švarc",
+      "years": [
+        2022,
+        2018,
+        2010
+      ],
+      "party": "Patrioti",
+      "partiesByYear": {},
+      "parties": [
+        "Patrioti"
+      ],
+      "terms": 3,
+      "yearsServed": 12
+    },
+    {
+      "name": "Radomír Nepil",
+      "years": [
+        2022,
+        2018,
+        2014
+      ],
+      "party": "ANO",
+      "partiesByYear": {},
+      "parties": [
+        "ANO"
+      ],
+      "terms": 3,
+      "yearsServed": 12
+    },
+    {
+      "name": "Tomáš Němeček",
+      "years": [
+        2022,
+        2018,
+        2014
+      ],
+      "party": "8ŽIJE A PRAHA SOBĚ",
+      "partiesByYear": {},
+      "parties": [
+        "8ŽIJE A PRAHA SOBĚ"
+      ],
+      "terms": 3,
+      "yearsServed": 12
+    },
+    {
+      "name": "Tomáš Tatranský",
+      "years": [
+        2022,
+        2018,
+        2014
+      ],
+      "party": "TOP 09 + STAN",
+      "partiesByYear": {},
+      "parties": [
+        "TOP 09 + STAN"
+      ],
+      "terms": 3,
+      "yearsServed": 12
+    },
+    {
+      "name": "Václav Musílek",
+      "years": [
+        2022,
+        2006,
+        2002
+      ],
+      "party": "SPD",
+      "partiesByYear": {},
+      "parties": [
+        "SPD"
+      ],
+      "terms": 3,
+      "yearsServed": 12
+    },
+    {
+      "name": "Ilona Tůmová",
+      "years": [
+        2022,
+        2018
+      ],
+      "party": "8ŽIJE A PRAHA SOBĚ",
+      "partiesByYear": {},
+      "parties": [
+        "8ŽIJE A PRAHA SOBĚ"
+      ],
+      "terms": 2,
+      "yearsServed": 8
+    },
+    {
+      "name": "Ivo Slávka",
+      "years": [
+        2022,
+        2018
+      ],
+      "party": "Piráti",
+      "partiesByYear": {},
+      "parties": [
+        "Piráti"
+      ],
+      "terms": 2,
+      "yearsServed": 8
+    }
+  ]
 }
