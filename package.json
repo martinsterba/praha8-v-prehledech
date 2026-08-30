@@ -58,6 +58,6 @@
     "sync:contracts:new": "node scripts/sync-contracts-incremental.mjs"
   },
   "dependencies": {
-    "puppeteer-core": "^24.16.0"
+    "puppeteer-core": "^25.9.0"
   }
 }
