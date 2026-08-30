@@ -7,10 +7,11 @@ const root=resolve(import.meta.dirname,'..');
 const DATA=resolve(root,'data','hlasovani.json');
 const SOURCES=resolve(root,'data','hlasovani-zdroje.json');
 const PAGE='https://www.praha8.cz/Prehledy-hlasovani.html';
-const UA='Praha8-v-prehledech/3.0.13 (+public-data-indexer; public sources only)';
+const UA='Praha8-v-prehledech/3.0.14 (+public-data-indexer; public sources only)';
 const BOOTSTRAP=process.argv.includes('--bootstrap');
 const PLAN=process.argv.includes('--plan');
 const FIRST=process.argv.includes('--first');
+const NO_PUBLISHED_VOTING=new Set(['2015-06-10']);
 
 const clean=s=>String(s||'').replace(/<script[\s\S]*?<\/script>/gi,' ').replace(/<style[\s\S]*?<\/style>/gi,' ').replace(/<[^>]+>/g,' ').replace(/&nbsp;|&#160;/gi,' ').replace(/&amp;/gi,'&').replace(/&quot;/gi,'"').replace(/&#39;|&apos;/gi,"'").replace(/\s+/g,' ').trim();
 const absolute=(href,base)=>new URL(href,base).href;
@@ -63,7 +64,7 @@ function discoverSources(html){
   for(const m of html.matchAll(/<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi)){
     const title=clean(m[2]);
     if(!/Přehled hlasování zastupitelstva/i.test(title))continue;
-    const date=isoDate(title); if(!date)continue;
+    const date=isoDate(title); if(!date||NO_PUBLISHED_VOTING.has(date))continue;
     out.push({date,title,url:absolute(m[1],PAGE)});
   }
   return [...new Map(out.map(x=>[x.date,x])).values()].sort((a,b)=>b.date.localeCompare(a.date));
@@ -210,7 +211,7 @@ async function crawlXml(indexPage,source,xmlIndex){
   return {items:[...new Map(items.map(x=>[`${x.date}|${x.number}`,x])).values()],sourceMeta:{mode:'xml',xmlIndex}};
 }
 
-console.log(`\nHLASOVÁNÍ ZMČ PRAHA 8 — ${BOOTSTRAP?'KOMPLETNÍ BOOTSTRAP':'INKREMENTÁLNÍ SYNC'} — v3.0.13`);
+console.log(`\nHLASOVÁNÍ ZMČ PRAHA 8 — ${BOOTSTRAP?'KOMPLETNÍ BOOTSTRAP':'INKREMENTÁLNÍ SYNC'} — v3.0.14`);
 console.log('─────────────────────────────────────────────────────────');
 let sources=discoverSources(await fetchText(PAGE));
 if(FIRST)sources=sources.slice(0,1);
@@ -218,10 +219,10 @@ if(!sources.length)throw new Error('Na stránce Prahy 8 nebyly nalezeny žádné
 const old=await readJson(DATA,[]),oldSources=await readJson(SOURCES,[]);
 const known=new Set(oldSources.map(x=>x.date||x.url));
 const todo=BOOTSTRAP?sources:sources.filter(x=>!known.has(x.date)&&!known.has(x.url));
-console.log(`Zdrojová stránka: ${sources.length} zasedání Zastupitelstva · ke zpracování: ${todo.length}.`);
+console.log(`Zdrojová stránka: ${sources.length} zasedání Zastupitelstva s publikovanými hlasovacími daty · ke zpracování: ${todo.length}.`);
 if(PLAN){console.log(todo.length?todo.map(x=>`  ${x.date} · ${x.url}`).join('\n'):'✅ Žádné nové zasedání.');process.exit(0)}
 if(!BOOTSTRAP&&!old.length)throw new Error('Chybí historický základ data/hlasovani.json. Nejdřív spusťte npm run sync:voting:bootstrap.');
-if(!todo.length){console.log('✅ Žádné nové zasedání. Existující hlasování zůstala beze změny.');process.exit(0)}
+if(!todo.length){console.log('✅ Žádné nové zasedání s publikovanými hlasovacími daty. Existující hlasování zůstala beze změny.');process.exit(0)}
 
 const browser=await puppeteer.launch({headless:true,executablePath:findChrome(),args:['--no-sandbox','--disable-setuid-sandbox'],userAgent:UA});
 let fresh=[],processed=[];
@@ -250,5 +251,5 @@ const unique=[...new Map(merged.map(x=>[`${x.date}|${x.number}`,x])).values()].s
 const sourceBase=BOOTSTRAP?processed:[...oldSources,...processed];
 const sourceUnique=[...new Map(sourceBase.map(x=>[x.date||x.url,x])).values()].sort((a,b)=>(b.date||'').localeCompare(a.date||''));
 await atomicJson(DATA,unique);await atomicJson(SOURCES,sourceUnique);
-console.log(`✅ HOTOVO: ${unique.length.toLocaleString('cs-CZ')} hlasování z ${sourceUnique.length}/${sources.length} úspěšně zpracovaných zasedání Zastupitelstva${BOOTSTRAP?' (historický základ)':''}.`);
-if(sourceUnique.length!==sources.length)console.log(`⚠ ${sources.length-sourceUnique.length} zasedání zůstává ke zpracování; nebudou považována za synchronizovaná.`);
+console.log(`✅ HOTOVO: ${unique.length.toLocaleString('cs-CZ')} hlasování z ${sourceUnique.length}/${sources.length} dostupných zasedání Zastupitelstva${BOOTSTRAP?' (historický základ)':''}.`);
+if(sourceUnique.length!==sources.length)console.log(`⚠ ${sources.length-sourceUnique.length} dostupných zasedání zůstává ke zpracování; nebudou považována za synchronizovaná.`);
