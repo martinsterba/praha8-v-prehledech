@@ -2,6 +2,8 @@
 // MutationObserver zajistí, že se aplikují i po změně hash routy.
 let bodiesSourcePromise=null;
 let bodiesPolishRunning=false;
+let contractsNamesPromise=null;
+let contractsNamesRunning=false;
 
 function bodyNameForDisplay(value=''){
   let name=String(value||'').replace(/\s+/g,' ').trim();
@@ -61,7 +63,6 @@ async function polishBodiesNames(app){
           secretary.appendChild(nameSpan);
         }
         setTextIfChanged(nameSpan,wanted);
-        // app.js může za <small> ponechat původní textový uzel; po vytvoření span jej odstraníme.
         for(const node of [...secretary.childNodes]){
           if(node.nodeType===Node.TEXT_NODE && node.textContent.trim())node.remove();
         }
@@ -73,15 +74,12 @@ async function polishBodiesNames(app){
 }
 
 function polishBodiesUi(app){
-  // Nadpisy sekcí jsou samy o sobě dostatečné; drobné kicker popisky zde nepoužíváme.
   for(const kicker of app.querySelectorAll('.section > .section-head .kicker'))kicker.remove();
 
-  // Odkaz vede na oficiální web konkrétního orgánu.
   for(const link of app.querySelectorAll('.body-links a')){
     if(/^detail\b/i.test(link.textContent||''))setTextIfChanged(link,'web ↗');
   }
 
-  // Správné skloňování počtu orgánů: 1 orgán, 2–4 orgány, jinak orgánů.
   for(const count of app.querySelectorAll('.section > .section-head > p')){
     const match=(count.textContent||'').trim().match(/^(\d+)\s+orgánů$/i);
     if(!match)continue;
@@ -91,6 +89,44 @@ function polishBodiesUi(app){
   }
 
   void polishBodiesNames(app);
+}
+
+function loadContractNames(){
+  if(!contractsNamesPromise){
+    contractsNamesPromise=Promise.all([
+      fetch(`data/smlouvy.json?v=${Date.now()}`,{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null),
+      fetch(`data/smlouvy-subjekty.json?v=${Date.now()}`,{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null)
+    ]).then(([main,entities])=>{
+      const byIco=new Map();
+      const add=p=>{
+        const ico=String(p?.ico||'').replace(/\D/g,'');
+        const name=String(p?.name||p?.counterparty||'').replace(/\s+/g,' ').trim();
+        if(ico&&name&&!byIco.has(ico))byIco.set(ico,name);
+      };
+      for(const p of (main?.partners||[]))add(p);
+      for(const e of (entities?.entities||[]))for(const p of (e?.partnerList||[]))add(p);
+      return byIco;
+    });
+  }
+  return contractsNamesPromise;
+}
+
+async function polishContractPartnerNames(app){
+  if(contractsNamesRunning)return;
+  contractsNamesRunning=true;
+  try{
+    const byIco=await loadContractNames();
+    if(!byIco?.size||!location.hash.startsWith('#/smlouvy'))return;
+    for(const row of app.querySelectorAll('.partner-row')){
+      const icoText=[...row.querySelectorAll('small')].map(x=>x.textContent||'').find(x=>/IČO\s*\d+/i.test(x))||'';
+      const ico=icoText.replace(/\D/g,'');
+      const nameEl=row.querySelector('div > b');
+      const correct=byIco.get(ico);
+      if(nameEl&&correct)setTextIfChanged(nameEl,correct);
+    }
+  }finally{
+    contractsNamesRunning=false;
+  }
 }
 
 function polishProductionUi(){
@@ -113,6 +149,13 @@ function polishProductionUi(){
   }
 
   if(location.hash==='#/organy')polishBodiesUi(app);
+  if(location.hash.startsWith('#/smlouvy'))void polishContractPartnerNames(app);
+
+  // Na homepage je samotný nadpis dostatečný; pomocný štítek „Princip“ nepotřebujeme.
+  if(location.hash===''||location.hash==='#/'||location.hash==='#'){
+    const principle=app.querySelector('.home-principle .kicker');
+    if(principle)principle.remove();
+  }
 }
 
 const app=document.querySelector('#app');
