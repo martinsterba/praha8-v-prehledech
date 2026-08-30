@@ -1,0 +1,875 @@
+{
+  "schema": 1,
+  "updated": "2026-08-30T12:37:41.363Z",
+  "source": "https://data.smlouvy.gov.cz/index.xml",
+  "dumps": {
+    "2016-05": {
+      "hash": "bd007bea795b601fe8d497b9e487c56af52b2274",
+      "size": 4036375,
+      "generated": "2025-12-03T06:47:48+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2016_05.xml"
+    },
+    "2016-06": {
+      "hash": "bba765230c58b5e63c22fdb4683d8302c60bb973",
+      "size": 4382770,
+      "generated": "2026-05-29T06:15:02+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2016_06.xml"
+    },
+    "2016-07": {
+      "hash": "9f4039803280203acdd1c29f4139870b63e25cd9",
+      "size": 191897,
+      "generated": "2021-01-13T00:19:16+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2016_07.xml"
+    },
+    "2016-08": {
+      "hash": "514dbcb5a73d9a7f57f391fb5533d50d55da5a1e",
+      "size": 4944914,
+      "generated": "2026-04-03T05:55:03+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2016_08.xml"
+    },
+    "2016-09": {
+      "hash": "f5a2df913d8929c443fe8c2b21a5555036aef147",
+      "size": 4298132,
+      "generated": "2026-07-29T16:52:39+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2016_09.xml"
+    },
+    "2016-10": {
+      "hash": "cc8e5c3007293cb8b0136dd936622713e0272a57",
+      "size": 633074,
+      "generated": "2021-01-13T05:05:31+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2016_10.xml"
+    },
+    "2016-11": {
+      "hash": "758e9488fc562427f4d6c89393ea37cb02715697",
+      "size": 506593,
+      "generated": "2022-01-13T05:07:40+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2016_11.xml"
+    },
+    "2016-12": {
+      "hash": "7afefe463de18482cd8cc7e9cc55053ee31088b8",
+      "size": 4799230,
+      "generated": "2026-07-29T16:54:12+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2016_12.xml"
+    },
+    "2017-01": {
+      "hash": "66dc71395aaf41aa8563da9c895d678c7b3466b4",
+      "size": 72499846,
+      "generated": "2026-04-22T00:07:04+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2017_01.xml"
+    },
+    "2017-02": {
+      "hash": "cb09fe14c3da9fdc2709ba53d5fb52ad22925523",
+      "size": 25241,
+      "generated": "2021-01-13T10:04:26+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2017_02.xml"
+    },
+    "2017-03": {
+      "hash": "97645f20d44e2c38765c02279f29b7d2ec944b43",
+      "size": 2924634,
+      "generated": "2023-11-01T06:38:20+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2017_03.xml"
+    },
+    "2017-04": {
+      "hash": "bcacb47f33b30c05a18c5eb825ec11674270ea0e",
+      "size": 3323679,
+      "generated": "2025-12-16T04:32:05+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2017_04.xml"
+    },
+    "2017-05": {
+      "hash": "5c32880e3f97d2cc297d41c7466d7dbb1b0dbd85",
+      "size": 4000945,
+      "generated": "2024-09-28T03:40:42+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2017_05.xml"
+    },
+    "2017-06": {
+      "hash": "fdfdc63fa12c5d069edf1ba1717a4d2c1e76e4d1",
+      "size": 302474,
+      "generated": "2023-01-12T05:18:14+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2017_06.xml"
+    },
+    "2017-07": {
+      "hash": "6f0f6c72a8e45fb92b65a1e7e0496b1b3063b3fc",
+      "size": 4996717,
+      "generated": "2024-10-15T03:39:49+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2017_07.xml"
+    },
+    "2017-08": {
+      "hash": "26b25ea2a594bf27aa29726a740d21db6df253eb",
+      "size": 4502880,
+      "generated": "2025-12-16T04:35:17+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2017_08.xml"
+    },
+    "2017-09": {
+      "hash": "8deb13c793915c6bfc271ef92c3ed2e3c62a6184",
+      "size": 592423,
+      "generated": "2022-01-26T05:54:07+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2017_09.xml"
+    },
+    "2017-10": {
+      "hash": "f4da5df788da6374d4250dd1c8f672873444152f",
+      "size": 192756,
+      "generated": "2022-01-13T06:05:25+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2017_10.xml"
+    },
+    "2017-11": {
+      "hash": "b17cc3d6ac3e4e1b311a6777ee2b73a169ec16ee",
+      "size": 7275493,
+      "generated": "2026-06-17T14:29:31+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2017_11.xml"
+    },
+    "2017-12": {
+      "hash": "71ac12448df17261b48a41e83a4bd9e069a3a36c",
+      "size": 4337178,
+      "generated": "2026-01-31T05:36:02+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2017_12.xml"
+    },
+    "2018-01": {
+      "hash": "267958d79ed090bb0b64c16e4d17142b8ae26b24",
+      "size": 109546261,
+      "generated": "2026-05-29T00:21:13+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2018_01.xml"
+    },
+    "2018-02": {
+      "hash": "6f8bbd78a72102601b14a1257ec2704bec219d4f",
+      "size": 104541,
+      "generated": "2021-01-13T11:48:41+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2018_02.xml"
+    },
+    "2018-03": {
+      "hash": "24af0ddd509090d2637ae94a447ddba17287e4df",
+      "size": 1556241,
+      "generated": "2023-11-21T07:45:18+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2018_03.xml"
+    },
+    "2018-04": {
+      "hash": "4a9f8aa76fe2c1c24de6bc4543b154cea16b3b79",
+      "size": 3101297,
+      "generated": "2024-07-16T03:52:47+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2018_04.xml"
+    },
+    "2018-05": {
+      "hash": "79ce359f13f2ed9c121f56ca35d00f3d25bf97fb",
+      "size": 5662014,
+      "generated": "2025-04-25T03:20:20+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2018_05.xml"
+    },
+    "2018-06": {
+      "hash": "856a1c7d80f99da9a17edcc1e0ac0827db99f830",
+      "size": 446303,
+      "generated": "2021-01-13T02:30:34+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2018_06.xml"
+    },
+    "2018-07": {
+      "hash": "7a4c56779eb5875c1f067da8d77b30dd504c2356",
+      "size": 4980325,
+      "generated": "2026-05-26T07:00:04+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2018_07.xml"
+    },
+    "2018-08": {
+      "hash": "8ac20c2b40214b7b9258bf3bc30d8a274e0f7155",
+      "size": 5218577,
+      "generated": "2025-06-05T04:38:49+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2018_08.xml"
+    },
+    "2018-09": {
+      "hash": "c8e49434c7e37d3843b2482427fc6a6fe7eb9e7d",
+      "size": 111134,
+      "generated": "2024-10-16T03:17:15+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2018_09.xml"
+    },
+    "2018-10": {
+      "hash": "6659bc7072931583cf4d6a847728f37ae9d04567",
+      "size": 5433504,
+      "generated": "2026-07-10T15:04:34+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2018_10.xml"
+    },
+    "2018-11": {
+      "hash": "538d14fb816ee7c2d906a5597cc863e8223ca72d",
+      "size": 5420371,
+      "generated": "2026-01-23T03:42:38+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2018_11.xml"
+    },
+    "2018-12": {
+      "hash": "8996e00694e32bfbe83820499de482291f84d3f0",
+      "size": 4820288,
+      "generated": "2026-06-12T09:30:43+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2018_12.xml"
+    },
+    "2019-01": {
+      "hash": "a526a7f7d4c064b2b645d1fe441eaa7778eb4d01",
+      "size": 106095962,
+      "generated": "2026-07-08T00:11:51+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2019_01.xml"
+    },
+    "2019-02": {
+      "hash": "21825795f22c91e0d746cc01bc8aa9672095b0ca",
+      "size": 49488,
+      "generated": "2021-01-13T00:17:29+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2019_02.xml"
+    },
+    "2019-03": {
+      "hash": "f21bf778fc60f1cdd4259db27189c9c0ec3d2432",
+      "size": 4441975,
+      "generated": "2025-01-28T03:26:06+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2019_03.xml"
+    },
+    "2019-04": {
+      "hash": "6f204cdfacf497d10a4a3b0c6be74b295c6ab8bf",
+      "size": 6910931,
+      "generated": "2026-04-01T06:15:31+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2019_04.xml"
+    },
+    "2019-05": {
+      "hash": "223f04a46d9610a0e5f45c781f35d57eadbd0c38",
+      "size": 159321,
+      "generated": "2021-01-13T02:30:24+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2019_05.xml"
+    },
+    "2019-06": {
+      "hash": "c021d7302fb29de879a4d377463a4ccacb9e221d",
+      "size": 4427661,
+      "generated": "2026-06-16T16:53:42+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2019_06.xml"
+    },
+    "2019-07": {
+      "hash": "fc0fc40e64c5e544eae5e89cfebd52cb85a9477d",
+      "size": 5170379,
+      "generated": "2025-09-10T02:55:10+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2019_07.xml"
+    },
+    "2019-08": {
+      "hash": "ba075976f59156f94cd29c58f44ef6b0e2bc2866",
+      "size": 304948,
+      "generated": "2023-01-10T07:23:26+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2019_08.xml"
+    },
+    "2019-09": {
+      "hash": "fce5fadbb097807b2ba8a1ef59ac49ad2d2b7223",
+      "size": 8666844,
+      "generated": "2026-08-11T16:17:15+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2019_09.xml"
+    },
+    "2019-10": {
+      "hash": "697b268cc701a7f5eb9f22041a97fdedae9ca10e",
+      "size": 5672617,
+      "generated": "2026-02-03T05:58:58+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2019_10.xml"
+    },
+    "2019-11": {
+      "hash": "5975fd55f10173b0386d188130a4013b0d8c33b1",
+      "size": 6063896,
+      "generated": "2026-08-22T13:37:23+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2019_11.xml"
+    },
+    "2019-12": {
+      "hash": "e9e7ca9adbaae883da0079da7193ee2654057faf",
+      "size": 5228853,
+      "generated": "2026-07-01T12:56:19+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2019_12.xml"
+    },
+    "2020-01": {
+      "hash": "24df9f7652d91771f479e2ed3762c62d8a61d335",
+      "size": 100824572,
+      "generated": "2026-05-27T00:12:57+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2020_01.xml"
+    },
+    "2020-02": {
+      "hash": "94b91a9320c98eb655d1bdc746f6b2f75c99a4af",
+      "size": 172386,
+      "generated": "2021-01-13T02:29:19+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2020_02.xml"
+    },
+    "2020-03": {
+      "hash": "49f5357b39259014f0431d570e3d3d2dafecfc8c",
+      "size": 4860204,
+      "generated": "2024-07-24T06:01:57+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2020_03.xml"
+    },
+    "2020-04": {
+      "hash": "e16775d9a63e02aa54042c611d22708aece5e140",
+      "size": 3328506,
+      "generated": "2023-07-15T08:22:00+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2020_04.xml"
+    },
+    "2020-05": {
+      "hash": "cb5b39127bb6b1746a9894185c5514714b496a70",
+      "size": 4564030,
+      "generated": "2026-07-29T16:51:05+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2020_05.xml"
+    },
+    "2020-06": {
+      "hash": "12f69dc038760c4c1110ac958deed1704a1921ff",
+      "size": 6534807,
+      "generated": "2026-06-02T06:12:50+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2020_06.xml"
+    },
+    "2020-07": {
+      "hash": "29accf6739cdf231a2bf848f6bd9ed2e8f22131f",
+      "size": 5926609,
+      "generated": "2026-06-12T09:29:26+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2020_07.xml"
+    },
+    "2020-08": {
+      "hash": "beba8d2d97eff77f1412ba155b88935e11975be6",
+      "size": 95692,
+      "generated": "2024-01-20T08:08:42+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2020_08.xml"
+    },
+    "2020-09": {
+      "hash": "d3b4d7f2fe89f41174a5a3565b816bd34edec6ee",
+      "size": 5590114,
+      "generated": "2026-06-20T10:50:52+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2020_09.xml"
+    },
+    "2020-10": {
+      "hash": "75737292e289ce9bdefddaf75344cb0486ed0caa",
+      "size": 5624278,
+      "generated": "2026-07-29T18:51:58+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2020_10.xml"
+    },
+    "2020-11": {
+      "hash": "5f94fcb2dd0fc67138743534977c62451664b461",
+      "size": 5453465,
+      "generated": "2026-07-29T18:54:06+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2020_11.xml"
+    },
+    "2020-12": {
+      "hash": "6aa56af36c7342e2c147156d57d59d268975bc21",
+      "size": 443886,
+      "generated": "2025-03-22T05:12:18+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2020_12.xml"
+    },
+    "2021-01": {
+      "hash": "6daaa438a6826ccdf46418482089870e6b52c61f",
+      "size": 95533526,
+      "generated": "2026-07-29T03:53:49+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2021_01.xml"
+    },
+    "2021-02": {
+      "hash": "ac17edaccec689547f68314a3cb69a0b35d49120",
+      "size": 143848,
+      "generated": "2024-01-11T05:54:53+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2021_02.xml"
+    },
+    "2021-03": {
+      "hash": "63c40e07b77b337c07d16366fc9018e6f3523163",
+      "size": 109581,
+      "generated": "2021-10-09T03:35:26+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2021_03.xml"
+    },
+    "2021-04": {
+      "hash": "69f066ca9e6d6aa0127cca5ceecb36d7cd045d11",
+      "size": 71608,
+      "generated": "2022-01-07T05:33:46+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2021_04.xml"
+    },
+    "2021-05": {
+      "hash": "69e2f841df80e0713f6ca0b027492f21b9be4af2",
+      "size": 5200635,
+      "generated": "2025-04-26T03:43:14+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2021_05.xml"
+    },
+    "2021-06": {
+      "hash": "8970d87d579feea31d7f80e9adea3dc345bc7bad",
+      "size": 4416594,
+      "generated": "2026-03-11T09:17:05+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2021_06.xml"
+    },
+    "2021-07": {
+      "hash": "4cde9a3feb1054747418119fdee75d5498131e97",
+      "size": 94743,
+      "generated": "2025-03-13T03:10:39+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2021_07.xml"
+    },
+    "2021-08": {
+      "hash": "4331e03bc0c26063c63e8818a92eaada13092058",
+      "size": 5532380,
+      "generated": "2026-05-14T05:54:27+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2021_08.xml"
+    },
+    "2021-09": {
+      "hash": "35ee88e561c943489f789570ccee9cb7a737ffb3",
+      "size": 6108668,
+      "generated": "2026-08-08T12:09:29+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2021_09.xml"
+    },
+    "2021-10": {
+      "hash": "381daaaf22063bff753c4be14dc0a0aa0c11cdad",
+      "size": 5040427,
+      "generated": "2026-07-30T18:12:43+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2021_10.xml"
+    },
+    "2021-11": {
+      "hash": "670db24a2564a242e118225ec254adb4479cd194",
+      "size": 415485,
+      "generated": "2026-08-08T12:11:52+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2021_11.xml"
+    },
+    "2021-12": {
+      "hash": "7bdbed36a7a5bd09fe82b7342a88efa7c953a8db",
+      "size": 192802,
+      "generated": "2026-04-04T02:19:25+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2021_12.xml"
+    },
+    "2022-01": {
+      "hash": "4a9cffdeb18178b5a61db91703d7067e20d419bb",
+      "size": 106110777,
+      "generated": "2026-08-22T00:15:31+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2022_01.xml"
+    },
+    "2022-02": {
+      "hash": "ea1021101610922dd72f7bf5fb0c04937676ca67",
+      "size": 33920,
+      "generated": "2022-04-06T05:41:42+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2022_02.xml"
+    },
+    "2022-03": {
+      "hash": "646014f230286461643da5024af5feea1d4e26e0",
+      "size": 84858,
+      "generated": "2022-04-05T05:35:45+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2022_03.xml"
+    },
+    "2022-04": {
+      "hash": "e0ea74383ce060fb2f7fb2ab61ee6d4decc22cba",
+      "size": 5152251,
+      "generated": "2026-04-08T05:14:40+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2022_04.xml"
+    },
+    "2022-05": {
+      "hash": "9ec752e8e5af4cd577df855f0797759f5e83c48d",
+      "size": 6330799,
+      "generated": "2026-03-21T05:31:47+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2022_05.xml"
+    },
+    "2022-06": {
+      "hash": "cf3bcb3ab363fb1f1fe7a3d4513128ff4b2a834b",
+      "size": 5015729,
+      "generated": "2026-04-17T06:57:14+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2022_06.xml"
+    },
+    "2022-07": {
+      "hash": "02913a08dbcb689762842d42927e83e4bbcd1569",
+      "size": 5644773,
+      "generated": "2026-08-14T12:01:20+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2022_07.xml"
+    },
+    "2022-08": {
+      "hash": "f277cff83550323ef4c4dc17d2869408462a4b10",
+      "size": 6243369,
+      "generated": "2026-08-21T13:03:11+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2022_08.xml"
+    },
+    "2022-09": {
+      "hash": "98c967335f204a32743dbbb2436b961c59b494a5",
+      "size": 3630600,
+      "generated": "2023-07-25T05:52:43+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2022_09.xml"
+    },
+    "2022-10": {
+      "hash": "8297a3a3bfb8042b3eecce10cc6760a445f3145a",
+      "size": 3179762,
+      "generated": "2024-01-23T07:43:28+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2022_10.xml"
+    },
+    "2022-11": {
+      "hash": "0a68fa37e68155da159f70ee0f1e181dcc95d0cd",
+      "size": 3248053,
+      "generated": "2025-01-07T04:13:10+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2022_11.xml"
+    },
+    "2022-12": {
+      "hash": "05d6a494c98091fe18dd6c1171313d9e5f7792b4",
+      "size": 2960519,
+      "generated": "2024-10-04T02:39:04+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2022_12.xml"
+    },
+    "2023-01": {
+      "hash": "3660a6df681afed8695ff77172043931f7cedec4",
+      "size": 116159358,
+      "generated": "2026-08-27T00:38:44+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2023_01.xml"
+    },
+    "2023-02": {
+      "hash": "f1caea986b98ccfc699627060207f0f5e772d21d",
+      "size": 234,
+      "generated": "2023-01-02T00:06:09+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2023_02.xml"
+    },
+    "2023-03": {
+      "hash": "e5edc90f2072b4acd47fe14503f07da368f6b49a",
+      "size": 679584,
+      "generated": "2026-03-05T07:05:59+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2023_03.xml"
+    },
+    "2023-04": {
+      "hash": "0ce44c782578ef590018e837a8f1967d6eb3ae92",
+      "size": 7482811,
+      "generated": "2026-07-21T11:27:29+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2023_04.xml"
+    },
+    "2023-05": {
+      "hash": "623865ccff65ba64930a29444806c29874b36216",
+      "size": 6025955,
+      "generated": "2026-04-11T07:07:33+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2023_05.xml"
+    },
+    "2023-06": {
+      "hash": "c4841c656b9220dbb7433307a0a2e39c8c0b2042",
+      "size": 308655,
+      "generated": "2026-08-20T11:08:03+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2023_06.xml"
+    },
+    "2023-07": {
+      "hash": "9c20a81475b008aad68286fcf212018f18a5d0f3",
+      "size": 5831191,
+      "generated": "2026-06-30T17:40:24+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2023_07.xml"
+    },
+    "2023-08": {
+      "hash": "802a5bad69312c2ef6c4ec068ce7f9d6a664f212",
+      "size": 56508,
+      "generated": "2021-01-13T10:06:14+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2023_08.xml"
+    },
+    "2023-09": {
+      "hash": "0ae9c357c052c8549f94faf5477e75308fd5e0dd",
+      "size": 14009413,
+      "generated": "2026-04-11T06:54:56+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2023_09.xml"
+    },
+    "2023-10": {
+      "hash": "5be1d70b344170ab3e53a6a4cf7046b16ee3a97d",
+      "size": 4628935,
+      "generated": "2025-09-26T09:50:32+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2023_10.xml"
+    },
+    "2023-11": {
+      "hash": "b41eed1e973f7d93e79fc452cf6c10204d84c16d",
+      "size": 4814117,
+      "generated": "2025-11-08T04:41:17+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2023_11.xml"
+    },
+    "2023-12": {
+      "hash": "f907041b44706f1f2e0f09e2a538081692f6f8ca",
+      "size": 4601551,
+      "generated": "2026-05-21T05:26:42+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2023_12.xml"
+    },
+    "2024-01": {
+      "hash": "323e5db84c2b993fce6b508a9da0dc080711e705",
+      "size": 136042703,
+      "generated": "2026-08-22T04:35:03+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2024_01.xml"
+    },
+    "2024-02": {
+      "hash": "e2d362e7f5f4dc711de80cf2ca81fcf85279c406",
+      "size": 174695,
+      "generated": "2025-10-28T04:13:48+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2024_02.xml"
+    },
+    "2024-03": {
+      "hash": "abf51a0f119336f3a8e790a9b1e20f509a183904",
+      "size": 5927834,
+      "generated": "2026-07-10T15:42:16+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2024_03.xml"
+    },
+    "2024-04": {
+      "hash": "9c9ae14e46e8c1279a2a5f610a956625fb9860d7",
+      "size": 5387828,
+      "generated": "2026-08-05T18:08:04+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2024_04.xml"
+    },
+    "2024-05": {
+      "hash": "ef98a82141995d223439708c5f965598d21f213b",
+      "size": 91821,
+      "generated": "2025-01-05T00:07:19+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2024_05.xml"
+    },
+    "2024-06": {
+      "hash": "a45d058b74c873d8800855a2882470bd447f4f99",
+      "size": 5806236,
+      "generated": "2026-08-11T17:26:41+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2024_06.xml"
+    },
+    "2024-07": {
+      "hash": "84f33cee90c063bba13bc4d9a4e5a0e2adb1863c",
+      "size": 13645,
+      "generated": "2021-01-13T10:06:03+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2024_07.xml"
+    },
+    "2024-08": {
+      "hash": "a444ec4fd02830cefaf16bd5f78c7a94e812b021",
+      "size": 8104114,
+      "generated": "2025-12-17T05:34:08+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2024_08.xml"
+    },
+    "2024-09": {
+      "hash": "f0b659e38f37a867957c4871a9a8154434093f3a",
+      "size": 4825991,
+      "generated": "2026-07-08T13:00:26+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2024_09.xml"
+    },
+    "2024-10": {
+      "hash": "5fdf4f6396e19a7e2647f9700fd43b6c646a7eea",
+      "size": 3877229,
+      "generated": "2024-02-21T05:32:14+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2024_10.xml"
+    },
+    "2024-11": {
+      "hash": "a1dd32505dfa30e6ce4699e572e53fc709d3825e",
+      "size": 4179812,
+      "generated": "2026-03-20T06:28:36+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2024_11.xml"
+    },
+    "2024-12": {
+      "hash": "be9a9b33207b4f7c9c9b26f9733af5cbdcd51dc6",
+      "size": 237107,
+      "generated": "2022-01-13T04:49:39+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2024_12.xml"
+    },
+    "2025-01": {
+      "hash": "5e15d16c1f91b6b8fa274f26c10ea34575e1418e",
+      "size": 127788471,
+      "generated": "2026-08-26T02:34:32+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2025_01.xml"
+    },
+    "2025-02": {
+      "hash": "001e90b354543aceb9bd237d194e4d733f65d805",
+      "size": 102466,
+      "generated": "2025-05-10T02:44:21+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2025_02.xml"
+    },
+    "2025-03": {
+      "hash": "da51eed17745f6ace8c002321fc0393fa8e266ca",
+      "size": 4257236,
+      "generated": "2026-07-08T13:36:07+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2025_03.xml"
+    },
+    "2025-04": {
+      "hash": "d7d182fd03d8f6a94c86a00df0294beceeb8aefe",
+      "size": 4171779,
+      "generated": "2026-07-14T23:22:57+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2025_04.xml"
+    },
+    "2025-05": {
+      "hash": "6b41336a28dcda0eb49d83244af0efdf72ab9d07",
+      "size": 566453,
+      "generated": "2026-01-07T08:38:59+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2025_05.xml"
+    },
+    "2025-06": {
+      "hash": "b6d422040e6a6272bd5e95540ed5afdf25f5e016",
+      "size": 2654659,
+      "generated": "2025-10-31T05:59:37+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2025_06.xml"
+    },
+    "2025-07": {
+      "hash": "9c8b455b065955f09385b4bd9b853dd3ddbe4093",
+      "size": 55974,
+      "generated": "2021-01-13T11:50:18+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2025_07.xml"
+    },
+    "2025-08": {
+      "hash": "e0e14e2ab3eb142135f4a9e6f1d50e8e7bf34cb9",
+      "size": 4403542,
+      "generated": "2025-07-30T03:51:06+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2025_08.xml"
+    },
+    "2025-09": {
+      "hash": "18d6c807a8e36524201f7107dd26e83d14f26a71",
+      "size": 5103980,
+      "generated": "2026-01-31T05:33:34+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2025_09.xml"
+    },
+    "2025-10": {
+      "hash": "b83b74318d544712d841eaa548556120fca04f41",
+      "size": 4893850,
+      "generated": "2026-04-21T06:49:41+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2025_10.xml"
+    },
+    "2025-11": {
+      "hash": "f07332b4f10e941624ec6c1f115665c75eae6671",
+      "size": 358648,
+      "generated": "2022-01-07T05:20:33+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2025_11.xml"
+    },
+    "2025-12": {
+      "hash": "b12a9281bd11b01dd465700baf05141331da1e75",
+      "size": 176581,
+      "generated": "2021-02-23T03:49:44+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2025_12.xml"
+    },
+    "2026-01": {
+      "hash": "973aaf11893caea833f71a70309387aa9070cd81",
+      "size": 124209554,
+      "generated": "2026-08-28T06:14:16+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2026_01.xml"
+    },
+    "2026-02": {
+      "hash": "76b7e8b806bc1df5247476fbf3e9100042409431",
+      "size": 244074,
+      "generated": "2026-02-17T05:56:01+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2026_02.xml"
+    },
+    "2026-03": {
+      "hash": "2c5a8cc4b615baf4eaf6b461b58ed425270a5b31",
+      "size": 2539719,
+      "generated": "2026-08-08T12:05:34+02:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2026_03.xml"
+    },
+    "2026-04": {
+      "hash": "8c14ce3dd88cac2a3a0abc0488e169017fe31322",
+      "size": 827412,
+      "generated": "2026-01-10T05:35:04+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2026_04.xml"
+    },
+    "2026-05": {
+      "hash": "fa71b375c17d96ab3a74a547f1e43749a2ee789c",
+      "size": 3369627,
+      "generated": "2025-11-11T05:26:15+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2026_05.xml"
+    },
+    "2026-06": {
+      "hash": "4acb70aa2b51e205d6436bc2803220d82c0867a7",
+      "size": 167525,
+      "generated": "2021-01-13T11:50:09+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2026_06.xml"
+    },
+    "2026-07": {
+      "hash": "f4b5ba39d7c7023a01735a28c5daf3646c191af3",
+      "size": 4455356,
+      "generated": "2025-11-28T06:31:56+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2026_07.xml"
+    },
+    "2026-08": {
+      "hash": "7fdcebc767cb927e49db1a397c0a127ae4e9f57d",
+      "size": 5054458,
+      "generated": "2026-01-13T04:46:21+01:00",
+      "complete": true,
+      "url": "https://data.smlouvy.gov.cz/dump_2026_08.xml"
+    }
+  }
+}

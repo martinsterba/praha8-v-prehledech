@@ -1,0 +1,845 @@
+{
+  "schema": 1,
+  "updated": "2026-08-30T12:54:22.790Z",
+  "scope": {
+    "municipality": {
+      "name": "Městská část Praha 8",
+      "ico": "00063797",
+      "kind": "municipality",
+      "type": "městská část"
+    },
+    "eligibleEntities": 40,
+    "excluded": [
+      "IPODEC - ČISTÉ MĚSTO a.s. (MČ Praha 8 nemá většinovou kontrolu)"
+    ]
+  },
+  "municipality": {
+    "name": "Městská část Praha 8",
+    "ico": "00063797",
+    "kind": "municipality",
+    "type": "městská část"
+  },
+  "entities": [
+    {
+      "name": "Osmá servisní a.s.",
+      "ico": "24796590",
+      "kind": "company",
+      "type": "městská obchodní společnost",
+      "legalType": "obchodní společnost",
+      "ownershipShare": "100 %",
+      "source": "https://www.praha8.cz/Centrum-Palmovka-a-s.html",
+      "website": "https://www.osmaservisni.cz/"
+    },
+    {
+      "name": "Osmá správa majetku a služeb a.s.",
+      "ico": "04650522",
+      "kind": "company",
+      "type": "městská obchodní společnost",
+      "legalType": "obchodní společnost",
+      "ownershipShare": "100 %",
+      "source": "https://www.praha8.cz/Osma-sprava-majetku-a-sluzeb-a-s",
+      "website": "https://www.osms.cz/"
+    },
+    {
+      "name": "Správa tepelného hospodářství MČ Praha 8 s.r.o.",
+      "ico": "04212371",
+      "kind": "company",
+      "type": "městská obchodní společnost",
+      "legalType": "obchodní společnost",
+      "ownershipShare": "100 %",
+      "source": "https://www.praha8.cz/Sprava-tepelneho-hospodarstvi-MC-Praha-8-s-r-o.html",
+      "website": "https://www.sthpraha8.cz/"
+    },
+    {
+      "name": "Gerontologické centrum",
+      "ico": "45250022",
+      "kind": "organization",
+      "type": "ostatní příspěvková organizace",
+      "legalType": "příspěvková organizace",
+      "ownershipShare": "",
+      "source": "https://www.praha8.cz/Organizace-zdravotnickych-a-socialne-zdravotnickych-sluzeb",
+      "website": "https://www.gerontocentrum.cz/"
+    },
+    {
+      "name": "Mateřská škola, Praha 8, Bojasova 1",
+      "ico": "68402112",
+      "kind": "organization",
+      "type": "mateřská škola",
+      "legalType": "příspěvková organizace",
+      "ownershipShare": "",
+      "source": "https://www.praha8.cz/Materska-skola-Praha-8-Bojasova-1.html",
+      "website": "http://www.msbojasova.cz/"
+    },
+    {
+      "name": "Mateřská škola, Praha 8, Chabařovická 2",
+      "ico": "70919585",
+      "kind": "organization",
+      "type": "mateřská škola",
+      "legalType": "příspěvková organizace",
+      "ownershipShare": "",
+      "source": "https://www.praha8.cz/Materska-skola-Praha-8-Chabarovicka-2.html",
+      "website": "http://www.chabarovicka.cz/"
+    },
+    {
+      "name": "Mateřská škola, Praha 8, Klíčanská 20",
+      "ico": "70919674",
+      "kind": "organization",
+      "type": "mateřská škola",
+      "legalType": "příspěvková organizace",
+      "ownershipShare": "",
+      "source": "https://www.praha8.cz/Materska-skola-Praha-8-Klicanska-20.html",
+      "website": "http://www.ms-klicanska.cz/"
+    },
+    {
+      "name": "Mateřská škola, Praha 8, Korycanská 14",
+      "ico": "60433361",
+      "kind": "organization",
+      "type": "mateřská škola",
+      "legalType": "příspěvková organizace",
+      "ownershipShare": "",
+      "source": "https://www.praha8.cz/Materska-skola-Praha-8-Korycanska-14.html",
+      "website": "http://www.mskorycanska.cz/"
+    },
+    {
+      "name": "Mateřská škola, Praha 8, Kotlaska 3",
+      "ico": "70919623",
+      "kind": "organization",
+      "type": "mateřská škola",
+      "legalType": "příspěvková organizace",
+      "ownershipShare": "",
+      "source": "https://www.praha8.cz/Materska-skola-Praha-8-Kotlaska-3.html",
+      "website": "http://www.mskotlaska.cz/"
+    },
+    {
+      "name": "Mateřská škola, Praha 8, Krynická 2",
+      "ico": "72049812",
+      "kind": "organization",
+      "type": "mateřská škola",
+      "legalType": "příspěvková organizace",
+      "ownershipShare": "",
+      "source": "https://www.praha8.cz/Materska-skola-Praha-8-Krynicka-2.html",
+      "website": "https://ms-krynicka.cz/"
+    },
+    {
+      "name": "Mateřská škola, Praha 8, Lešenská 2",
+      "ico": "70919704",
+      "kind": "organization",
+      "type": "mateřská škola",
+      "legalType": "příspěvková organizace",
+      "ownershipShare": "",
+      "source": "https://www.praha8.cz/Materska-skola-Praha-8-Lesenska-2.html",
+      "website": "http://www.mslesenska.cz/"
+    },
+    {
+      "name": "Mateřská škola, Praha 8, Libčická 6",
+      "ico": "70919721",
+      "kind": "organization",
+      "type": "mateřská škola",
+      "legalType": "příspěvková organizace",
+      "ownershipShare": "",
+      "source": "https://www.praha8.cz/Materska-skola-Praha-8-Libcicka-6.html",
+      "website": "http://www.mslibcicka.cz/"
+    },
+    {
+      "name": "Mateřská škola, Praha 8, Na Korábě 2",
+      "ico": "70919747",
+      "kind": "organization",
+      "type": "mateřská škola",
+      "legalType": "příspěvková organizace",
+      "ownershipShare": "",
+      "source": "https://www.praha8.cz/Materska-skola-Praha-8-Na-Korabe-2.html",
+      "website": "http://www.msnakorabe.cz/"
+    },
+    {
+      "name": "Mateřská škola, Praha 8, Na Pěšinách 13",
+      "ico": "70919631",
+      "kind": "organization",
+      "type": "mateřská škola",
+      "legalType": "příspěvková organizace",
+      "ownershipShare": "",
+      "source": "https://www.praha8.cz/Materska-skola-Praha-8-Na-Pesinach-13.html",
+      "website": "http://www.msnapesinach.cz/"
+    },
+    {
+      "name": "Mateřská škola, Praha 8, Na Přesypu 4",
+      "ico": "70919666",
+      "kind": "organization",
+      "type": "mateřská škola",
+      "legalType": "příspěvková organizace",
+      "ownershipShare": "",
+      "source": "https://www.praha8.cz/Materska-skola-Praha-8-Na-Presypu-4.html",
+      "website": "http://www.msnapresypu.cz/"
+    },
+    {
+      "name": "Mateřská škola, Praha 8, Poznaňská 32",
+      "ico": "70919691",
+      "kind": "organization",
+      "type": "mateřská škola",
+      "legalType": "příspěvková organizace",
+      "ownershipShare": "",
+      "source": "https://www.praha8.cz/Materska-skola-Praha-8-Poznanska-32.html",
+      "website": "http://www.mspoznanska.cz/"
+    },
+    {
+      "name": "Mateřská škola, Praha 8, Řešovská 8",
+      "ico": "70919739",
+      "kind": "organization",
+      "type": "mateřská škola",
+      "legalType": "příspěvková organizace",
+      "ownershipShare": "",
+      "source": "https://www.praha8.cz/Materska-skola-Praha-8-Resovska-8.html",
+      "website": "http://www.msresovska.cz/"
+    },
+    {
+      "name": "Mateřská škola, Praha 8, Sokolovská 182",
+      "ico": "60433370",
+      "kind": "organization",
+      "type": "mateřská škola",
+      "legalType": "příspěvková organizace",
+      "ownershipShare": "",
+      "source": "https://www.praha8.cz/Materska-skola-Praha-8-Sokolovska-182.html",
+      "website": "http://www.mssokolovska.cz/"
+    },
+    {
+      "name": "Mateřská škola, Praha 8, Šimůnkova 13",
+      "ico": "70919658",
+      "kind": "organization",
+      "type": "mateřská škola",
+      "legalType": "příspěvková organizace",
+      "ownershipShare": "",
+      "source": "https://www.praha8.cz/Materska-skola-Praha-8-Simunkova-13.html",
+      "website": "http://www.ms-simunkova.cz/"
+    },
+    {
+      "name": "Mateřská škola, Praha 8, Šiškova 2",
+      "ico": "70919640",
+      "kind": "organization",
+      "type": "mateřská škola",
+      "legalType": "příspěvková organizace",
+      "ownershipShare": "",
+      "source": "https://www.praha8.cz/Materska-skola-Praha-8-Siskova-2.html",
+      "website": "http://www.mssiskova.cz/"
+    },
+    {
+      "name": "Mateřská škola, Praha 8, Štěpničná 1",
+      "ico": "70919615",
+      "kind": "organization",
+      "type": "mateřská škola",
+      "legalType": "příspěvková organizace",
+      "ownershipShare": "",
+      "source": "https://www.praha8.cz/Materska-skola-Praha-8-Stepnicna-1.html",
+      "website": "http://www.msstepnicna.cz/"
+    },
+    {
+      "name": "Mateřská škola, Praha 8, U Sluncové 10a",
+      "ico": "68402104",
+      "kind": "organization",
+      "type": "mateřská škola",
+      "legalType": "příspěvková organizace",
+      "ownershipShare": "",
+      "source": "https://www.praha8.cz/Materska-skola-Praha-8-U-Sluncove-10a.html",
+      "website": "http://www.msusluncove.cz/"
+    },
+    {
+      "name": "Osmička pro rodinu",
+      "ico": "04387031",
+      "kind": "organization",
+      "type": "ostatní příspěvková organizace",
+      "legalType": "příspěvková organizace",
+      "ownershipShare": "",
+      "source": "https://www.praha8.cz/Osmicka-pro-rodinu",
+      "website": "https://www.osmickaprorodinu.cz/"
+    },
+    {
+      "name": "Servisní středisko pro správu svěřeného majetku MČ Praha 8",
+      "ico": "00639524",
+      "kind": "organization",
+      "type": "ostatní příspěvková organizace",
+      "legalType": "příspěvková organizace",
+      "ownershipShare": "",
+      "source": "https://www.praha8.cz/Servisni-stredisko-pro-spravu-svereneho-majetku-MC-Praha-8-prispevkova-organizace.html",
+      "website": "https://www.praha8.cz/servisni-stredisko-pro-spravu-svereneho-majetku-mc-praha-8-prispevkova-organizace.html"
+    },
+    {
+      "name": "Sociální a ošetřovatelské služby Praha 8",
+      "ico": "70871213",
+      "kind": "organization",
+      "type": "ostatní příspěvková organizace",
+      "legalType": "příspěvková organizace",
+      "ownershipShare": "",
+      "source": "https://www.praha8.cz/Organizace-zdravotnickych-a-socialne-zdravotnickych-sluzeb",
+      "website": "http://www.gerontocentrum.cz/"
+    },
+    {
+      "name": "Základní škola a mateřská škola Na Slovance, Praha 8, Bedřichovská 1",
+      "ico": "60433256",
+      "kind": "organization",
+      "type": "základní škola",
+      "legalType": "příspěvková organizace",
+      "ownershipShare": "",
+      "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Na-Slovance-Praha-8-Bedrichovska-1.html",
+      "website": "http://www.zsnaslovance.cz/"
+    },
+    {
+      "name": "Základní škola a mateřská škola Petra Strozziho, Praha 8, Za Invalidovnou 3",
+      "ico": "60461853",
+      "kind": "organization",
+      "type": "základní škola",
+      "legalType": "příspěvková organizace",
+      "ownershipShare": "",
+      "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Petra-Strozziho-Praha-8-Za-Invalidovnou-3.html",
+      "website": "http://www.zs-strozziho.cz/"
+    },
+    {
+      "name": "Základní škola a mateřská škola Ústavní, Praha 8, Hlivická 1",
+      "ico": "60433337",
+      "kind": "organization",
+      "type": "základní škola",
+      "legalType": "příspěvková organizace",
+      "ownershipShare": "",
+      "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Ustavni-Praha-8-Hlivicka-1.html",
+      "website": "http://www.zs-ustavni.cz/"
+    },
+    {
+      "name": "Základní škola a mateřská škola, Praha 8, Dolákova 1",
+      "ico": "60433281",
+      "kind": "organization",
+      "type": "základní škola",
+      "legalType": "příspěvková organizace",
+      "ownershipShare": "",
+      "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Praha-8-Dolakova-1.html",
+      "website": "http://www.zsdolakova.cz/"
+    },
+    {
+      "name": "Základní škola a mateřská škola, Praha 8, Lyčkovo náměstí 6",
+      "ico": "60433230",
+      "kind": "organization",
+      "type": "základní škola",
+      "legalType": "příspěvková organizace",
+      "ownershipShare": "",
+      "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Praha-8-Lyckovo-namesti-6.html",
+      "website": "http://www.smysluplnaskola.cz/"
+    },
+    {
+      "name": "Základní škola a mateřská škola, Praha 8, U Školské zahrady 4",
+      "ico": "60461837",
+      "kind": "organization",
+      "type": "základní škola",
+      "legalType": "příspěvková organizace",
+      "ownershipShare": "",
+      "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Praha-8-U-Skolske-zahrady-4.html",
+      "website": "http://www.uskolskezahrady.cz/"
+    },
+    {
+      "name": "Základní škola Bohumila Hrabala, Praha 8, Zenklova 52",
+      "ico": "63113961",
+      "kind": "organization",
+      "type": "základní škola",
+      "legalType": "příspěvková organizace",
+      "ownershipShare": "",
+      "source": "https://www.praha8.cz/Zakladni-skola-Bohumila-Hrabala-Praha-8-Zenklova-52.html",
+      "website": "http://www.zs-bhrabala.cz/"
+    },
+    {
+      "name": "Základní škola Mazurská, Praha 8, Svídnická 1a",
+      "ico": "60433329",
+      "kind": "organization",
+      "type": "základní škola",
+      "legalType": "příspěvková organizace",
+      "ownershipShare": "",
+      "source": "https://www.praha8.cz/Zakladni-skola-Mazurska-Praha-8-Svidnicka-1a.html",
+      "website": "http://www.mazurska.cz/"
+    },
+    {
+      "name": "Základní škola, Praha 8, Burešova 14",
+      "ico": "60433345",
+      "kind": "organization",
+      "type": "základní škola",
+      "legalType": "příspěvková organizace",
+      "ownershipShare": "",
+      "source": "https://www.praha8.cz/Zakladni-skola-Praha-8-Buresova-14.html",
+      "website": "http://www.zsburesova.cz/"
+    },
+    {
+      "name": "Základní škola, Praha 8, Glowackého 6",
+      "ico": "60433302",
+      "kind": "organization",
+      "type": "základní škola",
+      "legalType": "příspěvková organizace",
+      "ownershipShare": "",
+      "source": "https://www.praha8.cz/Zakladni-skola-Praha-8-Glowackeho-6.html",
+      "website": "http://www.glowackeho.eu/"
+    },
+    {
+      "name": "Základní škola, Praha 8, Hovorčovická 11",
+      "ico": "60433299",
+      "kind": "organization",
+      "type": "základní škola",
+      "legalType": "příspěvková organizace",
+      "ownershipShare": "",
+      "source": "https://www.praha8.cz/Zakladni-skola-Praha-8-Hovorcovicka-11.html",
+      "website": "http://www.zshovorcovicka.cz/"
+    },
+    {
+      "name": "Základní škola, Praha 8, Libčická 10",
+      "ico": "60461811",
+      "kind": "organization",
+      "type": "základní škola",
+      "legalType": "příspěvková organizace",
+      "ownershipShare": "",
+      "source": "https://www.praha8.cz/Zakladni-skola-Praha-8-Libcicka-10.html",
+      "website": "http://www.zslibcicka.cz/"
+    },
+    {
+      "name": "Základní škola, Praha 8, Na Šutce 28",
+      "ico": "60461845",
+      "kind": "organization",
+      "type": "základní škola",
+      "legalType": "příspěvková organizace",
+      "ownershipShare": "",
+      "source": "https://www.praha8.cz/Zakladni-skola-Praha-8-Na-Sutce-28.html",
+      "website": "http://www.zssutka.cz/"
+    },
+    {
+      "name": "Základní škola, Praha 8, Palmovka 8",
+      "ico": "60433248",
+      "kind": "organization",
+      "type": "základní škola",
+      "legalType": "příspěvková organizace",
+      "ownershipShare": "",
+      "source": "https://www.praha8.cz/Zakladni-skola-Praha-8-Palmovka-8.html",
+      "website": "http://www.zspalmovka.cz/"
+    },
+    {
+      "name": "Základní škola, Praha 8, Žernosecká 3",
+      "ico": "60433272",
+      "kind": "organization",
+      "type": "základní škola",
+      "legalType": "příspěvková organizace",
+      "ownershipShare": "",
+      "source": "https://www.praha8.cz/Zakladni-skola-Praha-8-Zernosecka-3.html",
+      "website": "http://www.zernosecka.cz/"
+    }
+  ],
+  "groups": {
+    "organizations": [
+      {
+        "name": "Gerontologické centrum",
+        "ico": "45250022",
+        "kind": "organization",
+        "type": "ostatní příspěvková organizace",
+        "legalType": "příspěvková organizace",
+        "ownershipShare": "",
+        "source": "https://www.praha8.cz/Organizace-zdravotnickych-a-socialne-zdravotnickych-sluzeb",
+        "website": "https://www.gerontocentrum.cz/"
+      },
+      {
+        "name": "Mateřská škola, Praha 8, Bojasova 1",
+        "ico": "68402112",
+        "kind": "organization",
+        "type": "mateřská škola",
+        "legalType": "příspěvková organizace",
+        "ownershipShare": "",
+        "source": "https://www.praha8.cz/Materska-skola-Praha-8-Bojasova-1.html",
+        "website": "http://www.msbojasova.cz/"
+      },
+      {
+        "name": "Mateřská škola, Praha 8, Chabařovická 2",
+        "ico": "70919585",
+        "kind": "organization",
+        "type": "mateřská škola",
+        "legalType": "příspěvková organizace",
+        "ownershipShare": "",
+        "source": "https://www.praha8.cz/Materska-skola-Praha-8-Chabarovicka-2.html",
+        "website": "http://www.chabarovicka.cz/"
+      },
+      {
+        "name": "Mateřská škola, Praha 8, Klíčanská 20",
+        "ico": "70919674",
+        "kind": "organization",
+        "type": "mateřská škola",
+        "legalType": "příspěvková organizace",
+        "ownershipShare": "",
+        "source": "https://www.praha8.cz/Materska-skola-Praha-8-Klicanska-20.html",
+        "website": "http://www.ms-klicanska.cz/"
+      },
+      {
+        "name": "Mateřská škola, Praha 8, Korycanská 14",
+        "ico": "60433361",
+        "kind": "organization",
+        "type": "mateřská škola",
+        "legalType": "příspěvková organizace",
+        "ownershipShare": "",
+        "source": "https://www.praha8.cz/Materska-skola-Praha-8-Korycanska-14.html",
+        "website": "http://www.mskorycanska.cz/"
+      },
+      {
+        "name": "Mateřská škola, Praha 8, Kotlaska 3",
+        "ico": "70919623",
+        "kind": "organization",
+        "type": "mateřská škola",
+        "legalType": "příspěvková organizace",
+        "ownershipShare": "",
+        "source": "https://www.praha8.cz/Materska-skola-Praha-8-Kotlaska-3.html",
+        "website": "http://www.mskotlaska.cz/"
+      },
+      {
+        "name": "Mateřská škola, Praha 8, Krynická 2",
+        "ico": "72049812",
+        "kind": "organization",
+        "type": "mateřská škola",
+        "legalType": "příspěvková organizace",
+        "ownershipShare": "",
+        "source": "https://www.praha8.cz/Materska-skola-Praha-8-Krynicka-2.html",
+        "website": "https://ms-krynicka.cz/"
+      },
+      {
+        "name": "Mateřská škola, Praha 8, Lešenská 2",
+        "ico": "70919704",
+        "kind": "organization",
+        "type": "mateřská škola",
+        "legalType": "příspěvková organizace",
+        "ownershipShare": "",
+        "source": "https://www.praha8.cz/Materska-skola-Praha-8-Lesenska-2.html",
+        "website": "http://www.mslesenska.cz/"
+      },
+      {
+        "name": "Mateřská škola, Praha 8, Libčická 6",
+        "ico": "70919721",
+        "kind": "organization",
+        "type": "mateřská škola",
+        "legalType": "příspěvková organizace",
+        "ownershipShare": "",
+        "source": "https://www.praha8.cz/Materska-skola-Praha-8-Libcicka-6.html",
+        "website": "http://www.mslibcicka.cz/"
+      },
+      {
+        "name": "Mateřská škola, Praha 8, Na Korábě 2",
+        "ico": "70919747",
+        "kind": "organization",
+        "type": "mateřská škola",
+        "legalType": "příspěvková organizace",
+        "ownershipShare": "",
+        "source": "https://www.praha8.cz/Materska-skola-Praha-8-Na-Korabe-2.html",
+        "website": "http://www.msnakorabe.cz/"
+      },
+      {
+        "name": "Mateřská škola, Praha 8, Na Pěšinách 13",
+        "ico": "70919631",
+        "kind": "organization",
+        "type": "mateřská škola",
+        "legalType": "příspěvková organizace",
+        "ownershipShare": "",
+        "source": "https://www.praha8.cz/Materska-skola-Praha-8-Na-Pesinach-13.html",
+        "website": "http://www.msnapesinach.cz/"
+      },
+      {
+        "name": "Mateřská škola, Praha 8, Na Přesypu 4",
+        "ico": "70919666",
+        "kind": "organization",
+        "type": "mateřská škola",
+        "legalType": "příspěvková organizace",
+        "ownershipShare": "",
+        "source": "https://www.praha8.cz/Materska-skola-Praha-8-Na-Presypu-4.html",
+        "website": "http://www.msnapresypu.cz/"
+      },
+      {
+        "name": "Mateřská škola, Praha 8, Poznaňská 32",
+        "ico": "70919691",
+        "kind": "organization",
+        "type": "mateřská škola",
+        "legalType": "příspěvková organizace",
+        "ownershipShare": "",
+        "source": "https://www.praha8.cz/Materska-skola-Praha-8-Poznanska-32.html",
+        "website": "http://www.mspoznanska.cz/"
+      },
+      {
+        "name": "Mateřská škola, Praha 8, Řešovská 8",
+        "ico": "70919739",
+        "kind": "organization",
+        "type": "mateřská škola",
+        "legalType": "příspěvková organizace",
+        "ownershipShare": "",
+        "source": "https://www.praha8.cz/Materska-skola-Praha-8-Resovska-8.html",
+        "website": "http://www.msresovska.cz/"
+      },
+      {
+        "name": "Mateřská škola, Praha 8, Sokolovská 182",
+        "ico": "60433370",
+        "kind": "organization",
+        "type": "mateřská škola",
+        "legalType": "příspěvková organizace",
+        "ownershipShare": "",
+        "source": "https://www.praha8.cz/Materska-skola-Praha-8-Sokolovska-182.html",
+        "website": "http://www.mssokolovska.cz/"
+      },
+      {
+        "name": "Mateřská škola, Praha 8, Šimůnkova 13",
+        "ico": "70919658",
+        "kind": "organization",
+        "type": "mateřská škola",
+        "legalType": "příspěvková organizace",
+        "ownershipShare": "",
+        "source": "https://www.praha8.cz/Materska-skola-Praha-8-Simunkova-13.html",
+        "website": "http://www.ms-simunkova.cz/"
+      },
+      {
+        "name": "Mateřská škola, Praha 8, Šiškova 2",
+        "ico": "70919640",
+        "kind": "organization",
+        "type": "mateřská škola",
+        "legalType": "příspěvková organizace",
+        "ownershipShare": "",
+        "source": "https://www.praha8.cz/Materska-skola-Praha-8-Siskova-2.html",
+        "website": "http://www.mssiskova.cz/"
+      },
+      {
+        "name": "Mateřská škola, Praha 8, Štěpničná 1",
+        "ico": "70919615",
+        "kind": "organization",
+        "type": "mateřská škola",
+        "legalType": "příspěvková organizace",
+        "ownershipShare": "",
+        "source": "https://www.praha8.cz/Materska-skola-Praha-8-Stepnicna-1.html",
+        "website": "http://www.msstepnicna.cz/"
+      },
+      {
+        "name": "Mateřská škola, Praha 8, U Sluncové 10a",
+        "ico": "68402104",
+        "kind": "organization",
+        "type": "mateřská škola",
+        "legalType": "příspěvková organizace",
+        "ownershipShare": "",
+        "source": "https://www.praha8.cz/Materska-skola-Praha-8-U-Sluncove-10a.html",
+        "website": "http://www.msusluncove.cz/"
+      },
+      {
+        "name": "Osmička pro rodinu",
+        "ico": "04387031",
+        "kind": "organization",
+        "type": "ostatní příspěvková organizace",
+        "legalType": "příspěvková organizace",
+        "ownershipShare": "",
+        "source": "https://www.praha8.cz/Osmicka-pro-rodinu",
+        "website": "https://www.osmickaprorodinu.cz/"
+      },
+      {
+        "name": "Servisní středisko pro správu svěřeného majetku MČ Praha 8",
+        "ico": "00639524",
+        "kind": "organization",
+        "type": "ostatní příspěvková organizace",
+        "legalType": "příspěvková organizace",
+        "ownershipShare": "",
+        "source": "https://www.praha8.cz/Servisni-stredisko-pro-spravu-svereneho-majetku-MC-Praha-8-prispevkova-organizace.html",
+        "website": "https://www.praha8.cz/servisni-stredisko-pro-spravu-svereneho-majetku-mc-praha-8-prispevkova-organizace.html"
+      },
+      {
+        "name": "Sociální a ošetřovatelské služby Praha 8",
+        "ico": "70871213",
+        "kind": "organization",
+        "type": "ostatní příspěvková organizace",
+        "legalType": "příspěvková organizace",
+        "ownershipShare": "",
+        "source": "https://www.praha8.cz/Organizace-zdravotnickych-a-socialne-zdravotnickych-sluzeb",
+        "website": "http://www.gerontocentrum.cz/"
+      },
+      {
+        "name": "Základní škola a mateřská škola Na Slovance, Praha 8, Bedřichovská 1",
+        "ico": "60433256",
+        "kind": "organization",
+        "type": "základní škola",
+        "legalType": "příspěvková organizace",
+        "ownershipShare": "",
+        "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Na-Slovance-Praha-8-Bedrichovska-1.html",
+        "website": "http://www.zsnaslovance.cz/"
+      },
+      {
+        "name": "Základní škola a mateřská škola Petra Strozziho, Praha 8, Za Invalidovnou 3",
+        "ico": "60461853",
+        "kind": "organization",
+        "type": "základní škola",
+        "legalType": "příspěvková organizace",
+        "ownershipShare": "",
+        "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Petra-Strozziho-Praha-8-Za-Invalidovnou-3.html",
+        "website": "http://www.zs-strozziho.cz/"
+      },
+      {
+        "name": "Základní škola a mateřská škola Ústavní, Praha 8, Hlivická 1",
+        "ico": "60433337",
+        "kind": "organization",
+        "type": "základní škola",
+        "legalType": "příspěvková organizace",
+        "ownershipShare": "",
+        "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Ustavni-Praha-8-Hlivicka-1.html",
+        "website": "http://www.zs-ustavni.cz/"
+      },
+      {
+        "name": "Základní škola a mateřská škola, Praha 8, Dolákova 1",
+        "ico": "60433281",
+        "kind": "organization",
+        "type": "základní škola",
+        "legalType": "příspěvková organizace",
+        "ownershipShare": "",
+        "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Praha-8-Dolakova-1.html",
+        "website": "http://www.zsdolakova.cz/"
+      },
+      {
+        "name": "Základní škola a mateřská škola, Praha 8, Lyčkovo náměstí 6",
+        "ico": "60433230",
+        "kind": "organization",
+        "type": "základní škola",
+        "legalType": "příspěvková organizace",
+        "ownershipShare": "",
+        "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Praha-8-Lyckovo-namesti-6.html",
+        "website": "http://www.smysluplnaskola.cz/"
+      },
+      {
+        "name": "Základní škola a mateřská škola, Praha 8, U Školské zahrady 4",
+        "ico": "60461837",
+        "kind": "organization",
+        "type": "základní škola",
+        "legalType": "příspěvková organizace",
+        "ownershipShare": "",
+        "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Praha-8-U-Skolske-zahrady-4.html",
+        "website": "http://www.uskolskezahrady.cz/"
+      },
+      {
+        "name": "Základní škola Bohumila Hrabala, Praha 8, Zenklova 52",
+        "ico": "63113961",
+        "kind": "organization",
+        "type": "základní škola",
+        "legalType": "příspěvková organizace",
+        "ownershipShare": "",
+        "source": "https://www.praha8.cz/Zakladni-skola-Bohumila-Hrabala-Praha-8-Zenklova-52.html",
+        "website": "http://www.zs-bhrabala.cz/"
+      },
+      {
+        "name": "Základní škola Mazurská, Praha 8, Svídnická 1a",
+        "ico": "60433329",
+        "kind": "organization",
+        "type": "základní škola",
+        "legalType": "příspěvková organizace",
+        "ownershipShare": "",
+        "source": "https://www.praha8.cz/Zakladni-skola-Mazurska-Praha-8-Svidnicka-1a.html",
+        "website": "http://www.mazurska.cz/"
+      },
+      {
+        "name": "Základní škola, Praha 8, Burešova 14",
+        "ico": "60433345",
+        "kind": "organization",
+        "type": "základní škola",
+        "legalType": "příspěvková organizace",
+        "ownershipShare": "",
+        "source": "https://www.praha8.cz/Zakladni-skola-Praha-8-Buresova-14.html",
+        "website": "http://www.zsburesova.cz/"
+      },
+      {
+        "name": "Základní škola, Praha 8, Glowackého 6",
+        "ico": "60433302",
+        "kind": "organization",
+        "type": "základní škola",
+        "legalType": "příspěvková organizace",
+        "ownershipShare": "",
+        "source": "https://www.praha8.cz/Zakladni-skola-Praha-8-Glowackeho-6.html",
+        "website": "http://www.glowackeho.eu/"
+      },
+      {
+        "name": "Základní škola, Praha 8, Hovorčovická 11",
+        "ico": "60433299",
+        "kind": "organization",
+        "type": "základní škola",
+        "legalType": "příspěvková organizace",
+        "ownershipShare": "",
+        "source": "https://www.praha8.cz/Zakladni-skola-Praha-8-Hovorcovicka-11.html",
+        "website": "http://www.zshovorcovicka.cz/"
+      },
+      {
+        "name": "Základní škola, Praha 8, Libčická 10",
+        "ico": "60461811",
+        "kind": "organization",
+        "type": "základní škola",
+        "legalType": "příspěvková organizace",
+        "ownershipShare": "",
+        "source": "https://www.praha8.cz/Zakladni-skola-Praha-8-Libcicka-10.html",
+        "website": "http://www.zslibcicka.cz/"
+      },
+      {
+        "name": "Základní škola, Praha 8, Na Šutce 28",
+        "ico": "60461845",
+        "kind": "organization",
+        "type": "základní škola",
+        "legalType": "příspěvková organizace",
+        "ownershipShare": "",
+        "source": "https://www.praha8.cz/Zakladni-skola-Praha-8-Na-Sutce-28.html",
+        "website": "http://www.zssutka.cz/"
+      },
+      {
+        "name": "Základní škola, Praha 8, Palmovka 8",
+        "ico": "60433248",
+        "kind": "organization",
+        "type": "základní škola",
+        "legalType": "příspěvková organizace",
+        "ownershipShare": "",
+        "source": "https://www.praha8.cz/Zakladni-skola-Praha-8-Palmovka-8.html",
+        "website": "http://www.zspalmovka.cz/"
+      },
+      {
+        "name": "Základní škola, Praha 8, Žernosecká 3",
+        "ico": "60433272",
+        "kind": "organization",
+        "type": "základní škola",
+        "legalType": "příspěvková organizace",
+        "ownershipShare": "",
+        "source": "https://www.praha8.cz/Zakladni-skola-Praha-8-Zernosecka-3.html",
+        "website": "http://www.zernosecka.cz/"
+      }
+    ],
+    "companies": [
+      {
+        "name": "Osmá servisní a.s.",
+        "ico": "24796590",
+        "kind": "company",
+        "type": "městská obchodní společnost",
+        "legalType": "obchodní společnost",
+        "ownershipShare": "100 %",
+        "source": "https://www.praha8.cz/Centrum-Palmovka-a-s.html",
+        "website": "https://www.osmaservisni.cz/"
+      },
+      {
+        "name": "Osmá správa majetku a služeb a.s.",
+        "ico": "04650522",
+        "kind": "company",
+        "type": "městská obchodní společnost",
+        "legalType": "obchodní společnost",
+        "ownershipShare": "100 %",
+        "source": "https://www.praha8.cz/Osma-sprava-majetku-a-sluzeb-a-s",
+        "website": "https://www.osms.cz/"
+      },
+      {
+        "name": "Správa tepelného hospodářství MČ Praha 8 s.r.o.",
+        "ico": "04212371",
+        "kind": "company",
+        "type": "městská obchodní společnost",
+        "legalType": "obchodní společnost",
+        "ownershipShare": "100 %",
+        "source": "https://www.praha8.cz/Sprava-tepelneho-hospodarstvi-MC-Praha-8-s-r-o.html",
+        "website": "https://www.sthpraha8.cz/"
+      }
+    ]
+  },
+  "qa": {
+    "status": "verified",
+    "checks": {
+      "expectedEligible": 40,
+      "actualEligible": 40,
+      "expectedOrganizations": 37,
+      "actualOrganizations": 37,
+      "expectedCompanies": 3,
+      "actualCompanies": 3,
+      "excludedIpodec": 1,
+      "missingIco": 0,
+      "duplicateIco": 0
+    },
+    "sourceDataset": "aktuální verze"
+  }
+}

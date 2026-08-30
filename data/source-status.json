@@ -26,19 +26,19 @@
   "p8Companies": {
     "status": "data načtena",
     "count": 4,
-    "updated": "2026-08-30T11:21:38.992Z",
+    "updated": "2026-08-30T12:54:00.856Z",
     "mode": "aktualizováno"
   },
   "organizations": {
     "status": "data načtena",
     "count": 41,
-    "updated": "2026-08-30T11:21:38.992Z",
+    "updated": "2026-08-30T12:54:00.856Z",
     "mode": "aktualizováno"
   },
   "schoolOpenData": {
     "status": "data načtena",
     "count": 2,
-    "updated": "2026-08-30T11:21:38.992Z",
+    "updated": "2026-08-30T12:54:00.856Z",
     "mode": "aktualizováno"
   },
   "budgetOpenData": {
@@ -102,9 +102,9 @@
     "mode": "aktualizováno"
   },
   "contracts": {
-    "status": "čeká na naplnění",
-    "count": 0,
-    "updated": null,
-    "mode": "nenačteno"
+    "status": "data načtena",
+    "count": 6471,
+    "updated": "2026-08-30T12:37:39.891Z",
+    "mode": "aktualizováno"
   }
 }
