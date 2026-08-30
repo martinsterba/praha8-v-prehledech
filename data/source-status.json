@@ -1,27 +1,63 @@
 {
   "people": {
+    "status": "data načtena",
+    "count": 45,
+    "updated": "2026-08-30T11:21:38.992Z",
+    "mode": "aktualizováno"
+  },
+  "hmpFunctions": {
+    "status": "data načtena",
+    "count": 16,
+    "updated": "2026-08-30T11:21:38.992Z",
+    "mode": "aktualizováno"
+  },
+  "hmpCompanies": {
+    "status": "data načtena",
+    "count": 5,
+    "updated": "2026-08-30T11:21:38.992Z",
+    "mode": "aktualizováno"
+  },
+  "nationalRoles": {
+    "status": "data načtena",
+    "count": 1,
+    "updated": "2026-08-30T11:21:38.992Z",
+    "mode": "aktualizováno"
+  },
+  "p8Companies": {
+    "status": "data načtena",
+    "count": 4,
+    "updated": "2026-08-30T11:21:38.992Z",
+    "mode": "aktualizováno"
+  },
+  "organizations": {
+    "status": "data načtena",
+    "count": 41,
+    "updated": "2026-08-30T11:21:38.992Z",
+    "mode": "aktualizováno"
+  },
+  "schoolOpenData": {
+    "status": "data načtena",
+    "count": 2,
+    "updated": "2026-08-30T11:21:38.992Z",
+    "mode": "aktualizováno"
+  },
+  "budgetOpenData": {
     "status": "čeká na naplnění",
     "count": 0,
     "updated": null,
     "mode": "nenačteno"
   },
-  "hmp": {
-    "status": "čeká na naplnění",
-    "count": 0,
-    "updated": null,
-    "mode": "výchozí balíček"
-  },
-  "organizations": {
+  "socialServicesOpenData": {
     "status": "čeká na naplnění",
     "count": 0,
     "updated": null,
     "mode": "nenačteno"
   },
   "bodies": {
-    "status": "čeká na naplnění",
-    "count": 0,
-    "updated": null,
-    "mode": "nenačteno"
+    "status": "data načtena",
+    "count": 18,
+    "updated": "2026-08-30T11:21:38.992Z",
+    "mode": "aktualizováno"
   },
   "resolutions": {
     "status": "průběžná open data",
@@ -30,22 +66,22 @@
     "mode": "mezipaměť"
   },
   "voting": {
-    "status": "data načtena",
+    "status": "průběžná open data",
     "count": 5,
     "updated": "2026-08-21T12:00:00Z",
-    "mode": "výchozí balíček"
+    "mode": "mezipaměť"
   },
   "info106": {
     "status": "čeká na naplnění",
     "count": 0,
     "updated": null,
-    "mode": "výchozí balíček"
+    "mode": "nenačteno"
   },
   "noticeboard": {
     "status": "čeká na naplnění",
     "count": 0,
     "updated": null,
-    "mode": "výchozí balíček"
+    "mode": "nenačteno"
   },
   "elections": {
     "status": "čeká na naplnění",
@@ -53,31 +89,19 @@
     "updated": null,
     "mode": "nenačteno"
   },
+  "census2021": {
+    "status": "čeká na naplnění",
+    "count": 0,
+    "updated": null,
+    "mode": "nenačteno"
+  },
+  "news": {
+    "status": "čeká na naplnění",
+    "count": 0,
+    "updated": null,
+    "mode": "nenačteno"
+  },
   "contracts": {
-    "status": "čeká na naplnění",
-    "count": 0,
-    "updated": null,
-    "mode": "výchozí balíček"
-  },
-  "p8Companies": {
-    "status": "čeká na naplnění",
-    "count": 0,
-    "updated": null,
-    "mode": "nenačteno"
-  },
-  "hmpFunctions": {
-    "status": "čeká na naplnění",
-    "count": 0,
-    "updated": null,
-    "mode": "nenačteno"
-  },
-  "hmpCompanies": {
-    "status": "čeká na naplnění",
-    "count": 0,
-    "updated": null,
-    "mode": "nenačteno"
-  },
-  "nationalRoles": {
     "status": "čeká na naplnění",
     "count": 0,
     "updated": null,

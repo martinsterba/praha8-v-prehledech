@@ -1,7 +1,18 @@
 {
-  "updated": "2026-08-21",
-  "mode": "starter",
-  "note": "v0.3: datový balíček obsahuje kompletní současné zastupitelstvo (45 členů) a 40 organizací/škol zřízených MČ; sync aktualizuje živá data.",
+  "updated": "2026-08-30",
+  "mode": "synced",
+  "resolutions": 8,
+  "resolutionsRada": 5,
+  "resolutionsZastupitelstvo": 3,
+  "tasks": 0,
   "people": 45,
-  "organizations": 40
+  "organizations": 41,
+  "organizationsWithIco": 41,
+  "bodies": 18,
+  "info106": 0,
+  "noticeBoard": 0,
+  "contracts": 0,
+  "contractsValidation": "unknown",
+  "detailRemaining": 8,
+  "note": "Výchozí synchronizace načítá ostré sady: Praha 8 (zastupitelstvo, komise a výbory), HMP (zastupitelstvo/výbory/komise a firmy), Parlament ČR, organizace a firmy Prahy 8, volby a Registr smluv. Ostatní zdroje se spouštějí samostatně."
 }
