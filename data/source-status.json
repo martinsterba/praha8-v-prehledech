@@ -6,10 +6,10 @@
     "mode": "aktualizováno"
   },
   "hmpFunctions": {
-    "status": "data načtena",
-    "count": 16,
-    "updated": "2026-08-30T17:10:42.264Z",
-    "mode": "aktualizováno"
+    "status": "čeká na naplnění",
+    "count": 0,
+    "updated": null,
+    "mode": "nenačteno"
   },
   "hmpCompanies": {
     "status": "data načtena",
@@ -66,10 +66,11 @@
     "mode": "aktualizováno"
   },
   "voting": {
-    "status": "průběžná open data",
+    "status": "data načtena",
     "count": 1207,
-    "updated": "2026-08-21T12:00:00Z",
-    "mode": "mezipaměť"
+    "updated": "2026-08-30T17:32:40.805Z",
+    "mode": "aktualizováno",
+    "meetings": 53
   },
   "info106": {
     "status": "data načtena",

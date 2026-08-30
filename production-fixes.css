@@ -1,0 +1,19 @@
+/* Produkční drobnosti po prvním nasazení na Cloudflare Pages */
+#countBudget{display:none!important}
+
+.budget-source-note,
+.production-data-note{
+  margin:14px 0 28px;
+  padding:11px 14px;
+  border-radius:11px;
+  background:#f4eee1;
+  color:#6a541f;
+  font-size:12px;
+  line-height:1.45;
+  border:0;
+}
+.budget-source-note a,
+.production-data-note a{font-weight:700}
+
+/* Mezera mezi pořadovým číslem a názvem subjektu bez mandátu. */
+.no-mandate span b{margin-right:.28em}
