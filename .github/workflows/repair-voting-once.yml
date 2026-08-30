@@ -1,0 +1,46 @@
+name: 🛠 Oprava hlasovacích dat
+
+on:
+  push:
+    paths:
+      - 'scripts/repair-voting-data.mjs'
+      - '.github/workflows/repair-voting-once.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  repair:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - name: Načíst repozitář
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Nastavit Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Nainstalovat závislosti
+        run: npm ci
+
+      - name: Opravit hlasovací data
+        run: node scripts/repair-voting-data.mjs
+
+      - name: Uložit opravená data
+        run: |
+          if git diff --quiet -- data/; then
+            echo 'Hlasovací data už nevyžadují změnu.'
+            exit 0
+          fi
+          git config user.name "Praha 8 v přehledech – automat"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git commit -m "Opravit historická hlasovací data"
+          git pull --rebase origin main
+          git push origin HEAD:main
