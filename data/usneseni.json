@@ -1,10 +1,4772 @@
 [
-  {"id":"Usn RMC 0314/2026","organ":"Rada","date":"2026-07-08","meeting":"106","title":"k návrhu uzavření Dodatku č. 2 ke Smlouvě o nájmu prostoru sloužícího podnikání v objektu U Synagogy 236/2 a 4","topics":["Majetek","Smlouvy","Libeň"],"url":"https://www.praha8.cz/app/usn"},
-  {"id":"Usn ZMC 024/2026","organ":"Zastupitelstvo","date":"2026-06-17","meeting":"21","title":"k výzvě Zastupitelstvu hlavního města Prahy ke schválení úplatného převodu pozemků pod areálem Gymnázia Thomase Manna","topics":["Majetek","Školství"],"url":"https://www.praha8.cz/appo/usn/677?dlOrgan=2"},
-  {"id":"Usn ZMC 023/2026","organ":"Zastupitelstvo","date":"2026-06-17","meeting":"21","title":"k problematice Kasárna Karlín","topics":["Karlín","Majetek"],"url":"https://www.praha8.cz/appo/usn/677?dlOrgan=2"},
-  {"id":"Usn ZMC 022/2026","organ":"Zastupitelstvo","date":"2026-06-17","meeting":"21","title":"k návrhu nabytí nemovitého majetku - pozemku parc. č. 4071/1 na k. ú. Libeň","topics":["Majetek","Libeň"],"url":"https://www.praha8.cz/appo/usn/677?dlOrgan=2"},
-  {"id":"Usn RMC 0268/2026","organ":"Rada","date":"2026-06-10","meeting":"","title":"k návrhu udělení plné moci vedoucímu odboru správy majetku ÚMČ Praha 8","topics":["Majetek","Organizační"],"responsible":"Radomír Nepil","deadline":"2026-06-17","url":"https://www.praha8.cz/appo/usn/676?usn=1pbxsh2lkIKyIkShsohtyCBu3pbxpl44dQ%3D%3D"},
-  {"id":"Usn RMC 0198/2026","organ":"Rada","date":"2026-05-20","meeting":"","title":"k návrhu schválení dílčí účetní závěrky městské části Praha 8 za rok 2025","topics":["Finance","Rozpočet"],"responsible":"Bc. Pavla Řechtáčková","deadline":"2026-05-22","url":"https://www.praha8.cz/appo/usn/2?usn=3pbxpl4MVsNAYcezaxe1KXGqqpbg%3D%3D"},
-  {"id":"Usn RMC 0187/2026","organ":"Rada","date":"2026-04-29","meeting":"100","title":"k návrhu uzavření Smlouvy o úpravě vzájemných vztahů mezi MČ Praha 8 a Rohan Gate s.r.o. ve věci stavby ROHAN GATE","topics":["Výstavba","Karlín","Smlouvy"],"url":"https://www.praha8.cz/app/usn"},
-  {"id":"Usn RMC 0183/2026","organ":"Rada","date":"2026-04-29","meeting":"100","title":"k návrhu rozpočtových opatření městské části Praha 8","topics":["Finance","Rozpočet"],"url":"https://www.praha8.cz/app/usn"}
+  {
+    "id": "Usn RMC 0371/2026",
+    "organ": "Rada",
+    "date": "2026-08-19",
+    "meeting": "108",
+    "title": "k návrhu uzavření „Smlouvy o nájmu\" nemovitého majetku ve vlastnictví obce, tj. Hlavního města Prahy, svěřeného do správy městské části Praha 8 – části pozemku parc. č. 626/73, v k.ú. Čimice",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=UBEiaIxxGx96doKGi1pbxsh2EeIg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0370/2026",
+    "organ": "Rada",
+    "date": "2026-08-19",
+    "meeting": "108",
+    "title": "k návrhu udělení předchozího souhlasu zřizovatele dle ustanovení § 37b zákona č. 250/2000 Sb., o rozpočtových pravidlech územních rozpočtů, ve znění pozdějších předpisů",
+    "topics": [
+      "Finance",
+      "Výstavba"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=Z2dUL2zB1h0w38r8MlZpOQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0369/2026",
+    "organ": "Rada",
+    "date": "2026-08-19",
+    "meeting": "108",
+    "title": "k návrhu uzavření 6 \"Nájemních smluv\" o nájmu bytu v domech ve vlastnictví obce, tj. Hlavního města Prahy, svěřených do správy městské části Praha 8",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=2Q2Lp2ABz4YM4tQk3yBMtQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0368/2026",
+    "organ": "Rada",
+    "date": "2026-08-19",
+    "meeting": "108",
+    "title": "k návrhu schválení prominutí a odpisu nedobytných pohledávek u příspěvkových organizací zřízených městskou částí Praha 8",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=q1pbxsh2wsDKAPp0s33O3pbxpl4i1ebSxw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0367/2026",
+    "organ": "Rada",
+    "date": "2026-08-19",
+    "meeting": "108",
+    "title": "k návrhu uzavření \"Dodatku č. 1\" ke Smlouvě o nájmu č. 2026/0091/OSM.DEP, na pozemku parc. č. 840/327, na k.ú. Bohnice, obec Praha, za účelem rozšíření záborů pro opravu a zateplení lodžií BD Cafourkova 520 - 526, Praha 8",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=0ehiqoHJP4iMhEyrNy8XmQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0366/2026",
+    "organ": "Rada",
+    "date": "2026-08-19",
+    "meeting": "108",
+    "title": "k návrhu uzavření \"Smlouvy o nájmu\" pozemků parc. č. 827/244, 827/245 a 827/99, vše na k.ú. Bohnice, obec Praha, za účelem renovace lodžií pro SV Poznaňská 431 - 433, Praha 8",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=2NnlXGUrBnEwY3pbxpl4uCTHxxVQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0365/2026",
+    "organ": "Rada",
+    "date": "2026-08-19",
+    "meeting": "108",
+    "title": "k návrhu uzavření \"Smlouvy o smlouvě budoucí zřízení věcného břemena\" týkající se překládky optické síťě na pozemku parc. č. 3584/7, k.ú. Libeň, obec Praha",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=63pbxpl4yjHDWbUdm05I82Nm0uVw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0364/2026",
+    "organ": "Rada",
+    "date": "2026-08-19",
+    "meeting": "108",
+    "title": "k návrhu vyjádření městské části Praha 8 ke změně dokončené stavby – stavební úpravy bytového domu, parc.č. 981 na k.ú. Libeň v Praze 8 (při ul. Pomezní)",
+    "topics": [
+      "Majetek",
+      "Výstavba"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=3xYDTnq3pbxpl43G6GIHc3pbxpl4YCoBQw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0363/2026",
+    "organ": "Rada",
+    "date": "2026-08-19",
+    "meeting": "108",
+    "title": "k návrhu vyjádření městské části Praha 8 ke směně pozemků parc.č. 567, 593, 595, 597, 3750, všechny na k.ú. Libeň v Praze 8, oblast Pelc Tyrolka (ve vlastnictví Dopravního podniku hlavního města Prahy) za pozemky mimo území městské části Praha 8 (ve spoluvlastnictví fyzických osob)",
+    "topics": [
+      "Majetek",
+      "Doprava"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=1pbxsh2GVOe0UuwOrZ53pbxpl4Nw8wsqjg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0362/2026",
+    "organ": "Rada",
+    "date": "2026-08-19",
+    "meeting": "108",
+    "title": "k návrhu uzavření \"Darovací smlouvy\" mezi městskou částí Praha 8 a Policií ČR, Obvodním ředitelstvím policie Praha III",
+    "topics": [
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=NyZ8QcjRRQIuBHVSq3pbxpl4O93Q==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0361/2026",
+    "organ": "Rada",
+    "date": "2026-08-19",
+    "meeting": "108",
+    "title": "k návrhu schválení \"Smlouvy o realizaci překládky\" mezi městskou částí Praha 8 na jedné straně a společností Pranet s.r.o. na straně druhé v rámci projektu \"ZŠ Rohan\"",
+    "topics": [
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=uvyxejokT3pbxpl4aUzFyWzT8PPQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0360/2026",
+    "organ": "Rada",
+    "date": "2026-08-19",
+    "meeting": "108",
+    "title": "k návrhu schválení \"Smlouvy o realizaci překládky\" mezi městskou částí Praha 8 na jedné straně a společností ÚVT Internet s.r.o. na straně druhé v rámci projektu \"ZŠ Rohan\"",
+    "topics": [
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=gL8yggY5daW29GvjsoDk5g==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0359/2026",
+    "organ": "Rada",
+    "date": "2026-08-19",
+    "meeting": "108",
+    "title": "k návrhu Rozhodnutí MČ Praha 8 o výsledku architektonické soutěže o návrh architektonického řešení revitalizace veřejného prostranství u Kulturního domu Ládví",
+    "topics": [
+      "Kultura"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=84E1pbxsh2S5ZqcjO6iE5O0hGqXA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0358/2026",
+    "organ": "Rada",
+    "date": "2026-08-19",
+    "meeting": "108",
+    "title": "k návrhu uzavření \"Smlouvy o zřízení věcného břemene\" pro umístění nového podzemního vedení NN a telekomunikačního vedení na pozemcích parc. č. 527/64 a 527/110, oba na k. ú. Střížkov, obec Praha",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=t3pbxpl4wrh7LCvvHwgXAKPCzCwA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0357/2026",
+    "organ": "Rada",
+    "date": "2026-08-19",
+    "meeting": "108",
+    "title": "k návrhu majetkového převodu městské části Praha 8 - úplatného převodu nemovitosti ve vlastnictví obce, tj. Hlavního města Prahy, svěřené do správy městské části Praha 8 – pozemku parc. č. 647/22, na k. ú. Kobylisy, obec Praha",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=UCiXpvt9qtqwflbOKJY4Hw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0356/2026",
+    "organ": "Rada",
+    "date": "2026-08-19",
+    "meeting": "108",
+    "title": "k návrhu majetkového převodu městské části Praha 8 - úplatného převodu nemovitostí ve vlastnictví obce, tj. Hlavního města Prahy, svěřených do správy městské části Praha 8 – pozemků parc. č.585/494, a parc. č. 585/487, oba na k. ú. Bohnice, obec Praha",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=u35fdvOMdo3FgAHgCkzW5A==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0355/2026",
+    "organ": "Rada",
+    "date": "2026-08-19",
+    "meeting": "108",
+    "title": "k návrhu změny Přílohy č. 1 \"Zřizovací listiny\" Servisního střediska pro správu svěřeného majetku (SeS) Městské části Praha 8, v platném znění",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=JflKHnMuThDkSheXB1B1fQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0354/2026",
+    "organ": "Rada",
+    "date": "2026-08-19",
+    "meeting": "108",
+    "title": "k návrhu podání žádosti o vybudování přechodů pro chodce mezi zastávkami Krakov v ulici Lodžská",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=ryCagVM6UMiYpSTrtSR1pbxsh2xw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0353/2026",
+    "organ": "Rada",
+    "date": "2026-08-19",
+    "meeting": "108",
+    "title": "k návrhu výběru zhotovitele a uzavření \"Smlouvy o dílo\" pro realizaci veřejné zakázky s předmětem plnění \"Studie revitalizace ulice Klapkova Jih\"",
+    "topics": [
+      "Smlouvy",
+      "Veřejné zakázky"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=m8jVzwavHFZlJY1Lb6lhJQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0352/2026",
+    "organ": "Rada",
+    "date": "2026-08-19",
+    "meeting": "108",
+    "title": "k návrhu výběru zhotovitele a uzavření \"Smlouvy o dílo\" pro realizaci veřejné zakázky s předmětem plnění \"Studie revitalizace Libeňských kos\"",
+    "topics": [
+      "Smlouvy",
+      "Veřejné zakázky"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=jHeEqxE77G3pbxpl4Qu803e3pbxpl4e73Q==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0351/2026",
+    "organ": "Rada",
+    "date": "2026-08-19",
+    "meeting": "108",
+    "title": "k návrhu zrušení usnesení č. Usn RMC 0105/2023 ze dne 22.3.2023 v plném rozsahu",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=FDbmoFhbwup1pbxsh2G371IkchuA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0350/2026",
+    "organ": "Rada",
+    "date": "2026-08-19",
+    "meeting": "108",
+    "title": "k návrhu uzavření \"Smlouvy o smlouvě budoucí zřízení věcného břemena\" týkající se přípojky na optickou síť na pozemku parc. č. 3583 na k. ú. Libeň, obec Praha",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=5dMpyPP0s370BHoHkn3pbxpl4cJw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0349/2026",
+    "organ": "Rada",
+    "date": "2026-08-19",
+    "meeting": "108",
+    "title": "k návrhu úpravy platů paní Mgr. Janě Bernasové, ředitelce MŠ, Praha 8, Krynická 2, panu Mgr. Janu Kordovi, řediteli ZŠ a MŠ, Praha 8, Lyčkovo náměstí 6, paní Mgr. Ivaně Vanišové, ředitelce ZŠ, Praha 8, Palmovka 8, panu Mgr. et Bc. Ivu Mlejneckému, řediteli ZŠ, Praha 8, Burešova 14, paní Mgr. Evě Löblové, ředitelce ZŠ a MŠ Na Slovance, Praha 8, Bedřichovská 1, paní RNDr. Boženě Čerňanské, Ph.D. ředitelce ZŠ, Praha 8, Žernosecká 3, paní Mgr. Renatě Sedláčkové, ředitelce ZŠ a MŠ Ústavní, Praha 8, Hlivická 1, panu Mgr. Tomáši Táborskému, řediteli ZŠ, Praha 8, Hovorčovická 11",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=yOZbX3pbxpl4vUJh9QggN27vI2RQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0348/2026",
+    "organ": "Rada",
+    "date": "2026-08-19",
+    "meeting": "108",
+    "title": "k návrhu uzavření \"Darovací smlouvy\" mezi městskou částí Praha 8, jako \"dárcem\", a spolkem Lob Sports Academy, z.s., sídlo Bedřichovská Bukolská 843/2a, Bohnice, 181 00 Praha 8, jako \"obdarovaným\"",
+    "topics": [
+      "Smlouvy",
+      "Sport"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=SRZh8q1pbxsh289jshkDnOqoc2wQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0347/2026",
+    "organ": "Rada",
+    "date": "2026-08-19",
+    "meeting": "108",
+    "title": "k návrhu uzavření \"Darovací smlouvy\" mezi městskou částí Praha 8, jako \"dárcem\", a spolkem Water Polo Sparta Praha, z.s., sídlo Schöfflerova 2050/32, Žižkov, 130 00 Praha 3, jako \"obdarovaným\"",
+    "topics": [
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=k9A1pbxsh2225MHYUsAf88lSy6NQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0346/2026",
+    "organ": "Rada",
+    "date": "2026-08-19",
+    "meeting": "108",
+    "title": "k návrhu uzavření \"Darovací smlouvy\" mezi městskou částí Praha 8, jako \"dárcem\", a spolkem Basket Slovanka, z.s., sídlo Bedřichovská 1960/1, Libeň, 182 00 Praha 8, jako \"obdarovaným\"",
+    "topics": [
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=66GbdZntBKJ93oPLEvpWXw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0345/2026",
+    "organ": "Rada",
+    "date": "2026-08-19",
+    "meeting": "108",
+    "title": "k návrhu uzavření \"Darovací smlouvy\" mezi městskou částí Praha 8, jako \"dárcem\", a spolkem FK Meteor Praha VIII, sídlo U Meteoru 29/3, Libeň, 180 00 Praha 8, jako \"obdarovaným\"",
+    "topics": [
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=GhV15NO613YYm3pbxpl4qpK4PeFg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0344/2026",
+    "organ": "Rada",
+    "date": "2026-08-19",
+    "meeting": "108",
+    "title": "k návrhu úpravy \"Ceníku pronájmu\" za pronájmy movitého majetku, který je ve vlastnictví OKSMPP",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=7gpbriQNVa1pbxsh25aVUXCSuGzQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0343/2026",
+    "organ": "Rada",
+    "date": "2026-08-19",
+    "meeting": "108",
+    "title": "k návrhu úpravy \"Ceníku pronájmů prostor \" za pronájmy prostor v Divadle Karla Hackera, Praha 8",
+    "topics": [
+      "Kultura"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=kgiwBCGmal29sa0dY2wANQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0342/2026",
+    "organ": "Rada",
+    "date": "2026-08-19",
+    "meeting": "108",
+    "title": "k návrhu uzavření \"Smlouvy o spolupráci\" mezi Městskou částí Praha 8 a Arcidiecézní charitou Praha jako realizátorem terénního programu určeného osobám ohroženým bezdomovectvím na území městské části Praha 8",
+    "topics": [
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=ZJb3pbxpl4u7OUhxjR5SxlR4Z1Dw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0341/2026",
+    "organ": "Rada",
+    "date": "2026-08-19",
+    "meeting": "108",
+    "title": "k návrhu přípravy 22. zasedání Zastupitelstva městské části Praha 8",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=Sa8sq11pbxsh2xbambRgXTmsj28w==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0340/2026",
+    "organ": "Rada",
+    "date": "2026-08-19",
+    "meeting": "108",
+    "title": "k návrhu rozpočtových opatření městské části Praha 8",
+    "topics": [
+      "Finance"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=7en801EzJYrp9SPQfeEpXg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0339/2026",
+    "organ": "Rada",
+    "date": "2026-08-19",
+    "meeting": "108",
+    "title": "k návrhu volby přísedících Obvodního soudu pro Prahu 8 na přechodné období od roku 2026",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=sXkcXpN3MA9ujBgrnILkzw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0338/2026",
+    "organ": "Rada",
+    "date": "2026-08-12",
+    "meeting": "107",
+    "title": "k návrhu podání výpovědi z nájmu bytu v domě ve vlastnictví obce, tj. Hlavního města Prahy, svěřeném do správy městské části Praha 8",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=telbDrKW1pbxsh2kRmdLW3pbxpl473pbxpl46TTg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0337/2026",
+    "organ": "Rada",
+    "date": "2026-08-12",
+    "meeting": "107",
+    "title": "k návrhu poskytnutí slevy z nájemného nájemci bytu v domě ve vlastnictví obce, tj. Hlavního města Prahy, svěřeném do správy Městské části Praha 8",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=iYAVp6anTgaa0CanizbhuQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0336/2026",
+    "organ": "Rada",
+    "date": "2026-08-12",
+    "meeting": "107",
+    "title": "k návrhu uzavření 7 \"Nájemních smluv\" o nájmu bytu v domech ve vlastnictví obce, tj. Hlavního města Prahy, svěřených do správy městské části Praha 8",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=TslgR0tZhDrvsxR7TlCJTA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0335/2026",
+    "organ": "Rada",
+    "date": "2026-08-12",
+    "meeting": "107",
+    "title": "k návrhu uzavření 3 \"Nájemních smluv\" o nájmu bytu v domech ve vlastnictví obce, tj. Hlavního města Prahy, svěřených do správy městské části Praha 8 na k. ú. Kobylisy a k. ú. Střížkov, na dobu určitou",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=ThrKrDQuvusuR1pbxsh2KquJ2j8Q==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0334/2026",
+    "organ": "Rada",
+    "date": "2026-08-12",
+    "meeting": "107",
+    "title": "k návrhu textu souhlasu oprávněného z věcných břemen s uzavřením \"Smlouvy o smlouvě budoucí o výstavbě\" a výstavbou Nových jednotek, mezi Bytovým družstvem Sokolovská 68/381 (IČO: 030 08 355), se sídlem na adrese Sokolovská 381/68, 186 00 Praha 8 - Karlín, jako \"Bytovým družstvem\", společností Auböck s.r.o. (IČO:260 89 785), se sídlem na adrese Poříčí 247, 372 82 Boršov nad Vltavou, jako \"stavebníkem\", a Městskou částí Praha 8, jako \"oprávněným z věcných břemen\"",
+    "topics": [
+      "Majetek",
+      "Výstavba",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=Tc3pbxpl4MXLzYS0OW3RY0A0gIYA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0333/2026",
+    "organ": "Rada",
+    "date": "2026-08-12",
+    "meeting": "107",
+    "title": "k návrhu uzavření 4 \"Nájemních smluv\" o nájmu bytů v domech ve vlastnictví obce , tj. Hlavního města Prahy, svěřených do správy Městské části Praha 8 na k. ú. Kobylisy a k. ú. Střížkov, na dobu určitou",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=7tU74uAG7De0b25jJLPJPg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0332/2026",
+    "organ": "Rada",
+    "date": "2026-08-12",
+    "meeting": "107",
+    "title": "k návrhu uzavření 13 \"Nájemních smluv\" o nájmu bytů v domech ve vlastnictví obce, tj. Hlavního města Prahy, svěřených do správy městské části Praha 8 na k. ú. Kobylisy, vyčleněných pro účely ubytování uprchlíků z válečných oblastí Ukrajiny, na dobu určitou",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=G0nT4nqklNUHpkUtjmqcUg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0331/2026",
+    "organ": "Rada",
+    "date": "2026-08-12",
+    "meeting": "107",
+    "title": "k návrhu výběru zhotovitele a uzavření \"Smlouvy o dílo\" pro realizaci veřejné zakázky s předmětem plnění \"PD k rozšíření a modernizaci objektu GC Benákova\"",
+    "topics": [
+      "Smlouvy",
+      "Veřejné zakázky"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=zLv2ukB6PFbZI4iJQXsFNg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0330/2026",
+    "organ": "Rada",
+    "date": "2026-08-12",
+    "meeting": "107",
+    "title": "k návrhu rozpočtových opatření městské části Praha 8",
+    "topics": [
+      "Finance"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=xd3zVKEdCQ3pbxpl4b8lZzAlnsqA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0329/2026",
+    "organ": "Rada",
+    "date": "2026-08-12",
+    "meeting": "107",
+    "title": "k návrhu nového stanovení celkového počtu zaměstnanců zařazených do hlavní činnosti příspěvkové právnické organizace Osmička pro rodinu, zřízené městskou částí Praha 8, na rok 2026",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=zfXq2LW8g2l5xawYApG7Ng==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0328/2026",
+    "organ": "Rada",
+    "date": "2026-08-12",
+    "meeting": "107",
+    "title": "k návrhu výběru zhotovitele a uzavření \"Smlouvy o dílo\" pro realizaci veřejné zakázky s předmětem plnění \"Oprava chodníků na k.ú. Bohnice a k.ú. Kobylisy\"",
+    "topics": [
+      "Doprava",
+      "Smlouvy",
+      "Veřejné zakázky"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=HbGubyBKCsrx7hWahBTNxw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0327/2026",
+    "organ": "Rada",
+    "date": "2026-08-12",
+    "meeting": "107",
+    "title": "k návrhu výběru poskytovatele a uzavření \"Smlouvy o poskytování služeb\" pro realizaci veřejné zakázky s předmětem plnění \"Dodávka systému pro ověřování přístupu do sítě 802.1x včetně hostů, BOYD a dle MAC adres\"",
+    "topics": [
+      "Smlouvy",
+      "Veřejné zakázky"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=WFGfTUm5IrUQhnKJ4VSvRA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0326/2026",
+    "organ": "Rada",
+    "date": "2026-08-12",
+    "meeting": "107",
+    "title": "k návrhu uzavření \"Smlouvy o podmínkách udělení souhlasu s umístěním stavby v ochranném pásmu rozvodného tepelného zařízení\"",
+    "topics": [
+      "Výstavba",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=poCZCSnCj7k9L7tNCyA4Xg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0325/2026",
+    "organ": "Rada",
+    "date": "2026-08-12",
+    "meeting": "107",
+    "title": "k návrhu nařízení hlavního města Prahy, kterým se mění nařízení č. 21/2021 Sb. hl. m. Prahy, kterým se vydává tržní řád, ve znění pozdějších předpisů",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=OgJ94BoZIkppsfEWKGLYXA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0324/2026",
+    "organ": "Rada",
+    "date": "2026-08-12",
+    "meeting": "107",
+    "title": "k návrhu bezúplatného převodu majetku pořízeného příspěvkovou organizací městské části Praha 8 Osmička pro rodinu do majetku městské části Praha 8",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=04ZSRVqJs5kRwQSunK1pbxsh2MGg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0323/2026",
+    "organ": "Rada",
+    "date": "2026-08-12",
+    "meeting": "107",
+    "title": "k návrhu uzavření \"Smluv o dodávce vody a odvádění odpadních vod\" mezi MČ Praha 8 na jedné straně a Pražské vodovody a kanalizace a.s. na straně druhé",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=Zu4WqJnvMpCiejMdarJuXQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0322/2026",
+    "organ": "Rada",
+    "date": "2026-08-12",
+    "meeting": "107",
+    "title": "k návrhu výběru zhotovitele a uzavření \"Smlouvy o dílo\" pro realizaci veřejné zakázky s předmětem plnění \"PD – Vybudování parkovacích stání Štětínská\"",
+    "topics": [
+      "Doprava",
+      "Smlouvy",
+      "Veřejné zakázky"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=P4nUPHFUGNyphNxDJnVF5w==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0321/2026",
+    "organ": "Rada",
+    "date": "2026-08-12",
+    "meeting": "107",
+    "title": "k návrhu uzavření „Dodatku č. 1“ ke Smlouvě o nájmu prostoru sloužícího podnikání v objektu ve spoluvlastnictví Úřadu pro zastupování státu ve věcech majetkových a městské části Praha 8 – v budově čp. 485, na k. ú. Karlín a na adrese Březinova 18, 186 00 Praha 8",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=wI8onE0EZaC1nLrdK6GzMQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0320/2026",
+    "organ": "Rada",
+    "date": "2026-08-12",
+    "meeting": "107",
+    "title": "k návrhu bezúplatného převodu majetku pořízeného městskou částí Praha 8 do vlastnictví příspěvkové organizace Základní škola Žernosecká, Praha 8 (IČO: 604 33 272), se sídlem na adrese Žernosecká 1597/3, Praha 8, 182 00, jejímž zřizovatelem je městská část Praha 8",
+    "topics": [
+      "Školství",
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=p4IqmLGyaDpmX3pbxpl4BrGyqRcQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0319/2026",
+    "organ": "Rada",
+    "date": "2026-08-12",
+    "meeting": "107",
+    "title": "k návrhu bezúplatného převodu majetku pořízeného městskou částí Praha 8 do vlastnictví příspěvkové organizace Základní škola Mazurská, Praha 8 (IČO: 604 33 329), se sídlem na adrese Svídnická 599/1a, Praha 8, 181 00, jejímž zřizovatelem je městská část Praha 8",
+    "topics": [
+      "Školství",
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=22daBPiYEW3pbxpl4cmvNFqpnLYQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0318/2026",
+    "organ": "Rada",
+    "date": "2026-08-12",
+    "meeting": "107",
+    "title": "k návrhu uzavření \"Dohody\" o ukončení \"Rámcové smlouvy\" pro realizaci veřejné zakázky s předmětem plnění \"Zajištění nákupu a dodávek drobného dlouhodobého hmotného majetku a drobného hmotného majetku\"",
+    "topics": [
+      "Majetek",
+      "Smlouvy",
+      "Veřejné zakázky"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=MZ26GA1YMYxhN1pbxsh2ISGzrokg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0317/2026",
+    "organ": "Rada",
+    "date": "2026-08-12",
+    "meeting": "107",
+    "title": "k návrhu uzavření \"Smluv o dodávce vody a odvádění odpadních vod\" mezi MČ Praha 8 na jedné straně a Pražské vodovody a kanalizace a.s. na straně druhé",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=oW0j3pbxpl4y1iQpubyGa5QZwftg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0316/2026",
+    "organ": "Rada",
+    "date": "2026-08-12",
+    "meeting": "107",
+    "title": "k návrhu uzavření \"Smlouvy o výpůjčce\" nebytových prostorů č. 2.36 a 2.37 v II. NP objektu KD Krakov, na adrese Těšínská č. or. 4, Praha 8, PSČ 181 00, ve správě Servisního střediska pro správu svěřeného majetku městské části Praha 8",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=JX7zpQflarBWODEkc3ihFQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0315/2026",
+    "organ": "Rada",
+    "date": "2026-08-12",
+    "meeting": "107",
+    "title": "k návrhu výběru zhotovitele a uzavření \"Smlouvy o dodávkách a provedení stavebních prací\" pro realizaci veřejné zakázky s předmětem plnění \"Vybudování workoutových hřišť\"",
+    "topics": [
+      "Smlouvy",
+      "Veřejné zakázky"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=6bxOXMpIR1n2RRKiaYM9EQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0314/2026",
+    "organ": "Rada",
+    "date": "2026-07-08",
+    "meeting": "106",
+    "title": "k návrhu uzavření Dodatku č. 2 ke Smlouvě o nájmu prostoru sloužícího podnikání v objektu U Synagogy 236/2 a 4",
+    "topics": [
+      "Majetek",
+      "Smlouvy",
+      "Libeň"
+    ],
+    "url": "https://www.praha8.cz/app/usn"
+  },
+  {
+    "id": "Usn RMC 0313/2026",
+    "organ": "Rada",
+    "date": "2026-07-08",
+    "meeting": "106",
+    "title": "k návrhu uzavření \"Nájemní smlouvy\" o nájmu bytu v domě ve vlastnictví obce , tj. Hlavního města Prahy, svěřeném do správy Městské části Praha 8 na k. ú. Střížkov, na dobu určitou",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=1pbxsh2aWDz52SULpLH2D3pbxpl4wQmm3Q==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0312/2026",
+    "organ": "Rada",
+    "date": "2026-07-08",
+    "meeting": "106",
+    "title": "k návrhu uzavření 5 \"Nájemních smluv\" o nájmu bytu v domech ve vlastnictví obce, tj. Hlavního města Prahy, svěřených do správy městské části Praha 8",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=6yRIteEcvxxgKQbUJYBgJg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0311/2026",
+    "organ": "Rada",
+    "date": "2026-07-08",
+    "meeting": "106",
+    "title": "k návrhu uzavření \"Nájemní smlouvy\" o nájmu bytu v domě ve vlastnictví obce , tj. Hlavního města Prahy, svěřených do správy Městské části Praha 8 na k. ú. Kobylisy, na dobu určitou",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=FNFvbZmXJw7CIMNV2Qfh1pbxsh2g==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0310/2026",
+    "organ": "Rada",
+    "date": "2026-07-08",
+    "meeting": "106",
+    "title": "k návrhu uzavření 13 \"Nájemních smluv\" o nájmu bytů v domech ve vlastnictví obce, tj. Hlavního města Prahy, svěřených do správy městské části Praha 8 na k. ú. Kobylisy, k. ú. Střížkova k. ú. Bohnice na dobu určitou",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=pDijUp32k3bts174QHrn6g==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0309/2026",
+    "organ": "Rada",
+    "date": "2026-07-08",
+    "meeting": "106",
+    "title": "k návrhu uzavření \"Smlouvy o nájmu prostoru\" v objektu ve vlastnictví obce, tj. Hlavního města Prahy, svěřeném do správy městské části Praha 8 – objekt bez čp./č.ev., na pozemku parc. č. 2364/80, na k. ú. Kobylisy (při ul. Hrubého), Praha 8",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=2W8i2mcp2LgOv3iLWx0MrA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0308/2026",
+    "organ": "Rada",
+    "date": "2026-07-08",
+    "meeting": "106",
+    "title": "k návrhu čerpání Fondu investic Základní školou, Praha 8, Glowackého 6",
+    "topics": [
+      "Školství"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=TqzkwLvWC0yHsk97CqLp3A==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0307/2026",
+    "organ": "Rada",
+    "date": "2026-07-08",
+    "meeting": "106",
+    "title": "k návrhu uzavření \"Dodatku č. 2\" ke \"Smlouvě o dílo\" s předmětem plnění \"Stavební úpravy kaple bohnického ústavního hřbitova, Praha 8 - Bohnice\"",
+    "topics": [
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=rpAcd3iuIKRnQHIv3Jg2GQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0306/2026",
+    "organ": "Rada",
+    "date": "2026-07-08",
+    "meeting": "106",
+    "title": "k návrhu vyjádření městské části Praha 8 k Projektové dokumentaci ke společnému povolení – Novostavba bytového domu Primátorská, parc.č. 210/4, 204, 205 na k.ú. Libeň v Praze 8",
+    "topics": [
+      "Majetek",
+      "Výstavba"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=jKkhtbhZYrwghGfykOS1Qg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0305/2026",
+    "organ": "Rada",
+    "date": "2026-07-08",
+    "meeting": "106",
+    "title": "k návrhu uzavření Smlouvy o úpravě vzájemných vztahů mezi MČ Praha 8 na jedné straně a PRIME rezidence s.r.o. na straně druhé v rámci projektu označovaném jako „BD PRIMÁTORSKÁ“",
+    "topics": [
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=0etfsNFwQUshLz94u3nWNg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0304/2026",
+    "organ": "Rada",
+    "date": "2026-07-08",
+    "meeting": "106",
+    "title": "k návrhu majetkového převodu městské části Praha 8 - úplatného převodu nemovitostí ve vlastnictví obce, tj. hlavního města Prahy, svěřených do správy městské části Praha 8, konkrétně pozemků parc. č. 1/1, parc. č. 1/2, parc. č. 2/1, parc. č. 2/2, parc. č. 5/1, parc. č. 5/2, parc. č. 5/3, parc. č. 5/4, parc. č. 6/1, parc. č. 7/8, v k. ú. Střížkov",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=KGaKxvJMcyTEZCFXIBn6rg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0303/2026",
+    "organ": "Rada",
+    "date": "2026-07-08",
+    "meeting": "106",
+    "title": "k návrhu úpravy platu paní Mgr. Janě Bernasové, ředitelce Mateřské školy, Praha 8, Krynická 2",
+    "topics": [
+      "Školství"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=9C5wLEXr2X1tPQhHP22JuQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0302/2026",
+    "organ": "Rada",
+    "date": "2026-07-08",
+    "meeting": "106",
+    "title": "k návrhu vyzvání účastníků zadávacího řízení k podání nabídek pro realizaci veřejné zakázky s předmětem plnění „Sportovní hala Jána Mahora v Kobylisích – projekční práce“, zadávanou v nadlimitním režimu při použití užšího řízení dle ust. § 58 zákona č. 134/2016 Sb., o zadávání veřejných zakázek, ve znění pozdějších předpisů",
+    "topics": [
+      "Veřejné zakázky",
+      "Sport"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=iJXJOI1bt1y3a3ISus6q3pbxpl4Q==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0301/2026",
+    "organ": "Rada",
+    "date": "2026-07-08",
+    "meeting": "106",
+    "title": "k návrhu vyloučení účastníků zadávacího řízení pro realizaci veřejné zakázky s předmětem plnění „Sportovní hala Jána Mahora v Kobylisích – projekční práce“, zadávanou v nadlimitním režimu při použití užšího řízení dle ust. § 58 zákona č. 134/2016 Sb., o zadávání veřejných zakázek, ve znění pozdějších předpisů",
+    "topics": [
+      "Veřejné zakázky",
+      "Sport"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=55DWaPqZfoyeKRHdFzq1pbxsh2bA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0300/2026",
+    "organ": "Rada",
+    "date": "2026-07-08",
+    "meeting": "106",
+    "title": "k „návrhu nařízení hlavního města Prahy, kterým se mění nařízení č. 21/2021 Sb. hl. m. Prahy, kterým se vydává tržní řád, ve znění pozdějších předpisů - aktualizace a upřesnění přílohové části“",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=gacSl5xavWOXuE2avK5A2Q==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0299/2026",
+    "organ": "Rada",
+    "date": "2026-07-08",
+    "meeting": "106",
+    "title": "k návrhu rozpočtových opatření městské části Praha 8",
+    "topics": [
+      "Finance"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=HLpwn2Po4mlPTNAFYot3pbxpl4bA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0298/2026",
+    "organ": "Rada",
+    "date": "2026-07-08",
+    "meeting": "106",
+    "title": "k návrhu výběru zhotovitele a uzavření \"Smlouvy o dílo\" pro realizaci veřejné zakázky s předmětem plnění \"Dopravní studie lokality Písečná\"",
+    "topics": [
+      "Doprava",
+      "Smlouvy",
+      "Veřejné zakázky"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=AquRyVaPxhsFEo1pbxsh2mbeWsfQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0297/2026",
+    "organ": "Rada",
+    "date": "2026-07-08",
+    "meeting": "106",
+    "title": "k návrhu výběru dodavatele a uzavření \"kupní smlouvy\" pro realizaci veřejné zakázky s předmětem plnění \"Nákup počítačů\"",
+    "topics": [
+      "Smlouvy",
+      "Veřejné zakázky"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=rEUMkTe3OkFiQGTL7YjfqA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0296/2026",
+    "organ": "Rada",
+    "date": "2026-07-08",
+    "meeting": "106",
+    "title": "k návrhu udělení \"Ceny Eduarda Štorcha za pedagogický přínos 2026\"",
+    "topics": [
+      "Školství"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=7Fe0r3lGbA8bGmumOvgdRg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0295/2026",
+    "organ": "Rada",
+    "date": "2026-07-08",
+    "meeting": "106",
+    "title": "k návrhu rozpočtových opatření městské části Praha 8",
+    "topics": [
+      "Finance"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=FUHj21fX6KoudyFFQvylLA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0294/2026",
+    "organ": "Rada",
+    "date": "2026-06-24",
+    "meeting": "105",
+    "title": "k návrhu textu Kupní smlouvy k nabytí nemovitého majetku - pozemku parc. č. 4071/1 v k. ú. Libeň v Praze 8, a textu Prohlášení o vlastnictví",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=jfdJod0cDGrRj82ibA8RFg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0293/2026",
+    "organ": "Rada",
+    "date": "2026-06-24",
+    "meeting": "105",
+    "title": "k návrhu uzavření Dodatku č. 1 ke \"Smlouvě o výpůjčce\" pozemku ve vlastnictví obce, tj. Hlavního města Prahy, svěřeného do správy městské části Praha 8 – pozemek parc. č. 2, na k. ú. Karlín",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=1pbxsh21aU1Zhfuyfv8mJ5GSvrsA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0292/2026",
+    "organ": "Rada",
+    "date": "2026-06-24",
+    "meeting": "105",
+    "title": "k návrhu uzavření Dodatku č. 10 ke Smlouvě o spolupráci a poskytování služeb (\"in-house\"), ve znění pozdějšího Dodatku č. 1, Dodatku č. 2, Dodatku č. 3, Dodatku č. 4, Dodatku č. 5, Dodatku č. 6, Dodatku č. 7, Dodatku č. 8 a Dodatku č. 9, mezi městskou částí Praha 8 a společností Osmá servisní, a. s.",
+    "topics": [
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=hwMi4qMEmgWMLvUKyf49Rg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0291/2026",
+    "organ": "Rada",
+    "date": "2026-06-24",
+    "meeting": "105",
+    "title": "k návrhu výběru nájemců 2 bytů v rámci \"Výběrových řízení\" o nejvhodnější nabídku uzavření \"Nájemní smlouvy\" o nájmu bytu v domě ve vlastnictví obce, tj. Hlavního města Prahy, svěřeném do správy městské části Praha 8 (VŘ ze dne 25.5.2026)",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=zz45PJsvFTNcfsnG7XZ6sQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0290/2026",
+    "organ": "Rada",
+    "date": "2026-06-24",
+    "meeting": "105",
+    "title": "k návrhu uzavření \"Kupní smlouvy\" mezi městskou částí Praha 8, jako \"prodávajícím\", a Karnet - cars, spol. s.r.o. jako \"kupujícím\"",
+    "topics": [
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=kAyUKpkqan4cGxun6qAO9g==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0289/2026",
+    "organ": "Rada",
+    "date": "2026-06-24",
+    "meeting": "105",
+    "title": "k návrhu výběru poskytovatele a uzavření \"Smlouvy o poskytnutí služeb\" pro realizaci veřejné zakázky s předmětem plnění \"Překopání dopadových zón na dětských hřištích ve správě MČ Praha 8\"",
+    "topics": [
+      "Školství",
+      "Smlouvy",
+      "Veřejné zakázky",
+      "Sport"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=mFbWc8ZmXEAWFzy8pWOZkQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0288/2026",
+    "organ": "Rada",
+    "date": "2026-06-24",
+    "meeting": "105",
+    "title": "k návrhu rozpočtových opatření městské části Praha 8",
+    "topics": [
+      "Finance"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=hHof7Zm77NHeiVGbEvP3pbxpl4kg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0287/2026",
+    "organ": "Rada",
+    "date": "2026-06-24",
+    "meeting": "105",
+    "title": "k návrhu uzavření \"Dodatku č. 3\" ke \"Smlouvě o dílo\" pro realizaci veřejné zakázky s předmětem plnění \"Revitalizace parku Dlážděnka - Etapa 1A\"",
+    "topics": [
+      "Smlouvy",
+      "Veřejné zakázky"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=MJKXZBC46rV1agBGJHnwbA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0286/2026",
+    "organ": "Rada",
+    "date": "2026-06-24",
+    "meeting": "105",
+    "title": "k návrhu čerpání Fondu investic Základní školou Bohumila Hrabala, Praha 8, Zenklova 52",
+    "topics": [
+      "Školství"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=mv6H4J7VNedQ2Tb4uGTJxg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0285/2026",
+    "organ": "Rada",
+    "date": "2026-06-24",
+    "meeting": "105",
+    "title": "k návrhu poskytnutí odměn ředitelům základních škol (ZŠ) a mateřských škol (MŠ) s právní subjektivitou, zřízených městskou částí Praha 8, za úspěšné splnění mimořádných nebo zvlášť významných pracovních úkolů ve II. čtvrtletí 2026",
+    "topics": [
+      "Školství"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=pMVCDCbB1OR0o5hbINr11pbxsh2Q==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0284/2026",
+    "organ": "Rada",
+    "date": "2026-06-24",
+    "meeting": "105",
+    "title": "k návrhu výběru poskytovatele a uzavření \"Smlouvy o zajištění služeb\" pro realizaci veřejné zakázky s předmětem plnění \"Zajištění služeb v oblasti informačních technologií pro MČ Praha 8\"",
+    "topics": [
+      "Smlouvy",
+      "Veřejné zakázky"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=ZA4pJZksOZAPy0Qr91pbxsh27hGw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0283/2026",
+    "organ": "Rada",
+    "date": "2026-06-24",
+    "meeting": "105",
+    "title": "k návrhu uzavření Smlouvy o provozu dětských skupin mezi Městskou částí Praha 8 a příspěvkovou organizací Sociální a ošetřovatelské služby Praha 8",
+    "topics": [
+      "Školství",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=ML0d3pbxpl434N11jNM47tpWjh8w==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0282/2026",
+    "organ": "Rada",
+    "date": "2026-06-24",
+    "meeting": "105",
+    "title": "k návrhu vyloučení a výběru nejvhodnější nabídky pro realizaci veřejné zakázky s předmětem plnění \"Zajištění nákupu a dodávek drobného dlouhodobého hmotného majetku a drobného hmotného majetku\" a uzavření \"Rámcové smlouvy\"",
+    "topics": [
+      "Majetek",
+      "Smlouvy",
+      "Veřejné zakázky"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=95avPeRs03pbxpl4mJ9sqEweF8AQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0281/2026",
+    "organ": "Rada",
+    "date": "2026-06-24",
+    "meeting": "105",
+    "title": "k návrhu poskytnutí a stanovení výše odměny p. Ing. Stanislavu Hladišovi, řediteli Servisního střediska pro správu svěřeného majetku městské části Praha 8, za úspěšné splnění mimořádných nebo zvlášť významných pracovních úkolů v 1. pololetí roku 2026",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=tA5sSwICC3pbxpl4jw1pbxsh2miY2y5cYg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0280/2026",
+    "organ": "Rada",
+    "date": "2026-06-24",
+    "meeting": "105",
+    "title": "k návrhu úpravy objemu prostředků na platy zaměstnanců příspěvkové právnické osobě (organizaci), zřízené městskou částí Praha 8, na rok 2026",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=DdJ9cD3pbxpl42d3pbxpl4Sgm9aefNa2Bw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0279/2026",
+    "organ": "Rada",
+    "date": "2026-06-24",
+    "meeting": "105",
+    "title": "k návrhu rozpočtových opatření městské části Praha 8",
+    "topics": [
+      "Finance"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=ab9GSEOtYAEtsWswYYC54g==",
+    "tasks": []
+  },
+  {
+    "id": "Usn ZMC 024/2026",
+    "organ": "Zastupitelstvo",
+    "date": "2026-06-17",
+    "meeting": "21",
+    "title": "k výzvě Zastupitelstvu hlavního města Prahy ke schválení úplatného převodu pozemků pod areálem Gymnázia Thomase Manna",
+    "topics": [
+      "Majetek",
+      "Školství"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/677?dlOrgan=2"
+  },
+  {
+    "id": "Usn ZMC 023/2026",
+    "organ": "Zastupitelstvo",
+    "date": "2026-06-17",
+    "meeting": "21",
+    "title": "k problematice Kasárna Karlín",
+    "topics": [
+      "Karlín",
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/677?dlOrgan=2"
+  },
+  {
+    "id": "Usn ZMC 022/2026",
+    "organ": "Zastupitelstvo",
+    "date": "2026-06-17",
+    "meeting": "21",
+    "title": "k návrhu nabytí nemovitého majetku - pozemku parc. č. 4071/1 na k. ú. Libeň",
+    "topics": [
+      "Majetek",
+      "Libeň"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/677?dlOrgan=2"
+  },
+  {
+    "id": "Usn ZMC 021/2026",
+    "organ": "Zastupitelstvo",
+    "date": "2026-06-17",
+    "meeting": "21",
+    "title": "k návrhu udělení Čestného občanství městské části Praha 8 Doc.Jiřímu Hoškovi,",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/677?usn=Nnh64uLqf1ZnyRx3eQcoTw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn ZMC 020/2026",
+    "organ": "Zastupitelstvo",
+    "date": "2026-06-17",
+    "meeting": "21",
+    "title": "k návrhu udělení Čestného občanství městské části Praha 8 panu MUDr. Václavu Holému",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/677?usn=uP25smKWwSPuXkm5PFBGUQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn ZMC 019/2026",
+    "organ": "Zastupitelstvo",
+    "date": "2026-06-17",
+    "meeting": "21",
+    "title": "k návrhu odejmutí majetku ze svěřené správy MČ PRAHA 8 - softwarových licencí Ekonomického informačního systému a dalších komponent platformy GINIS",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/677?usn=ZcIiGJHNQ3GxBbctD5IMXw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn ZMC 018/2026",
+    "organ": "Zastupitelstvo",
+    "date": "2026-06-17",
+    "meeting": "21",
+    "title": "k návrhu uzavření smlouvy o zápůjčce mezi Městskou částí Praha 8 jako zapůjčitelem a zapsaným ústavem ALT@RT jako vydlužitelem",
+    "topics": [
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/677?usn=8SQljsKSTWt6bjf0xisfpQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn ZMC 017/2026",
+    "organ": "Zastupitelstvo",
+    "date": "2026-06-17",
+    "meeting": "21",
+    "title": "k návrhu rozpočtového opatření městské části Praha 8",
+    "topics": [
+      "Finance"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/677?usn=uFzYxodsdBCqTJhJ1pbxsh2YMffw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn ZMC 016/2026",
+    "organ": "Zastupitelstvo",
+    "date": "2026-06-17",
+    "meeting": "21",
+    "title": "k návrhu poskytnutí a stanovení výše peněžitých plnění občanům MČ Praha 8, kteří nejsou členy Zastupitelstva městské části Praha 8, za jejich práci jako členům výborů Zastupitelstva MČ Praha 8, komisí Rady MČ Praha 8 nebo zvláštních orgánů MČ Praha 8 v období od 1. listopadu 2025 do 30. dubna 2026, a k návrhu stanovení výše příspěvku členům Zastupitelstva městské části Praha 8, pověřených výkonem sňatkových obřadů, na úpravu zevnějšku v období od 1. listopadu 2025 do 30. dubna 2026",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/677?usn=xEQQlYR557UfqLIv2SApSw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn ZMC 015/2026",
+    "organ": "Zastupitelstvo",
+    "date": "2026-06-17",
+    "meeting": "21",
+    "title": "k návrhu \"Závěrečného účtu\" městské části Praha 8 za rok 2025",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/677?usn=TkZon9VKvZ8gVbqH2PWu2g==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0278/2026",
+    "organ": "Rada",
+    "date": "2026-06-10",
+    "meeting": "104",
+    "title": "k návrhu zrušení věcného břemene užívání průchodu a průjezdu domem čp. 286 (pozemek parc. č. 99) v k. ú. Karlín a na adrese Vítkova 5, Praha 8",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=taagWIdxiu3pbxpl43xMJX9VT0Cg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0277/2026",
+    "organ": "Rada",
+    "date": "2026-06-10",
+    "meeting": "104",
+    "title": "k návrhu na schválení \"Smlouvy o spolupráci\" mezi městskou částí Praha 8 na jedné straně, Pražskou vodohospodářskou společností a.s. na straně druhé a Pražskými vodovody a kanalizacemi, a.s. na straně třetí v rámci projektu „ZŠ Rohan“",
+    "topics": [
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=Ou4Cgg5wK0NX3pbxpl4wHv7J20aw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0276/2026",
+    "organ": "Rada",
+    "date": "2026-06-10",
+    "meeting": "104",
+    "title": "k návrhu uzavření 4 \"Nájemních smluv\" o nájmu bytů v domech ve vlastnictví obce, tj. Hlavního města Prahy, svěřených do správy městské části Praha 8 na k. ú. Kobylisy, vyčleněných pro účely ubytování uprchlíků z válečných oblastí Ukrajiny, na dobu určitou",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=KFfbIajcXASpnHMZH9RGPQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0275/2026",
+    "organ": "Rada",
+    "date": "2026-06-10",
+    "meeting": "104",
+    "title": "k návrhu uzavření \"Nájemní smlouvy\" o nájmu bytu v domě ve vlastnictví obce, tj. Hlavního města Prahy, svěřeném do správy městské části Praha 8",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=MPBTfBpdJSdUWMgjn1A3ig==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0274/2026",
+    "organ": "Rada",
+    "date": "2026-06-10",
+    "meeting": "104",
+    "title": "k návrhu uzavření 4 \"Nájemních smluv\" o nájmu bytů v domě ve vlastnictví obce , tj. Hlavního města Prahy, svěřeném do správy městské části Praha 8, na k. ú. Kobylisy, 182 00 Praha 8, na dobu určitou",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=5kAXetXya3fgOf376xHQRA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0273/2026",
+    "organ": "Rada",
+    "date": "2026-06-10",
+    "meeting": "104",
+    "title": "k návrhu uzavření 11 \"Nájemních smluv\" o nájmu bytů v domech ve vlastnictví obce, tj. Hlavního města Prahy, svěřených do správy městské části Praha 8 na k. ú. Kobylisy, k. ú. Střížkov, k. ú. Bohnice, a na k. ú. Karlín na dobu určitou",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=1pbxsh265Djskw2IM3pbxpl4Vdz1pbxsh2A1AZHg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0272/2026",
+    "organ": "Rada",
+    "date": "2026-06-10",
+    "meeting": "104",
+    "title": "k vyjádření městské části k návrhu obecně závazné vyhlášky o zákazu zacházení s pyrotechnickými výrobky a zákazu používání některých výrobků s neřízeným letem v hlavním městě Praze",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=iB1pbxsh2sbXNLrKZ2cNpbfKQcnQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0271/2026",
+    "organ": "Rada",
+    "date": "2026-06-10",
+    "meeting": "104",
+    "title": "k \"Účetní závěrce\" s Přílohou k účetní závěrce a ke \"Zprávě o vztazích\", týkající se hospodaření společnosti Osmá správa majetku a služeb a.s., za období od 1.1.2025 do 31.12.2025",
+    "topics": [
+      "Finance",
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=daeZfa1pbxsh2MWTSW8a6rtNddrQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0270/2026",
+    "organ": "Rada",
+    "date": "2026-06-10",
+    "meeting": "104",
+    "title": "k návrhu vyjádření městské části Praha 8 k dokumentaci ke společnému řízení Stavební úpravy a dostavba podkroví v 6. a 7. NP bytového domu Karlínské nám. 10, parc.č. 42 na k.ú. Karlín v Praze 8",
+    "topics": [
+      "Majetek",
+      "Výstavba"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=z3pbxpl475Z8fsTyabbCvHyGZAVw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0269/2026",
+    "organ": "Rada",
+    "date": "2026-06-10",
+    "meeting": "104",
+    "title": "k návrhu schválení \"Smlouvy o koordinaci\" mezi městskou částí Praha 8 na jedné straně a společností Konsorcium Rohan, s.r.o., a jednotlivými projektovými společnostmi realizujícími rozvoj území Rohanského ostrova",
+    "topics": [
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=0aYv1pbxsh2bzUQu1pbxsh2RsfazUURNcw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0268/2026",
+    "organ": "Rada",
+    "date": "2026-06-10",
+    "meeting": "",
+    "title": "k návrhu udělení plné moci vedoucímu odboru správy majetku ÚMČ Praha 8",
+    "topics": [
+      "Majetek",
+      "Organizační"
+    ],
+    "responsible": "Radomír Nepil",
+    "deadline": "2026-06-17",
+    "url": "https://www.praha8.cz/appo/usn/676?usn=1pbxsh2lkIKyIkShsohtyCBu3pbxpl44dQ%3D%3D"
+  },
+  {
+    "id": "Usn RMC 0267/2026",
+    "organ": "Rada",
+    "date": "2026-06-10",
+    "meeting": "104",
+    "title": "k návrhu uzavření Smlouvy o úpravě vzájemných vztahů mezi MČ Praha 8 na jedné straně a City Home Project I, s.r.o.; Carpantia, s.r.o. a NV správa nemovitostí na straně druhé",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=q3pbxpl4O2NOxXRzW51pbxsh2LYYzYwX7Q==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0266/2026",
+    "organ": "Rada",
+    "date": "2026-06-10",
+    "meeting": "104",
+    "title": "k návrhu uzavření dodatku č.1 Smlouvy o spolupráci č. 2024/0487/OURV.DSFR mezi MČ Praha 8 na jedné straně a Rohan engineering, s.r.o. na straně druhé",
+    "topics": [
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=PX3pbxpl4CEtRJihZbc8eolYRhpQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0265/2026",
+    "organ": "Rada",
+    "date": "2026-06-10",
+    "meeting": "104",
+    "title": "k návrhu rozpočtových opatření městské části Praha 8",
+    "topics": [
+      "Finance"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=11pbxsh2g1pbxsh23iybLwbZueY5BCfL2Q==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0264/2026",
+    "organ": "Rada",
+    "date": "2026-06-10",
+    "meeting": "104",
+    "title": "k návrhu výběru dodavatele a uzavření \"Kupní smlouvy\" pro realizaci veřejné zakázky s předmětem plnění \"Výměna 9 ks poškozených herních prvků na dětských hřištích\"",
+    "topics": [
+      "Školství",
+      "Smlouvy",
+      "Veřejné zakázky",
+      "Sport"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=H1B3STZzDY4Frp6zkl8KUw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0263/2026",
+    "organ": "Rada",
+    "date": "2026-06-10",
+    "meeting": "104",
+    "title": "k návrhu výběru poskytovatele a uzavření \"Smlouvy o dodání licencí\" pro realizaci veřejné zakázky s předmětem plnění \"Nákup licencí HP Workforce Experience Platform (WXP)\"",
+    "topics": [
+      "Smlouvy",
+      "Veřejné zakázky"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=VgnTezqnAwd6FfLKC5k52w==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0262/2026",
+    "organ": "Rada",
+    "date": "2026-06-10",
+    "meeting": "104",
+    "title": "k návrhu nového znění „Směrnice o oběhu účetních dokladů městské části Praha 8\"",
+    "topics": [
+      "Finance"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=0Jr611PrzvfWhXGneZkm1w==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0261/2026",
+    "organ": "Rada",
+    "date": "2026-06-10",
+    "meeting": "104",
+    "title": "k návrhu nového znění „Směrnice o postupu při uzavírání a evidenci smluv a objednávek na Úřadu městské části Praha 8“",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=HwExiFwphnHUruSZN0n3Qw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0260/2026",
+    "organ": "Rada",
+    "date": "2026-06-10",
+    "meeting": "104",
+    "title": "k návrhu vyjádření Městské části Praha 8 k prodeji částí pozemků parc.č. 3768 (o výměře cca 2 m2), 3769/1 (o výměře cca 5 m2) a 3771/1 (dvě části o výměrách cca 31 m2 a cca 5 m2), na k.ú. Libeň v Praze 8, (při ul. Pomezní),",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=xNfcIi41De1pbxsh26ba1NdhIG6w==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0259/2026",
+    "organ": "Rada",
+    "date": "2026-06-10",
+    "meeting": "104",
+    "title": "k návrhu vyjádření městské části Praha 8 k prodeji části pozemku parc.č. 850/1 (o výměře 1 m2), k.ú. Bohnice, v Praze 8, (ul. Ve Vrších)",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=1I9018vfPn7UDEJ1pbxsh2IUYgfg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0258/2026",
+    "organ": "Rada",
+    "date": "2026-06-10",
+    "meeting": "104",
+    "title": "k návrhu vyjádření městské části Praha 8 k aktualizaci vyjádření k prodeji pozemků a částí pozemků na k.ú. Libeň v Praze 8 (při ul. Chocholouškova, Vojenova, Libeňský most), jejichž přesný popis je vzhledem k rozsahu uveden v návrhu vyjádření",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=i1pbxsh2ZSvBgIEZfW7EY9zN6KaQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0257/2026",
+    "organ": "Rada",
+    "date": "2026-06-10",
+    "meeting": "104",
+    "title": "k návrhu vyjádření městské části Praha 8 k úplatnému nabytí ideálního podílu ve výši 1/3 pozemku parc.č. 1780/3 na k.ú. Kobylisy v Praze 8 (ul. Na přesypu), kde katastr nemovitostí eviduje duplicitní vlastnictví",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=1FmCweOUBfRMz71pbxsh2eSmizdg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0256/2026",
+    "organ": "Rada",
+    "date": "2026-06-10",
+    "meeting": "104",
+    "title": "k návrhu vyjádření městské části Praha 8 k prodeji pozemku parc.č. 2982/20 a části pozemku parc.č. 2982/1 o výměře cca 350 m2, oba na k.ú. Libeň v Praze 8 (oblast Kotlaska)",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=fPfd3hea8AXi0NNzzy5y3pbxpl4w==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0255/2026",
+    "organ": "Rada",
+    "date": "2026-06-10",
+    "meeting": "104",
+    "title": "k návrhu vyjádření městské části Praha 8 k nájmu pozemku parc.č. 323/9 na k.ú. Libeň v Praze 8 (ul. Budínova)",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=X7J5FtVfVQbO96J9FO8nDw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0254/2026",
+    "organ": "Rada",
+    "date": "2026-06-10",
+    "meeting": "104",
+    "title": "k návrhu uzavření \"dodatku č. 3 ke Smlouvě o spolupráci č. POS/34/04/000213/2022\" mezi městskou částí Praha 8 na jedné straně a hlavním městem Prahou na straně druhé, v rámci Projektu \"ZŠ Rohan\"",
+    "topics": [
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=NRHCW4Sos8U6mMjsrbXmTQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0253/2026",
+    "organ": "Rada",
+    "date": "2026-06-10",
+    "meeting": "104",
+    "title": "k návrhu uzavření \"Smlouvy o postoupení práv a povinností\" mezi městskou částí Praha 8 na jedné straně a hlavním městem Prahou na straně druhé, v rámci Projektu \"ZŠ Rohan\"",
+    "topics": [
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=SRTzmrWaxXamvADGnkp8lw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0252/2026",
+    "organ": "Rada",
+    "date": "2026-06-10",
+    "meeting": "104",
+    "title": "k návrhu uzavření \"Smlouvy o výpůjčce pozemků\" mezi městskou částí Praha 8 na jedné straně a hlavním městem Prahou na straně druhé, v rámci Projektu \"ZŠ Rohan\"",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=YN2O3CnFalL6wx2YbJW1pbxsh2gg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0251/2026",
+    "organ": "Rada",
+    "date": "2026-06-10",
+    "meeting": "104",
+    "title": "k návrhu uzavření \"Smlouvy o spolupráci\" mezi MČ Praha 8 a zapsaným ústavem Zerowasters, z. ú.",
+    "topics": [
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=gCvyxKphiaHjB0vtSGV5dw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0250/2026",
+    "organ": "Rada",
+    "date": "2026-06-03",
+    "meeting": "103",
+    "title": "k návrhu odstoupení od Smlouvy o nájmu částí pozemků parc. č. 737/2 a parc. č. 739/2, v k. ú. Karlín",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=TCFipKQJJJe9lK1pbxsh2to2mlCg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0249/2026",
+    "organ": "Rada",
+    "date": "2026-06-03",
+    "meeting": "103",
+    "title": "k návrhu uzavření smlouvy o zápůjčce mezi městskou částí Praha 8 jako zapůjčitelem a zapsaným ústavem ALT@RT jako vydlužitelem",
+    "topics": [
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=bLsaKuuyhZKgWAA9ua3pbxpl4i0Q==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0248/2026",
+    "organ": "Rada",
+    "date": "2026-06-03",
+    "meeting": "103",
+    "title": "k návrhu rozpočtového opatření městské části Praha 8",
+    "topics": [
+      "Finance"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=0A71fpWsRT1pbxsh2LvQ3k0ppixA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0247/2026",
+    "organ": "Rada",
+    "date": "2026-06-03",
+    "meeting": "103",
+    "title": "k návrhu odstoupení od \"Smlouvy o nájmu prostoru sloužícího podnikání\", ve znění pozdějšího dodatku č. 1, v objektu ve vlastnictví Bytového družstva Sokolovská 12/43, uzavřené v rámci věcného břemene služebnosti bezplatného požívání, sjednaného ve prospěch Městské části Praha 8 – čp. 12, np. 507, na k. ú. Karlín a na adrese Sokolovská 43, 186 00 Praha 8",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=PwxR3pbxpl4AYjmdPfkedJTEmy3pbxpl4Q==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0246/2026",
+    "organ": "Rada",
+    "date": "2026-06-03",
+    "meeting": "103",
+    "title": "k návrhu rozpočtových opatření městské části Praha 8",
+    "topics": [
+      "Finance"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=9wme4ajMHNk0DgGmWLikbw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0245/2026",
+    "organ": "Rada",
+    "date": "2026-05-27",
+    "meeting": "102",
+    "title": "k návrhu uzavření \"Smlouvy o zřízení věcného břemene\" umístění nové distribuční sítě kVN na pozemcích parc. č. 769/10, 841/41 a 843/3, vše na k. ú. Karlín, obec Praha",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=B7dcCNDI0a61jmJU3OXwWA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0244/2026",
+    "organ": "Rada",
+    "date": "2026-05-27",
+    "meeting": "102",
+    "title": "k návrhu uzavření 5 \"Nájemních smluv\" o nájmu bytu v domech ve vlastnictví obce, tj. Hlavního města Prahy, svěřených do správy městské části Praha 8",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=ihmM4KNLwXvMUXXW3TCb0Q==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0243/2026",
+    "organ": "Rada",
+    "date": "2026-05-27",
+    "meeting": "102",
+    "title": "k návrhu uzavření 2 \"Nájemních smluv\" o nájmu bytu v domě ve vlastnictví obce , tj. Hlavního města Prahy, svěřeném do správy Městské části Praha 8, na k. ú. Střížkov, v Praze 8, na dobu určitou",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=RGKQKwvpA8nc4RYaT7rEDQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0242/2026",
+    "organ": "Rada",
+    "date": "2026-05-27",
+    "meeting": "102",
+    "title": "\"Kontrolní zpráva o stavu likvidace státního podniku Bytový podnik v Praze 8, s. p. - v likvidaci\" ke dni 26.5.2026",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=TYzPFNZuCz0otZu81pbxsh2QxRvg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0241/2026",
+    "organ": "Rada",
+    "date": "2026-05-27",
+    "meeting": "102",
+    "title": "k návrhu podání výpovědi \"Smlouvy o nájmu prostoru sloužícího podnikání\", v objektu ve vlastnictví Bytového družstva Vítkova 202, uzavřené v rámci věcného břemene služebnosti bezplatného požívání, sjednaného ve prospěch městské části Praha 8 – čp. 202, np. 503, na k. ú. Karlín a na adrese Vítkova 18, 186 00 Praha 8",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=I7nr2tmJmdKkor1pbxsh2M3rgcjQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0240/2026",
+    "organ": "Rada",
+    "date": "2026-05-27",
+    "meeting": "102",
+    "title": "k návrhu uzavření \"Smlouvy o nájmu prostoru sloužícího podnikání\" v objektu ve vlastnictví Bytového družstva PECKOVA 277, uzavřené v rámci věcného břemene služebnosti bezplatného požívání, sjednaného ve prospěch městské části Praha 8 – čp. 277, na k. ú. Karlín a na adrese Peckova 7, 186 00 Praha 8",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=rXmWmdliwHpc33pbxpl48q5h8dzA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0239/2026",
+    "organ": "Rada",
+    "date": "2026-05-27",
+    "meeting": "102",
+    "title": "k návrhu uzavření \"Nájemní smlouvy\" o nájmu bytu v domě ve vlastnictví obce , tj. Hlavního města Prahy, svěřeném do správy Městské části Praha 8 na k. ú. Střížkov, na dobu určitou",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=1pbxsh2qW3epBILRDOV8kllKfyEg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0238/2026",
+    "organ": "Rada",
+    "date": "2026-05-27",
+    "meeting": "102",
+    "title": "k návrhu uzavření \"Smlouvy o nájmu\" pozemku parc. č. 2535, na k.ú. Kobylisy, obec Praha, za účelem umístění stavebního výtahu s oplocením, pro rekonstrukci střechy BD Třeboradická 1077/16, Praha 8",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=QFGZeHbWtlWANZROjpTAxg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0237/2026",
+    "organ": "Rada",
+    "date": "2026-05-27",
+    "meeting": "102",
+    "title": "k návrhu uzavření \"Smlouvy o nájmu\" pozemku parc. č. 875/17, na k.ú. Bohnice, obec Praha, za účelem umístění staveniště pro opravu střechy domu Řešovská 563 - 567, Praha 8",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=Nsa6oXx0rnaD1pbxsh2lH3y241pbxsh2eQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0236/2026",
+    "organ": "Rada",
+    "date": "2026-05-27",
+    "meeting": "102",
+    "title": "k návrhu revokace usnesení č. Usn RMC 0094/2026 ze dne 18. března 2026 a k návrhu na ponechání účelových investičních finančních prostředků z minulých let do roku 2026 na pokračování vybraných akcí Servisního střediska pro správu svěřeného majetku (SeS) Městské části Praha 8",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=ullTN1pbxsh2i2pDVVO3pbxpl4hptT8hdA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0235/2026",
+    "organ": "Rada",
+    "date": "2026-05-27",
+    "meeting": "102",
+    "title": "k návrhu uzavření Dodatku č. 1 k Darovací smlouvě mezi městskou částí Praha 8, jako zřizovatelem, Základní školou a mateřskou školou, Praha 8, Dolákova 1, jako příspěvkovou organizací, a Fokus Praha, z. ú., jako obdarovaným",
+    "topics": [
+      "Školství",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=tIikFaPUgg1V6nz9ziFe7w==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0234/2026",
+    "organ": "Rada",
+    "date": "2026-05-27",
+    "meeting": "102",
+    "title": "k návrhu souhlasu zřizovatele s posílením fondu investic Servisního střediska pro správu svěřeného majetku městské části Praha 8",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=TT1pbxsh2FGiWaZYkEU7TW1Q56uA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0233/2026",
+    "organ": "Rada",
+    "date": "2026-05-27",
+    "meeting": "102",
+    "title": "k návrhu podání výpovědi \"Smlouvy o nájmu prostoru sloužícího podnikání\", v objektu ve vlastnictví Bytového družstva Sokolovská 68/381, uzavřené v·rámci věcného břemene služebnosti bezplatného požívání, sjednaného ve·prospěch Městské části Praha·8 – čp. 381, np.·509, na k. ú. Karlín a·na·adrese Sokolovská 68, 186·00·Praha 8",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=FmNfDfXEu6qG8Ky4kvuUBA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0232/2026",
+    "organ": "Rada",
+    "date": "2026-05-27",
+    "meeting": "102",
+    "title": "k záměru nabytí nemovitého majetku - pozemku parc. č. 4071/1 v k. ú. Libeň v Praze 8",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=QcVviCixL7XEZ6Sc6T3pbxpl4emQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0231/2026",
+    "organ": "Rada",
+    "date": "2026-05-27",
+    "meeting": "102",
+    "title": "k návrhu uzavření \"Smlouvy o nájmu prostoru sloužícího podnikání\" v objektu ve vlastnictví Bytového družstva Křižíkova 41 a jednotlivých vlastníků bytových jednotek, uzavřené v rámci věcného břemene služebnosti bezplatného požívání, sjednaného ve prospěch městské části Praha 8 – čp. 153, na k. ú. Karlín a na adrese Křižíkova 41, 186 00 Praha 8",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=ujvrJawq1Yob5t6hAUfQdQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0230/2026",
+    "organ": "Rada",
+    "date": "2026-05-27",
+    "meeting": "102",
+    "title": "k návrhu uzavření dodatku č.2 k Smlouvě o spolupráci č. 2021/0132/OURV.DPR ze dne 26.04.2021 mezi MČ Praha 8 na jedné straně a Střelničná reality s.r.o. na straně druhé ve věci změny ÚP pro plánovaný projekt nazvaný jako \"Polyfunkční objekt Střelničná, Střížkov\"",
+    "topics": [
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=XX0LMw7EXwx7aKnUP5OUmw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0229/2026",
+    "organ": "Rada",
+    "date": "2026-05-27",
+    "meeting": "102",
+    "title": "k návrhu uzavření dodatku č.1 k Smlouvě o spolupráci č. 2022/0612/OURV.DPR ze dne 09.01.2023 mezi MČ Praha 8 na jedné straně a REFIDO Development a.s. (původně EuroRak s.r.o.) na straně druhé",
+    "topics": [
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=Kv8jUCJjTTeEhmlWKnrrPg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0228/2026",
+    "organ": "Rada",
+    "date": "2026-05-27",
+    "meeting": "102",
+    "title": "k návrhu uzavření Smlouvy o úpravě vzájemných vztahů mezi MČ Praha 8 na jedné straně a Square Project s.r.o. a GARTAL Developerský projekt G s.r.o. a na straně druhé ve věci projektu nazvaného jako \"BD K Ládví-2.etapa\"",
+    "topics": [
+      "Výstavba",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=r7DmIMLAjOlPM0G1pbxsh2I3pbxpl4zzNQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0227/2026",
+    "organ": "Rada",
+    "date": "2026-05-27",
+    "meeting": "102",
+    "title": "k návrhu uzavření Smlouvy o úpravě vzájemných vztahů mezi MČ Praha 8 na jedné straně a BDKM Rent s.r.o. na straně druhé ve věci stavby nazvané jako \"Viladům Prosecká III - novostavba bytového domu\"",
+    "topics": [
+      "Majetek",
+      "Výstavba",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=Ej1plXUwUpt4tNVM5j2P8g==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0226/2026",
+    "organ": "Rada",
+    "date": "2026-05-27",
+    "meeting": "102",
+    "title": "k návrhu vyjádření městské části Praha 8 ke změně stavby před dokončením Bytový dům Kobylisy, parc.č. 377/1 na k.ú. Kobylisy v Praze 8 (ul. Okrouhlická)",
+    "topics": [
+      "Majetek",
+      "Výstavba"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=zn2QA3pbxpl4eh1ZYDc6m3pbxpl4Svjthg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0225/2026",
+    "organ": "Rada",
+    "date": "2026-05-27",
+    "meeting": "102",
+    "title": "k návrhu odejmutí majetku ze svěřené správy MČ PRAHA 8 - softwarových licencí Ekonomického informačního systému a dalších komponent platformy GINIS",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=iq3qjIBuGYJcK241nJD3pbxpl4Yg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0224/2026",
+    "organ": "Rada",
+    "date": "2026-05-27",
+    "meeting": "102",
+    "title": "k návrhu výběru nejvhodnější nabídky pro realizaci veřejné zakázky s předmětem plnění \"Pravidelná údržba ploch a veřejné zeleně na území MČ Praha 8 - oblast F\" a uzavření \"Rámcové dohody o poskytování služeb\"",
+    "topics": [
+      "Veřejné zakázky"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=UwbjcG4cW3pbxpl447CETyHmstUA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0223/2026",
+    "organ": "Rada",
+    "date": "2026-05-27",
+    "meeting": "102",
+    "title": "k návrhu poskytnutí dotací městské části Praha 8 v sociální oblasti na rok 2026",
+    "topics": [
+      "Finance"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=2paI5LABKyLbK1pbxsh2U6i5yktw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0222/2026",
+    "organ": "Rada",
+    "date": "2026-05-27",
+    "meeting": "102",
+    "title": "k návrhu vyjádření městské části Praha 8 k projektové dokumentaci ke společnému povolení Přístavba bytového domu v ulici K Ládví, parc.č. 430 na k.ú. Čimice v Praze 8",
+    "topics": [
+      "Majetek",
+      "Výstavba"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=h3N1B0bLgLezqDxh5fuWMA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0221/2026",
+    "organ": "Rada",
+    "date": "2026-05-27",
+    "meeting": "102",
+    "title": "k návrhu vyjádření městské části Praha 8 k dokumentaci pro povolení záměru – Viladům Prosecká III – novostavba bytového domu, parc.č. 2569 na k.ú. Libeň v Praze 8",
+    "topics": [
+      "Majetek",
+      "Výstavba"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=OLZmh8EPiCrhHKXOjuindw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0220/2026",
+    "organ": "Rada",
+    "date": "2026-05-27",
+    "meeting": "102",
+    "title": "k návrhu rozpočtových opatření městské části Praha 8",
+    "topics": [
+      "Finance"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=stXJaosWeyoZMe8jhXT9sA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0219/2026",
+    "organ": "Rada",
+    "date": "2026-05-27",
+    "meeting": "102",
+    "title": "k návrhu výběru nejvhodnější nabídky pro realizaci veřejné zakázky s předmětem plnění \"Drobné nepravidelné zahradnické práce na území MČ Praha 8 - oblast G\" a uzavření \"Rámcové dohody o poskytování služeb\"",
+    "topics": [
+      "Veřejné zakázky"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=MhC2FYms6DveJmwJhA21pbxsh20g==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0218/2026",
+    "organ": "Rada",
+    "date": "2026-05-27",
+    "meeting": "102",
+    "title": "k návrhu udělení Čestného občanství městské části Praha 8 MUDr. Václavu Holému",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=GkqSgB4xArTHn1pbxsh2uMGsrWtA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0217/2026",
+    "organ": "Rada",
+    "date": "2026-05-27",
+    "meeting": "102",
+    "title": "k návrhu udělení Čestného občanství městské části Praha 8 Doc. Jiřímu Hoškovi",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=CChD0OdVtVJ3OHdQ2M1seA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0216/2026",
+    "organ": "Rada",
+    "date": "2026-05-27",
+    "meeting": "102",
+    "title": "k návrhu uzavření \"Darovací smlouvy\" mezi městskou částí Praha 8 a Softballovým klubem Joudrs Praha",
+    "topics": [
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=r57QQUey3WKl03pbxpl46p1nTtSg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0215/2026",
+    "organ": "Rada",
+    "date": "2026-05-27",
+    "meeting": "102",
+    "title": "k návrhu výběru nejvhodnější nabídky pro realizaci veřejné zakázky s předmětem plnění \"Revitalizace parku Dlážděnka - Etapa 1 B\" a uzavření \"Smlouvy o dílo\"",
+    "topics": [
+      "Smlouvy",
+      "Veřejné zakázky"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=njuIJ3pbxpl4z1pbxsh2qt8LTpAszZCIHA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0214/2026",
+    "organ": "Rada",
+    "date": "2026-05-27",
+    "meeting": "102",
+    "title": "k návrhu poskytnutí a stanovení výše odměny ředitelce příspěvkové právnické osoby zřízené městskou částí Praha 8 - Sociální a ošetřovatelské služby Praha 8",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=9qOeQIscpIUOTqW30b9Vyg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0213/2026",
+    "organ": "Rada",
+    "date": "2026-05-27",
+    "meeting": "102",
+    "title": "k návrhu poskytnutí a stanovení výše peněžitých plnění občanům MČ Praha 8, kteří nejsou členy Zastupitelstva městské části Praha 8, za jejich práci jako členům výborů Zastupitelstva MČ Praha 8, komisí Rady MČ Praha 8 nebo zvláštních orgánů MČ Praha 8 v období od 1. listopadu 2025 do 30. dubna 2026, a k návrhu stanovení výše příspěvku členům Zastupitelstva městské části Praha 8, pověřených výkonem sňatkových obřadů, na úpravu zevnějšku v období od 1. listopadu 2025 do 30. dubna 2026",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=1pbxsh2zSlp14FFEQd3yqYv1pbxsh29fUw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0212/2026",
+    "organ": "Rada",
+    "date": "2026-05-27",
+    "meeting": "102",
+    "title": "k návrhu uzavření dohod o provedení práce se členy okrskových volebních komisí pro volby do Zastupitelstva městské části Praha 8 a do Zastupitelstva hlavního města Prahy konané ve dnech 9. a 10. října 2026",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=6rZqd3pbxpl41zYVhbz1ahoMGGZQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0211/2026",
+    "organ": "Rada",
+    "date": "2026-05-27",
+    "meeting": "102",
+    "title": "k návrhu stanoviska obce podle ustanovení § 147 odst. 1 písm. p) zákona č. 561/2004 Sb., školský zákon, ve znění pozdějších předpisů",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=DzirgaYBCTL6x13pbxpl40Ju71pbxsh2vQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0210/2026",
+    "organ": "Rada",
+    "date": "2026-05-27",
+    "meeting": "102",
+    "title": "k návrhu uzavření \"Darovací smlouvy\" mezi Pražskou teplárenskou a.s. jako \"dárcem\" a městskou částí Praha 8, jako obdarovaným, ve věci poskytnutí finančního daru ve výši 80 000 Kč",
+    "topics": [
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=nITwmOGsl0edcAOYgv1vMA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0209/2026",
+    "organ": "Rada",
+    "date": "2026-05-27",
+    "meeting": "102",
+    "title": "k návrhu podání žádosti o bezbariérové úpravy přechodů a míst pro přecházení na území MČ Prahy 8",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=SYcPj5JHoDsE781pbxsh2sVm8o0A==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0208/2026",
+    "organ": "Rada",
+    "date": "2026-05-27",
+    "meeting": "102",
+    "title": "k návrhu vyjádření k projektu doprovodných opatření ozelenění v ulici v Holešovičkách",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=Ix8WteXUEwrvMClsL3pbxpl43pbxpl45sQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0207/2026",
+    "organ": "Rada",
+    "date": "2026-05-27",
+    "meeting": "102",
+    "title": "k návrhu dopisu radnímu hl. m. Prahy Zábranskému ve věci převzetí pozemků komunikací do správy majetku hl. m. Prahy",
+    "topics": [
+      "Majetek",
+      "Doprava"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=EadV7xzCBfFZQySrTxQU4Q==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0206/2026",
+    "organ": "Rada",
+    "date": "2026-05-27",
+    "meeting": "102",
+    "title": "k návrhu výběru pronajímatele a uzavření \"Smlouvy na nájem výpočetní techniky a poskytnutí souvisejících služeb k zajištění voleb do Zastupitelstva městské části Praha 8 a do Zastupitelstva hlavního města Prahy v roce 2026, pro potřeby ÚMČ Praha 8\" mezi městskou částí Praha 8 a obchodní společností Technimax, s.r.o.",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=i0eboZjQwb3pbxpl4x4iVg3pbxpl4Y1pbxsh2sGg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0205/2026",
+    "organ": "Rada",
+    "date": "2026-05-27",
+    "meeting": "102",
+    "title": "k návrhu poskytnutí a stanovení výše odměny ředitelce příspěvkové právnické osoby zřízené městskou částí Praha 8 - Gerontologické centrum",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=vfLJ6B1pbxsh2cCtFgzY3pbxpl4iV1pbxsh239Gg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0204/2026",
+    "organ": "Rada",
+    "date": "2026-05-27",
+    "meeting": "102",
+    "title": "k návrhu uzavření \"Veřejnoprávní smlouvy o poskytnutí dotace\" mezi městskou částí Praha 8 jako \"příjemcem\" a Hlavním městem Prahou jako \"poskytovatelem\"",
+    "topics": [
+      "Finance",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=mHZX45yFweNonK4gMnueQw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0203/2026",
+    "organ": "Rada",
+    "date": "2026-05-27",
+    "meeting": "102",
+    "title": "ke stanovisku městské části Praha 8 k návrhu obecně závazné vyhlášky o místním poplatku za užívání veřejného prostranství - připomínkové řízení",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=HBDnqsagFtT3KVRf5TA89w==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0202/2026",
+    "organ": "Rada",
+    "date": "2026-05-27",
+    "meeting": "102",
+    "title": "k návrhu \"Závěrečného účtu\" městské části Praha 8 za rok 2025",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=EaOug53m5yb5cNhAkzDjFw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0201/2026",
+    "organ": "Rada",
+    "date": "2026-05-27",
+    "meeting": "102",
+    "title": "k návrhu přípravy 21. zasedání Zastupitelstva městské části Praha 8",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=NLi1qSVkz4vbuo3pbxpl426E3pbxpl4YEg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0200/2026",
+    "organ": "Rada",
+    "date": "2026-05-20",
+    "meeting": "101",
+    "title": "k návrhu uzavření \"Smlouvy o nájmu\" nemovitého majetku ve vlastnictví obce, tj. Hlavního města Prahy, svěřeného do správy městské části Praha 8 – pozemku parc. č. 716/8, na k. ú. Bohnice v Praze 8",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=Hg5gPKNXa3pbxpl4NeXxgRGpSWdA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0199/2026",
+    "organ": "Rada",
+    "date": "2026-05-20",
+    "meeting": "101",
+    "title": "k návrhu uzavření \"Dodatku č. 2\" ke \"Kupní smlouvě\" s předmětem plnění \"Vybavení interiéru dětské skupiny na adrese Palmovka 2179/6a, Praha 8\"",
+    "topics": [
+      "Školství",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=2N3gq9NM0KyfnkxNeGAQgA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0198/2026",
+    "organ": "Rada",
+    "date": "2026-05-20",
+    "meeting": "",
+    "title": "k návrhu schválení dílčí účetní závěrky městské části Praha 8 za rok 2025",
+    "topics": [
+      "Finance",
+      "Rozpočet"
+    ],
+    "responsible": "Bc. Pavla Řechtáčková",
+    "deadline": "2026-05-22",
+    "url": "https://www.praha8.cz/appo/usn/2?usn=3pbxpl4MVsNAYcezaxe1KXGqqpbg%3D%3D"
+  },
+  {
+    "id": "Usn RMC 0197/2026",
+    "organ": "Rada",
+    "date": "2026-05-20",
+    "meeting": "101",
+    "title": "k návrhu rozpočtových opatření městské části Praha 8",
+    "topics": [
+      "Finance"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=pWWcXUh3aH3pbxpl4rICR5VvaYew==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0196/2026",
+    "organ": "Rada",
+    "date": "2026-05-20",
+    "meeting": "101",
+    "title": "k návrhu uzavření Kupní smlouvy s předmětem plnění \"Dodání 2 ks herních prvků na DH Thomayerovy sady, z důvodu výměny\"",
+    "topics": [
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=c1pbxsh2LX7XJSW6cWXDeiSdiNmA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn ZMC 014/2026",
+    "organ": "Zastupitelstvo",
+    "date": "2026-05-13",
+    "meeting": "20",
+    "title": "k návrhu zajištění bezpečnosti objektu Nová Palmovka",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/677?usn=3jYCYvS18EeRrQQn3pbxpl4rqBaw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn ZMC 013/2026",
+    "organ": "Zastupitelstvo",
+    "date": "2026-05-13",
+    "meeting": "20",
+    "title": "k návrhu majetkového převodu městské části Praha 8 - svěření části pozemku parc. č. 3954/2, v k. ú. Libeň v Praze 8, ve vlastnictví Hl. m. Prahy, do správy městské části Praha 8",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/677?usn=OP3pbxpl4RwOZ4pBjs3fLmnb91pbxsh2PA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn ZMC 012/2026",
+    "organ": "Zastupitelstvo",
+    "date": "2026-05-13",
+    "meeting": "20",
+    "title": "k návrhu poskytnutí dotací městské části Praha 8 na dlouhodobě organizovanou sportovní výchovu mládeže na rok 2026",
+    "topics": [
+      "Finance",
+      "Sport"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/677?usn=NBgYecEvIDIroffQDb748g==",
+    "tasks": []
+  },
+  {
+    "id": "Usn ZMC 011/2026",
+    "organ": "Zastupitelstvo",
+    "date": "2026-05-13",
+    "meeting": "20",
+    "title": "k návrhu na schválení vzniku členství městské části Praha 8 ve spolku Energetické společenství Praha 8, z. s.",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/677?usn=teRJ80SHOzXc1yebZM11pw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn ZMC 010/2026",
+    "organ": "Zastupitelstvo",
+    "date": "2026-05-13",
+    "meeting": "20",
+    "title": "k návrhu stanovení počtu členů Zastupitelstva městské části Praha 8 pro volební období 2026 - 2030",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/677?usn=Qqz4g3eRKVmrjcs3KVaEIA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0195/2026",
+    "organ": "Rada",
+    "date": "2026-04-29",
+    "meeting": "100",
+    "title": "k návrhu uzavření Smlouvy o zrušení věcného břemene mezi městskou částí Praha 8, jako \"oprávněným\" a BYTOVÝM DRUŽSTVEM HRUBÉHO, jako \"povinným\", v domě čp. 1205, na k. ú. Kobylisy",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=9aYNoi4Gwcy4FT1pbxsh2jNes0sA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0194/2026",
+    "organ": "Rada",
+    "date": "2026-04-29",
+    "meeting": "100",
+    "title": "k návrhu uzavření 6 \"Nájemních smluv\" o nájmu bytu v domech ve vlastnictví obce, tj. Hlavního města Prahy, svěřených do správy městské části Praha 8",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=NUG0Sz1pbxsh2w1pbxsh281mIfwAiUNm9g==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0193/2026",
+    "organ": "Rada",
+    "date": "2026-04-29",
+    "meeting": "100",
+    "title": "k návrhu uzavření 7 \"Nájemních smluv\" o nájmu bytů v domech ve vlastnictví obce, tj. Hlavního města Prahy, svěřených do správy městské části Praha 8 na k. ú. Kobylisy a k. ú. Střížkov, na dobu určitou",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=1pbxsh2lT1mMF3N2lmHv5c1pbxsh28C75w==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0192/2026",
+    "organ": "Rada",
+    "date": "2026-04-29",
+    "meeting": "100",
+    "title": "k návrhu uzavření 16 \"Nájemních smluv\" o nájmu bytů v domech ve vlastnictví obce, tj. Hlavního města Prahy, svěřených do správy městské části Praha 8 na k. ú. Kobylisy, k. ú. Střížkov, k. ú. Bohnice, a na k. ú. Karlín, na dobu určitou",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=xfIcpwARYFariNZ1W4XMtA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0191/2026",
+    "organ": "Rada",
+    "date": "2026-04-29",
+    "meeting": "100",
+    "title": "k návrhu uzavření \"Smlouvy o nájmu prostoru sloužícího podnikání\" v objektu ve vlastnictví Bytového družstva Prvního pluku 8 a 10, uzavřené v rámci věcného břemene služebnosti bezplatného požívání, sjednaného ve prospěch městské části Praha 8 – čp. 174, na k. ú. Karlín a na adrese Prvního pluku 8, 186 00 Praha 8",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=kDYkk9VrJrCHetENuIdh1pbxsh2g==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0190/2026",
+    "organ": "Rada",
+    "date": "2026-04-29",
+    "meeting": "100",
+    "title": "k návrhu vydání Souhlasu zřizovatele",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=6zEmWZWO2w3pbxpl492YP9stLeKg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0189/2026",
+    "organ": "Rada",
+    "date": "2026-04-29",
+    "meeting": "100",
+    "title": "k návrhu uzavření \"Dodatku č. 1\" ke \"Kupní smlouvě\" s předmětem plnění \"Vybavení interiéru dětské skupiny na adrese Palmovka 2179/6a, Praha 8\"",
+    "topics": [
+      "Školství",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=TyaE1b8ADqY561pbxsh2f2TLLmSQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0188/2026",
+    "organ": "Rada",
+    "date": "2026-04-29",
+    "meeting": "100",
+    "title": "k návrhu uzavření Dohody o zúčtování plnění (služeb) mezi městskou částí Praha 8 a Bytovým družstvem Sokolovská 454/126, družstvo",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=QLjPVuVrPpfeTOcv7YFBGQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0187/2026",
+    "organ": "Rada",
+    "date": "2026-04-29",
+    "meeting": "100",
+    "title": "k návrhu uzavření Smlouvy o úpravě vzájemných vztahů mezi MČ Praha 8 a Rohan Gate s.r.o. ve věci stavby ROHAN GATE",
+    "topics": [
+      "Výstavba",
+      "Karlín",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/app/usn"
+  },
+  {
+    "id": "Usn RMC 0186/2026",
+    "organ": "Rada",
+    "date": "2026-04-29",
+    "meeting": "100",
+    "title": "k návrhu uzavření dodatku č.2 Smlouvy o spolupráci mezi MČ Praha 8 na jedné straně a IMU s.r.o. na straně druhé, ve věci stavby nazvané „PALMOVKA PARK V a PALMOVKA PARK VI“",
+    "topics": [
+      "Výstavba",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=vSzLCatIiyIRuR9KUODDhQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0185/2026",
+    "organ": "Rada",
+    "date": "2026-04-29",
+    "meeting": "100",
+    "title": "k návrhu uzavření dodatku č.1 Smlouvy o spolupráci mezi MČ Praha 8 na jedné straně a Rohan engineering, s.r.o. na straně druhé, ve věci stavby nazvané „ROHAN CITY – SEKCE E“",
+    "topics": [
+      "Výstavba",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=ZmVaOU7kba3Kwqg92x3pbxpl4kBA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0184/2026",
+    "organ": "Rada",
+    "date": "2026-04-29",
+    "meeting": "100",
+    "title": "k návrhu uzavření \"Dodatku č. 1\" ke smlouvě o nájmu č. 2026/0089/OSM.DEP na pozemky parc. č. 840/385, 840/386, 840/387, 840/388, 875/15 a 875/16, vše na k.ú. Bohnice, obec Praha, za účelem záboru pro opravu/zateplení fasády domu Radomská 469 - 474, Praha 8",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=hKg6HFjCfEpooubk3nC7SQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0183/2026",
+    "organ": "Rada",
+    "date": "2026-04-29",
+    "meeting": "100",
+    "title": "k návrhu rozpočtových opatření městské části Praha 8",
+    "topics": [
+      "Finance",
+      "Rozpočet"
+    ],
+    "url": "https://www.praha8.cz/app/usn"
+  },
+  {
+    "id": "Usn RMC 0182/2026",
+    "organ": "Rada",
+    "date": "2026-04-29",
+    "meeting": "100",
+    "title": "k návrhu uzavření 15 \"Nájemních smluv\" o nájmu bytů v domech ve vlastnictví obce, tj. Hlavního města Prahy, svěřených do správy městské části Praha 8 na k. ú. Kobylisy a k. ú. Střížkov, na dobu určitou",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=epPQbpmyV59XafC2OH3pbxpl4pBQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0181/2026",
+    "organ": "Rada",
+    "date": "2026-04-29",
+    "meeting": "100",
+    "title": "k návrhu rozpočtových opatření městské části Praha 8",
+    "topics": [
+      "Finance"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=LlECFhXbxSkOx82B0CgVJw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0180/2026",
+    "organ": "Rada",
+    "date": "2026-04-29",
+    "meeting": "100",
+    "title": "k návrhu čerpání Fondu investic Základní školou a mateřskou školou, Praha 8, Lyčkovo náměstí 6",
+    "topics": [
+      "Školství"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=8seg1KEAJzy3wUlk4dHzAw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0179/2026",
+    "organ": "Rada",
+    "date": "2026-04-29",
+    "meeting": "100",
+    "title": "k návrhu bezúplatného převodu majetku pořízeného městskou částí Praha 8 do vlastnictví příspěvkové organizace Základní škola a mateřská škola, Praha 8, Dolákova (IČO: 604 33 281), se sídlem na adrese Dolákova 1/555, Praha 8, 181 00, jejímž zřizovatelem je městská část Praha 8",
+    "topics": [
+      "Školství",
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=lJiKZcO9srFX75pVyNJMfg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0178/2026",
+    "organ": "Rada",
+    "date": "2026-04-29",
+    "meeting": "100",
+    "title": "k návrhu projednání výsledků konkursního řízení na funkci ředitele/ředitelky Mateřské školy, Praha 8, Krynická 2",
+    "topics": [
+      "Školství"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=463pbxpl4WWL4fFWGF7idejfaOOw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0177/2026",
+    "organ": "Rada",
+    "date": "2026-04-29",
+    "meeting": "100",
+    "title": "k návrhu vyjádření městské části Praha 8 k ukončení nájemní smlouvy a uzavření smlouvy o výpůjčce na část pozemku parc.č. 750/2 (o výměře 1,7 m2) na k.ú. Bohnice v Praze 8, ul. V Zámcích a Bohnická",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=J74V3DRUrQf8yKpgWWNFOg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0176/2026",
+    "organ": "Rada",
+    "date": "2026-04-29",
+    "meeting": "100",
+    "title": "k návrhu vyjádření městské části Praha 8 k prodeji pozemků parc.č. 2572, 2573, oba na k.ú. Libeň v Praze 8, (ul. Prosecká)",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=foy5rapr43Mo6O59cfErHQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0175/2026",
+    "organ": "Rada",
+    "date": "2026-04-29",
+    "meeting": "100",
+    "title": "k návrhu vyjádření městské části Praha 8 k prodeji pozemku parc.č. 187 na k.ú. Libeň v Praze 8, (ul. Zenklova)",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=un1pbxsh21gHEN3pCEPJjYh59V0A==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0174/2026",
+    "organ": "Rada",
+    "date": "2026-04-29",
+    "meeting": "100",
+    "title": "k návrhu vyjádření městské části Praha 8 k pronájmu části pozemku parc.č. 513/1 (o výměře 620 m2), na k.ú. Troja v Praze 8, ul. Nad Strání",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=jMfGg203pbxpl4mouIvHPqffTTlQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0173/2026",
+    "organ": "Rada",
+    "date": "2026-04-29",
+    "meeting": "100",
+    "title": "k návrhu stanoviska obce podle ustanovení § 147 odst. 1 písm. p) zákona č. 561/2004 Sb., školský zákon, ve znění pozdějších předpisů",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=v7XUM4PT5dbk8Afzd5XBnA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0172/2026",
+    "organ": "Rada",
+    "date": "2026-04-29",
+    "meeting": "100",
+    "title": "k návrhu stanoviska zřizovatele k úpravě organizace školního roku 2026/2027 v Základní škole, Praha 8, Hovorčovická 11 podle ustanovení § 24 odst. 3 zákona č. 561/2004 Sb., školský zákon, ve znění pozdějších předpisů",
+    "topics": [
+      "Školství"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=Fu8hWLz9iRf8bBb1pbxsh2CdYtqA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0171/2026",
+    "organ": "Rada",
+    "date": "2026-04-29",
+    "meeting": "100",
+    "title": "k návrhu poskytnutí dotací městské části Praha 8 v oblasti volnočasových nesportovních aktivit dětí a mládeže na rok 2026",
+    "topics": [
+      "Finance",
+      "Sport"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=oJsq2Kqxz3UI4L0nMXIuvA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0170/2026",
+    "organ": "Rada",
+    "date": "2026-04-29",
+    "meeting": "100",
+    "title": "k návrhu poskytnutí dotací městské části Praha 8 v oblasti dlouhodobě organizované sportovní výchovy mládeže pro rok 2026",
+    "topics": [
+      "Finance",
+      "Sport"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=Y1pbxsh2uQoaCL2K4qSb87EAQuMA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0169/2026",
+    "organ": "Rada",
+    "date": "2026-04-29",
+    "meeting": "100",
+    "title": "k návrhu schválení účetních závěrek příspěvkových právnických osob (organizací) základních škol a mateřských škol, jejichž zřizovatelem je městská část Praha 8, za rok 2025",
+    "topics": [
+      "Školství",
+      "Finance"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=SAD0kB7WdwNjVWrw4GcKIg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0168/2026",
+    "organ": "Rada",
+    "date": "2026-04-29",
+    "meeting": "100",
+    "title": "k návrhu schválení účetních závěrek příspěvkových právnických osob (organizací), jejichž zřizovatelem je městská část Praha 8, za rok 2025",
+    "topics": [
+      "Finance"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=twDkbMhH15jQu1pbxsh21CtHMELA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0167/2026",
+    "organ": "Rada",
+    "date": "2026-04-15",
+    "meeting": "99",
+    "title": "k návrhu souhlasu zřizovatele se zapojením základních škol, zřizovaných městskou částí Praha 8, do grantového řízení Nadace ČEZ Wellbeing ve vzdělávání",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=WV3pbxpl43pbxpl4g4WKg6opKriNeLnFiw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0166/2026",
+    "organ": "Rada",
+    "date": "2026-04-15",
+    "meeting": "99",
+    "title": "k návrhu uzavření \"Nájemní smlouvy\" o nájmu bytu v domě ve vlastnictví obce, tj. Hlavního města Prahy, svěřeném do správy městské části Praha 8 na k. ú. Kobylisy, na dobu určitou",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=3pbxpl4Kw7C4UD3RrXqDvcrUxfnQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0165/2026",
+    "organ": "Rada",
+    "date": "2026-04-15",
+    "meeting": "99",
+    "title": "k návrhu uzavření \"Nájemní smlouvy\" o nájmu bytu v domě ve vlastnictví obce, tj. Hlavního města Prahy, svěřeném do správy městské části Praha 8 na k. ú. Kobylisy, na dobu určitou",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=DjcjA0itZDbGWJdpvZ9XnA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0164/2026",
+    "organ": "Rada",
+    "date": "2026-04-15",
+    "meeting": "99",
+    "title": "k návrhu revokace usnesení č. Usn RMC 0095/2026 a uzavření Darovací smlouvy mezi městskou částí Praha 8, jako zřizovatelem, Základní školou, Praha 8, Žernosecká 3, jako příspěvkovou organizací, a Fondem ohrožených dětí, jako obdarovaným",
+    "topics": [
+      "Školství",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=FdoCiZNbLjAw1QgCX90wPw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0163/2026",
+    "organ": "Rada",
+    "date": "2026-04-15",
+    "meeting": "99",
+    "title": "k návrhu uzavření \"Smlouvy o zřízení věcného břemena - služebnosti\" umístění a provozování nadzemního a podzemního vedení veřejné komunikační sítě pod názvem stavby \"Optické připojení lokality Libeň, Praha 8 - I. a II. etapa\"",
+    "topics": [
+      "Výstavba",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=28BUDY1pbxsh2873EbNzdPWVOeUA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0162/2026",
+    "organ": "Rada",
+    "date": "2026-04-15",
+    "meeting": "99",
+    "title": "k návrhu uzavření Smlouvy o úpravě vzájemných vztahů mezi MČ Praha 8 na jedné straně a Richardem Sobotkou na straně druhé, ve věci stavby nazvané jako \"Bytový dům Pernerova\" na pozemcích parc. č. 4428/11, 4428/14 a 4428/16 vše v k.ú. Žižkov",
+    "topics": [
+      "Majetek",
+      "Výstavba",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=DCkTVsQmcOkNl5BC33pbxpl4czig==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0161/2026",
+    "organ": "Rada",
+    "date": "2026-04-15",
+    "meeting": "99",
+    "title": "k návrhu poskytnutí dotací městské části Praha 8 na kulturu na rok 2026",
+    "topics": [
+      "Finance",
+      "Kultura"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=rFVCD1pbxsh26Mn8iX1pbxsh2fBowDWUfw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0160/2026",
+    "organ": "Rada",
+    "date": "2026-04-15",
+    "meeting": "99",
+    "title": "k návrhu rozpočtových opatření městské části Praha 8",
+    "topics": [
+      "Finance"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=OxQprR29VUHasZJDSK48lw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0159/2026",
+    "organ": "Rada",
+    "date": "2026-04-15",
+    "meeting": "99",
+    "title": "k návrhu vyjádření městské části Praha 8 k projektové dokumentaci k územnímu řízení Bytový dům Pernerova, parc.č. 4428/14, 4428/16, 4428/11, k.ú. Žižkov v Praze 3",
+    "topics": [
+      "Majetek",
+      "Výstavba"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=csyG4lSCabXkEAFQxcMQDg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0158/2026",
+    "organ": "Rada",
+    "date": "2026-04-15",
+    "meeting": "99",
+    "title": "k návrhu uzavření \"Dohody o zúčtování plnění (služeb)\" mezi městskou částí Praha 8 a Společenstvím vlastníků Libeň č.p. 1056",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=XD7EtitohyVfzKH31611mA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0157/2026",
+    "organ": "Rada",
+    "date": "2026-04-15",
+    "meeting": "99",
+    "title": "k návrhu uzavření \"Dohody o narovnání\" mezi městskou částí Praha 8 a Společenstvím vlastníků Libeň č.p. 1056",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=3pbxpl4QjueQW9VTxM6UBWt011pbxsh25w==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0156/2026",
+    "organ": "Rada",
+    "date": "2026-04-15",
+    "meeting": "99",
+    "title": "k návrhu výběru poskytovatele a uzavření \"Smlouvy o poskytnutí služeb\" pro realizaci veřejné zakázky s předmětem plnění \"Výměna písku v pískovištích na vymezených územích MČ Praha 8\"",
+    "topics": [
+      "Smlouvy",
+      "Veřejné zakázky"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=oX6xQrjXoygGRVgpRHUbbw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0155/2026",
+    "organ": "Rada",
+    "date": "2026-04-15",
+    "meeting": "99",
+    "title": "k návrhu uzavření \"Smlouvy o centralizovaném zadávání\" veřejné zakázky s předmětem plnění \"Dodávky zemního plynu pro MČ Praha 8 a jí zřízené organizace\"",
+    "topics": [
+      "Smlouvy",
+      "Veřejné zakázky"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=GI7N2EF5e8uOYVer7E22Iw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0154/2026",
+    "organ": "Rada",
+    "date": "2026-04-15",
+    "meeting": "99",
+    "title": "k návrhu centralizovaného nákupu dodávek zemního plynu a elektrické energie na komoditní burze pro městskou část Praha 8 a jí zřízené organizace pro rok 2027 a 2028",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=4GcfGPzHYvxcnRhRMYf3pbxpl4yA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0153/2026",
+    "organ": "Rada",
+    "date": "2026-04-15",
+    "meeting": "99",
+    "title": "k návrhu uzavření \"Smlouvy o centralizovaném zadávání\" veřejné zakázky s předmětem plnění \"Dodávky elektrické energie pro MČ Praha 8 a jí zřízené organizace\"",
+    "topics": [
+      "Smlouvy",
+      "Veřejné zakázky"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=4OLETp9sHwMiOqBNGhqmdg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0152/2026",
+    "organ": "Rada",
+    "date": "2026-04-15",
+    "meeting": "99",
+    "title": "k návrhu vyjádření městské části Praha 8 k pronájmu části pozemku parc.č. 2243 (o výměře cca 6 m2) na k.ú. Libeň v Praze 8 (při ul. Zenklova)",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=wlq5MbsxO71dTk1c3pbxpl4ISDeQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0151/2026",
+    "organ": "Rada",
+    "date": "2026-04-15",
+    "meeting": "99",
+    "title": "k návrhu vyjádření městské části Praha 8 ke směně pozemků parc.č. 69/2, 69/4, 69/6, 69/8, 71/2, všechny na k.ú. Libeň v Praze 8, při ul. U Meteoru a Povltavská (ve vlastnictví žadatele) za pozemky mimo území městské části Praha 8 (ve vlastnictví Hlavního města Prahy)",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=GHXJdthrsNi6Bzf61a1W2A==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0150/2026",
+    "organ": "Rada",
+    "date": "2026-04-15",
+    "meeting": "99",
+    "title": "k návrhu vyjádření městské části Praha 8 k bezúplatnému převodu části pozemku parc.č. 3706 (nově označen jako parc.č. 3706/2 o výměře 33 m2) a části pozemku parc.č. 3708 (nově označen jako parc.č. 3708/2 o výměře 12 m2), oba na k.ú. Libeň v Praze 8 (oblast Košinka)",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=COIAH9qnOASiYIuBwktl3pbxpl4g==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0149/2026",
+    "organ": "Rada",
+    "date": "2026-04-15",
+    "meeting": "99",
+    "title": "k návrhu vyjádření městské části Praha 8 ke směně částí pozemků parc.č. 671/1 a 670/8, (o totožné výměře cca 610 m2), oba na k.ú. Libeň v Praze 8, oblast Dlážděnka",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=518dR1D8qjYRKRoUhX0rFw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0148/2026",
+    "organ": "Rada",
+    "date": "2026-04-15",
+    "meeting": "99",
+    "title": "k návrhu vyjádření městské části Praha 8 k pronájmu části pozemku parc.č. 4004/1 (o výměře 64,5 m2) na k.ú. Libeň v Praze 8, Libeňský ostrov",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=cvS1pbxsh2HcTLHcrnBpxsytaLVQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0147/2026",
+    "organ": "Rada",
+    "date": "2026-04-15",
+    "meeting": "99",
+    "title": "k návrhu vyjádření městské části Praha 8 ke směně části pozemku parc.č. 168/1 (o výměře cca 109 m2, ve vlastnictví primárního žadatele) za část pozemku parc.č. 133 (o výměře cca 109 m2, ve vlastnictví Hlavního města Prahy) oba pozemky na k.ú. Libeň v Praze 8 (při ul. Zenklova)",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=ABll1pbxsh2YiPuzQu0CQqBbw5Zg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0146/2026",
+    "organ": "Rada",
+    "date": "2026-04-15",
+    "meeting": "99",
+    "title": "k návrhu nového znění \"Organizačního řádu Úřadu městské části Praha 8\"",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=SdB6QnMdseaSh3CDJzOcHA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0145/2026",
+    "organ": "Rada",
+    "date": "2026-04-15",
+    "meeting": "99",
+    "title": "k návrhu poskytnutí odměn ředitelům základních škol (ZŠ) a mateřských škol (MŠ) s právní subjektivitou, zřízených městskou částí Praha 8, za úspěšné splnění mimořádných nebo zvlášť významných pracovních úkolů v I. čtvrtletí 2026",
+    "topics": [
+      "Školství"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=llDuEEEV4MwIQh5YyRwD7g==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0144/2026",
+    "organ": "Rada",
+    "date": "2026-04-15",
+    "meeting": "99",
+    "title": "k návrhu zahájení zadávacího řízení ve zjednodušeném podlimitním řízení dle ust. § 53 zákona č. 134/2016, o zadávání veřejných zakázek, ve znění pozdějších předpisů, pro realizaci veřejné zakázky s předmětem plnění \"Revitalizace parku Dlážděnka - Etapa 1 B\"",
+    "topics": [
+      "Veřejné zakázky"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=t7nMNcs7zjX6VzA1pbxsh2OGxYaA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0143/2026",
+    "organ": "Rada",
+    "date": "2026-04-15",
+    "meeting": "99",
+    "title": "k návrhu uzavření \"Veřejnoprávní smlouvy o poskytnutí dotace\" mezi městskou částí Praha 8 jako \"příjemcem\" a Hlavním městem Prahou jako \"poskytovatelem\"",
+    "topics": [
+      "Finance",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=1pbxsh2oDJc1pbxsh26X8Aux35vPl5sVWA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0142/2026",
+    "organ": "Rada",
+    "date": "2026-04-15",
+    "meeting": "99",
+    "title": "k návrhu rozpočtových opatření městské části Praha 8",
+    "topics": [
+      "Finance"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=RBn2e1pbxsh2f6WI1pbxsh2TJ5ZPoRR1Xw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0141/2026",
+    "organ": "Rada",
+    "date": "2026-04-15",
+    "meeting": "99",
+    "title": "k návrhu stanovení počtu členů Zastupitelstva městské části Praha 8 pro volební období 2026-2030",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=EWK3pbxpl48T2UunNPPN3pbxpl4j3Yz56Q==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0140/2026",
+    "organ": "Rada",
+    "date": "2026-04-15",
+    "meeting": "99",
+    "title": "k návrhu přípravy 20. zasedání Zastupitelstva městské části Praha 8",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=Bxg9Df3pbxpl4wIeTsqTTc9teCiA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0139/2026",
+    "organ": "Rada",
+    "date": "2026-04-01",
+    "meeting": "98",
+    "title": "k návrhu uzavření 2 \"Nájemních smluv\" o nájmu bytů v domě ve vlastnictví obce, tj. Hlavního města Prahy, svěřeném do správy městské části Praha 8, na k. ú. Libeň - Praha 8, na dobu určitou",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=5c4O2ACTPsD1pbxsh2PBKbmDt3hA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0138/2026",
+    "organ": "Rada",
+    "date": "2026-04-01",
+    "meeting": "98",
+    "title": "k návrhu uzavření \"Smlouvy o zřízení věcného břemene\" pro umístění teplovodní přípojky na pozemku parc. č. 693/148 na k. ú. Karlín, obec Praha",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=anw58Cm19fqakGfppaqf1A==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0137/2026",
+    "organ": "Rada",
+    "date": "2026-04-01",
+    "meeting": "98",
+    "title": "k návrhu uzavření \"Smlouvy o výpůjčce\" části pozemku ve vlastnictví obce, tj. Hlavního města Prahy, svěřeného do správy městské části Praha 8 - parc. č. 711/1, k. ú. Bohnice",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=OublBnmmJZD2vRl7P8enag==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0136/2026",
+    "organ": "Rada",
+    "date": "2026-04-01",
+    "meeting": "98",
+    "title": "k návrhu uzavření „Dodatku č. 1“ ke Smlouvě o nájmu prostorů sloužícího podnikání v objektu ve vlastnictví Bytového družstva SOPO, uzavřené v rámci věcného břemene služebnosti bezplatného požívání, sjednaného ve prospěch městské části Praha 8 – NP č. 502, v budově čp. 29, na k. ú. Karlín a na adrese Pobřežní 75, 186 00 Praha 8",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=o9bFyn0U6qAle6soQXia5g==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0135/2026",
+    "organ": "Rada",
+    "date": "2026-04-01",
+    "meeting": "98",
+    "title": "Pověření osoby k udělování souhlasu za účastníka řízení ve věci žádostí podle § 212 zákona č. 283/2021 Sb., stavební zákon, ve znění pozdějších předpisů (tj. zrychlené řízení)",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=QCvUO1BnSYnRyRHk1XfnVw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0134/2026",
+    "organ": "Rada",
+    "date": "2026-04-01",
+    "meeting": "98",
+    "title": "k návrhu uzavření Smlouvy o úpravě vzájemných vztahů mezi MČ Praha 8 na jedné straně a Rohan Gate s.r.o. na straně druhé, ve věci stavby nazvané „ROHAN GATE“",
+    "topics": [
+      "Výstavba",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=AiZXGz6xOs2B8FCptsVlSQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0133/2026",
+    "organ": "Rada",
+    "date": "2026-04-01",
+    "meeting": "98",
+    "title": "k návrhu uzavření dodatku č.1 Smlouvy o spolupráci mezi MČ Praha 8 na jedné straně a Rohan engineering, s.r.o. na straně druhé, ve věci stavby nazvané „ROHAN CITY – SEKCE E“",
+    "topics": [
+      "Výstavba",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=JJFSczO1pbxsh2r71cYiUgs5a33pbxpl4g==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0132/2026",
+    "organ": "Rada",
+    "date": "2026-04-01",
+    "meeting": "98",
+    "title": "k návrhu aktualizovaného znění architektonické soutěže a soutěžního zadání s názvem \"Revitalizace veřejného prostranství u Kulturního domu Ládví\"",
+    "topics": [
+      "Kultura"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=xCW6GG7MI4pcX1Ch3pbxpl4yRPew==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0131/2026",
+    "organ": "Rada",
+    "date": "2026-04-01",
+    "meeting": "98",
+    "title": "k návrhu rozpočtových opatření městské části Praha 8",
+    "topics": [
+      "Finance"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=3pbxpl4g6xz5BO3pbxpl4zaxE5C1pbxsh2FmurcA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0130/2026",
+    "organ": "Rada",
+    "date": "2026-04-01",
+    "meeting": "98",
+    "title": "k návrhu zahájení zadávacího řízení veřejné zakázky zadávané v nadlimitním režimu při použití otevřeného řízení dle ust. § 56 zákona č. 134/2016 Sb., o zadávání veřejných zakázek, ve znění pozdějších předpisů, pro realizaci veřejné zakázky s předmětem plnění \"Drobné nepravidelné zahradnické práce na území MČ Praha 8 - oblast G\"",
+    "topics": [
+      "Veřejné zakázky"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=Q3pbxpl4QT5qxDpqKUXiQwSiHalA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0129/2026",
+    "organ": "Rada",
+    "date": "2026-04-01",
+    "meeting": "98",
+    "title": "k návrhu zahájení zadávacího řízení veřejné zakázky zadávané v nadlimitním režimu při použití otevřeného řízení dle ust. § 56 zákona č. 134/2016 Sb., o zadávání veřejných zakázek, ve znění pozdějších předpisů, pro realizaci veřejné zakázky s předmětem plnění \"Pravidelná údržba ploch a veřejné zeleně na území MČ Praha 8 - oblast F\"",
+    "topics": [
+      "Veřejné zakázky"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=dJlHDq1EA6eQ10aKBzBYnw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0128/2026",
+    "organ": "Rada",
+    "date": "2026-04-01",
+    "meeting": "98",
+    "title": "k návrhu vyjádření městské části Praha 8 k dokumentaci pro povolení záměru ROHAN GATE, parc.č. 854/57 na k.ú. Karlín v Praze 8 (při ul. Sokolovská)",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=XEzcNHjvRaZ5ksX6tk6OYQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0127/2026",
+    "organ": "Rada",
+    "date": "2026-04-01",
+    "meeting": "98",
+    "title": "k návrhu vyjádření městské části Praha 8 ke změně záměru před dokončením – Rohan, sekce E, budovy E1-6, změna funkce budov E1-3 z administrativní na bytovou, parc.č. 767/248, 767/249, 767/383, 767/384, vše na k.ú. Karlín a parc.č. 4001/12, 4001/13, 4001/18, 4001/19, vše na k.ú. Libeň a další pozemky v Praze 8, Rohanské nábřeží",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=Pz5c8cedR3girwiwb1Musw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0126/2026",
+    "organ": "Rada",
+    "date": "2026-04-01",
+    "meeting": "98",
+    "title": "k návrhu vyhlášení \"Ceny Eduarda Štorcha za pedagogický přínos 2026\"",
+    "topics": [
+      "Školství"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=mhXAUDCR7PCcqE0B1pbxsh29ZLJg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0125/2026",
+    "organ": "Rada",
+    "date": "2026-04-01",
+    "meeting": "98",
+    "title": "k návrhu \"Harmonogramu hlavních úkolů organizačně-technického zabezpečení voleb do Zastupitelstva městské části Praha 8 a Zastupitelstva hlavního města Prahy v roce 2026\"",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=MbUuGo8CEnyVcTHa3D4tpg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0124/2026",
+    "organ": "Rada",
+    "date": "2026-04-01",
+    "meeting": "98",
+    "title": "k návrhu podání žádosti městské části Praha 8 o poskytnutí dotace z investiční rezervy pro MČ hl. m. Prahy ve schváleném rozpočtu hl. m. Prahy na rok 2026",
+    "topics": [
+      "Finance"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=IjbgItdIXTunDnWNU74csg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0123/2026",
+    "organ": "Rada",
+    "date": "2026-04-01",
+    "meeting": "98",
+    "title": "k návrhu rozpočtových opatření městské části Praha 8",
+    "topics": [
+      "Finance"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=L0ewJv3pbxpl4aCZlJ8KyYShz29A==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0122/2026",
+    "organ": "Rada",
+    "date": "2026-03-18",
+    "meeting": "97",
+    "title": "k návrhu uzavření Smluv o smlouvách budoucích o připojení lokalit na napěťové hladině NN mezi MČ Praha 8 na jedné straně a PREdistribuce, a.s. na straně druhé v rámci Projektu \"ZŠ Rohan\"",
+    "topics": [
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=89Hu954cuRHZRlqBivcUBQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0121/2026",
+    "organ": "Rada",
+    "date": "2026-03-18",
+    "meeting": "97",
+    "title": "k návrhu uzavření „Dodatku č. 9“ ke Smlouvě o nájmu nebytových prostorů v objektu ve vlastnictví obce, tj. Hlavního města Prahy, svěřeném do správy městské části Praha 8 – NP č. 109, v budově čp. 780, na k. ú. Čimice a na adrese Čimická 61, 186 00 Praha 8",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=EtevFTbob49qM1pbxsh2OOiVzq1w==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0120/2026",
+    "organ": "Rada",
+    "date": "2026-03-18",
+    "meeting": "97",
+    "title": "k návrhu uzavření \"Smlouvy o nájmu\" pozemku parc. č. 840/327, na k.ú. Bohnice, obec Praha, za účelem záboru pro opravu a zateplení lodžií BD Cafourkova 520 - 526, Praha 8",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=t9EqRMIz540MpEWGyAQYhw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0119/2026",
+    "organ": "Rada",
+    "date": "2026-03-18",
+    "meeting": "97",
+    "title": "k návrhu uzavření \"Smlouvy o nájmu\" pozemků parc. č. 840/385, 840/386, 840/387, 840/388, 875/15 a 875/16, vše na k.ú. Bohnice, obec Praha, za účelem záboru pro opravu/zateplení fasády domu Radomská 469 - 474, Praha 8",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=3pbxpl4xuB9ngRIvsaFlKTMtAj2Q==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0118/2026",
+    "organ": "Rada",
+    "date": "2026-03-18",
+    "meeting": "97",
+    "title": "k návrhu uzavření \"Nájemní smlouvy\" o nájmu bytu v domě ve vlastnictví obce, tj. Hlavního města Prahy, svěřeném do správy městské části Praha 8 na k. ú. Karlín, na dobu neurčitou",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=EVZvOxb5goppGWBq8NPvKw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0117/2026",
+    "organ": "Rada",
+    "date": "2026-03-18",
+    "meeting": "97",
+    "title": "k návrhu uzavření 16 \"Nájemních smluv\" o nájmu bytů v domech ve vlastnictví obce, tj. Hlavního města Prahy, svěřených do správy městské části Praha 8 na k. ú. Kobylisy a k. ú. Střížkov na dobu určitou",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=8Y72a62nb1pbxsh2mEvgvpQNZqnQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0116/2026",
+    "organ": "Rada",
+    "date": "2026-03-18",
+    "meeting": "97",
+    "title": "k návrhu uzavření 10 \"Nájemních smluv\" o nájmu bytu v domech ve vlastnictví obce, tj. Hlavního města Prahy, svěřených do správy městské části Praha 8",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=7Pi9J2su4qDpq9X1pbxsh2bj1cMA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0115/2026",
+    "organ": "Rada",
+    "date": "2026-03-18",
+    "meeting": "97",
+    "title": "k návrhu zrušení usnesení č. Usn RMC 0022/2026 Rady městské části Praha 8 ze dne 28. 1. 2026, k návrhu podání výpovědi \"Nájemní smlouvy o nájmu nebytových prostorů\" ve znění pozdějšího dodatku č. 1 a č. 2, v objektu ve vlastnictví Bytového družstva Karlín 372 a jednotlivých vlastníků bytových jednotek, uzavřené v rámci věcného břemene služebnosti bezplatného požívání, sjednaného ve prospěch městské části Praha 8 – čp. 372, np. 501, na k. ú. Karlín a na adrese Za Poříčskou bránou 14, 186 00 Praha 8",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=KkJYzWILkjKl5b3OlWrd3g==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0114/2026",
+    "organ": "Rada",
+    "date": "2026-03-18",
+    "meeting": "97",
+    "title": "k návrhu uzavření „Dodatku č. 1“ ke Smlouvě o nájmu prostoru sloužícího podnikání v objektu ve vlastnictví Bytového družstva Prvního pluku 140 a jednotlivých vlastníků bytových jednotek, uzavřené v rámci věcného břemene služebnosti bezplatného požívání, sjednaného ve prospěch městské části Praha 8 – NP č. 502, v budově čp. 140, na k. ú. Karlín a na adrese Prvního pluku 4, 186 00 Praha 8",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=piX3pg6yTnavD4Dqk3J5Hw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0113/2026",
+    "organ": "Rada",
+    "date": "2026-03-18",
+    "meeting": "97",
+    "title": "k návrhu aktualizovaný \"Plán rozvoje prorodinné/proseniorské politiky MČ Praha 8 v letech 2026 - 2029",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=un5EeiBuMDniU3myVclyRQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0112/2026",
+    "organ": "Rada",
+    "date": "2026-03-18",
+    "meeting": "97",
+    "title": "k návrhu podání žádosti městské části Praha 8 o dotaci vyhlášenou Ministerstvem práce a sociálních věcí \"Obec přátelská rodině a seniorům 2026\"",
+    "topics": [
+      "Finance"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=bG68CMYwQ1rYtajj8s9CiQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0111/2026",
+    "organ": "Rada",
+    "date": "2026-03-18",
+    "meeting": "97",
+    "title": "k návrhu uzavření \"Dodatku č. 2\" ke \"Smlouvě o dílo\" s předmětem plnění \"Přebudování objektu na adrese Palmovka 2179/6a, Praha 8, na prostory pro tzv. dětskou skupinu\"",
+    "topics": [
+      "Školství",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=3pbxpl4pS4ZLRiv3pbxpl43pbxpl4xG2ad8St3pbxpl43pbxpl4A==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0110/2026",
+    "organ": "Rada",
+    "date": "2026-03-18",
+    "meeting": "97",
+    "title": "k návrhu rozpočtových opatření městské části Praha 8",
+    "topics": [
+      "Finance"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=DABHC9YuZvYv5wJvTRaxzw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0109/2026",
+    "organ": "Rada",
+    "date": "2026-03-18",
+    "meeting": "97",
+    "title": "k návrhu čerpání Fondu investic Základní školou Bohumila Hrabala, Praha 8, Zenklova 52",
+    "topics": [
+      "Školství"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=WiCZswNoU1pbxsh2wWxj3pbxpl4xDkk42Q==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0108/2026",
+    "organ": "Rada",
+    "date": "2026-03-18",
+    "meeting": "97",
+    "title": "k návrhu rozpočtových opatření městské části Praha 8",
+    "topics": [
+      "Finance"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=eTfADeBU6x73pbxpl4k3xOM26gfw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0107/2026",
+    "organ": "Rada",
+    "date": "2026-03-18",
+    "meeting": "97",
+    "title": "k návrhu revokace usnesení č. Usn RMC 0236/2025 Rady městské části Praha 8 ze dne 28. května 2025 o rozdělení působnosti členů Rady městské části Praha 8",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=8vOe895VUQ0DtDHwI0gPZg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0106/2026",
+    "organ": "Rada",
+    "date": "2026-03-18",
+    "meeting": "97",
+    "title": "k návrhu úpravy platu paní Aleně Kostrbové, ředitelce Mateřské školy, Praha 8, Kotlaska 3",
+    "topics": [
+      "Školství"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=eCskLZLkP3yjSUYQchd1pbxsh2rw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0105/2026",
+    "organ": "Rada",
+    "date": "2026-03-18",
+    "meeting": "97",
+    "title": "k návrhu uzavření \"Darovací smlouvy\" mezi městskou částí Praha 8, jako \"dárcem\", a spolkem Events 4 you, z.s., Praha 9 jako \"obdarovaným\"",
+    "topics": [
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=oF8xotSY4VHESN3pbxpl4cVqjJIQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0104/2026",
+    "organ": "Rada",
+    "date": "2026-03-18",
+    "meeting": "97",
+    "title": "Záměr připojit se k projektu v evropském programu „Občané, rovnost, práva a hodnoty (CERV), sítě měst (CERV-2026-CITIZENS-NT) na téma: Velká cesta žen“",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=aHtKTAhbUMXCVewt1pbxsh2lmY4A==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0103/2026",
+    "organ": "Rada",
+    "date": "2026-03-18",
+    "meeting": "97",
+    "title": "k návrhu uzavření \"Darovací smlouvy\" mezi městskou částí Praha 8, jako \"dárcem\", a Sdružením pro bezbariérovou kulturu Nedomysleno, z.s., Praha 4 jako \"obdarovaným\"",
+    "topics": [
+      "Smlouvy",
+      "Kultura"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=Q8YDEG8nhDFrH8E1xfX1pbxsh2Cg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0102/2026",
+    "organ": "Rada",
+    "date": "2026-03-18",
+    "meeting": "97",
+    "title": "k návrhu uzavření \"Dodatku č. 1\" k memorandu o porozumění a strategické spolupráci na realizaci pilotního projektu autonomního doručování na území městské části Praha 8",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=1IGr46qDSSa4TMjuXtqzwg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0101/2026",
+    "organ": "Rada",
+    "date": "2026-03-18",
+    "meeting": "97",
+    "title": "k návrhu uzavření \"Smlouvy o nájmu věci movité\" ve vlastnictví Pražské vodovody a kanalizace a.s. na umístění mlžícího systému na místa městské části Prahy 8",
+    "topics": [
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=RsxRYjUXUpFU3VGXbzhNgQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0100/2026",
+    "organ": "Rada",
+    "date": "2026-03-18",
+    "meeting": "97",
+    "title": "k návrhu úpravy platu panu Ing. Stanislavu Hladišovi, řediteli Servisního střediska pro správu svěřeného majetku (SeS) městské části Praha 8 (9210)",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=ZfDEwmswAcV1v01eJNt9FA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0099/2026",
+    "organ": "Rada",
+    "date": "2026-03-18",
+    "meeting": "97",
+    "title": "k návrhu výběru zhotovitele a uzavření \"Smlouvy o dílo\" pro realizaci veřejné zakázky s předmětem plnění \"Revitalizace veřejné plochy v ulici Havlínova, Praha 8, Kobylisy\"",
+    "topics": [
+      "Smlouvy",
+      "Veřejné zakázky"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=zXsE8nM7CYzd6REDD4soEA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0098/2026",
+    "organ": "Rada",
+    "date": "2026-03-18",
+    "meeting": "97",
+    "title": "k návrhu pojmenování bezejmenného parku v Kobylisích na Park Václava Dolejška",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=CqbhuU4QDDdMhe8hHtOG2g==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0097/2026",
+    "organ": "Rada",
+    "date": "2026-03-18",
+    "meeting": "97",
+    "title": "k návrhu zahájení zadávacího řízení veřejné zakázky zadávané v nadlimitním režimu při použití otevřeného řízení dle ust. § 56 zákona č. 134/2016 Sb., o zadávání veřejných zakázek, ve znění pozdějších předpisů, pro realizaci veřejné zakázky s předmětem plnění \"Zajištění nákupu a dodávek drobného dlouhodobého hmotného majetku a drobného hmotného majetku\"",
+    "topics": [
+      "Majetek",
+      "Veřejné zakázky"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=wz3s6E5sVfJDdUurGD4GXA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0096/2026",
+    "organ": "Rada",
+    "date": "2026-03-18",
+    "meeting": "97",
+    "title": "k návrhu uzavření Dodatku č.4 (modul JMHZ) ke Smlouvě o podpoře aplikačního programového vybavení systému OKbase, uzavřené dne 25.5.2015, mezi městskou částí Praha 8 a akciovou společností OKsystem a.s.",
+    "topics": [
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=v41pbxsh2o1pbxsh2FNlKvHDW3pbxpl4qI3pbxpl4WPTeQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0095/2026",
+    "organ": "Rada",
+    "date": "2026-03-18",
+    "meeting": "97",
+    "title": "k návrhu uzavření Darovací smlouvy mezi městskou částí Praha 8, jako zřizovatelem, Základní školou, Praha 8, Žernosecká 3, jako příspěvkovou organizací, a Fondem ohrožených dětí, jako obdarovaným",
+    "topics": [
+      "Školství",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=A91y1w93Lg4LmcTDDCufsA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0094/2026",
+    "organ": "Rada",
+    "date": "2026-03-18",
+    "meeting": "97",
+    "title": "k návrhu ponechání účelových investičních finančních prostředků z minulých let do roku 2026 na pokračování vybraných akcí Servisního střediska pro správu svěřeného majetku (SeS) Městské části Praha 8",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=01pbxsh2KAsUISq9KcqPPlNqHESA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0093/2026",
+    "organ": "Rada",
+    "date": "2026-03-18",
+    "meeting": "97",
+    "title": "k návrhu uzavření \"Veřejnoprávní smlouvy o poskytnutí dotace\" mezi městskou částí Praha 8 jako \"příjemcem\" a Hlavním městem Prahou jako \"poskytovatelem\"",
+    "topics": [
+      "Finance",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=C4sK92yAy25vY171pbxsh2Emr5Ag==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0092/2026",
+    "organ": "Rada",
+    "date": "2026-03-18",
+    "meeting": "97",
+    "title": "k návrhu úpravy platu ředitelce příspěvkové právnické osoby zřízené městskou částí Praha 8 - Gerontologické centrum",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=kkYL162mwd2lVb0n0n1byA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0091/2026",
+    "organ": "Rada",
+    "date": "2026-03-18",
+    "meeting": "97",
+    "title": "k návrhu úpravy platu ředitelce příspěvkové právnické osoby zřízené městskou částí Praha 8 - Sociální a ošetřovatelské služby Praha 8",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=YqR753pbxpl4e6EX2QEEohi4nIfw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0090/2026",
+    "organ": "Rada",
+    "date": "2026-03-18",
+    "meeting": "97",
+    "title": "k návrhu úpravy objemu prostředků na platy zaměstnanců příspěvkových právnických osob (organizací), zřízených městskou částí Praha 8, na rok 2026",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=YuBU0yEpyYTE1pbxsh28rsw4M3qg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0089/2026",
+    "organ": "Rada",
+    "date": "2026-03-18",
+    "meeting": "97",
+    "title": "k návrhu rozpočtových opatření městské části Praha 8",
+    "topics": [
+      "Finance"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=CBsjSa3Y2Neb5ESJSM23tA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0088/2026",
+    "organ": "Rada",
+    "date": "2026-03-04",
+    "meeting": "96",
+    "title": "k návrhu zrušení usnesení č. Usn RMC 0575/2025 Rady městské části Praha 8 ze dne 17. 12. 2025, k návrhu uzavření \"Dodatku č. 1\" k Dohodě o zúčtování plnění (služeb) mezi Městskou částí Praha 8 a Bytovým družstvem Pernerova 36 (IČO: 028 77 511), se sídlem na adrese Pernerova 403/36, 186 00 Praha 8 - Karlín",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=fxJWCSP4yH1pbxsh2e3pbxpl4JLeqdqTEg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0087/2026",
+    "organ": "Rada",
+    "date": "2026-03-04",
+    "meeting": "96",
+    "title": "k návrhu žádosti o přidělení finančních prostředků správci TSK na opravu chodníku v ulici Feřtekova č. p. 538-548",
+    "topics": [
+      "Doprava"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=QUOAyBAXGEqBrcsATMfsEQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0086/2026",
+    "organ": "Rada",
+    "date": "2026-03-04",
+    "meeting": "96",
+    "title": "k návrhu podání žádosti o bezbariérové zpřístupnění zastávky Štěpničná formou světelně řízeného přechodu pro chodce",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=GHhCcrLQa0YPJuWyNKI0Wg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0085/2026",
+    "organ": "Rada",
+    "date": "2026-03-04",
+    "meeting": "96",
+    "title": "k návrhu uzavření 2 \"Nájemních smluv\" o nájmu bytu v domech ve vlastnictví obce, tj. Hlavního města Prahy, svěřených do správy městské části Praha 8",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=gdAjBN1tP9Dk1Su2frx1wg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0084/2026",
+    "organ": "Rada",
+    "date": "2026-03-04",
+    "meeting": "96",
+    "title": "k návrhu podání výpovědi z nájmu bytu v domě ve vlastnictví obce, tj. Hlavního města Prahy, svěřeném do správy městské části Praha 8",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=yx2EJS1XWzCmEWGBu7vXKw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0083/2026",
+    "organ": "Rada",
+    "date": "2026-03-04",
+    "meeting": "96",
+    "title": "k návrhu uzavření \"Dodatku č. 2\" ke \"Smlouvě o dílo\" s předmětem plnění \"Transformace a provoz dětských skupin Mirovická\"",
+    "topics": [
+      "Školství",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=9JIz6LtrHY1pbxsh29JR5wWh3pbxpl4NHA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0082/2026",
+    "organ": "Rada",
+    "date": "2026-03-04",
+    "meeting": "96",
+    "title": "k návrhu podání žádosti městské části Praha 8 o dotaci z rezervy pro městské části hl.m. Prahy na spolufinancování projektů EU/EHP (UF) v rozpočtu vlastního hl.m. Prahy (v kap. 10) na rok 2026",
+    "topics": [
+      "Finance"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=UQwGNEIupH9qGfzCg0HPbw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0081/2026",
+    "organ": "Rada",
+    "date": "2026-03-04",
+    "meeting": "96",
+    "title": "k návrhu podání žádosti městské části Praha 8 o poskytnutí dotace z investiční rezervy pro MČ hl. m. Prahy ve schváleném rozpočtu hl. m. Prahy na rok 2026",
+    "topics": [
+      "Finance"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=11z7CTfqOadiOFqWM6jytw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0080/2026",
+    "organ": "Rada",
+    "date": "2026-03-04",
+    "meeting": "96",
+    "title": "k návrhu rozpočtových opatření městské části Praha 8",
+    "topics": [
+      "Finance"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=Wz2Yk753APL3pcPLdI41gw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0079/2026",
+    "organ": "Rada",
+    "date": "2026-03-04",
+    "meeting": "96",
+    "title": "k návrhu vyjádření městské části Praha 8 k dokumentaci ke společnému povolení Stavební úpravy a nástavba objektu Sokolovská 129/50, parc.č. 74 na k.ú. Karlín v Praze 8",
+    "topics": [
+      "Výstavba"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=0CDngdGvTZ83pbxpl4qMSEIO5NFw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0078/2026",
+    "organ": "Rada",
+    "date": "2026-03-04",
+    "meeting": "96",
+    "title": "k návrhu vyjádření městské části Praha 8 k dokumentaci pro povolení záměru Viladům Čimice, parc.č. 256, 255/1, 255/2, 255/3, 255/4, k.ú. Čimice, ul. K Větrolamu a zpětvzetí námitek městské části Praha 8 jako účastníka řízení o povolení záměru „Novostavba Viladům Čimice“ Praha 8, Čimice č.p. 249, K větrolamu 24 na pozemcích parc.č. 255/1, 255/2, 255/3, 255/4, 256, 1093, všechny na katastrálním území Čimice v Praze 8",
+    "topics": [
+      "Majetek",
+      "Výstavba"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=TLlhQ1pbxsh2Xpc9IPAeeOnAK2yw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0077/2026",
+    "organ": "Rada",
+    "date": "2026-03-04",
+    "meeting": "96",
+    "title": "k návrhu složení konkursní komise pro konkursní řízení na funkci ředitele/ředitelky Mateřské školy, Praha 8, Krynická 2",
+    "topics": [
+      "Školství"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=feEuh4uM1pbxsh2gAbDkJDdXknuQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0076/2026",
+    "organ": "Rada",
+    "date": "2026-03-04",
+    "meeting": "96",
+    "title": "k návrhu uzavření \"Smlouvy o smlouvě budoucí zřízení věcného břemena\" týkající se připojení objektů na optickou síť na pozemcích parc. č. 590/33, 590/34, 590/35, vše na k. ú. Bohnice, obec Praha",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=PW1DkHbJU6MpJs3ByjDGlw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0075/2026",
+    "organ": "Rada",
+    "date": "2026-03-04",
+    "meeting": "96",
+    "title": "k návrhu aktualizovaného znění architektonické soutěže a soutěžního zadání s názvem \"Revitalizace veřejného prostranství u Kulturního domu Ládví\"",
+    "topics": [
+      "Kultura"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=9Ayq1AsQGSVnWwtvX3pbxpl487Kg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0074/2026",
+    "organ": "Rada",
+    "date": "2026-03-04",
+    "meeting": "96",
+    "title": "k návrhu uzavření Smlouvy o úpravě vzájemných vztahů mezi MČ Praha 8 na jedné straně a Sokolovská 129 a.s. na straně druhé",
+    "topics": [
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=bd4JMO3pbxpl4aDAyR6xxJlHfsUg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0073/2026",
+    "organ": "Rada",
+    "date": "2026-03-04",
+    "meeting": "96",
+    "title": "k návrhu uzavření \"Dodatku č. 5\" ke \"Smlouvě o poskytování úklidových služeb v budovách Úřadu městské části Praha 8 a jejich okolí\", jejímž předmětem je zajištění úklidových služeb a dalších souvisejících činností",
+    "topics": [
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=4lyVUn9lgQZt9AoZWLOWxw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0072/2026",
+    "organ": "Rada",
+    "date": "2026-03-04",
+    "meeting": "96",
+    "title": "k návrhu uzavření \"Dodatku č. 1\" ke \"Smlouvě o zajištění výuky\" s předmětem plnění \"Tělocvik na ledě\"",
+    "topics": [
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=sJldoyScKb0AOiadAPPxjw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0071/2026",
+    "organ": "Rada",
+    "date": "2026-03-04",
+    "meeting": "96",
+    "title": "k návrhu textu \"Kupní smlouvy\" o majetkovém převodu městské části Praha 8 – úplatném převodu nemovitosti ve vlastnictví obce, tj. Hlavního města Prahy, svěřené do správy městské části Praha 8 – pozemku parc. č. 2292/4 na k. ú. Kobylisy v Praze 8",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=frHJItsUATz34sXRSg8Fcw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0070/2026",
+    "organ": "Rada",
+    "date": "2026-03-04",
+    "meeting": "96",
+    "title": "k návrhu uzavření Dodatku č. 9 ke Smlouvě o spolupráci a poskytování služeb (\"in-house\"), ve znění pozdějšího Dodatku č. 1, Dodatku č. 2, Dodatku č. 3, Dodatku č. 4, Dodatku č. 5, Dodatku č. 6, Dodatku č. 7, a Dodatku č. 8, mezi městskou částí Praha 8 a společností Osmá servisní, a. s.",
+    "topics": [
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=R3u4BlBHVaVNsTOqxI1pbxsh2pLQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0069/2026",
+    "organ": "Rada",
+    "date": "2026-03-04",
+    "meeting": "96",
+    "title": "k návrhu bezúplatného převodu majetku pořízeného městskou částí Praha 8 do vlastnictví příspěvkové organizace Osmička pro rodinu (IČO: 043 87 031), se sídlem na adrese Zenklova 1/35, Libeň, 180 00 Praha 8, jejímž zřizovatelem je městská část Praha 8",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=J8368dT5Zff1pbxsh2gHgCVe5g7g==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0068/2026",
+    "organ": "Rada",
+    "date": "2026-03-04",
+    "meeting": "96",
+    "title": "k návrhu uzavření \"Dodatku č. 2\" k Dohodě o zúčtování plnění (služeb) mezi městskou částí Praha 8 a Bytovým družstvem Sokolovská 233",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=T6e1hFkEubqL33lohYyXOQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0067/2026",
+    "organ": "Rada",
+    "date": "2026-03-04",
+    "meeting": "96",
+    "title": "k návrhu výběru zhotovitele a uzavření \"Smlouvy o dílo\" pro realizaci veřejné zakázky s předmětem plnění \"Obnova odpočinkové zóny s fontánou Prameník na sídlišti Ďáblice - vyhotovení projektové dokumentace\"",
+    "topics": [
+      "Výstavba",
+      "Smlouvy",
+      "Veřejné zakázky"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=vKKyOCs7onie3vHWD1pbxsh2MvIg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0066/2026",
+    "organ": "Rada",
+    "date": "2026-03-04",
+    "meeting": "96",
+    "title": "k návrhu nového znění \"Organizačního řádu Úřadu městské části Praha 8\"",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=kdOborGfSkLRA7qwIvoAoA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0065/2026",
+    "organ": "Rada",
+    "date": "2026-03-04",
+    "meeting": "96",
+    "title": "k návrhu uzavření Smlouvy o úpravě vzájemných vztahů mezi MČ Praha 8 na jedné straně a panem Jovica Miceski a Ing. Jiřím Karafiátem na straně druhé, ve věci stavebního záměru \"Viladům Čimice\"",
+    "topics": [
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=klGcAbKr7oABTZ5EH4mjMw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0064/2026",
+    "organ": "Rada",
+    "date": "2026-03-04",
+    "meeting": "96",
+    "title": "k návrhu vyjádření městské části Praha 8 k výkupu pozemku parc.č. 698/6 na k.ú. Libeň v Praze 8 (ul. Na Dlážděnce) včetně vyjádření k případnému převzetí do správy (a výkupy dalších pozemků mimo území MČP 8)",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=Hg2pIXoQTEa5t8CGSOaUqQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0063/2026",
+    "organ": "Rada",
+    "date": "2026-03-04",
+    "meeting": "96",
+    "title": "k návrhu vyjádření městské části Praha 8 k pronájmu části pozemku parc.č. 769/14 (o výměře 971 m2) a pozemku parc.č. 854/64, oba na k. ú. Karlín v Praze 8 (ul. Sokolovská a Rohanské nábřeží)",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=Lt1e3oZs3pbxpl4Rvxri4f1pbxsh2jnALg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0062/2026",
+    "organ": "Rada",
+    "date": "2026-03-04",
+    "meeting": "96",
+    "title": "k návrhu vyjádření městské části Praha 8 ke směně pozemku parc.č. 1604/14 na k.ú. Kobylisy a id. podílů 1/4 pozemků parc.č. 626/11, 961/2, 961/3, 961/4, 961/6, 961/7, 961/8, 1752/4, 1756/2, 961/5, 1606/1, 1752/2, 1756/1, všechny na k.ú. Kobylisy a id. podílů 1/4 pozemků parc.č. 1716/26, 1716/28, oba na k.ú. Troja, ul. Ke Stírce, Hovorčovická, Zdibská, Čumpelíkova, Pakoměřická, Na Šutce (ve vlastnictví žadatele), za pozemek parc.č. 857/1 na k.ú. Karlín, ul. Pernerova (ve vlastnictví Hlavního města Prahy), všechny v Praze 8",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=1pbxsh22x1pbxsh2KfQR7M53VAMxDP7Jvw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0061/2026",
+    "organ": "Rada",
+    "date": "2026-03-04",
+    "meeting": "96",
+    "title": "k návrhu rozdělení objemu finančních prostředků na platy zaměstnanců městské části Praha 8 zařazených do Úřadu městské části Praha 8 na rok 2026",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=iWogbh7w8nN4lqo0tbKALQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0060/2026",
+    "organ": "Rada",
+    "date": "2026-03-04",
+    "meeting": "96",
+    "title": "k návrhu uzavření \"Smlouvy o zřízení věcného břemene\" pro umístění nové distribuční sítě - nové kabelové vedení kNN na pozemcích parc. č. 585/88, 585/292-299, 585/300-303, vše na k. ú. Bohnice, obec Praha",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=ee2NA3pbxpl4mcBT2x87azqD3pbxpl4JbQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0059/2026",
+    "organ": "Rada",
+    "date": "2026-03-04",
+    "meeting": "96",
+    "title": "k návrhu majetkového převodu městské části Praha 8 - svěření části pozemku parc. č. 3954/2, v k.ú. Libeň v Praze 8, ve vlastnictví hl. m. Prahy, do správy městské části Praha 8",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=MCQsrPcclQJpNoQoGYPk3A==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0058/2026",
+    "organ": "Rada",
+    "date": "2026-03-04",
+    "meeting": "96",
+    "title": "k návrhu stanoviska obce podle ustanovení § 147 odst. 1 písm. p) zákona č. 561/2004 Sb., školský zákon, ve znění pozdějších předpisů",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=0C1pbxsh2cQbYh7truiM7ueyUi2A==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0057/2026",
+    "organ": "Rada",
+    "date": "2026-03-04",
+    "meeting": "96",
+    "title": "k návrhu vyhlášení dotačního řízení na poskytnutí dotace městské části Praha 8 v sociální oblasti na rok 2026",
+    "topics": [
+      "Finance"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=y3rRItVtcDG4GtwTNzRdtg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0056/2026",
+    "organ": "Rada",
+    "date": "2026-03-04",
+    "meeting": "96",
+    "title": "k návrhu žádosti městské části Praha 8 o znovuposkytnutí účelové investiční dotace na rok 2026 (ve vazbě na vratku nevyčerpaných účelových investičních prostředků)",
+    "topics": [
+      "Finance"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=DZcmRmlKVaXy33pbxpl4WUJKdCOQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0055/2026",
+    "organ": "Rada",
+    "date": "2026-03-04",
+    "meeting": "96",
+    "title": "k návrhu rozpočtových opatření městské části Praha 8",
+    "topics": [
+      "Finance"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=o7Zi3RZJnvOuAqLnGOSMfg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn ZMC 009/2026",
+    "organ": "Zastupitelstvo",
+    "date": "2026-02-18",
+    "meeting": "19",
+    "title": "k návrhu schválení vzorového textu \"Smlouvy o spolupráci\" mezi městskou částí Praha 8 a hlavním městem Praha v rámci projektu \"MHMP - podpora v zabydlení a udržení bydlení v HMP\"",
+    "topics": [
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/677?usn=r07bbjmtd3BnOW3Asx7jtg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn ZMC 008/2026",
+    "organ": "Zastupitelstvo",
+    "date": "2026-02-18",
+    "meeting": "19",
+    "title": "k záměru prodeje nemovitostí ve vlastnictví obce, tj. hlavního města Prahy, svěřených do správy městské části Praha 8, konkrétně pozemků parc. č. 1/1, parc. č. 1/2, parc. č. 2/1, parc. č. 2/2, parc. č. 5/1, parc. č. 5/2, parc. č. 5/3, parc. č. 5/4, parc. č. 6/1, parc. č. 7/8, v k. ú. Střížkov",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/677?usn=WduLqiMSF2wt21pbxsh2UaeJo6Nw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn ZMC 007/2026",
+    "organ": "Zastupitelstvo",
+    "date": "2026-02-18",
+    "meeting": "19",
+    "title": "k návrhu majetkového převodu městské části Praha 8 – úplatného převodu nemovitosti ve vlastnictví obce, tj. Hlavního města Prahy, svěřené do správy městské části Praha 8 – pozemku parc. č. 2292/4, na k. ú. Kobylisy v Praze 8",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/677?usn=OQUcA22cv9gIfd1Z1pbxsh2VDfHQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn ZMC 006/2026",
+    "organ": "Zastupitelstvo",
+    "date": "2026-02-18",
+    "meeting": "19",
+    "title": "k návrhu vyhlášení dotačního řízení na poskytnutí dotací městské části Praha 8 na dlouhodobě organizovanou sportovní výchovu mládeže na rok 2026",
+    "topics": [
+      "Finance",
+      "Sport"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/677?usn=7DdbyrfPsf29YkJNCh1q4g==",
+    "tasks": []
+  },
+  {
+    "id": "Usn ZMC 005/2026",
+    "organ": "Zastupitelstvo",
+    "date": "2026-02-18",
+    "meeting": "19",
+    "title": "k návrhu vyhlášení dotačního řízení na poskytnutí dotací městské části Praha 8 v oblasti volnočasových nesportovních aktivit dětí a mládeže pro rok 2026",
+    "topics": [
+      "Finance",
+      "Sport"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/677?usn=fjnIGCdlWYFpwlWoFNckXg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn ZMC 004/2026",
+    "organ": "Zastupitelstvo",
+    "date": "2026-02-18",
+    "meeting": "19",
+    "title": "k návrhu vyhlášení dotačního řízení na poskytnutí dotací městské části Praha 8 v oblasti kultury na rok 2026",
+    "topics": [
+      "Finance",
+      "Kultura"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/677?usn=yae3pbxpl4UulwwHBsuFpRVgn1HQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn ZMC 003/2026",
+    "organ": "Zastupitelstvo",
+    "date": "2026-02-18",
+    "meeting": "19",
+    "title": "k návrhu rozpočtového opatření městské části Praha 8",
+    "topics": [
+      "Finance"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/677?usn=X3SlZ7NqYd0retijipeAbg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn ZMC 002/2026",
+    "organ": "Zastupitelstvo",
+    "date": "2026-02-18",
+    "meeting": "19",
+    "title": "k návrhu Rozpočtu městské části Praha 8 na rok 2026 a střednědobého výhledu městské části Praha 8 do roku 2031",
+    "topics": [
+      "Finance"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/677?usn=aAYjDlEh6UOWF8MpIfsR4g==",
+    "tasks": []
+  },
+  {
+    "id": "Usn ZMC 001/2026",
+    "organ": "Zastupitelstvo",
+    "date": "2026-02-18",
+    "meeting": "19",
+    "title": "k návrhu volby člena zastupitelstva do funkce člena Rady (radního) městské části Praha 8",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/677?usn=8DiPEkHjPEv4Fk2j1cjPPA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0054/2026",
+    "organ": "Rada",
+    "date": "2026-02-11",
+    "meeting": "95",
+    "title": "k návrhu uzavření \"Smlouvy o přistoupení k dluhu\" a uzavření \"Smlouvy o budoucí smlouvě o nájmu prostoru sloužícího podnikání a dohody o ukončení nájemního poměru\" v objektu ve vlastnictví obce, tj. Hlavního města Prahy, svěřeném do správy městské části Praha 8 – np. 110, čp. 780, na k. ú. Čimice a na adrese Čimická 61, 181 00 Praha 8, mezi městskou částí Praha 8, jako \"pronajímatelem\", společností BOHEMIA LOGISTIC s.r.o. (IČO: 19303238), jako \"novým nájemcem\"",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=7NJzmAasO3y3pbxpl4O8y2C2m1eQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0053/2026",
+    "organ": "Rada",
+    "date": "2026-02-11",
+    "meeting": "95",
+    "title": "k návrhu uplatnění nárůstu nájemného dle souhrnného \"Indexu spotřebitelských cen\", oficiálně zveřejňovaného Českým statistickým úřadem (ČSÚ), v roce 2026",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=fu6dXTfzCQ5ALqwFbGBtlA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0052/2026",
+    "organ": "Rada",
+    "date": "2026-02-11",
+    "meeting": "95",
+    "title": "k návrhu souhlasu městské části Praha 8 se stavebními úpravami nad rámec běžné údržby v objektu ve vlastnictví obce, tj. Hlavního města Prahy, svěřeném do správy městské části Praha 8 – čp. 177 na adrese Pod Čimickým hájem 1, na k. ú. Bohnice v Praze 8",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=1h6OyFOWACyzfwaOHwGe2w==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0051/2026",
+    "organ": "Rada",
+    "date": "2026-02-11",
+    "meeting": "95",
+    "title": "k návrhu uzavření 9 \"Nájemních smluv\" o nájmu bytů v domech ve vlastnictví obce, tj. Hlavního města Prahy, svěřených do správy městské části Praha 8 na k. ú. Kobylisy, k. ú. Střížkov a na k. ú. Libeň, na dobu určitou",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=Sqd261pbxsh2MMd7zZt03pbxpl4Swx3pbxpl4zTg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0050/2026",
+    "organ": "Rada",
+    "date": "2026-02-11",
+    "meeting": "95",
+    "title": "k návrhu uzavření \"Nájemní smlouvy\" o nájmu bytu v domě ve vlastnictví obce, tj. Hlavního města Prahy, svěřeném do správy městské části Praha 8",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=0BjBviApcYpif1VbYk0bkA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0049/2026",
+    "organ": "Rada",
+    "date": "2026-02-11",
+    "meeting": "95",
+    "title": "k návrhu uzavření \"Smlouvy o smlouvě budoucí o zřízení služebnosti inženýrské sítě\" - zřízení kontrolních měřících objektů pro měření bludných proudů včetně měřících center na pozemku parc. č. 2337/15 k. ú. Nové Město",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=8fhR44S1GVanN1rJWUXZmQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0048/2026",
+    "organ": "Rada",
+    "date": "2026-02-11",
+    "meeting": "95",
+    "title": "k návrhu změny v komisích Rady městské části Praha 8",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=2dnmj5DucvS6roZLGsnIDw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0047/2026",
+    "organ": "Rada",
+    "date": "2026-02-11",
+    "meeting": "95",
+    "title": "k návrhu uzavření \"Dodatku č. 1\" ke \"Smlouvě o dílo\" s předmětem plnění \"Přebudování objektu na adrese Palmovka 2179/6a, Praha 8, na prostory pro tzv. dětskou skupinu\"",
+    "topics": [
+      "Školství",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=qNPcrKeOvE58zCCPOF3pbxpl4jVw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0046/2026",
+    "organ": "Rada",
+    "date": "2026-02-11",
+    "meeting": "95",
+    "title": "k návrhu uzavření \"Dodatku č. 1\" ke \"Smlouvě o dílo\" s předmětem plnění \"Transformace a provoz dětských skupin Mirovická\"",
+    "topics": [
+      "Školství",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=RpOj12p9VDlGvYXQP3pbxpl4SRLQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0045/2026",
+    "organ": "Rada",
+    "date": "2026-02-11",
+    "meeting": "95",
+    "title": "k návrhu vyjádření městské části Praha 8 k projektové dokumentaci k územnímu řízení Rohan city – sekce C – objekt CI.01, parc.č. 767/147 na k.ú. Karlín v Praze 8 (ul. Rohanské nábřeží)",
+    "topics": [
+      "Výstavba"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=f35VDPGvnQ4LZA8jRNxXzg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0044/2026",
+    "organ": "Rada",
+    "date": "2026-02-11",
+    "meeting": "95",
+    "title": "k návrhu uzavření Smlouvy o úpravě vzájemných vztahů mezi MČ Praha 8 na jedné straně a Konsorcium Rohan, s.r.o. na straně druhé",
+    "topics": [
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=mxt3pbxpl4twCYzRkcBmXMjo13pbxpl4eg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0043/2026",
+    "organ": "Rada",
+    "date": "2026-02-11",
+    "meeting": "95",
+    "title": "k návrhu uzavření Dodatku č.2 Smlouvy o spolupráci č. POS/34/04/000213/2022 (dále též jako „Smlouva“) uzavřená mezi: Městská část Praha 8, Hlavní město Praha a Konsorcium Rohan, s.r.o.",
+    "topics": [
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=kwvwfKGWuA5J9nHxrtmdBA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0042/2026",
+    "organ": "Rada",
+    "date": "2026-02-11",
+    "meeting": "95",
+    "title": "k návrhu uzavření Dodatku č.1 Smlouvy o úpravě zvájemných vztahů č. 2025/0640/OURV.DSFR (dále též jako „Smlouva“) uzavřená mezi Městskou částí Praha 8, lagupov Maksym a lagupova Natalia oba bytem U Švehlova altánu 1647/23, 102 00 Praha 10-Hostivař",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=Hk1q6eMu04HQEQ3pbxpl4yE3rrFA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0041/2026",
+    "organ": "Rada",
+    "date": "2026-02-11",
+    "meeting": "95",
+    "title": "k návrhu na vznik členství městské části Praha 8 ve spolku Energetické společenství Praha 8, z. s.",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=Qrm0cbEtCsrWDIkjT1PAWg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0040/2026",
+    "organ": "Rada",
+    "date": "2026-02-11",
+    "meeting": "95",
+    "title": "k návrhu změny v komisi pro sociální věci a zdravotnictví Rady městské části Praha 8",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=bgMBVIEGiPwMuoJTvOZJqg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0039/2026",
+    "organ": "Rada",
+    "date": "2026-02-11",
+    "meeting": "95",
+    "title": "k návrhu uzavření \"dodatku č.1 k nájemní smlouvě č.1022-SML3-NP103-0126\" mezi MČ Praha 8 a Lidovým bytovým družstvem Praha 8",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=GzTIqAwEAu2hLWA1e7uRhA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0038/2026",
+    "organ": "Rada",
+    "date": "2026-02-11",
+    "meeting": "95",
+    "title": "k návrhu stanoviska obce podle ustanovení § 147 odst. 1 písm. p) zákona č. 561/2004 Sb., školský zákon, ve znění pozdějších předpisů",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=p1pbxsh2pE4QwMPF7WJaiOHXfhrg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0037/2026",
+    "organ": "Rada",
+    "date": "2026-02-11",
+    "meeting": "95",
+    "title": "k návrhu vyhlášení konkursního řízení na funkci ředitele/ředitelky Mateřské školy, Praha 8, Krynická 2",
+    "topics": [
+      "Školství"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=aYCbK1lK7GNtn8uMBVFkyw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0036/2026",
+    "organ": "Rada",
+    "date": "2026-02-11",
+    "meeting": "95",
+    "title": "k návrhu souhlasu s převodem technického zhodnocení budovy a movitého majetku k hospodaření příspěvkové právnické osobě (organizaci) zřízené městskou částí Praha 8 - Gerontologické centrum",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=9cGyUPXhwMQBbKl8QkbzjA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0035/2026",
+    "organ": "Rada",
+    "date": "2026-02-03",
+    "meeting": "94",
+    "title": "k návrhu odsouhlasení vzorového textu \"Smlouvy o spolupráci\" mezi městskou částí Praha 8 a hlavním městem Praha v rámci projektu \"MHMP - podpora v zabydlení a udržení bydlení v HMP\"",
+    "topics": [
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=psMkbtxPI9pXPJ47pyQi1pbxsh2g==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0034/2026",
+    "organ": "Rada",
+    "date": "2026-02-03",
+    "meeting": "94",
+    "title": "k záměru prodeje nemovitostí ve vlastnictví obce, tj. hlavního města Prahy, svěřených do správy městské části Praha 8, konkrétně pozemků parc. č. 1/1, parc. č. 1/2, parc. č. 2/1, parc. č. 2/2, parc. č. 5/1, parc. č. 5/2, parc. č. 5/3, parc. č. 5/4, parc. č. 6/1, parc. č. 7/8, v k. ú. Střížkov",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=y9LZ6K6r4FGVMBd25Pyd9A==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0033/2026",
+    "organ": "Rada",
+    "date": "2026-02-03",
+    "meeting": "94",
+    "title": "k návrhu vyhlášení dotačního řízení na poskytnutí dotací městské části Praha 8 na volnočasové nesportovní aktivity dětí a mládeže pro rok 2026",
+    "topics": [
+      "Finance",
+      "Sport"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=pNhLvCf6GXUChrUyfEMpEQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0032/2026",
+    "organ": "Rada",
+    "date": "2026-02-03",
+    "meeting": "94",
+    "title": "k návrhu vyhlášení dotačního řízení na poskytnutí dotací městské části Praha 8 v oblasti kultury na rok 2026",
+    "topics": [
+      "Finance",
+      "Kultura"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=AHUTydTmYICulpzHML9kng==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0031/2026",
+    "organ": "Rada",
+    "date": "2026-02-03",
+    "meeting": "94",
+    "title": "k návrhu vyhlášení dotačního řízení na poskytnutí dotací městské části Praha 8 na dlouhodobě organizovanou sportovní výchovu mládeže na rok 2026",
+    "topics": [
+      "Finance",
+      "Sport"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=jKjXRYKcR02tOYUj9ZW0kA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0030/2026",
+    "organ": "Rada",
+    "date": "2026-02-03",
+    "meeting": "94",
+    "title": "k návrhu podání žádosti městské části Praha 8 o poskytnutí dotace z investiční rezervy pro MČ hl. m. Prahy v rozpočtu hl. m. Prahy (v kap. 10) na rok 2026",
+    "topics": [
+      "Finance"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=2Avgd1pbxsh2kvZ2roM0SF3pbxpl4Tu46g==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0029/2026",
+    "organ": "Rada",
+    "date": "2026-02-03",
+    "meeting": "94",
+    "title": "k návrhu rozpočtového opatření městské části Praha 8",
+    "topics": [
+      "Finance"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=D6Vz93NqL6i5M1pbxsh2F2slGIcw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0028/2026",
+    "organ": "Rada",
+    "date": "2026-02-03",
+    "meeting": "94",
+    "title": "k návrhu Rozpočtu městské části Praha 8 na rok 2026 a střednědobého výhledu městské části Praha 8 do roku 2031",
+    "topics": [
+      "Finance"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=FEuf3pbxpl4CdUKvO3pbxpl43dqFX3kErA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0027/2026",
+    "organ": "Rada",
+    "date": "2026-01-28",
+    "meeting": "93",
+    "title": "k návrhu uzavření 14 \"Nájemních smluv\" o nájmu bytů v domech ve vlastnictví obce, tj. Hlavního města Prahy, svěřených do správy městské části Praha 8 na k. ú. Kobylisy, k. ú. Střížkov, k. ú. Bohnice, a na k. ú. Karlín na dobu určitou",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=5USuHOPay6z3MDCZ6phfTw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0026/2026",
+    "organ": "Rada",
+    "date": "2026-01-28",
+    "meeting": "93",
+    "title": "k návrhu uzavření 3 \"Nájemních smluv\" o nájmu bytu v domech ve vlastnictví obce, tj. Hlavního města Prahy, svěřených do správy městské části Praha 8",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=wjYhMYvtxS8RxHa8DKP5vQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0025/2026",
+    "organ": "Rada",
+    "date": "2026-01-28",
+    "meeting": "93",
+    "title": "k návrhu uzavření 2 \"Nájemních smluv\" o nájmu bytů v domech ve vlastnictví obce , tj. Hlavního města Prahy, svěřených do správy městské části Praha 8, na k. ú. Kobylisy a k. ú. Střížkov, na dobu určitou",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=nhoqjK6oZlMs7i4DPZtx4w==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0024/2026",
+    "organ": "Rada",
+    "date": "2026-01-28",
+    "meeting": "93",
+    "title": "k návrhu uzavření „Smlouvy o podnájmu\" nemovitého majetku ve vlastnictví obce, tj. Hlavního města Prahy, části pozemku parc. č. 2364/1, v k.ú. Kobylisy",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=bA5dGOw3CzJ3pbxpl4xNS3pbxpl4VX1pbxsh2kzg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0023/2026",
+    "organ": "Rada",
+    "date": "2026-01-28",
+    "meeting": "93",
+    "title": "k návrhu uzavření \"Smlouvy o nájmu\" nemovitého majetku ve vlastnictví obce, tj. Hlavního města Prahy - části pozemku parc. č. 2364/1, na k. ú. Kobylisy v Praze 8",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=LGKnnB2OnUmm7r4MqVw8Rw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0022/2026",
+    "organ": "Rada",
+    "date": "2026-01-28",
+    "meeting": "93",
+    "title": "k návrhu podání výpovědi \"Nájemní smlouvy o nájmu nebytových prostorů\", ve znění pozdějšího dodatku č. 1 a č. 2, v objektu ve vlastnictví Bytového družstva Karlín 372 a jednotlivých vlastníků bytových jednotek, uzavřené v rámci věcného břemene služebnosti bezplatného požívání, sjednaného ve prospěch městské části Praha 8 – čp. 372, np. 501, na k. ú. Karlín a na adrese Za Poříčskou bránou 14, 186 00 Praha 8",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=a3iTdPZQb7S3pbxpl4Satuv6FWyA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0021/2026",
+    "organ": "Rada",
+    "date": "2026-01-28",
+    "meeting": "93",
+    "title": "k návrhu bezúplatného převodu majetku, pořízeného Servisním střediskem pro správu svěřeného majetku (SeS) městské části Praha 8, některým příspěvkovým právnickým osobám (organizacím) zřízeným městskou částí Praha 8",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=6eYH1pbxsh22KEZeKUcp1e3pbxpl4Q1IgQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0020/2026",
+    "organ": "Rada",
+    "date": "2026-01-28",
+    "meeting": "93",
+    "title": "k návrhu Postoupení práv a povinností plynoucí ze smlouvy č. 2022/0506/OURV.DPR ze Square Project s.r.o. na GARTAL Developerský projekt G s.r.o. na podkladu návrhu Smlouvy o postoupení",
+    "topics": [
+      "Výstavba",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=E0OpPCSoaVKnmMDHfnhw7Q==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0019/2026",
+    "organ": "Rada",
+    "date": "2026-01-28",
+    "meeting": "93",
+    "title": "k návrhu vyjádření městské části Praha 8 k projektové dokumentaci ke společnému povolení – Nástavba, změna užívání a stavební úpravy domů Pernerova č.p. 486/46 a 494/48, parc.č. 671/2, 672/2 na k.ú. Karlín v Praze 8",
+    "topics": [
+      "Výstavba"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=Kdsgb40b3ksNwxuSsmPLfw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0018/2026",
+    "organ": "Rada",
+    "date": "2026-01-28",
+    "meeting": "93",
+    "title": "k návrhu projednání \"Pravidel pro zřizování služebností a věcných břemen\" a vzorů smluv \"Smlouva o smlouvě budoucí o zřízení služebnosti inženýrské sítě\" - na elektronické komunikace (ZEK) a \"Smlouva o smlouvě budoucí o zřízení služebnosti inženýrské sítě\" - na vedení plynovodu, kanalizace, vodovodu atd.",
+    "topics": [
+      "Doprava",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=1pbxsh2wthtdLOJzzEg6wZF3pbxpl4AQ2w==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0017/2026",
+    "organ": "Rada",
+    "date": "2026-01-28",
+    "meeting": "93",
+    "title": "k návrhu uzavření Smlouvy o úpravě vzájemných vztahů mezi MČ Praha 8 na jedné straně a W - Park Residence s.r.o. na straně druhé",
+    "topics": [
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=v6zpr1pbxsh2zxCd1pbxsh21q3pbxpl4q8e4hrtg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0016/2026",
+    "organ": "Rada",
+    "date": "2026-01-28",
+    "meeting": "93",
+    "title": "k návrhu souhlasu městské části Praha 8 se stavebními úpravami nad rámec běžné údržby v objektu ve vlastnictví obce, tj. Hlavního města Prahy, svěřeném do správy městské části Praha 8 – čp. 200 na adrese Pod Čimickým hájem 2, na k. ú. Bohnice v Praze 8",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=MIwBqkxuie1TSeIxlH9oRw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0015/2026",
+    "organ": "Rada",
+    "date": "2026-01-28",
+    "meeting": "93",
+    "title": "k návrhu uzavření smlouvy \"Smlouva o postoupení smlouvy o smlouvě budoucí o zřízení věcného břemene služebnosti inženýrské sítě\" týkající se umístění stavby kanalizačního a vodovodního řadu, vč. elektro přípojek, ke stavbě „Bytový dům v ulici K Ládví“",
+    "topics": [
+      "Majetek",
+      "Výstavba",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=cHN5WThuXsgnThgDp89ggg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0014/2026",
+    "organ": "Rada",
+    "date": "2026-01-28",
+    "meeting": "93",
+    "title": "k návrhu námitek městské části Praha 8 jako účastníka řízení do společného řízení stavby \"Bytový dům Na Slovance“, ulice Na Slovance, Praha 8 - Libeň, na pozemcích parc. č. 1815/1, 1815/2, 3815/1, všechny na katastrálním území Libeň v Praze 8",
+    "topics": [
+      "Majetek",
+      "Výstavba"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=oEtssBGG0w2bf6yCmiKeGg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0013/2026",
+    "organ": "Rada",
+    "date": "2026-01-14",
+    "meeting": "92",
+    "title": "k návrhu úpravy platů ředitelům příspěvkových právnických osob (organizací) - mateřských a základních škol zřízených městskou částí Praha 8",
+    "topics": [
+      "Školství"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=M5RM3UOi1pbxsh2y6deUzCxw4h1pbxsh2A==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0012/2026",
+    "organ": "Rada",
+    "date": "2026-01-14",
+    "meeting": "92",
+    "title": "k návrhu udělení předchozího souhlasu zřizovatele dle ustanovení § 37b zákona č. 250/2000 Sb., o rozpočtových pravidlech územních rozpočtů, ve znění pozdějších předpisů",
+    "topics": [
+      "Finance",
+      "Výstavba"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=3fZucWLLvuereFc4SL4zTg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0011/2026",
+    "organ": "Rada",
+    "date": "2026-01-14",
+    "meeting": "92",
+    "title": "k návrhu uzavření \"Dodatku č. 1\" ke \"Smlouvě o dílo\" s předmětem plnění \"Vybudování parkovacích stání v ulici Střekovská SO 05 Praha 8 - Kobylisy\"",
+    "topics": [
+      "Doprava",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=3pbxpl4JLnS9XUjlVqNd0Y1en2Ug==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0010/2026",
+    "organ": "Rada",
+    "date": "2026-01-14",
+    "meeting": "92",
+    "title": "k návrhu majetkového převodu městské části Praha 8 – úplatného převodu nemovitosti ve vlastnictví obce, tj. Hlavního města Prahy, svěřené do správy městské části Praha 8 – pozemku parc. č. 2292/4 na k. ú. Kobylisy v Praze 8",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=3pbxpl4INL7t1enwjbxWD3pbxpl4qQh7jA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0009/2026",
+    "organ": "Rada",
+    "date": "2026-01-14",
+    "meeting": "92",
+    "title": "k návrhu zpětvzetí odvolání proti rozhodnutí, kterým bylo vydáno územní rozhodnutí, tj. rozhodnutí o umístění stavby „Datové připojení jihozápadní - Technické centrum D. Chabry“, Praha 8, Čimice, D. Chabry v Praze 8, spis. zn.: MCP8 057485/2024/OV.Sou, č.j MCP8 587123/2024 ze dne 11. listopadu 2024 a zpětvzetí odvolání proti rozhodnutí, kterým bylo vydáno územní rozhodnutí, tj. rozhodnutí o umístění stavby „Technické centrum D. Chabry\", Praha 8, D. Chabry na pozemku parc. č. 1373/9 na k. ú. D. Chabry, spis. zn.: MCP8 535327/2023/OV.Sou, č.j MCP8 004259/2025 ze dne 12. března 2025",
+    "topics": [
+      "Majetek",
+      "Výstavba"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=mrXSi2JAyKBW3pbxpl4IP0iW9BSA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0008/2026",
+    "organ": "Rada",
+    "date": "2026-01-14",
+    "meeting": "92",
+    "title": "k návrhu námitek městské části Praha 8 jako účastníka řízení do společného řízení stavby \"Novostavba bytového domu včetně přípojek a přeložek inženýrských sítí, Praha 8, Troja, Trojská“ na pozemcích parc. č. 757, 758/1, 1660/2, všechny v katastrálním území Troja v Praze 8",
+    "topics": [
+      "Majetek",
+      "Výstavba"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=JlPMbVoyHz8oaUf4a1Belw==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0007/2026",
+    "organ": "Rada",
+    "date": "2026-01-14",
+    "meeting": "92",
+    "title": "k návrhu úpravy objemu prostředků na platy zaměstnanců příspěvkové právnické osoby (organizace), zřízené městskou částí Praha 8, na rok 2025",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=LUk0UuwI3pbxpl40woTqKtxwGLqA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0006/2026",
+    "organ": "Rada",
+    "date": "2026-01-14",
+    "meeting": "92",
+    "title": "k návrhu vyjádření Městské části Praha 8 k prodloužení výpůjčky části pozemku parc.č. 4003/1 (o výměře 100 m2) na k.ú. Libeň v Praze 8, Libeňský ostrov",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=phWoiTRwTZgf3pbxpl4BNt0puAUA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0005/2026",
+    "organ": "Rada",
+    "date": "2026-01-14",
+    "meeting": "92",
+    "title": "k návrhu vyjádření Městské části Praha 8 k úplatnému převodu části pozemku parc.č. 3982/1 (o výměře cca 55 m2) na k.ú. Libeň v Praze 8 (ul. Davídkova)",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=pg03pbxpl449dgsh2f7tpw35WHbA==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0004/2026",
+    "organ": "Rada",
+    "date": "2026-01-14",
+    "meeting": "92",
+    "title": "k návrhu vyjádření Městské části Praha 8 k požadavku na doplnění předchozího souhlasu MČ Praha 8 s pronájmem pozemku parc.č. 2364/140 na k.ú. Kobylisy v Praze 8, (ul. Kyselova), o definici požadavků vůči žadateli ve věci provozu budovy a úpravy přilehlých veřejných ploch",
+    "topics": [
+      "Majetek"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=vY5iZaMsVNMRGVODzuSlDQ==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0003/2026",
+    "organ": "Rada",
+    "date": "2026-01-14",
+    "meeting": "92",
+    "title": "k návrhu přípravy 19. zasedání Zastupitelstva městské části Praha 8",
+    "topics": [],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=Yj0NNQy3VAu7MhkvC3Fjtg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0002/2026",
+    "organ": "Rada",
+    "date": "2026-01-14",
+    "meeting": "92",
+    "title": "k návrhu uzavření \"Smlouvy o nájmu\" nemovitého majetku ve vlastnictví obce, tj. Hlavního města Prahy, svěřeného do správy městské části Praha 8 – část zařízeného nebytového prostoru v budově č. p. 502, který je součástí pozemku parc. č. 25 (dále jen „budova“), část pozemků parc. č. 26 a 23/1, k.ú. Libeň, obec Praha",
+    "topics": [
+      "Majetek",
+      "Smlouvy"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=ZOOx4CfAVyKOH1gpXVCeSg==",
+    "tasks": []
+  },
+  {
+    "id": "Usn RMC 0001/2026",
+    "organ": "Rada",
+    "date": "2026-01-14",
+    "meeting": "92",
+    "title": "k návrhu rozpočtových opatření městské části Praha 8",
+    "topics": [
+      "Finance"
+    ],
+    "url": "https://www.praha8.cz/appo/usn/676?usn=KJFbY2TrmwwEap1z0RZvmQ==",
+    "tasks": []
+  }
 ]

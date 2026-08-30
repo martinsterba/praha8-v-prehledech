@@ -60,10 +60,10 @@
     "mode": "aktualizováno"
   },
   "resolutions": {
-    "status": "průběžná open data",
-    "count": 8,
-    "updated": "2026-08-21T12:00:00Z",
-    "mode": "mezipaměť"
+    "status": "data načtena",
+    "count": 395,
+    "updated": "2026-08-30T11:30:11.846Z",
+    "mode": "aktualizováno"
   },
   "voting": {
     "status": "průběžná open data",
@@ -72,16 +72,16 @@
     "mode": "mezipaměť"
   },
   "info106": {
-    "status": "čeká na naplnění",
-    "count": 0,
-    "updated": null,
-    "mode": "nenačteno"
+    "status": "data načtena",
+    "count": 1817,
+    "updated": "2026-08-30T11:30:11.846Z",
+    "mode": "aktualizováno"
   },
   "noticeboard": {
-    "status": "čeká na naplnění",
-    "count": 0,
-    "updated": null,
-    "mode": "nenačteno"
+    "status": "data načtena",
+    "count": 152,
+    "updated": "2026-08-30T11:30:11.846Z",
+    "mode": "aktualizováno"
   },
   "elections": {
     "status": "čeká na naplnění",
@@ -96,10 +96,10 @@
     "mode": "nenačteno"
   },
   "news": {
-    "status": "čeká na naplnění",
-    "count": 0,
-    "updated": null,
-    "mode": "nenačteno"
+    "status": "data načtena",
+    "count": 3,
+    "updated": "2026-08-30T11:30:11.846Z",
+    "mode": "aktualizováno"
   },
   "contracts": {
     "status": "čeká na naplnění",
