@@ -6,10 +6,10 @@
     "mode": "aktualizováno"
   },
   "hmpFunctions": {
-    "status": "data načtena",
-    "count": 16,
-    "updated": "2026-08-30T17:10:42.264Z",
-    "mode": "aktualizováno"
+    "status": "čeká na naplnění",
+    "count": 0,
+    "updated": null,
+    "mode": "nenačteno"
   },
   "hmpCompanies": {
     "status": "data načtena",
