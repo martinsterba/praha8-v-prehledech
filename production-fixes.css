@@ -37,11 +37,15 @@
 }
 .body-secretary>span{display:block}
 
-/* Bez čar mezi jednotlivými lidmi. */
+/* Bez čar mezi jednotlivými lidmi a s kompaktním původním rozestupem. */
 .body-members li,
 .body-members li+li{
   border-top:0!important;
   border-bottom:0!important;
+  padding-top:4px!important;
+  padding-bottom:4px!important;
+  margin-top:0!important;
+  margin-bottom:0!important;
 }
 
 /* Jednotlivé obsahové části mají stejný vnitřní odstup jako karty škol a organizací.
