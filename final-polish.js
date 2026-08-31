@@ -58,24 +58,20 @@ async function renderInfo106Page(page=info106CurrentPage){
   rowsHost.replaceChildren(...shown.map(x=>{
     const article=document.createElement('article');
     article.className='item info106-row';
-
     const date=document.createElement('div');
     date.className='meta info106-date';
     date.textContent=fmt106Date(x.date,x.year);
-
     const middle=document.createElement('div');
     const title=document.createElement('h3');
     title.className='info106-title';
     title.textContent=short106Title(x.title);
     middle.append(title);
-
     const link=document.createElement('a');
     link.className='source info106-answer';
     link.href=x.url||'#';
     link.target='_blank';
     link.rel='noreferrer';
     link.textContent='Odpověď ↗';
-
     article.append(date,middle,link);
     return article;
   }));
@@ -116,13 +112,11 @@ function polish106Rows(){
   if(!app)return;
   const wrap=app.querySelector('.wrap');
   if(wrap)wrap.classList.add('info106-page','final-page-spacing');
-
   const dashboard=app.querySelector('.compact-stats');
   if(dashboard){
     dashboard.classList.add('info106-dashboard');
     for(const stat of dashboard.querySelectorAll('.stat'))stat.classList.add('info106-stat');
   }
-
   const q=app.querySelector('#q106');
   const y=app.querySelector('#year106');
   for(const control of [q,y]){
@@ -138,11 +132,25 @@ function polish106Rows(){
   void renderInfo106Page(info106CurrentPage);
 }
 
+function markCurrentPage(app){
+  const wrap=app.querySelector('.wrap');
+  if(!wrap)return;
+  wrap.classList.remove('budget-page','census-page','noticeboard-page');
+  if(location.hash==='#/penize')wrap.classList.add('budget-page');
+  if(location.hash==='#/scitani-2021')wrap.classList.add('census-page');
+  if(location.hash==='#/uredni-deska'){
+    wrap.classList.add('noticeboard-page');
+    const dashboard=app.querySelector('.compact-stats,.stats');
+    if(dashboard)dashboard.classList.add('noticeboard-dashboard');
+  }
+}
+
 function finalPolish(){
   const app=document.querySelector('#app');
   if(!app)return;
   const wrap=app.querySelector('.wrap');
   if(wrap)wrap.classList.add('final-page-spacing');
+  markCurrentPage(app);
   polish106Rows();
 }
 
