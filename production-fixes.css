@@ -26,20 +26,14 @@
 }
 .home-principle{border-bottom:0!important}
 
-/*
-  Sčítání a Novinky mají na desktopu stejnou logiku:
-  1. řádek = kicker,
-  2. řádek = hlavní titulek + odkaz vpravo,
-  3. řádek = doplňkový text (jen Sčítání).
-  Odkazy jsou tedy zarovnané skutečným gridovým řádkem, ne ručním posunem v pixelech.
-*/
+/* Sčítání a Novinky: titul + pravý odkaz jsou ve stejném gridovém řádku a zarovnané podle textové baseline. */
 @media(min-width:851px){
   .census-home-strip{
     display:grid!important;
     grid-template-columns:minmax(0,1fr) auto!important;
     grid-template-rows:auto auto auto!important;
     column-gap:32px!important;
-    align-items:center!important;
+    align-items:baseline!important;
   }
   .census-home-strip>div{display:contents!important}
   .census-home-strip .kicker{
@@ -49,6 +43,7 @@
   .census-home-strip strong{
     grid-column:1!important;
     grid-row:2!important;
+    align-self:baseline!important;
   }
   .census-home-strip>div>span{
     grid-column:1!important;
@@ -57,7 +52,7 @@
   .census-home-strip>b{
     grid-column:2!important;
     grid-row:2!important;
-    align-self:center!important;
+    align-self:baseline!important;
   }
 
   .news-home-head{
@@ -65,7 +60,7 @@
     grid-template-columns:minmax(0,1fr) auto!important;
     grid-template-rows:auto auto!important;
     column-gap:32px!important;
-    align-items:center!important;
+    align-items:baseline!important;
   }
   .news-home-head>div{display:contents!important}
   .news-home-head .kicker{
@@ -75,11 +70,12 @@
   .news-home-head strong{
     grid-column:1!important;
     grid-row:2!important;
+    align-self:baseline!important;
   }
   .news-home-head>a{
     grid-column:2!important;
     grid-row:2!important;
-    align-self:center!important;
+    align-self:baseline!important;
     transform:none!important;
   }
 }
@@ -202,6 +198,12 @@
 
   .info106-page .item{gap:10px}
   .info106-page .item h3{font-size:16px}
-  .info106-page .toolbar input,
-  .info106-page .toolbar select{min-width:0;width:100%;flex-basis:100%}
+  .info106-page .info106-row{
+    grid-template-columns:1fr!important;
+    gap:5px!important;
+    align-items:start!important;
+    padding:14px 16px!important;
+  }
+  .info106-page .info106-title{font-size:15px!important}
+  .info106-page .info106-answer{margin-top:3px}
 }
