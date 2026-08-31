@@ -1,5 +1,5 @@
 /* Volební roky: dva kompaktní sloupce. Vlevo kicker těsně nad rokem,
-   vpravo zdroj těsně nad volební účastí; rok a účast sdílejí baseline. */
+   vpravo zdroj bez mezery nad volební účastí; rok a účast sdílejí baseline. */
 @media(min-width:851px){
   .election-year>.section-head{
     display:grid!important;
@@ -31,7 +31,7 @@
     grid-row:1!important;
     justify-self:end!important;
     align-self:end!important;
-    margin:0!important;
+    margin:0 -0  -4px 0!important;
     font-size:13px!important;
     font-weight:700!important;
     white-space:nowrap!important;
