@@ -37,6 +37,8 @@ jobs:
           PUPPETEER_EXECUTABLE_PATH: ${{ steps.chrome.outputs.chrome-path }}
         run: node scripts/sync-praha8.mjs --usneseni-incremental --info106 --noticeboard --news --fast
       - name: "Hlasování ZMČ – nová zasedání"
+        env:
+          PUPPETEER_EXECUTABLE_PATH: ${{ steps.chrome.outputs.chrome-path }}
         run: npm run sync:voting
       - name: "Zjistit stav Registru smluv"
         id: contracts
