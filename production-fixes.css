@@ -21,7 +21,10 @@
 .news-home-head{
   align-items:flex-end!important;
 }
-.news-home-head>a{font-weight:700!important}
+.news-home-head>a{
+  font-weight:700!important;
+  transform:translateY(-6px);
+}
 .hero>.kicker{
   font-size:14px;
   transform:translateY(-8px);
@@ -110,6 +113,7 @@
 .school-source-note.production-data-note>div+div{margin-top:4px}
 
 @media(max-width:850px){
+  .news-home-head>a{transform:none}
   .mobile-menu-toggle{display:grid;place-items:center;order:3}
   .topbar .search-open{order:2;margin-left:auto}
   .topbar .brand{order:1;min-width:0;overflow:hidden;text-overflow:ellipsis}
