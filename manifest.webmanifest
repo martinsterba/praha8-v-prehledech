@@ -1,6 +1,6 @@
 {
   "name": "Praha 8 v přehledech",
-  "short_name": "Praha 8",
+  "short_name": "Praha 8 v přehledech",
   "description": "Usnesení, hlasování, rozpočet, organizace a další veřejné informace. Na jednom místě, s dohledatelným zdrojem a bez nutnosti procházet desítky dokumentů.",
   "start_url": "/",
   "scope": "/",
