@@ -25,6 +25,7 @@
   margin-bottom:8px;
 }
 .home-principle{border-bottom:0!important}
+.hero .actions .btn{cursor:pointer!important}
 
 /* Sčítání a Novinky: titul a pravý odkaz sdílejí stejnou textovou baseline.
    Gridové řádky se nesmí roztahovat do výšky karty – držíme původní kompaktní rytmus. */
@@ -191,7 +192,7 @@
     margin-bottom:7px;
     font-size:11px;
     letter-spacing:.08em;
-    text-transform:uppercase;
+    text-transform:uppercase!important;
     color:var(--muted,#6f706a);
   }
   .mobile-menu-panel a{
