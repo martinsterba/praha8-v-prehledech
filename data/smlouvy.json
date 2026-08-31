@@ -8385,7 +8385,7 @@
       "id": "36435549",
       "idContract": "34194225",
       "url": "https://smlouvy.gov.cz/smlouva/36435549",
-      "subject": "1462_Bulovka_rev.el.zařízení_Odstranění závad_ 12997",
+      "subject": "1462_Bulovka_rev.el.zařízení_Odstranění závad_  12997",
       "published": "2026-01-19",
       "signed": "2026-01-19",
       "valueCzk": 88710,
@@ -8427,7 +8427,7 @@
       "id": "36414505",
       "idContract": "34173989",
       "url": "https://smlouvy.gov.cz/smlouva/36414505",
-      "subject": "222_6_2_Výměna nefunkčního plynového kotle_ 13149",
+      "subject": "222_6_2_Výměna nefunkčního plynového kotle_  13149",
       "published": "2026-01-16",
       "signed": "2026-01-16",
       "valueCzk": 100321,
@@ -8490,7 +8490,7 @@
       "id": "36406749",
       "idContract": "34166621",
       "url": "https://smlouvy.gov.cz/smlouva/36406749",
-      "subject": "625_2_Osazení nových ITN v celém objektu_ 13137",
+      "subject": "625_2_Osazení nových ITN v celém objektu_  13137",
       "published": "2026-01-15",
       "signed": "2026-01-15",
       "valueCzk": 110294,
@@ -8511,7 +8511,7 @@
       "id": "36406785",
       "idContract": "34166653",
       "url": "https://smlouvy.gov.cz/smlouva/36406785",
-      "subject": "485_18_6_oprava zvedlé parketové podlahy po vytopení 13425",
+      "subject": "485_18_6_oprava zvedlé parketové podlahy po vytopení  13425",
       "published": "2026-01-15",
       "signed": "2026-01-14",
       "valueCzk": 66112.5,
@@ -8679,7 +8679,7 @@
       "id": "36287361",
       "idContract": "34052809",
       "url": "https://smlouvy.gov.cz/smlouva/36287361",
-      "subject": "35_46,290_48,167_50_Oprava a reinstalace zámků na HVD_ 13366",
+      "subject": "35_46,290_48,167_50_Oprava a reinstalace zámků na HVD_  13366",
       "published": "2026-01-07",
       "signed": "2026-01-07",
       "valueCzk": 98632,
@@ -8772,7 +8772,7 @@
       "counterparties": [
         {
           "name": "TOMÁŠ KUČERA, 1970",
-          "ico": "00000000",
+          "ico": "",
           "box": ""
         }
       ],
@@ -135798,9 +135798,9 @@
     {
       "name": "RICHARD SOBOTKA, 1976",
       "ico": "00000000",
-      "contracts": 88,
-      "knownValueCzk": 117713433.1,
-      "valuedContracts": 68
+      "contracts": 87,
+      "knownValueCzk": 116877513.1,
+      "valuedContracts": 67
     },
     {
       "name": "IPODEC - ČISTÉ MĚSTO a.s.",
@@ -139923,6 +139923,13 @@
       "ico": "06827756",
       "contracts": 1,
       "knownValueCzk": 838380,
+      "valuedContracts": 1
+    },
+    {
+      "name": "TOMÁŠ KUČERA, 1970",
+      "ico": "",
+      "contracts": 1,
+      "knownValueCzk": 835920,
       "valuedContracts": 1
     },
     {
@@ -146964,14 +146971,14 @@
     "dateLabel": "celá historie Registru smluv",
     "knownValueCzk": 6861836355.369995,
     "valuedContracts": 5711,
-    "partners": 1598,
-    "updated": "2026-08-30T12:37:35.684Z",
+    "partners": 1599,
+    "updated": "2026-08-31T09:45:42.417Z",
     "source": "https://data.smlouvy.gov.cz/index.xml",
-    "method": "open-data-monthly-dumps-full-history",
+    "method": "open-data-monthly-dumps-incremental-all-entities-by-index-hash",
     "dumps": 124,
     "validation": {
       "status": "open-data-complete",
-      "note": "Načteny všechny aktuálně dostupné měsíční open-data dumpy bez chyby. Aktuální měsíční dump může být průběžný a nemusí v daný okamžik odpovídat živému vyhledávání 1:1."
+      "note": "Historický základ MČ Praha 8 i 40 navázaných subjektů se aktualizuje společně pouze z měsíčních dumpů, jejichž stav se změnil v oficiálním indexu Registru smluv."
     }
   }
 }

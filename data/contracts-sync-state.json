@@ -1,7 +1,8 @@
 {
-  "schema": 1,
-  "updated": "2026-08-30T12:37:41.363Z",
+  "schema": 2,
+  "updated": "2026-08-31T09:45:42.417Z",
   "source": "https://data.smlouvy.gov.cz/index.xml",
+  "scope": "municipality-plus-40-entities",
   "dumps": {
     "2016-05": {
       "hash": "bd007bea795b601fe8d497b9e487c56af52b2274",
@@ -816,9 +817,9 @@
       "url": "https://data.smlouvy.gov.cz/dump_2025_12.xml"
     },
     "2026-01": {
-      "hash": "973aaf11893caea833f71a70309387aa9070cd81",
+      "hash": "31a4b78936044c86dc4518f6effa9bddf955f61f",
       "size": 124209554,
-      "generated": "2026-08-28T06:14:16+02:00",
+      "generated": "2026-08-31T01:41:51+02:00",
       "complete": true,
       "url": "https://data.smlouvy.gov.cz/dump_2026_01.xml"
     },

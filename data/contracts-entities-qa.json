@@ -1,24 +1,69 @@
 {
-  "updated": "2026-08-30T14:16:44.018Z",
+  "updated": "2026-08-31T09:45:42.417Z",
   "meta": {
     "dumps": 124,
     "entities": 40,
     "organizations": 37,
     "companies": 3,
     "totalContracts": 7319,
-    "knownValueCzk": 5128667930.55,
+    "knownValueCzk": 5128667930.550001,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
-        "current": 6471,
-        "reference": null,
-        "referenceSource": null,
-        "delta": null
+        "current": 6471
       },
-      "note": "Stejný parser a stejné open-data dumpy jako u MČ Praha 8. smluvniStrana se nikdy nepoužívá jako fallback publikujícího subjektu."
+      "note": "MČ Praha 8 a všech 40 sledovaných organizací/firem se aktualizují z téhož změněného dumpu jedním stažením."
     }
   },
   "entities": [
+    {
+      "name": "Osmá servisní a.s.",
+      "ico": "24796590",
+      "kind": "company",
+      "type": "městská obchodní společnost",
+      "legalType": "obchodní společnost",
+      "ownershipShare": "100 %",
+      "source": "https://www.praha8.cz/Centrum-Palmovka-a-s.html",
+      "website": "https://www.osmaservisni.cz/",
+      "total": 15,
+      "partners": 5,
+      "knownValueCzk": 1087218.6,
+      "valuedContracts": 3,
+      "dateFrom": "2014-10-17",
+      "dateTo": "2026-06-09"
+    },
+    {
+      "name": "Osmá správa majetku a služeb a.s.",
+      "ico": "04650522",
+      "kind": "company",
+      "type": "městská obchodní společnost",
+      "legalType": "obchodní společnost",
+      "ownershipShare": "100 %",
+      "source": "https://www.praha8.cz/Osma-sprava-majetku-a-sluzeb-a-s",
+      "website": "https://www.osms.cz/",
+      "total": 1477,
+      "partners": 232,
+      "knownValueCzk": 1433339055.5000005,
+      "valuedContracts": 1195,
+      "dateFrom": "1999-09-14",
+      "dateTo": "2026-08-20"
+    },
+    {
+      "name": "Správa tepelného hospodářství MČ Praha 8 s.r.o.",
+      "ico": "04212371",
+      "kind": "company",
+      "type": "městská obchodní společnost",
+      "legalType": "obchodní společnost",
+      "ownershipShare": "100 %",
+      "source": "https://www.praha8.cz/Sprava-tepelneho-hospodarstvi-MC-Praha-8-s-r-o.html",
+      "website": "https://www.sthpraha8.cz/",
+      "total": 61,
+      "partners": 23,
+      "knownValueCzk": 8758475,
+      "valuedContracts": 6,
+      "dateFrom": "2017-10-10",
+      "dateTo": "2021-11-30"
+    },
     {
       "name": "Gerontologické centrum",
       "ico": "45250022",
@@ -30,7 +75,7 @@
       "website": "https://www.gerontocentrum.cz/",
       "total": 210,
       "partners": 76,
-      "knownValueCzk": 23103304.729999997,
+      "knownValueCzk": 23103304.73,
       "valuedContracts": 182,
       "dateFrom": "2005-10-31",
       "dateTo": "2026-08-27"
@@ -94,7 +139,7 @@
       "website": "http://www.mskorycanska.cz/",
       "total": 38,
       "partners": 27,
-      "knownValueCzk": 9215359.990000002,
+      "knownValueCzk": 9215359.99,
       "valuedContracts": 37,
       "dateFrom": "2017-07-02",
       "dateTo": "2026-08-05"
@@ -158,7 +203,7 @@
       "website": "http://www.mslibcicka.cz/",
       "total": 37,
       "partners": 23,
-      "knownValueCzk": 3929097.6399999997,
+      "knownValueCzk": 3929097.64,
       "valuedContracts": 35,
       "dateFrom": "2017-09-19",
       "dateTo": "2026-06-29"
@@ -238,7 +283,7 @@
       "website": "http://www.msresovska.cz/",
       "total": 29,
       "partners": 18,
-      "knownValueCzk": 4762120.329999999,
+      "knownValueCzk": 4762120.33,
       "valuedContracts": 28,
       "dateFrom": "2017-12-07",
       "dateTo": "2026-06-01"
@@ -286,7 +331,7 @@
       "website": "http://www.mssiskova.cz/",
       "total": 21,
       "partners": 13,
-      "knownValueCzk": 4071248.98,
+      "knownValueCzk": 4071248.9799999995,
       "valuedContracts": 21,
       "dateFrom": "2015-01-22",
       "dateTo": "2026-06-30"
@@ -324,38 +369,6 @@
       "dateTo": "2025-02-24"
     },
     {
-      "name": "Osmá servisní a.s.",
-      "ico": "24796590",
-      "kind": "company",
-      "type": "městská obchodní společnost",
-      "legalType": "obchodní společnost",
-      "ownershipShare": "100 %",
-      "source": "https://www.praha8.cz/Centrum-Palmovka-a-s.html",
-      "website": "https://www.osmaservisni.cz/",
-      "total": 15,
-      "partners": 5,
-      "knownValueCzk": 1087218.6,
-      "valuedContracts": 3,
-      "dateFrom": "2014-10-17",
-      "dateTo": "2026-06-09"
-    },
-    {
-      "name": "Osmá správa majetku a služeb a.s.",
-      "ico": "04650522",
-      "kind": "company",
-      "type": "městská obchodní společnost",
-      "legalType": "obchodní společnost",
-      "ownershipShare": "100 %",
-      "source": "https://www.praha8.cz/Osma-sprava-majetku-a-sluzeb-a-s",
-      "website": "https://www.osms.cz/",
-      "total": 1477,
-      "partners": 232,
-      "knownValueCzk": 1433339055.5000012,
-      "valuedContracts": 1195,
-      "dateFrom": "1999-09-14",
-      "dateTo": "2026-08-20"
-    },
-    {
       "name": "Osmička pro rodinu",
       "ico": "04387031",
       "kind": "organization",
@@ -382,7 +395,7 @@
       "website": "https://www.praha8.cz/servisni-stredisko-pro-spravu-svereneho-majetku-mc-praha-8-prispevkova-organizace.html",
       "total": 1768,
       "partners": 354,
-      "knownValueCzk": 2976997882.1899986,
+      "knownValueCzk": 2976997882.19,
       "valuedContracts": 1691,
       "dateFrom": "1991-07-15",
       "dateTo": "2026-08-25"
@@ -404,22 +417,6 @@
       "dateTo": "2026-07-15"
     },
     {
-      "name": "Správa tepelného hospodářství MČ Praha 8 s.r.o.",
-      "ico": "04212371",
-      "kind": "company",
-      "type": "městská obchodní společnost",
-      "legalType": "obchodní společnost",
-      "ownershipShare": "100 %",
-      "source": "https://www.praha8.cz/Sprava-tepelneho-hospodarstvi-MC-Praha-8-s-r-o.html",
-      "website": "https://www.sthpraha8.cz/",
-      "total": 61,
-      "partners": 23,
-      "knownValueCzk": 8758475,
-      "valuedContracts": 6,
-      "dateFrom": "2017-10-10",
-      "dateTo": "2021-11-30"
-    },
-    {
       "name": "Základní škola a mateřská škola Na Slovance, Praha 8, Bedřichovská 1",
       "ico": "60433256",
       "kind": "organization",
@@ -430,7 +427,7 @@
       "website": "http://www.zsnaslovance.cz/",
       "total": 197,
       "partners": 86,
-      "knownValueCzk": 32811501.169999998,
+      "knownValueCzk": 32811501.17,
       "valuedContracts": 109,
       "dateFrom": "2016-11-14",
       "dateTo": "2026-06-22"
@@ -446,7 +443,7 @@
       "website": "http://www.zs-strozziho.cz/",
       "total": 226,
       "partners": 79,
-      "knownValueCzk": 38955628.760000005,
+      "knownValueCzk": 38955628.76,
       "valuedContracts": 211,
       "dateFrom": "2016-10-26",
       "dateTo": "2026-08-18"
@@ -542,7 +539,7 @@
       "website": "http://www.mazurska.cz/",
       "total": 162,
       "partners": 75,
-      "knownValueCzk": 32898934.9,
+      "knownValueCzk": 32898934.900000002,
       "valuedContracts": 140,
       "dateFrom": "0006-01-21",
       "dateTo": "2026-07-21"
@@ -574,7 +571,7 @@
       "website": "http://www.glowackeho.eu/",
       "total": 155,
       "partners": 99,
-      "knownValueCzk": 32734430.88,
+      "knownValueCzk": 32734430.879999995,
       "valuedContracts": 122,
       "dateFrom": "2016-10-10",
       "dateTo": "2026-06-23"
@@ -606,7 +603,7 @@
       "website": "http://www.zslibcicka.cz/",
       "total": 170,
       "partners": 76,
-      "knownValueCzk": 29688928.200000003,
+      "knownValueCzk": 29688928.199999996,
       "valuedContracts": 163,
       "dateFrom": "0025-09-03",
       "dateTo": "2026-08-11"
@@ -622,7 +619,7 @@
       "website": "http://www.zssutka.cz/",
       "total": 158,
       "partners": 70,
-      "knownValueCzk": 30776244.400000002,
+      "knownValueCzk": 30776244.4,
       "valuedContracts": 148,
       "dateFrom": "2016-10-11",
       "dateTo": "2026-07-09"
@@ -654,14 +651,13 @@
       "website": "http://www.zernosecka.cz/",
       "total": 259,
       "partners": 104,
-      "knownValueCzk": 51010846.819999985,
+      "knownValueCzk": 51010846.82,
       "valuedContracts": 217,
       "dateFrom": "2016-08-04",
       "dateTo": "2026-08-26"
     }
   ],
   "p8": {
-    "total": 6471,
-    "reference": null
+    "total": 6471
   }
 }
