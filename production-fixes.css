@@ -26,14 +26,17 @@
 }
 .home-principle{border-bottom:0!important}
 
-/* Sčítání a Novinky: titul a pravý odkaz sdílejí stejný gridový řádek a textovou baseline. */
+/* Sčítání a Novinky: titul a pravý odkaz sdílejí stejnou textovou baseline.
+   Gridové řádky se nesmí roztahovat do výšky karty – držíme původní kompaktní rytmus. */
 @media(min-width:851px){
   .census-home-strip{
     display:grid!important;
     grid-template-columns:minmax(0,1fr) auto!important;
-    grid-template-rows:auto auto auto!important;
+    grid-template-rows:max-content max-content max-content!important;
     column-gap:32px!important;
+    row-gap:8px!important;
     align-items:start!important;
+    align-content:start!important;
   }
   .census-home-strip>div{display:contents!important}
   .census-home-strip .kicker{
@@ -48,7 +51,7 @@
   .census-home-strip>div>span{
     grid-column:1!important;
     grid-row:3!important;
-    margin-top:-8px!important;
+    margin-top:0!important;
   }
   .census-home-strip>b{
     grid-column:2!important;
@@ -59,9 +62,11 @@
   .news-home-head{
     display:grid!important;
     grid-template-columns:minmax(0,1fr) auto!important;
-    grid-template-rows:auto auto!important;
+    grid-template-rows:max-content max-content!important;
     column-gap:32px!important;
+    row-gap:8px!important;
     align-items:start!important;
+    align-content:start!important;
   }
   .news-home-head>div{display:contents!important}
   .news-home-head .kicker{
