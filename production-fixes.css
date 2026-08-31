@@ -18,6 +18,9 @@
 .no-mandate span b{margin-right:.28em}
 
 /* Homepage */
+.news-home-head{
+  align-items:center!important;
+}
 .news-home-head>a{font-weight:700!important}
 .hero>.kicker{
   font-size:14px;
