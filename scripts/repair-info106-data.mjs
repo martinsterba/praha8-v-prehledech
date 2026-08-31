@@ -10,12 +10,12 @@ function cleanTitle(value=''){
 
   // Starý parser četl pevný kus HTML za aktuálním odkazem, takže se do názvu
   // často přilepilo datum a jedna či více následujících žádostí.
-  const stripLead=()=>{
-    text=text.replace(/^\d{1,2}\.\s*\d{1,2}\.\s*20\d{2}\s*/,'');
-    text=text.replace(/^Žádost\s+o\s+poskytnutí\s+informace\s+20\d{2}\s*/i,'');
-    text=text.replace(/^\d{1,2}\.\s*\d{1,2}\.\s*20\d{2}\s*/,'');
-  };
-  stripLead();
+  text=text.replace(/^\d{1,2}\.\s*\d{1,2}\.\s*20\d{2}\s*/,'');
+
+  // U části starších záznamů se do názvu propsal i obecný nadpis položky.
+  // Odstraňujeme ho jen tehdy, když za ním bezprostředně následuje datum.
+  text=text.replace(/^Žádost\s+o\s+poskytnutí\s+informac[^\s]*\s+20\d{2}\s+(?=\d{1,2}\.\s*\d{1,2}\.\s*20\d{2})/iu,'');
+  text=text.replace(/^\d{1,2}\.\s*\d{1,2}\.\s*20\d{2}\s*/,'');
 
   const firstRequest=text.search(/Žádost\s+o\s+(?:poskytnutí\s+)?informac(?:i|e|í)\b/i);
   if(firstRequest>0)text=text.slice(firstRequest);
@@ -50,7 +50,9 @@ for(const row of rows){
   const after=cleanTitle(before);
   if(after&&after!==before){row.title=after;changed++}
   const current=String(row.title||'');
-  if(/Žádost\s+o\s+poskytnutí\s+informace\s+20\d{2}.*Žádost\s+o\s+/i.test(current) || /^\d{1,2}\.\s*\d{1,2}\.\s*20\d{2}/.test(current))bad.push(current);
+  const startsWithDate=/^\d{1,2}\.\s*\d{1,2}\.\s*20\d{2}/.test(current);
+  const gluedNext=/Žádost\s+o\s+poskytnutí\s+informace\s+20\d{2}\s+\d{1,2}\.\s*\d{1,2}\.\s*20\d{2}\s+Žádost\s+o\s+/i.test(current);
+  if(startsWithDate||gluedNext)bad.push(current);
 }
 
 if(bad.length){
