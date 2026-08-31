@@ -48,6 +48,7 @@
   .census-home-strip>div>span{
     grid-column:1!important;
     grid-row:3!important;
+    margin-top:-8px!important;
   }
   .census-home-strip>b{
     grid-column:2!important;
