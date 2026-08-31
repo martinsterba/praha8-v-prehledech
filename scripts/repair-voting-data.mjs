@@ -5,10 +5,39 @@ import puppeteer from 'puppeteer-core';
 
 const root=resolve(import.meta.dirname,'..');
 const DATA=resolve(root,'data','hlasovani.json');
-const UA='Praha8-v-prehledech/3.0.18 (+public-data-indexer; public sources only)';
+const UA='Praha8-v-prehledech/3.0.19 (+public-data-indexer; public sources only)';
 
-const PARTY_RE=/(?:^|\b)(?:Česká pirátská strana|Piráti|SPD|Trikolora(?: pro Osmičku)?|ODS|ANO(?: 2011)?|TOP ?09|STAN|KDU-ČSL|ČSSD|SOCDEM|KSČM|Zelení|Praha sobě|Osmička žije|8ŽIJE|Svobodní|Starostové|PATRIOTI|Společně pro Prahu|politická strana|politické hnutí)(?:\b|$)/iu;
-const badVoteName=s=>!s||PARTY_RE.test(String(s||'').trim())||!/\s/.test(String(s).trim());
+// Kontrolujeme celé normalizované názvy stran, ne podřetězce. Předchozí varianta
+// s \bSTAN\b chybně označovala např. skutečné jméno „Martin Staněk“ jako stranu.
+const partyKey=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
+const PARTY_NAMES=new Set([
+  'Ceska piratska strana',
+  'Piratska strana',
+  'Pirati',
+  'SPD a Trikolora pro Osmicku',
+  'SPD',
+  'Trikolora pro Osmicku',
+  'Obcanska demokraticka strana',
+  'ODS',
+  'ANO 2011',
+  'ANO',
+  'TOP 09',
+  'STAN',
+  'KDU CSL',
+  'CSSD',
+  'SOCDEM',
+  'KSCM',
+  'Zeleni',
+  'Praha sobe',
+  '8ZIJE a PRAHA SOBE',
+  'Osmicka zije',
+  'Svobodni',
+  'Starostove',
+  'PATRIOTI',
+  'Spolecne pro Prahu 8'
+].map(partyKey));
+const partyLike=s=>PARTY_NAMES.has(partyKey(s));
+const badVoteName=s=>!s||partyLike(s)||!/\s/.test(String(s).trim());
 
 function findChrome(){
   const candidates=[
@@ -52,8 +81,6 @@ async function parsePage(page,url){
     if(!/Výsledek hlasování/i.test(text))return {ok:false,reason:'stránka neobsahuje výsledek hlasování',rows:[]};
     const rows=[];
     for(const row of document.querySelectorAll('tr')){
-      // Prázdné buňky zachováváme pro strukturální orientaci; rozhodující jsou
-      // poslední tři významové sloupce: jméno | strana | hlas.
       const cells=[...row.querySelectorAll('td,th')].map(x=>tidy(x.innerText));
       const vi=cells.findIndex(x=>VOTE_RE.test(x));
       if(vi<0)continue;
