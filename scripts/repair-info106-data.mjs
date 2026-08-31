@@ -10,7 +10,12 @@ function cleanTitle(value=''){
 
   // Starý parser četl pevný kus HTML za aktuálním odkazem, takže se do názvu
   // často přilepilo datum a jedna či více následujících žádostí.
-  text=text.replace(/^\d{1,2}\.\s*\d{1,2}\.\s*20\d{2}\s*/,'');
+  const stripLead=()=>{
+    text=text.replace(/^\d{1,2}\.\s*\d{1,2}\.\s*20\d{2}\s*/,'');
+    text=text.replace(/^Žádost\s+o\s+poskytnutí\s+informace\s+20\d{2}\s*/i,'');
+    text=text.replace(/^\d{1,2}\.\s*\d{1,2}\.\s*20\d{2}\s*/,'');
+  };
+  stripLead();
 
   const firstRequest=text.search(/Žádost\s+o\s+(?:poskytnutí\s+)?informac(?:i|e|í)\b/i);
   if(firstRequest>0)text=text.slice(firstRequest);
@@ -39,15 +44,20 @@ const rows=JSON.parse(await readFile(file,'utf8'));
 if(!Array.isArray(rows))throw new Error('data/info106.json není pole.');
 
 let changed=0;
-let suspicious=0;
+const bad=[];
 for(const row of rows){
   const before=String(row.title||'');
   const after=cleanTitle(before);
   if(after&&after!==before){row.title=after;changed++}
-  if(/Žádost\s+o\s+poskytnutí\s+informace\s+20\d{2}.*Žádost\s+o\s+/i.test(String(row.title||'')) || /^\d{1,2}\.\s*\d{1,2}\.\s*20\d{2}/.test(String(row.title||'')))suspicious++;
+  const current=String(row.title||'');
+  if(/Žádost\s+o\s+poskytnutí\s+informace\s+20\d{2}.*Žádost\s+o\s+/i.test(current) || /^\d{1,2}\.\s*\d{1,2}\.\s*20\d{2}/.test(current))bad.push(current);
 }
 
-if(suspicious)throw new Error(`Po opravě zůstalo ${suspicious} podezřelých slepených názvů.`);
+if(bad.length){
+  console.error('Podezřelé názvy po opravě:');
+  for(const title of bad.slice(0,10))console.error('-',title);
+  throw new Error(`Po opravě zůstalo ${bad.length} podezřelých slepených názvů.`);
+}
 
 await writeFile(file,JSON.stringify(rows,null,2)+'\n');
 console.log(`106: zkontrolováno ${rows.length} žádostí, upraveno ${changed} názvů, podezřelých zůstává 0.`);
