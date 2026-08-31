@@ -3,9 +3,11 @@
   .election-year>.section-head{
     display:grid!important;
     grid-template-columns:minmax(0,1fr) auto!important;
-    grid-template-rows:auto auto!important;
+    grid-template-rows:max-content max-content!important;
     column-gap:32px!important;
+    row-gap:8px!important;
     align-items:start!important;
+    align-content:start!important;
   }
   .election-year>.section-head>div:first-child,
   .election-year>.section-head>.election-year-side{
