@@ -1,5 +1,7 @@
 (()=>{
   const SITE_NAME='Praha 8 v přehledech';
+  const SITE_URL='https://praha8vprehledech.cz/';
+  const SHARE_IMAGE='https://praha8vprehledech.cz/thumb.jpg';
   const DESCRIPTION='Usnesení, hlasování, rozpočet, organizace a další veřejné informace. Na jednom místě, s dohledatelným zdrojem a bez nutnosti procházet desítky dokumentů.';
   const TITLES={
     '#/usneseni':'Usnesení a hlasování',
@@ -24,6 +26,16 @@
     if(el&&el.getAttribute(attr)!==value)el.setAttribute(attr,value);
   }
 
+  function setCanonical(){
+    let el=document.querySelector('link[rel="canonical"]');
+    if(!el){
+      el=document.createElement('link');
+      el.rel='canonical';
+      document.head.appendChild(el);
+    }
+    if(el.href!==SITE_URL)el.href=SITE_URL;
+  }
+
   function pageLabel(){
     const hash=location.hash.split('?')[0];
     if(!hash||hash==='#'||hash==='#/')return '';
@@ -37,11 +49,15 @@
     const title=label?`${SITE_NAME} – ${label}`:SITE_NAME;
     if(document.title!==title)document.title=title;
 
+    setCanonical();
     setMeta('meta[name="description"]','content',DESCRIPTION);
+    setMeta('meta[property="og:url"]','content',SITE_URL);
     setMeta('meta[property="og:title"]','content',title);
     setMeta('meta[property="og:description"]','content',DESCRIPTION);
+    setMeta('meta[property="og:image"]','content',SHARE_IMAGE);
     setMeta('meta[name="twitter:title"]','content',title);
     setMeta('meta[name="twitter:description"]','content',DESCRIPTION);
+    setMeta('meta[name="twitter:image"]','content',SHARE_IMAGE);
   }
 
   let queued=false;
