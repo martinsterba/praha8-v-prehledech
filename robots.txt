@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://praha8vprehledech.cz/sitemap.xml
