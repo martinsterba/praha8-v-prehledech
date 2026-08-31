@@ -52,6 +52,21 @@
     return group?.querySelector('.status-group-head h3')?.textContent?.trim()||'';
   }
 
+  function normalizeVotingCard(app){
+    for(const el of app.querySelectorAll('.status-card-title')){
+      const text=el.textContent.trim();
+      if(text!=='Usnesení'&&text!=='Hlasování'&&text!=='Výsledek hlasování')continue;
+
+      // production-fixes upravuje mezititulky hlasování na stránce usnesení.
+      // Na stránce Datové zdroje ale musí jít o běžný název karty „Hlasování“.
+      // Vložený span zároveň zabrání obecné opravě mezititulků, aby tuto kartu znovu nepřepsala.
+      if(text!=='Hlasování'||el.classList.contains('voting-mini-heading')||el.children.length===0){
+        el.classList.remove('voting-mini-heading');
+        el.innerHTML='<span>Hlasování</span>';
+      }
+    }
+  }
+
   async function polish(){
     if(location.hash.split('?')[0]!=='#/zdroje')return;
     if(running){rerun=true;return}
@@ -61,18 +76,7 @@
       const app=document.querySelector('#app');
       if(!app)return;
 
-      // Hlasování má v datových zdrojích jediný název „Hlasování“ a stejnou
-      // typografii jako ostatní názvy zdrojů. Starší prezentační oprava z něj
-      // dělala mezititulek „Výsledek hlasování“, což na této stránce nechceme.
-      app.querySelectorAll('.status-card').forEach(card=>{
-        const titleEl=card.querySelector('.status-card-title');
-        if(!titleEl)return;
-        const title=titleEl.textContent.replace(/\s+/g,' ').trim();
-        if(title==='Usnesení'||title==='Výsledek hlasování'){
-          titleEl.textContent='Hlasování';
-          titleEl.classList.remove('voting-mini-heading');
-        }
-      });
+      normalizeVotingCard(app);
 
       app.querySelectorAll('.status-card').forEach(card=>{
         const titleEl=card.querySelector('.status-card-title');
