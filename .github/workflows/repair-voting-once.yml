@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'scripts/repair-voting-data.mjs'
+      - 'scripts/repair-voting-matches.mjs'
       - '.github/workflows/repair-voting-once.yml'
   workflow_dispatch:
 
@@ -29,8 +30,22 @@ jobs:
       - name: Nainstalovat závislosti
         run: npm ci
 
-      - name: Opravit hlasovací data
+      - name: Opravit jména v hlasovacích datech
         run: node scripts/repair-voting-data.mjs
+
+      - name: Doplnit bezpečné párování s usneseními
+        run: node scripts/repair-voting-matches.mjs
+
+      - name: Ověřit, že názvy stran nejsou vydávány za osoby
+        run: |
+          node - <<'NODE'
+          const fs=require('fs');
+          const rows=JSON.parse(fs.readFileSync('data/hlasovani.json','utf8'));
+          const re=/(Česká pirátská strana|SPD a Trikolora pro Osmičku)/i;
+          const bad=rows.flatMap(v=>(v.votes||[]).filter(x=>re.test(x.name||'')).map(x=>`${v.date} #${v.number}: ${x.name}`));
+          console.log(`Podezřelých jmen: ${bad.length}`);
+          if(bad.length){console.error(bad.slice(0,20).join('\n'));process.exit(1)}
+          NODE
 
       - name: Uložit opravená data
         run: |
