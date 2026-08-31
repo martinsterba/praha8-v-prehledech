@@ -18,19 +18,71 @@
 .no-mandate span b{margin-right:.28em}
 
 /* Homepage */
-.news-home-head{
-  align-items:flex-end!important;
-}
-.news-home-head>a{
-  font-weight:700!important;
-  transform:translateY(-6px);
-}
+.news-home-head>a{font-weight:700!important}
 .hero>.kicker{
   font-size:14px;
   transform:translateY(-8px);
   margin-bottom:8px;
 }
 .home-principle{border-bottom:0!important}
+
+/*
+  Sčítání a Novinky mají na desktopu stejnou logiku:
+  1. řádek = kicker,
+  2. řádek = hlavní titulek + odkaz vpravo,
+  3. řádek = doplňkový text (jen Sčítání).
+  Odkazy jsou tedy zarovnané skutečným gridovým řádkem, ne ručním posunem v pixelech.
+*/
+@media(min-width:851px){
+  .census-home-strip{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr) auto!important;
+    grid-template-rows:auto auto auto!important;
+    column-gap:32px!important;
+    align-items:center!important;
+  }
+  .census-home-strip>div{display:contents!important}
+  .census-home-strip .kicker{
+    grid-column:1!important;
+    grid-row:1!important;
+  }
+  .census-home-strip strong{
+    grid-column:1!important;
+    grid-row:2!important;
+  }
+  .census-home-strip>div>span{
+    grid-column:1!important;
+    grid-row:3!important;
+  }
+  .census-home-strip>b{
+    grid-column:2!important;
+    grid-row:2!important;
+    align-self:center!important;
+  }
+
+  .news-home-head{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr) auto!important;
+    grid-template-rows:auto auto!important;
+    column-gap:32px!important;
+    align-items:center!important;
+  }
+  .news-home-head>div{display:contents!important}
+  .news-home-head .kicker{
+    grid-column:1!important;
+    grid-row:1!important;
+  }
+  .news-home-head strong{
+    grid-column:1!important;
+    grid-row:2!important;
+  }
+  .news-home-head>a{
+    grid-column:2!important;
+    grid-row:2!important;
+    align-self:center!important;
+    transform:none!important;
+  }
+}
 
 /* Na konci stránky necháváme jen horní čáru patičky, ne druhou čáru poslední sekce. */
 #app .wrap>section.section:last-of-type{border-bottom:0!important}
@@ -113,7 +165,6 @@
 .school-source-note.production-data-note>div+div{margin-top:4px}
 
 @media(max-width:850px){
-  .news-home-head>a{transform:none}
   .mobile-menu-toggle{display:grid;place-items:center;order:3}
   .topbar .search-open{order:2;margin-left:auto}
   .topbar .brand{order:1;min-width:0;overflow:hidden;text-overflow:ellipsis}
