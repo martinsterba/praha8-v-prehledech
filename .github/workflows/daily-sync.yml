@@ -3,6 +3,8 @@ name: "🌙 Denní aktualizace"
 on:
   workflow_dispatch:
   schedule:
+    # 03:10 UTC = 05:10 v Praze při letním čase (CEST).
+    # V zimním čase poběží v 04:10; GitHub cron neumí automaticky přepínat CET/CEST.
     - cron: "10 3 * * *"
 
 permissions:
@@ -35,7 +37,9 @@ jobs:
       - name: "Denní zdroje Prahy 8"
         env:
           PUPPETEER_EXECUTABLE_PATH: ${{ steps.chrome.outputs.chrome-path }}
-        run: node scripts/sync-praha8.mjs --usneseni-incremental --info106 --noticeboard --news --fast
+        run: |
+          node scripts/sync-praha8.mjs --usneseni-incremental --info106 --noticeboard --news --fast
+          node scripts/repair-info106-data.mjs
       - name: "Hlasování ZMČ – nová zasedání"
         env:
           PUPPETEER_EXECUTABLE_PATH: ${{ steps.chrome.outputs.chrome-path }}
@@ -53,7 +57,9 @@ jobs:
           NODE
       - name: "Registr smluv – nové změny"
         if: steps.contracts.outputs.ready == 'true'
-        run: npm run sync:contracts:new
+        run: |
+          npm run sync:contracts:new
+          node scripts/repair-source-status.mjs contracts
       - name: "Ověřit JSON datasety"
         run: |
           node --input-type=module <<'NODE'
