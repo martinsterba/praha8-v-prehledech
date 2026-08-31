@@ -3,9 +3,9 @@ name: "📅 Týdenní aktualizace"
 on:
   workflow_dispatch:
   schedule:
-    # Neděle 04:20 v Praze při letním čase (02:20 UTC).
-    # Přes zimní čas poběží v 03:20 místního času, což provozně nevadí.
-    - cron: "20 2 * * 0"
+    # Pondělí 05:20 v Praze při letním čase (03:20 UTC).
+    # V zimním čase poběží v 04:20; GitHub cron neumí automaticky přepínat CET/CEST.
+    - cron: "20 3 * * 1"
 
 permissions:
   contents: write
@@ -23,6 +23,8 @@ jobs:
     steps:
       - name: "Načíst repozitář"
         uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
 
       - name: "Nastavit Node.js"
         uses: actions/setup-node@v5
@@ -71,11 +73,17 @@ jobs:
       - name: "Uložit aktualizovaná data"
         if: steps.changes.outputs.changed == 'true'
         run: |
+          set -euo pipefail
           git config user.name "Praha 8 v přehledech – automat"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/
           git commit -m "Týdenní aktualizace dat"
-          git push
+          for attempt in 1 2 3; do
+            git pull --rebase origin main
+            if git push origin HEAD:main; then exit 0; fi
+            if [ "$attempt" -lt 3 ]; then sleep 5; fi
+          done
+          exit 1
 
       - name: "Souhrn"
         if: always()
