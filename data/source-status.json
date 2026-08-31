@@ -92,8 +92,8 @@
   },
   "census2021": {
     "status": "data načtena",
-    "count": 1,
-    "updated": "2026-08-23",
+    "count": 9,
+    "updated": "2026-08-31T14:00:44.997Z",
     "mode": "aktualizováno"
   },
   "news": {

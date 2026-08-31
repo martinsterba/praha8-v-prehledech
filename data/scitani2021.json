@@ -5,7 +5,7 @@
     "territory": "Praha 8",
     "territoryCode": "500208",
     "territoryTypeCode": "44",
-    "updated": "2026-08-23",
+    "updated": "2026-08-31T14:00:44.997Z",
     "source": "Český statistický úřad – Sčítání 2021",
     "sourceUrl": "https://csu.gov.cz/produkty/vysledky-scitani-2021-otevrena-data",
     "note": "Obyvatelstvo je uváděno podle obvyklého pobytu."
@@ -115,27 +115,6 @@
       }
     ]
   },
-  "housing": {
-    "housesTotal": 6230,
-    "housesOccupied": 5896,
-    "familyHousesOccupied": 2907,
-    "apartmentHousesOccupied": 2792,
-    "otherBuildingsOccupied": 197,
-    "flatsTotal": 59449,
-    "flatsOccupied": 52307,
-    "flatsUnoccupied": 7142
-  },
-  "datasets": [
-    "Obyvatelstvo podle pohlaví",
-    "Obyvatelstvo podle věkových skupin",
-    "Obyvatelstvo podle pětiletých věkových skupin a pohlaví",
-    "Obyvatelstvo podle vzdělání",
-    "Obyvatelstvo podle ekonomické aktivity a pohlaví",
-    "Hospodařící domácnosti podle velikosti a typu domácnosti",
-    "Vyjíždějící do zaměstnání a školy podle hlavního dopravního prostředku",
-    "Domy podle obydlenosti a druhu domu",
-    "Byty podle obydlenosti"
-  ],
   "education": {
     "population15plus": 90123,
     "groups": [
@@ -278,5 +257,26 @@
         "value": 103
       }
     ]
-  }
+  },
+  "housing": {
+    "housesTotal": 6230,
+    "housesOccupied": 5896,
+    "familyHousesOccupied": 2907,
+    "apartmentHousesOccupied": 2792,
+    "otherBuildingsOccupied": 197,
+    "flatsTotal": 59449,
+    "flatsOccupied": 52307,
+    "flatsUnoccupied": 7142
+  },
+  "datasets": [
+    "Obyvatelstvo podle pohlaví",
+    "Obyvatelstvo podle věkových skupin",
+    "Obyvatelstvo podle pětiletých věkových skupin a pohlaví",
+    "Obyvatelstvo podle vzdělání",
+    "Obyvatelstvo podle ekonomické aktivity a pohlaví",
+    "Hospodařící domácnosti podle velikosti a typu domácnosti",
+    "Vyjíždějící do zaměstnání a školy podle hlavního dopravního prostředku",
+    "Domy podle obydlenosti a druhu domu",
+    "Byty podle obydlenosti"
+  ]
 }
