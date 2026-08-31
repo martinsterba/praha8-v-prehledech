@@ -42,10 +42,10 @@
     "mode": "aktualizováno"
   },
   "budgetOpenData": {
-    "status": "čeká na naplnění",
-    "count": 0,
-    "updated": null,
-    "mode": "nenačteno"
+    "status": "data načtena",
+    "count": 2,
+    "updated": "2026-08-30T10:56:09.000Z",
+    "mode": "aktualizováno"
   },
   "socialServicesOpenData": {
     "status": "čeká na naplnění",
@@ -91,10 +91,10 @@
     "mode": "aktualizováno"
   },
   "census2021": {
-    "status": "čeká na naplnění",
-    "count": 0,
-    "updated": null,
-    "mode": "nenačteno"
+    "status": "data načtena",
+    "count": 1,
+    "updated": "2026-08-23",
+    "mode": "aktualizováno"
   },
   "news": {
     "status": "data načtena",
@@ -105,7 +105,13 @@
   "contracts": {
     "status": "data načtena",
     "count": 6471,
-    "updated": "2026-08-30T12:37:39.891Z",
+    "updated": "2026-08-31T09:45:41.193Z",
+    "mode": "aktualizováno"
+  },
+  "contractEntities": {
+    "status": "data načtena",
+    "count": 7303,
+    "updated": "2026-08-31T09:45:41.193Z",
     "mode": "aktualizováno"
   }
 }
