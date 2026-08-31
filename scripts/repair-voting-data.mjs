@@ -1,32 +1,25 @@
 import {readFile,writeFile,rename} from 'node:fs/promises';
+import {existsSync} from 'node:fs';
 import {resolve} from 'node:path';
+import puppeteer from 'puppeteer-core';
 
 const root=resolve(import.meta.dirname,'..');
 const DATA=resolve(root,'data','hlasovani.json');
-const UA='Praha8-v-prehledech/3.0.17 (+public-data-indexer; public sources only)';
+const UA='Praha8-v-prehledech/3.0.18 (+public-data-indexer; public sources only)';
 
 const PARTY_RE=/(?:^|\b)(?:Česká pirátská strana|Piráti|SPD|Trikolora(?: pro Osmičku)?|ODS|ANO(?: 2011)?|TOP ?09|STAN|KDU-ČSL|ČSSD|SOCDEM|KSČM|Zelení|Praha sobě|Osmička žije|8ŽIJE|Svobodní|Starostové|PATRIOTI|Společně pro Prahu|politická strana|politické hnutí)(?:\b|$)/iu;
-const VOTE_RE=/^(PRO|PROTI|ZDRŽEL(?:A)? SE|NEHLASOVAL(?:A)?|NEPŘÍTOMEN|NEPŘÍTOMNA)$/iu;
-const NAME_RE=/^[\p{L}][\p{L}.'’\-]*(?:\s+[\p{L}][\p{L}.'’\-]*){1,7}(?:,?\s+(?:DiS\.?|MBA|MPA|Ph\.D\.|CSc\.|DBA|LL\.M\.))?$/u;
+const badVoteName=s=>!s||PARTY_RE.test(String(s||'').trim())||!/\s/.test(String(s).trim());
 
-const clean=s=>String(s||'').replace(/<script[\s\S]*?<\/script>/gi,' ').replace(/<style[\s\S]*?<\/style>/gi,' ').replace(/<[^>]+>/g,' ').replace(/&nbsp;|&#160;/gi,' ').replace(/&amp;/gi,'&').replace(/&quot;/gi,'"').replace(/&#39;|&apos;/gi,"'").replace(/\s+/g,' ').trim();
-const normalizeVote=v=>{
-  const x=String(v||'').toUpperCase().trim();
-  if(x==='PRO')return 'PRO';
-  if(x==='PROTI')return 'PROTI';
-  if(/^ZDRŽEL/.test(x))return 'ZDRŽEL SE';
-  if(/^NEHLASOVAL/.test(x))return 'NEHLASOVAL';
-  if(/^NEPŘÍTOM/.test(x))return 'NEPŘÍTOMEN';
-  return x;
-};
-const normalizeName=s=>String(s||'').replace(/\s+/g,' ').replace(/\s+,/g,',').trim();
-const partyLike=s=>PARTY_RE.test(String(s||'').trim());
-const badVoteName=s=>!s||partyLike(s)||!/\s/.test(String(s).trim());
-
-async function fetchText(url){
-  const r=await fetch(url,{headers:{'user-agent':UA,accept:'text/html,*/*'},signal:AbortSignal.timeout(45000)});
-  if(!r.ok)throw new Error(`${r.status} ${url}`);
-  return r.text();
+function findChrome(){
+  const candidates=[
+    process.env.PUPPETEER_EXECUTABLE_PATH,
+    '/usr/bin/google-chrome','/usr/bin/google-chrome-stable','/usr/bin/chromium','/usr/bin/chromium-browser',
+    '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+    '/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge'
+  ].filter(Boolean);
+  const hit=candidates.find(existsSync);
+  if(!hit)throw new Error('Nenašel jsem Chrome/Chromium pro opravu hlasovacích dat.');
+  return hit;
 }
 
 function deriveHtmlUrl(vote){
@@ -40,64 +33,77 @@ function deriveHtmlUrl(vote){
   return '';
 }
 
-function parseRows(html){
-  const rows=[];
-  for(const rm of html.matchAll(/<tr\b[^>]*>([\s\S]*?)<\/tr>/gi)){
-    const cells=[...rm[1].matchAll(/<(?:td|th)\b[^>]*>([\s\S]*?)<\/(?:td|th)>/gi)].map(m=>clean(m[1])).filter(Boolean);
-    const vi=cells.findIndex(x=>VOTE_RE.test(x));
-    if(vi<0)continue;
-
-    // Oficiální export má sloupce … | Titul Jméno Příjmení | Strana | Hlasoval(a).
-    // Předchozí parser hledal první text podobný jménu a u víceslovných názvů stran
-    // tak zaměňoval např. „Česká pirátská strana“ za zastupitele.
-    const party=vi>=1?normalizeName(cells[vi-1]):'';
-    let name=vi>=2?normalizeName(cells[vi-2]):'';
-
-    // U starších variant tabulky může být mezi jménem a stranou prázdný či pomocný sloupec.
-    // Fallback proto hledá pouze vlevo OD sloupce strany, nikdy v něm.
-    if(!NAME_RE.test(name)||partyLike(name)||/^\d+$/.test(name)){
-      const left=cells.slice(0,Math.max(0,vi-1)).map(normalizeName).filter(Boolean);
-      name=[...left].reverse().find(x=>NAME_RE.test(x)&&!partyLike(x)&&!/^\d+$/.test(x))||'';
+async function parsePage(page,url){
+  const response=await page.goto(url,{waitUntil:'domcontentloaded',timeout:30000});
+  const status=response?.status()||0;
+  if(status>=400)throw new Error(`${status} ${url}`);
+  return page.evaluate(()=>{
+    const VOTE_RE=/^(PRO|PROTI|ZDRŽEL(?:A)? SE|NEHLASOVAL(?:A)?|NEPŘÍTOMEN|NEPŘÍTOMNA)$/iu;
+    const tidy=s=>String(s||'').replace(/\s+/g,' ').trim();
+    const normalizeVote=v=>{
+      const x=tidy(v).toUpperCase();
+      if(x==='PRO'||x==='PROTI')return x;
+      if(/^ZDRŽEL/.test(x))return 'ZDRŽEL SE';
+      if(/^NEHLASOVAL/.test(x))return 'NEHLASOVAL';
+      if(/^NEPŘÍTOM/.test(x))return 'NEPŘÍTOMEN';
+      return x;
+    };
+    const text=document.body?.innerText||'';
+    if(!/Výsledek hlasování/i.test(text))return {ok:false,reason:'stránka neobsahuje výsledek hlasování',rows:[]};
+    const rows=[];
+    for(const row of document.querySelectorAll('tr')){
+      // Prázdné buňky zachováváme pro strukturální orientaci; rozhodující jsou
+      // poslední tři významové sloupce: jméno | strana | hlas.
+      const cells=[...row.querySelectorAll('td,th')].map(x=>tidy(x.innerText));
+      const vi=cells.findIndex(x=>VOTE_RE.test(x));
+      if(vi<0)continue;
+      const nonempty=[];
+      for(let i=0;i<vi;i++)if(cells[i])nonempty.push({i,value:cells[i]});
+      if(nonempty.length<2)continue;
+      const party=nonempty.at(-1).value;
+      const name=nonempty.at(-2).value;
+      if(!name||/^\d+$/.test(name))continue;
+      rows.push({name,vote:normalizeVote(cells[vi]),party});
     }
-    if(!name)continue;
-    rows.push({name,vote:normalizeVote(cells[vi]),...(party&&party!==name?{party}:{})});
-  }
-  const seen=new Set();
-  return rows.filter(x=>{const k=x.name.toLocaleLowerCase('cs-CZ');if(seen.has(k))return false;seen.add(k);return true});
+    const seen=new Set();
+    return {ok:true,rows:rows.filter(x=>{const k=x.name.toLocaleLowerCase('cs-CZ');if(seen.has(k))return false;seen.add(k);return true})};
+  });
 }
 
 const votes=JSON.parse(await readFile(DATA,'utf8'));
+const badItems=votes.filter(item=>Array.isArray(item.votes)&&item.votes.some(v=>badVoteName(v?.name)));
+console.log(`Hlasování s podezřelým jménem: ${badItems.length}/${votes.length}.`);
+
 let repairedNames=0,normalizedLinks=0,failed=0;
-
-for(let i=0;i<votes.length;i++){
-  const item=votes[i];
-  if(item.url&&item.sourceUrl!==item.url){
-    if(item.sourceUrl&&!item.meetingUrl)item.meetingUrl=item.sourceUrl;
-    item.sourceUrl=item.url;
-    normalizedLinks++;
+const browser=badItems.length?await puppeteer.launch({headless:true,executablePath:findChrome(),args:['--no-sandbox','--disable-setuid-sandbox'],userAgent:UA}):null;
+try{
+  const page=browser?await browser.newPage():null;
+  for(const item of votes){
+    if(item.url&&item.sourceUrl!==item.url){
+      if(item.sourceUrl&&!item.meetingUrl)item.meetingUrl=item.sourceUrl;
+      item.sourceUrl=item.url;
+      normalizedLinks++;
+    }
+    if(!Array.isArray(item.votes)||!item.votes.some(v=>badVoteName(v?.name)))continue;
+    const htmlUrl=deriveHtmlUrl(item);
+    if(!htmlUrl){failed++;continue}
+    try{
+      const parsed=await parsePage(page,htmlUrl);
+      if(!parsed.ok)throw new Error(parsed.reason);
+      if(parsed.rows.length<5)throw new Error(`nalezeno jen ${parsed.rows.length} jmen`);
+      const stillBad=parsed.rows.filter(v=>badVoteName(v.name));
+      if(stillBad.length)throw new Error(`po parsování zůstalo ${stillBad.length} jmen podobných názvu strany`);
+      item.votes=parsed.rows;
+      item.url=htmlUrl;
+      item.sourceUrl=htmlUrl;
+      repairedNames++;
+      if(repairedNames%25===0)console.log(`   opraveno ${repairedNames}/${badItems.length} hlasování…`);
+    }catch(e){
+      failed++;
+      console.log(`   ⚠ ${item.date||''} #${item.number||'?'}: ${e.message}`);
+    }
   }
-
-  const hasBadNames=Array.isArray(item.votes)&&item.votes.some(v=>badVoteName(v?.name));
-  if(!hasBadNames)continue;
-
-  const htmlUrl=deriveHtmlUrl(item);
-  if(!htmlUrl){failed++;continue}
-  try{
-    const html=await fetchText(htmlUrl);
-    if(!/Výsledek hlasování/i.test(clean(html)))throw new Error('stránka neobsahuje výsledek hlasování');
-    const parsed=parseRows(html);
-    if(parsed.length<5)throw new Error(`nalezeno jen ${parsed.length} jmen`);
-    if(parsed.some(v=>badVoteName(v.name)))throw new Error('po parsování zůstalo jméno podobné názvu strany');
-    item.votes=parsed;
-    item.url=htmlUrl;
-    item.sourceUrl=htmlUrl;
-    repairedNames++;
-    if(repairedNames%20===0)console.log(`   opraveno ${repairedNames} hlasování…`);
-  }catch(e){
-    failed++;
-    console.log(`   ⚠ ${item.date||''} #${item.number||'?'}: ${e.message}`);
-  }
-}
+}finally{if(browser)await browser.close()}
 
 const suspicious=votes.flatMap(v=>(v.votes||[]).filter(x=>badVoteName(x?.name)).map(x=>({date:v.date,number:v.number,name:x.name,url:v.url})));
 if(suspicious.length){
@@ -109,4 +115,4 @@ if(suspicious.length){
 const tmp=`${DATA}.tmp`;
 await writeFile(tmp,JSON.stringify(votes,null,2));
 await rename(tmp,DATA);
-console.log(`✅ Hlasování: opravená jména u ${repairedNames} hlasování · sjednocené odkazy u ${normalizedLinks} záznamů · podezřelých jmen 0${failed?` · ${failed} neblokujících pokusů selhalo`:''}.`);
+console.log(`✅ Hlasování: opravená jména u ${repairedNames} hlasování · sjednocené odkazy u ${normalizedLinks} záznamů · podezřelých jmen 0 · neúspěšných oprav ${failed}.`);
