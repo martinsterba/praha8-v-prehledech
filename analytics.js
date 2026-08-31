@@ -1,11 +1,5 @@
 const GA_MEASUREMENT_ID='G-LT3T7S8DWC';
 
-window.dataLayer=window.dataLayer||[];
-window.gtag=window.gtag||function(){window.dataLayer.push(arguments)};
-
-gtag('js',new Date());
-gtag('config',GA_MEASUREMENT_ID,{send_page_view:false});
-
 let lastTrackedLocation='';
 function trackPageView(){
   window.setTimeout(()=>{
