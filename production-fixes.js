@@ -6,6 +6,8 @@ let contractsNamesPromise=null;
 let contractsNamesRunning=false;
 let homeNewsPromise=null;
 let homeNewsRunning=false;
+let electionsSourcePromise=null;
+let electionsPolishRunning=false;
 
 function bodyNameForDisplay(value=''){
   let name=String(value||'').replace(/\s+/g,' ').trim();
@@ -188,6 +190,119 @@ function polishVotingHeadings(app){
   }
 }
 
+function loadElectionsSource(){
+  if(!electionsSourcePromise){
+    electionsSourcePromise=fetch(`data/volby.json?v=${Date.now()}`,{cache:'no-store'})
+      .then(r=>r.ok?r.json():null)
+      .catch(()=>null);
+  }
+  return electionsSourcePromise;
+}
+
+function electionFingerprint(value=''){
+  return String(value||'')
+    .normalize('NFD').replace(/[\u0300-\u036f]/g,'')
+    .toLocaleLowerCase('cs-CZ')
+    .replace(/[^a-z0-9]+/g,' ')
+    .trim().split(/\s+/).filter(Boolean).sort().join('|');
+}
+
+async function polishElectionNames(app){
+  if(electionsPolishRunning||location.hash!=='#/volby')return;
+  electionsPolishRunning=true;
+  try{
+    const source=await loadElectionsSource();
+    const parties=(source?.years||[]).flatMap(y=>y.parties||[]).map(p=>p.name).filter(Boolean);
+    const byFingerprint=new Map();
+    for(const name of parties){
+      const key=electionFingerprint(name);
+      if(key&&!byFingerprint.has(key))byFingerprint.set(key,name);
+    }
+    if(!byFingerprint.size)return;
+
+    const leaves=app.querySelectorAll('h3,h4,b,strong,span,div,td');
+    for(const el of leaves){
+      if(el.children.length)continue;
+      const text=(el.textContent||'').replace(/\s+/g,' ').trim();
+      if(!text||text.length>180)continue;
+      const correct=byFingerprint.get(electionFingerprint(text));
+      if(correct&&correct!==text)setTextIfChanged(el,correct);
+    }
+  }finally{
+    electionsPolishRunning=false;
+  }
+}
+
+function polishInfo106(app){
+  if(location.hash!=='#/info106')return;
+  const wrap=app.querySelector('.wrap');
+  if(wrap)wrap.classList.add('info106-page');
+
+  const notice=app.querySelector('.notice');
+  if(notice)notice.classList.add('production-data-note');
+
+  for(const el of app.querySelectorAll('.item h3,.item b,.item strong')){
+    if(el.children.length)continue;
+    const text=(el.textContent||'').replace(/\s+/g,' ').trim();
+    if(!/^Žádost o informac(?:i|e)\b/i.test(text))continue;
+    const m=text.match(/^(Žádost o informac(?:i|e)[^:]*:)/i);
+    if(m)setTextIfChanged(el,m[1]);
+  }
+}
+
+function setupMobileMenu(){
+  const topbar=document.querySelector('.topbar');
+  if(!topbar||topbar.dataset.mobileMenuReady)return;
+  topbar.dataset.mobileMenuReady='true';
+
+  const button=document.createElement('button');
+  button.type='button';
+  button.className='mobile-menu-toggle';
+  button.setAttribute('aria-label','Otevřít menu');
+  button.setAttribute('aria-expanded','false');
+  button.textContent='☰';
+
+  const panel=document.createElement('nav');
+  panel.className='mobile-menu-panel';
+  panel.setAttribute('aria-label','Mobilní navigace');
+  panel.innerHTML=`
+    <div class="mobile-menu-group"><strong>Usnesení</strong>
+      <a href="#/usneseni">Usnesení Rady a Zastupitelstva</a>
+      <a href="#/penize">Rozpočty a veřejné finance</a>
+      <a href="#/uredni-deska">Úřední deska</a>
+    </div>
+    <div class="mobile-menu-group"><strong>Registr smluv</strong>
+      <a href="#/smlouvy">Smlouvy MČ Praha 8</a>
+      <a href="#/smlouvy-organizace">Smlouvy příspěvkových organizací</a>
+      <a href="#/smlouvy-firmy">Smlouvy městských firem</a>
+    </div>
+    <div class="mobile-menu-group"><strong>Volené orgány a městské firmy</strong>
+      <a href="#/organy">Komise a výbory</a>
+      <a href="#/skoly">Školy</a>
+      <a href="#/organizace">Organizace a městské firmy</a>
+      <a href="#/volby">Volby</a>
+      <a href="#/lide">Zastupitelstvo</a>
+    </div>
+    <div class="mobile-menu-group"><a href="#/zdroje"><strong>Datové zdroje</strong></a></div>`;
+
+  topbar.append(button,panel);
+
+  const close=()=>{
+    topbar.classList.remove('mobile-menu-open');
+    button.setAttribute('aria-expanded','false');
+    button.textContent='☰';
+  };
+  button.addEventListener('click',()=>{
+    const open=!topbar.classList.contains('mobile-menu-open');
+    topbar.classList.toggle('mobile-menu-open',open);
+    button.setAttribute('aria-expanded',String(open));
+    button.textContent=open?'×':'☰';
+  });
+  panel.addEventListener('click',e=>{if(e.target.closest('a'))close()});
+  addEventListener('hashchange',close);
+  addEventListener('resize',()=>{if(innerWidth>850)close()});
+}
+
 function polishProductionUi(){
   const app=document.querySelector('#app');
   if(!app)return;
@@ -209,6 +324,8 @@ function polishProductionUi(){
 
   if(location.hash==='#/organy')polishBodiesUi(app);
   if(location.hash.startsWith('#/smlouvy'))void polishContractPartnerNames(app);
+  if(location.hash==='#/volby')void polishElectionNames(app);
+  if(location.hash==='#/info106')polishInfo106(app);
   polishVotingHeadings(app);
 
   if(location.hash===''||location.hash==='#/'||location.hash==='#'){
@@ -218,6 +335,7 @@ function polishProductionUi(){
   }
 }
 
+setupMobileMenu();
 const app=document.querySelector('#app');
 if(app){
   new MutationObserver(()=>queueMicrotask(polishProductionUi)).observe(app,{childList:true,subtree:true});
