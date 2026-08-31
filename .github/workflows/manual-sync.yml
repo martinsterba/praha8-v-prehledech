@@ -60,12 +60,15 @@ jobs:
           case "${{ inputs.dataset }}" in
             volby)
               npm run sync:elections
+              node scripts/repair-source-status.mjs elections
               ;;
             rozpocet)
               npm run sync:budget
+              node scripts/repair-source-status.mjs budget
               ;;
             "Sčítání 2021")
               npm run sync:census
+              node scripts/repair-source-status.mjs census
               ;;
             *)
               echo "Neznámý dataset: ${{ inputs.dataset }}"
