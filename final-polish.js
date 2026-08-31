@@ -3,6 +3,7 @@
 
 let info106SourcePromise=null;
 let info106RenderKey='';
+let info106CurrentPage=1;
 
 function short106Title(value=''){
   const text=String(value||'').replace(/\s+/g,' ').trim();
@@ -35,7 +36,7 @@ function info106PagerMarkup(page,pages){
   return `<button ${page===1?'disabled':''} data-info106-page="${page-1}">← Předchozí</button>${page>3?'<span>…</span>':''}${nums.map(i=>`<button class="${i===page?'active':''}" data-info106-page="${i}">${i}</button>`).join('')}${page<pages-2?'<span>…</span>':''}<button ${page===pages?'disabled':''} data-info106-page="${page+1}">Další →</button>`;
 }
 
-async function renderInfo106Page(page=1){
+async function renderInfo106Page(page=info106CurrentPage){
   if(location.hash!=='#/info106')return;
   const app=document.querySelector('#app');
   const rowsHost=app?.querySelector('#rows106');
@@ -49,6 +50,7 @@ async function renderInfo106Page(page=1){
   const perPage=25;
   const pages=Math.max(1,Math.ceil(rows.length/perPage));
   page=Math.max(1,Math.min(Number(page)||1,pages));
+  info106CurrentPage=page;
   const shown=rows.slice((page-1)*perPage,page*perPage);
   const key=`${query}|${year}|${page}|${rows.length}`;
   if(info106RenderKey===key&&rowsHost.dataset.final106Ready==='true')return;
@@ -98,8 +100,10 @@ async function renderInfo106Page(page=1){
   pager.innerHTML=info106PagerMarkup(page,pages);
   for(const button of pager.querySelectorAll('button[data-info106-page]')){
     button.addEventListener('click',()=>{
+      if(button.disabled)return;
+      info106CurrentPage=Number(button.dataset.info106Page)||1;
       info106RenderKey='';
-      void renderInfo106Page(Number(button.dataset.info106Page));
+      void renderInfo106Page(info106CurrentPage);
       app.querySelector('#count106')?.scrollIntoView({behavior:'smooth',block:'center'});
     });
   }
@@ -124,10 +128,14 @@ function polish106Rows(){
   for(const control of [q,y]){
     if(control&&!control.dataset.final106Bound){
       control.dataset.final106Bound='true';
-      control.addEventListener('input',()=>{info106RenderKey='';setTimeout(()=>void renderInfo106Page(1),0)});
+      control.addEventListener('input',()=>{
+        info106CurrentPage=1;
+        info106RenderKey='';
+        setTimeout(()=>void renderInfo106Page(1),0);
+      });
     }
   }
-  void renderInfo106Page(1);
+  void renderInfo106Page(info106CurrentPage);
 }
 
 function finalPolish(){
@@ -147,5 +155,9 @@ if(finalApp){
     queueMicrotask(()=>{queued=false;finalPolish()});
   }).observe(finalApp,{childList:true,subtree:true});
 }
-addEventListener('hashchange',()=>{info106RenderKey='';setTimeout(finalPolish,0)});
+addEventListener('hashchange',()=>{
+  info106CurrentPage=1;
+  info106RenderKey='';
+  setTimeout(finalPolish,0);
+});
 finalPolish();
