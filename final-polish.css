@@ -53,14 +53,62 @@
 }
 .info106-page #pager106{margin-top:18px}
 
+/* Finance + Sčítání: pravý popis je na stejné spodní baseline jako levý nadpis.
+   Neřešíme to posunem v pixelech, ale skutečným dvousloupcovým gridem. */
+@media(min-width:851px){
+  body:has(#app .budget-page) #app .section-head,
+  body:has(#app .census-page) #app .section-head{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr) minmax(360px,1.15fr)!important;
+    column-gap:48px!important;
+    align-items:end!important;
+  }
+  body:has(#app .budget-page) #app .section-head>div,
+  body:has(#app .census-page) #app .section-head>div{min-width:0}
+  body:has(#app .budget-page) #app .section-head>p,
+  body:has(#app .census-page) #app .section-head>p{
+    margin:0!important;
+    align-self:end!important;
+  }
+}
+
+/* Úřední deska: jen jedna horní dělicí čára a souhrnný box stejným jazykem jako 106. */
+.noticeboard-page .page-head{border-bottom:0!important}
+.noticeboard-page .noticeboard-dashboard{
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:12px!important;
+  border:0!important;
+  margin:24px 0 18px!important;
+}
+.noticeboard-page .noticeboard-dashboard .stat{
+  min-width:0;
+  padding:18px 20px!important;
+  background:#fff!important;
+  border:1px solid var(--line,#d9dad3)!important;
+  border-radius:14px!important;
+}
+.noticeboard-page .noticeboard-dashboard .stat strong{
+  display:block;
+  font:700 30px/1.05 Space Grotesk,sans-serif!important;
+}
+.noticeboard-page .noticeboard-dashboard .stat span{
+  display:block;
+  margin-top:7px!important;
+  color:var(--muted,#6f706a)!important;
+}
+
 @media(max-width:850px){
   #app>.wrap.final-page-spacing{padding-bottom:34px!important}
-  .info106-page .info106-dashboard{
+  .info106-page .info106-dashboard,
+  .noticeboard-page .noticeboard-dashboard{
     grid-template-columns:1fr!important;
     gap:8px!important;
   }
-  .info106-page .info106-dashboard .info106-stat{padding:14px 16px!important}
-  .info106-page .info106-dashboard .info106-stat strong{font-size:26px!important}
+  .info106-page .info106-dashboard .info106-stat,
+  .noticeboard-page .noticeboard-dashboard .stat{padding:14px 16px!important}
+  .info106-page .info106-dashboard .info106-stat strong,
+  .noticeboard-page .noticeboard-dashboard .stat strong{font-size:26px!important}
   .info106-page .info106-row{
     grid-template-columns:1fr!important;
     gap:5px!important;
