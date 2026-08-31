@@ -1,11 +1,12 @@
-/* Volební roky: zdroj nad metadaty, rok a volební účast na společné baseline. */
+/* Volební roky: dva kompaktní sloupce. Vlevo kicker těsně nad rokem,
+   vpravo zdroj těsně nad volební účastí; rok a účast sdílejí baseline. */
 @media(min-width:851px){
   .election-year>.section-head{
     display:grid!important;
     grid-template-columns:minmax(0,1fr) auto!important;
     grid-template-rows:max-content max-content!important;
     column-gap:32px!important;
-    row-gap:8px!important;
+    row-gap:4px!important;
     align-items:start!important;
     align-content:start!important;
   }
@@ -16,17 +17,21 @@
   .election-year>.section-head .kicker{
     grid-column:1!important;
     grid-row:1!important;
+    margin:0!important;
+    align-self:end!important;
   }
   .election-year>.section-head h2{
     grid-column:1!important;
     grid-row:2!important;
     align-self:baseline!important;
+    margin:0!important;
   }
   .election-year .election-source-link{
     grid-column:2!important;
     grid-row:1!important;
     justify-self:end!important;
-    align-self:start!important;
+    align-self:end!important;
+    margin:0!important;
     font-size:13px!important;
     font-weight:700!important;
     white-space:nowrap!important;
