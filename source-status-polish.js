@@ -61,10 +61,17 @@
       const app=document.querySelector('#app');
       if(!app)return;
 
-      // Starší cachovaná verze stránky měla samostatnou kartu omylem pojmenovanou „Usnesení“.
-      // Opravujeme jen přesnou hodnotu, nikoli kartu „Usnesení Rady a Zastupitelstva“.
-      app.querySelectorAll('.status-card-title').forEach(el=>{
-        if(el.textContent.trim()==='Usnesení')el.textContent='Hlasování';
+      // Hlasování má v datových zdrojích jediný název „Hlasování“ a stejnou
+      // typografii jako ostatní názvy zdrojů. Starší prezentační oprava z něj
+      // dělala mezititulek „Výsledek hlasování“, což na této stránce nechceme.
+      app.querySelectorAll('.status-card').forEach(card=>{
+        const titleEl=card.querySelector('.status-card-title');
+        if(!titleEl)return;
+        const title=titleEl.textContent.replace(/\s+/g,' ').trim();
+        if(title==='Usnesení'||title==='Výsledek hlasování'){
+          titleEl.textContent='Hlasování';
+          titleEl.classList.remove('voting-mini-heading');
+        }
       });
 
       app.querySelectorAll('.status-card').forEach(card=>{
