@@ -19,7 +19,7 @@
 
 /* Homepage */
 .news-home-head{
-  align-items:center!important;
+  align-items:flex-end!important;
 }
 .news-home-head>a{font-weight:700!important}
 .hero>.kicker{
