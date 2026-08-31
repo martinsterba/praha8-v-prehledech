@@ -28,7 +28,7 @@ jobs:
 
       - name: Ověřit data
         run: |
-          node -e "const fs=require('fs');const x=JSON.parse(fs.readFileSync('data/info106.json','utf8'));if(!Array.isArray(x)||!x.length)process.exit(1);const bad=x.filter(r=>/^\d{1,2}\.\s*\d{1,2}\.\s*20\d{2}/.test(r.title||'')||/Žádost\s+o\s+poskytnutí\s+informace\s+20\d{2}.*Žádost\s+o\s+/i.test(r.title||''));console.log('Záznamů:',x.length,'podezřelých:',bad.length);if(bad.length)process.exit(1)"
+          node -e "const fs=require('fs');const x=JSON.parse(fs.readFileSync('data/info106.json','utf8'));if(!Array.isArray(x)||!x.length)process.exit(1);const bad=x.filter(r=>/^\d{1,2}\.\s*\d{1,2}\.\s*20\d{2}/.test(r.title||'')||/Žádost\s+o\s+poskytnutí\s+informace\s+20\d{2}\s+\d{1,2}\.\s*\d{1,2}\.\s*20\d{2}\s+Žádost\s+o\s+/i.test(r.title||''));console.log('Záznamů:',x.length,'podezřelých:',bad.length);if(bad.length)process.exit(1)"
 
       - name: Uložit opravená data
         run: |
