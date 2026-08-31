@@ -12,9 +12,6 @@ function tokens(v=''){
 }
 function stem(t=''){
   if(t.length<=5)return t;
-  // Lehký český stem pro názvy bodů: „problematice“ × „problematika“,
-  // „revitalizace“ × „revitalizaci“ apod. Nejde o jazykovou analýzu,
-  // jen o bezpečnější porovnání názvů stejného jednání.
   return t.slice(0,Math.min(7,t.length));
 }
 function dice(a,b,stemmed=false){
@@ -29,66 +26,120 @@ function overlapCount(a,b){
   let n=0;for(const x of A)if(B.has(x))n++;return n;
 }
 function isZmc(r){return String(r?.organ||r?.body||'').toLowerCase().includes('zastupitel')||/^Usn\s+ZMC\b/i.test(String(r?.id||''))}
+function resolutionNo(r){const m=String(r?.id||'').match(/^Usn\s+ZMC\s+(\d+)\/\d{4}/i);return m?Number(m[1]):null}
+function voteKey(v){return `${v?.date||''}|${Number(v?.number||0)}`}
 
 const votes=JSON.parse(await readFile(VOTES,'utf8'));
 const resolutions=JSON.parse(await readFile(RESOLUTIONS,'utf8'));
 if(!Array.isArray(votes)||!Array.isArray(resolutions))throw new Error('Hlasování nebo usnesení nejsou pole.');
+const zmc=resolutions.filter(isZmc);
 
 const byDate=new Map();
 for(const v of votes){if(!v?.date)continue;(byDate.get(v.date)||byDate.set(v.date,[]).get(v.date)).push(v)}
+const resByDate=new Map();
+for(const r of zmc){if(!r?.date)continue;(resByDate.get(r.date)||resByDate.set(r.date,[]).get(r.date)).push(r)}
 
-let already=0,paired=0,unresolved=0;
+let already=0,fuzzyPaired=0,anchoredPaired=0;
 const used=new Set();
+const matchedByResolution=new Map();
 const examples=[];
 
-// Nejprve rezervujeme hlasování, která už se podle současné webové logiky párují bezpečně.
-for(const r of resolutions.filter(isZmc)){
-  const same=byDate.get(r.date)||[];
-  let best=null,bestScore=0;
-  for(const v of same){const s=dice(r.title,v.title,false);if(s>bestScore){bestScore=s;best=v}}
-  if(best&&bestScore>=0.72){used.add(`${best.date}|${best.number}`);already++}
+function remember(r,v,method,score){
+  used.add(voteKey(v));
+  matchedByResolution.set(r.id,{r,v,method,score});
+}
+function applyMatch(r,v,method,score){
+  if(!v.originalTitle)v.originalTitle=v.title||'';
+  v.title=r.title||v.title;
+  v.matchedResolutionId=r.id||'';
+  v.matchMethod=method;
+  v.matchScore=Number(Number(score||1).toFixed(3));
+  remember(r,v,method,score);
 }
 
-for(const r of resolutions.filter(isZmc)){
+// 1) Kotvy, které se párují už dnešní webovou logikou. Pro interpolaci je
+// používáme jen tehdy, když nejlepší hlasování není současně nejlepší shodou
+// jiného usnesení. Tím nevytváříme kotvu z kolize.
+for(const [date,rs] of resByDate){
+  const same=byDate.get(date)||[];
+  const proposals=[];
+  for(const r of rs){
+    const ranked=same.map(v=>({v,score:dice(r.title,v.title,false)})).sort((a,b)=>b.score-a.score||Number(b.v.number||0)-Number(a.v.number||0));
+    if(ranked[0]?.score>=0.72)proposals.push({r,v:ranked[0].v,score:ranked[0].score,second:ranked[1]?.score||0});
+  }
+  const counts=new Map();for(const p of proposals)counts.set(voteKey(p.v),(counts.get(voteKey(p.v))||0)+1);
+  for(const p of proposals){
+    if((counts.get(voteKey(p.v))||0)!==1)continue;
+    remember(p.r,p.v,'direct-title',p.score);already++;
+  }
+}
+
+// 2) Bezpečné fuzzy doplnění. Zachováváme vyšší práh a minimálně dva
+// společné významové tokeny; cílem není „něco přiřadit za každou cenu“.
+for(const r of zmc){
+  if(matchedByResolution.has(r.id))continue;
   const same=byDate.get(r.date)||[];
-  let current=0;
-  for(const v of same)current=Math.max(current,dice(r.title,v.title,false));
-  if(current>=0.72)continue;
-
   const candidates=same.map(v=>({v,score:dice(r.title,v.title,true),hits:overlapCount(r.title,v.title)}))
-    .filter(x=>x.hits>=2 && x.score>=0.76 && !used.has(`${x.v.date}|${x.v.number}`))
-    .sort((a,b)=>b.score-a.score || b.hits-a.hits || Number(b.v.number||0)-Number(a.v.number||0));
-
+    .filter(x=>x.hits>=2&&x.score>=0.76&&!used.has(voteKey(x.v)))
+    .sort((a,b)=>b.score-a.score||b.hits-a.hits||Number(b.v.number||0)-Number(a.v.number||0));
   const best=candidates[0];
-  if(!best){unresolved++;if(examples.length<20)examples.push(`NEPÁROVÁNO ${r.date} ${r.id||''} · ${r.title||''}`);continue}
-
-  // Při stejné podobnosti je pozdější hlasování v rámci bodu zpravidla finální hlasování
-  // po procedurálních návrzích / pozměňovacích hlasováních.
+  if(!best)continue;
   const second=candidates[1];
-  if(second && second.score>best.score-0.08 && second.hits>=best.hits && Number(second.v.number||0)>Number(best.v.number||0)){
+  if(second&&second.score>best.score-0.08&&second.hits>=best.hits&&Number(second.v.number||0)>Number(best.v.number||0)){
     best.v=second.v;best.score=second.score;best.hits=second.hits;
   }
-
-  const key=`${best.v.date}|${best.v.number}`;
-  used.add(key);
-  if(!best.v.originalTitle)best.v.originalTitle=best.v.title||'';
-  best.v.title=r.title||best.v.title;
-  best.v.matchedResolutionId=r.id||'';
-  best.v.matchMethod='normalized-title-stem';
-  best.v.matchScore=Number(best.score.toFixed(3));
-  paired++;
-  if(examples.length<20)examples.push(`PÁROVÁNO ${r.date} ${r.id||''} ← #${best.v.number} (${best.score.toFixed(2)}) · ${r.title||''}`);
+  applyMatch(r,best.v,'normalized-title-stem',best.score);
+  fuzzyPaired++;
+  if(examples.length<20)examples.push(`FUZZY ${r.date} ${r.id||''} ← #${best.v.number} (${best.score.toFixed(2)}) · ${r.title||''}`);
 }
 
+// 3) Párování mezi dvěma bezpečnými kotvami. Pokud se mezi kotvami shoduje
+// přesně počet po sobě jdoucích usnesení i hlasování, není potřeba snižovat
+// práh podobnosti: chybějící dvojice lze jednoznačně doplnit podle pořadí.
+// Příklad 17. 6. 2026: Usn 021 → hlasování 10 a Usn 024 → hlasování 13,
+// tedy 022 → 11 a 023 → 12. To řeší i Kasárna Karlín bez hádání podle názvu.
+for(const [date,rsRaw] of resByDate){
+  const rs=rsRaw.filter(r=>resolutionNo(r)!=null).sort((a,b)=>resolutionNo(a)-resolutionNo(b));
+  const same=(byDate.get(date)||[]).filter(v=>Number.isFinite(Number(v.number))).sort((a,b)=>Number(a.number)-Number(b.number));
+  let changed=true;
+  while(changed){
+    changed=false;
+    const anchors=rs.map(r=>matchedByResolution.get(r.id)).filter(Boolean)
+      .filter(x=>resolutionNo(x.r)!=null&&Number.isFinite(Number(x.v.number)))
+      .sort((a,b)=>resolutionNo(a.r)-resolutionNo(b.r));
+    for(let i=0;i<anchors.length-1;i++){
+      const left=anchors[i],right=anchors[i+1];
+      const lr=resolutionNo(left.r),rr=resolutionNo(right.r),lv=Number(left.v.number),rv=Number(right.v.number);
+      const deltaR=rr-lr,deltaV=rv-lv;
+      if(deltaR<=1||deltaR!==deltaV||deltaR>12)continue;
+      const betweenR=rs.filter(r=>{const n=resolutionNo(r);return n>lr&&n<rr&&!matchedByResolution.has(r.id)});
+      const betweenV=same.filter(v=>Number(v.number)>lv&&Number(v.number)<rv&&!used.has(voteKey(v)));
+      if(betweenR.length!==deltaR-1||betweenV.length!==deltaV-1)continue;
+      const byNo=new Map(betweenV.map(v=>[Number(v.number),v]));
+      let complete=true;
+      for(const r of betweenR)if(!byNo.has(lv+(resolutionNo(r)-lr)))complete=false;
+      if(!complete)continue;
+      for(const r of betweenR){
+        const target=byNo.get(lv+(resolutionNo(r)-lr));
+        applyMatch(r,target,'anchored-order',1);
+        anchoredPaired++;
+        changed=true;
+        if(examples.length<30)examples.push(`KOTVY ${date} ${r.id||''} ← #${target.number} · ${r.title||''}`);
+      }
+    }
+  }
+}
+
+const unresolved=zmc.filter(r=>!matchedByResolution.has(r.id)).length;
 const tmp=`${VOTES}.tmp`;
 await writeFile(tmp,JSON.stringify(votes,null,2));
 await rename(tmp,VOTES);
-console.log(`✅ Párování hlasování: ${already} už bezpečně spárovaných · ${paired} nově doplněných · ${unresolved} stále bez bezpečné shody.`);
+console.log(`✅ Párování hlasování: ${already} bezpečných přímých kotev · ${fuzzyPaired} fuzzy doplněných · ${anchoredPaired} doplněných mezi kotvami · ${unresolved} stále bez bezpečné shody.`);
 for(const x of examples)console.log('   '+x);
 
-const kasarna=resolutions.find(r=>isZmc(r)&&/kas[aá]rna\s+karl[ií]n/i.test(String(r.title||'')));
+const kasarna=zmc.find(r=>/kas[aá]rna\s+karl[ií]n/i.test(String(r.title||'')));
 if(kasarna){
-  const matched=votes.find(v=>v.matchedResolutionId===kasarna.id)||null;
-  const score=Math.max(0,...(byDate.get(kasarna.date)||[]).map(v=>dice(kasarna.title,v.title,false)));
-  console.log(`Kontrola Kasárna Karlín: ${matched?`✅ hlasování #${matched.number}`:score>=0.72?'✅ páruje se přímo':'⚠ stále bez shody'}.`);
+  const matched=matchedByResolution.get(kasarna.id)||null;
+  console.log(`Kontrola Kasárna Karlín: ${matched?`✅ ${kasarna.id} → hlasování #${matched.v.number} (${matched.method})`:'⚠ stále bez bezpečné shody'}.`);
+  if(!matched)process.exitCode=2;
 }
