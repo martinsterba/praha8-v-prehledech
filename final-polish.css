@@ -28,7 +28,7 @@
   color:var(--muted,#6f706a)!important;
 }
 
-/* Jednoduchý přehled: datum → předmět žádosti → odpověď. */
+/* Jednoduchý přehled: datum | předmět žádosti | odpověď mimo web. */
 .info106-page #rows106{gap:8px}
 .info106-page .info106-row{
   grid-template-columns:145px minmax(0,1fr) auto!important;
@@ -51,7 +51,7 @@
   font-weight:700!important;
   white-space:nowrap!important;
 }
-.info106-page .info106-answer::after{content:' →';}
+.info106-page #pager106{margin-top:18px}
 
 @media(max-width:850px){
   #app>.wrap.final-page-spacing{padding-bottom:34px!important}
