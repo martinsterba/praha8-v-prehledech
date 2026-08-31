@@ -2,6 +2,9 @@ name: 🎨 Vygenerovat ikony webové aplikace
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - 'ikona-iphone.svg'
 
 permissions:
   contents: write
@@ -15,11 +18,11 @@ jobs:
       - name: Nainstalovat ImageMagick
         run: sudo apt-get update && sudo apt-get install -y imagemagick
 
-      - name: Vygenerovat PNG ikony z faviconu
+      - name: Vygenerovat PNG ikony ze SVG
         run: |
-          convert ico.ico[0] -background white -alpha remove -alpha off -resize 180x180 apple-touch-icon.png
-          convert ico.ico[0] -background white -alpha remove -alpha off -resize 192x192 icon-192.png
-          convert ico.ico[0] -background white -alpha remove -alpha off -resize 512x512 icon-512.png
+          convert -background none ikona-iphone.svg -resize 180x180 apple-touch-icon.png
+          convert -background none ikona-iphone.svg -resize 192x192 icon-192.png
+          convert -background none ikona-iphone.svg -resize 512x512 icon-512.png
 
       - name: Uložit ikony
         run: |
@@ -27,5 +30,6 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add apple-touch-icon.png icon-192.png icon-512.png
           git diff --cached --quiet && exit 0
-          git commit -m "Vygenerovat ikony webové aplikace"
+          git commit -m "Vygenerovat ostré ikony webové aplikace ze SVG"
+          git pull --rebase origin main
           git push
