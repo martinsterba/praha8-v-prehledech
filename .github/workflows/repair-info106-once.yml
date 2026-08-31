@@ -1,0 +1,44 @@
+name: 🩹 Jednorázová oprava 106
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/repair-info106-data.mjs'
+      - '.github/workflows/repair-info106-once.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Opravit názvy žádostí
+        run: node scripts/repair-info106-data.mjs
+
+      - name: Ověřit data
+        run: |
+          node -e "const fs=require('fs');const x=JSON.parse(fs.readFileSync('data/info106.json','utf8'));if(!Array.isArray(x)||!x.length)process.exit(1);const bad=x.filter(r=>/^\d{1,2}\.\s*\d{1,2}\.\s*20\d{2}/.test(r.title||'')||/Žádost\s+o\s+poskytnutí\s+informace\s+20\d{2}.*Žádost\s+o\s+/i.test(r.title||''));console.log('Záznamů:',x.length,'podezřelých:',bad.length);if(bad.length)process.exit(1)"
+
+      - name: Uložit opravená data
+        run: |
+          if git diff --quiet -- data/info106.json; then
+            echo 'Data už jsou v pořádku.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/info106.json
+          git commit -m 'Opravit názvy žádostí podle zákona 106'
+          git pull --rebase origin main
+          git push origin main
