@@ -1,0 +1,72 @@
+/* Finální rozestupy a stránka informací podle zákona č. 106/1999 Sb. */
+
+/* Původních 90 px pod obsahem vytvářelo před patičkou zbytečně velkou mezeru. */
+#app>.wrap.final-page-spacing{padding-bottom:46px!important}
+
+/* Souhrn 106 ve stejném vizuálním jazyce jako dashboard Registru smluv. */
+.info106-page .info106-dashboard{
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:12px!important;
+  border:0!important;
+  margin:24px 0 18px!important;
+}
+.info106-page .info106-dashboard .info106-stat{
+  min-width:0;
+  padding:18px 20px!important;
+  background:#fff!important;
+  border:1px solid var(--line,#d9dad3)!important;
+  border-radius:14px!important;
+}
+.info106-page .info106-dashboard .info106-stat strong{
+  display:block;
+  font:700 30px/1.05 Space Grotesk,sans-serif!important;
+}
+.info106-page .info106-dashboard .info106-stat span{
+  display:block;
+  margin-top:7px!important;
+  color:var(--muted,#6f706a)!important;
+}
+
+/* Jednoduchý přehled: datum → předmět žádosti → odpověď. */
+.info106-page #rows106{gap:8px}
+.info106-page .info106-row{
+  grid-template-columns:145px minmax(0,1fr) auto!important;
+  gap:18px!important;
+  align-items:center!important;
+  min-height:0!important;
+  padding:15px 18px!important;
+}
+.info106-page .info106-date{
+  color:var(--muted,#6f706a)!important;
+  white-space:nowrap;
+}
+.info106-page .info106-title{
+  margin:0!important;
+  font:600 16px/1.4 Inter,system-ui,sans-serif!important;
+  letter-spacing:0!important;
+}
+.info106-page .info106-answer{
+  font-size:13px!important;
+  font-weight:700!important;
+  white-space:nowrap!important;
+}
+.info106-page .info106-answer::after{content:' →';}
+
+@media(max-width:850px){
+  #app>.wrap.final-page-spacing{padding-bottom:34px!important}
+  .info106-page .info106-dashboard{
+    grid-template-columns:1fr!important;
+    gap:8px!important;
+  }
+  .info106-page .info106-dashboard .info106-stat{padding:14px 16px!important}
+  .info106-page .info106-dashboard .info106-stat strong{font-size:26px!important}
+  .info106-page .info106-row{
+    grid-template-columns:1fr!important;
+    gap:5px!important;
+    align-items:start!important;
+    padding:14px 16px!important;
+  }
+  .info106-page .info106-title{font-size:15px!important}
+  .info106-page .info106-answer{margin-top:3px}
+}
