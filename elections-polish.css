@@ -1,47 +1,40 @@
-/* Volební roky: dva kompaktní sloupce. Vlevo kicker těsně nad rokem,
-   vpravo zdroj bez mezery nad volební účastí; rok a účast sdílejí baseline. */
+/* Volební roky: dva samostatné kompaktní sloupce.
+   Levý drží kicker těsně nad rokem, pravý drží zdroj těsně nad účastí. */
 @media(min-width:851px){
   .election-year>.section-head{
-    display:grid!important;
-    grid-template-columns:minmax(0,1fr) auto!important;
-    grid-template-rows:max-content max-content!important;
-    column-gap:32px!important;
-    row-gap:4px!important;
-    align-items:start!important;
-    align-content:start!important;
+    display:flex!important;
+    justify-content:space-between!important;
+    align-items:flex-end!important;
+    gap:32px!important;
   }
   .election-year>.section-head>div:first-child,
   .election-year>.section-head>.election-year-side{
-    display:contents!important;
+    display:flex!important;
+    flex-direction:column!important;
+    gap:0!important;
   }
-  .election-year>.section-head .kicker{
-    grid-column:1!important;
-    grid-row:1!important;
-    margin:0!important;
-    align-self:end!important;
+  .election-year>.section-head>div:first-child{
+    align-items:flex-start!important;
   }
-  .election-year>.section-head h2{
-    grid-column:1!important;
-    grid-row:2!important;
-    align-self:baseline!important;
+  .election-year>.section-head>.election-year-side{
+    align-items:flex-end!important;
+    text-align:right!important;
+  }
+  .election-year>.section-head .kicker,
+  .election-year>.section-head h2,
+  .election-year .election-source-link,
+  .election-year>.section-head .election-year-side>p{
     margin:0!important;
   }
   .election-year .election-source-link{
-    grid-column:2!important;
-    grid-row:1!important;
-    justify-self:end!important;
-    align-self:end!important;
-    margin:0 -0  -4px 0!important;
+    display:block!important;
     font-size:13px!important;
     font-weight:700!important;
+    line-height:1.2!important;
     white-space:nowrap!important;
   }
   .election-year>.section-head .election-year-side>p{
-    grid-column:2!important;
-    grid-row:2!important;
-    justify-self:end!important;
-    align-self:baseline!important;
-    margin:0!important;
+    margin-top:2px!important;
     white-space:nowrap!important;
   }
 }
