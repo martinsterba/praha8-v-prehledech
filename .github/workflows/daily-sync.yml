@@ -3,9 +3,12 @@ name: "🌙 Denní aktualizace"
 on:
   workflow_dispatch:
   schedule:
-    # 03:10 UTC = 05:10 v Praze při letním čase (CEST).
-    # V zimním čase poběží v 04:10; GitHub cron neumí automaticky přepínat CET/CEST.
+    # GitHub cron běží v UTC a neumí časovou zónu Europe/Prague.
+    # Proto workflow spouštíme ve dvou kandidátních časech a níže pustíme
+    # synchronizaci jen tehdy, když je v Praze právě 05:xx.
+    # 03:10 UTC = 05:10 CEST (léto), 04:10 UTC = 05:10 CET (zima).
     - cron: "10 3 * * *"
+    - cron: "10 4 * * *"
 
 permissions:
   contents: write
@@ -20,31 +23,57 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 45
     steps:
+      - name: "Ověřit pražský čas"
+        id: prague_time
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          if [ "$EVENT_NAME" = "workflow_dispatch" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            echo "Ruční spuštění: časovou podmínku nepoužívám."
+            exit 0
+          fi
+          HOUR=$(TZ=Europe/Prague date +%H)
+          NOW=$(TZ=Europe/Prague date '+%d. %m. %Y %H:%M %Z')
+          echo "Praha: $NOW"
+          if [ "$HOUR" = "05" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+            echo "Tento kandidátní UTC běh neodpovídá 05:xx v Praze; synchronizace se přeskočí."
+          fi
       - name: "Načíst repozitář"
+        if: steps.prague_time.outputs.run == 'true'
         uses: actions/checkout@v5
         with:
           fetch-depth: 0
       - name: "Nastavit Node.js"
+        if: steps.prague_time.outputs.run == 'true'
         uses: actions/setup-node@v5
         with:
           node-version: "24"
           cache: npm
       - name: "Nainstalovat závislosti"
+        if: steps.prague_time.outputs.run == 'true'
         run: npm ci
       - name: "Nainstalovat Chrome pro datový sync"
+        if: steps.prague_time.outputs.run == 'true'
         id: chrome
         uses: browser-actions/setup-chrome@v2
       - name: "Denní zdroje Prahy 8"
+        if: steps.prague_time.outputs.run == 'true'
         env:
           PUPPETEER_EXECUTABLE_PATH: ${{ steps.chrome.outputs.chrome-path }}
         run: |
           node scripts/sync-praha8.mjs --usneseni-incremental --info106 --noticeboard --news --fast
           node scripts/repair-info106-data.mjs
       - name: "Hlasování ZMČ – nová zasedání"
+        if: steps.prague_time.outputs.run == 'true'
         env:
           PUPPETEER_EXECUTABLE_PATH: ${{ steps.chrome.outputs.chrome-path }}
         run: npm run sync:voting
       - name: "Zjistit stav Registru smluv"
+        if: steps.prague_time.outputs.run == 'true'
         id: contracts
         run: |
           node --input-type=module <<'NODE'
@@ -56,11 +85,12 @@ jobs:
           console.log(ready?'Registr smluv: kompletní produkční základ MČ + 40 subjektů nalezen.':'Registr smluv: produkční základ není připraven, inkrementální sync přeskakuji.');
           NODE
       - name: "Registr smluv – nové změny"
-        if: steps.contracts.outputs.ready == 'true'
+        if: steps.prague_time.outputs.run == 'true' && steps.contracts.outputs.ready == 'true'
         run: |
           npm run sync:contracts:new
           node scripts/repair-source-status.mjs contracts
       - name: "Ověřit JSON datasety"
+        if: steps.prague_time.outputs.run == 'true'
         run: |
           node --input-type=module <<'NODE'
           import fs from 'node:fs';import path from 'node:path';
@@ -69,38 +99,33 @@ jobs:
           console.log(`OK: ověřeno ${files.length} JSON datasetů.`);
           NODE
       - name: "Zjistit změny"
+        if: steps.prague_time.outputs.run == 'true'
         id: changes
         run: |
           if git diff --quiet -- data/; then echo "changed=false" >> "$GITHUB_OUTPUT"; else echo "changed=true" >> "$GITHUB_OUTPUT"; fi
       - name: "Uložit aktualizovaná data"
-        if: steps.changes.outputs.changed == 'true'
+        if: steps.prague_time.outputs.run == 'true' && steps.changes.outputs.changed == 'true'
         run: |
           set -euo pipefail
           git config user.name "Praha 8 v přehledech – automat"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/
           git commit -m "Denní aktualizace dat"
-
-          # Mezi startem synchronizace a uložením může do main přibýt jiný commit
-          # (např. ruční úprava webu). Před push proto vždy integrujeme aktuální main.
-          # Pokud někdo zapíše do main přesně mezi pull a push, zkusíme to znovu.
           for attempt in 1 2 3; do
             echo "Uložení do main: pokus ${attempt}/3"
             git pull --rebase origin main
-            if git push origin HEAD:main; then
-              exit 0
-            fi
-            if [ "$attempt" -lt 3 ]; then
-              echo "Main se mezitím změnil, za 5 s opakuji rebase a push."
-              sleep 5
-            fi
+            if git push origin HEAD:main; then exit 0; fi
+            if [ "$attempt" -lt 3 ]; then sleep 5; fi
           done
           echo "Data se nepodařilo bezpečně uložit ani na třetí pokus."
           exit 1
       - name: "Souhrn"
         if: always()
         run: |
-          if [ "${{ job.status }}" != "success" ]; then
+          if [ "${{ steps.prague_time.outputs.run }}" != "true" ]; then
+            echo "## ⏭️ Kandidátní běh přeskočen" >> "$GITHUB_STEP_SUMMARY"
+            echo "V Praze nebylo 05:xx; druhý UTC čas pokrývá CET/CEST." >> "$GITHUB_STEP_SUMMARY"
+          elif [ "${{ job.status }}" != "success" ]; then
             echo "## ❌ Denní aktualizace selhala" >> "$GITHUB_STEP_SUMMARY"
             echo "Existující data v repozitáři nebyla nahrazena neúspěšným během." >> "$GITHUB_STEP_SUMMARY"
           elif [ "${{ steps.changes.outputs.changed }}" = "true" ]; then
