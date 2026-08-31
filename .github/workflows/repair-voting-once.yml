@@ -30,7 +30,13 @@ jobs:
       - name: Nainstalovat závislosti
         run: npm ci
 
+      - name: Nainstalovat Chrome
+        id: chrome
+        uses: browser-actions/setup-chrome@v2
+
       - name: Opravit jména v hlasovacích datech
+        env:
+          PUPPETEER_EXECUTABLE_PATH: ${{ steps.chrome.outputs.chrome-path }}
         run: node scripts/repair-voting-data.mjs
 
       - name: Doplnit bezpečné párování s usneseními
