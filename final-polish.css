@@ -70,6 +70,23 @@
     align-self:end!important;
   }
 
+  /* Datové zdroje: všechny pravé popisy začínají na stejné svislé ose.
+     Kratší text ČSÚ se tedy už neposouvá k pravému okraji. */
+  .source-group-head{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr) minmax(360px,590px)!important;
+    column-gap:48px!important;
+    justify-content:stretch!important;
+    align-items:last baseline!important;
+  }
+  .source-group-head>div{min-width:0}
+  .source-group-head>p{
+    width:100%!important;
+    max-width:none!important;
+    justify-self:stretch!important;
+    margin:0!important;
+  }
+
   /* Sčítání: všechny jednosloupcové grafy využívají celou šířku sekce. */
   .census-page .census-wide-card{
     width:100%!important;
