@@ -4,6 +4,7 @@ import {resolve} from 'node:path';
 
 const root=resolve(import.meta.dirname,'..');
 const syncScript=resolve(root,'scripts','sync-praha8.mjs');
+const repairBodiesScript=resolve(root,'scripts','repair-bodies-data.mjs');
 const peoplePath=resolve(root,'data','lide.json');
 const statusPath=resolve(root,'data','source-status.json');
 
@@ -13,11 +14,12 @@ const personKey=(name='')=>{
   return toks.slice(0,2).sort().join(' ');
 };
 const readJson=async(path,fallback)=>{try{return JSON.parse(await readFile(path,'utf8'))}catch{return fallback}};
-const run=args=>new Promise((ok,fail)=>{
-  const child=spawn(process.execPath,[syncScript,...args],{cwd:root,stdio:'inherit',env:process.env});
+const runNode=(script,args=[])=>new Promise((ok,fail)=>{
+  const child=spawn(process.execPath,[script,...args],{cwd:root,stdio:'inherit',env:process.env});
   child.on('error',fail);
   child.on('exit',code=>code===0?ok():fail(new Error(`Synchronizace skončila s kódem ${code}.`)));
 });
+const run=args=>runNode(syncScript,args);
 const runWithRetry=async(args,{attempts=3,delayMs=5000,label='Synchronizace'}={})=>{
   let lastError;
   for(let attempt=1;attempt<=attempts;attempt++){
@@ -42,6 +44,9 @@ console.log('──────────────────────�
 // Organizace běží samostatně, aby dočasně pomalá stránka Prahy 8 nezahodila
 // několikaminutový úspěšný běh ostatních zdrojů.
 await run(['--people','--bodies','--hmp-functions','--national-roles','--fast']);
+// Dvě komise jsou na webu Prahy 8 dlouhodobě občas vynechány při discovery seznamu.
+// Proto je po standardním načtení znovu ověříme přímo z jejich oficiálních detailů.
+await runNode(repairBodiesScript);
 const afterFunctions=await readJson(peoplePath,[]);
 const preserved=new Map(afterFunctions.map(p=>[personKey(p.name),{
   magistrateRoles:p.magistrateRoles||[],
