@@ -11,6 +11,7 @@ on:
           - volby
           - rozpocet
           - Sčítání 2021
+          - Komise a výbory
 
 permissions:
   contents: write
@@ -69,6 +70,9 @@ jobs:
             "Sčítání 2021")
               npm run sync:census
               node scripts/repair-source-status.mjs census
+              ;;
+            "Komise a výbory")
+              npm run sync:bodies
               ;;
             *)
               echo "Neznámý dataset: ${{ inputs.dataset }}"
