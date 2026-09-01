@@ -4,7 +4,7 @@ import {resolve} from 'node:path';
 
 const root=resolve(import.meta.dirname,'..');
 const syncScript=resolve(root,'scripts','sync-praha8.mjs');
-const repairBodiesScript=resolve(root,'scripts','repair-bodies-data.mjs');
+const bodiesScript=resolve(root,'scripts','sync-bodies.mjs');
 const peoplePath=resolve(root,'data','lide.json');
 const statusPath=resolve(root,'data','source-status.json');
 
@@ -40,13 +40,14 @@ const runWithRetry=async(args,{attempts=3,delayMs=5000,label='Synchronizace'}={}
 console.log('\nTÝDENNÍ SYNCHRONIZACE — zachování rolí mezi datovými sadami HMP');
 console.log('────────────────────────────────────────────────────────────');
 
-// První běh načte zastupitelstvo Prahy 8, HMP funkce a Parlament.
-// Organizace běží samostatně, aby dočasně pomalá stránka Prahy 8 nezahodila
-// několikaminutový úspěšný běh ostatních zdrojů.
-await run(['--people','--bodies','--hmp-functions','--national-roles','--fast']);
-// Dvě komise jsou na webu Prahy 8 dlouhodobě občas vynechány při discovery seznamu.
-// Proto je po standardním načtení znovu ověříme přímo z jejich oficiálních detailů.
-await runNode(repairBodiesScript);
+// Nejprve načteme zastupitelstvo Prahy 8, HMP funkce a Parlament.
+await run(['--people','--hmp-functions','--national-roles','--fast']);
+
+// Komise, výbory a zvláštní orgány mají vlastní kompletní loader.
+// Ten nejprve objeví celý aktuální seznam komisí a teprve po úspěšné kontrole všech detailů
+// atomicky přepíše organy.json. Neexistuje už druhý opravný průchod.
+await runNode(bodiesScript);
+
 const afterFunctions=await readJson(peoplePath,[]);
 const preserved=new Map(afterFunctions.map(p=>[personKey(p.name),{
   magistrateRoles:p.magistrateRoles||[],
