@@ -7,10 +7,7 @@
     "email": "tomas.bina@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Bina-Tomas.html",
-    "isClubChair": false,
-    "magistrateRoles": [],
-    "hmpCompanyRoles": [],
-    "otherRoles": []
+    "isClubChair": false
   },
   {
     "name": "Blahunková Dana RNDr.",
@@ -20,10 +17,7 @@
     "email": "dana.blahunkova@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Blahunkova-Dana.html",
-    "isClubChair": false,
-    "magistrateRoles": [],
-    "hmpCompanyRoles": [],
-    "otherRoles": []
+    "isClubChair": false
   },
   {
     "name": "Buršík Ondřej Ing., MPA",
@@ -33,16 +27,7 @@
     "email": "ondrej.bursik@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Bursik-Ondrej.html",
-    "isClubChair": false,
-    "magistrateRoles": [
-      {
-        "role": "člen",
-        "body": "Výbor pro bezpečnost a pro prevenci kriminality",
-        "url": "https://praha.eu/vybory"
-      }
-    ],
-    "hmpCompanyRoles": [],
-    "otherRoles": []
+    "isClubChair": false
   },
   {
     "name": "Cibulka Martin Mgr., DiS.",
@@ -52,10 +37,7 @@
     "email": "martin.cibulka@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Cibulka-Martin.html",
-    "isClubChair": true,
-    "magistrateRoles": [],
-    "hmpCompanyRoles": [],
-    "otherRoles": []
+    "isClubChair": true
   },
   {
     "name": "Dvořáková Jana Mgr. Bc.",
@@ -65,16 +47,7 @@
     "email": "jana.dvorakova3@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Dvorakova-Jana-2.html",
-    "isClubChair": false,
-    "magistrateRoles": [
-      {
-        "role": "člen",
-        "body": "Výbor pro rodinnou politiku a sociální oblast",
-        "url": "https://praha.eu/vybory#/detail/-37317?periodId=-36525&year=2026&showAll=true"
-      }
-    ],
-    "hmpCompanyRoles": [],
-    "otherRoles": []
+    "isClubChair": false
   },
   {
     "name": "Fichtner Matěj PhDr. Ing., MBA",
@@ -88,10 +61,7 @@
     "email": "matej.fichtner@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Fichtner-Matej.html",
-    "isClubChair": false,
-    "magistrateRoles": [],
-    "hmpCompanyRoles": [],
-    "otherRoles": []
+    "isClubChair": false
   },
   {
     "name": "Fišer Michal, MBA",
@@ -101,22 +71,7 @@
     "email": "michal.fiser@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Fiser-Michal.html",
-    "isClubChair": false,
-    "magistrateRoles": [
-      {
-        "role": "člen",
-        "body": "Komise pro elektromobilitu",
-        "url": "https://praha.eu/komise_rady_hmp#/detail/100221?periodId=-36525&year=2026&showAll=true"
-      }
-    ],
-    "hmpCompanyRoles": [
-      {
-        "role": "člen představenstva",
-        "body": "Technologie hlavního města Prahy, a.s.",
-        "url": "https://praha.eu/technologie-hlavniho-mesta-prahy-a-s"
-      }
-    ],
-    "otherRoles": []
+    "isClubChair": false
   },
   {
     "name": "Franc Pavel Mgr.",
@@ -126,10 +81,7 @@
     "email": "pavel.franc@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Franc-Pavel.html",
-    "isClubChair": false,
-    "magistrateRoles": [],
-    "hmpCompanyRoles": [],
-    "otherRoles": []
+    "isClubChair": false
   },
   {
     "name": "Garlík Bohumír prof. Ing., CSc., DBA",
@@ -139,10 +91,7 @@
     "email": "bohumir.garlik@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Garlik-Bohumir.html",
-    "isClubChair": false,
-    "magistrateRoles": [],
-    "hmpCompanyRoles": [],
-    "otherRoles": []
+    "isClubChair": false
   },
   {
     "name": "Gregor Adam Mgr.",
@@ -152,10 +101,7 @@
     "email": "adam.gregor@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Gregor-Adam.html",
-    "isClubChair": false,
-    "magistrateRoles": [],
-    "hmpCompanyRoles": [],
-    "otherRoles": []
+    "isClubChair": false
   },
   {
     "name": "Gros Ondřej",
@@ -172,10 +118,7 @@
     "email": "ondrej.gros@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Gros-Ondrej.html",
-    "isClubChair": false,
-    "magistrateRoles": [],
-    "hmpCompanyRoles": [],
-    "otherRoles": []
+    "isClubChair": false
   },
   {
     "name": "Hřebík Tomáš Ing., Ph.D.",
@@ -189,16 +132,7 @@
     "email": "tomas.hrebik@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Hrebik-Tomas.html",
-    "isClubChair": false,
-    "magistrateRoles": [],
-    "hmpCompanyRoles": [
-      {
-        "role": "člen dozorčí rada",
-        "body": "Pražská plynárenská a.s.",
-        "url": "https://praha.eu/prazska-plynarenska-a-s"
-      }
-    ],
-    "otherRoles": []
+    "isClubChair": false
   },
   {
     "name": "Janovský Michal Mgr.",
@@ -208,10 +142,7 @@
     "email": "michal.janovsky@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Janovsky-Michal.html",
-    "isClubChair": false,
-    "magistrateRoles": [],
-    "hmpCompanyRoles": [],
-    "otherRoles": []
+    "isClubChair": false
   },
   {
     "name": "Jedlička Martin Ing.",
@@ -223,27 +154,7 @@
     "email": "martin.jedlicka@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Jedlicka-Martin.html",
-    "isClubChair": true,
-    "magistrateRoles": [
-      {
-        "role": "člen",
-        "body": "Komise pro parkování a silniční dopravu",
-        "url": "https://praha.eu/komise_rady_hmp#/detail/-38705?periodId=-36525&year=2026&showAll=true"
-      },
-      {
-        "role": "člen",
-        "body": "Komise pro vodní dopravu",
-        "url": "https://praha.eu/komise_rady_hmp#/detail/100044?periodId=-36525&year=2026&showAll=true"
-      }
-    ],
-    "hmpCompanyRoles": [
-      {
-        "role": "místopředseda dozorčí rada",
-        "body": "Technická správa komunikací hl. m. Prahy, a.s.",
-        "url": "https://praha.eu/technicka-sprava-komunikaci-hl-m-prahy-a-s"
-      }
-    ],
-    "otherRoles": []
+    "isClubChair": true
   },
   {
     "name": "Jiran Jakub Mgr.",
@@ -253,22 +164,7 @@
     "email": "jakub.jiran@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Jiran-Jakub.html",
-    "isClubChair": false,
-    "magistrateRoles": [
-      {
-        "role": "člen",
-        "body": "Komise pro parkování a silniční dopravu",
-        "url": "https://praha.eu/komise_rady_hmp#/detail/-38705?periodId=-36525&year=2026&showAll=true"
-      }
-    ],
-    "hmpCompanyRoles": [
-      {
-        "role": "místopředseda dozorčí rady",
-        "body": "Dopravní podnik hl. m. Prahy, a.s.",
-        "url": "https://praha.eu/dopravni-podnik-hl-m-prahy-a-s"
-      }
-    ],
-    "otherRoles": []
+    "isClubChair": false
   },
   {
     "name": "Kolátor Jan Mgr.",
@@ -278,10 +174,7 @@
     "email": "jan.kolator@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Kolator-Jan.html",
-    "isClubChair": false,
-    "magistrateRoles": [],
-    "hmpCompanyRoles": [],
-    "otherRoles": []
+    "isClubChair": false
   },
   {
     "name": "Kotrbová Jarmila",
@@ -291,10 +184,7 @@
     "email": "jarmila.kotrbova@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Kotrbova-Jarmila.html",
-    "isClubChair": false,
-    "magistrateRoles": [],
-    "hmpCompanyRoles": [],
-    "otherRoles": []
+    "isClubChair": false
   },
   {
     "name": "Kroutil Anna Ing.",
@@ -304,10 +194,7 @@
     "email": "anna.kroutil@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Kroutil-Anna.html",
-    "isClubChair": false,
-    "magistrateRoles": [],
-    "hmpCompanyRoles": [],
-    "otherRoles": []
+    "isClubChair": false
   },
   {
     "name": "Ludková Vladimíra Mgr.",
@@ -321,21 +208,7 @@
     "email": "vladimira.ludkova@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Ludkova-Vladimira.html",
-    "isClubChair": false,
-    "magistrateRoles": [
-      {
-        "role": "členka",
-        "body": "Výbor pro rodinnou politiku a sociální oblast",
-        "url": "https://praha.eu/vybory"
-      }
-    ],
-    "hmpCompanyRoles": [],
-    "otherRoles": [
-      {
-        "label": "Senátorka Parlamentu ČR",
-        "url": "https://www.senat.cz/senatori/index.php?lng=cz&par_3=465"
-      }
-    ]
+    "isClubChair": false
   },
   {
     "name": "Márová Jitka Bc., DiS.",
@@ -345,10 +218,7 @@
     "email": "jitka.marova@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Marova-Jitka.html",
-    "isClubChair": false,
-    "magistrateRoles": [],
-    "hmpCompanyRoles": [],
-    "otherRoles": []
+    "isClubChair": false
   },
   {
     "name": "Mikulenka Tomáš",
@@ -358,10 +228,7 @@
     "email": "tomas.mikulenka@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Mikulenka-Tomas.html",
-    "isClubChair": false,
-    "magistrateRoles": [],
-    "hmpCompanyRoles": [],
-    "otherRoles": []
+    "isClubChair": false
   },
   {
     "name": "Mrázek Tomáš Bc.",
@@ -371,10 +238,7 @@
     "email": "tomas.mrazek@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Mrazek-Tomas.html",
-    "isClubChair": false,
-    "magistrateRoles": [],
-    "hmpCompanyRoles": [],
-    "otherRoles": []
+    "isClubChair": false
   },
   {
     "name": "Musílek Václav JUDr.",
@@ -384,10 +248,7 @@
     "email": "vaclav.musilek@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Musilek-Vaclav.html",
-    "isClubChair": false,
-    "magistrateRoles": [],
-    "hmpCompanyRoles": [],
-    "otherRoles": []
+    "isClubChair": false
   },
   {
     "name": "Musilová Barbora PhDr.",
@@ -397,10 +258,7 @@
     "email": "barbora.musilova@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Musilova-Barbora.html",
-    "isClubChair": false,
-    "magistrateRoles": [],
-    "hmpCompanyRoles": [],
-    "otherRoles": []
+    "isClubChair": false
   },
   {
     "name": "Němeček Tomáš Mgr. et Mgr.",
@@ -410,16 +268,7 @@
     "email": "tomas.nemecek@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Nemecek-Tomas.html",
-    "isClubChair": false,
-    "magistrateRoles": [
-      {
-        "role": "člen",
-        "body": "Výbor pro dotační vztahy a vztahy k městským částem",
-        "url": "https://praha.eu/vybory"
-      }
-    ],
-    "hmpCompanyRoles": [],
-    "otherRoles": []
+    "isClubChair": false
   },
   {
     "name": "Nepil Radomír",
@@ -436,42 +285,7 @@
     "email": "radomir.nepil@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Nepil-Radomir.html",
-    "isClubChair": true,
-    "magistrateRoles": [
-      {
-        "role": "zastupitel hl. města Prahy",
-        "body": "",
-        "url": "https://praha.eu/zastupitelstvo"
-      },
-      {
-        "role": "člen",
-        "body": "Výbor pro dotační vztahy a vztahy k městským částem",
-        "url": "https://praha.eu/vybory"
-      },
-      {
-        "role": "člen",
-        "body": "Výbor pro územní rozvoj",
-        "url": "https://praha.eu/vybory"
-      },
-      {
-        "role": "člen",
-        "body": "Komise pro nový územní plán",
-        "url": "https://praha.eu/komise_rady_hmp"
-      },
-      {
-        "role": "člen",
-        "body": "Komise pro Fond spoluúčasti investorů na rozvoji území",
-        "url": "https://praha.eu/komise_rady_hmp#/detail/-38065?periodId=-36525&year=2026&showAll=true"
-      }
-    ],
-    "hmpCompanyRoles": [
-      {
-        "role": "člen dozorčí rady",
-        "body": "Pražské služby, a.s.",
-        "url": "https://praha.eu/prazske-sluzby-a-s"
-      }
-    ],
-    "otherRoles": []
+    "isClubChair": true
   },
   {
     "name": "Novák Michal, MBA",
@@ -481,10 +295,7 @@
     "email": "michal.novak@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Novak-Michal.html",
-    "isClubChair": false,
-    "magistrateRoles": [],
-    "hmpCompanyRoles": [],
-    "otherRoles": []
+    "isClubChair": false
   },
   {
     "name": "Novák Vítězslav Mgr.",
@@ -494,16 +305,7 @@
     "email": "vitezslav.novak@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Novak-Vitezslav.html",
-    "isClubChair": true,
-    "magistrateRoles": [
-      {
-        "role": "člen",
-        "body": "Výbor finanční",
-        "url": "https://praha.eu/vybory"
-      }
-    ],
-    "hmpCompanyRoles": [],
-    "otherRoles": []
+    "isClubChair": true
   },
   {
     "name": "Novotná Hana Mgr.",
@@ -513,10 +315,7 @@
     "email": "hana.novotna@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Novotna-Hana.html",
-    "isClubChair": false,
-    "magistrateRoles": [],
-    "hmpCompanyRoles": [],
-    "otherRoles": []
+    "isClubChair": false
   },
   {
     "name": "Paulus Libor Mgr.",
@@ -526,10 +325,7 @@
     "email": "libor.paulus@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Paulus-Libor.html",
-    "isClubChair": false,
-    "magistrateRoles": [],
-    "hmpCompanyRoles": [],
-    "otherRoles": []
+    "isClubChair": false
   },
   {
     "name": "Roubíček Martin Mgr.",
@@ -539,10 +335,7 @@
     "email": "martin.roubicek@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Roubicek-Martin.html",
-    "isClubChair": false,
-    "magistrateRoles": [],
-    "hmpCompanyRoles": [],
-    "otherRoles": []
+    "isClubChair": false
   },
   {
     "name": "Slabihoudek Tomáš Ing.",
@@ -552,51 +345,7 @@
     "email": "tomas.slabihoudek@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Slabihoudek-Tomas.html",
-    "isClubChair": false,
-    "magistrateRoles": [
-      {
-        "role": "radní hl. města Prahy",
-        "body": "",
-        "url": "https://praha.eu/rada"
-      },
-      {
-        "role": "zastupitel hl. města Prahy",
-        "body": "",
-        "url": "https://praha.eu/zastupitelstvo"
-      },
-      {
-        "role": "člen",
-        "body": "Výbor pro dopravu",
-        "url": "https://praha.eu/vybory"
-      },
-      {
-        "role": "člen",
-        "body": "Výbor pro dotační vztahy a vztahy k městským částem",
-        "url": "https://praha.eu/vybory"
-      },
-      {
-        "role": "člen",
-        "body": "Výbor finanční",
-        "url": "https://praha.eu/vybory"
-      },
-      {
-        "role": "člen",
-        "body": "Výbor kontrolní",
-        "url": "https://praha.eu/vybory"
-      },
-      {
-        "role": "člen",
-        "body": "Povodňová komise hl. m. Prahy",
-        "url": "https://praha.eu"
-      },
-      {
-        "role": "člen",
-        "body": "Komise pro oblast cestovního ruchu",
-        "url": "https://praha.eu/komise_rady_hmp#/detail/-38579?periodId=-36525&year=2026&showAll=true"
-      }
-    ],
-    "hmpCompanyRoles": [],
-    "otherRoles": []
+    "isClubChair": false
   },
   {
     "name": "Slávka Ivo Mgr.",
@@ -606,10 +355,7 @@
     "email": "ivo.slavka@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Slavka-Ivo.html",
-    "isClubChair": false,
-    "magistrateRoles": [],
-    "hmpCompanyRoles": [],
-    "otherRoles": []
+    "isClubChair": false
   },
   {
     "name": "Slobodník Josef Bc.",
@@ -621,10 +367,7 @@
     "email": "josef.slobodnik@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Slobodnik-Josef.html",
-    "isClubChair": false,
-    "magistrateRoles": [],
-    "hmpCompanyRoles": [],
-    "otherRoles": []
+    "isClubChair": false
   },
   {
     "name": "Solomonová Jana Mgr. et Mgr. BcA.",
@@ -642,10 +385,7 @@
     "email": "jana.solomonova@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Solomonova-Jana.html",
-    "isClubChair": false,
-    "magistrateRoles": [],
-    "hmpCompanyRoles": [],
-    "otherRoles": []
+    "isClubChair": false
   },
   {
     "name": "Stránský Václav",
@@ -655,21 +395,7 @@
     "email": "vaclav.stransky@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Stransky-Vaclav.html",
-    "isClubChair": false,
-    "magistrateRoles": [
-      {
-        "role": "člen",
-        "body": "Výbor pro územní rozvoj",
-        "url": "https://praha.eu/vybory"
-      },
-      {
-        "role": "člen",
-        "body": "Komise pro pěší a bezbariérovost",
-        "url": "https://praha.eu/komise_rady_hmp#/detail/-38631?periodId=-36525&year=2026&showAll=true"
-      }
-    ],
-    "hmpCompanyRoles": [],
-    "otherRoles": []
+    "isClubChair": false
   },
   {
     "name": "Šimbera Jan Mgr., Ph.D.",
@@ -679,16 +405,7 @@
     "email": "jan.simbera@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Simbera-Jan.html",
-    "isClubChair": false,
-    "magistrateRoles": [
-      {
-        "role": "člen",
-        "body": "Výbor pro energetiku",
-        "url": "https://praha.eu/vybory"
-      }
-    ],
-    "hmpCompanyRoles": [],
-    "otherRoles": []
+    "isClubChair": false
   },
   {
     "name": "Štěrba Martin Mgr.",
@@ -698,16 +415,7 @@
     "email": "martin.sterba@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Sterba-Martin.html",
-    "isClubChair": true,
-    "magistrateRoles": [
-      {
-        "role": "předseda",
-        "body": "Komise pro veřejnou dopravu",
-        "url": "https://praha.eu/komise_rady_hmp"
-      }
-    ],
-    "hmpCompanyRoles": [],
-    "otherRoles": []
+    "isClubChair": true
   },
   {
     "name": "Štorek Jan",
@@ -717,16 +425,7 @@
     "email": "jan.storek@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Storek-Jan.html",
-    "isClubChair": false,
-    "magistrateRoles": [
-      {
-        "role": "člen",
-        "body": "Komise pro sport",
-        "url": "https://praha.eu/komise_rady_hmp#/detail/-38207?periodId=-36525&year=2026&showAll=true"
-      }
-    ],
-    "hmpCompanyRoles": [],
-    "otherRoles": []
+    "isClubChair": false
   },
   {
     "name": "Švarc Michal Bc.",
@@ -736,10 +435,7 @@
     "email": "michal.svarc@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Svarc-Michal.html",
-    "isClubChair": false,
-    "magistrateRoles": [],
-    "hmpCompanyRoles": [],
-    "otherRoles": []
+    "isClubChair": false
   },
   {
     "name": "Tatranský Tomáš Mgr.",
@@ -749,10 +445,7 @@
     "email": "tomas.tatransky@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Tatransky-Tomas.html",
-    "isClubChair": false,
-    "magistrateRoles": [],
-    "hmpCompanyRoles": [],
-    "otherRoles": []
+    "isClubChair": false
   },
   {
     "name": "Trník Michal, M.A.",
@@ -762,16 +455,7 @@
     "email": "michal.trnik@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Trnik-Michal.html",
-    "isClubChair": false,
-    "magistrateRoles": [
-      {
-        "role": "člen",
-        "body": "Výbor pro strategické investice",
-        "url": "https://praha.eu/vybory"
-      }
-    ],
-    "hmpCompanyRoles": [],
-    "otherRoles": []
+    "isClubChair": false
   },
   {
     "name": "Tůmová Ilona, DiS.",
@@ -781,10 +465,7 @@
     "email": "ilona.tumova@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Tumova-Ilona.html",
-    "isClubChair": true,
-    "magistrateRoles": [],
-    "hmpCompanyRoles": [],
-    "otherRoles": []
+    "isClubChair": true
   },
   {
     "name": "Vítek Jiří",
@@ -798,10 +479,7 @@
     "email": "jiri.vitek@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Vitek-Jiri.html",
-    "isClubChair": true,
-    "magistrateRoles": [],
-    "hmpCompanyRoles": [],
-    "otherRoles": []
+    "isClubChair": true
   },
   {
     "name": "Vojtíšková Vladislava MVDr. Bc.",
@@ -811,20 +489,6 @@
     "email": "vladislava.vojtiskova@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Vojtiskova-Vladislava.html",
-    "isClubChair": false,
-    "magistrateRoles": [
-      {
-        "role": "členka",
-        "body": "Výbor pro strategický a hospodářský rozvoj a podporu podnikání a inovací",
-        "url": "https://praha.eu/vybory"
-      },
-      {
-        "role": "členka",
-        "body": "Výbor pro zahraniční vztahy a EU fondy",
-        "url": "https://praha.eu/vybory"
-      }
-    ],
-    "hmpCompanyRoles": [],
-    "otherRoles": []
+    "isClubChair": false
   }
 ]

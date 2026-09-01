@@ -2,7 +2,7 @@
   "people": {
     "status": "data načtena",
     "count": 45,
-    "updated": "2026-08-30T19:09:32.014Z",
+    "updated": "2026-09-01T07:14:17.725Z",
     "mode": "aktualizováno"
   },
   "hmpFunctions": {
@@ -55,9 +55,12 @@
   },
   "bodies": {
     "status": "data načtena",
-    "count": 16,
-    "updated": "2026-08-30T19:09:32.014Z",
-    "mode": "aktualizováno"
+    "count": 18,
+    "updated": "2026-09-01T07:14:20.459Z",
+    "mode": "aktualizováno",
+    "commissions": 14,
+    "committees": 2,
+    "specialBodies": 2
   },
   "resolutions": {
     "status": "data načtena",
@@ -105,12 +108,6 @@
   "contracts": {
     "status": "data načtena",
     "count": 6471,
-    "updated": "2026-08-31T09:45:41.193Z",
-    "mode": "aktualizováno"
-  },
-  "contractEntities": {
-    "status": "data načtena",
-    "count": 7303,
     "updated": "2026-08-31T09:45:41.193Z",
     "mode": "aktualizováno"
   }
