@@ -70,8 +70,11 @@
     align-self:end!important;
   }
 
-  /* Datové zdroje: všechny pravé popisy začínají na stejné svislé ose.
-     Kratší text ČSÚ se tedy už neposouvá k pravému okraji. */
+  /* Datové zdroje: nadpisy obou hlavních bloků i jednotlivých institucí
+     používají jednu společnou dvousloupcovou osu. Pravý sloupec tedy vždy
+     začíná na stejném místě jako u ČSÚ a Hlavního města Prahy. */
+  .status-overview>.section-head,
+  .sources-intro,
   .source-group-head{
     display:grid!important;
     grid-template-columns:minmax(0,1fr) minmax(360px,590px)!important;
@@ -79,7 +82,10 @@
     justify-content:stretch!important;
     align-items:last baseline!important;
   }
+  .status-overview>.section-head>div,
   .source-group-head>div{min-width:0}
+  .status-overview>.section-head>p,
+  .sources-intro>p,
   .source-group-head>p{
     width:100%!important;
     max-width:none!important;
