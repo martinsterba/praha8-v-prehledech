@@ -211,6 +211,27 @@
       "publisherIco": "00063797"
     },
     {
+      "id": "39318979",
+      "idContract": "36962679",
+      "url": "https://smlouvy.gov.cz/smlouva/39318979",
+      "subject": "Darovací smlouva",
+      "published": "2026-08-31",
+      "signed": "2026-08-31",
+      "valueCzk": 250000,
+      "valueVatCzk": 250000,
+      "valueNoVatCzk": 250000,
+      "counterparties": [
+        {
+          "name": "FK Meteor Praha VIII, z.s.",
+          "ico": "49626183",
+          "box": "7rvf6uh"
+        }
+      ],
+      "counterparty": "FK Meteor Praha VIII, z.s.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
       "id": "39296367",
       "idContract": "36940743",
       "url": "https://smlouvy.gov.cz/smlouva/39296367",
@@ -136776,6 +136797,13 @@
       "valuedContracts": 1
     },
     {
+      "name": "FK Meteor Praha VIII, z.s.",
+      "ico": "49626183",
+      "contracts": 11,
+      "knownValueCzk": 7683000,
+      "valuedContracts": 11
+    },
+    {
       "name": "VISTORIA CZ a.s.",
       "ico": "25110977",
       "contracts": 8,
@@ -136795,13 +136823,6 @@
       "contracts": 11,
       "knownValueCzk": 7504500,
       "valuedContracts": 11
-    },
-    {
-      "name": "FK Meteor Praha VIII, z.s.",
-      "ico": "49626183",
-      "contracts": 10,
-      "knownValueCzk": 7433000,
-      "valuedContracts": 10
     },
     {
       "name": "GARTENSTA PLUS s.r.o.",
@@ -147193,17 +147214,17 @@
     }
   ],
   "meta": {
-    "total": 6481,
+    "total": 6482,
     "complete": true,
     "historyComplete": true,
     "scope": "full-history",
     "dateFrom": "2007-05-09",
     "dateTo": "2026-09-16",
     "dateLabel": "celá historie Registru smluv",
-    "knownValueCzk": 6865691255.109995,
-    "valuedContracts": 5721,
+    "knownValueCzk": 6865941255.109995,
+    "valuedContracts": 5722,
     "partners": 1602,
-    "updated": "2026-09-02T09:29:06.624Z",
+    "updated": "2026-09-02T09:53:17.653Z",
     "source": "https://data.smlouvy.gov.cz/index.xml",
     "method": "official-live-search-daily-overlap",
     "dumps": 124,
