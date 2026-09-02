@@ -56,17 +56,17 @@ jobs:
         run: |
           node --input-type=module <<'NODE'
           import fs from 'node:fs';
-          const files=['data/smlouvy.json','data/smlouvy-subjekty.json','data/contract-entities.json','data/contracts-sync-state.json'];
+          const files=['data/smlouvy.json','data/smlouvy-subjekty.json','data/contract-entities.json'];
           let ready=files.every(fs.existsSync);
-          if(ready){try{const p8=JSON.parse(fs.readFileSync(files[0],'utf8'));const entities=JSON.parse(fs.readFileSync(files[1],'utf8'));const registry=JSON.parse(fs.readFileSync(files[2],'utf8'));const state=JSON.parse(fs.readFileSync(files[3],'utf8'));ready=p8?.meta?.historyComplete===true&&Array.isArray(p8?.contracts)&&entities?.entities?.length===40&&registry?.entities?.length===40&&Object.keys(state?.dumps||{}).length>0}catch{ready=false}}
+          if(ready){try{const p8=JSON.parse(fs.readFileSync(files[0],'utf8'));const entities=JSON.parse(fs.readFileSync(files[1],'utf8'));const registry=JSON.parse(fs.readFileSync(files[2],'utf8'));ready=p8?.meta?.historyComplete===true&&Array.isArray(p8?.contracts)&&entities?.entities?.length===40&&registry?.entities?.length===40}catch{ready=false}}
           fs.appendFileSync(process.env.GITHUB_OUTPUT,`ready=${ready}\n`);
-          console.log(ready?'Registr smluv: kompletní produkční základ MČ + 40 subjektů nalezen.':'Registr smluv: produkční základ není připraven, inkrementální sync přeskakuji.');
+          console.log(ready?'Registr smluv: kompletní produkční základ MČ + 40 subjektů nalezen.':'Registr smluv: produkční základ není připraven, denní kontrolu přeskakuji.');
           NODE
 
-      - name: "Registr smluv – nové změny"
+      - name: "Registr smluv – lehká denní kontrola"
         if: steps.contracts.outputs.ready == 'true'
         run: |
-          npm run sync:contracts:new
+          npm run sync:contracts:daily
           node scripts/repair-source-status.mjs contracts
 
       - name: "Ověřit JSON datasety"
