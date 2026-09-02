@@ -25,14 +25,14 @@ if(target==='voting'){
 }else if(target==='contracts'){
   const p8=await readJson(resolve(root,'data','smlouvy.json'),{});
   const entities=await readJson(resolve(root,'data','smlouvy-subjekty.json'),{});
-  const state=await readJson(resolve(root,'data','contracts-sync-state.json'),{});
-  const updated=state?.updated||state?.lastUpdated||state?.lastRun||now;
+  const p8Updated=p8?.meta?.updated||now;
+  const entitiesUpdated=entities?.updated||entities?.meta?.updated||p8Updated;
   const p8Count=Number(p8?.meta?.total||p8?.contracts?.length||0);
   const entityCount=Number(entities?.meta?.totalOtherContracts||entities?.meta?.totalContracts||0) ||
     (Array.isArray(entities?.entities)?entities.entities.reduce((sum,e)=>sum+Number(e?.count||e?.contracts?.length||0),0):0);
-  status.contracts=loaded(p8Count,updated);
-  status.contractEntities=loaded(entityCount,updated);
-  console.log(`Stav Registru smluv: MČ ${p8Count.toLocaleString('cs-CZ')} · organizace a firmy ${entityCount.toLocaleString('cs-CZ')} · ${updated}.`);
+  status.contracts=loaded(p8Count,p8Updated);
+  status.contractEntities=loaded(entityCount,entitiesUpdated);
+  console.log(`Stav Registru smluv: MČ ${p8Count.toLocaleString('cs-CZ')} · organizace a firmy ${entityCount.toLocaleString('cs-CZ')} · MČ ${p8Updated} · subjekty ${entitiesUpdated}.`);
 }else if(target==='census'){
   const census=await readJson(resolve(root,'data','scitani2021.json'),null);
   const hasData=!!(census&&typeof census==='object'&&(census.population||census.housing||census.households||census.meta));
