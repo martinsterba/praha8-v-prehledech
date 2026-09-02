@@ -78,14 +78,32 @@ if(INIT){
 }
 
 const prev=state?.dumps||{};
-const changed=entries.filter(x=>!prev[x.month]||(x.hash&&prev[x.month]?.hash!==x.hash)||!x.complete);
+const dumpChanged=(x,old)=>{
+  if(!old)return true;
+  if(x.hash)return x.hash!==String(old.hash||'');
+  return x.size!==Number(old.size||0)||x.generated!==String(old.generated||'');
+};
+const stateChanged=entries.length!==Object.keys(prev).length||entries.some(x=>{
+  const old=prev[x.month];
+  return !old||x.hash!==String(old.hash||'')||x.size!==Number(old.size||0)||x.generated!==String(old.generated||'')||x.complete!==Boolean(old.complete)||x.url!==String(old.url||'');
+});
+const changed=entries.filter(x=>dumpChanged(x,prev[x.month]));
 const totalSize=changed.reduce((n,x)=>n+(x.size||0),0);
 console.log(`Index: ${entries.length} měsíců · otevřené/průběžné: ${open.map(x=>x.month).join(', ')||'žádný'}.`);
-console.log(`Ke kontrole: ${changed.length} dumpů${totalSize?` · cca ${(totalSize/1024/1024/1024).toFixed(2)} GB XML`:''}.`);
-if(PLAN){console.log(changed.length?`Měsíce: ${changed.map(x=>x.month).join(', ')}`:'Žádné změněné měsíce.');console.log(baselineOk?'✅ Historický základ je připravený.':'❌ Historický základ není kompletní.');process.exit(0)}
+console.log(`Ke stažení: ${changed.length} skutečně změněných dumpů${totalSize?` · cca ${(totalSize/1024/1024/1024).toFixed(2)} GB XML`:''}.`);
+if(PLAN){console.log(changed.length?`Měsíce: ${changed.map(x=>x.month).join(', ')}`:'Žádné skutečně změněné měsíční dumpy.');console.log(baselineOk?'✅ Historický základ je připravený.':'❌ Historický základ není kompletní.');process.exit(0)}
 if(!baselineOk)throw new Error('Inkrementální sync odmítnut: chybí kompletní historický základ MČ Praha 8 + 40 subjektů.');
 if(!state)throw new Error('Inkrementální sync odmítnut: chybí contracts-sync-state.json.');
-if(!changed.length){console.log('✅ Žádná změna. MČ Praha 8 ani 40 subjektů nebylo třeba přepisovat.');process.exit(0)}
+if(!changed.length){
+  if(stateChanged){
+    const now=new Date().toISOString();
+    const nextState={schema:2,updated:now,source:INDEX,scope:'municipality-plus-40-entities',dumps:Object.fromEntries(entries.map(x=>[x.month,{hash:x.hash,size:x.size,generated:x.generated,complete:x.complete,url:x.url}]))};
+    await atomicJson(STATE,nextState);
+    console.log('ℹ️ Metadata indexu se změnila; stav synchronizace byl aktualizován bez stahování dumpu.');
+  }
+  console.log('✅ Žádný nový ani obsahově změněný dump. MČ Praha 8 ani 40 subjektů nebylo třeba přepisovat.');
+  process.exit(0);
+}
 
 let p8=[...data.contracts];
 const byEntity=new Map(entityData.entities.map(e=>[normIco(e.ico),[...(e.contracts||[])]]));
@@ -102,11 +120,11 @@ for(const entry of changed){
 }
 
 p8=dedupe(p8);const p8Sum=summarize(p8);const now=new Date().toISOString();
-const p8Payload={contracts:p8,partners:p8Sum.partnerList,meta:{...data.meta,total:p8.length,knownValueCzk:p8Sum.knownValueCzk,valuedContracts:p8Sum.valuedContracts,partners:p8Sum.partners,dateFrom:p8Sum.dateFrom,dateTo:p8Sum.dateTo,updated:now,historyComplete:true,method:'open-data-monthly-dumps-incremental-all-entities-by-index-hash',validation:{status:'open-data-complete',note:'Historický základ MČ Praha 8 i 40 navázaných subjektů se aktualizuje společně pouze z měsíčních dumpů, jejichž stav se změnil v oficiálním indexu Registru smluv.'}}};
+const p8Payload={contracts:p8,partners:p8Sum.partnerList,meta:{...data.meta,total:p8.length,knownValueCzk:p8Sum.knownValueCzk,valuedContracts:p8Sum.valuedContracts,partners:p8Sum.partners,dateFrom:p8Sum.dateFrom,dateTo:p8Sum.dateTo,updated:now,historyComplete:true,method:'open-data-monthly-dumps-incremental-all-entities-by-index-hash',validation:{status:'open-data-complete',note:'Historický základ MČ Praha 8 i 40 navázaných subjektů se aktualizuje společně pouze z měsíčních dumpů, jejichž obsah se podle oficiálního indexu skutečně změnil.'}}};
 
 const extra=registry.entities.map(e=>{const items=dedupe(byEntity.get(normIco(e.ico))||[]),sum=summarize(items);return {...e,...sum}});
 const extraContracts=extra.reduce((n,x)=>n+x.total,0),extraKnown=extra.reduce((n,x)=>n+x.knownValueCzk,0);
-const entityPayload={schema:2,updated:now,source:INDEX,method:'open-data-monthly-dumps-incremental-all-entities-by-index-hash',meta:{dumps:entries.length,entities:40,organizations:registry.groups?.organizations?.length||37,companies:registry.groups?.companies?.length||3,totalContracts:extraContracts,knownValueCzk:extraKnown,validation:{status:'open-data-complete',p8Control:{current:p8.length},note:'MČ Praha 8 a všech 40 sledovaných organizací/firem se aktualizují z téhož změněného dumpu jedním stažením.'}},entities:extra};
+const entityPayload={schema:2,updated:now,source:INDEX,method:'open-data-monthly-dumps-incremental-all-entities-by-index-hash',meta:{dumps:entries.length,entities:40,organizations:registry.groups?.organizations?.length||37,companies:registry.groups?.companies?.length||3,totalContracts:extraContracts,knownValueCzk:extraKnown,validation:{status:'open-data-complete',p8Control:{current:p8.length},note:'MČ Praha 8 a všech 40 sledovaných organizací/firem se aktualizují z téhož skutečně změněného dumpu jedním stažením.'}},entities:extra};
 const qaPayload={updated:now,meta:entityPayload.meta,entities:extra.map(({contracts,partnerList,...x})=>x),p8:{total:p8.length}};
 const nextState={schema:2,updated:now,source:INDEX,scope:'municipality-plus-40-entities',dumps:Object.fromEntries(entries.map(x=>[x.month,{hash:x.hash,size:x.size,generated:x.generated,complete:x.complete,url:x.url}]))};
 
