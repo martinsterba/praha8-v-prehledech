@@ -1,6 +1,216 @@
 {
   "contracts": [
     {
+      "id": "39353657",
+      "idContract": "36996177",
+      "url": "https://smlouvy.gov.cz/smlouva/39353657",
+      "subject": "Instalace kamenů v ulici Katovická",
+      "published": "2026-09-02",
+      "signed": "2026-09-01",
+      "valueCzk": 322805.25,
+      "valueVatCzk": 322805.25,
+      "valueNoVatCzk": 266781.2,
+      "counterparties": [
+        {
+          "name": "REVITAL - VRBČANY, spol. s r.o.",
+          "ico": "64582400",
+          "box": "wx5xhwm"
+        }
+      ],
+      "counterparty": "REVITAL - VRBČANY, spol. s r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39353117",
+      "idContract": "36995661",
+      "url": "https://smlouvy.gov.cz/smlouva/39353117",
+      "subject": "Studie revitalizace ulice Klapkova Jih",
+      "published": "2026-09-02",
+      "signed": "2026-08-27",
+      "valueCzk": 892980,
+      "valueVatCzk": 892980,
+      "valueNoVatCzk": 738000,
+      "counterparties": [
+        {
+          "name": "Studio Perspektiv, s.r.o.",
+          "ico": "02696622",
+          "box": "d4sdwiq"
+        }
+      ],
+      "counterparty": "Studio Perspektiv, s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39353113",
+      "idContract": "36995657",
+      "url": "https://smlouvy.gov.cz/smlouva/39353113",
+      "subject": "Studie revitalizace Libeňských kos",
+      "published": "2026-09-02",
+      "signed": "2026-08-27",
+      "valueCzk": 1161600,
+      "valueVatCzk": 1161600,
+      "valueNoVatCzk": 960000,
+      "counterparties": [
+        {
+          "name": "ARCHUM architekti s.r.o.",
+          "ico": "01894871",
+          "box": "dx9x8vd"
+        }
+      ],
+      "counterparty": "ARCHUM architekti s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39358365",
+      "idContract": "37000701",
+      "url": "https://smlouvy.gov.cz/smlouva/39358365",
+      "subject": "Smlouva o zajištění výuky",
+      "published": "2026-09-02",
+      "signed": "2026-08-31",
+      "valueCzk": 250000,
+      "valueVatCzk": 250000,
+      "valueNoVatCzk": 250000,
+      "counterparties": [
+        {
+          "name": "Volnočasové a sportovní centrum PP, z.s.",
+          "ico": "06784062",
+          "box": "ygddqmt"
+        }
+      ],
+      "counterparty": "Volnočasové a sportovní centrum PP, z.s.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39338569",
+      "idContract": "36981489",
+      "url": "https://smlouvy.gov.cz/smlouva/39338569",
+      "subject": "Smlouva o zajištění výuky",
+      "published": "2026-09-01",
+      "signed": "2026-08-31",
+      "valueCzk": 450000,
+      "valueVatCzk": 450000,
+      "valueNoVatCzk": null,
+      "counterparties": [
+        {
+          "name": "TC ESO Praha z.s.",
+          "ico": "03815862",
+          "box": "mq3qht4"
+        }
+      ],
+      "counterparty": "TC ESO Praha z.s.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39331795",
+      "idContract": "36974991",
+      "url": "https://smlouvy.gov.cz/smlouva/39331795",
+      "subject": "Objednávka - tiskárny, pásky, lišta, baterie do UPS",
+      "published": "2026-09-01",
+      "signed": "2026-08-31",
+      "valueCzk": 76937.49,
+      "valueVatCzk": 76937.49,
+      "valueNoVatCzk": 63584.7,
+      "counterparties": [
+        {
+          "name": "GESTO COMPUTERS, spol. s r.o.",
+          "ico": "48034711",
+          "box": "8iu792x"
+        }
+      ],
+      "counterparty": "GESTO COMPUTERS, spol. s r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39346269",
+      "idContract": "36988937",
+      "url": "https://smlouvy.gov.cz/smlouva/39346269",
+      "subject": "Smlouva o spolupráci - Arcidiecézní charita Praha",
+      "published": "2026-09-01",
+      "signed": "2026-09-01",
+      "valueCzk": 200000,
+      "valueVatCzk": 200000,
+      "valueNoVatCzk": null,
+      "counterparties": [
+        {
+          "name": "Arcidiecézní charita Praha",
+          "ico": "43873499",
+          "box": "yp6kn2d"
+        }
+      ],
+      "counterparty": "Arcidiecézní charita Praha",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39317171",
+      "idContract": "36960931",
+      "url": "https://smlouvy.gov.cz/smlouva/39317171",
+      "subject": "Smlouva o realizaci překládky sítě elektronických komunikací",
+      "published": "2026-08-31",
+      "signed": "2026-08-28",
+      "valueCzk": 106722,
+      "valueVatCzk": 106722,
+      "valueNoVatCzk": 88200,
+      "counterparties": [
+        {
+          "name": "ÚVT Internet s.r.o.",
+          "ico": "24288705",
+          "box": "zzmcgmr"
+        }
+      ],
+      "counterparty": "ÚVT Internet s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39317027",
+      "idContract": "36960787",
+      "url": "https://smlouvy.gov.cz/smlouva/39317027",
+      "subject": "Smlouva o realizaci přeložky sítě",
+      "published": "2026-08-31",
+      "signed": "2026-08-28",
+      "valueCzk": 154275,
+      "valueVatCzk": 154275,
+      "valueNoVatCzk": 127500,
+      "counterparties": [
+        {
+          "name": "Pranet s.r.o.",
+          "ico": "24808024",
+          "box": "mujx9vy"
+        }
+      ],
+      "counterparty": "Pranet s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39319407",
+      "idContract": "36963091",
+      "url": "https://smlouvy.gov.cz/smlouva/39319407",
+      "subject": "Objednáváme u Vás opravu sochy \"Studující chlapec\", která se nachází v areálu ZŠ Petra Strozziho, Za Invalidovnou 579/3, Praha 8 - Karlín.",
+      "published": "2026-08-31",
+      "signed": "2026-08-31",
+      "valueCzk": 239580,
+      "valueVatCzk": 239580,
+      "valueNoVatCzk": 198000,
+      "counterparties": [
+        {
+          "name": "Mgr.Miroslav Koželuh ak.mal.",
+          "ico": "66111003",
+          "box": ""
+        }
+      ],
+      "counterparty": "Mgr.Miroslav Koželuh ak.mal.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
       "id": "39296367",
       "idContract": "36940743",
       "url": "https://smlouvy.gov.cz/smlouva/39296367",
@@ -135819,9 +136029,9 @@
     {
       "name": "REVITAL - VRBČANY, spol. s r.o.",
       "ico": "64582400",
-      "contracts": 305,
-      "knownValueCzk": 77538878.28000003,
-      "valuedContracts": 304
+      "contracts": 306,
+      "knownValueCzk": 77861683.53000003,
+      "valuedContracts": 305
     },
     {
       "name": "IGLOO ARCHITEKTI, s.r.o.",
@@ -135868,9 +136078,9 @@
     {
       "name": "GESTO COMPUTERS, spol. s r.o.",
       "ico": "48034711",
-      "contracts": 76,
-      "knownValueCzk": 51138397.12000001,
-      "valuedContracts": 74
+      "contracts": 77,
+      "knownValueCzk": 51215334.610000014,
+      "valuedContracts": 75
     },
     {
       "name": "Tredaton s.r.o.",
@@ -136937,6 +137147,13 @@
       "valuedContracts": 18
     },
     {
+      "name": "ARCHUM architekti s.r.o.",
+      "ico": "01894871",
+      "contracts": 9,
+      "knownValueCzk": 5125560,
+      "valuedContracts": 9
+    },
+    {
       "name": "Trenéři ve škole, z.s.",
       "ico": "22877606",
       "contracts": 9,
@@ -137200,13 +137417,6 @@
       "ico": "03620484",
       "contracts": 8,
       "knownValueCzk": 3994608.87,
-      "valuedContracts": 8
-    },
-    {
-      "name": "ARCHUM architekti s.r.o.",
-      "ico": "01894871",
-      "contracts": 8,
-      "knownValueCzk": 3963960,
       "valuedContracts": 8
     },
     {
@@ -137798,6 +138008,13 @@
       "valuedContracts": 6
     },
     {
+      "name": "Studio Perspektiv, s.r.o.",
+      "ico": "02696622",
+      "contracts": 2,
+      "knownValueCzk": 2525270,
+      "valuedContracts": 2
+    },
+    {
       "name": "Krabi cocktails s.r.o.",
       "ico": "01872486",
       "contracts": 3,
@@ -137852,6 +138069,13 @@
       "contracts": 1,
       "knownValueCzk": 2446320,
       "valuedContracts": 1
+    },
+    {
+      "name": "TC ESO Praha z.s.",
+      "ico": "03815862",
+      "contracts": 11,
+      "knownValueCzk": 2429000,
+      "valuedContracts": 11
     },
     {
       "name": "MAGGIE s.r.o.",
@@ -137915,6 +138139,13 @@
       "contracts": 1,
       "knownValueCzk": 2365550,
       "valuedContracts": 1
+    },
+    {
+      "name": "Arcidiecézní charita Praha",
+      "ico": "43873499",
+      "contracts": 11,
+      "knownValueCzk": 2348000,
+      "valuedContracts": 11
     },
     {
       "name": "SmartBridge s.r.o.",
@@ -138085,13 +138316,6 @@
       "valuedContracts": 1
     },
     {
-      "name": "Arcidiecézní charita Praha",
-      "ico": "43873499",
-      "contracts": 10,
-      "knownValueCzk": 2148000,
-      "valuedContracts": 10
-    },
-    {
       "name": "Jan Bělovský",
       "ico": "66766435",
       "contracts": 6,
@@ -138237,13 +138461,6 @@
       "contracts": 2,
       "knownValueCzk": 1980000,
       "valuedContracts": 1
-    },
-    {
-      "name": "TC ESO Praha z.s.",
-      "ico": "03815862",
-      "contracts": 10,
-      "knownValueCzk": 1979000,
-      "valuedContracts": 10
     },
     {
       "name": "Jan Pupala",
@@ -138582,13 +138799,6 @@
       "valuedContracts": 3
     },
     {
-      "name": "Studio Perspektiv, s.r.o.",
-      "ico": "02696622",
-      "contracts": 1,
-      "knownValueCzk": 1632290,
-      "valuedContracts": 1
-    },
-    {
       "name": "Pneumo Praha s.r.o.",
       "ico": "22257055",
       "contracts": 1,
@@ -138713,6 +138923,13 @@
       "contracts": 2,
       "knownValueCzk": 1516700,
       "valuedContracts": 2
+    },
+    {
+      "name": "Volnočasové a sportovní centrum PP, z.s.",
+      "ico": "06784062",
+      "contracts": 8,
+      "knownValueCzk": 1516000,
+      "valuedContracts": 8
     },
     {
       "name": "KARLÍN GROUP EIGHT s.r.o.",
@@ -139070,13 +139287,6 @@
       "contracts": 1,
       "knownValueCzk": 1275660,
       "valuedContracts": 1
-    },
-    {
-      "name": "Kroužek PP - Volnočasové a sportovní centrum, z.s.",
-      "ico": "06784062",
-      "contracts": 7,
-      "knownValueCzk": 1266000,
-      "valuedContracts": 7
     },
     {
       "name": "GORDIC spol. s r.o.",
@@ -142656,6 +142866,13 @@
       "valuedContracts": 1
     },
     {
+      "name": "Mgr.Miroslav Koželuh ak.mal.",
+      "ico": "66111003",
+      "contracts": 1,
+      "knownValueCzk": 239580,
+      "valuedContracts": 1
+    },
+    {
       "name": "Dräger Safety s.r.o.",
       "ico": "26700778",
       "contracts": 1,
@@ -143419,6 +143636,13 @@
       "valuedContracts": 1
     },
     {
+      "name": "Pranet s.r.o.",
+      "ico": "24808024",
+      "contracts": 1,
+      "knownValueCzk": 154275,
+      "valuedContracts": 1
+    },
+    {
       "name": "BAUHAUS k.s.",
       "ico": "49435388",
       "contracts": 2,
@@ -144053,6 +144277,13 @@
       "ico": "67795889",
       "contracts": 1,
       "knownValueCzk": 107690,
+      "valuedContracts": 1
+    },
+    {
+      "name": "ÚVT Internet s.r.o.",
+      "ico": "24288705",
+      "contracts": 1,
+      "knownValueCzk": 106722,
       "valuedContracts": 1
     },
     {
@@ -146962,23 +147193,23 @@
     }
   ],
   "meta": {
-    "total": 6471,
+    "total": 6481,
     "complete": true,
     "historyComplete": true,
     "scope": "full-history",
     "dateFrom": "2007-05-09",
     "dateTo": "2026-09-16",
     "dateLabel": "celá historie Registru smluv",
-    "knownValueCzk": 6861836355.369995,
-    "valuedContracts": 5711,
-    "partners": 1599,
-    "updated": "2026-08-31T09:45:42.417Z",
+    "knownValueCzk": 6865691255.109995,
+    "valuedContracts": 5721,
+    "partners": 1602,
+    "updated": "2026-09-02T09:29:06.624Z",
     "source": "https://data.smlouvy.gov.cz/index.xml",
-    "method": "open-data-monthly-dumps-incremental-all-entities-by-index-hash",
+    "method": "official-live-search-daily-overlap",
     "dumps": 124,
     "validation": {
       "status": "open-data-complete",
-      "note": "Historický základ MČ Praha 8 i 40 navázaných subjektů se aktualizuje společně pouze z měsíčních dumpů, jejichž stav se změnil v oficiálním indexu Registru smluv."
+      "note": "Historický základ zůstává z měsíčních open-data dumpů; denní přírůstky a nové verze se kontrolují přes živé vyhledávání Registru smluv v překryvném okně 5 dní."
     }
   }
 }

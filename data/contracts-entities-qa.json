@@ -1,18 +1,17 @@
 {
-  "updated": "2026-08-31T09:45:42.417Z",
+  "updated": "2026-09-02T09:29:06.624Z",
   "meta": {
-    "dumps": 124,
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7319,
-    "knownValueCzk": 5128667930.550001,
+    "totalContracts": 7336,
+    "knownValueCzk": 5140259178.790001,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
-        "current": 6471
+        "current": 6481
       },
-      "note": "MČ Praha 8 a všech 40 sledovaných organizací/firem se aktualizují z téhož změněného dumpu jedním stažením."
+      "note": "Denní kontrola používá živé vyhledávání Registru smluv v okně 5 dní; historický základ se při denním běhu nestahuje."
     }
   },
   "entities": [
@@ -41,12 +40,12 @@
       "ownershipShare": "100 %",
       "source": "https://www.praha8.cz/Osma-sprava-majetku-a-sluzeb-a-s",
       "website": "https://www.osms.cz/",
-      "total": 1477,
-      "partners": 232,
-      "knownValueCzk": 1433339055.5000005,
-      "valuedContracts": 1195,
+      "total": 1484,
+      "partners": 233,
+      "knownValueCzk": 1443076764.4800005,
+      "valuedContracts": 1202,
       "dateFrom": "1999-09-14",
-      "dateTo": "2026-08-20"
+      "dateTo": "2026-08-31"
     },
     {
       "name": "Správa tepelného hospodářství MČ Praha 8 s.r.o.",
@@ -393,12 +392,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Servisni-stredisko-pro-spravu-svereneho-majetku-MC-Praha-8-prispevkova-organizace.html",
       "website": "https://www.praha8.cz/servisni-stredisko-pro-spravu-svereneho-majetku-mc-praha-8-prispevkova-organizace.html",
-      "total": 1768,
-      "partners": 354,
-      "knownValueCzk": 2976997882.19,
-      "valuedContracts": 1691,
+      "total": 1773,
+      "partners": 356,
+      "knownValueCzk": 2978554323.4500003,
+      "valuedContracts": 1696,
       "dateFrom": "1991-07-15",
-      "dateTo": "2026-08-25"
+      "dateTo": "2026-08-31"
     },
     {
       "name": "Sociální a ošetřovatelské služby Praha 8",
@@ -425,12 +424,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Na-Slovance-Praha-8-Bedrichovska-1.html",
       "website": "http://www.zsnaslovance.cz/",
-      "total": 197,
+      "total": 199,
       "partners": 86,
       "knownValueCzk": 32811501.17,
       "valuedContracts": 109,
       "dateFrom": "2016-11-14",
-      "dateTo": "2026-06-22"
+      "dateTo": "2026-08-31"
     },
     {
       "name": "Základní škola a mateřská škola Petra Strozziho, Praha 8, Za Invalidovnou 3",
@@ -441,12 +440,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Petra-Strozziho-Praha-8-Za-Invalidovnou-3.html",
       "website": "http://www.zs-strozziho.cz/",
-      "total": 226,
+      "total": 227,
       "partners": 79,
-      "knownValueCzk": 38955628.76,
-      "valuedContracts": 211,
+      "knownValueCzk": 39136878.76,
+      "valuedContracts": 212,
       "dateFrom": "2016-10-26",
-      "dateTo": "2026-08-18"
+      "dateTo": "2026-08-28"
     },
     {
       "name": "Základní škola a mateřská škola Ústavní, Praha 8, Hlivická 1",
@@ -457,10 +456,10 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Ustavni-Praha-8-Hlivicka-1.html",
       "website": "http://www.zs-ustavni.cz/",
-      "total": 224,
-      "partners": 128,
-      "knownValueCzk": 41717135.17,
-      "valuedContracts": 202,
+      "total": 226,
+      "partners": 130,
+      "knownValueCzk": 41832983.17,
+      "valuedContracts": 204,
       "dateFrom": "2016-09-08",
       "dateTo": "2026-08-19"
     },
@@ -658,6 +657,6 @@
     }
   ],
   "p8": {
-    "total": 6471
+    "total": 6481
   }
 }

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-01",
+  "updated": "2026-09-02",
   "mode": "synced",
   "resolutions": 15992,
   "resolutionsRada": 14721,
@@ -10,7 +10,7 @@
   "organizationsWithIco": 41,
   "bodies": 18,
   "info106": 1817,
-  "noticeBoard": 153,
+  "noticeBoard": 150,
   "contracts": 6471,
   "contractsValidation": "open-data-complete",
   "detailRemaining": 15992,
