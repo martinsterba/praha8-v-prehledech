@@ -47,7 +47,7 @@
     "sync:bodies": "node scripts/sync-bodies.mjs",
     "sync:schools": "node scripts/sync-school-data.mjs",
     "sync:news": "node scripts/sync-news.mjs",
-    "sync:daily": "node scripts/sync-praha8-ordered.mjs --usneseni-incremental --info106 --noticeboard --news --fast && node scripts/repair-info106-data.mjs && npm run sync:voting && node scripts/sync-contracts-incremental.mjs",
+    "sync:daily": "node scripts/sync-praha8-ordered.mjs --usneseni-incremental --info106 --noticeboard --news --fast && node scripts/repair-info106-data.mjs && npm run sync:voting && npm run sync:contracts:daily",
     "sync:weekly": "node scripts/sync-weekly.mjs",
     "sync:manual": "node scripts/sync-praha8.mjs --elections --fast",
     "sync:budget": "node scripts/check-budget.mjs",
@@ -55,7 +55,8 @@
     "sync:contracts:bootstrap": "npm run sync:contracts && npm run sync:contracts:entities && npm run sync:contracts:init",
     "sync:contracts:init": "node scripts/sync-contracts-incremental.mjs --init-state",
     "sync:contracts:plan": "node scripts/sync-contracts-incremental.mjs --plan",
-    "sync:contracts:new": "node scripts/sync-contracts-incremental.mjs"
+    "sync:contracts:new": "node scripts/sync-contracts-incremental.mjs",
+    "sync:contracts:daily": "node scripts/sync-contracts-daily.mjs"
   },
   "dependencies": {
     "puppeteer-core": "^25.9.0"
