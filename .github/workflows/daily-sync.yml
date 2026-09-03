@@ -3,10 +3,11 @@ name: "🌙 Denní aktualizace"
 on:
   workflow_dispatch:
   schedule:
-    # GitHub doporučuje neplánovat přesně na začátek hodiny, kdy je nejvyšší zátěž.
-    # Proto běžíme denně v 06:17 Europe/Prague; GitHub se postará i o CET/CEST.
-    - cron: "17 6 * * *"
-      timezone: "Europe/Prague"
+    # Stabilní UTC plán bez preview timezone vrstvy.
+    # Dva kandidátní časy pokryjí CET i CEST; job si ověří, že je v Praze 06:xx.
+    # 06:17 Praha = 04:17 UTC v létě / 05:17 UTC v zimě.
+    - cron: "17 4 * * *"
+    - cron: "17 5 * * *"
 
 permissions:
   contents: write
@@ -21,25 +22,50 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 45
     steps:
+      - name: "Ověřit čas v Praze"
+        id: prague_time
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            echo "Ruční spuštění: synchronizace poběží bez časové kontroly."
+            exit 0
+          fi
+          PRAGUE_HOUR="$(TZ=Europe/Prague date +%H)"
+          PRAGUE_NOW="$(TZ=Europe/Prague date '+%d. %m. %Y %H:%M %Z')"
+          echo "Praha: $PRAGUE_NOW"
+          if [ "$PRAGUE_HOUR" = "06" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            echo "Je 06:xx v Praze: synchronizace poběží."
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+            echo "Tento záložní UTC běh není 06:xx v Praze: synchronizace se přeskočí."
+          fi
+
       - name: "Načíst repozitář"
+        if: steps.prague_time.outputs.run == 'true'
         uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
       - name: "Nastavit Node.js"
+        if: steps.prague_time.outputs.run == 'true'
         uses: actions/setup-node@v5
         with:
           node-version: "24"
           cache: npm
 
       - name: "Nainstalovat závislosti"
+        if: steps.prague_time.outputs.run == 'true'
         run: npm ci
 
       - name: "Nainstalovat Chrome pro datový sync"
+        if: steps.prague_time.outputs.run == 'true'
         id: chrome
         uses: browser-actions/setup-chrome@v2
 
       - name: "Denní zdroje Prahy 8"
+        if: steps.prague_time.outputs.run == 'true'
         env:
           PUPPETEER_EXECUTABLE_PATH: ${{ steps.chrome.outputs.chrome-path }}
         run: |
@@ -47,11 +73,13 @@ jobs:
           node scripts/repair-info106-data.mjs
 
       - name: "Hlasování ZMČ – nová zasedání"
+        if: steps.prague_time.outputs.run == 'true'
         env:
           PUPPETEER_EXECUTABLE_PATH: ${{ steps.chrome.outputs.chrome-path }}
         run: npm run sync:voting
 
       - name: "Zjistit stav Registru smluv"
+        if: steps.prague_time.outputs.run == 'true'
         id: contracts
         run: |
           node --input-type=module <<'NODE'
@@ -64,12 +92,13 @@ jobs:
           NODE
 
       - name: "Registr smluv – lehká denní kontrola"
-        if: steps.contracts.outputs.ready == 'true'
+        if: steps.prague_time.outputs.run == 'true' && steps.contracts.outputs.ready == 'true'
         run: |
           npm run sync:contracts:daily
           node scripts/repair-source-status.mjs contracts
 
       - name: "Ověřit JSON datasety"
+        if: steps.prague_time.outputs.run == 'true'
         run: |
           node --input-type=module <<'NODE'
           import fs from 'node:fs';import path from 'node:path';
@@ -79,12 +108,13 @@ jobs:
           NODE
 
       - name: "Zjistit změny"
+        if: steps.prague_time.outputs.run == 'true'
         id: changes
         run: |
           if git diff --quiet -- data/; then echo "changed=false" >> "$GITHUB_OUTPUT"; else echo "changed=true" >> "$GITHUB_OUTPUT"; fi
 
       - name: "Uložit aktualizovaná data"
-        if: steps.changes.outputs.changed == 'true'
+        if: steps.prague_time.outputs.run == 'true' && steps.changes.outputs.changed == 'true'
         run: |
           set -euo pipefail
           git config user.name "Praha 8 v přehledech – automat"
@@ -103,7 +133,10 @@ jobs:
       - name: "Souhrn"
         if: always()
         run: |
-          if [ "${{ job.status }}" != "success" ]; then
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "${{ steps.prague_time.outputs.run }}" != "true" ]; then
+            echo "## ⏭️ Záložní UTC běh přeskočen" >> "$GITHUB_STEP_SUMMARY"
+            echo "V okamžiku spuštění nebylo v Praze 06:xx; data se správně nesynchronizovala podruhé." >> "$GITHUB_STEP_SUMMARY"
+          elif [ "${{ job.status }}" != "success" ]; then
             echo "## ❌ Denní aktualizace selhala" >> "$GITHUB_STEP_SUMMARY"
             echo "Existující data v repozitáři nebyla nahrazena neúspěšným během." >> "$GITHUB_STEP_SUMMARY"
           elif [ "${{ steps.changes.outputs.changed }}" = "true" ]; then
