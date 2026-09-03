@@ -1,6 +1,69 @@
 {
   "contracts": [
     {
+      "id": "39377541",
+      "idContract": "37019289",
+      "url": "https://smlouvy.gov.cz/smlouva/39377541",
+      "subject": "Objednáváme u vás zajištění koncertu Golden Big Band Praha včetně moderování na den 26.08.2026 v Podzámčí, U Českých loděnic 4, Praha 8, Libeň od 19.00 hod.\nKontakt: Zdeněk Šír - 603 522 073",
+      "published": "2026-09-03",
+      "signed": "2026-06-24",
+      "valueCzk": 75000,
+      "valueVatCzk": 75000,
+      "valueNoVatCzk": 75000,
+      "counterparties": [
+        {
+          "name": "Alena Sovová",
+          "ico": "45734704",
+          "box": "nxe2k9m"
+        }
+      ],
+      "counterparty": "Alena Sovová",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39375821",
+      "idContract": "37017613",
+      "url": "https://smlouvy.gov.cz/smlouva/39375821",
+      "subject": "Objednáváme u vás rytířská vystoupení na Svatováclavských slavnostech 2026, které se budou konat dne  28.09.2026 před KD Krakov, Bohnice, Praha 8 od 14:00 - 19:00 hod. Vaše vystoupení v 15:30 hod. a v 17:00 hod.\nKontakt: Zdeněk Šír 603 522 073",
+      "published": "2026-09-03",
+      "signed": "2026-07-17",
+      "valueCzk": 60000,
+      "valueVatCzk": 60000,
+      "valueNoVatCzk": 60000,
+      "counterparties": [
+        {
+          "name": "Artus Thor z.s.",
+          "ico": "04407717",
+          "box": "girr7kn"
+        }
+      ],
+      "counterparty": "Artus Thor z.s.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39381309",
+      "idContract": "37022925",
+      "url": "https://smlouvy.gov.cz/smlouva/39381309",
+      "subject": "PD - Vybudování parkovacích stání Štětínská",
+      "published": "2026-09-03",
+      "signed": "2026-09-02",
+      "valueCzk": 826430,
+      "valueVatCzk": 826430,
+      "valueNoVatCzk": 683000,
+      "counterparties": [
+        {
+          "name": "ABCD Studio, s.r.o.",
+          "ico": "22794107",
+          "box": "6tzdgb6"
+        }
+      ],
+      "counterparty": "ABCD Studio, s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
       "id": "39353657",
       "idContract": "36996177",
       "url": "https://smlouvy.gov.cz/smlouva/39353657",
@@ -136755,6 +136818,13 @@
       "valuedContracts": 4
     },
     {
+      "name": "ABCD Studio, s.r.o.",
+      "ico": "22794107",
+      "contracts": 29,
+      "knownValueCzk": 9425900,
+      "valuedContracts": 29
+    },
+    {
       "name": "Petr Mikeš",
       "ico": "49638076",
       "contracts": 37,
@@ -136774,13 +136844,6 @@
       "contracts": 1,
       "knownValueCzk": 8734880,
       "valuedContracts": 1
-    },
-    {
-      "name": "ABCD Studio, s.r.o.",
-      "ico": "22794107",
-      "contracts": 28,
-      "knownValueCzk": 8599470,
-      "valuedContracts": 28
     },
     {
       "name": "WALCO CZ spol. s r.o.",
@@ -142271,6 +142334,13 @@
       "valuedContracts": 2
     },
     {
+      "name": "Alena Sovová",
+      "ico": "45734704",
+      "contracts": 5,
+      "knownValueCzk": 332000,
+      "valuedContracts": 5
+    },
+    {
       "name": "SEN Studio z.s.",
       "ico": "08161801",
       "contracts": 3,
@@ -142801,13 +142871,6 @@
       "contracts": 2,
       "knownValueCzk": 257430,
       "valuedContracts": 2
-    },
-    {
-      "name": "Alena Sovová",
-      "ico": "45734704",
-      "contracts": 4,
-      "knownValueCzk": 257000,
-      "valuedContracts": 4
     },
     {
       "name": "CZECH NEWS CENTER a.s.",
@@ -144161,6 +144224,13 @@
       "valuedContracts": 1
     },
     {
+      "name": "Artus Thor z.s.",
+      "ico": "04407717",
+      "contracts": 2,
+      "knownValueCzk": 120000,
+      "valuedContracts": 2
+    },
+    {
       "name": "ZO ČSOP OCHRANA HERPETOFAUNY",
       "ico": "48549622",
       "contracts": 2,
@@ -145382,13 +145452,6 @@
       "name": "UPC Česká republika, s.r.o.",
       "ico": "00562262",
       "contracts": 2,
-      "knownValueCzk": 60000,
-      "valuedContracts": 1
-    },
-    {
-      "name": "Artus Thor z.s.",
-      "ico": "04407717",
-      "contracts": 1,
       "knownValueCzk": 60000,
       "valuedContracts": 1
     },
@@ -147277,17 +147340,17 @@
     }
   ],
   "meta": {
-    "total": 6485,
+    "total": 6488,
     "complete": true,
     "historyComplete": true,
     "scope": "full-history",
     "dateFrom": "2007-05-09",
     "dateTo": "2026-09-16",
     "dateLabel": "celá historie Registru smluv",
-    "knownValueCzk": 6868800755.109996,
-    "valuedContracts": 5725,
+    "knownValueCzk": 6869762185.109996,
+    "valuedContracts": 5728,
     "partners": 1602,
-    "updated": "2026-09-03T06:50:53.501Z",
+    "updated": "2026-09-03T14:57:57.658Z",
     "source": "https://data.smlouvy.gov.cz/index.xml",
     "method": "official-live-search-daily-overlap",
     "dumps": 124,

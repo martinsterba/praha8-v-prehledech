@@ -1,15 +1,15 @@
 {
-  "updated": "2026-09-03T06:50:53.501Z",
+  "updated": "2026-09-03T14:57:57.658Z",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7336,
-    "knownValueCzk": 5140259178.790001,
+    "totalContracts": 7338,
+    "knownValueCzk": 5140485480.460001,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
-        "current": 6485
+        "current": 6488
       },
       "note": "Denní kontrola používá živé vyhledávání Registru smluv v okně 5 dní; historický základ se při denním běhu nestahuje."
     }
@@ -40,12 +40,12 @@
       "ownershipShare": "100 %",
       "source": "https://www.praha8.cz/Osma-sprava-majetku-a-sluzeb-a-s",
       "website": "https://www.osms.cz/",
-      "total": 1484,
+      "total": 1485,
       "partners": 233,
-      "knownValueCzk": 1443076764.4800005,
-      "valuedContracts": 1202,
+      "knownValueCzk": 1443166424.4800005,
+      "valuedContracts": 1203,
       "dateFrom": "1999-09-14",
-      "dateTo": "2026-08-31"
+      "dateTo": "2026-09-02"
     },
     {
       "name": "Správa tepelného hospodářství MČ Praha 8 s.r.o.",
@@ -392,12 +392,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Servisni-stredisko-pro-spravu-svereneho-majetku-MC-Praha-8-prispevkova-organizace.html",
       "website": "https://www.praha8.cz/servisni-stredisko-pro-spravu-svereneho-majetku-mc-praha-8-prispevkova-organizace.html",
-      "total": 1773,
+      "total": 1774,
       "partners": 356,
-      "knownValueCzk": 2978554323.4500003,
-      "valuedContracts": 1696,
+      "knownValueCzk": 2978690965.1200004,
+      "valuedContracts": 1697,
       "dateFrom": "1991-07-15",
-      "dateTo": "2026-08-31"
+      "dateTo": "2026-09-03"
     },
     {
       "name": "Sociální a ošetřovatelské služby Praha 8",
@@ -657,6 +657,6 @@
     }
   ],
   "p8": {
-    "total": 6485
+    "total": 6488
   }
 }

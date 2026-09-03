@@ -10,8 +10,8 @@
   "organizationsWithIco": 41,
   "bodies": 18,
   "info106": 1817,
-  "noticeBoard": 116,
-  "contracts": 6482,
+  "noticeBoard": 126,
+  "contracts": 6485,
   "contractsValidation": "open-data-complete",
   "detailRemaining": 15992,
   "note": "Výchozí synchronizace načítá ostré sady: Praha 8 (zastupitelstvo, komise a výbory), HMP (zastupitelstvo/výbory/komise a firmy), Parlament ČR, organizace a firmy Prahy 8, volby a Registr smluv. Ostatní zdroje se spouštějí samostatně."
