@@ -132,6 +132,24 @@ function polish106Rows(){
   void renderInfo106Page(info106CurrentPage);
 }
 
+function polishClubColors(app){
+  if(location.hash!=='#/lide')return;
+  const colors={
+    '8ŽIJE A PRAHA SOBĚ':'#07AEBE',
+    'SPD a Trikolora pro Osmičku':'#005592'
+  };
+  for(const segment of app.querySelectorAll('.seat-segment[title]')){
+    const club=segment.getAttribute('title')?.split(':')[0]?.trim();
+    if(colors[club])segment.style.background=colors[club];
+  }
+  for(const row of app.querySelectorAll('.party-legend,.club-title')){
+    const name=row.querySelector('.party-name,h3')?.textContent?.trim();
+    const key=name==='8ŽIJE A PRAHA SOBĚ'?'8ŽIJE A PRAHA SOBĚ':name?.startsWith('SPD a Trikolora')?'SPD a Trikolora pro Osmičku':null;
+    const dot=row.querySelector('i');
+    if(key&&dot)dot.style.background=colors[key];
+  }
+}
+
 function markCurrentPage(app){
   const wrap=app.querySelector('.wrap');
   if(!wrap)return;
@@ -151,6 +169,7 @@ function finalPolish(){
   const wrap=app.querySelector('.wrap');
   if(wrap)wrap.classList.add('final-page-spacing');
   markCurrentPage(app);
+  polishClubColors(app);
   polish106Rows();
 }
 
