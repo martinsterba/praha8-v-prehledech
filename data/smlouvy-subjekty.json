@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-09-02T09:53:17.653Z",
+  "updated": "2026-09-03T06:50:53.501Z",
   "source": "https://smlouvy.gov.cz/vyhledavani",
   "method": "official-live-search-daily-overlap",
   "meta": {
@@ -12,7 +12,7 @@
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
-        "current": 6482
+        "current": 6485
       },
       "note": "Denní kontrola používá živé vyhledávání Registru smluv v okně 5 dní; historický základ se při denním běhu nestahuje."
     }

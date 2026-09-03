@@ -85,6 +85,90 @@
       "publisherIco": "00063797"
     },
     {
+      "id": "39366709",
+      "idContract": "33535769",
+      "url": "https://smlouvy.gov.cz/smlouva/39366709",
+      "subject": "Smlouva o nájmu prostoru sloužícího podnikání",
+      "published": "2026-09-02",
+      "signed": "2025-11-25",
+      "valueCzk": 840000,
+      "valueVatCzk": null,
+      "valueNoVatCzk": 840000,
+      "counterparties": [
+        {
+          "name": "Mgr. Vlastina Svátková",
+          "ico": "10735143",
+          "box": "h9bjsn9"
+        }
+      ],
+      "counterparty": "Mgr. Vlastina Svátková",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39366701",
+      "idContract": "37008673",
+      "url": "https://smlouvy.gov.cz/smlouva/39366701",
+      "subject": "1172_1_Taussigova_HAVÁRIE_havarijní stav fasádní omítky objektu_14913",
+      "published": "2026-09-02",
+      "signed": "2026-08-31",
+      "valueCzk": 400000,
+      "valueVatCzk": null,
+      "valueNoVatCzk": 400000,
+      "counterparties": [
+        {
+          "name": "Hyacinthum Capra s.r.o.",
+          "ico": "07709561",
+          "box": ""
+        }
+      ],
+      "counterparty": "Hyacinthum Capra s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39362149",
+      "idContract": "37004345",
+      "url": "https://smlouvy.gov.cz/smlouva/39362149",
+      "subject": "Darovací smlouva",
+      "published": "2026-09-02",
+      "signed": "2026-09-02",
+      "valueCzk": 100000,
+      "valueVatCzk": 100000,
+      "valueNoVatCzk": 100000,
+      "counterparties": [
+        {
+          "name": "Lob Sports Academy, z.s.",
+          "ico": "02063425",
+          "box": "jzu64nm"
+        }
+      ],
+      "counterparty": "Lob Sports Academy, z.s.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39365433",
+      "idContract": "37007513",
+      "url": "https://smlouvy.gov.cz/smlouva/39365433",
+      "subject": "PD k rozšíření a modernizaci objektu GC Benákova",
+      "published": "2026-09-02",
+      "signed": "2026-09-02",
+      "valueCzk": 2359500,
+      "valueVatCzk": 2359500,
+      "valueNoVatCzk": 1950000,
+      "counterparties": [
+        {
+          "name": "ATELIER GENESIS, spol.s r.o.",
+          "ico": "64574652",
+          "box": "nent9d2"
+        }
+      ],
+      "counterparty": "ATELIER GENESIS, spol.s r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
       "id": "39338569",
       "idContract": "36981489",
       "url": "https://smlouvy.gov.cz/smlouva/39338569",
@@ -10871,27 +10955,6 @@
         }
       ],
       "counterparty": "WeWood s.r.o.",
-      "publisher": "Městská část Praha 8",
-      "publisherIco": "00063797"
-    },
-    {
-      "id": "35745449",
-      "idContract": "33535769",
-      "url": "https://smlouvy.gov.cz/smlouva/35745449",
-      "subject": "Smlouva o nájmu prostoru sloužícího podnikání",
-      "published": "2025-11-25",
-      "signed": "2025-11-25",
-      "valueCzk": 840000,
-      "valueVatCzk": null,
-      "valueNoVatCzk": 840000,
-      "counterparties": [
-        {
-          "name": "Mgr. Vlastina Svátková",
-          "ico": "10735143",
-          "box": "h9bjsn9"
-        }
-      ],
-      "counterparty": "Mgr. Vlastina Svátková",
       "publisher": "Městská část Praha 8",
       "publisherIco": "00063797"
     },
@@ -137455,6 +137518,13 @@
       "valuedContracts": 1
     },
     {
+      "name": "Hyacinthum Capra s.r.o.",
+      "ico": "07709561",
+      "contracts": 13,
+      "knownValueCzk": 3820793.96,
+      "valuedContracts": 13
+    },
+    {
       "name": "Očička s.r.o.",
       "ico": "03089819",
       "contracts": 5,
@@ -137572,13 +137642,6 @@
       "contracts": 3,
       "knownValueCzk": 3445347.95,
       "valuedContracts": 2
-    },
-    {
-      "name": "Hyacinthum Capra s.r.o.",
-      "ico": "07709561",
-      "contracts": 12,
-      "knownValueCzk": 3420793.96,
-      "valuedContracts": 12
     },
     {
       "name": "Lukáš Friedrich",
@@ -138055,6 +138118,13 @@
       "contracts": 4,
       "knownValueCzk": 2485245,
       "valuedContracts": 4
+    },
+    {
+      "name": "ATELIER GENESIS, spol.s r.o.",
+      "ico": "64574652",
+      "contracts": 2,
+      "knownValueCzk": 2475660,
+      "valuedContracts": 2
     },
     {
       "name": "Spomelona, s.r.o.",
@@ -139310,6 +139380,13 @@
       "valuedContracts": 1
     },
     {
+      "name": "Lob Sports Academy, z.s.",
+      "ico": "02063425",
+      "contracts": 8,
+      "knownValueCzk": 1272000,
+      "valuedContracts": 8
+    },
+    {
       "name": "GORDIC spol. s r.o.",
       "ico": "47903783",
       "contracts": 5,
@@ -139420,13 +139497,6 @@
       "contracts": 4,
       "knownValueCzk": 1173647.8499999999,
       "valuedContracts": 4
-    },
-    {
-      "name": "Lob Sports Academy, z.s.",
-      "ico": "02063425",
-      "contracts": 7,
-      "knownValueCzk": 1172000,
-      "valuedContracts": 7
     },
     {
       "name": "SOL Rezidence s. r. o.",
@@ -144140,13 +144210,6 @@
       "valuedContracts": 1
     },
     {
-      "name": "ATELIER GENESIS, spol.s r.o.",
-      "ico": "64574652",
-      "contracts": 1,
-      "knownValueCzk": 116160,
-      "valuedContracts": 1
-    },
-    {
       "name": "Lukáš Vacek",
       "ico": "71043004",
       "contracts": 2,
@@ -147214,17 +147277,17 @@
     }
   ],
   "meta": {
-    "total": 6482,
+    "total": 6485,
     "complete": true,
     "historyComplete": true,
     "scope": "full-history",
     "dateFrom": "2007-05-09",
     "dateTo": "2026-09-16",
     "dateLabel": "celá historie Registru smluv",
-    "knownValueCzk": 6865941255.109995,
-    "valuedContracts": 5722,
+    "knownValueCzk": 6868800755.109996,
+    "valuedContracts": 5725,
     "partners": 1602,
-    "updated": "2026-09-02T09:53:17.653Z",
+    "updated": "2026-09-03T06:50:53.501Z",
     "source": "https://data.smlouvy.gov.cz/index.xml",
     "method": "official-live-search-daily-overlap",
     "dumps": 124,
