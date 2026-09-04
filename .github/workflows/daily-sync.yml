@@ -5,7 +5,6 @@ on:
   schedule:
     # GitHub Actions plánuje v UTC. V létě je 04:17 UTC = 06:17 v Praze.
     # Po přechodu na zimní čas posuneme cron na 05:17 UTC.
-    # Záměrně používáme jediný jednoduchý schedule bez další časové brány.
     - cron: "17 4 * * *"
 
 permissions:
@@ -64,10 +63,26 @@ jobs:
           NODE
 
       - name: "Registr smluv – lehká denní kontrola"
+        id: contracts_sync
         if: steps.contracts.outputs.ready == 'true'
+        continue-on-error: true
         run: |
-          npm run sync:contracts:daily
-          node scripts/repair-source-status.mjs contracts
+          set +e
+          ok=false
+          for attempt in 1 2 3; do
+            echo "Registr smluv: pokus ${attempt}/3"
+            if npm run sync:contracts:daily; then
+              node scripts/repair-source-status.mjs contracts
+              ok=true
+              break
+            fi
+            echo "Registr smluv je dočasně nedostupný; před dalším pokusem čekám."
+            sleep $((attempt * 20))
+          done
+          if [ "$ok" != "true" ]; then
+            echo "Registr smluv se nepodařilo načíst ani na třetí pokus. Ostatní denní zdroje se přesto uloží."
+            exit 1
+          fi
 
       - name: "Ověřit JSON datasety"
         run: |
@@ -106,6 +121,9 @@ jobs:
           if [ "${{ job.status }}" != "success" ]; then
             echo "## ❌ Denní aktualizace selhala" >> "$GITHUB_STEP_SUMMARY"
             echo "Existující data v repozitáři nebyla nahrazena neúspěšným během." >> "$GITHUB_STEP_SUMMARY"
+          elif [ "${{ steps.contracts_sync.outcome }}" = "failure" ]; then
+            echo "## ⚠️ Denní aktualizace dokončena bez Registru smluv" >> "$GITHUB_STEP_SUMMARY"
+            echo "Ostatní denní zdroje byly zkontrolovány a případné změny uloženy. Registr smluv měl dočasný síťový výpadek a zůstala u něj poslední platná data." >> "$GITHUB_STEP_SUMMARY"
           elif [ "${{ steps.changes.outputs.changed }}" = "true" ]; then
             echo "## ✅ Denní aktualizace dokončena" >> "$GITHUB_STEP_SUMMARY"
             echo "Změněné datasety byly zkontrolovány a uloženy do repozitáře." >> "$GITHUB_STEP_SUMMARY"
