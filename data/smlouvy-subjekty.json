@@ -1,14 +1,14 @@
 {
   "schema": 2,
-  "updated": "2026-09-03T14:57:57.658Z",
+  "updated": "2026-09-04T06:38:04.995Z",
   "source": "https://smlouvy.gov.cz/vyhledavani",
   "method": "official-live-search-daily-overlap",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7338,
-    "knownValueCzk": 5140485480.460001,
+    "totalContracts": 7339,
+    "knownValueCzk": 5140758916.620001,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
@@ -128551,12 +128551,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Praha-8-Dolakova-1.html",
       "website": "http://www.zsdolakova.cz/",
-      "total": 143,
+      "total": 144,
       "partners": 87,
-      "knownValueCzk": 33982050.8,
-      "valuedContracts": 135,
+      "knownValueCzk": 34255486.96000001,
+      "valuedContracts": 136,
       "dateFrom": "2016-12-05",
-      "dateTo": "2026-05-11",
+      "dateTo": "2026-08-17",
       "partnerList": [
         {
           "name": "Austis stavební s.r.o.",
@@ -128643,6 +128643,13 @@
           "valuedContracts": 6
         },
         {
+          "name": "P.I. PARKET, s.r.o.",
+          "ico": "26907127",
+          "contracts": 3,
+          "knownValueCzk": 721265.77,
+          "valuedContracts": 3
+        },
+        {
           "name": "IN SPACE s.r.o.",
           "ico": "05529581",
           "contracts": 2,
@@ -128662,13 +128669,6 @@
           "contracts": 1,
           "knownValueCzk": 480000,
           "valuedContracts": 1
-        },
-        {
-          "name": "P.I. PARKET, s.r.o.",
-          "ico": "26907127",
-          "contracts": 2,
-          "knownValueCzk": 447829.61,
-          "valuedContracts": 2
         },
         {
           "name": "Jiří Němec - Alarmobil",
@@ -129169,6 +129169,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39391205",
+          "idContract": "37032425",
+          "url": "https://smlouvy.gov.cz/smlouva/39391205",
+          "subject": "Renovace povrchu malé tělocvičny vč.značení hřišť",
+          "published": "2026-09-04",
+          "signed": "2026-08-17",
+          "valueCzk": 273436.16,
+          "valueVatCzk": 273436.16,
+          "valueNoVatCzk": 225980.3,
+          "counterparties": [
+            {
+              "name": "P.I. PARKET, s.r.o.",
+              "ico": "26907127",
+              "box": "sx7s94v"
+            }
+          ],
+          "counterparty": "P.I. PARKET, s.r.o.",
+          "publisher": "Základní škola a mateřská škola, Praha 8, Dolákova 1",
+          "publisherIco": "60433281"
+        },
         {
           "entityIco": "60433281",
           "entityName": "Základní škola a mateřská škola, Praha 8, Dolákova 1",
