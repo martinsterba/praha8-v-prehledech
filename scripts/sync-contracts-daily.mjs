@@ -17,7 +17,8 @@ const values=(xml,name)=>[...String(xml||'').matchAll(new RegExp(`<(?:(?:[\\w.-]
 const tag=(xml,name)=>values(xml,name)[0]||'';
 const block=(xml,name)=>{const m=String(xml||'').match(new RegExp(`<(?:(?:[\\w.-]+):)?${name}\\b[^>]*>([\\s\\S]*?)<\\/(?:(?:[\\w.-]+):)?${name}>`,'i'));return m?m[1]:''};
 const blocks=(xml,name)=>[...String(xml||'').matchAll(new RegExp(`<(?:(?:[\\w.-]+):)?${name}\\b[^>]*>([\\s\\S]*?)<\\/(?:(?:[\\w.-]+):)?${name}>`,'gi'))].map(m=>m[1]);
-const normIco=s=>{const d=String(s||'').replace(/\D/g,'');return d?d.padStart(8,'0'):''};
+const validIco=s=>{const d=String(s||'');if(!/^\d{8}$/.test(d)||d==='00000000')return false;const a=[...d].map(Number),sum=a.slice(0,7).reduce((n,x,i)=>n+x*(8-i),0);return a[7]===((11-(sum%11))%10)};
+const normIco=s=>{const raw=String(s||'').trim();if(!/^\d{1,8}$/.test(raw))return '';const d=raw.padStart(8,'0');return validIco(d)?d:''};
 const val=s=>{const n=Number(String(s||'').replace(/\s/g,'').replace(',','.'));return Number.isFinite(n)&&n>0?n:null};
 const iso=s=>{const x=String(s||'').trim();if(!x)return '';const m=x.match(/^(\d{4}-\d{2}-\d{2})/);if(m)return m[1];const c=x.match(/(\d{1,2})\.(\d{1,2})\.(\d{4})/);return c?`${c[3]}-${c[2].padStart(2,'0')}-${c[1].padStart(2,'0')}`:''};
 const entityFrom=b=>({name:tag(b,'nazev')||tag(b,'nazevSubjektu')||tag(b,'jmeno'),ico:normIco(tag(b,'ico')),box:tag(b,'datovaSchranka')||tag(b,'datovaSchrankaId')});
@@ -47,10 +48,11 @@ function parseRecord(z,targetByIco){
   const valueVat=val(tag(smlouva,'hodnotaVcetneDph')),valueNoVat=val(tag(smlouva,'hodnotaBezDph'));
   return {entityIco:pubIco,entityName:target.name,entityKind:target.kind,id:idVerze||idSmlouvy||url,idContract:idSmlouvy||'',url,subject:tag(smlouva,'predmet')||'Smlouva',published:iso(tag(z,'casZverejneni')||tag(z,'datumPublikace')),signed:iso(tag(smlouva,'datumUzavreni')),valueCzk:valueVat??valueNoVat,valueVatCzk:valueVat,valueNoVatCzk:valueNoVat,counterparties:parties,counterparty:parties.map(x=>x.name).filter(Boolean).join(', '),publisher:pub?.name||target.name,publisherIco:pubIco};
 }
+function cleanContract(c){const counterparties=(c.counterparties||[]).map(p=>({...p,ico:normIco(p.ico)}));return {...c,counterparties,counterparty:counterparties.map(x=>x.name).filter(Boolean).join(', ')}}
 function stripEntityFields(c){const {entityIco,entityName,entityKind,...rest}=c;return rest}
 function dedupe(items){const map=new Map();for(const c of items){const key=c.idContract||c.id,old=map.get(key);if(!old||(c.published||'')>(old.published||'')||Number(c.id)>Number(old.id))map.set(key,c)}return [...map.values()].sort((a,b)=>(b.published||'').localeCompare(a.published||''))}
 function summarize(items){
-  const partnerMap=new Map();for(const c of items)for(const p of c.counterparties||[]){const key=p.ico||String(p.name||'').toLowerCase();if(!key)continue;const x=partnerMap.get(key)||{name:p.name,ico:p.ico||'',contracts:0,knownValueCzk:0,valuedContracts:0};x.contracts++;if(c.valueCzk!=null&&(c.counterparties||[]).length===1){x.knownValueCzk+=c.valueCzk;x.valuedContracts++}partnerMap.set(key,x)}
+  const partnerMap=new Map();for(const c of items)for(const p of c.counterparties||[]){const ico=normIco(p.ico),key=ico||String(p.name||'').toLowerCase();if(!key)continue;const x=partnerMap.get(key)||{name:p.name,ico,contracts:0,knownValueCzk:0,valuedContracts:0};x.contracts++;if(c.valueCzk!=null&&(c.counterparties||[]).length===1){x.knownValueCzk+=c.valueCzk;x.valuedContracts++}partnerMap.set(key,x)}
   const partners=[...partnerMap.values()].sort((a,b)=>b.knownValueCzk-a.knownValueCzk||b.contracts-a.contracts||a.name.localeCompare(b.name,'cs'));const known=items.filter(x=>x.valueCzk!=null);const signed=items.map(x=>x.signed).filter(Boolean).sort();
   return {total:items.length,partners:partners.length,knownValueCzk:known.reduce((n,x)=>n+x.valueCzk,0),valuedContracts:known.length,dateFrom:signed[0]||'',dateTo:signed.at(-1)||'',partnerList:partners,contracts:items};
 }
@@ -105,10 +107,10 @@ const records=(await pool(detailIds,6,async id=>{
   return parseRecord(xml,targetByIco);
 })).filter(Boolean);
 
-let p8=[...data.contracts];
-const byEntity=new Map(entityData.entities.map(e=>[normIco(e.ico),[...(e.contracts||[])]]));
+let p8=data.contracts.map(cleanContract);
+const byEntity=new Map(entityData.entities.map(e=>[normIco(e.ico),(e.contracts||[]).map(cleanContract)]));
 for(const rec of records){
-  const clean=stripEntityFields(rec);
+  const clean=cleanContract(stripEntityFields(rec));
   if(rec.entityIco===P8_ICO)p8.push(clean);
   else byEntity.set(rec.entityIco,[...(byEntity.get(rec.entityIco)||[]),clean]);
 }
