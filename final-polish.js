@@ -214,16 +214,26 @@ function loadContractSources(){
 async function polishContractListIcos(app){
   const route=location.hash.split('?')[0];
   if(!['#/smlouvy','#/smlouvy-organizace','#/smlouvy-firmy'].includes(route))return;
-  const rows=[...app.querySelectorAll('.contract-item')].filter(row=>!row.dataset.contractIcoReady);
+  const rows=[...app.querySelectorAll('.contract-item')].filter(row=>!row.dataset.contractIcoReady&&!row.dataset.contractIcoPending);
   if(!rows.length)return;
+  for(const row of rows)row.dataset.contractIcoPending='true';
   const contracts=await loadContractSources();
   if(!['#/smlouvy','#/smlouvy-organizace','#/smlouvy-firmy'].includes(location.hash.split('?')[0]))return;
   for(const row of rows){
     const source=row.querySelector('a.source');
     const meta=row.querySelector('.contract-meta');
-    if(!source||!meta)continue;
+    if(!source||!meta){delete row.dataset.contractIcoPending;continue}
     const contract=contracts.get(contractKey(source.href));
-    if(!contract)continue;
+    if(!contract){delete row.dataset.contractIcoPending;continue}
+
+    // Pojistka proti duplicitě: pokud už IČ v řádku existuje, pouze řádek označíme jako hotový.
+    const existing=[...meta.children].find(x=>x.querySelector('small')?.textContent?.trim()==='IČ');
+    if(existing){
+      row.dataset.contractIcoReady='true';
+      delete row.dataset.contractIcoPending;
+      continue;
+    }
+
     const icos=[...new Set((contract.counterparties||[]).map(x=>String(x.ico||'').trim()).filter(validCzIco))];
     const box=document.createElement('div');
     const label=document.createElement('small');
@@ -234,6 +244,7 @@ async function polishContractListIcos(app){
     const valueBox=[...meta.children].find(x=>x.querySelector('small')?.textContent?.trim()==='Hodnota'||x.querySelector('small')?.textContent?.trim()==='Známá hodnota');
     if(valueBox)meta.insertBefore(box,valueBox);else meta.append(box);
     row.dataset.contractIcoReady='true';
+    delete row.dataset.contractIcoPending;
   }
 }
 
