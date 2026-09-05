@@ -172,13 +172,16 @@ function validCzIco(value=''){
 }
 
 function polishContractIcos(app){
-  if(location.hash!=='#/smlouvy')return;
+  const route=location.hash.split('?')[0];
+  if(!['#/smlouvy','#/smlouvy-organizace','#/smlouvy-firmy'].includes(route))return;
   for(const row of app.querySelectorAll('.partner-row')){
     const identity=[...row.children].find(el=>el.tagName==='DIV'&&!el.classList.contains('partner-numbers'));
     if(!identity)continue;
     let meta=identity.querySelector('small');
-    if(meta&&/^IČO\s+/i.test(meta.textContent||'')){
-      const value=(meta.textContent||'').replace(/^IČO\s+/i,'').trim();
+    const current=(meta?.textContent||'').trim();
+    if(current==='IČO neuvedeno')continue;
+    if(meta&&/^IČO\s+/i.test(current)){
+      const value=current.replace(/^IČO\s+/i,'').trim();
       if(!validCzIco(value))meta.textContent='IČO neuvedeno';
     }else if(!meta){
       meta=document.createElement('small');
