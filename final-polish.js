@@ -163,6 +163,31 @@ function markCurrentPage(app){
   }
 }
 
+function validCzIco(value=''){
+  const ico=String(value||'').trim();
+  if(!/^\d{8}$/.test(ico)||ico==='00000000')return false;
+  const digits=[...ico].map(Number);
+  const sum=digits.slice(0,7).reduce((n,d,i)=>n+d*(8-i),0);
+  return digits[7]===((11-(sum%11))%10);
+}
+
+function polishContractIcos(app){
+  if(location.hash!=='#/smlouvy')return;
+  for(const row of app.querySelectorAll('.partner-row')){
+    const identity=[...row.children].find(el=>el.tagName==='DIV'&&!el.classList.contains('partner-numbers'));
+    if(!identity)continue;
+    let meta=identity.querySelector('small');
+    if(meta&&/^IČO\s+/i.test(meta.textContent||'')){
+      const value=(meta.textContent||'').replace(/^IČO\s+/i,'').trim();
+      if(!validCzIco(value))meta.textContent='IČO neuvedeno';
+    }else if(!meta){
+      meta=document.createElement('small');
+      meta.textContent='IČO neuvedeno';
+      identity.append(meta);
+    }
+  }
+}
+
 function finalPolish(){
   const app=document.querySelector('#app');
   if(!app)return;
@@ -170,6 +195,7 @@ function finalPolish(){
   if(wrap)wrap.classList.add('final-page-spacing');
   markCurrentPage(app);
   polishClubColors(app);
+  polishContractIcos(app);
   polish106Rows();
 }
 
