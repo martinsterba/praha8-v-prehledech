@@ -4,6 +4,7 @@
 let info106SourcePromise=null;
 let info106RenderKey='';
 let info106CurrentPage=1;
+let contractSourcePromise=null;
 
 function short106Title(value=''){
   const text=String(value||'').replace(/\s+/g,' ').trim();
@@ -191,6 +192,51 @@ function polishContractIcos(app){
   }
 }
 
+function contractKey(url=''){
+  const match=String(url||'').match(/\/smlouva\/(\d+)/);
+  return match?.[1]||String(url||'');
+}
+
+function loadContractSources(){
+  if(!contractSourcePromise){
+    contractSourcePromise=Promise.all([
+      fetch(`data/smlouvy.json?v=${Date.now()}`,{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null),
+      fetch(`data/smlouvy-subjekty.json?v=${Date.now()}`,{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null)
+    ]).then(([p8,entities])=>{
+      const all=[...(p8?.contracts||[])];
+      for(const entity of entities?.entities||[])all.push(...(entity.contracts||[]));
+      return new Map(all.map(x=>[contractKey(x.url),x]));
+    });
+  }
+  return contractSourcePromise;
+}
+
+async function polishContractListIcos(app){
+  const route=location.hash.split('?')[0];
+  if(!['#/smlouvy','#/smlouvy-organizace','#/smlouvy-firmy'].includes(route))return;
+  const rows=[...app.querySelectorAll('.contract-item')].filter(row=>!row.dataset.contractIcoReady);
+  if(!rows.length)return;
+  const contracts=await loadContractSources();
+  if(!['#/smlouvy','#/smlouvy-organizace','#/smlouvy-firmy'].includes(location.hash.split('?')[0]))return;
+  for(const row of rows){
+    const source=row.querySelector('a.source');
+    const meta=row.querySelector('.contract-meta');
+    if(!source||!meta)continue;
+    const contract=contracts.get(contractKey(source.href));
+    if(!contract)continue;
+    const icos=[...new Set((contract.counterparties||[]).map(x=>String(x.ico||'').trim()).filter(validCzIco))];
+    const box=document.createElement('div');
+    const label=document.createElement('small');
+    const value=document.createElement('b');
+    label.textContent='IČ';
+    value.textContent=icos.length?icos.join(' · '):'neuvedeno';
+    box.append(label,value);
+    const valueBox=[...meta.children].find(x=>x.querySelector('small')?.textContent?.trim()==='Hodnota'||x.querySelector('small')?.textContent?.trim()==='Známá hodnota');
+    if(valueBox)meta.insertBefore(box,valueBox);else meta.append(box);
+    row.dataset.contractIcoReady='true';
+  }
+}
+
 function finalPolish(){
   const app=document.querySelector('#app');
   if(!app)return;
@@ -199,6 +245,7 @@ function finalPolish(){
   markCurrentPage(app);
   polishClubColors(app);
   polishContractIcos(app);
+  void polishContractListIcos(app);
   polish106Rows();
 }
 
