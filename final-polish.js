@@ -248,6 +248,15 @@ async function polishContractListIcos(app){
   }
 }
 
+function removeLatestContractsSection(app){
+  const route=location.hash.split('?')[0];
+  if(!['#/smlouvy','#/smlouvy-organizace','#/smlouvy-firmy'].includes(route))return;
+  for(const section of app.querySelectorAll('section.section')){
+    const heading=section.querySelector('.section-head h2');
+    if(heading?.textContent?.trim()==='Poslední smlouvy')section.remove();
+  }
+}
+
 function finalPolish(){
   const app=document.querySelector('#app');
   if(!app)return;
@@ -255,6 +264,7 @@ function finalPolish(){
   if(wrap)wrap.classList.add('final-page-spacing');
   markCurrentPage(app);
   polishClubColors(app);
+  removeLatestContractsSection(app);
   polishContractIcos(app);
   void polishContractListIcos(app);
   polish106Rows();
