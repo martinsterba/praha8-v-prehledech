@@ -1,11 +1,11 @@
 {
-  "updated": "2026-09-04T06:38:04.995Z",
+  "updated": "2026-09-05T08:26:22.659Z",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7339,
-    "knownValueCzk": 5140758916.620001,
+    "totalContracts": 7345,
+    "knownValueCzk": 5147878343.810001,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
@@ -216,12 +216,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Materska-skola-Praha-8-Na-Korabe-2.html",
       "website": "http://www.msnakorabe.cz/",
-      "total": 18,
-      "partners": 11,
-      "knownValueCzk": 2542711.5,
-      "valuedContracts": 18,
+      "total": 19,
+      "partners": 12,
+      "knownValueCzk": 2681158.5,
+      "valuedContracts": 19,
       "dateFrom": "2022-10-12",
-      "dateTo": "2026-07-21"
+      "dateTo": "2026-08-24"
     },
     {
       "name": "Mateřská škola, Praha 8, Na Pěšinách 13",
@@ -392,12 +392,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Servisni-stredisko-pro-spravu-svereneho-majetku-MC-Praha-8-prispevkova-organizace.html",
       "website": "https://www.praha8.cz/servisni-stredisko-pro-spravu-svereneho-majetku-mc-praha-8-prispevkova-organizace.html",
-      "total": 1774,
-      "partners": 356,
-      "knownValueCzk": 2978690965.1200004,
-      "valuedContracts": 1697,
+      "total": 1777,
+      "partners": 359,
+      "knownValueCzk": 2985615945.3100004,
+      "valuedContracts": 1700,
       "dateFrom": "1991-07-15",
-      "dateTo": "2026-09-03"
+      "dateTo": "2026-09-04"
     },
     {
       "name": "Sociální a ošetřovatelské služby Praha 8",
@@ -409,7 +409,7 @@
       "source": "https://www.praha8.cz/Organizace-zdravotnickych-a-socialne-zdravotnickych-sluzeb",
       "website": "http://www.gerontocentrum.cz/",
       "total": 210,
-      "partners": 64,
+      "partners": 65,
       "knownValueCzk": 71521598.01,
       "valuedContracts": 202,
       "dateFrom": "2016-10-18",
@@ -504,12 +504,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Praha-8-U-Skolske-zahrady-4.html",
       "website": "http://www.uskolskezahrady.cz/",
-      "total": 98,
+      "total": 99,
       "partners": 51,
-      "knownValueCzk": 27994941.659999996,
-      "valuedContracts": 88,
+      "knownValueCzk": 28050941.659999996,
+      "valuedContracts": 89,
       "dateFrom": "2016-08-15",
-      "dateTo": "2026-06-16"
+      "dateTo": "2026-09-02"
     },
     {
       "name": "Základní škola Bohumila Hrabala, Praha 8, Zenklova 52",
@@ -616,12 +616,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-Praha-8-Na-Sutce-28.html",
       "website": "http://www.zssutka.cz/",
-      "total": 158,
-      "partners": 70,
+      "total": 159,
+      "partners": 71,
       "knownValueCzk": 30776244.4,
       "valuedContracts": 148,
       "dateFrom": "2016-10-11",
-      "dateTo": "2026-07-09"
+      "dateTo": "2026-08-19"
     },
     {
       "name": "Základní škola, Praha 8, Palmovka 8",

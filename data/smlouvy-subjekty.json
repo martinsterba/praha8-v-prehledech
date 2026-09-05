@@ -1,14 +1,14 @@
 {
   "schema": 2,
-  "updated": "2026-09-04T06:38:04.995Z",
+  "updated": "2026-09-05T08:26:22.659Z",
   "source": "https://smlouvy.gov.cz/vyhledavani",
   "method": "official-live-search-daily-overlap",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7339,
-    "knownValueCzk": 5140758916.620001,
+    "totalContracts": 7345,
+    "knownValueCzk": 5147878343.810001,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
@@ -932,7 +932,7 @@
         },
         {
           "name": "P & L spol. s r.o",
-          "ico": "00251504",
+          "ico": "",
           "contracts": 1,
           "knownValueCzk": 980000,
           "valuedContracts": 1
@@ -18364,7 +18364,7 @@
           "counterparties": [
             {
               "name": "P & L spol. s r.o",
-              "ico": "00251504",
+              "ico": "",
               "box": "t9crzp9"
             }
           ],
@@ -53009,12 +53009,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Materska-skola-Praha-8-Na-Korabe-2.html",
       "website": "http://www.msnakorabe.cz/",
-      "total": 18,
-      "partners": 11,
-      "knownValueCzk": 2542711.5,
-      "valuedContracts": 18,
+      "total": 19,
+      "partners": 12,
+      "knownValueCzk": 2681158.5,
+      "valuedContracts": 19,
       "dateFrom": "2022-10-12",
-      "dateTo": "2026-07-21",
+      "dateTo": "2026-08-24",
       "partnerList": [
         {
           "name": "Focus EU s.r.o.",
@@ -53038,6 +53038,13 @@
           "valuedContracts": 1
         },
         {
+          "name": "Michal Rohrer",
+          "ico": "65636422",
+          "contracts": 1,
+          "knownValueCzk": 138447,
+          "valuedContracts": 1
+        },
+        {
           "name": "AGR Gastro s.r.o.",
           "ico": "26927012",
           "contracts": 1,
@@ -53053,7 +53060,7 @@
         },
         {
           "name": "Hračkolka s.r.o",
-          "ico": "00873897",
+          "ico": "",
           "contracts": 1,
           "knownValueCzk": 93814,
           "valuedContracts": 1
@@ -53081,7 +53088,7 @@
         },
         {
           "name": "Veselý Jaroslav",
-          "ico": "43901795",
+          "ico": "",
           "contracts": 1,
           "knownValueCzk": 30860,
           "valuedContracts": 1
@@ -53095,6 +53102,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39397065",
+          "idContract": "37038025",
+          "url": "https://smlouvy.gov.cz/smlouva/39397065",
+          "subject": "Magnetické nástěnky",
+          "published": "2026-09-04",
+          "signed": "2026-08-24",
+          "valueCzk": 138447,
+          "valueVatCzk": 138447,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "Michal Rohrer",
+              "ico": "65636422",
+              "box": ""
+            }
+          ],
+          "counterparty": "Michal Rohrer",
+          "publisher": "Mateřská škola, Praha 8, Na Korábě 2",
+          "publisherIco": "70919747"
+        },
         {
           "entityIco": "70919747",
           "entityName": "Mateřská škola, Praha 8, Na Korábě 2",
@@ -53177,7 +53205,7 @@
           "counterparties": [
             {
               "name": "Hračkolka s.r.o",
-              "ico": "00873897",
+              "ico": "",
               "box": ""
             }
           ],
@@ -53375,7 +53403,7 @@
           "counterparties": [
             {
               "name": "Veselý Jaroslav",
-              "ico": "43901795",
+              "ico": "",
               "box": ""
             }
           ],
@@ -55511,7 +55539,7 @@
         },
         {
           "name": "Varhulíková - Bytový textil",
-          "ico": "40900980",
+          "ico": "",
           "contracts": 1,
           "knownValueCzk": 91088.8,
           "valuedContracts": 1
@@ -55723,7 +55751,7 @@
           "counterparties": [
             {
               "name": "Varhulíková - Bytový textil",
-              "ico": "40900980",
+              "ico": "",
               "box": "7fcdptb"
             }
           ],
@@ -58066,7 +58094,7 @@
         },
         {
           "name": "Marta Kružík",
-          "ico": "67899689",
+          "ico": "",
           "contracts": 1,
           "knownValueCzk": 0,
           "valuedContracts": 0
@@ -58734,7 +58762,7 @@
           "counterparties": [
             {
               "name": "Marta Kružík",
-              "ico": "67899689",
+              "ico": "",
               "box": ""
             }
           ],
@@ -60325,19 +60353,19 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Servisni-stredisko-pro-spravu-svereneho-majetku-MC-Praha-8-prispevkova-organizace.html",
       "website": "https://www.praha8.cz/servisni-stredisko-pro-spravu-svereneho-majetku-mc-praha-8-prispevkova-organizace.html",
-      "total": 1774,
-      "partners": 356,
-      "knownValueCzk": 2978690965.1200004,
-      "valuedContracts": 1697,
+      "total": 1777,
+      "partners": 359,
+      "knownValueCzk": 2985615945.3100004,
+      "valuedContracts": 1700,
       "dateFrom": "1991-07-15",
-      "dateTo": "2026-09-03",
+      "dateTo": "2026-09-04",
       "partnerList": [
         {
           "name": "BAB mont s.r.o.",
           "ico": "61498858",
-          "contracts": 67,
-          "knownValueCzk": 390606236.01,
-          "valuedContracts": 65
+          "contracts": 68,
+          "knownValueCzk": 391902016.53000003,
+          "valuedContracts": 66
         },
         {
           "name": "Zlínstav a.s.",
@@ -60389,18 +60417,18 @@
           "valuedContracts": 63
         },
         {
+          "name": "Petr Boubal",
+          "ico": "11253029",
+          "contracts": 94,
+          "knownValueCzk": 81722414.91,
+          "valuedContracts": 93
+        },
+        {
           "name": "FIRMA s.r.o.",
           "ico": "62412272",
           "contracts": 100,
           "knownValueCzk": 80420871.69000003,
           "valuedContracts": 100
-        },
-        {
-          "name": "Petr Boubal",
-          "ico": "11253029",
-          "contracts": 92,
-          "knownValueCzk": 76093215.24000002,
-          "valuedContracts": 91
         },
         {
           "name": "Tomáš Sobotka",
@@ -60600,7 +60628,7 @@
         },
         {
           "name": "SDRUŽENÍ - VH + MA VA, MŠ NA PŘESYPU",
-          "ico": "4802692148397555",
+          "ico": "",
           "contracts": 1,
           "knownValueCzk": 10468803.13,
           "valuedContracts": 1
@@ -60845,7 +60873,7 @@
         },
         {
           "name": "DŘEVOTEP PLUS s.r.o.",
-          "ico": "254707414",
+          "ico": "",
           "contracts": 1,
           "knownValueCzk": 4336068.12,
           "valuedContracts": 1
@@ -60887,7 +60915,7 @@
         },
         {
           "name": "Tomáš Sobotka",
-          "ico": "6407272212",
+          "ico": "",
           "contracts": 1,
           "knownValueCzk": 3568808,
           "valuedContracts": 1
@@ -61131,13 +61159,6 @@
           "valuedContracts": 1
         },
         {
-          "name": "FRIGOSYSTEM spol.s.r.o.",
-          "ico": "186084426",
-          "contracts": 4,
-          "knownValueCzk": 1590729.75,
-          "valuedContracts": 4
-        },
-        {
           "name": "AK Holý, advokátní kancelář, s.r.o.",
           "ico": "22202064",
           "contracts": 2,
@@ -61153,7 +61174,7 @@
         },
         {
           "name": "PeMe Services, s.r.o",
-          "ico": "06504758",
+          "ico": "",
           "contracts": 1,
           "knownValueCzk": 1505364.04,
           "valuedContracts": 1
@@ -61188,7 +61209,7 @@
         },
         {
           "name": "Ing. Jaroslav Šabek",
-          "ico": "01223308",
+          "ico": "",
           "contracts": 5,
           "knownValueCzk": 1423825.46,
           "valuedContracts": 5
@@ -61244,7 +61265,7 @@
         },
         {
           "name": "KAVIS, spol. s r.o.",
-          "ico": "47667644",
+          "ico": "",
           "contracts": 4,
           "knownValueCzk": 1185800,
           "valuedContracts": 4
@@ -61265,7 +61286,7 @@
         },
         {
           "name": "AVK STAV s.r.o.",
-          "ico": "24787759",
+          "ico": "",
           "contracts": 3,
           "knownValueCzk": 1090356.46,
           "valuedContracts": 3
@@ -61304,6 +61325,13 @@
           "contracts": 3,
           "knownValueCzk": 1029710,
           "valuedContracts": 3
+        },
+        {
+          "name": "FRIGOSYSTEM spol.s.r.o.",
+          "ico": "",
+          "contracts": 2,
+          "knownValueCzk": 1027251.28,
+          "valuedContracts": 2
         },
         {
           "name": "Vodafone Czech Republic a.s.",
@@ -61495,13 +61523,6 @@
           "valuedContracts": 4
         },
         {
-          "name": "Péče o zelen s.r.o.",
-          "ico": "048421103",
-          "contracts": 3,
-          "knownValueCzk": 550568.8,
-          "valuedContracts": 3
-        },
-        {
           "name": "MADE IN... spol.s r.o.",
           "ico": "49706764",
           "contracts": 2,
@@ -61614,6 +61635,13 @@
           "valuedContracts": 2
         },
         {
+          "name": "Péče o zeleň s.r.o.",
+          "ico": "",
+          "contracts": 2,
+          "knownValueCzk": 444476,
+          "valuedContracts": 2
+        },
+        {
           "name": "Bohumil Nejedlý",
           "ico": "49502859",
           "contracts": 4,
@@ -61653,6 +61681,13 @@
           "ico": "27198821",
           "contracts": 1,
           "knownValueCzk": 426830,
+          "valuedContracts": 1
+        },
+        {
+          "name": "FRIGOSYSTEM spol. s r.o.",
+          "ico": "",
+          "contracts": 1,
+          "knownValueCzk": 426762.99,
           "valuedContracts": 1
         },
         {
@@ -61846,7 +61881,7 @@
         },
         {
           "name": "Petr Charvát",
-          "ico": "724320772",
+          "ico": "",
           "contracts": 1,
           "knownValueCzk": 299580,
           "valuedContracts": 1
@@ -61993,7 +62028,7 @@
         },
         {
           "name": "Pešata & Šarmír arch4BIM s.r.o.",
-          "ico": "00615752",
+          "ico": "",
           "contracts": 1,
           "knownValueCzk": 233530,
           "valuedContracts": 1
@@ -62168,7 +62203,7 @@
         },
         {
           "name": "Vitalii Deineko",
-          "ico": "22374335",
+          "ico": "",
           "contracts": 1,
           "knownValueCzk": 159408,
           "valuedContracts": 1
@@ -62182,7 +62217,7 @@
         },
         {
           "name": "MRU s.r.o.",
-          "ico": "27110523",
+          "ico": "",
           "contracts": 1,
           "knownValueCzk": 151855,
           "valuedContracts": 1
@@ -62210,14 +62245,21 @@
         },
         {
           "name": "Hedvika Zmeková",
-          "ico": "5956111590",
+          "ico": "",
           "contracts": 1,
           "knownValueCzk": 137180.55,
           "valuedContracts": 1
         },
         {
+          "name": "FRIGOSYSTEM,spol. s.r.o.",
+          "ico": "",
+          "contracts": 1,
+          "knownValueCzk": 136715.48,
+          "valuedContracts": 1
+        },
+        {
           "name": "Zdeněk Krch - Okaso",
-          "ico": "737287230",
+          "ico": "",
           "contracts": 1,
           "knownValueCzk": 133980,
           "valuedContracts": 1
@@ -62294,7 +62336,7 @@
         },
         {
           "name": "Jerome Incoming, s.r.o.",
-          "ico": "02569381",
+          "ico": "",
           "contracts": 1,
           "knownValueCzk": 107871.5,
           "valuedContracts": 1
@@ -62304,6 +62346,13 @@
           "ico": "46711732",
           "contracts": 1,
           "knownValueCzk": 106238,
+          "valuedContracts": 1
+        },
+        {
+          "name": "Péče o zelen s.r.o.",
+          "ico": "",
+          "contracts": 1,
+          "knownValueCzk": 106092.8,
           "valuedContracts": 1
         },
         {
@@ -62322,7 +62371,7 @@
         },
         {
           "name": "Ameba Production, spol. s r.o.",
-          "ico": "02561730",
+          "ico": "",
           "contracts": 1,
           "knownValueCzk": 102850,
           "valuedContracts": 1
@@ -62686,7 +62735,7 @@
         },
         {
           "name": "Cafeomega s.r.o.",
-          "ico": "2419528624",
+          "ico": "",
           "contracts": 1,
           "knownValueCzk": 0,
           "valuedContracts": 0
@@ -62700,7 +62749,7 @@
         },
         {
           "name": "Hinet spol. s r.o.",
-          "ico": "126704722",
+          "ico": "",
           "contracts": 1,
           "knownValueCzk": 0,
           "valuedContracts": 0
@@ -62826,6 +62875,111 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39397441",
+          "idContract": "36145038",
+          "url": "https://smlouvy.gov.cz/smlouva/39397441",
+          "subject": "ZŠ Hovorčovická , zkapacitnění -rekonstrukce kanalizace včetně ΖTI",
+          "published": "2026-09-04",
+          "signed": "2026-06-22",
+          "valueCzk": 8944321.19,
+          "valueVatCzk": 8944321.19,
+          "valueNoVatCzk": 7392000.98,
+          "counterparties": [
+            {
+              "name": "BAB mont s.r.o.",
+              "ico": "61498858",
+              "box": ""
+            }
+          ],
+          "counterparty": "BAB mont s.r.o.",
+          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
+          "publisherIco": "00639524"
+        },
+        {
+          "id": "39397261",
+          "idContract": "35797825",
+          "url": "https://smlouvy.gov.cz/smlouva/39397261",
+          "subject": "Klimatizace učeben objektů ZŠ, Praha 8",
+          "published": "2026-09-04",
+          "signed": "2026-05-25",
+          "valueCzk": 4671200.32,
+          "valueVatCzk": 4671200.32,
+          "valueNoVatCzk": 3860496.13,
+          "counterparties": [
+            {
+              "name": "Petr Boubal",
+              "ico": "11253029",
+              "box": ""
+            }
+          ],
+          "counterparty": "Petr Boubal",
+          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
+          "publisherIco": "00639524"
+        },
+        {
+          "id": "39398633",
+          "idContract": "37039533",
+          "url": "https://smlouvy.gov.cz/smlouva/39398633",
+          "subject": "Dodatek č. 1 ke smlouvě o dílo Klimatizace učeben objektů ZŠ, Praha 8",
+          "published": "2026-09-04",
+          "signed": "2026-09-04",
+          "valueCzk": 4671200.32,
+          "valueVatCzk": 4671200.32,
+          "valueNoVatCzk": 3860496.13,
+          "counterparties": [
+            {
+              "name": "Petr Boubal",
+              "ico": "11253029",
+              "box": ""
+            }
+          ],
+          "counterparty": "Petr Boubal",
+          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
+          "publisherIco": "00639524"
+        },
+        {
+          "id": "39398141",
+          "idContract": "37039057",
+          "url": "https://smlouvy.gov.cz/smlouva/39398141",
+          "subject": "Dodatek č. 1 ke smlouvě o dílo ZŠ Hovorčovická, zkapacitnění - rekonstrukce včetně ZTI, Hovorčovická 11/1281, 182 00 Praha 8 - Kobylisy",
+          "published": "2026-09-04",
+          "signed": "2026-09-04",
+          "valueCzk": 1295780.52,
+          "valueVatCzk": 1295780.52,
+          "valueNoVatCzk": 1070892.99,
+          "counterparties": [
+            {
+              "name": "BAB mont s.r.o.",
+              "ico": "61498858",
+              "box": "mxfzuca"
+            }
+          ],
+          "counterparty": "BAB mont s.r.o.",
+          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
+          "publisherIco": "00639524"
+        },
+        {
+          "id": "39399201",
+          "idContract": "37040073",
+          "url": "https://smlouvy.gov.cz/smlouva/39399201",
+          "subject": "Havarijní oprava ležatého rozvodu vody ZŠ Lyčkovo nám. 460/6, Praha 8 - Karlín",
+          "published": "2026-09-04",
+          "signed": "2026-09-04",
+          "valueCzk": 957999.35,
+          "valueVatCzk": 957999.35,
+          "valueNoVatCzk": 791735,
+          "counterparties": [
+            {
+              "name": "Petr Boubal",
+              "ico": "11253029",
+              "box": ""
+            }
+          ],
+          "counterparty": "Petr Boubal",
+          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
+          "publisherIco": "00639524"
+        },
         {
           "id": "39387573",
           "idContract": "37028925",
@@ -64155,30 +64309,6 @@
           "entityIco": "00639524",
           "entityName": "Servisní středisko pro správu svěřeného majetku MČ Praha 8",
           "entityKind": "organization",
-          "id": "38468762",
-          "idContract": "36145038",
-          "url": "https://smlouvy.gov.cz/smlouva/38468762",
-          "subject": "ZŠ Hovorčovická , zkapacitnění -rekonstrukce kanalizace včetně ΖTI",
-          "published": "2026-06-22",
-          "signed": "2026-06-22",
-          "valueCzk": 8944321.19,
-          "valueVatCzk": 8944321.19,
-          "valueNoVatCzk": 7392000.98,
-          "counterparties": [
-            {
-              "name": "BAB mont s.r.o.",
-              "ico": "61498858",
-              "box": ""
-            }
-          ],
-          "counterparty": "BAB mont s.r.o.",
-          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
-          "publisherIco": "00639524"
-        },
-        {
-          "entityIco": "00639524",
-          "entityName": "Servisní středisko pro správu svěřeného majetku MČ Praha 8",
-          "entityKind": "organization",
           "id": "38421914",
           "idContract": "36099718",
           "url": "https://smlouvy.gov.cz/smlouva/38421914",
@@ -64893,30 +65023,6 @@
           "entityIco": "00639524",
           "entityName": "Servisní středisko pro správu svěřeného majetku MČ Praha 8",
           "entityKind": "organization",
-          "id": "38109125",
-          "idContract": "35797825",
-          "url": "https://smlouvy.gov.cz/smlouva/38109125",
-          "subject": "Klimatizace učeben objektů ZŠ, Praha 8",
-          "published": "2026-05-25",
-          "signed": "2026-05-25",
-          "valueCzk": 4671200.32,
-          "valueVatCzk": 4671200.32,
-          "valueNoVatCzk": 3860496.13,
-          "counterparties": [
-            {
-              "name": "Petr Boubal",
-              "ico": "11253029",
-              "box": ""
-            }
-          ],
-          "counterparty": "Petr Boubal",
-          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
-          "publisherIco": "00639524"
-        },
-        {
-          "entityIco": "00639524",
-          "entityName": "Servisní středisko pro správu svěřeného majetku MČ Praha 8",
-          "entityKind": "organization",
           "id": "38042293",
           "idContract": "35734397",
           "url": "https://smlouvy.gov.cz/smlouva/38042293",
@@ -65217,7 +65323,7 @@
           "counterparties": [
             {
               "name": "AVK STAV s.r.o.",
-              "ico": "24787759",
+              "ico": "",
               "box": ""
             }
           ],
@@ -65265,7 +65371,7 @@
           "counterparties": [
             {
               "name": "AVK STAV s.r.o.",
-              "ico": "24787759",
+              "ico": "",
               "box": ""
             }
           ],
@@ -65361,7 +65467,7 @@
           "counterparties": [
             {
               "name": "AVK STAV s.r.o.",
-              "ico": "24787759",
+              "ico": "",
               "box": ""
             }
           ],
@@ -66201,7 +66307,7 @@
           "counterparties": [
             {
               "name": "Péče o zelen s.r.o.",
-              "ico": "048421103",
+              "ico": "",
               "box": ""
             }
           ],
@@ -67218,7 +67324,7 @@
           "counterparties": [
             {
               "name": "FRIGOSYSTEM spol.s.r.o.",
-              "ico": "186084426",
+              "ico": "",
               "box": ""
             }
           ],
@@ -67242,7 +67348,7 @@
           "counterparties": [
             {
               "name": "FRIGOSYSTEM spol.s.r.o.",
-              "ico": "186084426",
+              "ico": "",
               "box": ""
             }
           ],
@@ -67458,7 +67564,7 @@
           "counterparties": [
             {
               "name": "Vitalii Deineko",
-              "ico": "22374335",
+              "ico": "",
               "box": ""
             }
           ],
@@ -67914,7 +68020,7 @@
           "counterparties": [
             {
               "name": "Ameba Production, spol. s r.o.",
-              "ico": "02561730",
+              "ico": "",
               "box": ""
             }
           ],
@@ -68418,7 +68524,7 @@
           "counterparties": [
             {
               "name": "FRIGOSYSTEM,spol. s.r.o.",
-              "ico": "186084426",
+              "ico": "",
               "box": ""
             }
           ],
@@ -69425,7 +69531,7 @@
           "counterparties": [
             {
               "name": "Péče o zeleň s.r.o.",
-              "ico": "048421103",
+              "ico": "",
               "box": ""
             }
           ],
@@ -69449,7 +69555,7 @@
           "counterparties": [
             {
               "name": "Péče o zeleň s.r.o.",
-              "ico": "048421103",
+              "ico": "",
               "box": ""
             }
           ],
@@ -70264,7 +70370,7 @@
           "counterparties": [
             {
               "name": "FRIGOSYSTEM spol. s r.o.",
-              "ico": "186084426",
+              "ico": "",
               "box": ""
             }
           ],
@@ -72010,7 +72116,7 @@
           "counterparties": [
             {
               "name": "Hinet spol. s r.o.",
-              "ico": "126704722",
+              "ico": "",
               "box": ""
             }
           ],
@@ -74122,7 +74228,7 @@
           "counterparties": [
             {
               "name": "Pešata & Šarmír arch4BIM s.r.o.",
-              "ico": "00615752",
+              "ico": "",
               "box": ""
             }
           ],
@@ -75562,7 +75668,7 @@
           "counterparties": [
             {
               "name": "DŘEVOTEP PLUS s.r.o.",
-              "ico": "254707414",
+              "ico": "",
               "box": ""
             }
           ],
@@ -75754,7 +75860,7 @@
           "counterparties": [
             {
               "name": "Ing. Jaroslav Šabek",
-              "ico": "01223308",
+              "ico": "",
               "box": ""
             }
           ],
@@ -79186,7 +79292,7 @@
           "counterparties": [
             {
               "name": "Ing. Jaroslav Šabek",
-              "ico": "01223308",
+              "ico": "",
               "box": ""
             }
           ],
@@ -79618,7 +79724,7 @@
           "counterparties": [
             {
               "name": "Ing. Jaroslav Šabek",
-              "ico": "01223308",
+              "ico": "",
               "box": ""
             }
           ],
@@ -83116,7 +83222,7 @@
           "counterparties": [
             {
               "name": "Petr Charvát",
-              "ico": "724320772",
+              "ico": "",
               "box": ""
             }
           ],
@@ -83428,7 +83534,7 @@
           "counterparties": [
             {
               "name": "Jerome Incoming, s.r.o.",
-              "ico": "02569381",
+              "ico": "",
               "box": ""
             }
           ],
@@ -83913,7 +84019,7 @@
           "counterparties": [
             {
               "name": "Hedvika Zmeková",
-              "ico": "5956111590",
+              "ico": "",
               "box": ""
             }
           ],
@@ -85371,7 +85477,7 @@
           "counterparties": [
             {
               "name": "MRU s.r.o.",
-              "ico": "27110523",
+              "ico": "",
               "box": ""
             }
           ],
@@ -86091,7 +86197,7 @@
           "counterparties": [
             {
               "name": "KAVIS, spol. s r.o.",
-              "ico": "47667644",
+              "ico": "",
               "box": ""
             }
           ],
@@ -86115,7 +86221,7 @@
           "counterparties": [
             {
               "name": "KAVIS, spol. s r.o.",
-              "ico": "47667644",
+              "ico": "",
               "box": ""
             }
           ],
@@ -86571,7 +86677,7 @@
           "counterparties": [
             {
               "name": "KAVIS, spol. s r.o.",
-              "ico": "47667644",
+              "ico": "",
               "box": ""
             }
           ],
@@ -88107,7 +88213,7 @@
           "counterparties": [
             {
               "name": "KAVIS, spol. s r.o.",
-              "ico": "47667644",
+              "ico": "",
               "box": ""
             }
           ],
@@ -90698,7 +90804,7 @@
           "counterparties": [
             {
               "name": "Ing. Jaroslav Šabek",
-              "ico": "01223308",
+              "ico": "",
               "box": ""
             }
           ],
@@ -94112,7 +94218,7 @@
           "counterparties": [
             {
               "name": "Cafeomega s.r.o.",
-              "ico": "2419528624",
+              "ico": "",
               "box": ""
             }
           ],
@@ -96320,7 +96426,7 @@
           "counterparties": [
             {
               "name": "Tomáš Sobotka",
-              "ico": "6407272212",
+              "ico": "",
               "box": ""
             }
           ],
@@ -98648,7 +98754,7 @@
           "counterparties": [
             {
               "name": "SDRUŽENÍ - VH + MA VA, MŠ NA PŘESYPU",
-              "ico": "4802692148397555",
+              "ico": "",
               "box": ""
             }
           ],
@@ -99272,7 +99378,7 @@
           "counterparties": [
             {
               "name": "Ing. Jaroslav Šabek",
-              "ico": "01223308",
+              "ico": "",
               "box": ""
             }
           ],
@@ -100112,7 +100218,7 @@
           "counterparties": [
             {
               "name": "PeMe Services, s.r.o",
-              "ico": "06504758",
+              "ico": "",
               "box": ""
             }
           ],
@@ -104348,7 +104454,7 @@
           "counterparties": [
             {
               "name": "Zdeněk Krch - Okaso",
-              "ico": "737287230",
+              "ico": "",
               "box": ""
             }
           ],
@@ -105304,7 +105410,7 @@
       "source": "https://www.praha8.cz/Organizace-zdravotnickych-a-socialne-zdravotnickych-sluzeb",
       "website": "http://www.gerontocentrum.cz/",
       "total": 210,
-      "partners": 64,
+      "partners": 65,
       "knownValueCzk": 71521598.01,
       "valuedContracts": 202,
       "dateFrom": "2016-10-18",
@@ -105396,10 +105502,10 @@
         },
         {
           "name": "Gerontologické centrum Praha 8",
-          "ico": "45250025",
-          "contracts": 6,
-          "knownValueCzk": 900000,
-          "valuedContracts": 6
+          "ico": "",
+          "contracts": 5,
+          "knownValueCzk": 750000,
+          "valuedContracts": 5
         },
         {
           "name": "AUTO TONDA s.r.o.",
@@ -105515,7 +105621,7 @@
         },
         {
           "name": "Jakub Šarše",
-          "ico": "07485410",
+          "ico": "",
           "contracts": 1,
           "knownValueCzk": 283560,
           "valuedContracts": 1
@@ -105588,6 +105694,13 @@
           "ico": "27560261",
           "contracts": 1,
           "knownValueCzk": 199977,
+          "valuedContracts": 1
+        },
+        {
+          "name": "Gerontologické centrum",
+          "ico": "",
+          "contracts": 1,
+          "knownValueCzk": 150000,
           "valuedContracts": 1
         },
         {
@@ -106880,7 +106993,7 @@
           "counterparties": [
             {
               "name": "Jakub Šarše",
-              "ico": "07485410",
+              "ico": "",
               "box": ""
             }
           ],
@@ -109304,7 +109417,7 @@
           "counterparties": [
             {
               "name": "Gerontologické centrum Praha 8",
-              "ico": "45250025",
+              "ico": "",
               "box": ""
             }
           ],
@@ -109664,7 +109777,7 @@
           "counterparties": [
             {
               "name": "Gerontologické centrum Praha 8",
-              "ico": "45250025",
+              "ico": "",
               "box": ""
             }
           ],
@@ -109712,7 +109825,7 @@
           "counterparties": [
             {
               "name": "Gerontologické centrum",
-              "ico": "45250025",
+              "ico": "",
               "box": ""
             }
           ],
@@ -109760,7 +109873,7 @@
           "counterparties": [
             {
               "name": "Gerontologické centrum Praha 8",
-              "ico": "45250025",
+              "ico": "",
               "box": ""
             }
           ],
@@ -109808,7 +109921,7 @@
           "counterparties": [
             {
               "name": "Gerontologické centrum Praha 8",
-              "ico": "45250025",
+              "ico": "",
               "box": ""
             }
           ],
@@ -109880,7 +109993,7 @@
           "counterparties": [
             {
               "name": "Gerontologické centrum Praha 8",
-              "ico": "45250025",
+              "ico": "",
               "box": ""
             }
           ],
@@ -111009,7 +111122,7 @@
         },
         {
           "name": "Sportlines.cz a.s.",
-          "ico": "005328993",
+          "ico": "",
           "contracts": 1,
           "knownValueCzk": 159600,
           "valuedContracts": 1
@@ -115605,7 +115718,7 @@
           "counterparties": [
             {
               "name": "Sportlines.cz a.s.",
-              "ico": "005328993",
+              "ico": "",
               "box": ""
             }
           ],
@@ -116573,7 +116686,7 @@
         },
         {
           "name": "Veselý Jaroslav",
-          "ico": "43901732",
+          "ico": "",
           "contracts": 1,
           "knownValueCzk": 121000,
           "valuedContracts": 1
@@ -116622,7 +116735,7 @@
         },
         {
           "name": "Jaroslav Veselý",
-          "ico": "46901735",
+          "ico": "",
           "contracts": 1,
           "knownValueCzk": 91200,
           "valuedContracts": 1
@@ -117894,7 +118007,7 @@
           "counterparties": [
             {
               "name": "Jaroslav Veselý",
-              "ico": "46901735",
+              "ico": "",
               "box": ""
             }
           ],
@@ -119454,7 +119567,7 @@
           "counterparties": [
             {
               "name": "Veselý Jaroslav",
-              "ico": "43901732",
+              "ico": "",
               "box": ""
             }
           ],
@@ -122631,7 +122744,7 @@
         },
         {
           "name": "Vladimír Schwarz",
-          "ico": "16105298",
+          "ico": "",
           "contracts": 1,
           "knownValueCzk": 164000,
           "valuedContracts": 1
@@ -122890,7 +123003,7 @@
         },
         {
           "name": "KuFi INT s.r.o.",
-          "ico": "24610656",
+          "ico": "",
           "contracts": 1,
           "knownValueCzk": 89992,
           "valuedContracts": 1
@@ -127260,7 +127373,7 @@
           "counterparties": [
             {
               "name": "KuFi INT s.r.o.",
-              "ico": "24610656",
+              "ico": "",
               "box": ""
             }
           ],
@@ -127668,7 +127781,7 @@
           "counterparties": [
             {
               "name": "Vladimír Schwarz",
-              "ico": "16105298",
+              "ico": "",
               "box": ""
             }
           ],
@@ -128560,7 +128673,7 @@
       "partnerList": [
         {
           "name": "Austis stavební s.r.o.",
-          "ico": "28184243",
+          "ico": "",
           "contracts": 1,
           "knownValueCzk": 4059775.1,
           "valuedContracts": 1
@@ -132074,7 +132187,7 @@
           "counterparties": [
             {
               "name": "Austis stavební s.r.o.",
-              "ico": "28184243",
+              "ico": "",
               "box": ""
             }
           ],
@@ -141643,12 +141756,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Praha-8-U-Skolske-zahrady-4.html",
       "website": "http://www.uskolskezahrady.cz/",
-      "total": 98,
+      "total": 99,
       "partners": 51,
-      "knownValueCzk": 27994941.659999996,
-      "valuedContracts": 88,
+      "knownValueCzk": 28050941.659999996,
+      "valuedContracts": 89,
       "dateFrom": "2016-08-15",
-      "dateTo": "2026-06-16",
+      "dateTo": "2026-09-02",
       "partnerList": [
         {
           "name": "FIRMA s.r.o.",
@@ -141875,6 +141988,13 @@
           "valuedContracts": 1
         },
         {
+          "name": "PENZION KAMÍNEK s.r.o.",
+          "ico": "22364617",
+          "contracts": 2,
+          "knownValueCzk": 110600,
+          "valuedContracts": 2
+        },
+        {
           "name": "MARJIR s.r.o.",
           "ico": "08417091",
           "contracts": 1,
@@ -141945,13 +142065,6 @@
           "valuedContracts": 1
         },
         {
-          "name": "PENZION KAMÍNEK s.r.o.",
-          "ico": "22364617",
-          "contracts": 1,
-          "knownValueCzk": 54600,
-          "valuedContracts": 1
-        },
-        {
           "name": "Občanské sdružení - \"Děti duhy\", z.s.",
           "ico": "22730613",
           "contracts": 1,
@@ -142009,6 +142122,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39400313",
+          "idContract": "37041129",
+          "url": "https://smlouvy.gov.cz/smlouva/39400313",
+          "subject": "Ubytování - adaptační výjezd 6. tříd",
+          "published": "2026-09-04",
+          "signed": "2026-09-02",
+          "valueCzk": 56000,
+          "valueVatCzk": null,
+          "valueNoVatCzk": 56000,
+          "counterparties": [
+            {
+              "name": "PENZION KAMÍNEK s.r.o.",
+              "ico": "22364617",
+              "box": "nufyydb"
+            }
+          ],
+          "counterparty": "PENZION KAMÍNEK s.r.o.",
+          "publisher": "Základní škola a mateřská škola, Praha 8, U Školské zahrady 4",
+          "publisherIco": "60461837"
+        },
         {
           "entityIco": "60461837",
           "entityName": "Základní škola a mateřská škola, Praha 8, U Školské zahrady 4",
@@ -144429,7 +144563,7 @@
         },
         {
           "name": "Austis stavební s.r.o.",
-          "ico": "28184243",
+          "ico": "",
           "contracts": 1,
           "knownValueCzk": 1851032.6,
           "valuedContracts": 1
@@ -144737,7 +144871,7 @@
         },
         {
           "name": "Promaco Consulting, s.r.o.",
-          "ico": "277611511",
+          "ico": "",
           "contracts": 1,
           "knownValueCzk": 155000,
           "valuedContracts": 1
@@ -144975,7 +145109,7 @@
         },
         {
           "name": "Synergy Solution s.r.o.",
-          "ico": "02862740",
+          "ico": "",
           "contracts": 1,
           "knownValueCzk": 80000,
           "valuedContracts": 1
@@ -153124,7 +153258,7 @@
           "counterparties": [
             {
               "name": "Austis stavební s.r.o.",
-              "ico": "28184243",
+              "ico": "",
               "box": ""
             }
           ],
@@ -153196,7 +153330,7 @@
           "counterparties": [
             {
               "name": "Promaco Consulting, s.r.o.",
-              "ico": "277611511",
+              "ico": "",
               "box": ""
             }
           ],
@@ -153844,7 +153978,7 @@
           "counterparties": [
             {
               "name": "Synergy Solution s.r.o.",
-              "ico": "02862740",
+              "ico": "",
               "box": ""
             }
           ],
@@ -154374,7 +154508,7 @@
         },
         {
           "name": "SaBaT",
-          "ico": "48433183",
+          "ico": "",
           "contracts": 3,
           "knownValueCzk": 181632,
           "valuedContracts": 2
@@ -157584,7 +157718,7 @@
           "counterparties": [
             {
               "name": "SaBaT",
-              "ico": "48433183",
+              "ico": "",
               "box": ""
             }
           ],
@@ -157752,7 +157886,7 @@
           "counterparties": [
             {
               "name": "SaBaT",
-              "ico": "48433183",
+              "ico": "",
               "box": ""
             }
           ],
@@ -158160,7 +158294,7 @@
           "counterparties": [
             {
               "name": "SaBaT",
-              "ico": "48433183",
+              "ico": "",
               "box": ""
             }
           ],
@@ -164689,7 +164823,7 @@
         },
         {
           "name": "Judr. Boris Gaydečka",
-          "ico": "17458785",
+          "ico": "",
           "contracts": 1,
           "knownValueCzk": 17770,
           "valuedContracts": 1
@@ -165807,7 +165941,7 @@
           "counterparties": [
             {
               "name": "Judr. Boris Gaydečka",
-              "ico": "17458785",
+              "ico": "",
               "box": ""
             }
           ],
@@ -168638,7 +168772,7 @@
         },
         {
           "name": "Austis stavební s.r.o.",
-          "ico": "28184243",
+          "ico": "",
           "contracts": 1,
           "knownValueCzk": 3935779.1,
           "valuedContracts": 1
@@ -169121,7 +169255,7 @@
         },
         {
           "name": "Ing. Eva Hošková",
-          "ico": "47098833",
+          "ico": "",
           "contracts": 1,
           "knownValueCzk": 117372.42,
           "valuedContracts": 1
@@ -174217,7 +174351,7 @@
           "counterparties": [
             {
               "name": "Ing. Eva Hošková",
-              "ico": "47098833",
+              "ico": "",
               "box": ""
             }
           ],
@@ -177121,7 +177255,7 @@
           "counterparties": [
             {
               "name": "Austis stavební s.r.o.",
-              "ico": "28184243",
+              "ico": "",
               "box": ""
             }
           ],
@@ -182021,12 +182155,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-Praha-8-Na-Sutce-28.html",
       "website": "http://www.zssutka.cz/",
-      "total": 158,
-      "partners": 70,
+      "total": 159,
+      "partners": 71,
       "knownValueCzk": 30776244.4,
       "valuedContracts": 148,
       "dateFrom": "2016-10-11",
-      "dateTo": "2026-07-09",
+      "dateTo": "2026-08-19",
       "partnerList": [
         {
           "name": "ACTIVE GUIDE, s.r.o.",
@@ -182512,6 +182646,13 @@
           "valuedContracts": 0
         },
         {
+          "name": "new delespine, s.r.o.",
+          "ico": "03929019",
+          "contracts": 1,
+          "knownValueCzk": 0,
+          "valuedContracts": 0
+        },
+        {
           "name": "Pavel Soukup",
           "ico": "40638987",
           "contracts": 1,
@@ -182520,6 +182661,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39398781",
+          "idContract": "37039669",
+          "url": "https://smlouvy.gov.cz/smlouva/39398781",
+          "subject": "Dodávka potravinářského zboží",
+          "published": "2026-09-04",
+          "signed": "2026-08-19",
+          "valueCzk": null,
+          "valueVatCzk": null,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "new delespine, s.r.o.",
+              "ico": "03929019",
+              "box": "srhznum"
+            }
+          ],
+          "counterparty": "new delespine, s.r.o.",
+          "publisher": "Základní škola, Praha 8, Na Šutce 28",
+          "publisherIco": "60461845"
+        },
         {
           "entityIco": "60461845",
           "entityName": "Základní škola, Praha 8, Na Šutce 28",
@@ -188301,7 +188463,7 @@
         },
         {
           "name": "Rekreační a sportovní středisko Termit 25",
-          "ico": "602354379",
+          "ico": "",
           "contracts": 1,
           "knownValueCzk": 114000,
           "valuedContracts": 1
@@ -188399,7 +188561,7 @@
         },
         {
           "name": "Sportovní klub Meteor Praha",
-          "ico": "00537469",
+          "ico": "",
           "contracts": 1,
           "knownValueCzk": 77250,
           "valuedContracts": 1
@@ -188434,7 +188596,7 @@
         },
         {
           "name": "Lyžařská s.r.o.",
-          "ico": "00548713",
+          "ico": "",
           "contracts": 1,
           "knownValueCzk": 68200,
           "valuedContracts": 1
@@ -188609,7 +188771,7 @@
         },
         {
           "name": "VOJMED s.r.o.",
-          "ico": "08351001",
+          "ico": "",
           "contracts": 1,
           "knownValueCzk": 0,
           "valuedContracts": 0
@@ -192401,7 +192563,7 @@
           "counterparties": [
             {
               "name": "Lyžařská s.r.o.",
-              "ico": "00548713",
+              "ico": "",
               "box": ""
             }
           ],
@@ -192593,7 +192755,7 @@
           "counterparties": [
             {
               "name": "Sportovní klub Meteor Praha",
-              "ico": "00537469",
+              "ico": "",
               "box": ""
             }
           ],
@@ -194264,7 +194426,7 @@
           "counterparties": [
             {
               "name": "Rekreační a sportovní středisko Termit 25",
-              "ico": "602354379",
+              "ico": "",
               "box": ""
             }
           ],
@@ -194384,7 +194546,7 @@
           "counterparties": [
             {
               "name": "VOJMED s.r.o.",
-              "ico": "08351001",
+              "ico": "",
               "box": ""
             }
           ],
