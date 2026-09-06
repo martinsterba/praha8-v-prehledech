@@ -37,7 +37,7 @@
     "qa:contracts:history-test": "node scripts/qa-contracts-formats.mjs",
     "qa:contracts:formats": "node scripts/qa-contracts-formats.mjs",
     "qa:contracts:forensic": "node scripts/qa-contracts-forensic.mjs",
-    "qa:contracts:roles": "node scripts/qa-contracts-forensic.mjs",
+    "qa:contracts:roles": "node scripts/qa-contracts-roles.mjs",
     "sync:contract-entities": "node scripts/sync-contract-entities.mjs",
     "qa:contract-entities": "node scripts/build-contract-entities.mjs",
     "qa:contract-entities:registry": "node scripts/qa-contract-entities-registry.mjs",
