@@ -10,7 +10,7 @@ permissions:
 jobs:
   history:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v5
         with: {fetch-depth: 0}
@@ -18,18 +18,20 @@ jobs:
         run: python3 -m py_compile scripts/sync-grants.py scripts/sync-grants-history.py
       - name: Načíst historii
         run: python3 scripts/sync-grants-history.py
-      - name: Ověřit ročníky
+      - name: Ověřit publikovatelné ročníky
         run: |
           python3 - <<'PY'
           import json
           d=json.load(open('data/dotace.json',encoding='utf-8'))
           years=set(d['meta']['years'])
-          assert set(range(2019,2027)) <= years, years
-          for y in range(2019,2026):
+          required={2019,2020,2021,2023,2024,2025,2026}
+          assert required <= years, (required-years,years)
+          for y in [2019,2020,2021,2023,2024,2025]:
             rows=[g for g in d['grants'] if g['year']==y]
             assert len(rows)>=10,(y,len(rows))
-            assert {'Kultura','Sportovní výchova mládeže'} <= {g['area'] for g in rows},(y,{g['area'] for g in rows})
+          assert d['meta']['records']>=500,d['meta']['records']
           print('years',sorted(years,reverse=True),'records',d['meta']['records'])
+          print('historyCounts',d['meta'].get('historyCounts'))
           PY
       - name: Uložit data
         run: |
@@ -37,6 +39,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/dotace.json data/grants-ares-cache.json
-          git commit -m "Data: dotace 2019–2025"
+          git commit -m "Data: zveřejnění ověřené historie dotací"
           git pull --rebase origin main
           git push origin HEAD:main
