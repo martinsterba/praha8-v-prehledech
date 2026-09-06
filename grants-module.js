@@ -50,7 +50,7 @@
     </article>`).join('');
   }
 
-  function topRecipients(grants){
+  function recipientStats(grants){
     const namesToIcos=new Map();
     for(const g of grants){
       const name=normalize(g.recipient);const ico=digits(g.ico);
@@ -70,18 +70,18 @@
       row.total+=Number(g.approvedCzk||0);row.count+=1;
       if(g.year)row.years.add(Number(g.year));
     }
-    return [...buckets.values()].sort((a,b)=>b.total-a.total||b.count-a.count||a.recipient.localeCompare(b.recipient,'cs')).slice(0,10);
+    return [...buckets.values()];
   }
 
   function buildTopRecipients(rows){
     return rows.map((r,i)=>{
       const ys=[...r.years].sort((a,b)=>a-b);
       const period=ys.length?ys[0]===ys[ys.length-1]?String(ys[0]):`${ys[0]}–${ys[ys.length-1]}`:'—';
-      return `<article class="grant-top-row">
-        <div class="grant-top-rank">${i+1}.</div>
-        <div class="grant-top-name"><b>${esc(r.recipient)}</b><span>${r.ico?`IČ ${esc(r.ico)} · `:''}${r.count.toLocaleString('cs-CZ')} ${r.count===1?'dotace':'dotací'} · ${period}</span></div>
-        <strong>${money(r.total)}</strong>
-      </article>`;
+      return `<div class="partner-row">
+        <span class="partner-rank">${i+1}</span>
+        <div><b>${esc(r.recipient)}</b><small>${r.ico?`IČO ${esc(r.ico)} · `:''}${r.count.toLocaleString('cs-CZ')} ${r.count===1?'dotace':'dotací'} · ${period}</small></div>
+        <div class="partner-numbers"><strong>${money(r.total)}</strong><small>schválená částka celkem</small></div>
+      </div>`;
     }).join('');
   }
 
@@ -101,7 +101,9 @@
       const summaryYear=years[0]||null;
       const summaryRows=summaryYear?grants.filter(g=>Number(g.year)===summaryYear):grants;
       const summaryTotal=summaryRows.reduce((s,g)=>s+Number(g.approvedCzk||0),0);
-      const top10=topRecipients(grants);
+      const stats=recipientStats(grants);
+      const topValue=[...stats].sort((a,b)=>b.total-a.total||b.count-a.count||a.recipient.localeCompare(b.recipient,'cs')).slice(0,10);
+      const topCount=[...stats].sort((a,b)=>b.count-a.count||b.total-a.total||a.recipient.localeCompare(b.recipient,'cs')).slice(0,10);
       const historyLabel=years.length?`${years[years.length-1]}–${years[0]}`:'dostupnou historii';
       let page=1;
 
@@ -113,12 +115,20 @@
           <div><small>Schválená částka${summaryYear?` · ${summaryYear}`:''}</small><strong>${money(summaryTotal)}</strong><span>${summaryYear?`celkem schváleno v roce ${summaryYear}`:'celkem schváleno'}</span></div>
         </section>
         <div class="data-note grant-note"><b>O datech.</b> Přehled spojuje zveřejněná dotační řízení MČ Praha 8 a jejich historické výsledky. Starší ročníky zachovávají tehdejší názvy a členění dotačních oblastí. Do databáze zařazujeme jen záznamy, u nichž lze z oficiálního zdroje bezpečně určit příjemce a schválenou částku; nezahrnujeme případy, kdy je MČ Praha 8 sama příjemcem prostředků od jiného poskytovatele.</div>
-        ${top10.length?`<section class="section grant-top-section"><div class="kicker">Statistika</div><h2>TOP 10 příjemců dotací</h2><p class="grant-top-intro">Organizace s nejvyšším součtem schválených dotací za dostupnou historii ${historyLabel}. Záznamy spojujeme primárně podle IČ.</p><div class="grant-top-list">${buildTopRecipients(top10)}</div></section>`:''}
+        ${topValue.length?`<section class="section recipient-section grant-top-section"><div class="section-head"><div><div class="kicker">Statistika</div><h2>TOP 10 příjemců dotací</h2></div><p>Organizace s nejvyšším součtem schválených dotací za dostupnou historii ${historyLabel}. Záznamy spojujeme primárně podle IČ.</p></div><div class="partner-tabs"><button class="partner-tab active" data-grant-ranking="value">Podle výše dotací</button><button class="partner-tab" data-grant-ranking="count">Podle počtu dotací</button></div><div id="grantTopRanking" class="partner-ranking">${buildTopRecipients(topValue)}</div></section>`:''}
         <section class="section grant-list-section">
           <div class="grant-toolbar"><div><div class="kicker">Přehled</div><h2>Poskytnuté dotace</h2></div><div class="grant-filters"><input id="grantSearch" type="search" placeholder="Hledat příjemce nebo IČ…"><select id="grantArea"><option value="">Všechny oblasti</option>${areas.map(a=>`<option value="${esc(a)}">${esc(a)}</option>`).join('')}</select><select id="grantYear"><option value="">Všechny roky</option>${years.map(y=>`<option value="${y}">${y}</option>`).join('')}</select></div></div>
           <div id="grantResultCount" class="updated"></div><div class="grant-list-head"><span>Příjemce</span><span>Oblast</span><span>Rok</span><span>Částka</span><span>Zdroj</span></div><div id="grantList" class="grant-list"></div><div id="grantPager" class="pagination"></div>
         </section>
       </div>`;
+
+      if(topValue.length){
+        app.querySelectorAll('[data-grant-ranking]').forEach(b=>b.onclick=()=>{
+          app.querySelectorAll('[data-grant-ranking]').forEach(x=>x.classList.toggle('active',x===b));
+          const ranking=b.dataset.grantRanking==='count'?topCount:topValue;
+          app.querySelector('#grantTopRanking').innerHTML=buildTopRecipients(ranking);
+        });
+      }
 
       const draw=()=>{
         const q=normalize(app.querySelector('#grantSearch')?.value||'');
