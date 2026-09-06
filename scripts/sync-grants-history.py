@@ -146,7 +146,7 @@ def parse_rows(source,file_url,rows,parser_name):
     if ico is None and ('ič' in x or 'ico' in x): ico=i
     if project is None and any(k in x for k in ['projekt','účel','ucel','název akce','nazev akce','záměr','zamer']): project=i
     if requested is None and ('požad' in x or 'pozad' in x): requested=i
-    if approved is None and any(k in x for k in ['schválen','schvalen','poskytnut','přidělen','pridelen','částka','castka','dotace','výše','vyse','návrh dk','navrh dk']): approved=i
+    if approved is None and any(k in x for k in ['schválen','schvalen','přidělen','pridelen','částka','castka','dotace','výše','vyse','návrh dk','navrh dk']): approved=i
   if recipient is None or approved is None: raise RuntimeError('parser nenašel příjemce/částku; záhlaví: '+repr(header))
   grants=[]
   for row in rows[hi+1:]:
