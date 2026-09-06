@@ -11,37 +11,29 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-      - name: Prozkoumat problematické zdroje
+      - name: Prozkoumat problematické tabulky
         run: |
           python3 - <<'PY'
-          import importlib.util,subprocess,tempfile,urllib.request
-          from pathlib import Path
+          import importlib.util
+          from urllib.parse import urljoin
           spec=importlib.util.spec_from_file_location('base','scripts/sync-grants.py')
           base=importlib.util.module_from_spec(spec); spec.loader.exec_module(base)
-
-          print('### SOCIAL 2022 XLSX')
-          page='https://www.praha8.cz/appo/usn/676?usn=LFMBDOBTy5eWHsComlKmZw%3D%3D'
-          p=base.LinkParser(); p.feed(base.fetch_text(page))
-          for href,text in p.links:
-            if '.xlsx' not in (href+' '+text).lower(): continue
-            from urllib.parse import urljoin
-            url=urljoin(page,href)
-            print('FILE',text,url)
-            try:
-              rows=base.xlsx_rows(base.fetch_bytes(url))
-              for i,row in enumerate(rows[:25]): print(i+1,repr(row))
-            except Exception as e: print('XLSX ERROR',repr(e))
-
-          for year,url in [
-            (2017,'https://www.praha8.cz/file/TRy/Vysledky-mikrogranty-zvelebovani-2017.pdf'),
-            (2018,'https://www.praha8.cz/file/hCY/Vysledky-mikrogranty-zvelebovani-2018.pdf')]:
-            print('\n### MICROGRANT PDF',year)
-            try:
-              blob=base.fetch_bytes(url)
-              with tempfile.TemporaryDirectory() as td:
-                pdf=Path(td)/'in.pdf'; txt=Path(td)/'out.txt'; pdf.write_bytes(blob)
-                r=subprocess.run(['pdftotext','-layout',str(pdf),str(txt)],capture_output=True,text=True)
-                print('pdftotext rc',r.returncode,r.stderr[:500])
-                if txt.exists(): print(txt.read_text(encoding='utf-8',errors='replace')[:16000])
-            except Exception as e: print('PDF ERROR',repr(e))
+          pages=[
+            ('Kultura 2019','https://www.praha8.cz/Granty-Kultura-2019'),
+            ('Kultura 2021','https://www.praha8.cz/Granty-Kultura-2021'),
+            ('Volnočas 2021','https://www.praha8.cz/Granty-Volnocasove-nesportovni-aktivity-2020-1'),
+          ]
+          for title,page in pages:
+            print('\n###',title,page)
+            p=base.LinkParser(); p.feed(base.fetch_text(page))
+            for href,text in p.links:
+              low=(href+' '+text).lower()
+              if '.xls' not in low and '.xlsx' not in low: continue
+              url=urljoin(page,href)
+              print('FILE',text,'=>',url)
+              if '.xlsx' in low:
+                try:
+                  rows=base.xlsx_rows(base.fetch_bytes(url))
+                  for i,row in enumerate(rows[:35]): print(i+1,repr(row))
+                except Exception as e: print('ERROR',repr(e))
           PY
