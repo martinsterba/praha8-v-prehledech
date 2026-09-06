@@ -6,6 +6,7 @@ const root=resolve(import.meta.dirname,'..');
 const syncScript=resolve(root,'scripts','sync-praha8.mjs');
 const bodiesScript=resolve(root,'scripts','sync-bodies.mjs');
 const grantsScript=resolve(root,'scripts','sync-grants.py');
+const grantsHistoryScript=resolve(root,'scripts','sync-grants-history.py');
 const peoplePath=resolve(root,'data','lide.json');
 const statusPath=resolve(root,'data','source-status.json');
 
@@ -51,9 +52,10 @@ await run(['--people','--hmp-functions','--national-roles','--fast']);
 // atomicky přepíše organy.json. Neexistuje už druhý opravný průchod.
 await runNode(bodiesScript);
 
-// Programové dotace mají vlastní bezpečný importér. Patří do týdenní aktualizace:
-// dotační výsledky se nemění tak často, aby bylo nutné zatěžovat denní workflow.
+// Dotace mají vlastní bezpečný importér. Nejprve se načte aktuální ročník a sociální dotace,
+// potom již ověřené historické ročníky. Dotační výsledky stačí kontrolovat týdně.
 await runPython(grantsScript);
+await runPython(grantsHistoryScript);
 
 const afterFunctions=await readJson(peoplePath,[]);
 const preserved=new Map(afterFunctions.map(p=>[personKey(p.name),{
