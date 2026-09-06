@@ -79,6 +79,53 @@
 
   <script>
     window.__dotaceStandalone = location.hash === '#/dotace';
+
+    if (window.__dotaceStandalone) {
+      const standaloneMenu = {
+        radnice: [
+          ['#/usneseni','Usnesení Rady a Zastupitelstva','Rozhodnutí Rady a Zastupitelstva MČ Praha 8 včetně hlasování'],
+          ['#/penize','Rozpočty a veřejné finance','Rozpočet a finanční rozhodnutí'],
+          ['#/uredni-deska','Úřední deska','Aktuálně zveřejněné dokumenty a oznámení']
+        ],
+        penize: [
+          ['#/smlouvy','Smlouvy MČ Praha 8','Kompletní historie smluv městské části'],
+          ['#/smlouvy-organizace','Smlouvy příspěvkových organizací','37 příspěvkových organizací Prahy 8'],
+          ['#/smlouvy-firmy','Smlouvy městských firem','3 společnosti ve 100% vlastnictví MČ']
+        ],
+        lide: [
+          ['#/organy','Komise a výbory','Poradní a kontrolní orgány'],
+          ['#/skoly','Školy','Mateřské a základní školy Prahy 8'],
+          ['#/organizace','Organizace a městské firmy','Ostatní příspěvkové organizace a městské firmy'],
+          ['#/volby','Volby','Historické výsledky voleb na Praze 8'],
+          ['#/lide','Zastupitelstvo','Rada, zastupitelé a politické kluby']
+        ]
+      };
+      const mega = document.querySelector('#mega');
+      document.querySelectorAll('[data-menu]').forEach(button => {
+        button.addEventListener('click', event => {
+          event.stopPropagation();
+          const key = button.dataset.menu;
+          const wasOpen = !mega.hidden && mega.dataset.menu === key;
+          if (wasOpen) {
+            mega.hidden = true;
+            mega.dataset.menu = '';
+            return;
+          }
+          mega.innerHTML = `<div class="mega-grid">${standaloneMenu[key].map(item => `<a href="${item[0]}"><b>${item[1]}</b><small>${item[2]}</small></a>`).join('')}</div>`;
+          mega.dataset.menu = key;
+          mega.hidden = false;
+        });
+      });
+      document.addEventListener('click', event => {
+        if (!mega.hidden && !mega.contains(event.target) && !event.target.closest('[data-menu]')) mega.hidden = true;
+      });
+      const searchOpen = document.querySelector('#searchOpen');
+      if (searchOpen) searchOpen.addEventListener('click', () => {
+        sessionStorage.setItem('openGlobalSearchAfterReload','1');
+        location.hash = '#/';
+      });
+    }
+
     addEventListener('hashchange', event => {
       const isDotace = location.hash === '#/dotace';
       if (isDotace !== window.__dotaceStandalone) {
@@ -90,6 +137,10 @@
   <script type="module">
     if (!window.__dotaceStandalone) {
       await import('./app.js?v=2.8.6');
+      if (sessionStorage.getItem('openGlobalSearchAfterReload') === '1') {
+        sessionStorage.removeItem('openGlobalSearchAfterReload');
+        document.querySelector('#searchOpen')?.click();
+      }
     }
   </script>
   <script src="production-fixes.js?v=20260831-1" defer></script>
