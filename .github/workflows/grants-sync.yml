@@ -2,7 +2,7 @@ name: "💶 Dotace – týdenní aktualizace"
 
 on:
   workflow_dispatch:
-  # Dočasný jednorázový retest po opravě IČ příjemce u mimořádných dotací.
+  # Dočasný auditní retest: QA nyní vypíše všechny chyby najednou.
   # Po zeleném průchodu se tento push trigger odstraní.
   push:
     branches: [main]
