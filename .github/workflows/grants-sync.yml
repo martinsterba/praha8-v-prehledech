@@ -2,6 +2,12 @@ name: "💶 Dotace – týdenní aktualizace"
 
 on:
   workflow_dispatch:
+  # Dočasný jednorázový test po opravě historických DOC tabulek. Po zeleném
+  # průchodu se tento push trigger odstraní.
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/grants-sync.yml"
   schedule:
     # Pondělí 05:37 UTC = 07:37 v Praze v letním čase.
     # Běží až po denní a běžné týdenní synchronizaci.
@@ -21,12 +27,27 @@ jobs:
     timeout-minutes: 30
 
     steps:
+      - name: "Rozhodnout, zda dnes synchronizovat"
+        id: gate
+        shell: bash
+        run: |
+          set -euo pipefail
+          prague_date="$(TZ=Europe/Prague date +%F)"
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "$prague_date" = "2026-09-07" ]; then
+            echo "run=false" >> "$GITHUB_OUTPUT"
+            echo "Dnešní automatický běh je záměrně přeskočen; první plánovaný grantový sync bude 14. 9. 2026."
+          else
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: "Načíst repozitář"
+        if: steps.gate.outputs.run == 'true'
         uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
       - name: "Nainstalovat podporu starých grantových formátů"
+        if: steps.gate.outputs.run == 'true'
         run: |
           set -euo pipefail
           python3 -m pip install --disable-pip-version-check xlrd==2.0.2
@@ -34,6 +55,7 @@ jobs:
           sudo apt-get install -y -qq antiword catdoc
 
       - name: "Ověřit syntaxi grantových importérů"
+        if: steps.gate.outputs.run == 'true'
         run: |
           python3 -m py_compile \
             scripts/sync-grants.py \
@@ -49,9 +71,11 @@ jobs:
             scripts/validate-grants.py
 
       - name: "Spustit kompletní grantový pipeline"
+        if: steps.gate.outputs.run == 'true'
         run: npm run sync:grants
 
       - name: "Ověřit výsledný JSON"
+        if: steps.gate.outputs.run == 'true'
         run: |
           python3 - <<'PY'
           import json
@@ -71,6 +95,7 @@ jobs:
           PY
 
       - name: "Zjistit změny"
+        if: steps.gate.outputs.run == 'true'
         id: changes
         run: |
           if git diff --quiet -- data/; then
@@ -81,7 +106,7 @@ jobs:
           fi
 
       - name: "Uložit ověřená data"
-        if: steps.changes.outputs.changed == 'true'
+        if: steps.gate.outputs.run == 'true' && steps.changes.outputs.changed == 'true'
         run: |
           set -euo pipefail
           git config user.name "Praha 8 v přehledech – automat"
@@ -126,7 +151,10 @@ jobs:
       - name: "Souhrn"
         if: always()
         run: |
-          if [ "${{ job.status }}" != "success" ]; then
+          if [ "${{ steps.gate.outputs.run }}" = "false" ]; then
+            echo "## ⏭️ Dotace dnes záměrně přeskočeny" >> "$GITHUB_STEP_SUMMARY"
+            echo "Automatický běh 7. 9. 2026 je vypnutý; první další plánovaný sync je 14. 9. 2026." >> "$GITHUB_STEP_SUMMARY"
+          elif [ "${{ job.status }}" != "success" ]; then
             echo "## ❌ Aktualizace dotací selhala" >> "$GITHUB_STEP_SUMMARY"
             echo "Produkční dotace nebyly nahrazeny neověřenými daty. Ostatní denní a týdenní synchronizace jsou na tomto workflow nezávislé." >> "$GITHUB_STEP_SUMMARY"
           elif [ "${{ steps.changes.outputs.changed }}" = "true" ]; then
