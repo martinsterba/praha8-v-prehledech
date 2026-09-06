@@ -82,7 +82,7 @@ jobs:
           print('Starý sociální archiv:',p.get('meta',{}).get('legacySocialLoadedYears',[]))
           print('Archiv kultura:',p.get('meta',{}).get('archiveCultureLoadedKeys',[]))
           print('Z usnesení:',p.get('meta',{}).get('resolutionProgramLoadedKeys',[]))
-          print('Individuální:',p.get('meta',{}).get('individualRows',0),'bezpečně vytěžených')
+          print('Individuální:',p.get('meta',{}).get('individualRows',0),'bezpečně vytěžených;',p.get('meta',{}).get('individualUnmatched',0),'nevyřešených')
           PY
 
       - name: "Zjistit změny"
@@ -101,12 +101,40 @@ jobs:
           set -euo pipefail
           git config user.name "Praha 8 v přehledech – automat"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/dotace.json data/grants-ares-cache.json
-          git commit -m "Týdenní aktualizace dotací"
+
+          # Generovaný JSON nerebasujeme. Pokud během běhu někdo posunul main,
+          # vezmeme nový stav a celý deterministický grantový pipeline spustíme
+          # znovu nad ním. Tím se vyhneme konfliktům v data/dotace.json a nikdy
+          # nepřepíšeme novější data starším výstupem.
           for attempt in 1 2 3; do
-            git pull --rebase origin main
-            if git push origin HEAD:main; then exit 0; fi
-            if [ "$attempt" -lt 3 ]; then sleep 5; fi
+            git fetch origin main
+            local_sha="$(git rev-parse HEAD)"
+            remote_sha="$(git rev-parse origin/main)"
+            if [ "$local_sha" != "$remote_sha" ]; then
+              echo "Main se během běhu změnil; přepočítávám dotace nad nejnovějším stavem (pokus $attempt/3)."
+              git reset --hard origin/main
+              npm run sync:grants
+              python3 scripts/validate-grants.py
+            fi
+
+            git add data/dotace.json data/grants-ares-cache.json
+            if git diff --cached --quiet; then
+              echo "Po přepočtu není co ukládat."
+              exit 0
+            fi
+            git commit -m "Týdenní aktualizace dotací"
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+
+            if [ "$attempt" -lt 3 ]; then
+              echo "Main se změnil těsně před push; opakuji z nového základu."
+              git fetch origin main
+              git reset --hard origin/main
+              npm run sync:grants
+              python3 scripts/validate-grants.py
+              sleep 3
+            fi
           done
           exit 1
 
