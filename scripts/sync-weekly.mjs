@@ -7,6 +7,7 @@ const syncScript=resolve(root,'scripts','sync-praha8.mjs');
 const bodiesScript=resolve(root,'scripts','sync-bodies.mjs');
 const grantsScript=resolve(root,'scripts','sync-grants.py');
 const grantsHistoryScript=resolve(root,'scripts','sync-grants-history.py');
+const grantsArchiveScript=resolve(root,'scripts','sync-grants-archive.py');
 const grantsIndividualScript=resolve(root,'scripts','sync-grants-individual.py');
 const grantsValidateScript=resolve(root,'scripts','validate-grants.py');
 const peoplePath=resolve(root,'data','lide.json');
@@ -54,12 +55,13 @@ await run(['--people','--hmp-functions','--national-roles','--fast']);
 // atomicky přepíše organy.json. Neexistuje už druhý opravný průchod.
 await runNode(bodiesScript);
 
-// Dotace mají vlastní bezpečný importér. Nejprve se načte aktuální ročník,
-// potom ověřené historické dotační programy a nakonec samostatně individuální/mimořádné
-// dotace z usnesení Rady. Teprve poté proběhne tvrdá QA kontrola.
-// Pokud cokoli nesedí, workflow skončí před commitem a poslední produkční dotace zůstanou beze změny.
+// Dotace mají vlastní bezpečný pipeline. Aktuální a novější historické ročníky
+// doplní hlavní importéry. Archiv načte jen staré výsledkové DOCX/XLSX, které umíme
+// bezpečně přečíst; nečitelný starý formát nikdy nemaže již publikovaná data.
+// Nakonec přidáme jednoznačné individuální/mimořádné dotace z usnesení Rady a spustíme QA.
 await runPython(grantsScript);
 await runPython(grantsHistoryScript);
+await runPython(grantsArchiveScript);
 await runPython(grantsIndividualScript);
 await runPython(grantsValidateScript);
 
