@@ -1,4 +1,4 @@
-name: "🧪 Dotace – historie 2019–2025"
+name: "🧪 Dotace – historie a archiv"
 on:
   push:
     branches: [main]
@@ -18,19 +18,21 @@ jobs:
         run: python3 -m py_compile scripts/sync-grants.py scripts/sync-grants-history.py
       - name: Načíst historii
         run: python3 scripts/sync-grants-history.py
-      - name: Ověřit publikovatelné ročníky
+      - name: Ověřit publikovatelná data
         run: |
           python3 - <<'PY'
           import json
           d=json.load(open('data/dotace.json',encoding='utf-8'))
-          years=set(d['meta']['years'])
-          required={2019,2020,2021,2023,2024,2025,2026}
-          assert required <= years, (required-years,years)
-          for y in [2019,2020,2021,2023,2024,2025]:
-            rows=[g for g in d['grants'] if g['year']==y]
-            assert len(rows)>=10,(y,len(rows))
-          assert d['meta']['records']>=500,d['meta']['records']
+          rows=d['grants']; years={int(g['year']) for g in rows}
+          required={2019,2020,2021,2022,2023,2024,2025,2026}
+          assert required <= years,(required-years,years)
+          assert len([g for g in rows if int(g['year'])==2022])>=20
+          for y in [2016,2017,2018]:
+            adult=[g for g in rows if int(g['year'])==y and g.get('area')=='Sport dospělí a dorost']
+            assert len(adult)>=20,(y,len(adult))
+          assert d['meta']['records']>=900,d['meta']['records']
           print('years',sorted(years,reverse=True),'records',d['meta']['records'])
+          print('areas',d['meta'].get('areas'))
           print('historyCounts',d['meta'].get('historyCounts'))
           PY
       - name: Uložit data
