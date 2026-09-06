@@ -1,6 +1,6 @@
 {
   "schema": 4,
-  "updated": "2026-09-06T14:41:26.143613+00:00",
+  "updated": "2026-09-06T14:42:32.229095+00:00",
   "source": "https://www.praha8.cz/Granty-a-dotace.html",
   "meta": {
     "records": 930,
@@ -49,15 +49,22 @@
       "Volnočasové aktivity dětí a mládeže 2010: HTTP Error 404: Not Found",
       "Kultura 2009: HTTP Error 404: Not Found",
       "Volnočasové aktivity dětí a mládeže 2009: HTTP Error 404: Not Found",
-      "ARES 26651327: HTTP Error 404: "
+      "ARES 26651327: HTTP Error 404: ",
+      "Kultura 2019: nenalezen zdrojový soubor",
+      "Volnočasové aktivity dětí a mládeže 2019: nenalezen zdrojový soubor",
+      "Kultura 2021: flexibilní parser nenačetl žádné kladné částky",
+      "Volnočasové aktivity dětí a mládeže 2021: flexibilní parser nenačetl žádné kladné částky",
+      "Kultura 2022: nenalezen zdrojový soubor",
+      "Volnočasové aktivity dětí a mládeže 2022: nenalezen zdrojový soubor",
+      "Sportovní výchova mládeže 2022: nenalezen zdrojový soubor"
     ],
     "ares": {
-      "lookedUp": 50,
+      "lookedUp": 0,
       "renamed": 30,
       "cacheSize": 189
     },
     "individualUnmatched": 0,
-    "note": "Historické dotace se zveřejňují postupně po ověřených zdrojích. Výpadek nebo odlišný formát jednoho staršího zdroje již nezablokuje publikaci ostatních ověřených ročníků. Chybějící části zůstávají označené k doplnění. Archiv 2008–2018 se inventarizuje samostatně a do veřejných záznamů se přidá až po bezpečném parsování a QA.",
+    "note": "Historické dotace se zveřejňují postupně po ověřených zdrojích. Výpadek nebo odlišný formát jednoho staršího zdroje nezablokuje publikaci ostatních ověřených ročníků. Chybějící části zůstávají označené k doplnění; archiv 2008–2018 se načítá samostatně po bezpečném parsování a QA.",
     "historyCounts": {
       "2025": 223,
       "2024": 147,
@@ -885,7 +892,8 @@
       }
     ],
     "archiveInventoryPages": 18,
-    "archiveInventoryFiles": 129
+    "archiveInventoryFiles": 129,
+    "archiveStatus": "Archiv 2008–2018 se zpracovává samostatně mimo kritickou publikační cestu."
   },
   "sources": [
     {
