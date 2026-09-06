@@ -6,7 +6,8 @@
 
   const esc=s=>String(s??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
   const money=n=>Number(n||0).toLocaleString('cs-CZ',{maximumFractionDigits:0})+' Kč';
-  const normalize=s=>String(s||'').toLocaleLowerCase('cs-CZ').normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+  const normalize=s=>String(s||'').toLocaleLowerCase('cs-CZ').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/\s+/g,' ').trim();
+  const digits=s=>String(s||'').replace(/\D/g,'');
   const typeLabel=t=>String(t||'').toLowerCase()==='programová'?'dotační řízení':(t||'dotační řízení');
   const loadGrants=()=>grantsPromise||(grantsPromise=fetch(`data/dotace.json?v=${Date.now()}`,{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json()}));
 
@@ -39,6 +40,41 @@
     </article>`).join('');
   }
 
+  function topRecipients(grants){
+    const namesToIcos=new Map();
+    for(const g of grants){
+      const name=normalize(g.recipient);const ico=digits(g.ico);
+      if(!name||!ico)continue;
+      if(!namesToIcos.has(name))namesToIcos.set(name,new Set());
+      namesToIcos.get(name).add(ico);
+    }
+    const buckets=new Map();
+    for(const g of grants){
+      const name=normalize(g.recipient);const ico=digits(g.ico);
+      const mapped=!ico&&namesToIcos.get(name)?.size===1?[...namesToIcos.get(name)][0]:'';
+      const resolvedIco=ico||mapped;
+      const key=resolvedIco?`ico:${resolvedIco}`:`name:${name}`;
+      if(!buckets.has(key))buckets.set(key,{recipient:g.recipient,ico:resolvedIco,total:0,count:0,years:new Set()});
+      const row=buckets.get(key);
+      if(ico&&g.recipient)row.recipient=g.recipient;
+      row.total+=Number(g.approvedCzk||0);row.count+=1;
+      if(g.year)row.years.add(Number(g.year));
+    }
+    return [...buckets.values()].sort((a,b)=>b.total-a.total||b.count-a.count||a.recipient.localeCompare(b.recipient,'cs')).slice(0,10);
+  }
+
+  function buildTopRecipients(rows){
+    return rows.map((r,i)=>{
+      const ys=[...r.years].sort((a,b)=>a-b);
+      const period=ys.length?ys[0]===ys[ys.length-1]?String(ys[0]):`${ys[0]}–${ys[ys.length-1]}`:'—';
+      return `<article class="grant-top-row">
+        <div class="grant-top-rank">${i+1}.</div>
+        <div class="grant-top-name"><b>${esc(r.recipient)}</b><span>${r.ico?`IČ ${esc(r.ico)} · `:''}${r.count.toLocaleString('cs-CZ')} ${r.count===1?'dotace':'dotací'} · ${period}</span></div>
+        <strong>${money(r.total)}</strong>
+      </article>`;
+    }).join('');
+  }
+
   async function renderGrants(){
     if(location.hash!==ROUTE)return;
     const seq=++renderSeq;
@@ -51,10 +87,12 @@
       const grants=Array.isArray(payload.grants)?payload.grants:[];
       const areas=[...new Set(grants.map(g=>g.area).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'cs'));
       const years=[...new Set(grants.map(g=>Number(g.year)).filter(Boolean))].sort((a,b)=>b-a);
-      const recipients=new Set(grants.map(g=>g.ico?`ico:${g.ico}`:`name:${normalize(g.recipient)}`));
+      const recipients=new Set(grants.map(g=>g.ico?`ico:${digits(g.ico)}`:`name:${normalize(g.recipient)}`));
       const summaryYear=years[0]||null;
       const summaryRows=summaryYear?grants.filter(g=>Number(g.year)===summaryYear):grants;
       const summaryTotal=summaryRows.reduce((s,g)=>s+Number(g.approvedCzk||0),0);
+      const top10=topRecipients(grants);
+      const historyLabel=years.length?`${years[years.length-1]}–${years[0]}`:'dostupnou historii';
       let page=1;
 
       app.innerHTML=`<div class="wrap grants-preview">
@@ -64,7 +102,8 @@
           <div><small>Příjemců</small><strong>${recipients.size.toLocaleString('cs-CZ')}</strong><span>organizací a dalších příjemců</span></div>
           <div><small>Schválená částka${summaryYear?` · ${summaryYear}`:''}</small><strong>${money(summaryTotal)}</strong><span>${summaryYear?`celkem schváleno v roce ${summaryYear}`:'celkem schváleno'}</span></div>
         </section>
-        <div class="data-note grant-note"><b>Pracovní dataset.</b> Přehled obsahuje dotační řízení v oblasti kultury, volnočasových aktivit, sportovní výchovy mládeže, sociální oblasti, sportu dospělých a dorostu a zvelebování vzhledu MČ Praha 8. Individuální dotace z usnesení Rady zařazujeme jen tehdy, když lze bezpečně určit příjemce i částku. Nezahrnujeme dotace, kde je MČ Praha 8 příjemcem prostředků od hlavního města Prahy nebo jiného poskytovatele. Postupně doplňujeme další historické ročníky.</div>
+        <div class="data-note grant-note"><b>O datech.</b> Přehled spojuje zveřejněná dotační řízení MČ Praha 8 a jejich historické výsledky. Starší ročníky zachovávají tehdejší názvy a členění dotačních oblastí. Do databáze zařazujeme jen záznamy, u nichž lze z oficiálního zdroje bezpečně určit příjemce a schválenou částku; nezahrnujeme případy, kdy je MČ Praha 8 sama příjemcem prostředků od jiného poskytovatele.</div>
+        ${top10.length?`<section class="section grant-top-section"><div class="kicker">Statistika</div><h2>TOP 10 příjemců dotací</h2><p class="grant-top-intro">Organizace s nejvyšším součtem schválených dotací za dostupnou historii ${historyLabel}. Záznamy spojujeme primárně podle IČ.</p><div class="grant-top-list">${buildTopRecipients(top10)}</div></section>`:''}
         <section class="section grant-list-section">
           <div class="grant-toolbar"><div><div class="kicker">Přehled</div><h2>Poskytnuté dotace</h2></div><div class="grant-filters"><input id="grantSearch" type="search" placeholder="Hledat příjemce nebo IČ…"><select id="grantArea"><option value="">Všechny oblasti</option>${areas.map(a=>`<option value="${esc(a)}">${esc(a)}</option>`).join('')}</select><select id="grantYear"><option value="">Všechny roky</option>${years.map(y=>`<option value="${y}">${y}</option>`).join('')}</select></div></div>
           <div id="grantResultCount" class="updated"></div><div class="grant-list-head"><span>Příjemce</span><span>Oblast</span><span>Rok</span><span>Částka</span><span>Zdroj</span></div><div id="grantList" class="grant-list"></div><div id="grantPager" class="pagination"></div>
@@ -139,7 +178,7 @@
     const sourceGrid=mcSource?.querySelector('.source-grid');
     if(sourceGrid&&!sourceGrid.querySelector('[data-grants-source-box]')){
       const box=document.createElement('div');box.className='sourcebox';box.dataset.grantsSourceBox='true';
-      box.innerHTML='<h3>Dotace a granty</h3><p>Poskytnuté dotace a granty městské části Praha 8. Čerpáme z oficiálního rozcestníku Granty a dotace a z výsledkových souborů zveřejněných u jednotlivých dotačních řízení.</p><code>https://www.praha8.cz/Granty-a-dotace.html</code>';
+      box.innerHTML='<h3>Dotace a granty</h3><p>Poskytnuté dotace a granty městské části Praha 8. Čerpáme z oficiálního rozcestníku Granty a dotace, historických výsledkových souborů a příloh usnesení.</p><code>https://www.praha8.cz/Granty-a-dotace.html</code>';
       const next=[...sourceGrid.children].find(x=>(x.querySelector('h3')?.textContent||'').localeCompare('Dotace a granty','cs')>0);
       if(next)sourceGrid.insertBefore(box,next);else sourceGrid.append(box);
     }
