@@ -96,11 +96,17 @@ def _text_rows(text):
     line=raw.strip()
     if not line:continue
     # antiword/catdoc u některých historických tabulek převádí svislé hrany
-    # buněk na znak |. Ten je oddělovač tabulky, ne hodnota příjemce. Pokud ho
-    # ponecháme jako samostatnou buňku, posunou se sloupce a vznikají falešní
-    # příjemci pojmenovaní jen „|“.
-    cells=[base.norm_text(x) for x in re.split(r'\t+|\s{2,}|\s*\|\s*',line) if base.norm_text(x)]
-    if cells:rows.append(cells)
+    # buněk na znak |. Je to oddělovač tabulky, nikoli hodnota příjemce.
+    # Důležité je ale zachovat PRÁZDNÉ vnitřní buňky, jinak se sloupce posunou
+    # a např. název organizace skončí pod projektem nebo se ztratí úplně.
+    if '|' in line:
+      parts=re.split(r'\s*\|\s*',line)
+      if parts and not base.norm_text(parts[0]):parts=parts[1:]
+      if parts and not base.norm_text(parts[-1]):parts=parts[:-1]
+      cells=[base.norm_text(x) for x in parts]
+    else:
+      cells=[base.norm_text(x) for x in re.split(r'\t+|\s{2,}',line)]
+    if any(cells):rows.append(cells)
   return rows
 
 def doc_rows(blob):
