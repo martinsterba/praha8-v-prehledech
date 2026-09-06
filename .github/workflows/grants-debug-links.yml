@@ -14,7 +14,7 @@ jobs:
       - name: Vypsat odkazy 2022 a starší
         run: |
           python3 - <<'PY'
-          import re,urllib.request
+          import json,re,urllib.request
           from html.parser import HTMLParser
           from urllib.parse import urljoin
           class P(HTMLParser):
@@ -50,4 +50,13 @@ jobs:
                   a=max(0,m.start()-500); b=min(len(html),m.end()+500)
                   print('RAW-XLSX:',re.sub(r'\s+',' ',html[a:b]))
             except Exception as e: print('ERROR',repr(e))
+
+          print('\n### DATASET RECORDS')
+          try:
+            rows=json.load(open('data/usneseni.json',encoding='utf-8'))
+            for target in ['0192/2022','0193/2022','0203/2022','0244/2022']:
+              found=[r for r in rows if target in str(r.get('id','')) or target in str(r.get('title','')) or target in str(r.get('url',''))]
+              print('\n',target,'count',len(found))
+              for r in found[:3]: print(json.dumps(r,ensure_ascii=False)[:4000])
+          except Exception as e: print('DATASET ERROR',repr(e))
           PY
