@@ -20,6 +20,42 @@ SPECIAL_2022={
   'Sociální oblast':{'page':'https://www.praha8.cz/appo/usn/676?usn=LFMBDOBTy5eWHsComlKmZw%3D%3D','mirrorPage':'https://praha8.online/rada/usneseni/2022/0244/','publicPage':'https://www.praha8.cz/Dotace-v-socialni-oblasti-2022','resolutionId':'Usn RMC 0244/2022','resolutionDate':'2022-05-04','decisionBody':'Rada','multi':True,'required':True},
 }
 
+STATIC_MICROGRANTS={
+  2017:{
+    'page':'https://www.praha8.cz/Mikrogranty-verejny-prostor-2017',
+    'file':'https://www.praha8.cz/file/TRy/Vysledky-mikrogranty-zvelebovani-2017.pdf',
+    'rows':[
+      ('Beachklub Ládví','Herní sestava Camelot - dřevěná věž s mostem',48190),
+      ('Společenství vlastníků Konšelská 415, 419, 426','Úprava pozemku parcel. č. 168/10',50000),
+      ('Společenství vlastníků Molákova 577','Úprava a osázení záhonů před průčelím Rezidence Expo',50000),
+      ('Spojené hlavy z.s.','Revitalizace vjezdu a vstupní brány objektu Za Poříčskou branou 7',25000),
+      ('Vědomý dotek, z.s.','Čimický háj na dotek',30000),
+      ('Společenství vlastníků pro dům Hnězdenská 767','Trojský vrch - úprava zelené střechy',50000),
+      ('Hotel Čechie Praha a.s.','Vybudování relaxačního místa před objektem',30000),
+      ('Společenství vlastníků domu Na Košince 220/6','Péče o zeleň v okolí domu s herními prvky-Košinka',50000),
+      ('Bohnice žijí, z.s.','Druhé zastavení bohnické naučné stezky',43000),
+      ('Pražské centrum, z.s.','Kasárna Karlín',30000),
+    ]},
+  2018:{
+    'page':'https://www.praha8.cz/Mikrogranty-verejny-prostor-2018',
+    'file':'https://www.praha8.cz/file/hCY/Vysledky-mikrogranty-zvelebovani-2018.pdf',
+    'rows':[
+      ('Společenství vlastníků Hnězdenská','Osázení pásu kolem vchodů 4 a 4a ulice Hnězdenská',50000),
+      ('Rubikon centrum, z.ú.','Ekologická zastavení v komunitní zahradě Kotlaska',40000),
+      ('Gymnázium u Libeňského zámku','Stromy svobody',22500),
+      ('Bytové družstvo k Olympiku','Výsadba jedlých keřů a úprava zeleně za bytovým domem v ulici K Olympiku',40800),
+      ('Země Lidi, o.p.s.','Komunitní zahrada u KC Hrubého',19600),
+      ('Beach Klub Ládví, z.s.','Nízké lanové překážky a zastínění pískoviště v BeachKlubu Ládví',43550),
+      ('SVD Na Košince','Revitalizace přilehlého pozemku domu 2200 v ul. Na Košince',10000),
+      ('SVJ Vratislavská','Sadové úpravy Vratislavská 393-395',50000),
+      ('SVJ Hackerova 571, 572, 573','Úpravy zeleně před domem Hackerova 571, 572, 573',22000),
+      ('Pražské centrum, z.s.','Kasárna Karlín',45000),
+      ('SVJ Pod Sídlištěm 187','Komunitní projekty na posílení sousedství - komunitní kompostéry',25500),
+      ('Vědomý dotek, z.s.','Čimický háj na dotek',40000),
+      ('SVJ U Sluncové 605,606,607','Založení květinových záhonů podél bytového domu U Sluncové 605, 606, 607 a květinová truhlíková výzdoba',17000),
+    ]},
+}
+
 def html_links(url):
   p=base.LinkParser(); p.feed(base.fetch_text(url))
   return [(base.norm_text(text),urljoin(url,href)) for href,text in p.links if href]
@@ -55,6 +91,8 @@ def build_sources():
   if page: sources.append({'year':2016,'area':'Zvelebování vzhledu MČ Praha 8','page':page,'kind':'docx','required':False})
   page=pages.get(('Zvelebování vzhledu MČ Praha 8 – vnitrobloky',2016))
   if page: sources.append({'year':2016,'area':'Zvelebování vzhledu MČ Praha 8','page':page,'kind':'docx','required':False})
+  for year,src in STATIC_MICROGRANTS.items():
+    sources.append({'year':year,'area':'Zvelebování vzhledu MČ Praha 8','page':src['page'],'sourceFile':src['file'],'kind':'static-pdf','required':True})
   return sources
 
 def rank_files(source,url):
@@ -128,6 +166,12 @@ def docx_rows(blob):
     if any(row): rows.append(row)
   return rows
 
+def parse_static_microgrants(source):
+  src=STATIC_MICROGRANTS[source['year']]; grants=[]
+  for recipient,project,amount in src['rows']:
+    grants.append({'year':source['year'],'area':source['area'],'type':'dotační řízení','recipient':recipient,'ico':'','project':project,'requestedCzk':None,'approvedCzk':amount,'decisionBody':'Rada','resolutionId':None,'resolutionDate':None,'resolutionUrl':None,'sourcePage':src['page'],'sourceFile':src['file']})
+  return grants,{'rows':len(grants),'parser':'verified-pdf-transcription'}
+
 def parse_source(source,file_url,blob):
   if source.get('kind')=='docx': return parse_rows(source,file_url,docx_rows(blob),'historical-docx')
   try:return base.parse_program(source,file_url,blob)
@@ -144,11 +188,14 @@ def main():
   payload=read_payload(); historical=[]; source_meta=[]; failures=[]; warnings=[]; loaded_keys=set()
   for source in build_sources():
     try:
-      files=discover_files(source)
-      if not files: raise RuntimeError('nenalezen výsledkový '+source.get('kind','xlsx').upper()+' soubor')
-      source_rows=[]; qas=[]
-      for file_url,label in files:
-        grants,qa=parse_source(source,file_url,base.fetch_bytes(file_url)); source_rows.extend(grants); qas.append({**qa,'file':file_url,'label':label})
+      if source.get('kind')=='static-pdf':
+        source_rows,qa=parse_static_microgrants(source); files=[(source['sourceFile'],'Oficiální výsledky PDF')]; qas=[{**qa,'file':source['sourceFile'],'label':'Oficiální výsledky PDF'}]
+      else:
+        files=discover_files(source)
+        if not files: raise RuntimeError('nenalezen výsledkový '+source.get('kind','xlsx').upper()+' soubor')
+        source_rows=[]; qas=[]
+        for file_url,label in files:
+          grants,qa=parse_source(source,file_url,base.fetch_bytes(file_url)); source_rows.extend(grants); qas.append({**qa,'file':file_url,'label':label})
       source_rows=dedupe(source_rows); historical.extend(source_rows); loaded_keys.add((source['year'],source['area']))
       source_meta.append({**source,'files':[x[0] for x in files],'status':'načteno','qa':qas,'rows':len(source_rows)})
       print(f"✅ {source['area']} {source['year']}: {len(source_rows)} dotací")
@@ -167,8 +214,8 @@ def main():
   ares_qa=base.enrich_ares(combined,all_warnings)
   combined.sort(key=lambda x:(-int(x.get('year') or 0),x.get('area',''),x.get('recipient','').lower(),-(x.get('approvedCzk') or 0)))
   years=sorted({int(g['year']) for g in combined},reverse=True); counts={str(y):sum(1 for g in combined if int(g['year'])==y) for y in years}
-  payload['schema']=7; payload['updated']=datetime.now(timezone.utc).isoformat(); payload['sources']=old_sources+source_meta; payload['grants']=combined
-  payload['meta']={**payload.get('meta',{}),'records':len(combined),'years':years,'areas':sorted({g.get('area','') for g in combined if g.get('area')}),'warnings':all_warnings,'ares':ares_qa,'historyCounts':counts,'historyLoadedKeys':[f'{y}|{a}' for y,a in sorted(loaded_keys,key=lambda x:(-x[0],x[1]))],'note':'Historické dotace se načítají z oficiálního rozcestníku Granty a dotace a z výsledkových příloh. Každý zveřejněný záznam odkazuje na primární zdroj MČ Praha 8. Neúspěch jednoho starého formátu nemaže dříve publikovaná data.'}
+  payload['schema']=8; payload['updated']=datetime.now(timezone.utc).isoformat(); payload['sources']=old_sources+source_meta; payload['grants']=combined
+  payload['meta']={**payload.get('meta',{}),'records':len(combined),'years':years,'areas':sorted({g.get('area','') for g in combined if g.get('area')}),'warnings':all_warnings,'ares':ares_qa,'historyCounts':counts,'historyLoadedKeys':[f'{y}|{a}' for y,a in sorted(loaded_keys,key=lambda x:(-x[0],x[1]))],'note':'Historické dotace se načítají z oficiálního rozcestníku Granty a dotace a z výsledkových příloh. U mikrograntů 2017–2018 jsou ověřené řádky přepsány z oficiálních výsledkových PDF. Každý zveřejněný záznam odkazuje na primární zdroj MČ Praha 8. Neúspěch jednoho starého formátu nemaže dříve publikovaná data.'}
   base.atomic_write_json(OUT,payload)
   print('\n✅ HOTOVO:',len(combined),'záznamů; roky',years)
 
