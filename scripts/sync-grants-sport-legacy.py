@@ -4,7 +4,8 @@
 Starší stránky Prahy 8 používají pro výsledky mimo jiné označení „Přehled
 podpořených žádostí“. Obecný archivní filtr slovo „žádost“ z bezpečnostních
 důvodů odmítá, proto jsou tyto dvě jasně vymezené výsledkové stránky načítány
-samostatným úzkým importerem. Při chybě se existující data nemažou.
+samostatným úzkým importerem. Pro rok 2015 zkoušíme také přílohy oficiálního
+Usn RMC 0298/2015. Při chybě se existující data nemažou.
 """
 import importlib.util
 from datetime import datetime, timezone
@@ -13,6 +14,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parent.parent
 ARCHIVE_SCRIPT=ROOT/'scripts'/'sync-grants-archive.py'
 OUT=ROOT/'data'/'dotace.json'
+USNESENI=ROOT/'data'/'usneseni.json'
 AREA='Sport dospělí a dorost'
 
 spec=importlib.util.spec_from_file_location('grants_sport_legacy_archive',ARCHIVE_SCRIPT)
@@ -24,13 +26,20 @@ SOURCES=[
   {'year':2015,'pages':['https://www.praha8.cz/Granty-Sport-pro-dospele-a-dorost-2015','https://m.praha8.cz/Granty-Sport-pro-dospele-a-dorost-2015']},
 ]
 
+def ext_of(text):
+  low=text.lower()
+  if '.docx' in low:return 'docx'
+  if '.doc' in low:return 'doc'
+  if '.xlsx' in low:return 'xlsx'
+  if '.xls' in low:return 'xls'
+  return None
+
 def result_files(source):
   out=[]
   for page in source['pages']:
     try:
       for label,href in arc.html_links(page):
-        low=(label+' '+href).lower()
-        ext='docx' if '.docx' in low else ('doc' if '.doc' in low else ('xlsx' if '.xlsx' in low else ('xls' if '.xls' in low else None)))
+        low=(label+' '+href).lower(); ext=ext_of(low)
         if not ext:continue
         result=(
           'přehled podpořen' in low or 'prehled podporen' in low or
@@ -48,6 +57,38 @@ def result_files(source):
     seen.add(item[0]);unique.append(item)
   return unique
 
+def resolution_2015_files():
+  data=arc.read_json(USNESENI,[])
+  target=None
+  for r in data if isinstance(data,list) else []:
+    rid=str(r.get('id') or '')
+    title=base.norm_text(r.get('title')).lower()
+    if rid=='Usn RMC 0298/2015' or ('sportu pro dospělé a dorost' in title and '2015' in title and 'poskytnut' in title):
+      target=r;break
+  if not target or not target.get('url'):
+    print('🔎 Sport 2015: Usn RMC 0298/2015 není v lokálním datasetu usnesení s URL.')
+    return []
+  out=[]; all_files=[]
+  try:
+    links=arc.html_links(target['url'])
+  except Exception as exc:
+    print(f"🔎 Sport 2015: stránku {target.get('url')} nelze projít: {exc}")
+    return []
+  for label,href in links:
+    low=(label+' '+href).lower();ext=ext_of(low)
+    if any(s in low for s in ['.pdf','.doc','.docx','.xls','.xlsx']):
+      all_files.append((label,href))
+    if not ext:continue
+    # U tohoto konkrétního usnesení je příloha č. 1 výsledkový seznam. Odmítáme
+    # důvodovou zprávu, vzor smlouvy a formuláře.
+    if any(x in low for x in ['důvodov','duvodov','smlouv','formul','žádost','zadost','podmín','podmin']):continue
+    if 'příloh' in low or 'priloh' in low or 'seznam' in low or 'sport' in low or 'grant' in low or 'dotac' in low:
+      out.append((href,label,ext,target['url']))
+  if not out:
+    print('🔎 Sport 2015: podporované přílohy RMC 0298 nenalezeny. Odkazy na soubory:')
+    for label,href in all_files[:20]:print(f'  - {label} | {href}')
+  return out
+
 def main():
   payload=arc.read_json(OUT,{})
   existing=payload.get('grants') or []
@@ -55,6 +96,8 @@ def main():
   for source in SOURCES:
     rows=[];qas=[]
     files=result_files(source)
+    if source['year']==2015 and not files:
+      files=resolution_2015_files()
     if not files:
       warnings.append(f"Starý sport {source['year']}: nenalezen oficiální výsledkový soubor; existující data zachována.")
       print(f"⚠️ Starý sport {source['year']}: nenalezen výsledkový soubor")
