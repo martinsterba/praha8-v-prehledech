@@ -11,6 +11,7 @@ on:
     paths:
       - ".github/workflows/grants-sync.yml"
       - "scripts/sync-grants.py"
+      - "scripts/sync-grants-current-safe.py"
       - "scripts/sync-grants-history.py"
       - "scripts/sync-grants-archive.py"
       - "scripts/sync-grants-archive-culture.py"
@@ -48,6 +49,7 @@ jobs:
         run: |
           python3 -m py_compile \
             scripts/sync-grants.py \
+            scripts/sync-grants-current-safe.py \
             scripts/sync-grants-history.py \
             scripts/sync-grants-archive.py \
             scripts/sync-grants-archive-culture.py \
