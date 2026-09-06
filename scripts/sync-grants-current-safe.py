@@ -9,15 +9,17 @@ staré oblasti, které už na hlavním rozcestníku nejsou snadno znovu objevite
 Tento wrapper proto před spuštěním uchová poslední validní historii a po
 úspěšném sestavení aktuálního roku ji atomicky připojí zpět. Historické
 importéry pak jednotlivé roky/oblasti bezpečně obnoví, pokud mají novější
-ověřený zdroj.
+ověřený zdroj. Krátkodobé chyby webu Prahy 8 (typicky HTTP 500) zkoušíme
+několikrát, aby jednorázový výpadek zbytečně neshodil celý týdenní běh.
 """
-import importlib.util,json
+import importlib.util,json,time
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parent.parent
 BASE_SCRIPT=ROOT/'scripts'/'sync-grants.py'
 OUT=ROOT/'data'/'dotace.json'
 CURRENT_YEAR=2026
+MAX_ATTEMPTS=3
 
 spec=importlib.util.spec_from_file_location('grants_current_base',BASE_SCRIPT)
 base=importlib.util.module_from_spec(spec);spec.loader.exec_module(base)
@@ -37,6 +39,22 @@ def dedupe(rows):
   return out
 
 
+def run_current_with_retry():
+  last=None
+  for attempt in range(1,MAX_ATTEMPTS+1):
+    try:
+      base.main()
+      if attempt>1:print(f'✅ Aktuální grantové zdroje uspěly na pokus {attempt}/{MAX_ATTEMPTS}.')
+      return
+    except Exception as exc:
+      last=exc
+      if attempt>=MAX_ATTEMPTS:break
+      wait=5*attempt
+      print(f'⚠️ Aktuální grantové zdroje: pokus {attempt}/{MAX_ATTEMPTS} selhal ({exc}). Opakuji za {wait} s.')
+      time.sleep(wait)
+  raise last
+
+
 def main():
   before=read_payload()
   preserved=[g for g in (before.get('grants') or []) if int(g.get('year') or 0)!=CURRENT_YEAR]
@@ -44,7 +62,7 @@ def main():
 
   # Zapíše pouze nový aktuální ročník. Při chybě base.main() používá atomický zápis
   # a wrapper skončí dřív, takže poslední produkční soubor zůstane beze změny.
-  base.main()
+  run_current_with_retry()
   fresh=read_payload()
   current=[g for g in (fresh.get('grants') or []) if int(g.get('year') or 0)==CURRENT_YEAR]
   combined=dedupe(current+preserved)
