@@ -2,7 +2,7 @@ name: "💶 Dotace – týdenní aktualizace"
 
 on:
   workflow_dispatch:
-  # Dočasný jednorázový test mimořádných dotací z darovacích smluv.
+  # Dočasný jednorázový retest mimořádných dotací z darovacích smluv po opravě parseru.
   # Po zeleném průchodu se tento push trigger odstraní.
   push:
     branches: [main]
