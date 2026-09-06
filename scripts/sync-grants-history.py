@@ -28,6 +28,42 @@ def read_payload():
   if not OUT.exists(): raise RuntimeError('Chybí data/dotace.json; nejprve spusťte základní import dotací.')
   return json.loads(OUT.read_text(encoding='utf-8'))
 
+def parse_older_sports(source,file_url,blob):
+  rows=base.xlsx_rows(blob)
+  hi=base.find_header(rows)
+  if hi is None: raise RuntimeError('nenalezeno záhlaví starší sportovní tabulky')
+  header=[base.norm_text(x).lower() for x in rows[hi]]
+  recipient=None; approved=None; ico=None; project=None
+  for i,x in enumerate(header):
+    if recipient is None and any(k in x for k in ['žadatel','zadatel','název klubu','nazev klubu','organizace','příjemce','prijemce']): recipient=i
+    if ico is None and ('ič' in x or 'ico' in x): ico=i
+    if project is None and any(k in x for k in ['projekt','účel','ucel']): project=i
+    if approved is None and any(k in x for k in ['schválen','schvalen','poskytnut','přidělen','pridelen','částka','castka','dotace v kč','dotace kc']): approved=i
+  if recipient is None or approved is None:
+    raise RuntimeError('ani flexibilní parser nenašel příjemce/částku; záhlaví: '+repr(header))
+  grants=[]
+  for row in rows[hi+1:]:
+    get=lambda idx: row[idx] if idx is not None and idx<len(row) else ''
+    name,ico_value=base.split_recipient_ico(get(recipient),get(ico))
+    amount=base.money(get(approved))
+    if not name or amount is None or amount<=0: continue
+    grants.append({
+      'year':source['year'],'area':source['area'],'type':'programová','recipient':name,'ico':ico_value,
+      'project':base.norm_text(get(project)),'requestedCzk':None,'approvedCzk':amount,
+      'decisionBody':None,'resolutionId':None,'resolutionDate':None,'resolutionUrl':None,
+      'sourcePage':source['page'],'sourceFile':file_url
+    })
+  if not grants: raise RuntimeError('flexibilní parser nenačetl žádné kladné částky')
+  return grants,{'headerRow':hi+1,'columns':{'recipient':recipient,'ico':ico,'project':project,'approved':approved},'rows':len(grants),'parser':'older-sports-flex'}
+
+def parse_source(source,file_url,blob):
+  try:
+    return base.parse_program(source,file_url,blob)
+  except Exception:
+    if source['area']=='Sportovní výchova mládeže' and source['year']==2025:
+      return parse_older_sports(source,file_url,blob)
+    raise
+
 def main():
   payload=read_payload()
   historical=[]; source_meta=[]; failures=[]
@@ -35,7 +71,7 @@ def main():
     try:
       file_url,label=base.discover_file(source['page'],source['kind'])
       if not file_url: raise RuntimeError('nenalezen zdrojový soubor')
-      grants,qa=base.parse_program(source,file_url,base.fetch_bytes(file_url))
+      grants,qa=parse_source(source,file_url,base.fetch_bytes(file_url))
       historical.extend(grants)
       source_meta.append({**source,'file':file_url,'label':label,'status':'načteno','qa':qa})
       print(f"✅ {source['area']} {source['year']}: {len(grants)} dotací")
