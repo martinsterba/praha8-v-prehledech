@@ -2,7 +2,7 @@ name: "💶 Dotace – týdenní aktualizace"
 
 on:
   workflow_dispatch:
-  # Dočasný jednorázový retest po odstranění souhrnných řádků a normalizaci IČ.
+  # Dočasný jednorázový retest po přesunu normalizace příjemců až za mimořádné dotace.
   # Po zeleném průchodu se tento push trigger odstraní.
   push:
     branches: [main]
