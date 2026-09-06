@@ -1,5 +1,9 @@
 (()=>{
   let grantsPromise=null;
+  let sourcesRunning=false;
+  let sourcesRerun=false;
+  let scheduled=0;
+
   const loadGrants=()=>grantsPromise||(grantsPromise=fetch(`data/dotace.json?v=${Date.now()}`,{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null));
   const fmtDateTime=value=>{
     if(!value)return '—';
@@ -40,54 +44,66 @@
   }
 
   function sortStatusCards(list){
-    const cards=[...list.children];
-    cards.sort((a,b)=>{
+    const current=[...list.children];
+    const sorted=[...current].sort((a,b)=>{
       const at=Number(a.dataset.sourceUpdated||0)||parseStatusDate(a.querySelector('.status-card-meta')?.textContent);
       const bt=Number(b.dataset.sourceUpdated||0)||parseStatusDate(b.querySelector('.status-card-meta')?.textContent);
       if(bt!==at)return bt-at;
       return (a.querySelector('.status-card-title')?.textContent||'').localeCompare(b.querySelector('.status-card-title')?.textContent||'','cs');
     });
-    for(const card of cards)list.append(card);
+    const changed=sorted.some((node,i)=>node!==current[i]);
+    if(changed)for(const card of sorted)list.append(card);
   }
 
   async function ensureSources(){
     if(location.hash!=='#/zdroje')return;
-    const payload=await loadGrants();
-    if(location.hash!=='#/zdroje')return;
-    const app=document.querySelector('#app');
-    if(!app)return;
-    const count=Number(payload?.meta?.records||payload?.grants?.length||0);
-    const updatedValue=payload?.updated||'';
-    const updated=fmtDateTime(updatedValue);
-    const updatedEpoch=updatedValue?new Date(updatedValue).valueOf():0;
+    if(sourcesRunning){sourcesRerun=true;return;}
+    sourcesRunning=true;
+    try{
+      const payload=await loadGrants();
+      if(location.hash!=='#/zdroje')return;
+      const app=document.querySelector('#app');
+      if(!app)return;
+      const count=Number(payload?.meta?.records||payload?.grants?.length||0);
+      const updatedValue=payload?.updated||'';
+      const updated=fmtDateTime(updatedValue);
+      const updatedEpoch=updatedValue?new Date(updatedValue).valueOf():0;
 
-    const statusGroups=[...app.querySelectorAll('.status-group')];
-    const mcStatus=statusGroups.find(x=>x.querySelector('.status-group-head h3')?.textContent?.trim()==='MČ Praha 8');
-    const list=mcStatus?.querySelector('.status-card-list');
-    if(list){
-      let card=[...list.children].find(x=>x.dataset.grantsSourceStatus==='true'||x.querySelector('.status-card-title')?.textContent?.trim()==='Dotace a granty');
-      if(!card){
-        card=document.createElement('div');
-        card.className='status-card';
-        card.dataset.grantsSourceStatus='true';
-        list.append(card);
+      const statusGroups=[...app.querySelectorAll('.status-group')];
+      const mcStatus=statusGroups.find(x=>x.querySelector('.status-group-head h3')?.textContent?.trim()==='MČ Praha 8');
+      const list=mcStatus?.querySelector('.status-card-list');
+      if(list){
+        let card=[...list.children].find(x=>x.dataset.grantsSourceStatus==='true'||x.querySelector('.status-card-title')?.textContent?.trim()==='Dotace a granty');
+        let created=false;
+        if(!card){
+          card=document.createElement('div');
+          card.className='status-card';
+          card.dataset.grantsSourceStatus='true';
+          list.append(card);
+          created=true;
+        }
+        const epoch=String(Number.isFinite(updatedEpoch)?updatedEpoch:0);
+        if(card.dataset.sourceUpdated!==epoch)card.dataset.sourceUpdated=epoch;
+        const html=`<div class="status-card-main"><div class="status-card-title">Dotace a granty</div><div class="status-card-meta">Aktualizace 1× týdně (vždy v pondělí) | poslední proběhla ${updated}</div></div><div class="status-card-number">${count?count.toLocaleString('cs-CZ'):'—'}</div><div class="status-card-state"><span class="data-status good">data načtena</span></div>`;
+        if(created||card.innerHTML!==html)card.innerHTML=html;
+        sortStatusCards(list);
       }
-      card.dataset.sourceUpdated=String(Number.isFinite(updatedEpoch)?updatedEpoch:0);
-      card.innerHTML=`<div class="status-card-main"><div class="status-card-title">Dotace a granty</div><div class="status-card-meta">Aktualizace 1× týdně (vždy v pondělí) | poslední proběhla ${updated}</div></div><div class="status-card-number">${count?count.toLocaleString('cs-CZ'):'—'}</div><div class="status-card-state"><span class="data-status good">data načtena</span></div>`;
-      sortStatusCards(list);
-    }
 
-    const sourceGroups=[...app.querySelectorAll('.source-group')];
-    const mcSource=sourceGroups.find(x=>x.querySelector('.source-group-head h2')?.textContent?.trim()==='MČ Praha 8');
-    const sourceGrid=mcSource?.querySelector('.source-grid');
-    if(sourceGrid&&!sourceGrid.querySelector('[data-grants-source-box]')){
-      const box=document.createElement('div');
-      box.className='sourcebox';
-      box.dataset.grantsSourceBox='true';
-      box.innerHTML='<h3>Dotace a granty</h3><p>Poskytnuté dotace a granty městské části Praha 8. Čerpáme z oficiálního rozcestníku Granty a dotace a z výsledkových souborů zveřejněných u jednotlivých dotačních řízení.</p><code>https://www.praha8.cz/Granty-a-dotace.html</code>';
-      const boxes=[...sourceGrid.children];
-      const next=boxes.find(x=>(x.querySelector('h3')?.textContent||'').localeCompare('Dotace a granty','cs')>0);
-      if(next)sourceGrid.insertBefore(box,next);else sourceGrid.append(box);
+      const sourceGroups=[...app.querySelectorAll('.source-group')];
+      const mcSource=sourceGroups.find(x=>x.querySelector('.source-group-head h2')?.textContent?.trim()==='MČ Praha 8');
+      const sourceGrid=mcSource?.querySelector('.source-grid');
+      if(sourceGrid&&!sourceGrid.querySelector('[data-grants-source-box]')){
+        const box=document.createElement('div');
+        box.className='sourcebox';
+        box.dataset.grantsSourceBox='true';
+        box.innerHTML='<h3>Dotace a granty</h3><p>Poskytnuté dotace a granty městské části Praha 8. Čerpáme z oficiálního rozcestníku Granty a dotace a z výsledkových souborů zveřejněných u jednotlivých dotačních řízení.</p><code>https://www.praha8.cz/Granty-a-dotace.html</code>';
+        const boxes=[...sourceGrid.children];
+        const next=boxes.find(x=>(x.querySelector('h3')?.textContent||'').localeCompare('Dotace a granty','cs')>0);
+        if(next)sourceGrid.insertBefore(box,next);else sourceGrid.append(box);
+      }
+    }finally{
+      sourcesRunning=false;
+      if(sourcesRerun){sourcesRerun=false;schedule();}
     }
   }
 
@@ -97,8 +113,13 @@
     void ensureSources();
   }
 
+  function schedule(){
+    clearTimeout(scheduled);
+    scheduled=setTimeout(apply,40);
+  }
+
   const app=document.querySelector('#app');
-  if(app){let queued=false;new MutationObserver(()=>{if(queued)return;queued=true;queueMicrotask(()=>{queued=false;apply()})}).observe(app,{childList:true,subtree:true});}
-  addEventListener('hashchange',()=>setTimeout(apply,0));
-  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',apply);else apply();
+  if(app)new MutationObserver(schedule).observe(app,{childList:true,subtree:true});
+  addEventListener('hashchange',()=>{grantsPromise=null;schedule();});
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',schedule,{once:true});else schedule();
 })();
