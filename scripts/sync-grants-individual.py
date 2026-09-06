@@ -29,6 +29,19 @@ INDIVIDUAL_MARKERS=(
   'individuální dotac','individualni dotac',
   'mimořádn','mimoradn'
 )
+# Ruční audit všech 34 dřívějších kandidátů ukázal, že šlo o falešné zásahy:
+# vzory smluv, dodatky a smlouvy pro vlastní příspěvkové organizace, nikoli
+# identifikovatelné individuální dotace externím příjemcům.
+FALSE_POSITIVE_MARKERS=(
+  'příspěvkovými organizacemi městské části praha 8',
+  'prispevkovymi organizacemi mestske casti praha 8',
+  'příspěvkovou organizací městské části praha 8',
+  'prispevkovou organizaci mestske casti praha 8',
+  'vzorového textu','vzoroveho textu',
+  'vzorového textu veřejnoprávní smlouvy','vzoroveho textu verejnopravni smlouvy',
+  'znění veřejnoprávní smlouvy','zneni verejnopravni smlouvy',
+  'změna návrhu vzorového textu','zmena navrhu vzoroveho textu'
+)
 
 def read_json(path,fallback):
   try:return json.loads(path.read_text(encoding='utf-8'))
@@ -69,14 +82,15 @@ def candidate(r):
   if 'dotac' not in text:return False
   if any(x in text for x in PROGRAM_WORDS):return False
   if any(x in title.lower() for x in PROGRAM_AREAS):return False
+  if any(x in text for x in FALSE_POSITIVE_MARKERS):return False
   if re.search(r'městsk(?:á|ou) část(?:í)? Praha\s*8.{0,100}jako\s+["“”]?příjemcem',text,re.I):return False
   if ('hlavním městem prahou' in text or 'hl. m. prah' in text) and 'poskytovatelem' in text:return False
   if 'z rozpočtu hl. m. prahy' in text or 'z rozpočtu hlavního města prahy' in text:return False
 
-  strong=any(x in text for x in INDIVIDUAL_MARKERS)
-  contract=('veřejnoprávní smlouv' in text or 'verejnopravni smlouv' in text)
-  singular=('poskytnutí dotace' in text or 'poskytnuti dotace' in text)
-  return strong or (contract and singular)
+  # Po auditu už obecné „veřejnoprávní smlouvy o poskytnutí dotace“ bez dalšího
+  # nepovažujeme za individuální dotaci. Musí být výslovně označena jako
+  # individuální nebo mimořádná; tím nepublikujeme smluvní šablony ani programy.
+  return any(x in text for x in INDIVIDUAL_MARKERS)
 
 def parse():
   resolutions=read_json(USNESENI,[])
@@ -143,8 +157,6 @@ def main():
       print(f"  text: {u.get('snippet')}")
       print(f"  zdroj: {u.get('url')}")
 
-  # Fail-safe: pokud už máme publikované individuální dotace a nový průchod by je
-  # všechny ztratil, dataset nepřepisujeme.
   if previous and not grants:
     raise RuntimeError(f'Individuální dotace: nový průchod našel 0 záznamů, ale publikováno je {len(previous)}. Zachovávám poslední funkční dataset.')
 
@@ -152,7 +164,7 @@ def main():
   combined=current+grants
   warnings=[w for w in (payload.get('meta',{}).get('warnings') or []) if 'individuální dotace' not in str(w).lower()]
   if unmatched:
-    warnings.append(f'Individuální dotace {MIN_YEAR}–2026: {len(unmatched)} kandidátů nebylo možné bezpečně vytěžit; nejsou publikovány bez jednoznačného příjemce a částky.')
+    warnings.append(f'Individuální dotace {MIN_YEAR}–2026: {len(unmatched)} výslovných kandidátů nebylo možné bezpečně vytěžit; nejsou publikovány bez jednoznačného příjemce a částky.')
 
   ares_qa=base.enrich_ares(combined,warnings)
   combined.sort(key=lambda x:(-int(x.get('year') or 0),x.get('area',''),x.get('recipient','').lower(),-(x.get('approvedCzk') or 0)))
@@ -167,7 +179,7 @@ def main():
     for year,count in sorted(by_year.items(),reverse=True)
   ]
 
-  payload['schema']=max(int(payload.get('schema') or 0),9)
+  payload['schema']=max(int(payload.get('schema') or 0),18)
   payload['updated']=datetime.now(timezone.utc).isoformat()
   payload['grants']=combined
   payload['sources']=old_sources+source_meta
@@ -177,9 +189,10 @@ def main():
     'areas':sorted({g.get('area','') for g in combined if g.get('area')}),
     'warnings':warnings,'ares':ares_qa,'historyCounts':counts,
     'individualRows':len(grants),'individualUnmatched':len(unmatched),
-    'individualYears':sorted(by_year,reverse=True)
+    'individualYears':sorted(by_year,reverse=True),
+    'individualPolicy':'Jen výslovně označené individuální nebo mimořádné dotace s jednoznačným příjemcem a částkou; smluvní šablony, dodatky a dotace vlastním příspěvkovým organizacím se nepovažují za individuální dotace.'
   }
   base.atomic_write_json(OUT,payload)
-  print(f'✅ Individuální dotace: {len(grants)} bezpečně vytěžených z let {MIN_YEAR}–2026; {len(unmatched)} kandidátů ponecháno mimo publikaci.')
+  print(f'✅ Individuální dotace: {len(grants)} bezpečně vytěžených z let {MIN_YEAR}–2026; {len(unmatched)} výslovných kandidátů ponecháno mimo publikaci.')
 
 if __name__=='__main__':main()
