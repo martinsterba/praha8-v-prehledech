@@ -50,13 +50,24 @@ if not {2019,2020,2021}.issubset(modern_social):
 legacy_sport={int(y) for y in meta.get('legacySportLoadedYears',[])}
 if not {2014,2015}.issubset(legacy_sport):
   raise RuntimeError(f'dotace.json: chybí ověřený sport dospělých 2014/2015; načteno {sorted(legacy_sport)}')
-if int(meta.get('individualUnmatched') or 0)!=0:
-  raise RuntimeError(f'dotace.json: zůstává {meta.get("individualUnmatched")} nevyřešených výslovných individuálních kandidátů')
+extra_unmatched=int(meta.get('extraordinaryUnmatched',meta.get('individualUnmatched',0)) or 0)
+if extra_unmatched!=0:
+  raise RuntimeError(f'dotace.json: zůstává {extra_unmatched} nevyřešených kandidátů mimořádných dotací')
 
-current=[g for g in grants if int(g.get('year') or 0)==2026]
-current_total=sum(float(g.get('approvedCzk') or 0) for g in current)
-if round(current_total)!=19_455_000:
-  raise RuntimeError(f'dotace.json: součet roku 2026 je {current_total}, očekáváno 19 455 000 Kč')
+# Pevný kontrolní součet 2026 se vztahuje jen na dosavadní programové dotace.
+# Nově doplněné peněžní dary (mimořádné dotace) se kontrolují samostatně a
+# nesmějí rozbít historický referenční součet 19 455 000 Kč.
+current_program=[g for g in grants if int(g.get('year') or 0)==2026 and g.get('area')!='Mimořádné dotace' and str(g.get('type') or '').lower()!='mimořádná dotace']
+current_program_total=sum(float(g.get('approvedCzk') or 0) for g in current_program)
+if round(current_program_total)!=19_455_000:
+  raise RuntimeError(f'dotace.json: součet programových dotací roku 2026 je {current_program_total}, očekáváno 19 455 000 Kč')
+
+extraordinary=[g for g in grants if g.get('area')=='Mimořádné dotace' or str(g.get('type') or '').lower()=='mimořádná dotace']
+for g in extraordinary:
+  if str(g.get('type') or '').lower()!='mimořádná dotace':
+    raise RuntimeError('dotace.json: mimořádná dotace má neočekávaný typ')
+  if 'MČ Praha 8 je dárce' not in str(g.get('method') or ''):
+    raise RuntimeError(f'dotace.json: mimořádná dotace {g.get("resolutionId") or g.get("recipient")} nemá potvrzenou metodiku dárce')
 
 def invalid_recipient(value):
   raw=str(value or '').strip()
@@ -89,4 +100,5 @@ for i,g in enumerate(grants):
   if not (g.get('sourcePage') or g.get('sourceFile') or g.get('resolutionUrl')):
     raise RuntimeError(f'dotace.json: záznam {i} nemá zdroj')
 
-print(f'✅ Dotace QA: {len(grants)} záznamů · roky {sorted(years,reverse=True)} · 2026 celkem {round(current_total):,} Kč')
+extra_total=sum(float(g.get('approvedCzk') or 0) for g in extraordinary)
+print(f'✅ Dotace QA: {len(grants)} záznamů · roky {sorted(years,reverse=True)} · programové dotace 2026 {round(current_program_total):,} Kč · mimořádné dotace {len(extraordinary)} záznamů / {round(extra_total):,} Kč')
