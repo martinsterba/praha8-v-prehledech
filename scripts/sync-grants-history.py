@@ -12,25 +12,26 @@ INDEX='https://www.praha8.cz/Granty-a-dotace.html'
 spec=importlib.util.spec_from_file_location('grants_base',BASE_SCRIPT)
 base=importlib.util.module_from_spec(spec); spec.loader.exec_module(base)
 
-# 2022 je na veřejných stránkách neúplný (výsledkové XLSX jsou u usnesení Rady),
-# proto používáme přímo úřední usnesení, kde jsou přílohy se seznamy příjemců.
+# Rok 2022 má výsledky rozdělené mezi tematické stránky a přílohy usnesení Rady.
+# Kultura je z úřední přílohy strojově dostupná. U ostatních oblastí zůstává zdroj
+# evidovaný a doplní se, jakmile je příloha z appo rozhraní přímo dosažitelná.
 SPECIAL_2022={
   'Kultura':{
     'page':'https://www.praha8.cz/appo/usn/676?usn=4l5GcSBZF3Dl0Si8wY3pbxpl4IKg%3D%3D',
     'publicPage':'https://www.praha8.cz/Granty-Kultura-2022',
-    'resolutionId':'Usn RMC 0192/2022','resolutionDate':'2022-04-11','decisionBody':'Rada','multi':True},
+    'resolutionId':'Usn RMC 0192/2022','resolutionDate':'2022-04-11','decisionBody':'Rada','multi':True,'required':True},
   'Volnočasové aktivity dětí a mládeže':{
     'page':'https://www.praha8.cz/appo/usn/676?usn=Ly63W4CAfigftrdhEBFrrA%3D%3D',
     'publicPage':'https://www.praha8.cz/Granty-Volnocasove-nesportovni-aktivity-2022',
-    'resolutionId':'Usn RMC 0193/2022','resolutionDate':'2022-04-11','decisionBody':'Rada','multi':True},
+    'resolutionId':'Usn RMC 0193/2022','resolutionDate':'2022-04-11','decisionBody':'Rada','multi':True,'required':False},
   'Sportovní výchova mládeže':{
     'page':'https://www.praha8.cz/appo/usn/676?usn=KHBuc6sYsovNITpB3pbxpl4b3pbxpl4sxw%3D%3D',
     'publicPage':'https://www.praha8.cz/Granty-Sportovni-vychova-mladeze-2022',
-    'resolutionId':'Usn RMC 0203/2022','resolutionDate':'2022-04-20','decisionBody':'Rada','multi':True},
+    'resolutionId':'Usn RMC 0203/2022','resolutionDate':'2022-04-20','decisionBody':'Rada','multi':True,'required':False},
   'Sociální oblast':{
     'page':'https://www.praha8.cz/appo/usn/676?usn=Nb4tsOhTPlKwkt7TVty2KA%3D%3D',
     'publicPage':'https://www.praha8.cz/Dotace-v-socialni-oblasti-2022',
-    'resolutionId':'Usn RMC 0244/2022','resolutionDate':'2022-05-04','decisionBody':'Rada','multi':True},
+    'resolutionId':'Usn RMC 0244/2022','resolutionDate':'2022-05-04','decisionBody':'Rada','multi':True,'required':False},
 }
 
 
@@ -66,19 +67,19 @@ def build_sources():
   for year in range(2019,2026):
     for area in ['Kultura','Volnočasové aktivity dětí a mládeže','Sportovní výchova mládeže']:
       if year==2022:
-        s={'year':year,'area':area,'kind':'xlsx','required':True,**SPECIAL_2022[area]}
+        s={'year':year,'area':area,'kind':'xlsx',**SPECIAL_2022[area]}
       else:
         page=pages.get((area,year))
         if not page: continue
         s={'year':year,'area':area,'page':page,'kind':'xlsx','required':year in {2023,2024,2025}}
       sources.append(s)
-  # Sociální oblast 2025 a 2022 mají ověřené XLSX přílohy usnesení.
   sources.append({'year':2025,'area':'Sociální oblast','page':'https://m.praha8.cz/appo/usn/676?usn=9LcW1pbxsh2gqAagwwqNdwnaZHIw%3D%3D',
     'publicPage':'https://www.praha8.cz/Dotace-v-socialni-oblasti-2025','kind':'xlsx','required':True,
     'decisionBody':'Rada','resolutionId':'Usn RMC 0264/2025','resolutionDate':'2025-06-11','multi':True})
-  sources.append({'year':2022,'area':'Sociální oblast','kind':'xlsx','required':True,**SPECIAL_2022['Sociální oblast']})
+  sources.append({'year':2022,'area':'Sociální oblast','kind':'xlsx',**SPECIAL_2022['Sociální oblast']})
 
-  # Samostatná historická větev, kterou hlavní rozcestník skutečně uvádí.
+  # Samostatná dotační větev z centrálního rozcestníku. Výsledkové XLSX jsou
+  # strojově dostupné u 2016–2018; 2014–2015 zůstanou označené k dalšímu doplnění.
   for year in range(2014,2019):
     page=pages.get(('Sport dospělí a dorost',year))
     if page: sources.append({'year':year,'area':'Sport dospělí a dorost','page':page,'kind':'xlsx','required':False,'multi':True})
@@ -103,9 +104,8 @@ def discover_files(source):
   ranked.sort(key=lambda x:x[0],reverse=True)
   if source.get('multi'):
     best=max(x[0] for x in ranked)
-    # U usnesení často potřebujeme dvě přílohy (do/nad limit). Nebereme pomocné XLSX s nižším skóre.
     return [(href,label) for score,href,label in ranked if score>=max(best-1,0)]
-  score,href,label=ranked[0]
+  _,href,label=ranked[0]
   return [(href,label)]
 
 
@@ -193,7 +193,7 @@ def main():
   payload['meta']={**payload.get('meta',{}),'records':len(combined),'years':sorted({int(g['year']) for g in combined},reverse=True),
     'areas':sorted({g.get('area','') for g in combined if g.get('area')}),'warnings':all_warnings,'ares':ares_qa,
     'historyCounts':{str(y):counts[y] for y in sorted(counts,reverse=True)},'historyLoadedYears':sorted(loaded_years,reverse=True),
-    'note':'Historické dotace se dohledávají primárně z oficiálního rozcestníku Granty a dotace. Rok 2022 se načítá z výsledkových XLSX příloh příslušných usnesení Rady, protože veřejné tematické stránky výsledkové tabulky neobsahují. Samostatně se načítá i větev Sport dospělí a dorost 2014–2018, pokud je na stránce dostupná výsledková XLSX.'}
+    'note':'Historické dotace se dohledávají primárně z oficiálního rozcestníku Granty a dotace. Rok 2022 je veden z oficiálních usnesení Rady; strojově dostupná kultura se zveřejní hned a ostatní tři oblasti zůstanou označené k doplnění, pokud jejich přílohy appo rozhraní přímo nevydá. Samostatně se načítá větev Sport dospělí a dorost 2014–2018; dostupné výsledkové XLSX se zveřejní bez blokování ostatních ročníků.'}
   base.atomic_write_json(OUT,payload)
   print('\n✅ HOTOVO:',', '.join(f'{y}: {counts[y]}' for y in sorted(counts,reverse=True)),f'· celkem {len(combined)} záznamů')
 
