@@ -1,4 +1,4 @@
-name: "🧪 Dotace – historie a archiv"
+name: "🧪 Dotace – ověření historie"
 on:
   push:
     branches: [main]
@@ -7,6 +7,9 @@ on:
       - ".github/workflows/grants-history-all-test.yml"
 permissions:
   contents: write
+concurrency:
+  group: grants-history-publish
+  cancel-in-progress: true
 jobs:
   history:
     runs-on: ubuntu-latest
@@ -26,8 +29,9 @@ jobs:
           rows=d['grants']; years={int(g['year']) for g in rows}
           required={2019,2020,2021,2022,2023,2024,2025,2026}
           assert required <= years,(required-years,years)
-          assert len([g for g in rows if int(g['year'])==2022])>=190
-          assert len([g for g in rows if int(g['year'])==2021])>=80
+          counts={y:len([g for g in rows if int(g['year'])==y]) for y in years}
+          assert counts.get(2022,0)>=190,counts.get(2022,0)
+          assert counts.get(2021,0)>=80,counts.get(2021,0)
           for y in [2016,2017,2018]:
             adult=[g for g in rows if int(g['year'])==y and g.get('area')=='Sport dospělí a dorost']
             assert len(adult)>=20,(y,len(adult))
@@ -36,7 +40,6 @@ jobs:
             assert len(micro)>=min_count,(y,len(micro))
           assert d['meta']['records']>=1200,d['meta']['records']
           print('years',sorted(years,reverse=True),'records',d['meta']['records'])
-          print('areas',d['meta'].get('areas'))
           print('historyCounts',d['meta'].get('historyCounts'))
           PY
       - name: Uložit data
@@ -46,5 +49,4 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/dotace.json data/grants-ares-cache.json
           git commit -m "Data: zveřejnění ověřené historie dotací"
-          git pull --rebase origin main
           git push origin HEAD:main
