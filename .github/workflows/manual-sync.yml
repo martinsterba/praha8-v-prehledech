@@ -10,6 +10,7 @@ on:
         options:
           - volby
           - rozpocet
+          - dotace
           - Sčítání 2021
 
 permissions:
@@ -65,6 +66,9 @@ jobs:
             rozpocet)
               npm run sync:budget
               node scripts/repair-source-status.mjs budget
+              ;;
+            dotace)
+              npm run sync:grants
               ;;
             "Sčítání 2021")
               npm run sync:census
