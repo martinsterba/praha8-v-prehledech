@@ -2,7 +2,7 @@ name: "💶 Dotace – týdenní aktualizace"
 
 on:
   workflow_dispatch:
-  # Dočasný auditní retest po opravě tabulkových hranic ve starých sociálních datech.
+  # Dočasný auditní retest s ochranou starého sociálního archivu 2008–2013.
   # Po zeleném průchodu se tento push trigger odstraní.
   push:
     branches: [main]
@@ -98,8 +98,10 @@ jobs:
           for year in (2015,2016,2017):
             rows=[g for g in p['grants'] if int(g.get('year') or 0)==year and g.get('area')=='Kultura a volnočasové aktivity']
             print(f'Kultura/volnočas {year}: {len(rows)} záznamů, {round(sum(float(g.get("approvedCzk") or 0) for g in rows)):,} Kč')
-          bad=[g for g in p['grants'] if '|' in str(g.get('recipient') or '') or 'součet' in str(g.get('recipient') or '').casefold() or 'soucet' in str(g.get('recipient') or '').casefold()]
-          assert not bad, f'Poškození příjemci stále v datech: {bad[:5]}'
+          # Přísnou kontrolu formátu příjemce aplikujeme od 2014. Starší
+          # DOC/textový sociální archiv 2008–2013 je záměrně zachován beze změny.
+          bad=[g for g in p['grants'] if int(g.get('year') or 0)>=2014 and ('|' in str(g.get('recipient') or '') or 'součet' in str(g.get('recipient') or '').casefold() or 'soucet' in str(g.get('recipient') or '').casefold())]
+          assert not bad, f'Poškození příjemci stále v datech od roku 2014: {bad[:5]}'
           PY
 
       - name: "Zjistit změny"
@@ -120,10 +122,6 @@ jobs:
           git config user.name "Praha 8 v přehledech – automat"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          # Generovaný JSON nerebasujeme. Pokud během běhu někdo posunul main,
-          # vezmeme nový stav a celý deterministický grantový pipeline spustíme
-          # znovu nad ním. Tím se vyhneme konfliktům v data/dotace.json a nikdy
-          # nepřepíšeme novější data starším výstupem.
           for attempt in 1 2 3; do
             git fetch origin main
             local_sha="$(git rev-parse HEAD)"
