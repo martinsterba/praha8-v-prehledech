@@ -13,6 +13,7 @@ on:
       - "scripts/sync-grants.py"
       - "scripts/sync-grants-current-safe.py"
       - "scripts/sync-grants-history.py"
+      - "scripts/sync-grants-social-modern.py"
       - "scripts/sync-grants-resolution-programs.py"
       - "scripts/sync-grants-archive.py"
       - "scripts/sync-grants-archive-social-legacy.py"
@@ -52,6 +53,7 @@ jobs:
             scripts/sync-grants.py \
             scripts/sync-grants-current-safe.py \
             scripts/sync-grants-history.py \
+            scripts/sync-grants-social-modern.py \
             scripts/sync-grants-resolution-programs.py \
             scripts/sync-grants-archive.py \
             scripts/sync-grants-archive-social-legacy.py \
@@ -72,6 +74,7 @@ jobs:
           print('Dotace:',len(p['grants']))
           print('Roky:',p.get('meta',{}).get('years'))
           print('Oblasti:',p.get('meta',{}).get('areas'))
+          print('Moderní sociální archiv:',p.get('meta',{}).get('modernSocialLoadedYears',[]))
           print('Archiv:',p.get('meta',{}).get('archiveLoadedKeys',[]))
           print('Starý sociální archiv:',p.get('meta',{}).get('legacySocialLoadedYears',[]))
           print('Archiv kultura:',p.get('meta',{}).get('archiveCultureLoadedKeys',[]))
