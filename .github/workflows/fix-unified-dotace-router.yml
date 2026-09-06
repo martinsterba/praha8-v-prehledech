@@ -1,0 +1,105 @@
+name: "Jednorázově sjednotit router Dotací"
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/fix-unified-dotace-router.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - name: "Sjednotit Dotace s hlavní aplikací"
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+
+          app=Path('app.js')
+          s=app.read_text(encoding='utf-8')
+          old_routes="const routes={'':'home','/':'home','/usneseni':'usneseni','/hlasovani':'hlasovani','/penize':'penize','/lide':'lide','/organizace':'organizace','/skoly':'skoly','/organy':'organy','/info106':'info106','/uredni-deska':'uredniDeska','/volby':'volby','/scitani-2021':'scitani2021','/smlouvy':'smlouvy','/smlouvy-organizace':'smlouvyOrganizace','/smlouvy-firmy':'smlouvyFirmy','/novinky':'novinky','/zdroje':'zdroje'};\nasync function render(){const path=(location.hash.slice(1).split('?')[0]||'/');const fn=({home,usneseni,hlasovani,penize,lide,organizace,skoly,organy,info106,uredniDeska,volby,scitani2021,smlouvy,smlouvyOrganizace,smlouvyFirmy,novinky,zdroje}[routes[path]||'home']);await fn();scrollTo(0,0)}"
+          new_routes="""async function dotace(){
+  if(!window.Praha8Grants?.render){
+    await new Promise(resolve=>{
+      let done=false;
+      const finish=()=>{if(done)return;done=true;resolve()};
+      addEventListener('praha8:grants-ready',finish,{once:true});
+      setTimeout(finish,3000);
+    });
+  }
+  if(window.Praha8Grants?.render)return window.Praha8Grants.render();
+  shell('<div class=\"notice error-notice\"><b>Dotace se nepodařilo načíst.</b> Modul Dotací není dostupný.</div>');
+}
+const routes={'':'home','/':'home','/usneseni':'usneseni','/hlasovani':'hlasovani','/penize':'penize','/lide':'lide','/organizace':'organizace','/skoly':'skoly','/organy':'organy','/info106':'info106','/uredni-deska':'uredniDeska','/volby':'volby','/scitani-2021':'scitani2021','/smlouvy':'smlouvy','/smlouvy-organizace':'smlouvyOrganizace','/smlouvy-firmy':'smlouvyFirmy','/dotace':'dotace','/novinky':'novinky','/zdroje':'zdroje'};
+async function render(){const path=(location.hash.slice(1).split('?')[0]||'/');const fn=({home,usneseni,hlasovani,penize,lide,organizace,skoly,organy,info106,uredniDeska,volby,scitani2021,smlouvy,smlouvyOrganizace,smlouvyFirmy,dotace,novinky,zdroje}[routes[path]||'home']);await fn();scrollTo(0,0)}"""
+          if old_routes not in s:
+            raise SystemExit('Nenalezen očekávaný router v app.js')
+          app.write_text(s.replace(old_routes,new_routes,1),encoding='utf-8')
+
+          grants=Path('grants-module.js')
+          g=grants.read_text(encoding='utf-8')
+          old_tail="""  function afterBaseRender(attempt=0){
+    if(location.hash===ROUTE){renderGrants();return;}
+    const done=location.hash==='#/zdroje'?ensureSources():ensureHomeCard();
+    Promise.resolve(done).then(ok=>{if(!ok&&attempt<12)setTimeout(()=>afterBaseRender(attempt+1),30)});
+  }
+
+  const schedule=()=>setTimeout(()=>afterBaseRender(0),0);
+  addEventListener('hashchange',()=>{renderSeq++;grantsPromise=null;schedule()});
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',schedule,{once:true});else schedule();
+})();"""
+          new_tail="""  function afterBaseRender(attempt=0){
+    if(location.hash===ROUTE)return true;
+    const done=location.hash==='#/zdroje'?ensureSources():ensureHomeCard();
+    Promise.resolve(done).then(ok=>{if(!ok&&attempt<12)setTimeout(()=>afterBaseRender(attempt+1),30)});
+    return done;
+  }
+
+  window.Praha8Grants={render:renderGrants};
+  dispatchEvent(new Event('praha8:grants-ready'));
+
+  const schedule=()=>setTimeout(()=>afterBaseRender(0),0);
+  addEventListener('hashchange',()=>{renderSeq++;grantsPromise=null;schedule()});
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',schedule,{once:true});else schedule();
+})();"""
+          if old_tail not in g:
+            raise SystemExit('Nenalezen očekávaný konec grants-module.js')
+          grants.write_text(g.replace(old_tail,new_tail,1),encoding='utf-8')
+
+          index=Path('index.html')
+          h=index.read_text(encoding='utf-8')
+          pattern=r'''  <script>\n    window\.__dotaceStandalone = location\.hash === '#/dotace';.*?  </script>\n  <script type="module">\n    if \(!window\.__dotaceStandalone\) \{.*?  </script>'''
+          replacement='  <script type="module" src="app.js?v=2.8.7"></script>'
+          h2,n=re.subn(pattern,replacement,h,count=1,flags=re.S)
+          if n!=1:
+            raise SystemExit(f'Nenalezen standalone blok v index.html ({n})')
+          h2=h2.replace('grants-module.js?v=20260906-7','grants-module.js?v=20260906-8')
+          index.write_text(h2,encoding='utf-8')
+          PY
+
+          python3 - <<'PY'
+          from pathlib import Path
+          s=Path('app.js').read_text(encoding='utf-8')
+          g=Path('grants-module.js').read_text(encoding='utf-8')
+          h=Path('index.html').read_text(encoding='utf-8')
+          assert "'/dotace':'dotace'" in s
+          assert 'window.Praha8Grants={render:renderGrants}' in g
+          assert '__dotaceStandalone' not in h
+          assert 'app.js?v=2.8.7' in h
+          print('✅ Dotace používají hlavní router a společnou hlavičku.')
+          PY
+
+          git config user.name "Praha 8 v přehledech – automat"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/fix-unified-dotace-router.yml
+          git add app.js grants-module.js index.html
+          git commit -m "Sjednotit Dotace s hlavním routerem webu"
+          git push origin HEAD:main
