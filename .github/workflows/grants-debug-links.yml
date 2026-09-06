@@ -1,0 +1,49 @@
+name: "🧭 Dotace – debug odkazů"
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/grants-debug-links.yml"
+permissions:
+  contents: read
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Vypsat odkazy 2022 a starší
+        run: |
+          python3 - <<'PY'
+          import urllib.request
+          from html.parser import HTMLParser
+          from urllib.parse import urljoin
+          class P(HTMLParser):
+            def __init__(self): super().__init__(); self.links=[]; self.href=None; self.text=[]
+            def handle_starttag(self,tag,attrs):
+              if tag=='a': self.href=dict(attrs).get('href'); self.text=[]
+            def handle_data(self,d):
+              if self.href is not None:self.text.append(d)
+            def handle_endtag(self,tag):
+              if tag=='a' and self.href is not None:
+                self.links.append((self.href,' '.join(''.join(self.text).split()))); self.href=None; self.text=[]
+          urls=[
+            'https://praha8.online/rada/usneseni/2022/0193/',
+            'https://praha8.online/rada/usneseni/2022/0203/',
+            'https://praha8.online/rada/usneseni/2022/0244/',
+            'https://www.praha8.cz/Granty-Sport-pro-dospele-a-dorost-2015',
+            'https://www.praha8.cz/Granty-Telovychovna-cinnost-dospelych-2014',
+            'https://www.praha8.cz/Mikrogranty-verejny-prostor-2017',
+            'https://www.praha8.cz/Mikrogranty-verejny-prostor-2018',
+          ]
+          for url in urls:
+            print('\n###',url)
+            req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0'})
+            try:
+              html=urllib.request.urlopen(req,timeout=30).read().decode('utf-8','replace')
+              p=P(); p.feed(html)
+              for href,text in p.links:
+                full=urljoin(url,href)
+                low=(text+' '+full).lower()
+                if any(x in low for x in ['xlsx','xls','pdf','docx','výsled','vysled','příloh','priloh']): print(text,'=>',full)
+            except Exception as e: print('ERROR',repr(e))
+          PY
