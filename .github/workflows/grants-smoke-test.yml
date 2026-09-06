@@ -1,0 +1,43 @@
+name: 🧪 Test importu dotací
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - scripts/sync-grants.py
+      - .github/workflows/grants-smoke-test.yml
+
+permissions:
+  contents: read
+
+jobs:
+  grants-smoke-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Import dotací
+        run: python3 scripts/sync-grants.py
+
+      - name: QA výstupu
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('data/dotace.json')
+          if not p.exists(): raise SystemExit('data/dotace.json nevznikl')
+          d=json.loads(p.read_text(encoding='utf-8'))
+          grants=d.get('grants',[])
+          if len(grants)<10: raise SystemExit(f'Podezřele málo záznamů: {len(grants)}')
+          required={'Kultura','Volnočasové aktivity dětí a mládeže','Sportovní výchova mládeže'}
+          areas={g.get('area') for g in grants}
+          missing=required-areas
+          if missing: raise SystemExit('Chybí oblasti: '+', '.join(sorted(missing)))
+          bad=[g for g in grants if not g.get('recipient') or not isinstance(g.get('approvedCzk'),(int,float)) or g.get('approvedCzk',0)<=0]
+          if bad: raise SystemExit(f'Neplatné záznamy: {len(bad)}')
+          fake=[g for g in grants if g.get('ico')=='00000000']
+          if fake: raise SystemExit('Dataset obsahuje IČ 00000000')
+          print(f'QA OK: {len(grants)} záznamů · oblasti: {", ".join(sorted(areas))}')
+          PY
