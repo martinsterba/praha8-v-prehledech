@@ -2,7 +2,7 @@ name: "💶 Dotace – týdenní aktualizace"
 
 on:
   workflow_dispatch:
-  # Dočasný jednorázový retest mimořádných dotací po oddělení věcných a peněžních darů.
+  # Dočasný jednorázový retest po normalizaci IČ v historických názvech příjemců.
   # Po zeleném průchodu se tento push trigger odstraní.
   push:
     branches: [main]
@@ -67,6 +67,7 @@ jobs:
             scripts/sync-grants-archive-social-legacy.py \
             scripts/sync-grants-sport-legacy.py \
             scripts/sync-grants-archive-culture.py \
+            scripts/normalize-grant-recipients.py \
             scripts/sync-grants-individual.py \
             scripts/validate-grants.py
 
@@ -92,6 +93,7 @@ jobs:
           print('Archiv kultura:',p.get('meta',{}).get('archiveCultureLoadedKeys',[]))
           print('Z usnesení:',p.get('meta',{}).get('resolutionProgramLoadedKeys',[]))
           print('Mimořádné dotace:',p.get('meta',{}).get('extraordinaryRows',0),'bezpečně vytěžených;',p.get('meta',{}).get('extraordinaryUnmatched',0),'nevyřešených')
+          print('Normalizace IČ v názvech:',p.get('meta',{}).get('recipientIcoNormalized',0),'záznamů')
           for year in (2015,2016,2017):
             rows=[g for g in p['grants'] if int(g.get('year') or 0)==year and g.get('area')=='Kultura a volnočasové aktivity']
             print(f'Kultura/volnočas {year}: {len(rows)} záznamů, {round(sum(float(g.get("approvedCzk") or 0) for g in rows)):,} Kč')
