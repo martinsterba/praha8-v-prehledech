@@ -1,6 +1,6 @@
 {
   "schema": 14,
-  "updated": "2026-09-06T17:10:47.003970+00:00",
+  "updated": "2026-09-06T18:07:19.639005+00:00",
   "source": "https://www.praha8.cz/Granty-a-dotace.html",
   "meta": {
     "records": 1983,
@@ -37,8 +37,8 @@
       "Kultura 2019: nenalezen výsledkový XLSX soubor",
       "Sport dospělí a dorost 2014: nenalezen výsledkový XLSX soubor",
       "Sport dospělí a dorost 2015: nenalezen výsledkový XLSX soubor",
-      "Archiv Sociální oblast 2009 / Grant MČ v sociální oblasti 2009 - přehled podpořených žádostí: antiword nedokázal DOC bezpečně přečíst",
-      "Archiv Sociální oblast 2011 / Grant MC 2011 socialni oblast - přehled podpořených žádostí: antiword nedokázal DOC bezpečně přečíst",
+      "Archiv Sociální oblast 2009 / Grant MČ v sociální oblasti 2009 - přehled podpořených žádostí: antiword nedokázal DOC přečíst; catdoc není nainstalován",
+      "Archiv Sociální oblast 2011 / Grant MC 2011 socialni oblast - přehled podpořených žádostí: antiword nedokázal DOC přečíst; catdoc není nainstalován",
       "Archiv kultura/volný čas 2009: nenalezen bezpečný výsledkový soubor",
       "Archiv kultura/volný čas 2010: nenalezen bezpečný výsledkový soubor",
       "Archiv kultura/volný čas 2011: nenalezen bezpečný výsledkový soubor",
@@ -1306,6 +1306,35 @@
       "error": "nenalezen výsledkový XLSX soubor"
     },
     {
+      "year": 2014,
+      "area": "Sport dospělí a dorost",
+      "page": "https://www.praha8.cz/Granty-Telovychovna-cinnost-dospelych-2014",
+      "kind": "xlsx",
+      "required": false,
+      "multi": true,
+      "status": "čeká na doplnění",
+      "error": "nenalezen výsledkový XLSX soubor"
+    },
+    {
+      "year": 2015,
+      "area": "Sport dospělí a dorost",
+      "page": "https://www.praha8.cz/Granty-Sport-pro-dospele-a-dorost-2015",
+      "kind": "xlsx",
+      "required": false,
+      "multi": true,
+      "status": "čeká na doplnění",
+      "error": "nenalezen výsledkový XLSX soubor"
+    },
+    {
+      "year": 2019,
+      "area": "Kultura",
+      "page": "https://www.praha8.cz/Kultura-2019",
+      "kind": "xlsx",
+      "required": false,
+      "status": "čeká na doplnění",
+      "error": "nenalezen výsledkový XLSX soubor"
+    },
+    {
       "year": 2019,
       "area": "Volnočasové aktivity dětí a mládeže",
       "page": "https://www.praha8.cz/Volnocasove-nesportovni-aktivity-2019",
@@ -2059,7 +2088,7 @@
         {
           "rows": 58,
           "headerRow": 1,
-          "parser": "archive-doc-antiword",
+          "parser": "archive-doc-text",
           "file": "https://www.praha8.cz/file/RBY/Vysledky-dotacniho-rizeni-socialni-oblast-2017.doc",
           "label": "Výsledky dotačního řízení – sociální oblast 2017"
         }
@@ -2120,7 +2149,7 @@
         {
           "rows": 13,
           "headerRow": 2,
-          "parser": "archive-doc-antiword",
+          "parser": "archive-doc-text",
           "file": "https://www.praha8.cz/file/Zlf/V-dotacni-program-2009-prehled-podporenych-zadosti.doc",
           "label": "V. dotační program 2009 - přehled podpořených žádostí"
         }
@@ -2138,7 +2167,7 @@
         {
           "rows": 17,
           "headerRow": 3,
-          "parser": "archive-doc-antiword",
+          "parser": "archive-doc-text",
           "file": "https://www.praha8.cz/file/dIg/Prehled-podporenych-projektu-grant-MC-2010-socialni-sluzby.doc",
           "label": "Prehled podporenych projektu - grant MC 2010 - socialni sluzby"
         }
@@ -2156,14 +2185,14 @@
         {
           "rows": 6,
           "headerRow": 3,
-          "parser": "archive-doc-antiword",
+          "parser": "archive-doc-text",
           "file": "https://www.praha8.cz/file/fIk/Prehled-podporenych-zadosti-Program-J-5-rok-2012.doc",
           "label": "Přehled podpořených žádostí - Program J 5 rok 2012"
         },
         {
           "rows": 33,
           "headerRow": 3,
-          "parser": "archive-doc-antiword",
+          "parser": "archive-doc-text",
           "file": "https://www.praha8.cz/file/Vpj/Prehled-podporenych-zadosti-grant-MC-2012-socialni.doc",
           "label": "Přehled podpořených žádostí - grant MČ 2012 socialní"
         }
@@ -2181,7 +2210,7 @@
         {
           "rows": 57,
           "headerRow": 2,
-          "parser": "archive-doc-antiword",
+          "parser": "archive-doc-text",
           "file": "https://www.praha8.cz/file/Dum/Prehled-podporenych-zadosti-grant-MC-socialni-2013.doc",
           "label": "Přehled podpořených žádostí – grant MČ sociální 2013"
         }
@@ -2199,14 +2228,14 @@
         {
           "rows": 4,
           "headerRow": 3,
-          "parser": "archive-doc-antiword",
+          "parser": "archive-doc-text",
           "file": "https://www.praha8.cz/file/WPp/Prehled-podporenych-zadosti-grant-socialni-J5-2014.doc",
           "label": "Přehled podpořených žádostí – grant sociální J5 2014"
         },
         {
           "rows": 55,
           "headerRow": 3,
-          "parser": "archive-doc-antiword",
+          "parser": "archive-doc-text",
           "file": "https://www.praha8.cz/file/XPp/Prehled-podporenych-zadosti-grant-MC-socialni-2014.doc",
           "label": "Přehled podpořených žádostí – grant MČ sociální 2014"
         }
