@@ -2,7 +2,7 @@ name: "💶 Dotace – týdenní aktualizace"
 
 on:
   workflow_dispatch:
-  # Dočasný jednorázový test po opravě historických DOC tabulek a příjemců.
+  # Dočasný jednorázový test opraveného parseru historických DOC tabulek.
   # Po zeleném průchodu se tento push trigger odstraní.
   push:
     branches: [main]
