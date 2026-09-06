@@ -48,7 +48,7 @@
     "sync:schools": "node scripts/sync-school-data.mjs",
     "sync:news": "node scripts/sync-news.mjs",
     "qa:grants": "python3 scripts/validate-grants.py",
-    "sync:grants": "python3 scripts/sync-grants-current-safe.py && python3 scripts/sync-grants-history.py && python3 scripts/sync-grants-social-modern.py && python3 scripts/sync-grants-resolution-programs.py && python3 scripts/sync-grants-archive.py && python3 scripts/sync-grants-archive-social-legacy.py && python3 scripts/sync-grants-sport-legacy.py && python3 scripts/sync-grants-archive-culture.py && python3 scripts/sync-grants-individual.py && python3 scripts/validate-grants.py",
+    "sync:grants": "python3 scripts/sync-grants-current-safe.py && python3 scripts/sync-grants-history.py && python3 scripts/sync-grants-social-modern.py && python3 scripts/sync-grants-resolution-programs.py && python3 scripts/sync-grants-archive.py && python3 scripts/sync-grants-archive-social-legacy.py && python3 scripts/sync-grants-sport-legacy.py && python3 scripts/sync-grants-archive-culture.py && python3 scripts/normalize-grant-recipients.py && python3 scripts/sync-grants-individual.py && python3 scripts/validate-grants.py",
     "sync:daily": "node scripts/sync-praha8-ordered.mjs --usneseni-incremental --info106 --noticeboard --news --fast && node scripts/repair-info106-data.mjs && npm run sync:voting && npm run sync:contracts:daily",
     "sync:weekly": "node scripts/sync-weekly.mjs",
     "sync:manual": "node scripts/sync-praha8.mjs --elections --fast",
