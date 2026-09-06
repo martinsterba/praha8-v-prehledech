@@ -2,7 +2,7 @@ name: "💶 Dotace – týdenní aktualizace"
 
 on:
   workflow_dispatch:
-  # Dočasný jednorázový test opraveného parseru historických DOC tabulek.
+  # Dočasný jednorázový test mimořádných dotací z darovacích smluv.
   # Po zeleném průchodu se tento push trigger odstraní.
   push:
     branches: [main]
@@ -91,7 +91,7 @@ jobs:
           print('Starý sociální archiv:',p.get('meta',{}).get('legacySocialLoadedYears',[]))
           print('Archiv kultura:',p.get('meta',{}).get('archiveCultureLoadedKeys',[]))
           print('Z usnesení:',p.get('meta',{}).get('resolutionProgramLoadedKeys',[]))
-          print('Individuální:',p.get('meta',{}).get('individualRows',0),'bezpečně vytěžených;',p.get('meta',{}).get('individualUnmatched',0),'nevyřešených')
+          print('Mimořádné dotace:',p.get('meta',{}).get('extraordinaryRows',0),'bezpečně vytěžených;',p.get('meta',{}).get('extraordinaryUnmatched',0),'nevyřešených')
           for year in (2015,2016,2017):
             rows=[g for g in p['grants'] if int(g.get('year') or 0)==year and g.get('area')=='Kultura a volnočasové aktivity']
             print(f'Kultura/volnočas {year}: {len(rows)} záznamů, {round(sum(float(g.get("approvedCzk") or 0) for g in rows)):,} Kč')
