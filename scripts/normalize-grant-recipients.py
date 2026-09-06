@@ -9,6 +9,11 @@ rozdělení stejného subjektu při agregacích.
 Současně odstraňujeme jednoznačné souhrnné řádky typu „Celkem“ nebo „Součet
 všech projektů“. Nejde o příjemce dotace a jejich ponechání by zkreslovalo
 počty i součty.
+
+Důležitý detail: staré podklady mohou obsahovat i osmimístné číslo označené
+jako IČ, které neprojde kontrolním součtem. Takové číslo nikdy nepřebíráme do
+pole `ico`, ale z názvu příjemce ho přesto odstraníme. Název tak zůstane čistý
+a do agregace se nepřenese nedůvěryhodný identifikátor.
 """
 import json,re
 from datetime import datetime,timezone
@@ -46,12 +51,16 @@ def split_name_ico(name,explicit_ico=''):
   for pattern in ICO_SUFFIXES:
     m=pattern.search(raw)
     if not m:continue
+
+    # Název čistíme vždy, i když starý podklad uvádí neplatné IČ.
+    # Neplatné číslo ale nepřenášíme do samostatného pole `ico`.
     embedded=norm_ico(m.group(1))
-    if not embedded:return raw,explicit
-    # Pokud už IČ existuje a liší se, nic automaticky nepřepisujeme.
-    if explicit and explicit!=embedded:return raw,explicit
     cleaned=norm_text(raw[:m.start()]).rstrip(' ,;:-')
-    return cleaned,explicit or embedded
+
+    # Pokud už máme důvěryhodné explicitní IČ, má přednost. Případné jiné
+    # číslo z názvu pouze odstraníme, ale automaticky jím nic nepřepisujeme.
+    if explicit:return cleaned,explicit
+    return cleaned,embedded
   return raw,explicit
 
 
@@ -72,7 +81,7 @@ def aggregate_recipient(name):
 def main():
   payload=json.loads(DATA.read_text(encoding='utf-8'))
   grants=payload.get('grants') or []
-  changed=0;extracted=0;stripped=0;removed=0
+  changed=0;extracted=0;stripped=0;removed=0;invalid_suffix=0
   examples=[];clean=[]
 
   for grant in grants:
@@ -83,6 +92,10 @@ def main():
       continue
 
     old_ico=norm_ico(grant.get('ico'))
+    suffix_match=next((p.search(old_name) for p in ICO_SUFFIXES if p.search(old_name)),None)
+    if suffix_match and not norm_ico(suffix_match.group(1)):
+      invalid_suffix+=1
+
     new_name,new_ico=split_name_ico(old_name,old_ico)
     if old_name!=new_name:stripped+=1
     if not old_ico and new_ico:extracted+=1
@@ -98,6 +111,7 @@ def main():
   meta['records']=len(clean)
   meta['recipientIcoNormalized']=changed
   meta['recipientIcoExtracted']=extracted
+  meta['recipientInvalidIcoSuffixRemoved']=invalid_suffix
   meta['recipientAggregateRowsRemoved']=removed
   meta['recipientIcoNormalizedAt']=datetime.now(timezone.utc).isoformat()
   counts={}
@@ -108,7 +122,7 @@ def main():
   payload['updated']=datetime.now(timezone.utc).isoformat()
   DATA.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 
-  print(f'✅ Normalizace příjemců: upraveno {changed} záznamů; z názvu vytěženo {extracted} IČ; očištěno {stripped} názvů; odstraněno {removed} souhrnných řádků.')
+  print(f'✅ Normalizace příjemců: upraveno {changed} záznamů; z názvu vytěženo {extracted} IČ; očištěno {stripped} názvů; odstraněno {removed} souhrnných řádků; odstraněno {invalid_suffix} neplatných IČ jen z názvu.')
   for item in examples:print('  ',item)
 
 
