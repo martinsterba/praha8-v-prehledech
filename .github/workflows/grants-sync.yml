@@ -13,6 +13,7 @@ on:
       - "scripts/sync-grants.py"
       - "scripts/sync-grants-current-safe.py"
       - "scripts/sync-grants-history.py"
+      - "scripts/sync-grants-resolution-programs.py"
       - "scripts/sync-grants-archive.py"
       - "scripts/sync-grants-archive-social-legacy.py"
       - "scripts/sync-grants-archive-culture.py"
@@ -51,6 +52,7 @@ jobs:
             scripts/sync-grants.py \
             scripts/sync-grants-current-safe.py \
             scripts/sync-grants-history.py \
+            scripts/sync-grants-resolution-programs.py \
             scripts/sync-grants-archive.py \
             scripts/sync-grants-archive-social-legacy.py \
             scripts/sync-grants-archive-culture.py \
@@ -73,6 +75,7 @@ jobs:
           print('Archiv:',p.get('meta',{}).get('archiveLoadedKeys',[]))
           print('Starý sociální archiv:',p.get('meta',{}).get('legacySocialLoadedYears',[]))
           print('Archiv kultura:',p.get('meta',{}).get('archiveCultureLoadedKeys',[]))
+          print('Z usnesení:',p.get('meta',{}).get('resolutionProgramLoadedKeys',[]))
           print('Individuální:',p.get('meta',{}).get('individualRows',0),'bezpečně vytěžených')
           PY
 
