@@ -2,7 +2,7 @@ name: "💶 Dotace – týdenní aktualizace"
 
 on:
   workflow_dispatch:
-  # Dočasný auditní retest: QA nyní vypíše všechny chyby najednou.
+  # Dočasný auditní retest po opravě tabulkových hranic ve starých sociálních datech.
   # Po zeleném průchodu se tento push trigger odstraní.
   push:
     branches: [main]
