@@ -14,6 +14,12 @@
     if(value.includes('individuální')||value.includes('individualni')||value.includes('mimořád'))return 'mimořádná dotace';
     return t||'dotace';
   };
+  const grantCategoryLabel=(area,type)=>{
+    const a=String(area||'').trim();
+    const t=typeLabel(type);
+    if(normalize(a)==='mimoradne dotace'||t==='mimořádná dotace')return 'Mimořádná dotace';
+    return a?`Dotace – ${a}`:'Dotace';
+  };
   const loadGrants=()=>grantsPromise||(grantsPromise=fetch(`data/dotace.json?v=${Date.now()}`,{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json()}));
 
   function isValidGrant(g){
@@ -48,7 +54,7 @@
   function buildRows(grants){
     return grants.map(g=>`<article class="grant-row">
       <div class="grant-main"><b>${esc(g.recipient)}</b><span>${g.ico?`IČ ${esc(g.ico)}`:'IČ neuvedeno'}</span></div>
-      <div class="grant-area"><span>${esc(g.area)}</span><small>${esc(typeLabel(g.type))}</small></div>
+      <div class="grant-area"><span>${esc(grantCategoryLabel(g.area,g.type))}</span></div>
       <div class="grant-year">${esc(g.year||'—')}</div>
       <div class="grant-amount"><strong>${money(g.approvedCzk)}</strong></div>
       <div class="grant-source"><a href="${esc(g.resolutionUrl||g.sourcePage||g.sourceFile||'#')}" target="_blank" rel="noreferrer">Zdroj ↗</a></div>
@@ -122,8 +128,8 @@
         <div class="data-note grant-note"><b>O datech.</b> Přehled spojuje zveřejněné dotace MČ Praha 8 a jejich historické výsledky. Jako <b>mimořádné dotace</b> označujeme peněžní dary schválené formou darovací smlouvy, v níž je MČ Praha 8 dárcem. Starší ročníky zachovávají tehdejší názvy a členění oblastí. Do databáze zařazujeme jen záznamy, u nichž lze z oficiálního zdroje bezpečně určit příjemce a schválenou částku; nezahrnujeme případy, kdy je MČ Praha 8 sama příjemcem prostředků od jiného poskytovatele.</div>
         ${topValue.length?`<section class="section recipient-section grant-top-section"><div class="section-head"><div><div class="kicker">Statistika</div><h2>TOP 10 příjemců dotací</h2></div><p>Organizace s nejvyšším součtem schválených dotací za dostupnou historii ${historyLabel}. Záznamy spojujeme primárně podle IČ.</p></div><div class="partner-tabs"><button class="partner-tab active" data-grant-ranking="value">Podle výše dotací</button><button class="partner-tab" data-grant-ranking="count">Podle počtu dotací</button></div><div id="grantTopRanking" class="partner-ranking">${buildTopRecipients(topValue)}</div></section>`:''}
         <section class="section grant-list-section">
-          <div class="grant-toolbar"><div><div class="kicker">Přehled</div><h2>Poskytnuté dotace</h2></div><div class="grant-filters"><input id="grantSearch" type="search" placeholder="Hledat příjemce nebo IČ…"><select id="grantArea"><option value="">Všechny oblasti</option>${areas.map(a=>`<option value="${esc(a)}">${esc(a)}</option>`).join('')}</select><select id="grantYear"><option value="">Všechny roky</option>${years.map(y=>`<option value="${y}">${y}</option>`).join('')}</select></div></div>
-          <div id="grantResultCount" class="updated"></div><div class="grant-list-head"><span>Příjemce</span><span>Oblast</span><span>Rok</span><span>Částka</span><span>Zdroj</span></div><div id="grantList" class="grant-list"></div><div id="grantPager" class="pagination"></div>
+          <div class="grant-toolbar"><div><div class="kicker">Přehled</div><h2>Poskytnuté dotace</h2></div><div class="grant-filters"><input id="grantSearch" type="search" placeholder="Hledat příjemce nebo IČ…"><select id="grantArea"><option value="">Všechny oblasti</option>${areas.map(a=>`<option value="${esc(a)}">${esc(grantCategoryLabel(a,a==='Mimořádné dotace'?'mimořádná dotace':'programová'))}</option>`).join('')}</select><select id="grantYear"><option value="">Všechny roky</option>${years.map(y=>`<option value="${y}">${y}</option>`).join('')}</select></div></div>
+          <div id="grantResultCount" class="updated"></div><div class="grant-list-head"><span>Příjemce</span><span>Typ dotace</span><span>Rok</span><span>Částka</span><span>Zdroj</span></div><div id="grantList" class="grant-list"></div><div id="grantPager" class="pagination"></div>
         </section>
       </div>`;
 
@@ -139,7 +145,7 @@
         const q=normalize(app.querySelector('#grantSearch')?.value||'');
         const area=app.querySelector('#grantArea')?.value||'';
         const year=app.querySelector('#grantYear')?.value||'';
-        const rows=grants.filter(g=>(!q||normalize([g.recipient,g.ico,g.area,g.project,typeLabel(g.type),g.year].join(' ')).includes(q))&&(!area||g.area===area)&&(!year||String(g.year)===year));
+        const rows=grants.filter(g=>(!q||normalize([g.recipient,g.ico,g.area,g.project,typeLabel(g.type),grantCategoryLabel(g.area,g.type),g.year].join(' ')).includes(q))&&(!area||g.area===area)&&(!year||String(g.year)===year));
         const pages=Math.max(1,Math.ceil(rows.length/PER_PAGE));
         page=Math.min(page,pages);
         const shown=rows.slice((page-1)*PER_PAGE,page*PER_PAGE);
