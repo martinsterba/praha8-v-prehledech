@@ -1,6 +1,6 @@
 {
   "schema": 14,
-  "updated": "2026-09-06T16:51:47.459146+00:00",
+  "updated": "2026-09-06T17:10:47.003970+00:00",
   "source": "https://www.praha8.cz/Granty-a-dotace.html",
   "meta": {
     "records": 1983,
@@ -1092,6 +1092,35 @@
         },
         "rows": 55
       }
+    },
+    {
+      "year": 2019,
+      "area": "Kultura",
+      "page": "https://www.praha8.cz/Kultura-2019",
+      "kind": "xlsx",
+      "required": false,
+      "status": "čeká na doplnění",
+      "error": "nenalezen výsledkový XLSX soubor"
+    },
+    {
+      "year": 2014,
+      "area": "Sport dospělí a dorost",
+      "page": "https://www.praha8.cz/Granty-Telovychovna-cinnost-dospelych-2014",
+      "kind": "xlsx",
+      "required": false,
+      "multi": true,
+      "status": "čeká na doplnění",
+      "error": "nenalezen výsledkový XLSX soubor"
+    },
+    {
+      "year": 2015,
+      "area": "Sport dospělí a dorost",
+      "page": "https://www.praha8.cz/Granty-Sport-pro-dospele-a-dorost-2015",
+      "kind": "xlsx",
+      "required": false,
+      "multi": true,
+      "status": "čeká na doplnění",
+      "error": "nenalezen výsledkový XLSX soubor"
     },
     {
       "year": 2019,
