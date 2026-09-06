@@ -87,10 +87,15 @@ def invalid_recipient(value):
   if 'součet' in low or 'soucet' in low or low.startswith('celkem') or 'celkem projekt' in low:return True
   return False
 
+ico_in_name=re.compile(r'(?:\bIČO?\b|\bICO\b)\s*[:.]?\s*\d{8}\s*$',re.I)
+paren_ico_in_name=re.compile(r'\(\d{8}\)\s*$')
+
 for i,g in enumerate(grants):
   recipient=str(g.get('recipient') or '').strip()
   if invalid_recipient(recipient):
     raise RuntimeError(f'dotace.json: záznam {i} má neplatného příjemce {recipient!r}')
+  if ico_in_name.search(recipient) or paren_ico_in_name.search(recipient):
+    raise RuntimeError(f'dotace.json: záznam {i} má IČ chybně uložené v názvu příjemce {recipient!r}')
   try:
     amount=float(g.get('approvedCzk') or 0)
   except Exception:
