@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import io,json,re,sys,urllib.request,zipfile
+import io,json,os,re,tempfile,urllib.request,zipfile
 from datetime import datetime,timezone
 from html.parser import HTMLParser
 from pathlib import Path
@@ -11,10 +11,10 @@ OUT=ROOT/'data'/'dotace.json'
 UA='Praha8-v-prehledech/3.0.13 (+public-data-indexer; public sources only)'
 
 SOURCES=[
-  {'year':2026,'area':'Kultura','page':'https://m.praha8.cz/Granty-Kultura-2026','kind':'xlsx'},
-  {'year':2026,'area':'Volnočasové aktivity dětí a mládeže','page':'https://m.praha8.cz/granty-volnocasove-nesportovni-aktivity-2026','kind':'xlsx'},
-  {'year':2026,'area':'Sportovní výchova mládeže','page':'https://www.praha8.cz/Granty-Sportovni-vychova-mladeze-2026','kind':'xlsx'},
-  {'year':2026,'area':'Sociální oblast','page':'https://www.praha8.cz/Dotace-v-socialni-oblasti-2026','kind':'pdf'}
+  {'year':2026,'area':'Kultura','page':'https://m.praha8.cz/Granty-Kultura-2026','kind':'xlsx','required':True},
+  {'year':2026,'area':'Volnočasové aktivity dětí a mládeže','page':'https://m.praha8.cz/granty-volnocasove-nesportovni-aktivity-2026','kind':'xlsx','required':True},
+  {'year':2026,'area':'Sportovní výchova mládeže','page':'https://www.praha8.cz/Granty-Sportovni-vychova-mladeze-2026','kind':'xlsx','required':True},
+  {'year':2026,'area':'Sociální oblast','page':'https://www.praha8.cz/Dotace-v-socialni-oblasti-2026','kind':'pdf','required':False}
 ]
 
 class LinkParser(HTMLParser):
@@ -49,16 +49,17 @@ def discover_file(page,kind):
   return candidates[0] if candidates else (None,None)
 
 def col_num(ref):
+  m=re.match(r'[A-Z]+',ref or '')
+  if not m:return 0
   n=0
-  for ch in re.match(r'[A-Z]+',ref or '').group(0): n=n*26+ord(ch)-64
+  for ch in m.group(0): n=n*26+ord(ch)-64
   return n-1
 
 def norm_text(v): return re.sub(r'\s+',' ',str(v or '')).strip()
 
 def norm_ico(v):
   s=re.sub(r'\D','',str(v or ''))
-  if not s: return ''
-  if len(s)>8:return ''
+  if not s or len(s)>8:return ''
   s=s.zfill(8)
   if s=='00000000':return ''
   a=[int(x) for x in s]; total=sum(a[i]*(8-i) for i in range(7)); check=(11-(total%11))%10
@@ -85,6 +86,7 @@ def xlsx_rows(blob):
   target=None
   for rel in rels:
     if rel.attrib.get('Id')==rel_id: target=rel.attrib['Target']; break
+  if not target: raise RuntimeError('XLSX neobsahuje odkaz na první list')
   sheet_path='xl/'+target.lstrip('/') if not target.startswith('xl/') else target
   root=ET.fromstring(z.read(sheet_path)); rows=[]
   for row in root.findall('.//m:sheetData/m:row',ns):
@@ -141,8 +143,21 @@ def parse_program(source,file_url,blob):
   if not grants: raise RuntimeError(f"{source['area']}: XLSX neobsahuje žádné schválené dotace")
   return grants,{'headerRow':hi+1,'columns':cols,'rows':len(grants)}
 
+def atomic_write_json(path,payload):
+  path.parent.mkdir(parents=True,exist_ok=True)
+  data=json.dumps(payload,ensure_ascii=False,indent=2)+'\n'
+  fd,tmp=tempfile.mkstemp(prefix=path.name+'.',suffix='.tmp',dir=path.parent)
+  try:
+    with os.fdopen(fd,'w',encoding='utf-8') as f:
+      f.write(data); f.flush(); os.fsync(f.fileno())
+    os.replace(tmp,path)
+  except Exception:
+    try: os.unlink(tmp)
+    except OSError: pass
+    raise
+
 def main():
-  all_grants=[]; src_meta=[]; warnings=[]
+  all_grants=[]; src_meta=[]; warnings=[]; required_failures=[]
   for s in SOURCES:
     try:
       file_url,label=discover_file(s['page'],s['kind'])
@@ -157,11 +172,17 @@ def main():
         print(f"⚠️ {s['area']} {s['year']}: PDF nalezen, zatím neimportuji")
     except Exception as e:
       src_meta.append({**s,'status':'chyba','error':str(e)}); warnings.append(f"{s['area']} {s['year']}: {e}")
+      if s.get('required'): required_failures.append(f"{s['area']} {s['year']}: {e}")
       print(f"❌ {s['area']} {s['year']}: {e}")
+
+  if required_failures:
+    raise RuntimeError('Import odmítnut: selhal povinný zdroj: '+'; '.join(required_failures))
+  if len(all_grants)<10:
+    raise RuntimeError(f'Import odmítnut: načteno podezřele málo dotačních záznamů ({len(all_grants)}).')
+
   all_grants.sort(key=lambda x:(-x['year'],x['area'],x['recipient'].lower(),-(x['approvedCzk'] or 0)))
   payload={'schema':1,'updated':datetime.now(timezone.utc).isoformat(),'source':'https://www.praha8.cz/Granty-a-dotace.html','meta':{'records':len(all_grants),'years':sorted({x['year'] for x in all_grants},reverse=True),'areas':sorted({x['area'] for x in all_grants}),'warnings':warnings,'note':'První bezpečný import programových dotací. Individuální/mimořádné dotace a sociální PDF se doplní samostatnou větví.'},'sources':src_meta,'grants':all_grants}
-  OUT.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-  if len(all_grants)<10: raise RuntimeError('Import odmítnut: načteno podezřele málo dotačních záznamů.')
-  print(f"\n✅ HOTOVO: {len(all_grants)} programových dotací zapsáno do data/dotace.json")
+  atomic_write_json(OUT,payload)
+  print(f"\n✅ HOTOVO: {len(all_grants)} programových dotací atomicky zapsáno do data/dotace.json")
 
 if __name__=='__main__': main()
