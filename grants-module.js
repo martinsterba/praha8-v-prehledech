@@ -11,6 +11,16 @@
   const typeLabel=t=>String(t||'').toLowerCase()==='programová'?'dotační řízení':(t||'dotační řízení');
   const loadGrants=()=>grantsPromise||(grantsPromise=fetch(`data/dotace.json?v=${Date.now()}`,{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json()}));
 
+  function isValidGrant(g){
+    const raw=String(g?.recipient||'').trim();
+    if(!raw||raw.includes('|')||!/[0-9A-Za-zÀ-ž]/.test(raw))return false;
+    const name=normalize(raw).replace(/^[\s.,:;|\-–—]+|[\s.,:;|\-–—]+$/g,'');
+    if(!name)return false;
+    const bad=new Set(['celkem','soucet','soucet vsech projektu','soucet projektu','celkem prideleno','zadatel','prijemce','organizace','nazev organizace']);
+    if(bad.has(name)||name.includes('soucet vsech projektu')||name.startsWith('celkem '))return false;
+    return Number(g?.approvedCzk||0)>0;
+  }
+
   function fmtDateTime(value){
     if(!value)return '—';
     const d=new Date(value);
@@ -84,7 +94,7 @@
     try{
       const payload=await loadGrants();
       if(seq!==renderSeq||location.hash!==ROUTE)return;
-      const grants=Array.isArray(payload.grants)?payload.grants:[];
+      const grants=(Array.isArray(payload.grants)?payload.grants:[]).filter(isValidGrant);
       const areas=[...new Set(grants.map(g=>g.area).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'cs'));
       const years=[...new Set(grants.map(g=>Number(g.year)).filter(Boolean))].sort((a,b)=>b-a);
       const recipients=new Set(grants.map(g=>g.ico?`ico:${digits(g.ico)}`:`name:${normalize(g.recipient)}`));
