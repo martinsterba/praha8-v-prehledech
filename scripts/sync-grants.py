@@ -65,6 +65,16 @@ def norm_ico(v):
   a=[int(x) for x in s]; total=sum(a[i]*(8-i) for i in range(7)); check=(11-(total%11))%10
   return s if a[7]==check else ''
 
+def split_recipient_ico(recipient,explicit_ico=''):
+  recipient=norm_text(recipient)
+  ico=norm_ico(explicit_ico)
+  if ico:return recipient,ico
+  m=re.search(r'\s*\((\d{8})\)\s*$',recipient)
+  if not m:return recipient,''
+  candidate=norm_ico(m.group(1))
+  if not candidate:return recipient,''
+  return norm_text(recipient[:m.start()]),candidate
+
 def money(v):
   if v is None:return None
   s=str(v).strip().replace('\xa0',' ').replace('Kč','').replace('CZK','').replace(' ','').replace(',','.')
@@ -132,11 +142,12 @@ def parse_program(source,file_url,blob):
   grants=[]
   for r in rows[hi+1:]:
     get=lambda k: r[cols[k]] if k in cols and cols[k]<len(r) else ''
-    recipient=norm_text(get('recipient')); approved=money(get('approved'))
+    recipient,ico=split_recipient_ico(get('recipient'),get('ico'))
+    approved=money(get('approved'))
     if not recipient or approved is None or approved<=0: continue
     grants.append({
       'year':source['year'],'area':source['area'],'type':'programová','recipient':recipient,
-      'ico':norm_ico(get('ico')),'project':norm_text(get('project')),'requestedCzk':money(get('requested')),
+      'ico':ico,'project':norm_text(get('project')),'requestedCzk':money(get('requested')),
       'approvedCzk':approved,'decisionBody':None,'resolutionId':None,'resolutionDate':None,'resolutionUrl':None,
       'sourcePage':source['page'],'sourceFile':file_url
     })
