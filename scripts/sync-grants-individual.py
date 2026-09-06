@@ -40,21 +40,28 @@ def clean_name(name):
   name=re.split(r'\s*,\s*(?:se sídlem|se sidlem|sídlo|sidlo|IČO|IČ|ICO|zastoupen|jako\s+[\"“”]?obdarovan)\b',name,maxsplit=1,flags=re.I)[0]
   return base.norm_text(name).strip(' ,.;:-\"“”')
 
-def mc_is_donor(text):
-  t=base.norm_text(text)
-  patterns=(
-    r'městsk(?:á|ou|é|ou)?\s+část(?:i|í)?\s+praha\s*8.{0,500}(?:jako\s+)?[\"“”]?dárc',
-    r'mestsk(?:a|ou|e)?\s+cast(?:i)?\s+praha\s*8.{0,500}(?:jako\s+)?[\"“”]?darc',
-    r'(?:dárce|dárcem)\s*[:\-]?\s*(?:je\s+)?městsk(?:á|ou|é)?\s+část(?:i|í)?\s+praha\s*8',
-    r'(?:darce|darcem)\s*[:\-]?\s*(?:je\s+)?mestsk(?:a|ou|e)?\s+cast(?:i)?\s+praha\s*8'
-  )
-  return any(re.search(p,t,re.I|re.S) for p in patterns)
+def mc_role(text):
+  """Vrátí roli Prahy 8 jen při výslovném přiřazení role přímo u názvu.
 
-def mc_is_recipient(text):
-  return bool(
-    re.search(r'městsk(?:á|ou)\s+část(?:i|í)?\s+praha\s*8.{0,350}(?:jako\s+)?[\"“”]?obdarovan',text,re.I|re.S)
-    or re.search(r'mestsk(?:a|ou)\s+cast(?:i)?\s+praha\s*8.{0,350}(?:jako\s+)?[\"“”]?obdarovan',text,re.I|re.S)
+  Záměrně nepoužíváme široké okno stovek znaků: na stránce usnesení je text
+  „Městská část Praha 8“ i v hlavičce a mohl by se omylem spojit s dárcem jiné
+  organizace uvedeným až později v dokumentu.
+  """
+  q=base.norm_text(text).replace('“','\"').replace('”','\"').replace('„','\"').replace('·',' ')
+  mc=r'(?:městsk(?:á|ou|é|ou|ou)?\s+část(?:i|í)?\s+praha\s*8|m[eě]stsk(?:a|ou|e)?\s+cast(?:i)?\s+praha\s*8|MČ\s+Praha\s*8)'
+  donor=(
+    rf'{mc}\s*,?\s*(?:jako\s+)?[\"]?dárc',
+    rf'{mc}\s*,?\s*(?:jako\s+)?[\"]?darc',
+    rf'(?:dárce|dárcem)\s*[:\-]?\s*(?:je\s+)?{mc}',
+    rf'(?:darce|darcem)\s*[:\-]?\s*(?:je\s+)?{mc}'
   )
+  recipient=(
+    rf'{mc}\s*,?\s*(?:jako\s+)?[\"]?obdarovan',
+    rf'(?:obdarovaný|obdarovaná|obdarovaným|obdarovanou|obdarovany|obdarovana|obdarovanym|obdarovanou)\s*[:\-]?\s*(?:je\s+)?{mc}'
+  )
+  if any(re.search(p,q,re.I|re.S) for p in donor):return 'donor'
+  if any(re.search(p,q,re.I|re.S) for p in recipient):return 'recipient'
+  return None
 
 def recipient_from_text(text):
   q=base.norm_text(text).replace('“','\"').replace('”','\"').replace('„','\"').replace('·',' ')
@@ -137,11 +144,9 @@ def candidate(r):
   try:year=int(date[:4])
   except Exception:return False
   if year<MIN_YEAR:return False
-  title=base.norm_text(r.get('title'));content=base.norm_text(r.get('content'))
-  low=(title+' '+content).lower()
-  # Kandidátem je každá darovací smlouva. Role Prahy 8 se ověřuje až z detailu
-  # usnesení, protože lokální dataset často obsahuje pouze zkrácený titul.
-  return any(x in low for x in DONATION_MARKERS)
+  # Základní filtr je výhradně název usnesení, jak je metodicky zamýšleno.
+  title=base.norm_text(r.get('title')).lower()
+  return any(x in title for x in DONATION_MARKERS)
 
 def detail_text(r):
   local=base.norm_text(r.get('content'))
@@ -161,12 +166,15 @@ def parse():
     if not candidate(r):continue
     candidates+=1
     title=base.norm_text(r.get('title'))
+    title_role=mc_role(title)
+
+    # Pokud už titul výslovně říká, že je Praha 8 obdarovaná, detail ani
+    # nestahujeme. U ostatních kandidátů ověříme roli na oficiálním detailu.
+    if title_role=='recipient':continue
     content=detail_text(r)
     text=base.norm_text(title+' '+content)
-
-    # Do přehledu patří pouze dary, kde peníze poskytuje MČ Praha 8.
-    if not mc_is_donor(text):continue
-    if mc_is_recipient(text):continue
+    role=title_role or mc_role(text)
+    if role!='donor':continue
     donor_candidates+=1
 
     # Nepeněžní dary nejsou mimořádnou dotací v našem finančním přehledu.
@@ -198,7 +206,7 @@ def parse():
     key=(g.get('resolutionId'),g.get('recipient','').lower(),g.get('approvedCzk'))
     if key in seen:continue
     seen.add(key);unique.append(g)
-  print(f'🔎 Mimořádné dotace: {candidates} darovacích smluv k prověření; {donor_candidates} s MČ Praha 8 jako dárcem; {noncash} nepeněžních.')
+  print(f'🔎 Mimořádné dotace: {candidates} usnesení s „Darovací smlouva“ v názvu; {donor_candidates} s MČ Praha 8 jako dárcem; {noncash} nepeněžních.')
   return unique,unmatched
 
 def main():
@@ -222,9 +230,9 @@ def main():
   years=sorted({int(g['year']) for g in combined},reverse=True);counts={str(y):sum(1 for g in combined if int(g['year'])==y) for y in years}
   old_sources=[s for s in (payload.get('sources') or []) if s.get('area') not in LEGACY_AREAS]
   by_year=Counter(g['year'] for g in grants)
-  source_meta=[{'year':year,'area':AREA,'page':'data/usneseni.json','kind':'resolution-dataset+official-detail','required':False,'status':'načteno','qa':{'rows':count}} for year,count in sorted(by_year.items(),reverse=True)]
-  payload['schema']=max(int(payload.get('schema') or 0),21);payload['updated']=datetime.now(timezone.utc).isoformat();payload['grants']=combined;payload['sources']=old_sources+source_meta
-  payload['meta']={**payload.get('meta',{}),'records':len(combined),'years':years,'areas':sorted({g.get('area','') for g in combined if g.get('area')}),'warnings':warnings,'ares':ares_qa,'historyCounts':counts,'individualRows':len(grants),'individualUnmatched':len(unmatched),'extraordinaryRows':len(grants),'extraordinaryUnmatched':len(unmatched),'extraordinaryYears':sorted(by_year,reverse=True),'extraordinaryPolicy':'Mimořádná dotace = peněžní dar schválený formou darovací smlouvy, v níž je Městská část Praha 8 dárcem. Dary, kde je Praha 8 obdarovaná, ani nepeněžní převody se nezahrnují.'}
+  source_meta=[{'year':year,'area':AREA,'page':'data/usneseni.json','kind':'resolution-title+official-detail','required':False,'status':'načteno','qa':{'rows':count}} for year,count in sorted(by_year.items(),reverse=True)]
+  payload['schema']=max(int(payload.get('schema') or 0),22);payload['updated']=datetime.now(timezone.utc).isoformat();payload['grants']=combined;payload['sources']=old_sources+source_meta
+  payload['meta']={**payload.get('meta',{}),'records':len(combined),'years':years,'areas':sorted({g.get('area','') for g in combined if g.get('area')}),'warnings':warnings,'ares':ares_qa,'historyCounts':counts,'individualRows':len(grants),'individualUnmatched':len(unmatched),'extraordinaryRows':len(grants),'extraordinaryUnmatched':len(unmatched),'extraordinaryYears':sorted(by_year,reverse=True),'extraordinaryPolicy':'Mimořádná dotace = peněžní dar schválený formou darovací smlouvy, v níž je Městská část Praha 8 dárcem. Kandidáty vybíráme jen z usnesení s „Darovací smlouva“ v názvu; dary, kde je Praha 8 obdarovaná, ani nepeněžní převody se nezahrnují.'}
   base.atomic_write_json(OUT,payload)
   print(f'✅ Mimořádné dotace: {len(grants)} bezpečně vytěžených peněžních darů z let {MIN_YEAR}–2026; {len(unmatched)} kandidátů ponecháno mimo publikaci.')
 
