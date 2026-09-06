@@ -2,7 +2,7 @@
   const route='#/dotace';
   const perPage=25;
   let renderSeq=0;
-  const esc=s=>String(s??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
+  const esc=s=>String(s??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt',"'":'&#39;','"':'&quot;'}[c]));
   const money=n=>Number(n||0).toLocaleString('cs-CZ',{maximumFractionDigits:0})+' Kč';
   const normalize=s=>String(s||'').toLocaleLowerCase('cs-CZ').normalize('NFD').replace(/[\u0300-\u036f]/g,'');
   const typeLabel=t=>String(t||'').toLowerCase()==='programová'?'dotační řízení':(t||'dotační řízení');
@@ -53,7 +53,7 @@
           <div><small>Příjemců</small><strong>${recipients.size.toLocaleString('cs-CZ')}</strong><span>organizací a dalších příjemců</span></div>
           <div><small>Schválená částka${summaryYear?` · ${summaryYear}`:''}</small><strong>${money(total)}</strong><span>${summaryYear?`celkem schváleno v roce ${summaryYear}`:'celkem schváleno'}</span></div>
         </section>
-        <div class="data-note grant-note"><b>Pracovní dataset.</b> Přehled nyní postupně doplňujeme o sociální a individuální dotace i další historické ročníky. Nezahrnujeme dotace, kde je MČ Praha 8 příjemcem prostředků od hlavního města Prahy nebo jiného poskytovatele.</div>
+        <div class="data-note grant-note"><b>Pracovní dataset.</b> Přehled obsahuje dotační řízení v oblasti kultury, volnočasových aktivit, sportovní výchovy mládeže a sociální oblasti. Individuální dotace z usnesení Rady zařazujeme jen tehdy, když lze bezpečně určit příjemce i částku. Nezahrnujeme dotace, kde je MČ Praha 8 příjemcem prostředků od hlavního města Prahy nebo jiného poskytovatele. Postupně doplňujeme další historické ročníky.</div>
         <section class="section grant-list-section">
           <div class="grant-toolbar">
             <div><div class="kicker">Přehled</div><h2>Poskytnuté dotace</h2></div>
