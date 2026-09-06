@@ -1,0 +1,109 @@
+name: "💶 Dotace – týdenní aktualizace"
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Pondělí 05:37 UTC = 07:37 v Praze v letním čase.
+    # Běží až po denní a běžné týdenní synchronizaci.
+    - cron: "37 5 * * 1"
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/grants-sync.yml"
+      - "scripts/sync-grants.py"
+      - "scripts/sync-grants-history.py"
+      - "scripts/sync-grants-archive.py"
+      - "scripts/sync-grants-individual.py"
+      - "scripts/validate-grants.py"
+
+permissions:
+  contents: write
+
+# Stejný zámek jako ostatní datové workflow: nikdy dva zápisy do data/ současně.
+concurrency:
+  group: scheduled-data-sync
+  cancel-in-progress: false
+
+jobs:
+  grants:
+    name: "Aktualizovat dotace a granty"
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: "Načíst repozitář"
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: "Nainstalovat podporu starých grantových formátů"
+        run: |
+          set -euo pipefail
+          python3 -m pip install --disable-pip-version-check xlrd==2.0.2
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq antiword
+
+      - name: "Ověřit syntaxi grantových importérů"
+        run: |
+          python3 -m py_compile \
+            scripts/sync-grants.py \
+            scripts/sync-grants-history.py \
+            scripts/sync-grants-archive.py \
+            scripts/sync-grants-individual.py \
+            scripts/validate-grants.py
+
+      - name: "Spustit kompletní grantový pipeline"
+        run: npm run sync:grants
+
+      - name: "Ověřit výsledný JSON"
+        run: |
+          python3 - <<'PY'
+          import json
+          p=json.load(open('data/dotace.json',encoding='utf-8'))
+          assert isinstance(p.get('grants'),list)
+          assert p.get('meta',{}).get('records')==len(p['grants'])
+          print('Dotace:',len(p['grants']))
+          print('Roky:',p.get('meta',{}).get('years'))
+          print('Oblasti:',p.get('meta',{}).get('areas'))
+          print('Archiv:',p.get('meta',{}).get('archiveLoadedKeys',[]))
+          print('Individuální:',p.get('meta',{}).get('individualRows',0),'bezpečně vytěžených')
+          PY
+
+      - name: "Zjistit změny"
+        id: changes
+        run: |
+          if git diff --quiet -- data/; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            git diff --stat -- data/
+          fi
+
+      - name: "Uložit ověřená data"
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          set -euo pipefail
+          git config user.name "Praha 8 v přehledech – automat"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/dotace.json data/grants-ares-cache.json
+          git commit -m "Týdenní aktualizace dotací"
+          for attempt in 1 2 3; do
+            git pull --rebase origin main
+            if git push origin HEAD:main; then exit 0; fi
+            if [ "$attempt" -lt 3 ]; then sleep 5; fi
+          done
+          exit 1
+
+      - name: "Souhrn"
+        if: always()
+        run: |
+          if [ "${{ job.status }}" != "success" ]; then
+            echo "## ❌ Aktualizace dotací selhala" >> "$GITHUB_STEP_SUMMARY"
+            echo "Produkční dotace nebyly nahrazeny neověřenými daty. Ostatní denní a týdenní synchronizace jsou na tomto workflow nezávislé." >> "$GITHUB_STEP_SUMMARY"
+          elif [ "${{ steps.changes.outputs.changed }}" = "true" ]; then
+            echo "## ✅ Dotace byly aktualizovány" >> "$GITHUB_STEP_SUMMARY"
+            echo "Nový dataset prošel QA a byl uložen do main." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "## ✅ Kontrola dotací dokončena" >> "$GITHUB_STEP_SUMMARY"
+            echo "Dataset prošel QA, ale nebylo co měnit." >> "$GITHUB_STEP_SUMMARY"
+          fi
