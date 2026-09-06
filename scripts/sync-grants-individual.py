@@ -38,7 +38,9 @@ def read_json(path,fallback):
 def clean_name(name):
   name=norm(name).strip(' ,.;:-"')
   name=re.sub(r'^(?:a|s|mezi|organizací|organizaci|organizace|spolkem|spolek|společností|společnosti)\s+','',name,flags=re.I)
-  name=re.split(r'\s*,\s*(?:se sídlem|se sidlem|sídlo|sidlo|IČO|IČ|ICO|zastoupen|jako\s+"?obdarovan)\b',name,maxsplit=1,flags=re.I)[0]
+  # Starší usnesení často píší IČ přímo za názvem bez čárky, např.
+  # „... (církevní organizace) IČ: 49371480“. IČ do názvu příjemce nepatří.
+  name=re.split(r'\s*(?:,\s*)?(?:se sídlem|se sidlem|sídlo|sidlo|IČO|IČ|ICO|zastoupen|jako\s+"?obdarovan)\b',name,maxsplit=1,flags=re.I)[0]
   return norm(name).strip(' ,.;:-"')
 
 def candidate(r):
@@ -130,9 +132,16 @@ def extract_amount(text):
 
 def recipient_ico(text,recipient):
   if not recipient:return ''
-  q=norm(text);needle=norm(recipient)[:40]
+  q=norm(text);needle=norm(recipient)
   pos=q.lower().find(needle.lower())
   if pos<0:return ''
+  # Nejprve vezmeme IČ bezprostředně za názvem obdarovaného. Tím zabráníme,
+  # aby se z širšího bloku omylem vzalo IČ dárce nebo jiné smluvní strany.
+  tail=q[pos+len(needle):pos+len(needle)+120]
+  m=re.search(r'^\s*[,;]?\s*(?:IČO|IČ|ICO)\s*[:.]?\s*(\d{8})\b',tail,re.I)
+  if m:
+    ico=base.norm_ico(m.group(1))
+    if ico and ico!='00063797':return ico
   window=q[pos:pos+450]
   ico=base.extract_ico(window)
   # IČ MČ Praha 8 nesmí být omylem přiřazeno obdarovanému.
