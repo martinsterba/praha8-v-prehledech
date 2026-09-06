@@ -6,21 +6,6 @@ on:
     # Pondělí 05:37 UTC = 07:37 v Praze v letním čase.
     # Běží až po denní a běžné týdenní synchronizaci.
     - cron: "37 5 * * 1"
-  push:
-    branches: [main]
-    paths:
-      - ".github/workflows/grants-sync.yml"
-      - "scripts/sync-grants.py"
-      - "scripts/sync-grants-current-safe.py"
-      - "scripts/sync-grants-history.py"
-      - "scripts/sync-grants-social-modern.py"
-      - "scripts/sync-grants-resolution-programs.py"
-      - "scripts/sync-grants-archive.py"
-      - "scripts/sync-grants-archive-social-legacy.py"
-      - "scripts/sync-grants-sport-legacy.py"
-      - "scripts/sync-grants-archive-culture.py"
-      - "scripts/sync-grants-individual.py"
-      - "scripts/validate-grants.py"
 
 permissions:
   contents: write
