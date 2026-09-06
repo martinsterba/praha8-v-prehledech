@@ -95,7 +95,11 @@ def _text_rows(text):
   for raw in text.splitlines():
     line=raw.strip()
     if not line:continue
-    cells=[base.norm_text(x) for x in re.split(r'\t+|\s{2,}',line) if base.norm_text(x)]
+    # antiword/catdoc u některých historických tabulek převádí svislé hrany
+    # buněk na znak |. Ten je oddělovač tabulky, ne hodnota příjemce. Pokud ho
+    # ponecháme jako samostatnou buňku, posunou se sloupce a vznikají falešní
+    # příjemci pojmenovaní jen „|“.
+    cells=[base.norm_text(x) for x in re.split(r'\t+|\s{2,}|\s*\|\s*',line) if base.norm_text(x)]
     if cells:rows.append(cells)
   return rows
 
@@ -122,6 +126,19 @@ def doc_rows(blob):
     try:os.unlink(path)
     except OSError:pass
 
+def invalid_recipient_name(name):
+  value=base.norm_text(name).strip(' |\t')
+  if not value or not any(ch.isalnum() for ch in value):return True
+  low=value.casefold().strip(' .,:;|-–—')
+  exact={
+    'celkem','součet','soucet','celkem přiděleno','celkem prideleno',
+    'součet všech projektů','soucet vsech projektu','součet projektů','soucet projektu',
+    'žadatel','zadatel','příjemce','prijemce','organizace','název organizace','nazev organizace'
+  }
+  if low in exact:return True
+  if low.startswith('součet všech projektů') or low.startswith('soucet vsech projektu'):return True
+  return False
+
 def flexible_rows(source,file_url,rows,parser):
   hi=base.find_header(rows)
   if hi is None:
@@ -143,9 +160,9 @@ def flexible_rows(source,file_url,rows,parser):
   for row in rows[hi+1:]:
     get=lambda idx: row[idx] if idx is not None and idx<len(row) else ''
     name,ico_value=base.split_recipient_ico(get(recipient),get(ico))
+    name=base.norm_text(name).strip(' |\t')
     amount=base.money(get(approved))
-    if not name or amount is None or amount<=0:continue
-    if base.norm_text(name).lower() in {'celkem','součet','soucet','celkem přiděleno','celkem prideleno'}:continue
+    if invalid_recipient_name(name) or amount is None or amount<=0:continue
     grants.append({
       'year':source['year'],'area':source['area'],'type':'dotační řízení',
       'recipient':name,'ico':ico_value,'project':base.norm_text(get(project)),
