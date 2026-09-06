@@ -84,7 +84,7 @@
         }
         const epoch=String(Number.isFinite(updatedEpoch)?updatedEpoch:0);
         if(card.dataset.sourceUpdated!==epoch)card.dataset.sourceUpdated=epoch;
-        const html=`<div class="status-card-main"><div class="status-card-title">Dotace a granty</div><div class="status-card-meta">Aktualizace 1× týdně (vždy v pondělí) | poslední proběhla ${updated}</div></div><div class="status-card-number">${count?count.toLocaleString('cs-CZ'):'—'}</div><div class="status-card-state"><span class="data-status good">data načtena</span></div>`;
+        const html=`<div class="status-card-main"><div class="status-card-title">Dotace a granty</div><div class="status-card-meta">Aktualizace 1× týdně (vždy v pondělí) | poslední proběhla ${updated}</div></div><div class="status-card-number">${count?count.toLocaleString('cs-CZ'):'—'}</div><div class="status-card-state"><span class="data-status ok">data načtena</span></div>`;
         if(created||card.innerHTML!==html)card.innerHTML=html;
         sortStatusCards(list);
       }
