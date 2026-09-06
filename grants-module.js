@@ -8,7 +8,12 @@
   const money=n=>Number(n||0).toLocaleString('cs-CZ',{maximumFractionDigits:0})+' Kč';
   const normalize=s=>String(s||'').toLocaleLowerCase('cs-CZ').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/\s+/g,' ').trim();
   const digits=s=>String(s||'').replace(/\D/g,'');
-  const typeLabel=t=>String(t||'').toLowerCase()==='programová'?'dotační řízení':(t||'dotační řízení');
+  const typeLabel=t=>{
+    const value=String(t||'').toLocaleLowerCase('cs-CZ');
+    if(value==='programová'||value==='programova'||value==='dotační řízení'||value==='dotacni rizeni')return 'dotace';
+    if(value.includes('individuální')||value.includes('individualni')||value.includes('mimořád'))return 'mimořádná dotace';
+    return t||'dotace';
+  };
   const loadGrants=()=>grantsPromise||(grantsPromise=fetch(`data/dotace.json?v=${Date.now()}`,{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json()}));
 
   function isValidGrant(g){
@@ -114,7 +119,7 @@
           <div><small>Příjemců</small><strong>${recipients.size.toLocaleString('cs-CZ')}</strong><span>organizací a dalších příjemců</span></div>
           <div><small>Schválená částka${summaryYear?` · ${summaryYear}`:''}</small><strong>${money(summaryTotal)}</strong><span>${summaryYear?`celkem schváleno v roce ${summaryYear}`:'celkem schváleno'}</span></div>
         </section>
-        <div class="data-note grant-note"><b>O datech.</b> Přehled spojuje zveřejněná dotační řízení MČ Praha 8 a jejich historické výsledky. Starší ročníky zachovávají tehdejší názvy a členění dotačních oblastí. Do databáze zařazujeme jen záznamy, u nichž lze z oficiálního zdroje bezpečně určit příjemce a schválenou částku; nezahrnujeme případy, kdy je MČ Praha 8 sama příjemcem prostředků od jiného poskytovatele.</div>
+        <div class="data-note grant-note"><b>O datech.</b> Přehled spojuje zveřejněné dotace MČ Praha 8 a jejich historické výsledky. Jako <b>mimořádné dotace</b> označujeme peněžní dary schválené formou darovací smlouvy, v níž je MČ Praha 8 dárcem. Starší ročníky zachovávají tehdejší názvy a členění oblastí. Do databáze zařazujeme jen záznamy, u nichž lze z oficiálního zdroje bezpečně určit příjemce a schválenou částku; nezahrnujeme případy, kdy je MČ Praha 8 sama příjemcem prostředků od jiného poskytovatele.</div>
         ${topValue.length?`<section class="section recipient-section grant-top-section"><div class="section-head"><div><div class="kicker">Statistika</div><h2>TOP 10 příjemců dotací</h2></div><p>Organizace s nejvyšším součtem schválených dotací za dostupnou historii ${historyLabel}. Záznamy spojujeme primárně podle IČ.</p></div><div class="partner-tabs"><button class="partner-tab active" data-grant-ranking="value">Podle výše dotací</button><button class="partner-tab" data-grant-ranking="count">Podle počtu dotací</button></div><div id="grantTopRanking" class="partner-ranking">${buildTopRecipients(topValue)}</div></section>`:''}
         <section class="section grant-list-section">
           <div class="grant-toolbar"><div><div class="kicker">Přehled</div><h2>Poskytnuté dotace</h2></div><div class="grant-filters"><input id="grantSearch" type="search" placeholder="Hledat příjemce nebo IČ…"><select id="grantArea"><option value="">Všechny oblasti</option>${areas.map(a=>`<option value="${esc(a)}">${esc(a)}</option>`).join('')}</select><select id="grantYear"><option value="">Všechny roky</option>${years.map(y=>`<option value="${y}">${y}</option>`).join('')}</select></div></div>
@@ -198,7 +203,7 @@
     const sourceGrid=mcSource?.querySelector('.source-grid');
     if(sourceGrid&&!sourceGrid.querySelector('[data-grants-source-box]')){
       const box=document.createElement('div');box.className='sourcebox';box.dataset.grantsSourceBox='true';
-      box.innerHTML='<h3>Dotace a granty</h3><p>Poskytnuté dotace a granty městské části Praha 8. Čerpáme z oficiálního rozcestníku Granty a dotace, historických výsledkových souborů a příloh usnesení.</p><code>https://www.praha8.cz/Granty-a-dotace.html</code>';
+      box.innerHTML='<h3>Dotace a granty</h3><p>Poskytnuté dotace MČ Praha 8. Čerpáme z oficiálního rozcestníku Granty a dotace, historických výsledkových souborů a usnesení. Mimořádné dotace v přehledu tvoří peněžní dary z darovacích smluv, kde je MČ Praha 8 dárcem.</p><code>https://www.praha8.cz/Granty-a-dotace.html</code>';
       const next=[...sourceGrid.children].find(x=>(x.querySelector('h3')?.textContent||'').localeCompare('Dotace a granty','cs')>0);
       if(next)sourceGrid.insertBefore(box,next);else sourceGrid.append(box);
     }
