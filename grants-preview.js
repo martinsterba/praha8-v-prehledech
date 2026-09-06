@@ -2,7 +2,7 @@
   const route='#/dotace';
   const perPage=25;
   let renderSeq=0;
-  const esc=s=>String(s??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt',"'":'&#39;','"':'&quot;'}[c]));
+  const esc=s=>String(s??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
   const money=n=>Number(n||0).toLocaleString('cs-CZ',{maximumFractionDigits:0})+' Kč';
   const normalize=s=>String(s||'').toLocaleLowerCase('cs-CZ').normalize('NFD').replace(/[\u0300-\u036f]/g,'');
   const typeLabel=t=>String(t||'').toLowerCase()==='programová'?'dotační řízení':(t||'dotační řízení');
@@ -42,8 +42,9 @@
       const areas=[...new Set(grants.map(g=>g.area).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'cs'));
       const years=[...new Set(grants.map(g=>Number(g.year)).filter(Boolean))].sort((a,b)=>b-a);
       const recipients=new Set(grants.map(g=>g.ico?`ico:${g.ico}`:`name:${normalize(g.recipient)}`));
-      const total=grants.reduce((s,g)=>s+Number(g.approvedCzk||0),0);
-      const summaryYear=years.length===1?years[0]:null;
+      const summaryYear=years[0]||null;
+      const summaryRows=summaryYear?grants.filter(g=>Number(g.year)===summaryYear):grants;
+      const summaryTotal=summaryRows.reduce((s,g)=>s+Number(g.approvedCzk||0),0);
       let page=1;
 
       app.innerHTML=`<div class="wrap grants-preview">
@@ -51,13 +52,13 @@
         <section class="entity-overview-stats">
           <div><small>Dotací v databázi</small><strong>${grants.length.toLocaleString('cs-CZ')}</strong><span>načtených záznamů</span></div>
           <div><small>Příjemců</small><strong>${recipients.size.toLocaleString('cs-CZ')}</strong><span>organizací a dalších příjemců</span></div>
-          <div><small>Schválená částka${summaryYear?` · ${summaryYear}`:''}</small><strong>${money(total)}</strong><span>${summaryYear?`celkem schváleno v roce ${summaryYear}`:'celkem schváleno'}</span></div>
+          <div><small>Schválená částka${summaryYear?` · ${summaryYear}`:''}</small><strong>${money(summaryTotal)}</strong><span>${summaryYear?`celkem schváleno v roce ${summaryYear}`:'celkem schváleno'}</span></div>
         </section>
         <div class="data-note grant-note"><b>Pracovní dataset.</b> Přehled obsahuje dotační řízení v oblasti kultury, volnočasových aktivit, sportovní výchovy mládeže a sociální oblasti. Individuální dotace z usnesení Rady zařazujeme jen tehdy, když lze bezpečně určit příjemce i částku. Nezahrnujeme dotace, kde je MČ Praha 8 příjemcem prostředků od hlavního města Prahy nebo jiného poskytovatele. Postupně doplňujeme další historické ročníky.</div>
         <section class="section grant-list-section">
           <div class="grant-toolbar">
             <div><div class="kicker">Přehled</div><h2>Poskytnuté dotace</h2></div>
-            <div class="grant-filters"><input id="grantSearch" type="search" placeholder="Hledat příjemce nebo IČ…"><select id="grantArea"><option value="">Všechny oblasti</option>${areas.map(a=>`<option value="${esc(a)}">${esc(a)}</option>`).join('')}</select></div>
+            <div class="grant-filters"><input id="grantSearch" type="search" placeholder="Hledat příjemce nebo IČ…"><select id="grantArea"><option value="">Všechny oblasti</option>${areas.map(a=>`<option value="${esc(a)}">${esc(a)}</option>`).join('')}</select><select id="grantYear"><option value="">Všechny roky</option>${years.map(y=>`<option value="${y}">${y}</option>`).join('')}</select></div>
           </div>
           <div id="grantResultCount" class="updated"></div>
           <div class="grant-list-head"><span>Příjemce</span><span>Oblast</span><span>Rok</span><span>Částka</span><span>Zdroj</span></div>
@@ -69,7 +70,8 @@
       const draw=()=>{
         const q=normalize(app.querySelector('#grantSearch')?.value||'');
         const area=app.querySelector('#grantArea')?.value||'';
-        const rows=grants.filter(g=>(!q||normalize([g.recipient,g.ico,g.area,g.project,typeLabel(g.type),g.year].join(' ')).includes(q))&&(!area||g.area===area));
+        const year=app.querySelector('#grantYear')?.value||'';
+        const rows=grants.filter(g=>(!q||normalize([g.recipient,g.ico,g.area,g.project,typeLabel(g.type),g.year].join(' ')).includes(q))&&(!area||g.area===area)&&(!year||String(g.year)===year));
         const pages=Math.max(1,Math.ceil(rows.length/perPage));
         page=Math.min(page,pages);
         const shown=rows.slice((page-1)*perPage,page*perPage);
@@ -79,7 +81,7 @@
         app.querySelectorAll('#grantPager button[data-page]').forEach(b=>b.onclick=()=>{page=Number(b.dataset.page);draw();app.querySelector('#grantResultCount')?.scrollIntoView({behavior:'smooth',block:'center'})});
       };
 
-      app.querySelectorAll('#grantSearch,#grantArea').forEach(e=>e.addEventListener('input',()=>{page=1;draw()}));
+      app.querySelectorAll('#grantSearch,#grantArea,#grantYear').forEach(e=>e.addEventListener('input',()=>{page=1;draw()}));
       draw();
       app.focus({preventScroll:true});
     }catch(error){
