@@ -9,7 +9,6 @@ mají tyto jasně označené výsledkové dokumenty vlastní úzký importer.
 import importlib.util,json,re
 from datetime import datetime,timezone
 from pathlib import Path
-from urllib.parse import urljoin
 
 ROOT=Path(__file__).resolve().parent.parent
 ARCHIVE_SCRIPT=ROOT/'scripts'/'sync-grants-archive.py'
@@ -36,10 +35,8 @@ def result_files(src):
     ext='doc' if '.doc' in low and '.docx' not in low else ('docx' if '.docx' in low else ('xls' if '.xls' in low and '.xlsx' not in low else ('xlsx' if '.xlsx' in low else None)))
     if not ext:continue
     result=('přehled podpořen' in low or 'prehled podporen' in low or 'kompletní seznam přidělen' in low or 'kompletni seznam pridelen' in low)
-    # Rok 2008 má výsledkové soubory na stránce historicky pojmenované jen „granty 1“ a „granty 2“.
     if src['year']==2008 and re.search(r'\bgranty\s*[12]\b',low):result=True
     if result:out.append((href,label,ext))
-  # Deduplikace URL při případných www/m přesměrováních.
   seen=set();unique=[]
   for item in out:
     if item[0] in seen:continue
@@ -54,7 +51,8 @@ def main():
   for src in SOURCES:
     files=result_files(src)
     if not files:
-      warnings.append(f"Archiv Sociální oblast {src['year']}: nenalezen oficiální výsledkový soubor")
+      warning=f"Archiv Sociální oblast {src['year']}: nenalezen oficiální výsledkový soubor"
+      warnings.append(warning);print('⚠️',warning)
       continue
     rows=[];qas=[]
     for href,label,ext in files:
@@ -63,7 +61,15 @@ def main():
         found,qa=arc.parse(source,href,ext)
         rows.extend(found);qas.append({**qa,'file':href,'label':label})
       except Exception as exc:
-        warnings.append(f"Archiv Sociální oblast {src['year']} / {label}: {exc}")
+        warning=f"Archiv Sociální oblast {src['year']} / {label}: {exc}"
+        warnings.append(warning);print('⚠️',warning)
+        # Dočasná diagnostika pouze pro chybějící ročník 2011; nevstupuje do datasetu.
+        if src['year']==2011 and ext=='doc':
+          try:
+            sample=arc.doc_rows(base.fetch_bytes(href))[:25]
+            print('🔎 2011 DOC sample:',json.dumps(sample,ensure_ascii=False))
+          except Exception as debug_exc:
+            print('🔎 2011 DOC sample nelze načíst:',debug_exc)
     rows=dedupe(rows)
     if not rows:continue
     loaded.extend(rows);loaded_keys.add((src['year'],'Sociální oblast'))
