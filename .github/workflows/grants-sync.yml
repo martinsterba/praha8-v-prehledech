@@ -14,6 +14,7 @@ on:
       - "scripts/sync-grants-current-safe.py"
       - "scripts/sync-grants-history.py"
       - "scripts/sync-grants-archive.py"
+      - "scripts/sync-grants-archive-social-legacy.py"
       - "scripts/sync-grants-archive-culture.py"
       - "scripts/sync-grants-individual.py"
       - "scripts/validate-grants.py"
@@ -21,7 +22,6 @@ on:
 permissions:
   contents: write
 
-# Stejný zámek jako ostatní datové workflow: nikdy dva zápisy do data/ současně.
 concurrency:
   group: scheduled-data-sync
   cancel-in-progress: false
@@ -52,6 +52,7 @@ jobs:
             scripts/sync-grants-current-safe.py \
             scripts/sync-grants-history.py \
             scripts/sync-grants-archive.py \
+            scripts/sync-grants-archive-social-legacy.py \
             scripts/sync-grants-archive-culture.py \
             scripts/sync-grants-individual.py \
             scripts/validate-grants.py
@@ -70,6 +71,7 @@ jobs:
           print('Roky:',p.get('meta',{}).get('years'))
           print('Oblasti:',p.get('meta',{}).get('areas'))
           print('Archiv:',p.get('meta',{}).get('archiveLoadedKeys',[]))
+          print('Starý sociální archiv:',p.get('meta',{}).get('legacySocialLoadedYears',[]))
           print('Archiv kultura:',p.get('meta',{}).get('archiveCultureLoadedKeys',[]))
           print('Individuální:',p.get('meta',{}).get('individualRows',0),'bezpečně vytěžených')
           PY
