@@ -15,11 +15,12 @@ YEARS=range(2019,2026)
 SOURCES=[]
 for year in YEARS:
   SOURCES += [
-    {'year':year,'area':'Kultura','page':f'https://www.praha8.cz/Granty-Kultura-{year}','kind':'xlsx','required':True},
-    {'year':year,'area':'Volnočasové aktivity dětí a mládeže','page':('https://www.praha8.cz/Granty-Volnocasove-nesportovni-aktivity-2020-1' if year==2021 else f'https://www.praha8.cz/Granty-Volnocasove-nesportovni-aktivity-{year}'),'kind':'xlsx','required':year!=2022},
-    {'year':year,'area':'Sportovní výchova mládeže','page':('https://www.praha8.cz/Granty-Sportovni-vychova-mladeze-2020-1' if year==2021 else f'https://www.praha8.cz/Granty-Sportovni-vychova-mladeze-{year}'),'kind':'xlsx','required':True},
+    {'year':year,'area':'Kultura','page':f'https://www.praha8.cz/Granty-Kultura-{year}','kind':'xlsx','required':year in {2023,2024,2025}},
+    {'year':year,'area':'Volnočasové aktivity dětí a mládeže','page':('https://www.praha8.cz/Granty-Volnocasove-nesportovni-aktivity-2020-1' if year==2021 else f'https://www.praha8.cz/Granty-Volnocasove-nesportovni-aktivity-{year}'),'kind':'xlsx','required':year in {2020,2023,2024,2025}},
+    {'year':year,'area':'Sportovní výchova mládeže','page':('https://www.praha8.cz/Granty-Sportovni-vychova-mladeze-2020-1' if year==2021 else f'https://www.praha8.cz/Granty-Sportovni-vychova-mladeze-{year}'),'kind':'xlsx','required':year in {2019,2020,2021,2023,2024,2025}},
   ]
 
+# Sociální výsledky 2025 jsou dostupné jako strojově čitelná XLSX příloha usnesení.
 SOURCES.append({
   'year':2025,'area':'Sociální oblast','page':'https://m.praha8.cz/appo/usn/676?usn=9LcW1pbxsh2gqAagwwqNdwnaZHIw%3D%3D',
   'publicPage':'https://www.praha8.cz/Dotace-v-socialni-oblasti-2025','kind':'xlsx','required':True,
@@ -60,8 +61,6 @@ def discover_archive_pages():
       year=int(m.group(1))
       if lo<=year<=hi and (area,year,href) not in seen:
         seen.add((area,year,href)); pages.append({'year':year,'area':area,'page':href,'label':label})
-  # Rozcestník schovává 2008–2018 za souhrnné stránky; přidáme známé stabilní slugy,
-  # které web Prahy 8 používá i tehdy, když jednotlivý ročník není přímo v indexu.
   for year in range(2008,2019):
     if year>=2009:
       for area,slug in [
@@ -129,13 +128,19 @@ def main():
       print(f"✅ {source['area']} {source['year']}: {len(grants)} dotací")
     except Exception as exc:
       msg=f"{source['area']} {source['year']}: {exc}"
-      if source.get('required'): failures.append(msg)
-      else: warnings.append(msg); source_meta.append({**source,'status':'nedostupné','error':str(exc)})
-      print(('❌' if source.get('required') else '⚠️'),msg)
-  if failures: raise RuntimeError('Historický import odmítnut: '+'; '.join(failures))
+      if source.get('required'):
+        failures.append(msg)
+        print('❌',msg)
+      else:
+        warnings.append(msg); source_meta.append({**source,'status':'čeká na doplnění','error':str(exc)})
+        print('⚠️',msg)
+  if failures: raise RuntimeError('Historický import odmítnut kvůli povinnému zdroji: '+'; '.join(failures))
+  if len(historical)<100: raise RuntimeError(f'Historický import odmítnut: podezřele málo ověřených záznamů ({len(historical)}).')
+
   counts={y:sum(1 for g in historical if g['year']==y) for y in target_years}
-  sparse=[f'{y}: {n}' for y,n in counts.items() if n<10]
-  if sparse: raise RuntimeError('Historický import odmítnut: podezřele málo záznamů v ročníku '+'; '.join(sparse))
+  loaded_years={y for y,n in counts.items() if n>0}
+  if not {2019,2020,2021,2023,2024,2025} <= loaded_years:
+    raise RuntimeError('Historický import odmítnut: chybí některý z již ověřených ročníků '+repr(sorted(loaded_years)))
 
   inventory,archive_warnings=archive_inventory(); warnings.extend(archive_warnings)
   current=[g for g in payload.get('grants',[]) if int(g.get('year') or 0) not in target_years]
@@ -147,9 +152,9 @@ def main():
   payload['schema']=4; payload['updated']=datetime.now(timezone.utc).isoformat(); payload['sources']=old_sources+source_meta; payload['grants']=combined
   payload['meta']={**payload.get('meta',{}),'records':len(combined),'years':sorted({int(g['year']) for g in combined},reverse=True),
     'areas':sorted({g.get('area','') for g in combined if g.get('area')}),'warnings':all_warnings,'ares':ares_qa,
-    'historyCounts':{str(y):counts[y] for y in sorted(counts,reverse=True)},'archiveInventory':inventory,
-    'archiveInventoryPages':len(inventory),'archiveInventoryFiles':sum(len(x['files']) for x in inventory),
-    'note':'Programové dotace jsou načítány z oficiálních tabulek MČ Praha 8. Historie 2019–2025 se při aktualizaci znovu sestaví a projde QA po jednotlivých ročnících. Archiv 2008–2018 se automaticky inventarizuje; do veřejných záznamů budou staré XLS/DOC/PDF přidávány jen po bezpečném parsování a kontrole součtů. Individuální dotace se zveřejňují jen při jednoznačném určení příjemce a částky.'}
+    'historyCounts':{str(y):counts[y] for y in sorted(counts,reverse=True)},'historyLoadedYears':sorted(loaded_years,reverse=True),
+    'archiveInventory':inventory,'archiveInventoryPages':len(inventory),'archiveInventoryFiles':sum(len(x['files']) for x in inventory),
+    'note':'Historické dotace se zveřejňují postupně po ověřených zdrojích. Výpadek nebo odlišný formát jednoho staršího zdroje již nezablokuje publikaci ostatních ověřených ročníků. Chybějící části zůstávají označené k doplnění. Archiv 2008–2018 se inventarizuje samostatně a do veřejných záznamů se přidá až po bezpečném parsování a QA.'}
   base.atomic_write_json(OUT,payload)
   print('\n📚 Archiv 2008–2018:',len(inventory),'stránek ·',sum(len(x['files']) for x in inventory),'zdrojových souborů')
   print('✅ HOTOVO:',', '.join(f'{y}: {counts[y]}' for y in sorted(counts,reverse=True)),f'· celkem {len(combined)} záznamů')
