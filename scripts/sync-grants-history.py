@@ -98,15 +98,17 @@ def parse_rows(source,file_url,rows,parser_name):
   if hi is None:
     for i,row in enumerate(rows[:30]):
       t=' | '.join(base.norm_text(x).lower() for x in row)
-      if any(k in t for k in ['žadatel','zadatel','příjemce','prijemce','organizace']) and any(k in t for k in ['částka','castka','dotace','schválen','schvalen','přidělen','pridelen']): hi=i; break
+      social_header=('název organizace' in t or 'nazev organizace' in t) and ('návrh dk' in t or 'navrh dk' in t)
+      generic_header=any(k in t for k in ['žadatel','zadatel','příjemce','prijemce','organizace']) and any(k in t for k in ['částka','castka','dotace','schválen','schvalen','přidělen','pridelen'])
+      if social_header or generic_header: hi=i; break
   if hi is None: raise RuntimeError('nenalezeno záhlaví tabulky')
   header=[base.norm_text(x).lower() for x in rows[hi]]; recipient=approved=ico=project=requested=None
   for i,x in enumerate(header):
-    if recipient is None and any(k in x for k in ['žadatel','zadatel','název klubu','nazev klubu','organizace','příjemce','prijemce','název žadatele','nazev zadatele','subjekt']): recipient=i
+    if recipient is None and any(k in x for k in ['žadatel','zadatel','název klubu','nazev klubu','organizace','příjemce','prijemce','název žadatele','nazev zadatele','název organizace','nazev organizace','subjekt']): recipient=i
     if ico is None and ('ič' in x or 'ico' in x): ico=i
     if project is None and any(k in x for k in ['projekt','účel','ucel','název akce','nazev akce','záměr','zamer']): project=i
     if requested is None and ('požad' in x or 'pozad' in x): requested=i
-    if approved is None and any(k in x for k in ['schválen','schvalen','poskytnut','přidělen','pridelen','částka','castka','dotace','výše','vyse']): approved=i
+    if approved is None and any(k in x for k in ['schválen','schvalen','poskytnut','přidělen','pridelen','částka','castka','dotace','výše','vyse','návrh dk','navrh dk']): approved=i
   if recipient is None or approved is None: raise RuntimeError('parser nenašel příjemce/částku; záhlaví: '+repr(header))
   grants=[]
   for row in rows[hi+1:]:
@@ -166,7 +168,7 @@ def main():
   combined.sort(key=lambda x:(-int(x.get('year') or 0),x.get('area',''),x.get('recipient','').lower(),-(x.get('approvedCzk') or 0)))
   years=sorted({int(g['year']) for g in combined},reverse=True); counts={str(y):sum(1 for g in combined if int(g['year'])==y) for y in years}
   payload['schema']=7; payload['updated']=datetime.now(timezone.utc).isoformat(); payload['sources']=old_sources+source_meta; payload['grants']=combined
-  payload['meta']={**payload.get('meta',{}),'records':len(combined),'years':years,'areas':sorted({g.get('area','') for g in combined if g.get('area')}),'warnings':all_warnings,'ares':ares_qa,'historyCounts':counts,'historyLoadedKeys':[f'{y}|{a}' for y,a in sorted(loaded_keys,key=lambda x:(-x[0],x[1]))],'note':'Historické dotace se načítají z oficiálního rozcestníku Granty a dotace a z výsledkových příloh. Pro dohledání starších příloh usnesení lze použít technický mirror úředních záznamů; každý zveřejněný záznam ale odkazuje na primární zdroj MČ Praha 8. Neúspěch jednoho starého formátu nemaže dříve publikovaná data.'}
+  payload['meta']={**payload.get('meta',{}),'records':len(combined),'years':years,'areas':sorted({g.get('area','') for g in combined if g.get('area')}),'warnings':all_warnings,'ares':ares_qa,'historyCounts':counts,'historyLoadedKeys':[f'{y}|{a}' for y,a in sorted(loaded_keys,key=lambda x:(-x[0],x[1]))],'note':'Historické dotace se načítají z oficiálního rozcestníku Granty a dotace a z výsledkových příloh. Každý zveřejněný záznam odkazuje na primární zdroj MČ Praha 8. Neúspěch jednoho starého formátu nemaže dříve publikovaná data.'}
   base.atomic_write_json(OUT,payload)
   print('\n✅ HOTOVO:',len(combined),'záznamů; roky',years)
 
