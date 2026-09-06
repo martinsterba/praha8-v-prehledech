@@ -14,7 +14,7 @@ jobs:
       - name: Vypsat odkazy 2022 a starší
         run: |
           python3 - <<'PY'
-          import urllib.request
+          import re,urllib.request
           from html.parser import HTMLParser
           from urllib.parse import urljoin
           class P(HTMLParser):
@@ -45,5 +45,9 @@ jobs:
                 full=urljoin(url,href)
                 low=(text+' '+full).lower()
                 if any(x in low for x in ['xlsx','xls','pdf','docx','výsled','vysled','příloh','priloh']): print(text,'=>',full)
+              if 'praha8.online' in url:
+                for m in re.finditer(r'(?i)\.xlsx',html):
+                  a=max(0,m.start()-500); b=min(len(html),m.end()+500)
+                  print('RAW-XLSX:',re.sub(r'\s+',' ',html[a:b]))
             except Exception as e: print('ERROR',repr(e))
           PY
