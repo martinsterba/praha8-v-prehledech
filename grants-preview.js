@@ -48,12 +48,12 @@
 
       app.innerHTML=`<div class="wrap grants-preview">
         <div class="page-head grants-head"><div class="kicker">Finance</div><h1>Dotace a granty</h1><p>Přehled dotací poskytnutých městskou částí Praha 8 organizacím a dalším příjemcům. Každý záznam odkazuje na původní zdroj.</p></div>
-        <section class="stats compact-stats grants-stats">
-          <div class="stat"><strong>${grants.length.toLocaleString('cs-CZ')}</strong><span>načtených dotací</span></div>
-          <div class="stat"><strong>${recipients.size.toLocaleString('cs-CZ')}</strong><span>příjemců</span></div>
-          <div class="stat"><strong>${money(total)}</strong><span>${summaryYear?`celkem schváleno v roce ${summaryYear}`:'celkem schváleno'}</span></div>
+        <section class="grants-summary">
+          <div><small>Dotací v databázi</small><strong>${grants.length.toLocaleString('cs-CZ')}</strong><span>načtených záznamů</span></div>
+          <div><small>Příjemců</small><strong>${recipients.size.toLocaleString('cs-CZ')}</strong><span>organizací a dalších příjemců</span></div>
+          <div><small>Schválená částka${summaryYear?` · ${summaryYear}`:''}</small><strong>${money(total)}</strong><span>${summaryYear?`celkem schváleno v roce ${summaryYear}`:'celkem schváleno'}</span></div>
         </section>
-        <div class="notice news-window-notice grant-note"><b>Pracovní dataset.</b> Přehled nyní postupně doplňujeme o sociální a individuální dotace i další historické ročníky. Nezahrnujeme dotace, kde je MČ Praha 8 příjemcem prostředků od hlavního města Prahy nebo jiného poskytovatele.</div>
+        <div class="grant-note"><b>Pracovní dataset.</b> Přehled nyní postupně doplňujeme o sociální a individuální dotace i další historické ročníky. Nezahrnujeme dotace, kde je MČ Praha 8 příjemcem prostředků od hlavního města Prahy nebo jiného poskytovatele.</div>
         <section class="section grant-list-section">
           <div class="grant-toolbar">
             <div><div class="kicker">Přehled</div><h2>Poskytnuté dotace</h2></div>
