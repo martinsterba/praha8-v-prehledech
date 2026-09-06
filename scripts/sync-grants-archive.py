@@ -35,7 +35,6 @@ def candidates():
 def score_link(label,href):
   low=(label+' '+href).lower()
   ext=None
-  # Kontrolujeme delší přípony první, aby .xlsx nebylo zaměněno za .xls.
   for suffix,name in [('.xlsx','xlsx'),('.docx','docx'),('.xls','xls'),('.doc','doc')]:
     if suffix in low:
       ext=name;break
@@ -47,7 +46,6 @@ def score_link(label,href):
   if 'poskytnut' in low:score+=8
   if 'seznam' in low and ('grant' in low or 'dotac' in low):score+=7
   if 'grant' in low or 'dotac' in low:score+=2
-  # Staré stránky často používají obecné názvy typu „přidělené granty“.
   if score<8:return None
   return score,href,label,ext
 
@@ -63,7 +61,6 @@ def discover(source):
   if not ranked:return []
   ranked.sort(key=lambda x:x[0],reverse=True)
   best=ranked[0][0]
-  # Bereme jen stejně silné výsledkové soubory; tím nevytáhneme vedle výsledků např. formulář.
   return [(href,label,ext,page) for score,href,label,ext,page in ranked if score>=best-1]
 
 def docx_rows(blob):
@@ -93,29 +90,37 @@ def xls_rows(blob):
     if any(row):rows.append(row)
   return rows
 
-def doc_rows(blob):
-  # antiword je použit jen pro staré binární DOC. Výstup se následně ještě musí
-  # projít stejnou kontrolou záhlaví a minimálního počtu záznamů jako jiné formáty.
-  fd,path=tempfile.mkstemp(suffix='.doc')
-  try:
-    with os.fdopen(fd,'wb') as f:f.write(blob)
-    try:
-      proc=subprocess.run(['antiword','-w','0',path],capture_output=True,check=False,timeout=30)
-    except FileNotFoundError as exc:
-      raise RuntimeError('pro staré DOC chybí nástroj antiword') from exc
-    if proc.returncode!=0:raise RuntimeError('antiword nedokázal DOC bezpečně přečíst')
-    text=proc.stdout.decode('utf-8','replace')
-  finally:
-    try:os.unlink(path)
-    except OSError:pass
+def _text_rows(text):
   rows=[]
   for raw in text.splitlines():
     line=raw.strip()
     if not line:continue
-    # Wordové tabulky antiword typicky oddělí tabulátorem nebo více mezerami.
     cells=[base.norm_text(x) for x in re.split(r'\t+|\s{2,}',line) if base.norm_text(x)]
     if cells:rows.append(cells)
   return rows
+
+def doc_rows(blob):
+  # Některé staré soubory Prahy 8 mají příponu DOC, ale antiword je kvůli
+  # poškozené/nekonvenční OLE struktuře odmítne. Proto máme druhý, nezávislý
+  # fallback přes catdoc; teprve jeho text jde do stejného bezpečného parseru.
+  fd,path=tempfile.mkstemp(suffix='.doc')
+  try:
+    with os.fdopen(fd,'wb') as f:f.write(blob)
+    errors=[]
+    for command,encoding in [(['antiword','-w','0',path],'utf-8'),(['catdoc','-w',path],'utf-8')]:
+      try:
+        proc=subprocess.run(command,capture_output=True,check=False,timeout=30)
+      except FileNotFoundError:
+        errors.append(f'{command[0]} není nainstalován');continue
+      if proc.returncode==0 and proc.stdout:
+        text=proc.stdout.decode(encoding,'replace')
+        rows=_text_rows(text)
+        if rows:return rows
+      errors.append(f'{command[0]} nedokázal DOC přečíst')
+    raise RuntimeError('; '.join(errors) or 'DOC nelze bezpečně přečíst')
+  finally:
+    try:os.unlink(path)
+    except OSError:pass
 
 def flexible_rows(source,file_url,rows,parser):
   hi=base.find_header(rows)
@@ -140,7 +145,6 @@ def flexible_rows(source,file_url,rows,parser):
     name,ico_value=base.split_recipient_ico(get(recipient),get(ico))
     amount=base.money(get(approved))
     if not name or amount is None or amount<=0:continue
-    # Sumární řádky nesmí skončit jako příjemci.
     if base.norm_text(name).lower() in {'celkem','součet','soucet','celkem přiděleno','celkem prideleno'}:continue
     grants.append({
       'year':source['year'],'area':source['area'],'type':'dotační řízení',
@@ -155,7 +159,7 @@ def flexible_rows(source,file_url,rows,parser):
 def parse(source,file_url,ext):
   blob=base.fetch_bytes(file_url)
   if ext=='docx':return flexible_rows(source,file_url,docx_rows(blob),'archive-docx')
-  if ext=='doc':return flexible_rows(source,file_url,doc_rows(blob),'archive-doc-antiword')
+  if ext=='doc':return flexible_rows(source,file_url,doc_rows(blob),'archive-doc-text')
   if ext=='xls':return flexible_rows(source,file_url,xls_rows(blob),'archive-xls-xlrd')
   try:return base.parse_program(source,file_url,blob)
   except Exception:return flexible_rows(source,file_url,base.xlsx_rows(blob),'archive-xlsx-flex')
