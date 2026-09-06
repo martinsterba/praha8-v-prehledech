@@ -26,11 +26,15 @@ jobs:
           rows=d['grants']; years={int(g['year']) for g in rows}
           required={2019,2020,2021,2022,2023,2024,2025,2026}
           assert required <= years,(required-years,years)
-          assert len([g for g in rows if int(g['year'])==2022])>=20
+          assert len([g for g in rows if int(g['year'])==2022])>=190
+          assert len([g for g in rows if int(g['year'])==2021])>=80
           for y in [2016,2017,2018]:
             adult=[g for g in rows if int(g['year'])==y and g.get('area')=='Sport dospělí a dorost']
             assert len(adult)>=20,(y,len(adult))
-          assert d['meta']['records']>=900,d['meta']['records']
+          for y,min_count in [(2017,10),(2018,13)]:
+            micro=[g for g in rows if int(g['year'])==y and g.get('area')=='Zvelebování vzhledu MČ Praha 8']
+            assert len(micro)>=min_count,(y,len(micro))
+          assert d['meta']['records']>=1200,d['meta']['records']
           print('years',sorted(years,reverse=True),'records',d['meta']['records'])
           print('areas',d['meta'].get('areas'))
           print('historyCounts',d['meta'].get('historyCounts'))
