@@ -8,7 +8,7 @@ on:
       - .github/workflows/grants-smoke-test.yml
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   grants-smoke-test:
@@ -16,7 +16,9 @@ jobs:
     timeout-minutes: 10
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
 
       - name: Import dotací
         run: python3 scripts/sync-grants.py
@@ -37,7 +39,17 @@ jobs:
           if missing: raise SystemExit('Chybí oblasti: '+', '.join(sorted(missing)))
           bad=[g for g in grants if not g.get('recipient') or not isinstance(g.get('approvedCzk'),(int,float)) or g.get('approvedCzk',0)<=0]
           if bad: raise SystemExit(f'Neplatné záznamy: {len(bad)}')
-          fake=[g for g in grants if g.get('ico')=='00000000']
-          if fake: raise SystemExit('Dataset obsahuje IČ 00000000')
+          if any(g.get('ico')=='00000000' for g in grants): raise SystemExit('Dataset obsahuje IČ 00000000')
           print(f'QA OK: {len(grants)} záznamů · oblasti: {", ".join(sorted(areas))}')
           PY
+
+      - name: Uložit první dataset
+        run: |
+          set -euo pipefail
+          git config user.name "Praha 8 v přehledech – automat"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/dotace.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Přidat první dataset dotací"
+          git pull --rebase origin main
+          git push origin HEAD:main
