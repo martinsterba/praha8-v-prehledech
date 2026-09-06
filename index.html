@@ -77,19 +77,27 @@
     </form>
   </dialog>
 
-  <script type="module" src="app.js?v=2.8.5"></script>
+  <script>
+    window.__dotaceStandalone = location.hash === '#/dotace';
+    addEventListener('hashchange', event => {
+      const isDotace = location.hash === '#/dotace';
+      if (isDotace !== window.__dotaceStandalone) {
+        event.stopImmediatePropagation();
+        location.reload();
+      }
+    });
+  </script>
+  <script type="module">
+    if (!window.__dotaceStandalone) {
+      await import('./app.js?v=2.8.6');
+    }
+  </script>
   <script src="production-fixes.js?v=20260831-1" defer></script>
   <script src="final-polish.js?v=20260905-5" defer></script>
   <script src="source-status-polish.js?v=20260831-3" defer></script>
   <script src="metadata-polish.js?v=20260831-2" defer></script>
   <script src="analytics.js?v=20260831-1" defer></script>
   <script src="elections-polish.js?v=20260831-1" defer></script>
-  <script>
-    addEventListener('load',()=>{
-      const script=document.createElement('script');
-      script.src='grants-module.js?v=20260906-4';
-      document.body.append(script);
-    },{once:true});
-  </script>
+  <script src="grants-module.js?v=20260906-5" defer></script>
 </body>
 </html>
