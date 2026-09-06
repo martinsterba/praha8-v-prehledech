@@ -92,11 +92,24 @@ def parse():
     if amount is None:
       amount=base.extract_amount(text)
     if not recipient or amount is None:
-      unmatched.append({'id':r.get('id'),'date':r.get('date'),'title':title,'reason':'příjemce' if not recipient else 'částka'})
+      unmatched.append({
+        'id':r.get('id'),'date':r.get('date'),'title':title,
+        'reason':'příjemce' if not recipient else 'částka',
+        'recipientAttempt':recipient or '',
+        'amountAttempt':amount,
+        'snippet':base.norm_text(content)[:360],
+        'url':r.get('url')
+      })
       continue
     low_recipient=recipient.lower()
     if 'hlavní město praha' in low_recipient or 'městská část praha 8' in low_recipient:
-      unmatched.append({'id':r.get('id'),'date':r.get('date'),'title':title,'reason':'vyloučen veřejný poskytovatel/příjemce'})
+      unmatched.append({
+        'id':r.get('id'),'date':r.get('date'),'title':title,
+        'reason':'vyloučen veřejný poskytovatel/příjemce',
+        'recipientAttempt':recipient,'amountAttempt':amount,
+        'snippet':base.norm_text(content)[:360],
+        'url':r.get('url')
+      })
       continue
     year=int(str(r.get('date'))[:4])
     grants.append({
@@ -118,6 +131,17 @@ def main():
   existing=payload.get('grants') or []
   previous=[g for g in existing if g.get('area')==AREA and int(g.get('year') or 0)>=MIN_YEAR]
   grants,unmatched=parse()
+
+  # Audit je pouze v logu workflow, nevstupuje do veřejného datasetu.
+  if unmatched:
+    print('🔎 Audit kandidátů individuálních dotací:')
+    for i,u in enumerate(unmatched,1):
+      amount='—' if u.get('amountAttempt') is None else str(u.get('amountAttempt'))
+      recipient=u.get('recipientAttempt') or '—'
+      print(f"AUDIT {i:02d} | {u.get('date')} | {u.get('id')} | {u.get('reason')} | příjemce={recipient} | částka={amount}")
+      print(f"  titul: {u.get('title')}")
+      print(f"  text: {u.get('snippet')}")
+      print(f"  zdroj: {u.get('url')}")
 
   # Fail-safe: pokud už máme publikované individuální dotace a nový průchod by je
   # všechny ztratil, dataset nepřepisujeme.
