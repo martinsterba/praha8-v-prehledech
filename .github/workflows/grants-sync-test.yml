@@ -1,0 +1,48 @@
+name: "🧪 Dotace – jednorázový test"
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/grants-sync-test.yml"
+      - "scripts/sync-grants.py"
+
+permissions:
+  contents: write
+
+jobs:
+  grants:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - name: Ověřit syntaxi importéru
+        run: python3 -m py_compile scripts/sync-grants.py
+      - name: Načíst dotace
+        run: python3 scripts/sync-grants.py
+      - name: Ověřit dataset
+        run: |
+          python3 - <<'PY'
+          import json
+          d=json.load(open('data/dotace.json',encoding='utf-8'))
+          assert d['meta']['records'] >= 104, d['meta']
+          assert 'Sociální oblast' in d['meta']['areas'], d['meta']['areas']
+          print('records:',d['meta']['records'])
+          print('areas:',d['meta']['areas'])
+          print('warnings:',d['meta'].get('warnings',[]))
+          PY
+      - name: Uložit aktualizovaná data
+        shell: bash
+        run: |
+          if git diff --quiet -- data; then
+            echo "Bez změn."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/dotace.json data/grants-ares-cache.json
+          git commit -m "Data: sociální a individuální dotace 2026"
+          git pull --rebase origin main
+          git push origin HEAD:main
