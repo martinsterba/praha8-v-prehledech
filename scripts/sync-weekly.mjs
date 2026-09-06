@@ -5,11 +5,6 @@ import {resolve} from 'node:path';
 const root=resolve(import.meta.dirname,'..');
 const syncScript=resolve(root,'scripts','sync-praha8.mjs');
 const bodiesScript=resolve(root,'scripts','sync-bodies.mjs');
-const grantsScript=resolve(root,'scripts','sync-grants.py');
-const grantsHistoryScript=resolve(root,'scripts','sync-grants-history.py');
-const grantsArchiveScript=resolve(root,'scripts','sync-grants-archive.py');
-const grantsIndividualScript=resolve(root,'scripts','sync-grants-individual.py');
-const grantsValidateScript=resolve(root,'scripts','validate-grants.py');
 const peoplePath=resolve(root,'data','lide.json');
 const statusPath=resolve(root,'data','source-status.json');
 
@@ -25,7 +20,6 @@ const runCommand=(command,args=[])=>new Promise((ok,fail)=>{
   child.on('exit',code=>code===0?ok():fail(new Error(`Synchronizace skončila s kódem ${code}.`)));
 });
 const runNode=(script,args=[])=>runCommand(process.execPath,[script,...args]);
-const runPython=(script,args=[])=>runCommand(process.env.PYTHON||'python3',[script,...args]);
 const run=args=>runNode(syncScript,args);
 const runWithRetry=async(args,{attempts=3,delayMs=5000,label='Synchronizace'}={})=>{
   let lastError;
@@ -55,15 +49,8 @@ await run(['--people','--hmp-functions','--national-roles','--fast']);
 // atomicky přepíše organy.json. Neexistuje už druhý opravný průchod.
 await runNode(bodiesScript);
 
-// Dotace mají vlastní bezpečný pipeline. Aktuální a novější historické ročníky
-// doplní hlavní importéry. Archiv načte jen staré výsledkové DOCX/XLSX, které umíme
-// bezpečně přečíst; nečitelný starý formát nikdy nemaže již publikovaná data.
-// Nakonec přidáme jednoznačné individuální/mimořádné dotace z usnesení Rady a spustíme QA.
-await runPython(grantsScript);
-await runPython(grantsHistoryScript);
-await runPython(grantsArchiveScript);
-await runPython(grantsIndividualScript);
-await runPython(grantsValidateScript);
+// Dotace jsou záměrně mimo tento workflow. Mají vlastní izolovanou synchronizaci,
+// aby chyba starého grantového formátu nemohla shodit zavedenou týdenní aktualizaci.
 
 const afterFunctions=await readJson(peoplePath,[]);
 const preserved=new Map(afterFunctions.map(p=>[personKey(p.name),{
