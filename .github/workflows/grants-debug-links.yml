@@ -11,52 +11,37 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-      - name: Vypsat odkazy 2022 a starší
+      - name: Prozkoumat problematické zdroje
         run: |
           python3 - <<'PY'
-          import json,re,urllib.request
-          from html.parser import HTMLParser
-          from urllib.parse import urljoin
-          class P(HTMLParser):
-            def __init__(self): super().__init__(); self.links=[]; self.href=None; self.text=[]
-            def handle_starttag(self,tag,attrs):
-              if tag=='a': self.href=dict(attrs).get('href'); self.text=[]
-            def handle_data(self,d):
-              if self.href is not None:self.text.append(d)
-            def handle_endtag(self,tag):
-              if tag=='a' and self.href is not None:
-                self.links.append((self.href,' '.join(''.join(self.text).split()))); self.href=None; self.text=[]
-          urls=[
-            'https://praha8.online/rada/usneseni/2022/0193/',
-            'https://praha8.online/rada/usneseni/2022/0203/',
-            'https://praha8.online/rada/usneseni/2022/0244/',
-            'https://www.praha8.cz/Granty-Sport-pro-dospele-a-dorost-2015',
-            'https://www.praha8.cz/Granty-Telovychovna-cinnost-dospelych-2014',
-            'https://www.praha8.cz/Mikrogranty-verejny-prostor-2017',
-            'https://www.praha8.cz/Mikrogranty-verejny-prostor-2018',
-          ]
-          for url in urls:
-            print('\n###',url)
-            req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0'})
-            try:
-              html=urllib.request.urlopen(req,timeout=30).read().decode('utf-8','replace')
-              p=P(); p.feed(html)
-              for href,text in p.links:
-                full=urljoin(url,href)
-                low=(text+' '+full).lower()
-                if any(x in low for x in ['xlsx','xls','pdf','docx','výsled','vysled','příloh','priloh']): print(text,'=>',full)
-              if 'praha8.online' in url:
-                for m in re.finditer(r'(?i)\.xlsx',html):
-                  a=max(0,m.start()-500); b=min(len(html),m.end()+500)
-                  print('RAW-XLSX:',re.sub(r'\s+',' ',html[a:b]))
-            except Exception as e: print('ERROR',repr(e))
+          import importlib.util,subprocess,tempfile,urllib.request
+          from pathlib import Path
+          spec=importlib.util.spec_from_file_location('base','scripts/sync-grants.py')
+          base=importlib.util.module_from_spec(spec); spec.loader.exec_module(base)
 
-          print('\n### DATASET RECORDS')
-          try:
-            rows=json.load(open('data/usneseni.json',encoding='utf-8'))
-            for target in ['0192/2022','0193/2022','0203/2022','0244/2022']:
-              found=[r for r in rows if target in str(r.get('id','')) or target in str(r.get('title','')) or target in str(r.get('url',''))]
-              print('\n',target,'count',len(found))
-              for r in found[:3]: print(json.dumps(r,ensure_ascii=False)[:4000])
-          except Exception as e: print('DATASET ERROR',repr(e))
+          print('### SOCIAL 2022 XLSX')
+          page='https://www.praha8.cz/appo/usn/676?usn=LFMBDOBTy5eWHsComlKmZw%3D%3D'
+          p=base.LinkParser(); p.feed(base.fetch_text(page))
+          for href,text in p.links:
+            if '.xlsx' not in (href+' '+text).lower(): continue
+            from urllib.parse import urljoin
+            url=urljoin(page,href)
+            print('FILE',text,url)
+            try:
+              rows=base.xlsx_rows(base.fetch_bytes(url))
+              for i,row in enumerate(rows[:25]): print(i+1,repr(row))
+            except Exception as e: print('XLSX ERROR',repr(e))
+
+          for year,url in [
+            (2017,'https://www.praha8.cz/file/TRy/Vysledky-mikrogranty-zvelebovani-2017.pdf'),
+            (2018,'https://www.praha8.cz/file/hCY/Vysledky-mikrogranty-zvelebovani-2018.pdf')]:
+            print('\n### MICROGRANT PDF',year)
+            try:
+              blob=base.fetch_bytes(url)
+              with tempfile.TemporaryDirectory() as td:
+                pdf=Path(td)/'in.pdf'; txt=Path(td)/'out.txt'; pdf.write_bytes(blob)
+                r=subprocess.run(['pdftotext','-layout',str(pdf),str(txt)],capture_output=True,text=True)
+                print('pdftotext rc',r.returncode,r.stderr[:500])
+                if txt.exists(): print(txt.read_text(encoding='utf-8',errors='replace')[:16000])
+            except Exception as e: print('PDF ERROR',repr(e))
           PY
