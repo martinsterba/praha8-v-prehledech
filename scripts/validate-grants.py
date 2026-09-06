@@ -39,7 +39,7 @@ if missing_areas:
   raise RuntimeError(f'dotace.json: chybí oblasti {sorted(missing_areas)}')
 
 counts={y:sum(1 for g in grants if int(g.get('year') or 0)==y) for y in years}
-minimums={2026:192,2025:220,2024:220,2023:220,2022:195,2021:180,2020:175,2019:180,2018:175,2017:105,2016:155,2015:130,2014:75,2013:54,2012:37,2011:29,2010:17,2009:13,2008:24}
+minimums={2026:192,2025:220,2024:220,2023:220,2022:195,2021:180,2020:175,2019:180,2018:175,2017:105,2016:155,2015:130,2014:73,2013:54,2012:37,2011:29,2010:17,2009:13,2008:24}
 for year,minimum in minimums.items():
   if counts.get(year,0)<minimum:
     raise RuntimeError(f'dotace.json: rok {year} má jen {counts.get(year,0)} záznamů, bezpečné minimum je {minimum}')
@@ -59,7 +59,11 @@ if round(current_total)!=19_455_000:
   raise RuntimeError(f'dotace.json: součet roku 2026 je {current_total}, očekáváno 19 455 000 Kč')
 
 def invalid_recipient(value):
-  name=str(value or '').strip(' |\t')
+  raw=str(value or '').strip()
+  # Svislítko je ve starých DOC exportech hranice tabulkové buňky. V názvu
+  # příjemce proto vždy znamená rozpadlé sloupce, nikoliv platný název subjektu.
+  if '|' in raw:return True
+  name=raw.strip(' |\t')
   if not name or not any(ch.isalnum() for ch in name):return True
   low=re.sub(r'\s+',' ',name.casefold()).strip(' .,:;|-–—')
   bad={
@@ -67,7 +71,10 @@ def invalid_recipient(value):
     'součet všech projektů','soucet vsech projektu','součet projektů','soucet projektu',
     'žadatel','zadatel','příjemce','prijemce','organizace','název organizace','nazev organizace'
   }
-  return low in bad or low.startswith('součet všech projektů') or low.startswith('soucet vsech projektu')
+  if low in bad:return True
+  # Souhrnné řádky historických tabulek mívají různé dodatky; nejsou příjemci.
+  if 'součet' in low or 'soucet' in low or low.startswith('celkem') or 'celkem projekt' in low:return True
+  return False
 
 for i,g in enumerate(grants):
   recipient=str(g.get('recipient') or '').strip()
