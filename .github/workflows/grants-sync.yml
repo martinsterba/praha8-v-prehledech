@@ -2,8 +2,8 @@ name: "💶 Dotace – týdenní aktualizace"
 
 on:
   workflow_dispatch:
-  # Dočasný jednorázový test po opravě historických DOC tabulek. Po zeleném
-  # průchodu se tento push trigger odstraní.
+  # Dočasný jednorázový test po opravě historických DOC tabulek a příjemců.
+  # Po zeleném průchodu se tento push trigger odstraní.
   push:
     branches: [main]
     paths:
@@ -92,6 +92,11 @@ jobs:
           print('Archiv kultura:',p.get('meta',{}).get('archiveCultureLoadedKeys',[]))
           print('Z usnesení:',p.get('meta',{}).get('resolutionProgramLoadedKeys',[]))
           print('Individuální:',p.get('meta',{}).get('individualRows',0),'bezpečně vytěžených;',p.get('meta',{}).get('individualUnmatched',0),'nevyřešených')
+          for year in (2015,2016,2017):
+            rows=[g for g in p['grants'] if int(g.get('year') or 0)==year and g.get('area')=='Kultura a volnočasové aktivity']
+            print(f'Kultura/volnočas {year}: {len(rows)} záznamů, {round(sum(float(g.get("approvedCzk") or 0) for g in rows)):,} Kč')
+          bad=[g for g in p['grants'] if '|' in str(g.get('recipient') or '') or 'součet' in str(g.get('recipient') or '').casefold() or 'soucet' in str(g.get('recipient') or '').casefold()]
+          assert not bad, f'Poškození příjemci stále v datech: {bad[:5]}'
           PY
 
       - name: "Zjistit změny"
