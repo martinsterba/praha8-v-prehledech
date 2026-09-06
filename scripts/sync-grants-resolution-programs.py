@@ -19,13 +19,10 @@ spec=importlib.util.spec_from_file_location('grants_archive_resolution_programs'
 arc=importlib.util.module_from_spec(spec);spec.loader.exec_module(arc)
 base=arc.base
 
-# Známé mezery ve veřejných výsledkových stránkách. Nehledáme mimo ně, abychom
-# omylem nepřepsali roky, které už mají stabilní primární importer.
+# Sociální roky 2019–2021 už mají přímý výsledkový importer. Z usnesení proto
+# doplňujeme jen kombinace, kde je tento fallback stále skutečně potřeba.
 TARGETS=[
   (2019,'Kultura'),
-  (2019,'Sociální oblast'),
-  (2020,'Sociální oblast'),
-  (2021,'Sociální oblast'),
   (2023,'Sociální oblast'),
   (2024,'Sociální oblast'),
 ]
@@ -89,7 +86,6 @@ def parse_resolution(r,year,area):
     except Exception as exc:
       errors.append(f'{label}: {exc}')
   if not successes:return [],None,errors
-  # Preferujeme nejlépe pojmenovanou přílohu, při shodě tu s více záznamy.
   successes.sort(key=lambda x:(x[0],x[1]),reverse=True)
   _,_,rows,qa=successes[0]
   for g in rows:
