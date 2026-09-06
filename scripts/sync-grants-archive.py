@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import importlib.util,io,json,re,zipfile
+import importlib.util,io,json,os,re,subprocess,tempfile,zipfile
 import xml.etree.ElementTree as ET
 from datetime import datetime,timezone
 from pathlib import Path
@@ -35,15 +35,19 @@ def candidates():
 def score_link(label,href):
   low=(label+' '+href).lower()
   ext=None
-  if '.xlsx' in low:ext='xlsx'
-  elif '.docx' in low:ext='docx'
+  # Kontrolujeme delší přípony první, aby .xlsx nebylo zaměněno za .xls.
+  for suffix,name in [('.xlsx','xlsx'),('.docx','docx'),('.xls','xls'),('.doc','doc')]:
+    if suffix in low:
+      ext=name;break
   if not ext:return None
   if any(x in low for x in ['vyúčt','vyuct','žádost','zadost','formulář','formular','pravidl','podmín','podmin','smlouv']):return None
   score=0
   if 'výsled' in low or 'vysled' in low:score+=10
   if 'přidělen' in low or 'pridelen' in low:score+=8
   if 'poskytnut' in low:score+=8
+  if 'seznam' in low and ('grant' in low or 'dotac' in low):score+=7
   if 'grant' in low or 'dotac' in low:score+=2
+  # Staré stránky často používají obecné názvy typu „přidělené granty“.
   if score<8:return None
   return score,href,label,ext
 
@@ -59,6 +63,7 @@ def discover(source):
   if not ranked:return []
   ranked.sort(key=lambda x:x[0],reverse=True)
   best=ranked[0][0]
+  # Bereme jen stejně silné výsledkové soubory; tím nevytáhneme vedle výsledků např. formulář.
   return [(href,label,ext,page) for score,href,label,ext,page in ranked if score>=best-1]
 
 def docx_rows(blob):
@@ -73,20 +78,59 @@ def docx_rows(blob):
     if any(row):rows.append(row)
   return rows
 
+def xls_rows(blob):
+  try:import xlrd
+  except ImportError as exc:raise RuntimeError('pro staré XLS chybí Python balíček xlrd') from exc
+  book=xlrd.open_workbook(file_contents=blob,on_demand=True)
+  if book.nsheets<1:raise RuntimeError('XLS neobsahuje žádný list')
+  sheet=book.sheet_by_index(0);rows=[]
+  for r in range(sheet.nrows):
+    row=[]
+    for c in range(sheet.ncols):
+      v=sheet.cell_value(r,c)
+      if isinstance(v,float) and v.is_integer():v=str(int(v))
+      row.append(base.norm_text(v))
+    if any(row):rows.append(row)
+  return rows
+
+def doc_rows(blob):
+  # antiword je použit jen pro staré binární DOC. Výstup se následně ještě musí
+  # projít stejnou kontrolou záhlaví a minimálního počtu záznamů jako jiné formáty.
+  fd,path=tempfile.mkstemp(suffix='.doc')
+  try:
+    with os.fdopen(fd,'wb') as f:f.write(blob)
+    try:
+      proc=subprocess.run(['antiword','-w','0',path],capture_output=True,check=False,timeout=30)
+    except FileNotFoundError as exc:
+      raise RuntimeError('pro staré DOC chybí nástroj antiword') from exc
+    if proc.returncode!=0:raise RuntimeError('antiword nedokázal DOC bezpečně přečíst')
+    text=proc.stdout.decode('utf-8','replace')
+  finally:
+    try:os.unlink(path)
+    except OSError:pass
+  rows=[]
+  for raw in text.splitlines():
+    line=raw.strip()
+    if not line:continue
+    # Wordové tabulky antiword typicky oddělí tabulátorem nebo více mezerami.
+    cells=[base.norm_text(x) for x in re.split(r'\t+|\s{2,}',line) if base.norm_text(x)]
+    if cells:rows.append(cells)
+  return rows
+
 def flexible_rows(source,file_url,rows,parser):
   hi=base.find_header(rows)
   if hi is None:
-    for i,row in enumerate(rows[:40]):
+    for i,row in enumerate(rows[:60]):
       t=' | '.join(base.norm_text(x).lower() for x in row)
-      if any(k in t for k in ['žadatel','zadatel','příjemce','prijemce','organizace','subjekt']) and any(k in t for k in ['částka','castka','dotace','schválen','schvalen','přidělen','pridelen','výše','vyse']):
+      if any(k in t for k in ['žadatel','zadatel','příjemce','prijemce','organizace','subjekt','název organizace','nazev organizace']) and any(k in t for k in ['částka','castka','dotace','schválen','schvalen','přidělen','pridelen','výše','vyse']):
         hi=i;break
   if hi is None:raise RuntimeError('nenalezeno záhlaví výsledkové tabulky')
   header=[base.norm_text(x).lower() for x in rows[hi]]
   recipient=approved=ico=project=requested=None
   for i,x in enumerate(header):
-    if recipient is None and any(k in x for k in ['žadatel','zadatel','příjemce','prijemce','organizace','subjekt','název organizace','nazev organizace']):recipient=i
+    if recipient is None and any(k in x for k in ['žadatel','zadatel','příjemce','prijemce','organizace','subjekt','název organizace','nazev organizace','název žadatele','nazev zadatele']):recipient=i
     if ico is None and ('ič' in x or 'ico' in x):ico=i
-    if project is None and any(k in x for k in ['projekt','účel','ucel','název akce','nazev akce','služba','sluzba']):project=i
+    if project is None and any(k in x for k in ['projekt','účel','ucel','název akce','nazev akce','služba','sluzba','aktivita']):project=i
     if requested is None and ('požad' in x or 'pozad' in x):requested=i
     if approved is None and any(k in x for k in ['schválen','schvalen','přidělen','pridelen','poskytnut','částka','castka','výše','vyse']):approved=i
   if recipient is None or approved is None:raise RuntimeError('chybí sloupec příjemce nebo schválená částka')
@@ -96,6 +140,8 @@ def flexible_rows(source,file_url,rows,parser):
     name,ico_value=base.split_recipient_ico(get(recipient),get(ico))
     amount=base.money(get(approved))
     if not name or amount is None or amount<=0:continue
+    # Sumární řádky nesmí skončit jako příjemci.
+    if base.norm_text(name).lower() in {'celkem','součet','soucet','celkem přiděleno','celkem prideleno'}:continue
     grants.append({
       'year':source['year'],'area':source['area'],'type':'dotační řízení',
       'recipient':name,'ico':ico_value,'project':base.norm_text(get(project)),
@@ -109,6 +155,8 @@ def flexible_rows(source,file_url,rows,parser):
 def parse(source,file_url,ext):
   blob=base.fetch_bytes(file_url)
   if ext=='docx':return flexible_rows(source,file_url,docx_rows(blob),'archive-docx')
+  if ext=='doc':return flexible_rows(source,file_url,doc_rows(blob),'archive-doc-antiword')
+  if ext=='xls':return flexible_rows(source,file_url,xls_rows(blob),'archive-xls-xlrd')
   try:return base.parse_program(source,file_url,blob)
   except Exception:return flexible_rows(source,file_url,base.xlsx_rows(blob),'archive-xlsx-flex')
 
@@ -140,7 +188,7 @@ def main():
     print(f"✅ Archiv {source['area']} {source['year']}: {len(source_rows)} dotací")
 
   if not loaded_keys:
-    print('ℹ️ Archiv: žádný nový bezpečně čitelný DOCX/XLSX zdroj; produkční data zůstávají beze změny.')
+    print('ℹ️ Archiv: žádný nový bezpečně čitelný výsledkový zdroj; produkční data zůstávají beze změny.')
     return
 
   existing=payload.get('grants') or []
@@ -153,7 +201,7 @@ def main():
   counts={str(y):sum(1 for g in combined if int(g['year'])==y) for y in years}
   old_sources=[s for s in (payload.get('sources') or []) if (int(s.get('year') or 0),s.get('area')) not in loaded_keys]
 
-  payload['schema']=max(int(payload.get('schema') or 0),10)
+  payload['schema']=max(int(payload.get('schema') or 0),11)
   payload['updated']=datetime.now(timezone.utc).isoformat()
   payload['grants']=combined
   payload['sources']=old_sources+source_meta
