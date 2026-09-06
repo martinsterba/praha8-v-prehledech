@@ -5,6 +5,10 @@ Starší výsledkové tabulky někdy zapisují IČ přímo do buňky s názvem s
 (např. „FK Admira Praha, IČ 47607122“ nebo „... o.s. IČO 47607122“).
 IČ patří do samostatného pole `ico`; v názvu příjemce způsobuje zbytečné
 rozdělení stejného subjektu při agregacích.
+
+Současně odstraňujeme jednoznačné souhrnné řádky typu „Celkem“ nebo „Součet
+všech projektů“. Nejde o příjemce dotace a jejich ponechání by zkreslovalo
+počty i součty.
 """
 import json,re
 from datetime import datetime,timezone
@@ -51,32 +55,60 @@ def split_name_ico(name,explicit_ico=''):
   return raw,explicit
 
 
+def aggregate_recipient(name):
+  raw=norm_text(name).strip(' |\t')
+  low=raw.casefold().strip(' .,:;|-–—')
+  exact={
+    'celkem','součet','soucet','celkem přiděleno','celkem prideleno',
+    'součet všech projektů','soucet vsech projektu','součet projektů','soucet projektu',
+    'žadatel','zadatel','příjemce','prijemce','organizace','název organizace','nazev organizace'
+  }
+  if low in exact:return True
+  if low.startswith('součet všech projektů') or low.startswith('soucet vsech projektu'):return True
+  if low.startswith('celkem ') or 'celkem projekt' in low:return True
+  return False
+
+
 def main():
   payload=json.loads(DATA.read_text(encoding='utf-8'))
   grants=payload.get('grants') or []
-  changed=0;extracted=0;stripped=0
-  examples=[]
+  changed=0;extracted=0;stripped=0;removed=0
+  examples=[];clean=[]
 
   for grant in grants:
     old_name=norm_text(grant.get('recipient'))
+    if aggregate_recipient(old_name):
+      removed+=1
+      if len(examples)<8:examples.append(f'ODSTRANĚNO: {old_name}')
+      continue
+
     old_ico=norm_ico(grant.get('ico'))
     new_name,new_ico=split_name_ico(old_name,old_ico)
-    if new_name==old_name and new_ico==old_ico:continue
     if old_name!=new_name:stripped+=1
     if not old_ico and new_ico:extracted+=1
-    grant['recipient']=new_name
-    grant['ico']=new_ico
-    changed+=1
-    if len(examples)<8:examples.append(f'{old_name} -> {new_name} / IČ {new_ico or "—"}')
+    if new_name!=old_name or new_ico!=old_ico:
+      grant['recipient']=new_name
+      grant['ico']=new_ico
+      changed+=1
+      if len(examples)<8:examples.append(f'{old_name} -> {new_name} / IČ {new_ico or "—"}')
+    clean.append(grant)
 
+  payload['grants']=clean
   meta=payload.setdefault('meta',{})
+  meta['records']=len(clean)
   meta['recipientIcoNormalized']=changed
   meta['recipientIcoExtracted']=extracted
+  meta['recipientAggregateRowsRemoved']=removed
   meta['recipientIcoNormalizedAt']=datetime.now(timezone.utc).isoformat()
+  counts={}
+  for g in clean:
+    y=str(int(g.get('year') or 0))
+    counts[y]=counts.get(y,0)+1
+  meta['historyCounts']=counts
   payload['updated']=datetime.now(timezone.utc).isoformat()
   DATA.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 
-  print(f'✅ Normalizace příjemců: upraveno {changed} záznamů; z názvu vytěženo {extracted} IČ; očištěno {stripped} názvů.')
+  print(f'✅ Normalizace příjemců: upraveno {changed} záznamů; z názvu vytěženo {extracted} IČ; očištěno {stripped} názvů; odstraněno {removed} souhrnných řádků.')
   for item in examples:print('  ',item)
 
 
