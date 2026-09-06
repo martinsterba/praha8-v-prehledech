@@ -5,6 +5,7 @@ import {resolve} from 'node:path';
 const root=resolve(import.meta.dirname,'..');
 const syncScript=resolve(root,'scripts','sync-praha8.mjs');
 const bodiesScript=resolve(root,'scripts','sync-bodies.mjs');
+const grantsScript=resolve(root,'scripts','sync-grants.py');
 const peoplePath=resolve(root,'data','lide.json');
 const statusPath=resolve(root,'data','source-status.json');
 
@@ -14,11 +15,13 @@ const personKey=(name='')=>{
   return toks.slice(0,2).sort().join(' ');
 };
 const readJson=async(path,fallback)=>{try{return JSON.parse(await readFile(path,'utf8'))}catch{return fallback}};
-const runNode=(script,args=[])=>new Promise((ok,fail)=>{
-  const child=spawn(process.execPath,[script,...args],{cwd:root,stdio:'inherit',env:process.env});
+const runCommand=(command,args=[])=>new Promise((ok,fail)=>{
+  const child=spawn(command,args,{cwd:root,stdio:'inherit',env:process.env});
   child.on('error',fail);
   child.on('exit',code=>code===0?ok():fail(new Error(`Synchronizace skončila s kódem ${code}.`)));
 });
+const runNode=(script,args=[])=>runCommand(process.execPath,[script,...args]);
+const runPython=(script,args=[])=>runCommand(process.env.PYTHON||'python3',[script,...args]);
 const run=args=>runNode(syncScript,args);
 const runWithRetry=async(args,{attempts=3,delayMs=5000,label='Synchronizace'}={})=>{
   let lastError;
@@ -47,6 +50,10 @@ await run(['--people','--hmp-functions','--national-roles','--fast']);
 // Ten nejprve objeví celý aktuální seznam komisí a teprve po úspěšné kontrole všech detailů
 // atomicky přepíše organy.json. Neexistuje už druhý opravný průchod.
 await runNode(bodiesScript);
+
+// Programové dotace mají vlastní bezpečný importér. Patří do týdenní aktualizace:
+// dotační výsledky se nemění tak často, aby bylo nutné zatěžovat denní workflow.
+await runPython(grantsScript);
 
 const afterFunctions=await readJson(peoplePath,[]);
 const preserved=new Map(afterFunctions.map(p=>[personKey(p.name),{
