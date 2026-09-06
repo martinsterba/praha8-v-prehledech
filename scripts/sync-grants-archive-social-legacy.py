@@ -47,6 +47,7 @@ def dedupe(rows):return arc.dedupe(rows)
 
 def main():
   payload=arc.read_json(OUT,{})
+  existing=payload.get('grants') or []
   loaded=[];loaded_keys=set();source_meta=[];warnings=[]
   for src in SOURCES:
     files=result_files(src)
@@ -63,15 +64,18 @@ def main():
       except Exception as exc:
         warning=f"Archiv Sociální oblast {src['year']} / {label}: {exc}"
         warnings.append(warning);print('⚠️',warning)
-        # Dočasná diagnostika pouze pro chybějící ročník 2011; nevstupuje do datasetu.
-        if src['year']==2011 and ext=='doc':
-          try:
-            sample=arc.doc_rows(base.fetch_bytes(href))[:25]
-            print('🔎 2011 DOC sample:',json.dumps(sample,ensure_ascii=False))
-          except Exception as debug_exc:
-            print('🔎 2011 DOC sample nelze načíst:',debug_exc)
     rows=dedupe(rows)
     if not rows:continue
+
+    # Staré stránky někdy při jednom běhu zpřístupní jen část historických souborů.
+    # Nikdy proto nenahrazujeme už publikovaný ročník menším počtem řádků.
+    previous=[g for g in existing if int(g.get('year') or 0)==src['year'] and g.get('area')=='Sociální oblast']
+    if previous and len(rows)<len(previous):
+      warning=(f"Archiv Sociální oblast {src['year']}: nově nalezeno jen {len(rows)} řádků, "
+               f"publikováno je {len(previous)}; zachovávám úplnější poslední dataset")
+      warnings.append(warning);print('⚠️',warning)
+      continue
+
     loaded.extend(rows);loaded_keys.add((src['year'],'Sociální oblast'))
     source_meta.append({'year':src['year'],'area':'Sociální oblast','page':src['page'],'kind':'archive-legacy-social','required':False,'status':'načteno','rows':len(rows),'qa':qas})
     print(f"✅ Archiv Sociální oblast {src['year']}: {len(rows)} dotací")
@@ -80,7 +84,6 @@ def main():
     print('ℹ️ Starý sociální archiv: nic nového bezpečně načteno; data se nemění.')
     return
 
-  existing=payload.get('grants') or []
   current=[g for g in existing if (int(g.get('year') or 0),g.get('area')) not in loaded_keys]
   combined=dedupe(current+loaded)
   old_sources=[s for s in (payload.get('sources') or []) if (int(s.get('year') or 0),s.get('area')) not in loaded_keys]
@@ -92,10 +95,11 @@ def main():
   payload['schema']=max(int(payload.get('schema') or 0),14)
   payload['updated']=datetime.now(timezone.utc).isoformat()
   payload['grants']=combined;payload['sources']=old_sources+source_meta
+  previous_loaded=set(int(y) for y in (payload.get('meta',{}).get('legacySocialLoadedYears') or []))
   payload['meta']={**payload.get('meta',{}),'records':len(combined),'years':years,
     'areas':sorted({g.get('area','') for g in combined if g.get('area')}),
     'warnings':all_warnings,'ares':ares_qa,'historyCounts':counts,
-    'legacySocialLoadedYears':sorted([y for y,_ in loaded_keys],reverse=True)}
+    'legacySocialLoadedYears':sorted(previous_loaded|{y for y,_ in loaded_keys},reverse=True)}
   base.atomic_write_json(OUT,payload)
   print(f'✅ Starý sociální archiv: přidáno/obnoveno {len(loaded)} záznamů v {len(loaded_keys)} ročnících.')
 
