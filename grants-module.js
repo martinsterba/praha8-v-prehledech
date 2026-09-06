@@ -217,10 +217,14 @@
   }
 
   function afterBaseRender(attempt=0){
-    if(location.hash===ROUTE){renderGrants();return;}
+    if(location.hash===ROUTE)return true;
     const done=location.hash==='#/zdroje'?ensureSources():ensureHomeCard();
     Promise.resolve(done).then(ok=>{if(!ok&&attempt<12)setTimeout(()=>afterBaseRender(attempt+1),30)});
+    return done;
   }
+
+  window.Praha8Grants={render:renderGrants};
+  dispatchEvent(new Event('praha8:grants-ready'));
 
   const schedule=()=>setTimeout(()=>afterBaseRender(0),0);
   addEventListener('hashchange',()=>{renderSeq++;grantsPromise=null;schedule()});

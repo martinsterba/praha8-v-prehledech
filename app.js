@@ -559,8 +559,20 @@ async function zdroje(){
  ].sort((a,b)=>a.title.localeCompare(b.title,'cs'));
  shell(`<div class="page-head"><div class="kicker">Transparentnost</div><h1>Jak to funguje a odkud jsou data</h1><p>Projekt čte veřejné zdroje, ukládá jejich strukturovanou kopii a u záznamů zachovává odkaz na originál. Zdroje níže řadíme podle instituce, která je pro daný údaj primární.</p></div><section class="section status-overview"><div class="section-head"><div><h2>Datové zdroje</h2></div><p>Zdroje seskupujeme podle instituce a uvnitř vždy řadíme abecedně. Počty uvádíme u konkrétních datasetů; nesčítáme navzájem nesouměřitelné typy záznamů.</p></div>${grouped}</section><section class="sources-section"><div class="sources-intro"><h2>Primární zdroje</h2><p>Instituce a oficiální zdroje, ze kterých jednotlivá data přebíráme.</p></div>${groups.map(x=>x.html).join('')}</section>`)
 }
-const routes={'':'home','/':'home','/usneseni':'usneseni','/hlasovani':'hlasovani','/penize':'penize','/lide':'lide','/organizace':'organizace','/skoly':'skoly','/organy':'organy','/info106':'info106','/uredni-deska':'uredniDeska','/volby':'volby','/scitani-2021':'scitani2021','/smlouvy':'smlouvy','/smlouvy-organizace':'smlouvyOrganizace','/smlouvy-firmy':'smlouvyFirmy','/novinky':'novinky','/zdroje':'zdroje'};
-async function render(){const path=(location.hash.slice(1).split('?')[0]||'/');const fn=({home,usneseni,hlasovani,penize,lide,organizace,skoly,organy,info106,uredniDeska,volby,scitani2021,smlouvy,smlouvyOrganizace,smlouvyFirmy,novinky,zdroje}[routes[path]||'home']);await fn();scrollTo(0,0)}
+async function dotace(){
+  if(!window.Praha8Grants?.render){
+    await new Promise(resolve=>{
+      let done=false;
+      const finish=()=>{if(done)return;done=true;resolve()};
+      addEventListener('praha8:grants-ready',finish,{once:true});
+      setTimeout(finish,3000);
+    });
+  }
+  if(window.Praha8Grants?.render)return window.Praha8Grants.render();
+  shell('<div class="notice error-notice"><b>Dotace se nepodařilo načíst.</b> Modul Dotací není dostupný.</div>');
+}
+const routes={'':'home','/':'home','/usneseni':'usneseni','/hlasovani':'hlasovani','/penize':'penize','/lide':'lide','/organizace':'organizace','/skoly':'skoly','/organy':'organy','/info106':'info106','/uredni-deska':'uredniDeska','/volby':'volby','/scitani-2021':'scitani2021','/smlouvy':'smlouvy','/smlouvy-organizace':'smlouvyOrganizace','/smlouvy-firmy':'smlouvyFirmy','/dotace':'dotace','/novinky':'novinky','/zdroje':'zdroje'};
+async function render(){const path=(location.hash.slice(1).split('?')[0]||'/');const fn=({home,usneseni,hlasovani,penize,lide,organizace,skoly,organy,info106,uredniDeska,volby,scitani2021,smlouvy,smlouvyOrganizace,smlouvyFirmy,dotace,novinky,zdroje}[routes[path]||'home']);await fn();scrollTo(0,0)}
 
 const dlg=$('#searchDialog');$('#searchOpen').onclick=()=>{dlg.showModal();setTimeout(()=>$('#globalSearch').focus(),50)};$('#globalSearch').addEventListener('input',e=>{const q=e.target.value.trim().toLowerCase();const all=[...(sourceComplete('resolutions')?data.usneseni:[]).map(x=>({type:'Usnesení',title:`${x.id} — ${x.title}`,url:'#/usneseni'})),...data.lide.map(x=>({type:'Člověk',title:`${x.name} — ${x.role}, ${x.club}`,url:'#/lide'})),...(sourceComplete('organizations')?data.organizace:[]).map(x=>({type:['základní škola','mateřská škola'].includes(x.type)?'Škola':'Organizace',title:x.name,url:['základní škola','mateřská škola'].includes(x.type)?'#/skoly':'#/organizace'})),...(data.smlouvy?.contracts||[]).map(x=>({type:'Smlouva',title:`${x.subject||''} ${x.counterparty||''}`,url:'#/smlouvy'}))];const r=q?all.filter(x=>x.title.toLowerCase().includes(q)).slice(0,15):[];$('#searchResults').innerHTML=r.map(x=>`<a class="search-hit" href="${x.url}" onclick="document.querySelector('#searchDialog').close()"><small>${x.type}</small>${escapeHtml(x.title)}</a>`).join('')||`<div class="empty">${q?'Nic nenalezeno.':'Začněte psát.'}</div>`});
 render();
