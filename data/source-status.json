@@ -110,5 +110,11 @@
     "count": 6488,
     "updated": "2026-09-06T08:42:53.540Z",
     "mode": "aktualizováno"
+  },
+  "grants": {
+    "status": "data načtena",
+    "count": 2504,
+    "updated": "2026-09-07T08:33:01.119929+00:00",
+    "mode": "aktualizováno"
   }
 }
