@@ -2,7 +2,7 @@ name: "💶 Dotace – týdenní aktualizace"
 
 on:
   workflow_dispatch:
-  # Dočasný jednorázový retest po normalizaci názvů mimořádných dotací.
+  # Dočasný jednorázový retest po systémové normalizaci formátu mimořádných dotací.
   # Po zeleném průchodu se tento push trigger odstraní.
   push:
     branches: [main]
@@ -67,8 +67,9 @@ jobs:
             scripts/sync-grants-archive-social-legacy.py \
             scripts/sync-grants-sport-legacy.py \
             scripts/sync-grants-archive-culture.py \
-            scripts/normalize-grant-recipients.py \
             scripts/sync-grants-individual.py \
+            scripts/normalize-extraordinary-grant-recipients.py \
+            scripts/normalize-grant-recipients.py \
             scripts/validate-grants.py
 
       - name: "Spustit kompletní grantový pipeline"
@@ -93,6 +94,7 @@ jobs:
           print('Archiv kultura:',p.get('meta',{}).get('archiveCultureLoadedKeys',[]))
           print('Z usnesení:',p.get('meta',{}).get('resolutionProgramLoadedKeys',[]))
           print('Mimořádné dotace:',p.get('meta',{}).get('extraordinaryRows',0),'bezpečně vytěžených;',p.get('meta',{}).get('extraordinaryUnmatched',0),'nevyřešených')
+          print('Formát názvů mimořádných:',p.get('meta',{}).get('extraordinaryRecipientFormatNormalized',0),'upravených záznamů')
           print('Normalizace IČ v názvech:',p.get('meta',{}).get('recipientIcoNormalized',0),'záznamů')
           print('Odstraněné souhrnné řádky:',p.get('meta',{}).get('recipientAggregateRowsRemoved',0))
           for year in (2015,2016,2017):
