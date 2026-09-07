@@ -2,6 +2,12 @@ name: "💶 Dotace – týdenní aktualizace"
 
 on:
   workflow_dispatch:
+  # Dočasný jednorázový retest po normalizaci názvů mimořádných dotací.
+  # Po zeleném průchodu se tento push trigger odstraní.
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/grants-sync.yml"
   schedule:
     # Pondělí 05:37 UTC = 07:37 v Praze v letním čase.
     # Běží až po denní a běžné týdenní synchronizaci.
@@ -92,8 +98,6 @@ jobs:
           for year in (2015,2016,2017):
             rows=[g for g in p['grants'] if int(g.get('year') or 0)==year and g.get('area')=='Kultura a volnočasové aktivity']
             print(f'Kultura/volnočas {year}: {len(rows)} záznamů, {round(sum(float(g.get("approvedCzk") or 0) for g in rows)):,} Kč')
-          # Přísnou kontrolu formátu příjemce aplikujeme od 2014. Starší
-          # DOC/textový sociální archiv 2008–2013 je záměrně zachován beze změny.
           bad=[g for g in p['grants'] if int(g.get('year') or 0)>=2014 and ('|' in str(g.get('recipient') or '') or 'součet' in str(g.get('recipient') or '').casefold() or 'soucet' in str(g.get('recipient') or '').casefold())]
           assert not bad, f'Poškození příjemci stále v datech od roku 2014: {bad[:5]}'
           PY
