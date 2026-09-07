@@ -2,12 +2,6 @@ name: "💶 Dotace – týdenní aktualizace"
 
 on:
   workflow_dispatch:
-  # Dočasný auditní retest s ochranou starého sociálního archivu 2008–2013.
-  # Po zeleném průchodu se tento push trigger odstraní.
-  push:
-    branches: [main]
-    paths:
-      - ".github/workflows/grants-sync.yml"
   schedule:
     # Pondělí 05:37 UTC = 07:37 v Praze v letním čase.
     # Běží až po denní a běžné týdenní synchronizaci.
