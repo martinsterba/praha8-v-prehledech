@@ -99,3 +99,105 @@ jobs:
             echo "## ✅ Týdenní kontrola dokončena" >> "$GITHUB_STEP_SUMMARY"
             echo "Ve sledovaných datech nebyly nalezeny žádné změny." >> "$GITHUB_STEP_SUMMARY"
           fi
+
+  grants:
+    name: "Aktualizovat dotace a granty"
+    needs: sync
+    if: always() && needs.sync.result == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: "Načíst nejnovější main"
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+          ref: main
+
+      - name: "Nainstalovat podporu starých grantových formátů"
+        run: |
+          set -euo pipefail
+          python3 -m pip install --disable-pip-version-check xlrd==2.0.2
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq antiword catdoc
+
+      - name: "Ověřit syntaxi grantových importérů"
+        run: |
+          python3 -m py_compile \
+            scripts/sync-grants.py \
+            scripts/sync-grants-current-safe.py \
+            scripts/sync-grants-history.py \
+            scripts/sync-grants-social-modern.py \
+            scripts/sync-grants-resolution-programs.py \
+            scripts/sync-grants-archive.py \
+            scripts/sync-grants-archive-social-legacy.py \
+            scripts/sync-grants-sport-legacy.py \
+            scripts/sync-grants-archive-culture.py \
+            scripts/sync-grants-individual.py \
+            scripts/normalize-extraordinary-grant-recipients.py \
+            scripts/normalize-grant-recipients.py \
+            scripts/validate-grants.py \
+            scripts/update-grants-source-status.py
+
+      - name: "Spustit grantovou synchronizaci"
+        run: npm run sync:grants
+
+      - name: "Ověřit stav dotací v Datových zdrojích"
+        run: |
+          python3 - <<'PY'
+          import json
+          grants=json.load(open('data/dotace.json',encoding='utf-8'))
+          status=json.load(open('data/source-status.json',encoding='utf-8'))
+          count=int(grants.get('meta',{}).get('records') or len(grants.get('grants') or []))
+          s=status.get('grants') or {}
+          assert s.get('status')=='data načtena'
+          assert s.get('mode')=='aktualizováno'
+          assert int(s.get('count') or 0)==count
+          assert s.get('updated')
+          print(f'Dotace v Datových zdrojích: {count} záznamů · {s.get("updated")}')
+          PY
+
+      - name: "Zjistit změny dotací"
+        id: grant_changes
+        run: |
+          if git diff --quiet -- data/dotace.json data/grants-ares-cache.json data/source-status.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            git diff --stat -- data/dotace.json data/grants-ares-cache.json data/source-status.json
+          fi
+
+      - name: "Uložit ověřené dotace"
+        if: steps.grant_changes.outputs.changed == 'true'
+        run: |
+          set -euo pipefail
+          git config user.name "Praha 8 v přehledech – automat"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for attempt in 1 2 3; do
+            git fetch origin main
+            if [ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]; then
+              echo "Main se změnil; přepočítávám dotace nad nejnovějším stavem."
+              git reset --hard origin/main
+              npm run sync:grants
+            fi
+            git add data/dotace.json data/grants-ares-cache.json data/source-status.json
+            if git diff --cached --quiet; then exit 0; fi
+            git commit -m "Týdenní aktualizace dotací"
+            if git push origin HEAD:main; then exit 0; fi
+            if [ "$attempt" -lt 3 ]; then sleep 3; fi
+          done
+          exit 1
+
+      - name: "Souhrn dotací"
+        if: always()
+        run: |
+          if [ "${{ job.status }}" != "success" ]; then
+            echo "## ❌ Aktualizace dotací selhala" >> "$GITHUB_STEP_SUMMARY"
+            echo "Běžná týdenní data už byla bezpečně uložena; neověřená grantová data nebyla publikována." >> "$GITHUB_STEP_SUMMARY"
+          elif [ "${{ steps.grant_changes.outputs.changed }}" = "true" ]; then
+            echo "## ✅ Dotace byly aktualizovány" >> "$GITHUB_STEP_SUMMARY"
+            echo "Dataset dotací i jeho stav v Datových zdrojích prošly kontrolou a byly uloženy do main." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "## ✅ Kontrola dotací dokončena" >> "$GITHUB_STEP_SUMMARY"
+            echo "Dotace i jejich stav v Datových zdrojích jsou v pořádku; nebylo co měnit." >> "$GITHUB_STEP_SUMMARY"
+          fi
