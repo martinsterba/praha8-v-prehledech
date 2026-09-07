@@ -1,0 +1,40 @@
+name: "Jednorázová migrace dotací do hlavního registru"
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/migrate-grants-native.py"
+      - ".github/workflows/migrate-grants-native.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - name: "Spustit migraci"
+        run: python3 scripts/migrate-grants-native.py
+      - name: "Ověřit JavaScript"
+        run: |
+          node --check app.js
+          node --check grants-module.js
+          grep -q "key:'grants',label:'Dotace a granty'" app.js
+          grep -q "box('Dotace a granty'" app.js
+          grep -q "\['#/dotace','Kč','Dotace a granty'" app.js
+          ! grep -q "ensureSources" grants-module.js
+          ! grep -q "grants-sources-integration" index.html
+      - name: "Uložit změny"
+        run: |
+          set -euo pipefail
+          git config user.name "Praha 8 v přehledech – automat"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          rm -f grants-sources-integration.js
+          git add app.js grants-module.js index.html
+          git add -u grants-sources-integration.js || true
+          git commit -m "Začlenit dotace do společného registru zdrojů"
+          git push origin HEAD:main
