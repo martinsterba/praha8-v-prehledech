@@ -33,6 +33,14 @@ def normalize_legal_forms(name):
   return name
 
 
+def strip_location_after_legal_form(name):
+  """Odstraní lokalitu typu „Praha 8“ jen tehdy, následuje-li za právní formou."""
+  return re.sub(
+    r'(?P<form>\b(?:z\.s\.|o\.p\.s\.|s\.r\.o\.))\s*,\s*Praha\s+\d+[A-Za-z]?(?:\s*[-–—].*)?\s*$',
+    r'\g<form>',name,flags=re.I
+  )
+
+
 def normalize_recipient(value):
   original=norm(value)
   name=original.strip(' ,;:-"')
@@ -50,17 +58,19 @@ def normalize_recipient(value):
 
   name=normalize_legal_forms(norm(name))
 
+  # Nejdřív odstraníme lokaci za již uvedenou právní formou. Je důležité, aby
+  # tento krok proběhl před případným doplněním z.s.; jinak by název
+  # „spolkem Events 4 you, z.s., Praha 9“ skončil jako
+  # „Events 4 you, z.s., Praha 9, z.s.“.
+  name=strip_location_after_legal_form(name)
+
   # Pokud titul výslovně říká "spolkem" a za vlastním názvem není žádná
   # právní forma, sjednotíme ji jako z.s. Tak se tentýž spolek neseká do více názvů.
   if was_spolek and not re.search(r'\b(?:z\.s\.|o\.p\.s\.|s\.r\.o\.)\s*$',name,re.I):
     name=name.rstrip(' ,.;:-')+', z.s.'
 
-  # Praha N za právní formou je v těchto usneseních lokalita, ne název subjektu.
-  # Platí pouze pro mimořádné dotace a jen tehdy, je-li před ní právní forma.
-  name=re.sub(
-    r'(?P<form>\b(?:z\.s\.|o\.p\.s\.|s\.r\.o\.))\s*,\s*Praha\s+\d+[A-Za-z]?(?:\s*[-–—].*)?\s*$',
-    r'\g<form>',name,flags=re.I
-  )
+  # Pro jistotu znovu odstraníme lokalitu, pokud vznikla po jiném čištění.
+  name=strip_location_after_legal_form(name)
 
   # Častý zbytek po rozpadlé závorce v titulku.
   name=re.sub(r'\s*\(\s*$','',name)
@@ -74,6 +84,7 @@ def validate(grants):
   bad_prefix=re.compile(r'^(?:spolkem|nadačním\s+fondem|nadacnim\s+fondem|nemocnicí|nemocnici)\b',re.I)
   bad_location=re.compile(r'\b(?:z\.s\.|o\.p\.s\.|s\.r\.o\.)\s*,\s*Praha\s+\d+',re.I)
   bad_zs=re.compile(r'\bz\s*\.\s*s(?!\.)',re.I)
+  duplicate_zs=re.compile(r'\bz\.s\.\s*,[^,]{0,80},\s*z\.s\.\s*$',re.I)
   project_tail=re.compile(r'\b(?:k|na|pro)\s+realizaci\s+projektu\b',re.I)
   for i,g in enumerate(grants):
     if not is_extraordinary(g):continue
@@ -82,6 +93,7 @@ def validate(grants):
     if bad_prefix.search(name):errors.append(f'záznam {i}: právní obal v názvu {name!r}')
     if bad_location.search(name):errors.append(f'záznam {i}: lokalita Praha za právní formou {name!r}')
     if bad_zs.search(name):errors.append(f'záznam {i}: nejednotná zkratka z.s. {name!r}')
+    if duplicate_zs.search(name):errors.append(f'záznam {i}: duplicitně doplněná právní forma z.s. {name!r}')
     if project_tail.search(name):errors.append(f'záznam {i}: účel/projekt zůstal v názvu {name!r}')
     if name.endswith('('):errors.append(f'záznam {i}: otevřená závorka na konci {name!r}')
   if errors:
