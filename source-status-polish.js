@@ -8,6 +8,7 @@
     'Registr smluv|Smlouvy MČ Praha 8':['contracts','aktualizace 1x denně'],
     'Registr smluv|Smlouvy příspěvkových organizací a firem MČ Praha 8':['contractEntities','aktualizace 1x denně'],
 
+    'MČ Praha 8|Dotace a granty':['grants','aktualizace 1x týdně (vždy v pondělí)'],
     'MČ Praha 8|Zastupitelstvo a politické kluby':['people','aktualizace 1x týdně (vždy v pondělí)'],
     'MČ Praha 8|Organizace':['organizations','aktualizace 1x týdně (vždy v pondělí)'],
     'MČ Praha 8|Školská otevřená data':['schoolOpenData','aktualizace 1x týdně (vždy v pondělí)'],
