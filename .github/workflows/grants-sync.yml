@@ -2,7 +2,7 @@ name: "💶 Dotace – týdenní aktualizace"
 
 on:
   workflow_dispatch:
-  # Dočasný jednorázový retest po systémové normalizaci formátu mimořádných dotací.
+  # Dočasný jednorázový retest po opravě pořadí normalizace názvů mimořádných dotací.
   # Po zeleném průchodu se tento push trigger odstraní.
   push:
     branches: [main]
