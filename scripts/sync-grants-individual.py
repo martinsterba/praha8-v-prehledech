@@ -36,12 +36,59 @@ def read_json(path,fallback):
   except Exception:return fallback
 
 def clean_name(name):
+  """Z názvu smluvní strany udělá zobrazitelný název příjemce.
+
+  Usnesení často používají instrumentál a právní popisy typu „obchodní
+  korporací“, „příspěvkovou organizací“ nebo „fyzickou osobou panem“.
+  Tyto výrazy popisují právní formu/roli a nejsou součástí názvu subjektu.
+  U několika historických názvů, kde samotné odstranění prefixu nestačí kvůli
+  skloňování, používáme úzkou a explicitní kanonizaci.
+  """
   name=norm(name).strip(' ,.;:-"')
-  name=re.sub(r'^(?:a|s|mezi|organizací|organizaci|organizace|spolkem|spolek|společností|společnosti)\s+','',name,flags=re.I)
+
+  # Právní/gramatický obal před vlastním názvem příjemce.
+  role_prefix=r'''^(?:
+    obchodní\s+korporací|obchodni\s+korporaci|
+    církevní\s+organizací|cirkevni\s+organizaci|
+    příspěvkovou\s+organizací|prispevkovou\s+organizaci|
+    školskou\s+právnickou\s+osobou|skolskou\s+pravnickou\s+osobou|
+    právnickou\s+osobou|pravnickou\s+osobou|
+    fyzickou\s+osobou(?:\s+panem|\s+paní)?|fyzickou\s+osobou(?:\s+panem|\s+pani)?|
+    obecně\s+prospěšnou\s+společností|obecne\s+prospesnou\s+spolecnosti|
+    organizací|organizaci|společností|spolecnosti
+  )\s*[-,:]?\s*'''
+  name=re.sub(role_prefix,'',name,flags=re.I|re.X)
+  name=re.sub(r'^(?:a|s|mezi)\s+','',name,flags=re.I)
+
   # Starší usnesení často píší IČ přímo za názvem bez čárky, např.
   # „... (církevní organizace) IČ: 49371480“. IČ do názvu příjemce nepatří.
   name=re.split(r'\s*(?:,\s*)?(?:se sídlem|se sidlem|sídlo|sidlo|IČO|IČ|ICO|zastoupen|jako\s+"?obdarovan)\b',name,maxsplit=1,flags=re.I)[0]
-  return norm(name).strip(' ,.;:-"')
+  name=norm(name).strip(' ,.;:-"')
+
+  # Zbytky po rozpadlém závorkovém popisu na konci názvu.
+  name=re.sub(r'\s*\(\s*$','',name).strip(' ,.;:-"')
+
+  # Úzké opravy tam, kde je název v usnesení skloňovaný a prosté odstranění
+  # právního prefixu by nestačilo. Nejde o obecné „hádaní“ českého skloňování.
+  canonical=(
+    (r'^Sdružením\s+pro\s+bezbariérovou\s+kulturu\s+Nedomysleno\b','Sdružení pro bezbariérovou kulturu Nedomysleno, z.s., Praha 4'),
+    (r'^Karlínským\s+spolkem\s+pro\s+zábavu\b','Karlínský spolek pro zábavu, z.s., Praha 8'),
+    (r'^Základní\s+organizací\s+Českého\s+svazu\s+ochránců\s+přírody\s+Ochrana\s+herpetofauny(?:\s+číslo)?\s+01/68\b','Základní organizace Českého svazu ochránců přírody Ochrana herpetofauny číslo 01/68'),
+    (r'^Střední\s+školou\s+Náhorní\b','Střední škola Náhorní'),
+    (r'^Fondem\s+ohrožených\s+dětí\b','Fond ohrožených dětí'),
+    (r'^Nedomysleno\s+ČR\s+s\.?r\.?o\.?\b','NedomYsleno ČR s.r.o.'),
+    (r'^Římskokatolickou?\s+farností\s+u\s+kostela\s+sv\.\s*Petra\s+a\s+Pavla','Římskokatolická farnost u kostela sv. Petra a Pavla Praha - Bohnice'),
+    (r'^Římskokatolická\s+farnost\s+u\s+kostela\s+sv\.\s*Petra\s+a\s+Pavla(?:\s+Praha\s*-?\s*Bohnice)?','Římskokatolická farnost u kostela sv. Petra a Pavla Praha - Bohnice'),
+    (r'^Čestmírem\s+Suškou\b','Čestmír Suška'),
+    (r'^Mateřská\s+škola\s+a\s+základní\s+škola\s+speciální\s+Diakonie\s+ČCE\s+Praha\s*5\b','Mateřská a základní škola speciální Diakonie ČCE Praha 5'),
+    (r'^Mateřská\s+a\s+základní\s+škola\s+speciální\s+Diakonie\s+ČCE\s+Praha\s*5\b','Mateřská a základní škola speciální Diakonie ČCE Praha 5'),
+    (r'^Nemocnice\s+Na\s+Bulovce\b','Nemocnice Na Bulovce'),
+    (r'^Piána\s+na\s+ulici\s+z\.?s\.?','Piána na ulici z.s.')
+  )
+  for pattern,replacement in canonical:
+    if re.search(pattern,name,re.I):return replacement
+
+  return name
 
 def candidate(r):
   try:year=int(str(r.get('date') or '')[:4])
@@ -134,7 +181,10 @@ def recipient_ico(text,recipient):
   if not recipient:return ''
   q=norm(text);needle=norm(recipient)
   pos=q.lower().find(needle.lower())
-  if pos<0:return ''
+  if pos<0:
+    # Po kanonizaci se název může mírně lišit od skloňovaného tvaru v usnesení.
+    # V takovém případě IČ nehádáme z širokého okolí jiné smluvní strany.
+    return ''
   # Nejprve vezmeme IČ bezprostředně za názvem obdarovaného. Tím zabráníme,
   # aby se z širšího bloku omylem vzalo IČ dárce nebo jiné smluvní strany.
   tail=q[pos+len(needle):pos+len(needle)+120]
@@ -217,8 +267,8 @@ def main():
   years=sorted({int(g['year']) for g in combined},reverse=True);counts={str(y):sum(1 for g in combined if int(g['year'])==y) for y in years}
   old_sources=[s for s in (payload.get('sources') or []) if s.get('area') not in LEGACY_AREAS];by_year=Counter(g['year'] for g in grants)
   source_meta=[{'year':year,'area':AREA,'page':'data/usneseni.json','kind':'resolution-title+official-detail','required':False,'status':'načteno','qa':{'rows':count}} for year,count in sorted(by_year.items(),reverse=True)]
-  payload['schema']=max(int(payload.get('schema') or 0),23);payload['updated']=datetime.now(timezone.utc).isoformat();payload['grants']=combined;payload['sources']=old_sources+source_meta
-  payload['meta']={**payload.get('meta',{}),'records':len(combined),'years':years,'areas':sorted({g.get('area','') for g in combined if g.get('area')}),'warnings':warnings,'ares':ares_qa,'historyCounts':counts,'individualRows':len(grants),'individualUnmatched':len(unmatched),'extraordinaryRows':len(grants),'extraordinaryUnmatched':len(unmatched),'extraordinaryUnprovenMoney':unproven,'extraordinaryNoncash':noncash,'extraordinaryYears':sorted(by_year,reverse=True),'extraordinaryPolicy':'Mimořádná dotace = prokazatelně peněžní dar schválený formou darovací smlouvy, v níž je Městská část Praha 8 dárcem. Kandidáty vybíráme jen z usnesení s „Darovací smlouva“ v názvu. Výslovně věcné dary a případy bez bezpečného důkazu peněžního plnění se nezahrnují.'}
+  payload['schema']=max(int(payload.get('schema') or 0),24);payload['updated']=datetime.now(timezone.utc).isoformat();payload['grants']=combined;payload['sources']=old_sources+source_meta
+  payload['meta']={**payload.get('meta',{}),'records':len(combined),'years':years,'areas':sorted({g.get('area','') for g in combined if g.get('area')}),'warnings':warnings,'ares':ares_qa,'historyCounts':counts,'individualRows':len(grants),'individualUnmatched':len(unmatched),'extraordinaryRows':len(grants),'extraordinaryUnmatched':len(unmatched),'extraordinaryUnprovenMoney':unproven,'extraordinaryNoncash':noncash,'extraordinaryYears':sorted(by_year,reverse=True),'extraordinaryRecipientNormalization':'Právní a gramatické obaly smluvních stran se odstraňují; známé historicky skloňované názvy se kanonizují explicitními pravidly.','extraordinaryPolicy':'Mimořádná dotace = prokazatelně peněžní dar schválený formou darovací smlouvy, v níž je Městská část Praha 8 dárcem. Kandidáty vybíráme jen z usnesení s „Darovací smlouva“ v názvu. Výslovně věcné dary a případy bez bezpečného důkazu peněžního plnění se nezahrnují.'}
   base.atomic_write_json(OUT,payload)
   print(f'✅ Mimořádné dotace: {len(grants)} bezpečně vytěžených peněžních darů; {len(unmatched)} nevyřešených peněžních kandidátů; {unproven} neurčených; {noncash} nepeněžních.')
 
