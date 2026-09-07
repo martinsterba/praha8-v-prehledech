@@ -58,6 +58,7 @@ current_program_total=sum(float(g.get('approvedCzk') or 0) for g in current_prog
 if round(current_program_total)!=19_455_000:fail(f'dotace.json: součet programových dotací roku 2026 je {current_program_total}, očekáváno 19 455 000 Kč')
 
 extraordinary=[g for g in grants if g.get('area')=='Mimořádné dotace' or str(g.get('type') or '').lower()=='mimořádná dotace']
+extra_keys={(g.get('resolutionId'),g.get('recipient'),g.get('approvedCzk')) for g in extraordinary}
 for g in extraordinary:
   if str(g.get('type') or '').lower()!='mimořádná dotace':fail(f'dotace.json: mimořádná dotace {g.get("resolutionId") or g.get("recipient")} má neočekávaný typ')
   if 'MČ Praha 8 je dárce' not in str(g.get('method') or ''):fail(f'dotace.json: mimořádná dotace {g.get("resolutionId") or g.get("recipient")} nemá potvrzenou metodiku dárce')
@@ -77,6 +78,17 @@ def invalid_recipient(value):
 
 ico_in_name=re.compile(r'(?:\bIČO?\b|\bICO\b)\s*[:.]?\s*\d{8}\s*$',re.I)
 paren_ico_in_name=re.compile(r'\(\d{8}\)\s*$')
+extra_role_prefix=re.compile(r'''^(?:
+  obchodní\s+korporací|církevní\s+organizací|příspěvkovou\s+organizací|
+  školskou\s+právnickou\s+osobou|právnickou\s+osobou|fyzickou\s+osobou|
+  obecně\s+prospěšnou\s+společností|organizací|společností
+)\b''',re.I|re.X)
+extra_known_instrumental=re.compile(r'''^(?:
+  Sdružením\s+pro\s+bezbariérovou\s+kulturu\s+Nedomysleno|
+  Karlínským\s+spolkem\s+pro\s+zábavu|
+  Základní\s+organizací\s+Českého\s+svazu\s+ochránců\s+přírody|
+  Střední\s+školou\s+Náhorní|Fondem\s+ohrožených\s+dětí|Čestmírem\s+Suškou
+)\b''',re.I|re.X)
 legacy_format_rows=0
 
 for i,g in enumerate(grants):
@@ -92,6 +104,13 @@ for i,g in enumerate(grants):
     if ico_in_name.search(recipient) or paren_ico_in_name.search(recipient):fail(f'dotace.json: záznam {i} má IČ chybně uložené v názvu příjemce {recipient!r}')
   elif invalid_recipient(recipient) or ico_in_name.search(recipient) or paren_ico_in_name.search(recipient):
     legacy_format_rows+=1
+
+  # U mimořádných dotací hlídáme i právní/gramatický obal ze znění smlouvy.
+  if (g.get('resolutionId'),g.get('recipient'),g.get('approvedCzk')) in extra_keys:
+    if extra_role_prefix.search(recipient) or extra_known_instrumental.search(recipient):
+      fail(f'dotace.json: mimořádná dotace {g.get("resolutionId") or i} má nevyčištěný název příjemce {recipient!r}')
+    if recipient.endswith('(') or recipient.count('(')<recipient.count(')'):
+      fail(f'dotace.json: mimořádná dotace {g.get("resolutionId") or i} má rozbitou závorku v názvu {recipient!r}')
 
   try:amount=float(g.get('approvedCzk') or 0)
   except Exception:
