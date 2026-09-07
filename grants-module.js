@@ -106,7 +106,8 @@
       const payload=await loadGrants();
       if(seq!==renderSeq||location.hash!==ROUTE)return;
       const grants=(Array.isArray(payload.grants)?payload.grants:[]).filter(isValidGrant);
-      const areas=[...new Set(grants.map(g=>g.area).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'cs'));
+      const areaLabel=a=>grantCategoryLabel(a,a==='Mimořádné dotace'?'mimořádná dotace':'programová');
+      const areas=[...new Set(grants.map(g=>g.area).filter(Boolean))].sort((a,b)=>areaLabel(a).localeCompare(areaLabel(b),'cs'));
       const years=[...new Set(grants.map(g=>Number(g.year)).filter(Boolean))].sort((a,b)=>b-a);
       const recipients=new Set(grants.map(g=>g.ico?`ico:${digits(g.ico)}`:`name:${normalize(g.recipient)}`));
       const summaryYear=years[0]||null;
@@ -128,7 +129,7 @@
         <div class="data-note grant-note"><b>O datech.</b> Přehled spojuje zveřejněné dotace MČ Praha 8 a jejich historické výsledky. Jako <b>mimořádné dotace</b> označujeme peněžní dary schválené formou darovací smlouvy, v níž je MČ Praha 8 dárcem. Starší ročníky zachovávají tehdejší názvy a členění oblastí. Do databáze zařazujeme jen záznamy, u nichž lze z oficiálního zdroje bezpečně určit příjemce a schválenou částku; nezahrnujeme případy, kdy je MČ Praha 8 sama příjemcem prostředků od jiného poskytovatele.</div>
         ${topValue.length?`<section class="section recipient-section grant-top-section"><div class="section-head"><div><div class="kicker">Statistika</div><h2>TOP 10 příjemců dotací</h2></div><p>Organizace s nejvyšším součtem schválených dotací za dostupnou historii ${historyLabel}. Záznamy spojujeme primárně podle IČ.</p></div><div class="partner-tabs"><button class="partner-tab active" data-grant-ranking="value">Podle výše dotací</button><button class="partner-tab" data-grant-ranking="count">Podle počtu dotací</button></div><div id="grantTopRanking" class="partner-ranking">${buildTopRecipients(topValue)}</div></section>`:''}
         <section class="section grant-list-section">
-          <div class="grant-toolbar"><div><div class="kicker">Přehled</div><h2>Poskytnuté dotace</h2></div><div class="grant-filters"><input id="grantSearch" type="search" placeholder="Hledat příjemce nebo IČ…"><select id="grantArea"><option value="">Všechny oblasti</option>${areas.map(a=>`<option value="${esc(a)}">${esc(grantCategoryLabel(a,a==='Mimořádné dotace'?'mimořádná dotace':'programová'))}</option>`).join('')}</select><select id="grantYear"><option value="">Všechny roky</option>${years.map(y=>`<option value="${y}">${y}</option>`).join('')}</select></div></div>
+          <div class="grant-toolbar"><div><div class="kicker">Přehled</div><h2>Poskytnuté dotace</h2></div><div class="grant-filters"><input id="grantSearch" type="search" placeholder="Hledat příjemce nebo IČ…"><select id="grantArea"><option value="">Všechny oblasti</option>${areas.map(a=>`<option value="${esc(a)}">${esc(areaLabel(a))}</option>`).join('')}</select><select id="grantYear"><option value="">Všechny roky</option>${years.map(y=>`<option value="${y}">${y}</option>`).join('')}</select></div></div>
           <div id="grantResultCount" class="updated"></div><div class="grant-list-head"><span>Příjemce</span><span>Typ dotace</span><span>Rok</span><span>Částka</span><span>Zdroj</span></div><div id="grantList" class="grant-list"></div><div id="grantPager" class="pagination"></div>
         </section>
       </div>`;
