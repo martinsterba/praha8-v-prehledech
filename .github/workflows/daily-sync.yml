@@ -84,6 +84,9 @@ jobs:
             exit 1
           fi
 
+      - name: "Zachovat stav dotací v Datových zdrojích"
+        run: python3 scripts/update-grants-source-status.py
+
       - name: "Ověřit JSON datasety"
         run: |
           node --input-type=module <<'NODE'
