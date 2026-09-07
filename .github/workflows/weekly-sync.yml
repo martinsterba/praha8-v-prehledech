@@ -19,7 +19,7 @@ jobs:
   sync:
     name: "Aktualizovat týdenní zdroje"
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
 
     steps:
       - name: "Načíst repozitář"
@@ -39,83 +39,6 @@ jobs:
       - name: "Nainstalovat Chrome pro datový sync"
         id: chrome
         uses: browser-actions/setup-chrome@v2
-
-      - name: "Spustit týdenní synchronizaci"
-        env:
-          PUPPETEER_EXECUTABLE_PATH: ${{ steps.chrome.outputs.chrome-path }}
-        run: npm run sync:weekly
-
-      - name: "Zachovat stav dotací v Datových zdrojích"
-        run: python3 scripts/update-grants-source-status.py
-
-      - name: "Ověřit JSON datasety"
-        run: |
-          node --input-type=module <<'NODE'
-          import fs from 'node:fs';
-          import path from 'node:path';
-          const dir = 'data';
-          const files = fs.readdirSync(dir).filter(f => f.endsWith('.json'));
-          if (!files.length) throw new Error('Ve složce data nejsou žádné JSON datasety.');
-          for (const file of files) {
-            const full = path.join(dir, file);
-            const text = fs.readFileSync(full, 'utf8');
-            if (!text.trim()) throw new Error(`${file} je prázdný.`);
-            JSON.parse(text);
-          }
-          console.log(`OK: ověřeno ${files.length} JSON datasetů.`);
-          NODE
-
-      - name: "Zjistit změny"
-        id: changes
-        run: |
-          if git diff --quiet -- data/; then
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-          else
-            echo "changed=true" >> "$GITHUB_OUTPUT"
-          fi
-
-      - name: "Uložit aktualizovaná data"
-        if: steps.changes.outputs.changed == 'true'
-        run: |
-          set -euo pipefail
-          git config user.name "Praha 8 v přehledech – automat"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/
-          git commit -m "Týdenní aktualizace dat"
-          for attempt in 1 2 3; do
-            git pull --rebase origin main
-            if git push origin HEAD:main; then exit 0; fi
-            if [ "$attempt" -lt 3 ]; then sleep 5; fi
-          done
-          exit 1
-
-      - name: "Souhrn"
-        if: always()
-        run: |
-          if [ "${{ job.status }}" != "success" ]; then
-            echo "## ❌ Týdenní aktualizace selhala" >> "$GITHUB_STEP_SUMMARY"
-            echo "Existující data v repozitáři nebyla nahrazena neúspěšným během." >> "$GITHUB_STEP_SUMMARY"
-          elif [ "${{ steps.changes.outputs.changed }}" = "true" ]; then
-            echo "## ✅ Týdenní aktualizace dokončena" >> "$GITHUB_STEP_SUMMARY"
-            echo "Změněné datasety byly zkontrolovány a uloženy do repozitáře." >> "$GITHUB_STEP_SUMMARY"
-          else
-            echo "## ✅ Týdenní kontrola dokončena" >> "$GITHUB_STEP_SUMMARY"
-            echo "Ve sledovaných datech nebyly nalezeny žádné změny." >> "$GITHUB_STEP_SUMMARY"
-          fi
-
-  grants:
-    name: "Aktualizovat dotace a granty"
-    needs: sync
-    if: always() && needs.sync.result == 'success'
-    runs-on: ubuntu-latest
-    timeout-minutes: 30
-
-    steps:
-      - name: "Načíst nejnovější main"
-        uses: actions/checkout@v5
-        with:
-          fetch-depth: 0
-          ref: main
 
       - name: "Nainstalovat podporu starých grantových formátů"
         run: |
@@ -142,10 +65,15 @@ jobs:
             scripts/validate-grants.py \
             scripts/update-grants-source-status.py
 
-      - name: "Spustit grantovou synchronizaci"
+      - name: "Spustit týdenní synchronizaci"
+        env:
+          PUPPETEER_EXECUTABLE_PATH: ${{ steps.chrome.outputs.chrome-path }}
+        run: npm run sync:weekly
+
+      - name: "Aktualizovat dotace a granty"
         run: npm run sync:grants
 
-      - name: "Ověřit stav dotací v Datových zdrojích"
+      - name: "Ověřit dotace v Datových zdrojích"
         run: |
           python3 - <<'PY'
           import json
@@ -157,50 +85,61 @@ jobs:
           assert s.get('mode')=='aktualizováno'
           assert int(s.get('count') or 0)==count
           assert s.get('updated')
-          print(f'Dotace v Datových zdrojích: {count} záznamů · {s.get("updated")}')
+          print(f'Dotace a granty: {count} záznamů · aktualizováno {s.get("updated")}')
           PY
 
-      - name: "Zjistit změny dotací"
-        id: grant_changes
+      - name: "Ověřit JSON datasety"
         run: |
-          if git diff --quiet -- data/dotace.json data/grants-ares-cache.json data/source-status.json; then
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          import path from 'node:path';
+          const dir = 'data';
+          const files = fs.readdirSync(dir).filter(f => f.endsWith('.json'));
+          if (!files.length) throw new Error('Ve složce data nejsou žádné JSON datasety.');
+          for (const file of files) {
+            const full = path.join(dir, file);
+            const text = fs.readFileSync(full, 'utf8');
+            if (!text.trim()) throw new Error(`${file} je prázdný.`);
+            JSON.parse(text);
+          }
+          console.log(`OK: ověřeno ${files.length} JSON datasetů.`);
+          NODE
+
+      - name: "Zjistit změny"
+        id: changes
+        run: |
+          if git diff --quiet -- data/; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
-            git diff --stat -- data/dotace.json data/grants-ares-cache.json data/source-status.json
+            git diff --stat -- data/
           fi
 
-      - name: "Uložit ověřené dotace"
-        if: steps.grant_changes.outputs.changed == 'true'
+      - name: "Uložit aktualizovaná data"
+        if: steps.changes.outputs.changed == 'true'
         run: |
           set -euo pipefail
           git config user.name "Praha 8 v přehledech – automat"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git commit -m "Týdenní aktualizace dat"
           for attempt in 1 2 3; do
-            git fetch origin main
-            if [ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]; then
-              echo "Main se změnil; přepočítávám dotace nad nejnovějším stavem."
-              git reset --hard origin/main
-              npm run sync:grants
-            fi
-            git add data/dotace.json data/grants-ares-cache.json data/source-status.json
-            if git diff --cached --quiet; then exit 0; fi
-            git commit -m "Týdenní aktualizace dotací"
+            git pull --rebase origin main
             if git push origin HEAD:main; then exit 0; fi
-            if [ "$attempt" -lt 3 ]; then sleep 3; fi
+            if [ "$attempt" -lt 3 ]; then sleep 5; fi
           done
           exit 1
 
-      - name: "Souhrn dotací"
+      - name: "Souhrn"
         if: always()
         run: |
           if [ "${{ job.status }}" != "success" ]; then
-            echo "## ❌ Aktualizace dotací selhala" >> "$GITHUB_STEP_SUMMARY"
-            echo "Běžná týdenní data už byla bezpečně uložena; neověřená grantová data nebyla publikována." >> "$GITHUB_STEP_SUMMARY"
-          elif [ "${{ steps.grant_changes.outputs.changed }}" = "true" ]; then
-            echo "## ✅ Dotace byly aktualizovány" >> "$GITHUB_STEP_SUMMARY"
-            echo "Dataset dotací i jeho stav v Datových zdrojích prošly kontrolou a byly uloženy do main." >> "$GITHUB_STEP_SUMMARY"
+            echo "## ❌ Týdenní aktualizace selhala" >> "$GITHUB_STEP_SUMMARY"
+            echo "Existující data v repozitáři nebyla nahrazena neúspěšným během." >> "$GITHUB_STEP_SUMMARY"
+          elif [ "${{ steps.changes.outputs.changed }}" = "true" ]; then
+            echo "## ✅ Týdenní aktualizace dokončena" >> "$GITHUB_STEP_SUMMARY"
+            echo "Běžné týdenní zdroje i dotace a granty byly zkontrolovány a uloženy v jednom společném běhu." >> "$GITHUB_STEP_SUMMARY"
           else
-            echo "## ✅ Kontrola dotací dokončena" >> "$GITHUB_STEP_SUMMARY"
-            echo "Dotace i jejich stav v Datových zdrojích jsou v pořádku; nebylo co měnit." >> "$GITHUB_STEP_SUMMARY"
+            echo "## ✅ Týdenní kontrola dokončena" >> "$GITHUB_STEP_SUMMARY"
+            echo "Běžné týdenní zdroje i dotace a granty prošly kontrolou; nebylo co měnit." >> "$GITHUB_STEP_SUMMARY"
           fi
