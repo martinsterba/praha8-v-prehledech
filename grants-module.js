@@ -164,70 +164,9 @@
     }
   }
 
-  function ensureHomeCard(){
-    if(location.hash&&location.hash!=='#/'&&location.hash!=='#')return false;
-    const grid=document.querySelector('#app .home-context-section .cards');
-    if(!grid)return false;
-    if(grid.querySelector('[data-grants-home-card]'))return true;
-    const card=document.createElement('a');
-    card.className='card';card.href='#/dotace';card.dataset.grantsHomeCard='true';
-    card.innerHTML='<span class="icon">Kč</span><h3>Dotace a granty</h3><p>Přehled dotací poskytnutých městskou částí Praha 8 organizacím a dalším příjemcům.</p><span class="more">Otevřít →</span>';
-    const finance=[...grid.children].find(x=>x.querySelector('h3')?.textContent?.trim()==='Finance');
-    if(finance)grid.insertBefore(card,finance);else grid.append(card);
-    return true;
-  }
-
-  async function ensureSources(){
-    if(location.hash!=='#/zdroje')return false;
-    const app=document.querySelector('#app');
-    const statusGroups=[...app.querySelectorAll('.status-group')];
-    const mcStatus=statusGroups.find(x=>x.querySelector('.status-group-head h3')?.textContent?.trim()==='MČ Praha 8');
-    if(!mcStatus)return false;
-    const payload=await loadGrants().catch(()=>null);
-    if(location.hash!=='#/zdroje')return true;
-    const count=Number(payload?.meta?.records||payload?.grants?.length||0);
-    const updatedValue=payload?.updated||'';
-    const updated=fmtDateTime(updatedValue);
-    const updatedEpoch=updatedValue?new Date(updatedValue).valueOf():0;
-    const list=mcStatus.querySelector('.status-card-list');
-    if(list){
-      let card=[...list.children].find(x=>x.dataset.grantsSourceStatus==='true'||x.querySelector('.status-card-title')?.textContent?.trim()==='Dotace a granty');
-      if(!card){card=document.createElement('div');card.className='status-card';card.dataset.grantsSourceStatus='true';list.append(card)}
-      card.dataset.sourceUpdated=String(Number.isFinite(updatedEpoch)?updatedEpoch:0);
-      const html=`<div class="status-card-main"><div class="status-card-title">Dotace a granty</div><div class="status-card-meta">Aktualizace 1× týdně (vždy v pondělí) | poslední proběhla ${updated}</div></div><div class="status-card-number">${count?count.toLocaleString('cs-CZ'):'—'}</div><div class="status-card-state"><span class="data-status ok">data načtena</span></div>`;
-      if(card.innerHTML!==html)card.innerHTML=html;
-      const current=[...list.children];
-      const sorted=[...current].sort((a,b)=>{
-        const at=Number(a.dataset.sourceUpdated||0)||parseStatusDate(a.querySelector('.status-card-meta')?.textContent);
-        const bt=Number(b.dataset.sourceUpdated||0)||parseStatusDate(b.querySelector('.status-card-meta')?.textContent);
-        if(bt!==at)return bt-at;
-        return (a.querySelector('.status-card-title')?.textContent||'').localeCompare(b.querySelector('.status-card-title')?.textContent||'','cs');
-      });
-      if(sorted.some((x,i)=>x!==current[i]))sorted.forEach(x=>list.append(x));
-    }
-    const sourceGroups=[...app.querySelectorAll('.source-group')];
-    const mcSource=sourceGroups.find(x=>x.querySelector('.source-group-head h2')?.textContent?.trim()==='MČ Praha 8');
-    const sourceGrid=mcSource?.querySelector('.source-grid');
-    if(sourceGrid&&!sourceGrid.querySelector('[data-grants-source-box]')){
-      const box=document.createElement('div');box.className='sourcebox';box.dataset.grantsSourceBox='true';
-      box.innerHTML='<h3>Dotace a granty</h3><p>Poskytnuté dotace MČ Praha 8. Čerpáme z oficiálního rozcestníku Granty a dotace, historických výsledkových souborů a usnesení. Mimořádné dotace v přehledu tvoří peněžní dary z darovacích smluv, kde je MČ Praha 8 dárcem.</p><code>https://www.praha8.cz/Granty-a-dotace.html</code>';
-      const next=[...sourceGrid.children].find(x=>(x.querySelector('h3')?.textContent||'').localeCompare('Dotace a granty','cs')>0);
-      if(next)sourceGrid.insertBefore(box,next);else sourceGrid.append(box);
-    }
-    return true;
-  }
-
-  function afterBaseRender(attempt=0){
-    if(location.hash===ROUTE)return true;
-    const done=location.hash==='#/zdroje'?ensureSources():ensureHomeCard();
-    Promise.resolve(done).then(ok=>{if(!ok&&attempt<12)setTimeout(()=>afterBaseRender(attempt+1),30)});
-    return done;
-  }
 
   window.Praha8Grants={render:renderGrants};
   dispatchEvent(new Event('praha8:grants-ready'));
 
-  const schedule=()=>setTimeout(()=>afterBaseRender(0),0);
-  addEventListener('hashchange',()=>{renderSeq++;grantsPromise=null;schedule()});
-  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',schedule,{once:true});else schedule();
+  addEventListener('hashchange',()=>{renderSeq++;grantsPromise=null;});
 })();

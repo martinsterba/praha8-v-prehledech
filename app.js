@@ -36,6 +36,7 @@ addEventListener('hashchange',()=>{$('#mega').hidden=true;render()});
 
 const cards=[
  ['https://www.mesicnikosmicka.cz/','◫','Časopis Osmička','Aktuality, rozhovory a informace z oficiálního měsíčníku Prahy 8.',true],
+ ['#/dotace','Kč','Dotace a granty','Přehled dotací poskytnutých městskou částí Praha 8 organizacím a dalším příjemcům.'],
  ['#/penize','◒','Finance','Rozpočet, smlouvy, veřejné zakázky a finanční rozhodnutí na jednom místě.'],
  ['#/info106','i','Informace podle zákona č. 106/1999 Sb.','Zveřejněné žádosti a odpovědi podle zákona o svobodném přístupu k informacím.'],
  ['https://mapaneziskovek.cz/','⌖','Katalog neziskovek a sociálních služeb','Přehled neziskových organizací a sociálních služeb působících na Praze 8.',true],
@@ -479,6 +480,7 @@ async function zdroje(){
  const cv=data.smlouvy?.meta?.validation||{};
  const sourceCount=(key)=>Number((st[key]||{}).count||0);
  const items=[
+  {group:'MČ Praha 8',key:'grants',label:'Dotace a granty',count:sourceCount('grants')},
   {group:'MČ Praha 8',key:'people',label:'Zastupitelstvo a politické kluby',count:sourceCount('people')},
   {group:'MČ Praha 8',key:'news',label:'Novinky – Aktuality z městské části',count:Array.isArray(data.novinky)?data.novinky.length:0},
   {group:'MČ Praha 8',key:'voting',label:'Hlasování',count:sourceCount('voting')},
@@ -529,6 +531,7 @@ async function zdroje(){
  const box=(title,text,url='')=>({title,html:`<div class="sourcebox"><h3>${title}</h3><p>${text}</p>${url?`<code>${url}</code>`:''}</div>`});
  const groups=[
   {title:'MČ Praha 8',html:group('MČ Praha 8','Data, která vznikají nebo jsou primárně publikována městskou částí. ARES či obchodní rejstřík používáme jen jako doplňkové ověření.',[
+   box('Dotace a granty','Poskytnuté dotace MČ Praha 8. Čerpáme z oficiálního rozcestníku Granty a dotace, historických výsledkových souborů a usnesení. Mimořádné dotace v přehledu tvoří peněžní dary z darovacích smluv, kde je MČ Praha 8 dárcem.','https://www.praha8.cz/Granty-a-dotace.html'),
    box('Usnesení Rady a Zastupitelstva','Oficiální databáze usnesení MČ Praha 8.','https://www.praha8.cz/app/usn'),
    box('Hlasování','Přehledy z elektronického hlasovacího systému publikované Prahou 8.','https://www.praha8.cz/Prehledy-hlasovani.html'),
    box('Zastupitelstvo a politické kluby','Oficiální seznam zastupitelstva, funkcí, gescí radních a politických klubů. Gesce se obnovují pouze v rámci tohoto zdroje.','https://www.praha8.cz/Zastupitelstvo-mestske-casti-Praha-8.html'),
