@@ -1,6 +1,195 @@
 {
   "contracts": [
     {
+      "id": "39414629",
+      "idContract": "37055109",
+      "url": "https://smlouvy.gov.cz/smlouva/39414629",
+      "subject": "Darovací smlouva",
+      "published": "2026-09-07",
+      "signed": "2026-09-04",
+      "valueCzk": 150000,
+      "valueVatCzk": 150000,
+      "valueNoVatCzk": 150000,
+      "counterparties": [
+        {
+          "name": "Basket Slovanka, z.s.",
+          "ico": "48137171",
+          "box": "qenxenz"
+        }
+      ],
+      "counterparty": "Basket Slovanka, z.s.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39411469",
+      "idContract": "37052073",
+      "url": "https://smlouvy.gov.cz/smlouva/39411469",
+      "subject": "265_22_Čištění a impregnace fasády_  14655",
+      "published": "2026-09-07",
+      "signed": "2026-09-02",
+      "valueCzk": 97861.63,
+      "valueVatCzk": null,
+      "valueNoVatCzk": 97861.63,
+      "counterparties": [
+        {
+          "name": "FOCAVO s.r.o.",
+          "ico": "21944733",
+          "box": ""
+        }
+      ],
+      "counterparty": "FOCAVO s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39411445",
+      "idContract": "37052049",
+      "url": "https://smlouvy.gov.cz/smlouva/39411445",
+      "subject": "780_61_Odstranění závad plynoucá z RZ č. 705/2026_  14608",
+      "published": "2026-09-07",
+      "signed": "2026-08-28",
+      "valueCzk": 99640,
+      "valueVatCzk": null,
+      "valueNoVatCzk": 99640,
+      "counterparties": [
+        {
+          "name": "Milan HORA",
+          "ico": "14961407",
+          "box": ""
+        }
+      ],
+      "counterparty": "Milan HORA",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39410681",
+      "idContract": "37051309",
+      "url": "https://smlouvy.gov.cz/smlouva/39410681",
+      "subject": "Smlouva o nájmu prostoru sloužícího podnikání",
+      "published": "2026-09-07",
+      "signed": "2026-09-03",
+      "valueCzk": 60000,
+      "valueVatCzk": 60000,
+      "valueNoVatCzk": 49586.78,
+      "counterparties": [
+        {
+          "name": "Fresh Bistro s.r.o.",
+          "ico": "22569626",
+          "box": "iuwft3t"
+        }
+      ],
+      "counterparty": "Fresh Bistro s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39411749",
+      "idContract": "37052325",
+      "url": "https://smlouvy.gov.cz/smlouva/39411749",
+      "subject": "3_26_5_Oprava výměnou nefunkčního plynového kotle_  15006",
+      "published": "2026-09-07",
+      "signed": "2026-09-07",
+      "valueCzk": 104247,
+      "valueVatCzk": null,
+      "valueNoVatCzk": 104247,
+      "counterparties": [
+        {
+          "name": "František Poláček",
+          "ico": "12372803",
+          "box": ""
+        }
+      ],
+      "counterparty": "František Poláček",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39424485",
+      "idContract": "37064573",
+      "url": "https://smlouvy.gov.cz/smlouva/39424485",
+      "subject": "233_37_501_Sokolovská_Oprava plynového kotle výměnou _14125",
+      "published": "2026-09-07",
+      "signed": "2026-08-19",
+      "valueCzk": 128867,
+      "valueVatCzk": null,
+      "valueNoVatCzk": 128867,
+      "counterparties": [
+        {
+          "name": "Guerdo, s.r.o.",
+          "ico": "24662437",
+          "box": ""
+        }
+      ],
+      "counterparty": "Guerdo, s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39424517",
+      "idContract": "37064605",
+      "url": "https://smlouvy.gov.cz/smlouva/39424517",
+      "subject": "533_10_40_Bínova_HAV_Oprava odpadního potrubí",
+      "published": "2026-09-07",
+      "signed": "2026-08-24",
+      "valueCzk": 65000,
+      "valueVatCzk": null,
+      "valueNoVatCzk": 65000,
+      "counterparties": [
+        {
+          "name": "INSTALACE Šubrt, spol. s r.o.",
+          "ico": "26175827",
+          "box": ""
+        }
+      ],
+      "counterparty": "INSTALACE Šubrt, spol. s r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39424497",
+      "idContract": "37064585",
+      "url": "https://smlouvy.gov.cz/smlouva/39424497",
+      "subject": "233_37_501_Sokolovská_Oprava vzduchotechniky_14125",
+      "published": "2026-09-07",
+      "signed": "2026-08-14",
+      "valueCzk": 79644,
+      "valueVatCzk": null,
+      "valueNoVatCzk": 79644,
+      "counterparties": [
+        {
+          "name": "FOCAVO s.r.o.",
+          "ico": "21944733",
+          "box": ""
+        }
+      ],
+      "counterparty": "FOCAVO s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39420689",
+      "idContract": "37060933",
+      "url": "https://smlouvy.gov.cz/smlouva/39420689",
+      "subject": "Oprava poškozených laviček z důvodu bezpečnosti",
+      "published": "2026-09-07",
+      "signed": "2026-09-07",
+      "valueCzk": 176987.31,
+      "valueVatCzk": 176987.31,
+      "valueNoVatCzk": 146270.5,
+      "counterparties": [
+        {
+          "name": "RTD servis, s.r.o.",
+          "ico": "24217808",
+          "box": "rd69zvu"
+        }
+      ],
+      "counterparty": "RTD servis, s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
       "id": "39377541",
       "idContract": "37019289",
       "url": "https://smlouvy.gov.cz/smlouva/39377541",
@@ -136260,9 +136449,9 @@
     {
       "name": "RTD servis, s.r.o.",
       "ico": "24217808",
-      "contracts": 102,
-      "knownValueCzk": 42215518.11999998,
-      "valuedContracts": 101
+      "contracts": 103,
+      "knownValueCzk": 42392505.429999985,
+      "valuedContracts": 102
     },
     {
       "name": "IM-stav Praha s.r.o.",
@@ -136449,9 +136638,9 @@
     {
       "name": "INSTALACE Šubrt, spol. s r.o.",
       "ico": "26175827",
-      "contracts": 68,
-      "knownValueCzk": 20506609.029999997,
-      "valuedContracts": 68
+      "contracts": 69,
+      "knownValueCzk": 20571609.029999997,
+      "valuedContracts": 69
     },
     {
       "name": "BAZAS s.r.o.",
@@ -136645,9 +136834,9 @@
     {
       "name": "Guerdo, s.r.o.",
       "ico": "24662437",
-      "contracts": 79,
-      "knownValueCzk": 12431889.460000003,
-      "valuedContracts": 79
+      "contracts": 80,
+      "knownValueCzk": 12560756.460000003,
+      "valuedContracts": 80
     },
     {
       "name": "VERTIX s.r.o.",
@@ -137091,18 +137280,18 @@
       "valuedContracts": 18
     },
     {
+      "name": "Milan HORA",
+      "ico": "14961407",
+      "contracts": 53,
+      "knownValueCzk": 6667415.45,
+      "valuedContracts": 53
+    },
+    {
       "name": "PREdistribuce, a.s.",
       "ico": "27376516",
       "contracts": 47,
       "knownValueCzk": 6613274.35,
       "valuedContracts": 26
-    },
-    {
-      "name": "Milan HORA",
-      "ico": "14961407",
-      "contracts": 52,
-      "knownValueCzk": 6567775.45,
-      "valuedContracts": 52
     },
     {
       "name": "Tělovýchovná jednota Slovan Bohnice - Praha 8 z.s.",
@@ -137140,6 +137329,13 @@
       "valuedContracts": 2
     },
     {
+      "name": "Basket Slovanka, z.s.",
+      "ico": "48137171",
+      "contracts": 11,
+      "knownValueCzk": 6053000,
+      "valuedContracts": 11
+    },
+    {
       "name": "HANSA 2, s.r.o.",
       "ico": "25096702",
       "contracts": 6,
@@ -137159,13 +137355,6 @@
       "contracts": 24,
       "knownValueCzk": 5964000,
       "valuedContracts": 24
-    },
-    {
-      "name": "Basket Slovanka, z.s.",
-      "ico": "48137171",
-      "contracts": 10,
-      "knownValueCzk": 5903000,
-      "valuedContracts": 10
     },
     {
       "name": "O2 Czech Republic a.s.",
@@ -139142,6 +139331,13 @@
       "valuedContracts": 9
     },
     {
+      "name": "Fresh Bistro s.r.o.",
+      "ico": "22569626",
+      "contracts": 2,
+      "knownValueCzk": 1560000,
+      "valuedContracts": 2
+    },
+    {
       "name": "Rusina Frei s.r.o.",
       "ico": "02308002",
       "contracts": 1,
@@ -139208,13 +139404,6 @@
       "name": "IMMORENT Orion, s.r.o.",
       "ico": "28428544",
       "contracts": 2,
-      "knownValueCzk": 1500000,
-      "valuedContracts": 1
-    },
-    {
-      "name": "Fresh Bistro s.r.o.",
-      "ico": "22569626",
-      "contracts": 1,
       "knownValueCzk": 1500000,
       "valuedContracts": 1
     },
@@ -141389,6 +141578,13 @@
       "valuedContracts": 3
     },
     {
+      "name": "František Poláček",
+      "ico": "12372803",
+      "contracts": 5,
+      "knownValueCzk": 522916,
+      "valuedContracts": 5
+    },
+    {
       "name": "YBAS, s.r.o.",
       "ico": "28161297",
       "contracts": 4,
@@ -141897,13 +142093,6 @@
       "ico": "21022186",
       "contracts": 4,
       "knownValueCzk": 419709,
-      "valuedContracts": 4
-    },
-    {
-      "name": "František Poláček",
-      "ico": "12372803",
-      "contracts": 4,
-      "knownValueCzk": 418669,
       "valuedContracts": 4
     },
     {
@@ -142472,6 +142661,13 @@
       "contracts": 1,
       "knownValueCzk": 337214.9,
       "valuedContracts": 1
+    },
+    {
+      "name": "FOCAVO s.r.o.",
+      "ico": "21944733",
+      "contracts": 4,
+      "knownValueCzk": 337077.17,
+      "valuedContracts": 4
     },
     {
       "name": "MUDr. Jindřich LAHOVSKÝ",
@@ -143984,13 +144180,6 @@
       "contracts": 1,
       "knownValueCzk": 162503,
       "valuedContracts": 1
-    },
-    {
-      "name": "FOCAVO s.r.o.",
-      "ico": "21944733",
-      "contracts": 2,
-      "knownValueCzk": 159571.53999999998,
-      "valuedContracts": 2
     },
     {
       "name": "Pártystany-Jičín s.r.o.",
@@ -147879,17 +148068,17 @@
     }
   ],
   "meta": {
-    "total": 6488,
+    "total": 6497,
     "complete": true,
     "historyComplete": true,
     "scope": "full-history",
     "dateFrom": "2007-05-09",
     "dateTo": "2026-09-16",
     "dateLabel": "celá historie Registru smluv",
-    "knownValueCzk": 6869762185.109996,
-    "valuedContracts": 5728,
+    "knownValueCzk": 6870724432.049994,
+    "valuedContracts": 5737,
     "partners": 1679,
-    "updated": "2026-09-06T08:42:53.540Z",
+    "updated": "2026-09-08T08:55:09.663Z",
     "source": "https://data.smlouvy.gov.cz/index.xml",
     "method": "official-live-search-daily-overlap",
     "dumps": 124,
