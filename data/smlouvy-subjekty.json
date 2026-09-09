@@ -1,14 +1,14 @@
 {
   "schema": 2,
-  "updated": "2026-09-08T08:55:09.663Z",
+  "updated": "2026-09-09T09:00:44.682Z",
   "source": "https://smlouvy.gov.cz/vyhledavani",
   "method": "official-live-search-daily-overlap",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7348,
-    "knownValueCzk": 5148684420.380001,
+    "totalContracts": 7353,
+    "knownValueCzk": 5150055474.360001,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
@@ -2052,6 +2052,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39434173",
+          "idContract": "24081667",
+          "url": "https://smlouvy.gov.cz/smlouva/39434173",
+          "subject": "VZMR_14_2023 - Příprava projektové dokumentace ve stupni prováděcí projekt se všemi potřebnými profesemi",
+          "published": "2026-09-08",
+          "signed": "2023-08-15",
+          "valueCzk": 1799800,
+          "valueVatCzk": null,
+          "valueNoVatCzk": 1799800,
+          "counterparties": [
+            {
+              "name": "KVS - Projekt s.r.o.",
+              "ico": "26476568",
+              "box": "x2dqy9g"
+            }
+          ],
+          "counterparty": "KVS - Projekt s.r.o.",
+          "publisher": "Osmá správa majetku a služeb a.s.",
+          "publisherIco": "04650522"
+        },
         {
           "id": "39379873",
           "idContract": "37021525",
@@ -16162,30 +16183,6 @@
             }
           ],
           "counterparty": "HONALSTAV s.r.o.",
-          "publisher": "Osmá správa majetku a služeb a.s.",
-          "publisherIco": "04650522"
-        },
-        {
-          "entityIco": "04650522",
-          "entityName": "Osmá správa majetku a služeb a.s.",
-          "entityKind": "company",
-          "id": "25791043",
-          "idContract": "24081667",
-          "url": "https://smlouvy.gov.cz/smlouva/25791043",
-          "subject": "VZMR_14_2023 - Příprava projektové dokumentace ve stupni prováděcí projekt se všemi potřebnými profesemi",
-          "published": "2023-09-18",
-          "signed": "2023-08-15",
-          "valueCzk": 1799800,
-          "valueVatCzk": null,
-          "valueNoVatCzk": 1799800,
-          "counterparties": [
-            {
-              "name": "KVS - Projekt s.r.o.",
-              "ico": "26476568",
-              "box": "x2dqy9g"
-            }
-          ],
-          "counterparty": "KVS - Projekt s.r.o.",
           "publisher": "Osmá správa majetku a služeb a.s.",
           "publisherIco": "04650522"
         },
@@ -53518,12 +53515,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Materska-skola-Praha-8-Na-Pesinach-13.html",
       "website": "http://www.msnapesinach.cz/",
-      "total": 24,
-      "partners": 20,
-      "knownValueCzk": 3342570,
-      "valuedContracts": 23,
+      "total": 26,
+      "partners": 22,
+      "knownValueCzk": 3681505,
+      "valuedContracts": 25,
       "dateFrom": "2016-08-08",
-      "dateTo": "2026-07-02",
+      "dateTo": "2026-08-28",
       "partnerList": [
         {
           "name": "NÁBYTEK HONZA s.r.o.",
@@ -53558,6 +53555,13 @@
           "ico": "24284157",
           "contracts": 1,
           "knownValueCzk": 266446.32,
+          "valuedContracts": 1
+        },
+        {
+          "name": "PEKAR spol. s r.o.",
+          "ico": "25190563",
+          "contracts": 1,
+          "knownValueCzk": 250000,
           "valuedContracts": 1
         },
         {
@@ -53607,6 +53611,13 @@
           "ico": "44266472",
           "contracts": 1,
           "knownValueCzk": 101403,
+          "valuedContracts": 1
+        },
+        {
+          "name": "Konica Minolta Business Solutions Czech, spol. s r.o.",
+          "ico": "00176150",
+          "contracts": 1,
+          "knownValueCzk": 88935,
           "valuedContracts": 1
         },
         {
@@ -53667,6 +53678,48 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39438741",
+          "idContract": "37078189",
+          "url": "https://smlouvy.gov.cz/smlouva/39438741",
+          "subject": "Dodávka zboží, tj. pečiva podle jednotlivých objednávek kupujícího",
+          "published": "2026-09-08",
+          "signed": "2026-08-28",
+          "valueCzk": 250000,
+          "valueVatCzk": null,
+          "valueNoVatCzk": 250000,
+          "counterparties": [
+            {
+              "name": "PEKAR spol. s r.o.",
+              "ico": "25190563",
+              "box": "iqwsq3g"
+            }
+          ],
+          "counterparty": "PEKAR spol. s r.o.",
+          "publisher": "Mateřská škola, Praha 8, Na Pěšinách 13",
+          "publisherIco": "70919631"
+        },
+        {
+          "id": "39438897",
+          "idContract": "37078341",
+          "url": "https://smlouvy.gov.cz/smlouva/39438897",
+          "subject": "Nákup tiskárny C251i",
+          "published": "2026-09-08",
+          "signed": "2026-07-03",
+          "valueCzk": 88935,
+          "valueVatCzk": 88935,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "Konica Minolta Business Solutions Czech, spol. s r.o.",
+              "ico": "00176150",
+              "box": "i6btmfg"
+            }
+          ],
+          "counterparty": "Konica Minolta Business Solutions Czech, spol. s r.o.",
+          "publisher": "Mateřská škola, Praha 8, Na Pěšinách 13",
+          "publisherIco": "70919631"
+        },
         {
           "entityIco": "70919631",
           "entityName": "Mateřská škola, Praha 8, Na Pěšinách 13",
@@ -60353,12 +60406,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Servisni-stredisko-pro-spravu-svereneho-majetku-MC-Praha-8-prispevkova-organizace.html",
       "website": "https://www.praha8.cz/servisni-stredisko-pro-spravu-svereneho-majetku-mc-praha-8-prispevkova-organizace.html",
-      "total": 1777,
-      "partners": 359,
-      "knownValueCzk": 2985615945.3100004,
-      "valuedContracts": 1700,
+      "total": 1779,
+      "partners": 360,
+      "knownValueCzk": 2986549199.2900004,
+      "valuedContracts": 1702,
       "dateFrom": "1991-07-15",
-      "dateTo": "2026-09-04",
+      "dateTo": "2026-09-08",
       "partnerList": [
         {
           "name": "BAB mont s.r.o.",
@@ -61313,6 +61366,13 @@
           "valuedContracts": 3
         },
         {
+          "name": "Mgr. Barbora Kudrnová",
+          "ico": "11930331",
+          "contracts": 2,
+          "knownValueCzk": 1070720,
+          "valuedContracts": 2
+        },
+        {
           "name": "Karel Suchý",
           "ico": "42525691",
           "contracts": 1,
@@ -61551,13 +61611,6 @@
           "valuedContracts": 1
         },
         {
-          "name": "Mgr. Barbora Kudrnová",
-          "ico": "11930331",
-          "contracts": 1,
-          "knownValueCzk": 535360,
-          "valuedContracts": 1
-        },
-        {
           "name": "EKOPROGRES PRAHA s.r.o.",
           "ico": "25712489",
           "contracts": 1,
@@ -61730,6 +61783,13 @@
           "ico": "63837633",
           "contracts": 1,
           "knownValueCzk": 404605,
+          "valuedContracts": 1
+        },
+        {
+          "name": "VK & JE FACILITY SOLUTIONS s.r.o.",
+          "ico": "14338122",
+          "contracts": 1,
+          "knownValueCzk": 397893.98,
           "valuedContracts": 1
         },
         {
@@ -62875,6 +62935,48 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39436385",
+          "idContract": "37075977",
+          "url": "https://smlouvy.gov.cz/smlouva/39436385",
+          "subject": "Dodávka a instalace vnitřních rolet ZŠ Žernosecká 3/1597, Praha 8 - Kobylisy",
+          "published": "2026-09-08",
+          "signed": "2026-09-08",
+          "valueCzk": 397893.98,
+          "valueVatCzk": 397893.98,
+          "valueNoVatCzk": 328838,
+          "counterparties": [
+            {
+              "name": "VK & JE FACILITY SOLUTIONS s.r.o.",
+              "ico": "14338122",
+              "box": ""
+            }
+          ],
+          "counterparty": "VK & JE FACILITY SOLUTIONS s.r.o.",
+          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
+          "publisherIco": "00639524"
+        },
+        {
+          "id": "39436281",
+          "idContract": "37075873",
+          "url": "https://smlouvy.gov.cz/smlouva/39436281",
+          "subject": "SMLOUVA O NAJMU PROSTORŮ SLOUŽÍCÍCH PODNIKANÍ",
+          "published": "2026-09-08",
+          "signed": "2026-09-01",
+          "valueCzk": 535360,
+          "valueVatCzk": 535360,
+          "valueNoVatCzk": 535360,
+          "counterparties": [
+            {
+              "name": "Mgr. Barbora Kudrnová",
+              "ico": "11930331",
+              "box": ""
+            }
+          ],
+          "counterparty": "Mgr. Barbora Kudrnová",
+          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
+          "publisherIco": "00639524"
+        },
         {
           "id": "39397441",
           "idContract": "36145038",
@@ -116313,12 +116415,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Petra-Strozziho-Praha-8-Za-Invalidovnou-3.html",
       "website": "http://www.zs-strozziho.cz/",
-      "total": 227,
+      "total": 228,
       "partners": 79,
-      "knownValueCzk": 39136878.76,
-      "valuedContracts": 212,
+      "knownValueCzk": 39235743.76,
+      "valuedContracts": 213,
       "dateFrom": "2016-10-26",
-      "dateTo": "2026-08-28",
+      "dateTo": "2026-09-08",
       "partnerList": [
         {
           "name": "AVA - agentura volnočasových aktivit pro děti a mládež, s.r.o.",
@@ -116601,6 +116703,13 @@
           "valuedContracts": 1
         },
         {
+          "name": "David Slanec",
+          "ico": "71277510",
+          "contracts": 2,
+          "knownValueCzk": 188566,
+          "valuedContracts": 2
+        },
+        {
           "name": "Mironet.cz a.s.",
           "ico": "28189647",
           "contracts": 1,
@@ -116741,13 +116850,6 @@
           "valuedContracts": 1
         },
         {
-          "name": "David Slanec",
-          "ico": "71277510",
-          "contracts": 1,
-          "knownValueCzk": 89701,
-          "valuedContracts": 1
-        },
-        {
           "name": "HEROLD - dětský svět a zahrada, s.r.o.",
           "ico": "02851270",
           "contracts": 1,
@@ -116875,6 +116977,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39442125",
+          "idContract": "37081385",
+          "url": "https://smlouvy.gov.cz/smlouva/39442125",
+          "subject": "Objednávka servis a údržba hřišť s umělým trávníkem a umytí povrchu běžecké dráhy",
+          "published": "2026-09-08",
+          "signed": "2026-09-08",
+          "valueCzk": 98865,
+          "valueVatCzk": 98865,
+          "valueNoVatCzk": 98865,
+          "counterparties": [
+            {
+              "name": "David Slanec",
+              "ico": "71277510",
+              "box": ""
+            }
+          ],
+          "counterparty": "David Slanec",
+          "publisher": "Základní škola a mateřská škola Petra Strozziho, Praha 8, Za Invalidovnou 3",
+          "publisherIco": "60461853"
+        },
         {
           "id": "39338185",
           "idContract": "36975299",

@@ -1,11 +1,11 @@
 {
-  "updated": "2026-09-08T08:55:09.663Z",
+  "updated": "2026-09-09T09:00:44.682Z",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7348,
-    "knownValueCzk": 5148684420.380001,
+    "totalContracts": 7353,
+    "knownValueCzk": 5150055474.360001,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
@@ -232,12 +232,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Materska-skola-Praha-8-Na-Pesinach-13.html",
       "website": "http://www.msnapesinach.cz/",
-      "total": 24,
-      "partners": 20,
-      "knownValueCzk": 3342570,
-      "valuedContracts": 23,
+      "total": 26,
+      "partners": 22,
+      "knownValueCzk": 3681505,
+      "valuedContracts": 25,
       "dateFrom": "2016-08-08",
-      "dateTo": "2026-07-02"
+      "dateTo": "2026-08-28"
     },
     {
       "name": "Mateřská škola, Praha 8, Na Přesypu 4",
@@ -392,12 +392,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Servisni-stredisko-pro-spravu-svereneho-majetku-MC-Praha-8-prispevkova-organizace.html",
       "website": "https://www.praha8.cz/servisni-stredisko-pro-spravu-svereneho-majetku-mc-praha-8-prispevkova-organizace.html",
-      "total": 1777,
-      "partners": 359,
-      "knownValueCzk": 2985615945.3100004,
-      "valuedContracts": 1700,
+      "total": 1779,
+      "partners": 360,
+      "knownValueCzk": 2986549199.2900004,
+      "valuedContracts": 1702,
       "dateFrom": "1991-07-15",
-      "dateTo": "2026-09-04"
+      "dateTo": "2026-09-08"
     },
     {
       "name": "Sociální a ošetřovatelské služby Praha 8",
@@ -440,12 +440,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Petra-Strozziho-Praha-8-Za-Invalidovnou-3.html",
       "website": "http://www.zs-strozziho.cz/",
-      "total": 227,
+      "total": 228,
       "partners": 79,
-      "knownValueCzk": 39136878.76,
-      "valuedContracts": 212,
+      "knownValueCzk": 39235743.76,
+      "valuedContracts": 213,
       "dateFrom": "2016-10-26",
-      "dateTo": "2026-08-28"
+      "dateTo": "2026-09-08"
     },
     {
       "name": "Základní škola a mateřská škola Ústavní, Praha 8, Hlivická 1",
