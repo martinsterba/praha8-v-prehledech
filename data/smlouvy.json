@@ -1,6 +1,27 @@
 {
   "contracts": [
     {
+      "id": "39468637",
+      "idContract": "37106889",
+      "url": "https://smlouvy.gov.cz/smlouva/39468637",
+      "subject": "Kupní smlouva na dodání 2 ks herních prvků na dětské hřiště v Thomayerových sadech, dodatek číslo 1",
+      "published": "2026-09-10",
+      "signed": "2026-09-04",
+      "valueCzk": null,
+      "valueVatCzk": null,
+      "valueNoVatCzk": null,
+      "counterparties": [
+        {
+          "name": "HŘIŠTĚ REJ HER, s.r.o.",
+          "ico": "02447207",
+          "box": "ywb8gfv"
+        }
+      ],
+      "counterparty": "HŘIŠTĚ REJ HER, s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
       "id": "39414629",
       "idContract": "37055109",
       "url": "https://smlouvy.gov.cz/smlouva/39414629",
@@ -140992,7 +141013,7 @@
     {
       "name": "HŘIŠTĚ REJ HER, s.r.o.",
       "ico": "02447207",
-      "contracts": 1,
+      "contracts": 2,
       "knownValueCzk": 683045,
       "valuedContracts": 1
     },
@@ -148068,7 +148089,7 @@
     }
   ],
   "meta": {
-    "total": 6497,
+    "total": 6498,
     "complete": true,
     "historyComplete": true,
     "scope": "full-history",
@@ -148078,7 +148099,7 @@
     "knownValueCzk": 6870724432.049994,
     "valuedContracts": 5737,
     "partners": 1679,
-    "updated": "2026-09-09T09:00:44.682Z",
+    "updated": "2026-09-10T08:59:34.433Z",
     "source": "https://data.smlouvy.gov.cz/index.xml",
     "method": "official-live-search-daily-overlap",
     "dumps": 124,
