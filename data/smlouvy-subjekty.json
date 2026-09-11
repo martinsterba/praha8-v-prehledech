@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-09-10T08:59:34.433Z",
+  "updated": "2026-09-11T08:58:59.366Z",
   "source": "https://smlouvy.gov.cz/vyhledavani",
   "method": "official-live-search-daily-overlap",
   "meta": {
@@ -12,7 +12,7 @@
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
-        "current": 6498
+        "current": 6501
       },
       "note": "Denní kontrola používá živé vyhledávání Registru smluv v okně 5 dní; historický základ se při denním běhu nestahuje."
     }
@@ -62978,6 +62978,69 @@
       ],
       "contracts": [
         {
+          "id": "39479941",
+          "idContract": "24277375",
+          "url": "https://smlouvy.gov.cz/smlouva/39479941",
+          "subject": "PD na dostavbu budovy - zkapacitnění ZŠ Hovorčovická, Hovorčovická 11/1281, 182 00 Praha 8 - Kobylisy",
+          "published": "2026-09-10",
+          "signed": "2023-10-02",
+          "valueCzk": 982520,
+          "valueVatCzk": 982520,
+          "valueNoVatCzk": 812000,
+          "counterparties": [
+            {
+              "name": "RHM a.s.",
+              "ico": "28203097",
+              "box": ""
+            }
+          ],
+          "counterparty": "RHM a.s.",
+          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
+          "publisherIco": "00639524"
+        },
+        {
+          "id": "39479921",
+          "idContract": "23838675",
+          "url": "https://smlouvy.gov.cz/smlouva/39479921",
+          "subject": "Zhotovení PD pro provedení stavby fotovotaické elektrárny na střeše objektu MŠ Dolákova, Dolákova 3/598, 181 00 Praha 8 - Bohnice",
+          "published": "2026-09-10",
+          "signed": "2023-08-08",
+          "valueCzk": 899030,
+          "valueVatCzk": 899030,
+          "valueNoVatCzk": 743000,
+          "counterparties": [
+            {
+              "name": "RHM a.s.",
+              "ico": "28203097",
+              "box": ""
+            }
+          ],
+          "counterparty": "RHM a.s.",
+          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
+          "publisherIco": "00639524"
+        },
+        {
+          "id": "39479841",
+          "idContract": "23242119",
+          "url": "https://smlouvy.gov.cz/smlouva/39479841",
+          "subject": "Zhotovení projektové dokumentace na FVE objektu MŠ MŠ Libčická, Libčická 6/398, 181 00 Praha 8 - Čimice",
+          "published": "2026-09-10",
+          "signed": "2023-06-15",
+          "valueCzk": 906290,
+          "valueVatCzk": 906290,
+          "valueNoVatCzk": 749000,
+          "counterparties": [
+            {
+              "name": "Pešata & Šarmír arch4BIM s.r.o.",
+              "ico": "06915752",
+              "box": ""
+            }
+          ],
+          "counterparty": "Pešata & Šarmír arch4BIM s.r.o.",
+          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
+          "publisherIco": "00639524"
+        },
+        {
           "id": "39436385",
           "idContract": "37075977",
           "url": "https://smlouvy.gov.cz/smlouva/39436385",
@@ -83911,30 +83974,6 @@
           "entityIco": "00639524",
           "entityName": "Servisní středisko pro správu svěřeného majetku MČ Praha 8",
           "entityKind": "organization",
-          "id": "25995523",
-          "idContract": "24277375",
-          "url": "https://smlouvy.gov.cz/smlouva/25995523",
-          "subject": "PD na dostavbu budovy - zkapacitnění ZŠ Hovorčovická, Hovorčovická 11/1281, 182 00 Praha 8 - Kobylisy",
-          "published": "2023-10-06",
-          "signed": "2023-10-02",
-          "valueCzk": 982520,
-          "valueVatCzk": 982520,
-          "valueNoVatCzk": 812000,
-          "counterparties": [
-            {
-              "name": "RHM a.s.",
-              "ico": "28203097",
-              "box": ""
-            }
-          ],
-          "counterparty": "RHM a.s.",
-          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
-          "publisherIco": "00639524"
-        },
-        {
-          "entityIco": "00639524",
-          "entityName": "Servisní středisko pro správu svěřeného majetku MČ Praha 8",
-          "entityKind": "organization",
           "id": "25960987",
           "idContract": "24244287",
           "url": "https://smlouvy.gov.cz/smlouva/25960987",
@@ -84168,30 +84207,6 @@
             }
           ],
           "counterparty": "Hedvika Zmeková",
-          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
-          "publisherIco": "00639524"
-        },
-        {
-          "entityIco": "00639524",
-          "entityName": "Servisní středisko pro správu svěřeného majetku MČ Praha 8",
-          "entityKind": "organization",
-          "id": "25535887",
-          "idContract": "23838675",
-          "url": "https://smlouvy.gov.cz/smlouva/25535887",
-          "subject": "Zhotovení PD pro provedení stavby fotovotaické elektrárny na střeše objektu MŠ Dolákova, Dolákova 3/598, 181 00 Praha 8 - Bohnice",
-          "published": "2023-08-24",
-          "signed": "2023-08-08",
-          "valueCzk": 899030,
-          "valueVatCzk": 899030,
-          "valueNoVatCzk": 743000,
-          "counterparties": [
-            {
-              "name": "RHM a.s.",
-              "ico": "28203097",
-              "box": ""
-            }
-          ],
-          "counterparty": "RHM a.s.",
           "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
           "publisherIco": "00639524"
         },
@@ -84528,30 +84543,6 @@
             }
           ],
           "counterparty": "VSP spol. s r.o.",
-          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
-          "publisherIco": "00639524"
-        },
-        {
-          "entityIco": "00639524",
-          "entityName": "Servisní středisko pro správu svěřeného majetku MČ Praha 8",
-          "entityKind": "organization",
-          "id": "24906579",
-          "idContract": "23242119",
-          "url": "https://smlouvy.gov.cz/smlouva/24906579",
-          "subject": "Zhotovení projektové dokumentace na FVE objektu MŠ MŠ Libčická, Libčická 6/398, 181 00 Praha 8 - Čimice",
-          "published": "2023-06-23",
-          "signed": "2023-06-15",
-          "valueCzk": 906290,
-          "valueVatCzk": 906290,
-          "valueNoVatCzk": 749000,
-          "counterparties": [
-            {
-              "name": "Pešata & Šarmír arch4BIM s.r.o.",
-              "ico": "06915752",
-              "box": ""
-            }
-          ],
-          "counterparty": "Pešata & Šarmír arch4BIM s.r.o.",
           "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
           "publisherIco": "00639524"
         },

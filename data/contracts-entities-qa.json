@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-10T08:59:34.433Z",
+  "updated": "2026-09-11T08:58:59.366Z",
   "meta": {
     "entities": 40,
     "organizations": 37,
@@ -9,7 +9,7 @@
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
-        "current": 6498
+        "current": 6501
       },
       "note": "Denní kontrola používá živé vyhledávání Registru smluv v okně 5 dní; historický základ se při denním běhu nestahuje."
     }
@@ -657,6 +657,6 @@
     }
   ],
   "p8": {
-    "total": 6498
+    "total": 6501
   }
 }

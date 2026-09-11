@@ -22,6 +22,69 @@
       "publisherIco": "00063797"
     },
     {
+      "id": "39471053",
+      "idContract": "37109153",
+      "url": "https://smlouvy.gov.cz/smlouva/39471053",
+      "subject": "Výměna a oprava košů na Karlínském a Lyčkově náměstí",
+      "published": "2026-09-10",
+      "signed": "2026-09-10",
+      "valueCzk": 193600,
+      "valueVatCzk": 193600,
+      "valueNoVatCzk": 160000,
+      "counterparties": [
+        {
+          "name": "ACESO PRAHA, s.r.o.",
+          "ico": "48025551",
+          "box": "h35i22u"
+        }
+      ],
+      "counterparty": "ACESO PRAHA, s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39471965",
+      "idContract": "37109917",
+      "url": "https://smlouvy.gov.cz/smlouva/39471965",
+      "subject": "Nájemní bydlení Roudnická - právní služby",
+      "published": "2026-09-10",
+      "signed": "2026-08-18",
+      "valueCzk": 181500,
+      "valueVatCzk": 181500,
+      "valueNoVatCzk": 150000,
+      "counterparties": [
+        {
+          "name": "AK Holý, advokátní kancelář, s.r.o.",
+          "ico": "22202064",
+          "box": "93mv9gt"
+        }
+      ],
+      "counterparty": "AK Holý, advokátní kancelář, s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39472537",
+      "idContract": "37110409",
+      "url": "https://smlouvy.gov.cz/smlouva/39472537",
+      "subject": "3_26_Oprava havarijního stavu podkladu pod dlažbou_  14650",
+      "published": "2026-09-10",
+      "signed": "2026-09-08",
+      "valueCzk": 60579.32,
+      "valueVatCzk": null,
+      "valueNoVatCzk": 60579.32,
+      "counterparties": [
+        {
+          "name": "Guerdo, s.r.o.",
+          "ico": "24662437",
+          "box": ""
+        }
+      ],
+      "counterparty": "Guerdo, s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
       "id": "39414629",
       "idContract": "37055109",
       "url": "https://smlouvy.gov.cz/smlouva/39414629",
@@ -136855,9 +136918,9 @@
     {
       "name": "Guerdo, s.r.o.",
       "ico": "24662437",
-      "contracts": 80,
-      "knownValueCzk": 12560756.460000003,
-      "valuedContracts": 80
+      "contracts": 81,
+      "knownValueCzk": 12621335.780000001,
+      "valuedContracts": 81
     },
     {
       "name": "VERTIX s.r.o.",
@@ -140276,6 +140339,13 @@
       "valuedContracts": 2
     },
     {
+      "name": "AK Holý, advokátní kancelář, s.r.o.",
+      "ico": "22202064",
+      "contracts": 6,
+      "knownValueCzk": 968000,
+      "valuedContracts": 4
+    },
+    {
       "name": "Požární bezpečnost s.r.o.",
       "ico": "27660940",
       "contracts": 1,
@@ -140736,13 +140806,6 @@
       "contracts": 2,
       "knownValueCzk": 794438,
       "valuedContracts": 2
-    },
-    {
-      "name": "AK Holý, advokátní kancelář, s.r.o.",
-      "ico": "22202064",
-      "contracts": 5,
-      "knownValueCzk": 786500,
-      "valuedContracts": 3
     },
     {
       "name": "Mgr. Jiří Beneda",
@@ -143781,6 +143844,13 @@
       "contracts": 3,
       "knownValueCzk": 194000,
       "valuedContracts": 3
+    },
+    {
+      "name": "ACESO PRAHA, s.r.o.",
+      "ico": "48025551",
+      "contracts": 1,
+      "knownValueCzk": 193600,
+      "valuedContracts": 1
     },
     {
       "name": "atelier MASNA s.r.o.",
@@ -148089,17 +148159,17 @@
     }
   ],
   "meta": {
-    "total": 6498,
+    "total": 6501,
     "complete": true,
     "historyComplete": true,
     "scope": "full-history",
     "dateFrom": "2007-05-09",
     "dateTo": "2026-09-16",
     "dateLabel": "celá historie Registru smluv",
-    "knownValueCzk": 6870724432.049994,
-    "valuedContracts": 5737,
-    "partners": 1679,
-    "updated": "2026-09-10T08:59:34.433Z",
+    "knownValueCzk": 6871160111.369995,
+    "valuedContracts": 5740,
+    "partners": 1680,
+    "updated": "2026-09-11T08:58:59.366Z",
     "source": "https://data.smlouvy.gov.cz/index.xml",
     "method": "official-live-search-daily-overlap",
     "dumps": 124,
