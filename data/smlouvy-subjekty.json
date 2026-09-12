@@ -1,14 +1,14 @@
 {
   "schema": 2,
-  "updated": "2026-09-11T08:58:59.366Z",
+  "updated": "2026-09-12T08:41:54.270Z",
   "source": "https://smlouvy.gov.cz/vyhledavani",
   "method": "official-live-search-daily-overlap",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7355,
-    "knownValueCzk": 5150249474.360001,
+    "totalContracts": 7359,
+    "knownValueCzk": 5153664274.360001,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
@@ -57977,12 +57977,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Materska-skola-Praha-8-Stepnicna-1.html",
       "website": "http://www.msstepnicna.cz/",
-      "total": 37,
-      "partners": 24,
+      "total": 39,
+      "partners": 25,
       "knownValueCzk": 3928873.78,
       "valuedContracts": 29,
       "dateFrom": "2018-02-01",
-      "dateTo": "2026-07-16",
+      "dateTo": "2026-09-09",
       "partnerList": [
         {
           "name": "koncept344 s.r.o.",
@@ -58125,6 +58125,13 @@
           "valuedContracts": 1
         },
         {
+          "name": "Twigsee, s.r.o.",
+          "ico": "05694655",
+          "contracts": 2,
+          "knownValueCzk": 0,
+          "valuedContracts": 0
+        },
+        {
           "name": "Aleš Rezler - Nesfood",
           "ico": "62226673",
           "contracts": 1,
@@ -58154,6 +58161,48 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39496117",
+          "idContract": "37132869",
+          "url": "https://smlouvy.gov.cz/smlouva/39496117",
+          "subject": "Smlouva o vypořádání závazků",
+          "published": "2026-09-11",
+          "signed": "2026-09-09",
+          "valueCzk": null,
+          "valueVatCzk": null,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "Twigsee, s.r.o.",
+              "ico": "05694655",
+              "box": "ykq9sbz"
+            }
+          ],
+          "counterparty": "Twigsee, s.r.o.",
+          "publisher": "Mateřská škola, Praha 8, Štěpničná 1",
+          "publisherIco": "70919615"
+        },
+        {
+          "id": "39496061",
+          "idContract": "37132817",
+          "url": "https://smlouvy.gov.cz/smlouva/39496061",
+          "subject": "Smlouva o poskytování softwarových služeb",
+          "published": "2026-09-11",
+          "signed": "2025-09-01",
+          "valueCzk": null,
+          "valueVatCzk": null,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "Twigsee, s.r.o.",
+              "ico": "05694655",
+              "box": "ykq9sbz"
+            }
+          ],
+          "counterparty": "Twigsee, s.r.o.",
+          "publisher": "Mateřská škola, Praha 8, Štěpničná 1",
+          "publisherIco": "70919615"
+        },
         {
           "entityIco": "70919615",
           "entityName": "Mateřská škola, Praha 8, Štěpničná 1",
@@ -60448,12 +60497,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Servisni-stredisko-pro-spravu-svereneho-majetku-MC-Praha-8-prispevkova-organizace.html",
       "website": "https://www.praha8.cz/servisni-stredisko-pro-spravu-svereneho-majetku-mc-praha-8-prispevkova-organizace.html",
-      "total": 1779,
+      "total": 1780,
       "partners": 360,
-      "knownValueCzk": 2986549199.2900004,
-      "valuedContracts": 1702,
+      "knownValueCzk": 2989912999.2900004,
+      "valuedContracts": 1703,
       "dateFrom": "1991-07-15",
-      "dateTo": "2026-09-08",
+      "dateTo": "2026-09-10",
       "partnerList": [
         {
           "name": "BAB mont s.r.o.",
@@ -60701,6 +60750,13 @@
           "valuedContracts": 2
         },
         {
+          "name": "ARCHITEKTONICKÝ ATELIER ALEŠ, s.r.o.",
+          "ico": "27225771",
+          "contracts": 7,
+          "knownValueCzk": 12415100,
+          "valuedContracts": 7
+        },
+        {
           "name": "AMBIS vysoká škola, a.s.",
           "ico": "61858307",
           "contracts": 3,
@@ -60797,13 +60853,6 @@
           "contracts": 4,
           "knownValueCzk": 9153434,
           "valuedContracts": 4
-        },
-        {
-          "name": "ARCHITEKTONICKÝ ATELIER ALEŠ, s.r.o.",
-          "ico": "27225771",
-          "contracts": 6,
-          "knownValueCzk": 9051300,
-          "valuedContracts": 6
         },
         {
           "name": "Pražské vodovody a kanalizace, a.s.",
@@ -62977,6 +63026,48 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39492153",
+          "idContract": "2820426",
+          "url": "https://smlouvy.gov.cz/smlouva/39492153",
+          "subject": "Zhotovení realizační dokumentace stavby (RDS) přístavby tělocvičny a školní jídelny a kuchyně“ ZŠ Lyčkovo náměstí 6, čp. 460, Praha 8 k. ú. Karlín",
+          "published": "2026-09-11",
+          "signed": "2017-08-30",
+          "valueCzk": 1150000,
+          "valueVatCzk": null,
+          "valueNoVatCzk": 1150000,
+          "counterparties": [
+            {
+              "name": "ARCHITEKTONICKÝ ATELIER ALEŠ, s.r.o.",
+              "ico": "27225771",
+              "box": ""
+            }
+          ],
+          "counterparty": "ARCHITEKTONICKÝ ATELIER ALEŠ, s.r.o.",
+          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
+          "publisherIco": "00639524"
+        },
+        {
+          "id": "39493221",
+          "idContract": "37130097",
+          "url": "https://smlouvy.gov.cz/smlouva/39493221",
+          "subject": "Dodatek č. 4 ke smlouvě Zhotovení realizační dokumentace stavby (RDS) přístavby tělocvičny, ŠJ a kuchyně ZŠ Lyčkovo nám. 460/6, Praha 8",
+          "published": "2026-09-11",
+          "signed": "2026-09-10",
+          "valueCzk": 3363800,
+          "valueVatCzk": 3363800,
+          "valueNoVatCzk": 2780000,
+          "counterparties": [
+            {
+              "name": "ARCHITEKTONICKÝ ATELIER ALEŠ, s.r.o.",
+              "ico": "27225771",
+              "box": "xfim45u"
+            }
+          ],
+          "counterparty": "ARCHITEKTONICKÝ ATELIER ALEŠ, s.r.o.",
+          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
+          "publisherIco": "00639524"
+        },
         {
           "id": "39479941",
           "idContract": "24277375",
@@ -66183,30 +66274,6 @@
             }
           ],
           "counterparty": "PRH Mont s.r.o.",
-          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
-          "publisherIco": "00639524"
-        },
-        {
-          "entityIco": "00639524",
-          "entityName": "Servisní středisko pro správu svěřeného majetku MČ Praha 8",
-          "entityKind": "organization",
-          "id": "37559265",
-          "idContract": "2820426",
-          "url": "https://smlouvy.gov.cz/smlouva/37559265",
-          "subject": "Zhotovení realizační dokumentace stavby (RDS) přístavby tělocvičny a školní jídelny a kuchyně“ ZŠ Lyčkovo náměstí 6, čp. 460, Praha 8 k. ú. Karlín",
-          "published": "2026-04-14",
-          "signed": "2017-08-30",
-          "valueCzk": 1150000,
-          "valueVatCzk": null,
-          "valueNoVatCzk": 1150000,
-          "counterparties": [
-            {
-              "name": "ARCHITEKTONICKÝ ATELIER ALEŠ, s.r.o.",
-              "ico": "27225771",
-              "box": ""
-            }
-          ],
-          "counterparty": "ARCHITEKTONICKÝ ATELIER ALEŠ, s.r.o.",
           "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
           "publisherIco": "00639524"
         },
@@ -116448,10 +116515,10 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Petra-Strozziho-Praha-8-Za-Invalidovnou-3.html",
       "website": "http://www.zs-strozziho.cz/",
-      "total": 228,
-      "partners": 79,
-      "knownValueCzk": 39235743.76,
-      "valuedContracts": 213,
+      "total": 229,
+      "partners": 80,
+      "knownValueCzk": 39286743.76,
+      "valuedContracts": 214,
       "dateFrom": "2016-10-26",
       "dateTo": "2026-09-08",
       "partnerList": [
@@ -116988,6 +117055,13 @@
           "valuedContracts": 1
         },
         {
+          "name": "Škola bojových umění - Rubidó, z.s.",
+          "ico": "24925454",
+          "contracts": 1,
+          "knownValueCzk": 51000,
+          "valuedContracts": 1
+        },
+        {
           "name": "55.CZ s.r.o.",
           "ico": "26160561",
           "contracts": 1,
@@ -117010,6 +117084,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39493645",
+          "idContract": "37130501",
+          "url": "https://smlouvy.gov.cz/smlouva/39493645",
+          "subject": "nájemní smlouva",
+          "published": "2026-09-11",
+          "signed": "2026-09-01",
+          "valueCzk": 51000,
+          "valueVatCzk": 51000,
+          "valueNoVatCzk": 51000,
+          "counterparties": [
+            {
+              "name": "Škola bojových umění - Rubidó, z.s.",
+              "ico": "24925454",
+              "box": "zmmivf5"
+            }
+          ],
+          "counterparty": "Škola bojových umění - Rubidó, z.s.",
+          "publisher": "Základní škola a mateřská škola Petra Strozziho, Praha 8, Za Invalidovnou 3",
+          "publisherIco": "60461853"
+        },
         {
           "id": "39442125",
           "idContract": "37081385",

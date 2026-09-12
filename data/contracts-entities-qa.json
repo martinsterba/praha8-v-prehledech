@@ -1,11 +1,11 @@
 {
-  "updated": "2026-09-11T08:58:59.366Z",
+  "updated": "2026-09-12T08:41:54.270Z",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7355,
-    "knownValueCzk": 5150249474.360001,
+    "totalContracts": 7359,
+    "knownValueCzk": 5153664274.360001,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
@@ -344,12 +344,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Materska-skola-Praha-8-Stepnicna-1.html",
       "website": "http://www.msstepnicna.cz/",
-      "total": 37,
-      "partners": 24,
+      "total": 39,
+      "partners": 25,
       "knownValueCzk": 3928873.78,
       "valuedContracts": 29,
       "dateFrom": "2018-02-01",
-      "dateTo": "2026-07-16"
+      "dateTo": "2026-09-09"
     },
     {
       "name": "Mateřská škola, Praha 8, U Sluncové 10a",
@@ -392,12 +392,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Servisni-stredisko-pro-spravu-svereneho-majetku-MC-Praha-8-prispevkova-organizace.html",
       "website": "https://www.praha8.cz/servisni-stredisko-pro-spravu-svereneho-majetku-mc-praha-8-prispevkova-organizace.html",
-      "total": 1779,
+      "total": 1780,
       "partners": 360,
-      "knownValueCzk": 2986549199.2900004,
-      "valuedContracts": 1702,
+      "knownValueCzk": 2989912999.2900004,
+      "valuedContracts": 1703,
       "dateFrom": "1991-07-15",
-      "dateTo": "2026-09-08"
+      "dateTo": "2026-09-10"
     },
     {
       "name": "Sociální a ošetřovatelské služby Praha 8",
@@ -440,10 +440,10 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Petra-Strozziho-Praha-8-Za-Invalidovnou-3.html",
       "website": "http://www.zs-strozziho.cz/",
-      "total": 228,
-      "partners": 79,
-      "knownValueCzk": 39235743.76,
-      "valuedContracts": 213,
+      "total": 229,
+      "partners": 80,
+      "knownValueCzk": 39286743.76,
+      "valuedContracts": 214,
       "dateFrom": "2016-10-26",
       "dateTo": "2026-09-08"
     },
