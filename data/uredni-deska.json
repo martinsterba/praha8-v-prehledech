@@ -135,16 +135,16 @@
   {
     "from": "2026-09-09",
     "to": "2026-09-24",
-    "title": "OOP - ul. NN4928, Vratislavská parkoviště - uspořádání parkování",
+    "title": "OOP - ul. Janečkova, parkovací pruh ZPS",
     "area": "Odbor dopravy",
-    "url": "https://www.praha8.cz/OOP-ul-NN4928-Vratislavska-parkoviste-usporadani-parkovani-1.html"
+    "url": "https://www.praha8.cz/OOP-ul-Janeckova-parkovaci-pruh-ZPS-1.html"
   },
   {
     "from": "2026-09-09",
     "to": "2026-09-24",
-    "title": "OOP - ul. Janečkova, parkovací pruh ZPS",
+    "title": "OOP - ul. NN4928, Vratislavská parkoviště - uspořádání parkování",
     "area": "Odbor dopravy",
-    "url": "https://www.praha8.cz/OOP-ul-Janeckova-parkovaci-pruh-ZPS-1.html"
+    "url": "https://www.praha8.cz/OOP-ul-NN4928-Vratislavska-parkoviste-usporadani-parkovani-1.html"
   },
   {
     "from": "2026-09-09",
@@ -366,16 +366,16 @@
   {
     "from": "2026-09-03",
     "to": "2026-10-02",
-    "title": "veřejná vyhláška - ul. Čimická/Žalovská - úprava křižovatkového prostoru",
+    "title": "Veřejná vyhláška - ul. Sokolovská/Za Invalidovnou, úprava křižovatky",
     "area": "Odbor dopravy",
-    "url": "https://www.praha8.cz/verejna-vyhlaska-ul-Cimicka-Zalovska-uprava-krizovatkoveho-prostoru-1.html"
+    "url": "https://www.praha8.cz/Verejna-vyhlaska-ul-Sokolovska-Za-Invalidovnou-uprava-krizovatky-1.html"
   },
   {
     "from": "2026-09-03",
     "to": "2026-10-02",
-    "title": "Veřejná vyhláška - ul. Sokolovská/Za Invalidovnou, úprava křižovatky",
+    "title": "veřejná vyhláška - ul. Čimická/Žalovská - úprava křižovatkového prostoru",
     "area": "Odbor dopravy",
-    "url": "https://www.praha8.cz/Verejna-vyhlaska-ul-Sokolovska-Za-Invalidovnou-uprava-krizovatky-1.html"
+    "url": "https://www.praha8.cz/verejna-vyhlaska-ul-Cimicka-Zalovska-uprava-krizovatkoveho-prostoru-1.html"
   },
   {
     "from": "2026-09-03",
@@ -653,16 +653,16 @@
   {
     "from": "2026-08-18",
     "to": "2026-10-12",
-    "title": "ZMČ Praha 8 - Rozhodnutí o registraci - PATRIOTI PRO PRAHU 8",
+    "title": "ZMČ Praha 8 - Rozhodnutí o registraci - 8žije, Praha sobě a Zelení",
     "area": "Odbor občansko-správní",
-    "url": "https://www.praha8.cz/ZMC-Praha-8-Rozhodnuti-o-registraci-PATRIOTI-PRO-PRAHU-8.html"
+    "url": "https://www.praha8.cz/ZMC-Praha-8-Rozhodnuti-o-registraci-8zije-Praha-sobe-a-Zeleni.html"
   },
   {
     "from": "2026-08-18",
     "to": "2026-10-12",
-    "title": "ZMČ Praha 8 - Rozhodnutí o registraci - 8žije, Praha sobě a Zelení",
+    "title": "ZMČ Praha 8 - Rozhodnutí o registraci - PATRIOTI PRO PRAHU 8",
     "area": "Odbor občansko-správní",
-    "url": "https://www.praha8.cz/ZMC-Praha-8-Rozhodnuti-o-registraci-8zije-Praha-sobe-a-Zeleni.html"
+    "url": "https://www.praha8.cz/ZMC-Praha-8-Rozhodnuti-o-registraci-PATRIOTI-PRO-PRAHU-8.html"
   },
   {
     "from": "2026-08-18",
@@ -702,16 +702,16 @@
   {
     "from": "2026-08-18",
     "to": "2026-10-12",
-    "title": "ZMČ Praha - Ďáblice - Rozhodnutí o registraci - Volba 2010 s podporou Sen pro Prahu",
+    "title": "ZMČ Praha - Ďáblice - Rozhodnutí o registraci - ODS a nezávislí",
     "area": "Odbor občansko-správní",
-    "url": "https://www.praha8.cz/ZMC-Praha-Dablice-Rozhodnuti-o-registraci-Volba-2010-s-podporou-Sen-pro-Prahu.html"
+    "url": "https://www.praha8.cz/ZMC-Praha-Dablice-Rozhodnuti-o-registraci-ODS-a-nezavisli.html"
   },
   {
     "from": "2026-08-18",
     "to": "2026-10-12",
-    "title": "ZMČ Praha - Ďáblice - Rozhodnutí o registraci - ODS a nezávislí",
+    "title": "ZMČ Praha - Ďáblice - Rozhodnutí o registraci - Volba 2010 s podporou Sen pro Prahu",
     "area": "Odbor občansko-správní",
-    "url": "https://www.praha8.cz/ZMC-Praha-Dablice-Rozhodnuti-o-registraci-ODS-a-nezavisli.html"
+    "url": "https://www.praha8.cz/ZMC-Praha-Dablice-Rozhodnuti-o-registraci-Volba-2010-s-podporou-Sen-pro-Prahu.html"
   },
   {
     "from": "2026-08-18",
@@ -838,6 +838,13 @@
     "title": "Informace o počtu a sídle volebních okrsků v MČ Praha 8 pro volby do ZMČ Praha 8 a ZHMP",
     "area": "Odbor občansko-správní",
     "url": "https://www.praha8.cz/Informace-o-poctu-a-sidle-volebnich-okrsku-v-MC-Praha-8-pro-volby-do-ZMC-Praha-8-a-ZHMP.html"
+  },
+  {
+    "from": "2026-08-11",
+    "to": "2026-10-12",
+    "title": "Výzva k odstranění vozidla z pozemní komunikace Sosnovecká, Volkswagen, RZ: 7S0 5921",
+    "area": "Správa služeb hlavního města Prahy",
+    "url": "https://www.praha8.cz/Vyzva-k-odstraneni-vozidla-z-pozemni-komunikace-Sosnovecka-Volkswagen-RZ-7S0-5921.html"
   },
   {
     "from": "2026-08-11",
