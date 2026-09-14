@@ -1,5 +1,19 @@
 [
   {
+    "from": "2026-09-14",
+    "to": "2026-09-30",
+    "title": "Rozhodnutí - Větrná, vodovodní a kanalizační přípojka, Petr Černík",
+    "area": "Odbor dopravy",
+    "url": "https://www.praha8.cz/Rozhodnuti-Vetrna-vodovodni-a-kanalizacni-pripojka-Petr-Cernik.html"
+  },
+  {
+    "from": "2026-09-14",
+    "to": "2026-09-30",
+    "title": "Rozhodnutí - Novákových, jeřáb, BAUREKON s. r. o.",
+    "area": "Odbor dopravy",
+    "url": "https://www.praha8.cz/Rozhodnuti-Novakovych-jerab-BAUREKON-s-r-o.html"
+  },
+  {
     "from": "2026-09-11",
     "to": "2026-10-12",
     "title": "Usn. ZHMP č. 36/6 ze dne 10.9.2026 k návrhu obec.záv.vyhl.hl.m.Prahy,kterou se mění obec.záv.vyhl.č.",
@@ -464,13 +478,6 @@
   {
     "from": "2026-08-31",
     "to": "2026-09-15",
-    "title": "rozhodnutí - povolení stavby: Praha 8, Libeň, Čertův vršek, elektromobilita, kNN, S - 156 506",
-    "area": "Odbor územního rozvoje a výstavby",
-    "url": "https://www.praha8.cz/rozhodnuti-povoleni-stavby-Praha-8-Liben-Certuv-vrsek-elektromobilita-kNN-S-156-506.html"
-  },
-  {
-    "from": "2026-08-31",
-    "to": "2026-09-15",
     "title": "Stamovení OOP - přech. úprava provozu, stav. vjezd - U školské zahrady - Ing. Vladimír Malý",
     "area": "Odbor dopravy",
     "url": "https://www.praha8.cz/Stamoveni-OOP-prech-uprava-provozu-stav-vjezd-U-skolske-zahrady-Ing-Vladimir-Maly.html"
@@ -506,16 +513,16 @@
   {
     "from": "2026-08-28",
     "to": "2026-10-13",
-    "title": "Veřejná vyhláška - Žádost o stanovení trvalé změny MÚ - ul. Děčínská parkoviště (NN3934), ZPS",
+    "title": "Veřejná vyhláška - Žádost o stanovení trvalé změny MÚ - ul. Šimůnkova (NN268, 269, 270, 271)",
     "area": "Odbor dopravy",
-    "url": "https://www.praha8.cz/Verejna-vyhlaska-Zadost-o-stanoveni-trvale-zmeny-MU-ul-Decinska-parkoviste-NN3934-ZPS.html"
+    "url": "https://www.praha8.cz/Verejna-vyhlaska-Zadost-o-stanoveni-trvale-zmeny-MU-ul-Simunkova-NN268-269-270-271.html"
   },
   {
     "from": "2026-08-28",
     "to": "2026-10-13",
-    "title": "Veřejná vyhláška - Žádost o stanovení trvalé změny MÚ - ul. Šimůnkova (NN268, 269, 270, 271)",
+    "title": "Veřejná vyhláška - Žádost o stanovení trvalé změny MÚ - ul. Děčínská parkoviště (NN3934), ZPS",
     "area": "Odbor dopravy",
-    "url": "https://www.praha8.cz/Verejna-vyhlaska-Zadost-o-stanoveni-trvale-zmeny-MU-ul-Simunkova-NN268-269-270-271.html"
+    "url": "https://www.praha8.cz/Verejna-vyhlaska-Zadost-o-stanoveni-trvale-zmeny-MU-ul-Decinska-parkoviste-NN3934-ZPS.html"
   },
   {
     "from": "2026-08-27",
@@ -534,13 +541,6 @@
   {
     "from": "2026-08-27",
     "to": "2026-10-26",
-    "title": "Výzva k odstranění vozidla z pozemní komunikace Karlínské nám., Volvo, RZ: 7AR 8237",
-    "area": "Správa služeb hlavního města Prahy",
-    "url": "https://www.praha8.cz/Vyzva-k-odstraneni-vozidla-z-pozemni-komunikace-Karlinske-nam-Volvo-RZ-7AR-8237.html"
-  },
-  {
-    "from": "2026-08-27",
-    "to": "2026-10-26",
     "title": "Výzva k odstranění vozidla z pozemní komunikace Kyselova, Mercedes, RZ: 6L2 8276",
     "area": "Správa služeb hlavního města Prahy",
     "url": "https://www.praha8.cz/Vyzva-k-odstraneni-vozidla-z-pozemni-komunikace-Kyselova-Mercedes-RZ-6L2-8276.html"
@@ -548,9 +548,9 @@
   {
     "from": "2026-08-27",
     "to": "2026-10-26",
-    "title": "Výzva k odstranění vozidla z pozemní komunikace parkoviště u hřiště U Meteoru, Hyundai, RZ: 9AS 4534",
+    "title": "Výzva k odstranění vozidla z pozemní komunikace Karlínské nám., Volvo, RZ: 7AR 8237",
     "area": "Správa služeb hlavního města Prahy",
-    "url": "https://www.praha8.cz/Vyzva-k-odstraneni-vozidla-z-pozemni-komunikace-parkoviste-u-hriste-U-Meteoru-Hyundai-RZ-9AS-4534.html"
+    "url": "https://www.praha8.cz/Vyzva-k-odstraneni-vozidla-z-pozemni-komunikace-Karlinske-nam-Volvo-RZ-7AR-8237.html"
   },
   {
     "from": "2026-08-27",
@@ -558,6 +558,13 @@
     "title": "Výzva k odstranění vozidla z pozemní komunikace Vzdálená, Škoda, RZ: 2SE 9438",
     "area": "Správa služeb hlavního města Prahy",
     "url": "https://www.praha8.cz/Vyzva-k-odstraneni-vozidla-z-pozemni-komunikace-Vzdalena-Skoda-RZ-2SE-9438.html"
+  },
+  {
+    "from": "2026-08-27",
+    "to": "2026-10-26",
+    "title": "Výzva k odstranění vozidla z pozemní komunikace parkoviště u hřiště U Meteoru, Hyundai, RZ: 9AS 4534",
+    "area": "Správa služeb hlavního města Prahy",
+    "url": "https://www.praha8.cz/Vyzva-k-odstraneni-vozidla-z-pozemni-komunikace-parkoviste-u-hriste-U-Meteoru-Hyundai-RZ-9AS-4534.html"
   },
   {
     "from": "2026-08-27",
@@ -590,6 +597,13 @@
   {
     "from": "2026-08-26",
     "to": "2026-09-25",
+    "title": "Záměr pronajmout restauraci, sklad, v ul. Sokolovská 240, o výměře 232,75 m2",
+    "area": "Odbor správy majetku",
+    "url": "https://www.praha8.cz/Zamer-pronajmout-restauraci-sklad-v-ul-Sokolovska-240-o-vymere-232-75-m2.html"
+  },
+  {
+    "from": "2026-08-26",
+    "to": "2026-09-25",
     "title": "Záměr pronajmout kancelář v ul. Pernerova čp. 294, o výměře 62,86 m2",
     "area": "Odbor správy majetku",
     "url": "https://www.praha8.cz/Zamer-pronajmout-kancelar-v-ul-Pernerova-cp-294-o-vymere-62-86-m2-5.html"
@@ -609,13 +623,6 @@
     "url": "https://www.praha8.cz/Drazba-nemovite-veci-k-u-Olesna-nad-Vltavou-obec-Olesna-okres-Pisek-parc-c-187-1-187-2.html"
   },
   {
-    "from": "2026-08-26",
-    "to": "2026-09-25",
-    "title": "Záměr pronajmout restauraci, sklad, v ul. Sokolovská 240, o výměře 232,75 m2",
-    "area": "Odbor správy majetku",
-    "url": "https://www.praha8.cz/Zamer-pronajmout-restauraci-sklad-v-ul-Sokolovska-240-o-vymere-232-75-m2.html"
-  },
-  {
     "from": "2026-08-25",
     "to": "2026-09-15",
     "title": "Oznámení o přerušení dodávky elektřiny v ul. Koláčkova a Na Slovance dne: 15. 9. 2026",
@@ -628,6 +635,83 @@
     "title": "vyvěšení na ÚD - MHMP - návrh OOP, ul. Zenklova (Na Stráži/Liberecká), cyklopruh",
     "area": "Odbor dopravy",
     "url": "https://www.praha8.cz/vyveseni-na-UD-MHMP-navrh-OOP-ul-Zenklova-Na-Strazi-Liberecka-cyklopruh.html"
+  },
+  {
+    "from": "2026-08-18",
+    "to": "2026-10-12",
+    "title": "ZMČ Praha - Ďáblice - Rozhodnutí o registraci - Ďáblice Spolu",
+    "area": "Odbor občansko-správní",
+    "url": "https://www.praha8.cz/ZMC-Praha-Dablice-Rozhodnuti-o-registraci-Dablice-Spolu.html"
+  },
+  {
+    "from": "2026-08-18",
+    "to": "2026-10-12",
+    "title": "ZMČ Praha - Ďáblice - Rozhodnutí o registraci - Česká strana asociálů",
+    "area": "Odbor občansko-správní",
+    "url": "https://www.praha8.cz/ZMC-Praha-Dablice-Rozhodnuti-o-registraci-Ceska-strana-asocialu.html"
+  },
+  {
+    "from": "2026-08-18",
+    "to": "2026-10-12",
+    "title": "ZMČ Praha - Ďáblice - Rozhodnutí o registraci - ANO 2011",
+    "area": "Odbor občansko-správní",
+    "url": "https://www.praha8.cz/ZMC-Praha-Dablice-Rozhodnuti-o-registraci-ANO-2011.html"
+  },
+  {
+    "from": "2026-08-18",
+    "to": "2026-10-12",
+    "title": "ZMČ Praha - Dolní Chabry - Rozhodnutí o registraci - 18400.CZ - ZA LEPŠÍ CHABRY S PODPOROU STAROSTŮ",
+    "area": "Odbor občansko-správní",
+    "url": "https://www.praha8.cz/ZMC-Praha-Dolni-Chabry-Rozhodnuti-o-registraci-18400-CZ-ZA-LEPSI-CHABRY-S-PODPOROU-STAROSTU.html"
+  },
+  {
+    "from": "2026-08-18",
+    "to": "2026-10-12",
+    "title": "ZMČ Praha - Dolní Chabry - Rozhodnutí o registraci - VOLBA PRO CHABRY",
+    "area": "Odbor občansko-správní",
+    "url": "https://www.praha8.cz/ZMC-Praha-Dolni-Chabry-Rozhodnuti-o-registraci-VOLBA-PRO-CHABRY.html"
+  },
+  {
+    "from": "2026-08-18",
+    "to": "2026-10-12",
+    "title": "ZMČ Praha - Březiněves - Rozhodnutí o registraci OBČANÉ PRO BŘEZINĚVES 2026",
+    "area": "Odbor občansko-správní",
+    "url": "https://www.praha8.cz/ZMC-Praha-Brezineves-Rozhodnuti-o-registraci-OBCANE-PRO-BREZINEVES-2026.html"
+  },
+  {
+    "from": "2026-08-18",
+    "to": "2026-10-12",
+    "title": "ZMČ Praha - Dolní Chabry - Rozhodnutí o registraci - ANO 2011",
+    "area": "Odbor občansko-správní",
+    "url": "https://www.praha8.cz/ZMC-Praha-Dolni-Chabry-Rozhodnuti-o-registraci-ANO-2011.html"
+  },
+  {
+    "from": "2026-08-18",
+    "to": "2026-10-12",
+    "title": "ZMČ Praha - Dolní Chabry - Rozhodnutí o registraci - Budoucnost pro Chabry",
+    "area": "Odbor občansko-správní",
+    "url": "https://www.praha8.cz/ZMC-Praha-Dolni-Chabry-Rozhodnuti-o-registraci-Budoucnost-pro-Chabry.html"
+  },
+  {
+    "from": "2026-08-18",
+    "to": "2026-10-12",
+    "title": "ZMČ Praha - Dolní Chabry - Rozhodnutí o registraci - ODS a Chaberáci",
+    "area": "Odbor občansko-správní",
+    "url": "https://www.praha8.cz/ZMC-Praha-Dolni-Chabry-Rozhodnuti-o-registraci-ODS-a-Chaberaci.html"
+  },
+  {
+    "from": "2026-08-18",
+    "to": "2026-10-19",
+    "title": "Výzva k odstranění vozidla z pozemní komunikace Karlínské nám., Škoda, RZ: 4E2 0793",
+    "area": "Správa služeb hlavního města Prahy",
+    "url": "https://www.praha8.cz/Vyzva-k-odstraneni-vozidla-z-pozemni-komunikace-Karlinske-nam-Skoda-RZ-4E2-0793.html"
+  },
+  {
+    "from": "2026-08-18",
+    "to": "2026-10-19",
+    "title": "Výzva k odstranění vozidla z pozemní komunikace Nad Kotlaskou, Audi, RZ: 4C9 3321",
+    "area": "Správa služeb hlavního města Prahy",
+    "url": "https://www.praha8.cz/Vyzva-k-odstraneni-vozidla-z-pozemni-komunikace-Nad-Kotlaskou-Audi-RZ-4C9-3321.html"
   },
   {
     "from": "2026-08-18",
@@ -653,16 +737,16 @@
   {
     "from": "2026-08-18",
     "to": "2026-10-12",
-    "title": "ZMČ Praha 8 - Rozhodnutí o registraci - 8žije, Praha sobě a Zelení",
+    "title": "ZMČ Praha 8 - Rozhodnutí o registraci - PATRIOTI PRO PRAHU 8",
     "area": "Odbor občansko-správní",
-    "url": "https://www.praha8.cz/ZMC-Praha-8-Rozhodnuti-o-registraci-8zije-Praha-sobe-a-Zeleni.html"
+    "url": "https://www.praha8.cz/ZMC-Praha-8-Rozhodnuti-o-registraci-PATRIOTI-PRO-PRAHU-8.html"
   },
   {
     "from": "2026-08-18",
     "to": "2026-10-12",
-    "title": "ZMČ Praha 8 - Rozhodnutí o registraci - PATRIOTI PRO PRAHU 8",
+    "title": "ZMČ Praha 8 - Rozhodnutí o registraci - 8žije, Praha sobě a Zelení",
     "area": "Odbor občansko-správní",
-    "url": "https://www.praha8.cz/ZMC-Praha-8-Rozhodnuti-o-registraci-PATRIOTI-PRO-PRAHU-8.html"
+    "url": "https://www.praha8.cz/ZMC-Praha-8-Rozhodnuti-o-registraci-8zije-Praha-sobe-a-Zeleni.html"
   },
   {
     "from": "2026-08-18",
@@ -674,13 +758,6 @@
   {
     "from": "2026-08-18",
     "to": "2026-10-12",
-    "title": "ZMČ Praha 8- Rozhodnutí o registraci - Česká pirátská strana",
-    "area": "Odbor občansko-správní",
-    "url": "https://www.praha8.cz/ZMC-Praha-8-Rozhodnuti-o-registraci-Ceska-piratska-strana.html"
-  },
-  {
-    "from": "2026-08-18",
-    "to": "2026-10-12",
     "title": "ZMČ Praha 8- Rozhodnutí o registraci - Mourek s podporou SEN PRO PRAHU s Václavem Láskou",
     "area": "Odbor občansko-správní",
     "url": "https://www.praha8.cz/ZMC-Praha-8-Rozhodnuti-o-registraci-Mourek-s-podporou-SEN-PRO-PRAHU-s-Vaclavem-Laskou.html"
@@ -688,9 +765,9 @@
   {
     "from": "2026-08-18",
     "to": "2026-10-12",
-    "title": "ZMČ Praha - Ďáblice - Rozhodnutí o registraci - ŽIVÉ ĎÁBLICE S PODPOROU STAROSTŮ",
+    "title": "ZMČ Praha 8- Rozhodnutí o registraci - Česká pirátská strana",
     "area": "Odbor občansko-správní",
-    "url": "https://www.praha8.cz/ZMC-Praha-Dablice-Rozhodnuti-o-registraci-ZIVE-DABLICE-S-PODPOROU-STAROSTU.html"
+    "url": "https://www.praha8.cz/ZMC-Praha-8-Rozhodnuti-o-registraci-Ceska-piratska-strana.html"
   },
   {
     "from": "2026-08-18",
@@ -702,9 +779,9 @@
   {
     "from": "2026-08-18",
     "to": "2026-10-12",
-    "title": "ZMČ Praha - Ďáblice - Rozhodnutí o registraci - ODS a nezávislí",
+    "title": "ZMČ Praha - Ďáblice - Rozhodnutí o registraci - ŽIVÉ ĎÁBLICE S PODPOROU STAROSTŮ",
     "area": "Odbor občansko-správní",
-    "url": "https://www.praha8.cz/ZMC-Praha-Dablice-Rozhodnuti-o-registraci-ODS-a-nezavisli.html"
+    "url": "https://www.praha8.cz/ZMC-Praha-Dablice-Rozhodnuti-o-registraci-ZIVE-DABLICE-S-PODPOROU-STAROSTU.html"
   },
   {
     "from": "2026-08-18",
@@ -712,83 +789,6 @@
     "title": "ZMČ Praha - Ďáblice - Rozhodnutí o registraci - Volba 2010 s podporou Sen pro Prahu",
     "area": "Odbor občansko-správní",
     "url": "https://www.praha8.cz/ZMC-Praha-Dablice-Rozhodnuti-o-registraci-Volba-2010-s-podporou-Sen-pro-Prahu.html"
-  },
-  {
-    "from": "2026-08-18",
-    "to": "2026-10-12",
-    "title": "ZMČ Praha - Ďáblice - Rozhodnutí o registraci - Ďáblice Spolu",
-    "area": "Odbor občansko-správní",
-    "url": "https://www.praha8.cz/ZMC-Praha-Dablice-Rozhodnuti-o-registraci-Dablice-Spolu.html"
-  },
-  {
-    "from": "2026-08-18",
-    "to": "2026-10-12",
-    "title": "ZMČ Praha - Ďáblice - Rozhodnutí o registraci - ANO 2011",
-    "area": "Odbor občansko-správní",
-    "url": "https://www.praha8.cz/ZMC-Praha-Dablice-Rozhodnuti-o-registraci-ANO-2011.html"
-  },
-  {
-    "from": "2026-08-18",
-    "to": "2026-10-12",
-    "title": "ZMČ Praha - Ďáblice - Rozhodnutí o registraci - Česká strana asociálů",
-    "area": "Odbor občansko-správní",
-    "url": "https://www.praha8.cz/ZMC-Praha-Dablice-Rozhodnuti-o-registraci-Ceska-strana-asocialu.html"
-  },
-  {
-    "from": "2026-08-18",
-    "to": "2026-10-12",
-    "title": "ZMČ Praha - Dolní Chabry - Rozhodnutí o registraci - 18400.CZ - ZA LEPŠÍ CHABRY S PODPOROU STAROSTŮ",
-    "area": "Odbor občansko-správní",
-    "url": "https://www.praha8.cz/ZMC-Praha-Dolni-Chabry-Rozhodnuti-o-registraci-18400-CZ-ZA-LEPSI-CHABRY-S-PODPOROU-STAROSTU.html"
-  },
-  {
-    "from": "2026-08-18",
-    "to": "2026-10-12",
-    "title": "ZMČ Praha - Dolní Chabry - Rozhodnutí o registraci - VOLBA PRO CHABRY",
-    "area": "Odbor občansko-správní",
-    "url": "https://www.praha8.cz/ZMC-Praha-Dolni-Chabry-Rozhodnuti-o-registraci-VOLBA-PRO-CHABRY.html"
-  },
-  {
-    "from": "2026-08-18",
-    "to": "2026-10-12",
-    "title": "ZMČ Praha - Dolní Chabry - Rozhodnutí o registraci - ANO 2011",
-    "area": "Odbor občansko-správní",
-    "url": "https://www.praha8.cz/ZMC-Praha-Dolni-Chabry-Rozhodnuti-o-registraci-ANO-2011.html"
-  },
-  {
-    "from": "2026-08-18",
-    "to": "2026-10-12",
-    "title": "ZMČ Praha - Březiněves - Rozhodnutí o registraci OBČANÉ PRO BŘEZINĚVES 2026",
-    "area": "Odbor občansko-správní",
-    "url": "https://www.praha8.cz/ZMC-Praha-Brezineves-Rozhodnuti-o-registraci-OBCANE-PRO-BREZINEVES-2026.html"
-  },
-  {
-    "from": "2026-08-18",
-    "to": "2026-10-12",
-    "title": "ZMČ Praha - Dolní Chabry - Rozhodnutí o registraci - Budoucnost pro Chabry",
-    "area": "Odbor občansko-správní",
-    "url": "https://www.praha8.cz/ZMC-Praha-Dolni-Chabry-Rozhodnuti-o-registraci-Budoucnost-pro-Chabry.html"
-  },
-  {
-    "from": "2026-08-18",
-    "to": "2026-10-12",
-    "title": "ZMČ Praha - Dolní Chabry - Rozhodnutí o registraci - ODS a Chaberáci",
-    "area": "Odbor občansko-správní",
-    "url": "https://www.praha8.cz/ZMC-Praha-Dolni-Chabry-Rozhodnuti-o-registraci-ODS-a-Chaberaci.html"
-  },
-  {
-    "from": "2026-08-18",
-    "to": "2026-10-19",
-    "title": "Výzva k odstranění vozidla z pozemní komunikace Nad Kotlaskou, Audi, RZ: 4C9 3321",
-    "area": "Správa služeb hlavního města Prahy",
-    "url": "https://www.praha8.cz/Vyzva-k-odstraneni-vozidla-z-pozemni-komunikace-Nad-Kotlaskou-Audi-RZ-4C9-3321.html"
-  },
-  {
-    "from": "2026-08-18",
-    "to": "2026-10-19",
-    "title": "Výzva k odstranění vozidla z pozemní komunikace Karlínské nám., Škoda, RZ: 4E2 0793",
-    "area": "Správa služeb hlavního města Prahy",
-    "url": "https://www.praha8.cz/Vyzva-k-odstraneni-vozidla-z-pozemni-komunikace-Karlinske-nam-Skoda-RZ-4E2-0793.html"
   },
   {
     "from": "2026-08-17",
@@ -854,11 +854,151 @@
     "url": "https://www.praha8.cz/Drazba-nemovite-veci-k-u-Hloubetin-obec-Praha-BJ-c-591-41-parc-c-782-3-782-61-1.html"
   },
   {
+    "from": "2026-08-05",
+    "to": "2026-10-05",
+    "title": "Výzva k odstranění vozidla z pozemní komunikace Budilova, Hlivická, RZ: 3Z8 5452",
+    "area": "Správa služeb hlavního města Prahy",
+    "url": "https://www.praha8.cz/Vyzva-k-odstraneni-vozidla-z-pozemni-komunikace-Budilova-Hlivicka-RZ-3Z8-5452-1.html"
+  },
+  {
+    "from": "2026-08-05",
+    "to": "2026-11-03",
+    "title": "Oznámení o možnosti vyzvednutí odstraněného vozidla Fiat, RZ: 8AE 6436",
+    "area": "Správa služeb hlavního města Prahy",
+    "url": "https://www.praha8.cz/Oznameni-o-moznosti-vyzvednuti-odstraneneho-vozidla-Fiat-RZ-8AE-6436-1.html"
+  },
+  {
+    "from": "2026-08-04",
+    "to": "2026-09-23",
+    "title": "Aukční vyhláška č. EAS/PHA/31/2026 - k.ú. Troja, Hnězdenská 767/4, BJ č. 767/532, parc.č. 1306/41",
+    "area": "Ostatní",
+    "url": "https://www.praha8.cz/Aukcni-vyhlaska-c-EAS-PHA-31-2026-k-u-Troja-Hnezdenska-767-4-BJ-c-767-532-parc-c-1306-41-1.html"
+  },
+  {
+    "from": "2026-08-04",
+    "to": "2026-09-16",
+    "title": "Dražba nemovitých věcí - k.ú. Liberecký kraj, Jestřabí v Krkonoších, NP 34/1, 34/2 a další ...",
+    "area": "Dražby",
+    "url": "https://www.praha8.cz/Drazba-nemovitych-veci-k-u-Liberecky-kraj-Jestrabi-v-Krkonosich-NP-34-1-34-2-a-dalsi-1.html"
+  },
+  {
+    "from": "2026-07-30",
+    "to": "2026-09-29",
+    "title": "Výzva k odstranění vozidla z pozemní komunikace Katovická, Škoda, RZ: 2K4 8410",
+    "area": "Odbor dopravy",
+    "url": "https://www.praha8.cz/Vyzva-k-odstraneni-vozidla-z-pozemni-komunikace-Katovicka-Skoda-RZ-2K4-8410-1.html"
+  },
+  {
+    "from": "2026-07-30",
+    "to": "2026-09-29",
+    "title": "Výzva k odstranění vozidla z pozemní komunikace Karlínské nám., Mazda, RZ: SMN38E",
+    "area": "Správa služeb hlavního města Prahy",
+    "url": "https://www.praha8.cz/Vyzva-k-odstraneni-vozidla-z-pozemni-komunikace-Karlinske-nam-Mazda-RZ-SMN38E-1.html"
+  },
+  {
+    "from": "2026-07-17",
+    "to": "2026-09-15",
+    "title": "Výzva k odstranění vozidla z pozemní komunikace Protilehlá, Iveco Daily, RZ: 5AS 1002",
+    "area": "Správa služeb hlavního města Prahy",
+    "url": "https://www.praha8.cz/Vyzva-k-odstraneni-vozidla-z-pozemni-komunikace-Protilehla-Iveco-Daily-RZ-5AS-1002-1.html"
+  },
+  {
+    "from": "2026-07-17",
+    "to": "2026-09-15",
+    "title": "Výzva k odstranění vozidla z pozemní komunikace K Ládví, Seat, RZ: BEJ 6183",
+    "area": "Správa služeb hlavního města Prahy",
+    "url": "https://www.praha8.cz/Vyzva-k-odstraneni-vozidla-z-pozemni-komunikace-K-Ladvi-Seat-RZ-BEJ-6183-1.html"
+  },
+  {
+    "from": "2026-07-17",
+    "to": "2026-09-15",
+    "title": "Výzva k odstranění vozidla z pozemní komunikace Lodžská, Citroën, RZ: 9A2 9329",
+    "area": "Správa služeb hlavního města Prahy",
+    "url": "https://www.praha8.cz/Vyzva-k-odstraneni-vozidla-z-pozemni-komunikace-Lodzska-Citroen-RZ-9A2-9329-1.html"
+  },
+  {
     "from": "2026-07-15",
     "to": "2026-09-21",
     "title": "Výběrové řízení - referent/ka útvaru interního auditu MČP8",
     "area": "Volná pracovní místa",
     "url": "https://www.praha8.cz/Vyberove-rizeni-referent-ka-utvaru-interniho-auditu-MCP8-4.html"
+  },
+  {
+    "from": "2026-07-14",
+    "to": "2026-09-14",
+    "title": "Výzva k odstranění vozidla z pozemní komunikace Hnězdenská, Škoda, RZ: 3T2 4026",
+    "area": "Správa služeb hlavního města Prahy",
+    "url": "https://www.praha8.cz/Vyzva-k-odstraneni-vozidla-z-pozemni-komunikace-Hnezdenska-Skoda-RZ-3T2-4026-1.html"
+  },
+  {
+    "from": "2026-07-14",
+    "to": "2026-10-12",
+    "title": "Oznámení o možnosti vyzvednutí odstraněného vozidla Hyundai, RZ: 4SM 3512",
+    "area": "Správa služeb hlavního města Prahy",
+    "url": "https://www.praha8.cz/Oznameni-o-moznosti-vyzvednuti-odstraneneho-vozidla-Hyundai-RZ-4SM-3512-1.html"
+  },
+  {
+    "from": "2026-07-14",
+    "to": "2026-09-14",
+    "title": "Výzva k odstranění vozidla z pozemní komunikace Libčická, BMW, RZ: 1AA H524",
+    "area": "Správa služeb hlavního města Prahy",
+    "url": "https://www.praha8.cz/Vyzva-k-odstraneni-vozidla-z-pozemni-komunikace-Libcicka-BMW-RZ-1AA-H524-1.html"
+  },
+  {
+    "from": "2026-07-14",
+    "to": "2026-09-14",
+    "title": "Výzva k odstranění vozidla z pozemní komunikace Bešťákova, Renault, RZ: 7AP 1242",
+    "area": "Správa služeb hlavního města Prahy",
+    "url": "https://www.praha8.cz/Vyzva-k-odstraneni-vozidla-z-pozemni-komunikace-Bestakova-Renault-RZ-7AP-1242-1.html"
+  },
+  {
+    "from": "2026-06-30",
+    "to": "2026-09-29",
+    "title": "Oznámení o možnosti vyzvednutí odstraněného vozidla Chrysler, RZ: 1AL 3427",
+    "area": "Správa služeb hlavního města Prahy",
+    "url": "https://www.praha8.cz/Oznameni-o-moznosti-vyzvednuti-odstraneneho-vozidla-Chrysler-RZ-1AL-3427-1.html"
+  },
+  {
+    "from": "2026-06-30",
+    "to": "2026-09-29",
+    "title": "Oznámení o možnosti vyzvednutí odstraněného vozidla Hyundai, RZ: 4E5 3661",
+    "area": "Správa služeb hlavního města Prahy",
+    "url": "https://www.praha8.cz/Oznameni-o-moznosti-vyzvednuti-odstraneneho-vozidla-Hyundai-RZ-4E5-3661-1.html"
+  },
+  {
+    "from": "2026-06-30",
+    "to": "2026-09-29",
+    "title": "Oznámení o možnosti vyzvednutí odstraněného vozidla Škoda, RZ: 4M2 6603",
+    "area": "Správa služeb hlavního města Prahy",
+    "url": "https://www.praha8.cz/Oznameni-o-moznosti-vyzvednuti-odstraneneho-vozidla-Skoda-RZ-4M2-6603-1.html"
+  },
+  {
+    "from": "2026-06-30",
+    "to": "2026-09-29",
+    "title": "Oznámení o možnosti vyzvednutí odstraněného vozidla Škoda, RZ: 9AJ 8147",
+    "area": "Správa služeb hlavního města Prahy",
+    "url": "https://www.praha8.cz/Oznameni-o-moznosti-vyzvednuti-odstraneneho-vozidla-Skoda-RZ-9AJ-8147-1.html"
+  },
+  {
+    "from": "2026-06-25",
+    "to": "2026-10-12",
+    "title": "Potřebný počet podpisů voličů na peticích pro nezávislé kandidáty a sdružení nezávislých kandidátů",
+    "area": "Odbor občansko-správní",
+    "url": "https://www.praha8.cz/Potrebny-pocet-podpisu-volicu-na-peticich-pro-nezavisle-kandidaty-a-sdruzeni-nezavislych-kandidatu-2.html"
+  },
+  {
+    "from": "2026-06-08",
+    "to": "2026-10-12",
+    "title": "Volby 2026 - stanovení počtu členů ZMČ Praha 8",
+    "area": "Odbor občansko-správní",
+    "url": "https://www.praha8.cz/Volby-2026-stanoveni-poctu-clenu-ZMC-Praha-8-1.html"
+  },
+  {
+    "from": "2026-05-19",
+    "to": "2029-02-12",
+    "title": "zásady pronájmu nebytových prostorů",
+    "area": "Odbor správy majetku",
+    "url": "https://www.praha8.cz/zasady-pronajmu-nebytovych-prostoru-1.html"
   },
   {
     "from": "2024-09-09",

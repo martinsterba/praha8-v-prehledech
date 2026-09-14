@@ -1,13 +1,13 @@
 {
   "schema": 2,
-  "updated": "2026-09-13T09:39:33.366Z",
+  "updated": "2026-09-14T09:56:28.932Z",
   "source": "https://smlouvy.gov.cz/vyhledavani",
   "method": "official-live-search-daily-overlap",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7359,
+    "totalContracts": 7361,
     "knownValueCzk": 5153664274.360001,
     "validation": {
       "status": "open-data-complete",
@@ -111126,12 +111126,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Na-Slovance-Praha-8-Bedrichovska-1.html",
       "website": "http://www.zsnaslovance.cz/",
-      "total": 199,
+      "total": 200,
       "partners": 86,
       "knownValueCzk": 32811501.17,
       "valuedContracts": 109,
       "dateFrom": "2016-11-14",
-      "dateTo": "2026-08-31",
+      "dateTo": "2026-09-07",
       "partnerList": [
         {
           "name": "Firma s.r.o.",
@@ -111472,7 +111472,7 @@
         {
           "name": "HRUBÝ autodoprava s.r.o.",
           "ico": "05770491",
-          "contracts": 4,
+          "contracts": 5,
           "knownValueCzk": 56700,
           "valuedContracts": 1
         },
@@ -111737,6 +111737,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39510405",
+          "idContract": "37146833",
+          "url": "https://smlouvy.gov.cz/smlouva/39510405",
+          "subject": "Smlouva o přepravě-ZŠ a MŠ Na Slovance, P-8 doprava na plavání 2026/27",
+          "published": "2026-09-14",
+          "signed": "2026-09-07",
+          "valueCzk": null,
+          "valueVatCzk": null,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "HRUBÝ autodoprava s.r.o.",
+              "ico": "05770491",
+              "box": "b36bjzy"
+            }
+          ],
+          "counterparty": "HRUBÝ autodoprava s.r.o.",
+          "publisher": "Základní škola a mateřská škola Na Slovance, Praha 8, Bedřichovská 1",
+          "publisherIco": "60433256"
+        },
         {
           "id": "39352937",
           "idContract": "36995485",
@@ -158921,12 +158942,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-Praha-8-Buresova-14.html",
       "website": "http://www.zsburesova.cz/",
-      "total": 212,
+      "total": 213,
       "partners": 95,
       "knownValueCzk": 16815440.18,
       "valuedContracts": 65,
       "dateFrom": "2016-10-12",
-      "dateTo": "2026-08-19",
+      "dateTo": "2026-09-09",
       "partnerList": [
         {
           "name": "FRIGOSYSTEM, spol. s r.o.",
@@ -159260,7 +159281,7 @@
         {
           "name": "PRO TRAVEL CK, s.r.o.",
           "ico": "26355353",
-          "contracts": 4,
+          "contracts": 5,
           "knownValueCzk": 0,
           "valuedContracts": 0
         },
@@ -159595,6 +159616,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39512273",
+          "idContract": "37148633",
+          "url": "https://smlouvy.gov.cz/smlouva/39512273",
+          "subject": "smlouva o zajištění zájezdu do Anglie",
+          "published": "2026-09-14",
+          "signed": "2026-09-09",
+          "valueCzk": null,
+          "valueVatCzk": null,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "PRO TRAVEL CK, s.r.o.",
+              "ico": "26355353",
+              "box": "cq4uuat"
+            }
+          ],
+          "counterparty": "PRO TRAVEL CK, s.r.o.",
+          "publisher": "Základní škola, Praha 8, Burešova 14",
+          "publisherIco": "60433345"
+        },
         {
           "entityIco": "60433345",
           "entityName": "Základní škola, Praha 8, Burešova 14",
