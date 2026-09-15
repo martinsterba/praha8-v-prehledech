@@ -1,6 +1,48 @@
 {
   "contracts": [
     {
+      "id": "39532393",
+      "idContract": "37167985",
+      "url": "https://smlouvy.gov.cz/smlouva/39532393",
+      "subject": "Vyhotovení PENB a energetického auditu budovy U Meteoru 10.",
+      "published": "2026-09-15",
+      "signed": "2026-09-15",
+      "valueCzk": 111925,
+      "valueVatCzk": 111925,
+      "valueNoVatCzk": 92500,
+      "counterparties": [
+        {
+          "name": "Enerfis s.r.o.",
+          "ico": "24160202",
+          "box": "66q5tax"
+        }
+      ],
+      "counterparty": "Enerfis s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39516297",
+      "idContract": "37152433",
+      "url": "https://smlouvy.gov.cz/smlouva/39516297",
+      "subject": "Mimořádná deratizace z důvodu zvýšeného výskytu potkanů",
+      "published": "2026-09-14",
+      "signed": "2026-09-14",
+      "valueCzk": 73810,
+      "valueVatCzk": 73810,
+      "valueNoVatCzk": 61000,
+      "counterparties": [
+        {
+          "name": "ADERA s.r.o.",
+          "ico": "26146673",
+          "box": "qiji9vd"
+        }
+      ],
+      "counterparty": "ADERA s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
       "id": "39468637",
       "idContract": "37106889",
       "url": "https://smlouvy.gov.cz/smlouva/39468637",
@@ -137583,9 +137625,9 @@
     {
       "name": "ADERA s.r.o.",
       "ico": "26146673",
-      "contracts": 15,
-      "knownValueCzk": 5308028,
-      "valuedContracts": 15
+      "contracts": 16,
+      "knownValueCzk": 5381838,
+      "valuedContracts": 16
     },
     {
       "name": "Presto - Meat market s.r.o.",
@@ -141242,6 +141284,13 @@
       "valuedContracts": 4
     },
     {
+      "name": "Enerfis s.r.o.",
+      "ico": "24160202",
+      "contracts": 5,
+      "knownValueCzk": 632709,
+      "valuedContracts": 5
+    },
+    {
       "name": "ROWAN LEGAL, advokátní kancelář s.r.o.",
       "ico": "28468414",
       "contracts": 4,
@@ -141673,13 +141722,6 @@
       "ico": "28161297",
       "contracts": 4,
       "knownValueCzk": 521448,
-      "valuedContracts": 4
-    },
-    {
-      "name": "Enerfis s.r.o.",
-      "ico": "24160202",
-      "contracts": 4,
-      "knownValueCzk": 520784,
       "valuedContracts": 4
     },
     {
@@ -148159,17 +148201,17 @@
     }
   ],
   "meta": {
-    "total": 6501,
+    "total": 6503,
     "complete": true,
     "historyComplete": true,
     "scope": "full-history",
     "dateFrom": "2007-05-09",
     "dateTo": "2026-09-16",
     "dateLabel": "celá historie Registru smluv",
-    "knownValueCzk": 6871160111.369995,
-    "valuedContracts": 5740,
+    "knownValueCzk": 6871345846.369995,
+    "valuedContracts": 5742,
     "partners": 1680,
-    "updated": "2026-09-14T09:56:28.932Z",
+    "updated": "2026-09-15T09:29:42.744Z",
     "source": "https://data.smlouvy.gov.cz/index.xml",
     "method": "official-live-search-daily-overlap",
     "dumps": 124,
