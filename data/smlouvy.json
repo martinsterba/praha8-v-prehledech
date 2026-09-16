@@ -1,6 +1,27 @@
 {
   "contracts": [
     {
+      "id": "39547061",
+      "idContract": "37182081",
+      "url": "https://smlouvy.gov.cz/smlouva/39547061",
+      "subject": "Dar PČR",
+      "published": "2026-09-16",
+      "signed": "2026-08-31",
+      "valueCzk": 99995.01,
+      "valueVatCzk": 99995.01,
+      "valueNoVatCzk": 82640.5,
+      "counterparties": [
+        {
+          "name": "Krajské ředitelství policie hlavního města Prahy",
+          "ico": "75151472",
+          "box": "rkiai5y"
+        }
+      ],
+      "counterparty": "Krajské ředitelství policie hlavního města Prahy",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
       "id": "39532393",
       "idContract": "37167985",
       "url": "https://smlouvy.gov.cz/smlouva/39532393",
@@ -18,6 +39,48 @@
         }
       ],
       "counterparty": "Enerfis s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39538813",
+      "idContract": "37174093",
+      "url": "https://smlouvy.gov.cz/smlouva/39538813",
+      "subject": "Smlouva o budoucí smlouvě o zřízení věcného břemena",
+      "published": "2026-09-15",
+      "signed": "2026-09-03",
+      "valueCzk": null,
+      "valueVatCzk": null,
+      "valueNoVatCzk": null,
+      "counterparties": [
+        {
+          "name": "CETIN a.s.",
+          "ico": "04084063",
+          "box": "qa7425t"
+        }
+      ],
+      "counterparty": "CETIN a.s.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39540029",
+      "idContract": "37175269",
+      "url": "https://smlouvy.gov.cz/smlouva/39540029",
+      "subject": "Smlouva budoucí o zřízení věcného břemena",
+      "published": "2026-09-15",
+      "signed": "2026-09-03",
+      "valueCzk": null,
+      "valueVatCzk": null,
+      "valueNoVatCzk": null,
+      "counterparties": [
+        {
+          "name": "CETIN a.s.",
+          "ico": "04084063",
+          "box": "qa7425t"
+        }
+      ],
+      "counterparty": "CETIN a.s.",
       "publisher": "Městská část Praha 8",
       "publisherIco": "00063797"
     },
@@ -136834,7 +136897,7 @@
     {
       "name": "CETIN a.s.",
       "ico": "04084063",
-      "contracts": 22,
+      "contracts": 24,
       "knownValueCzk": 15976125,
       "valuedContracts": 3
     },
@@ -143853,6 +143916,13 @@
       "valuedContracts": 1
     },
     {
+      "name": "Krajské ředitelství policie hlavního města Prahy",
+      "ico": "75151472",
+      "contracts": 3,
+      "knownValueCzk": 199541.01,
+      "valuedContracts": 2
+    },
+    {
       "name": "János Popovycs",
       "ico": "68874243",
       "contracts": 1,
@@ -145173,13 +145243,6 @@
       "ico": "29027527",
       "contracts": 1,
       "knownValueCzk": 100000,
-      "valuedContracts": 1
-    },
-    {
-      "name": "Krajské ředitelství policie hlavního města Prahy",
-      "ico": "75151472",
-      "contracts": 2,
-      "knownValueCzk": 99546,
       "valuedContracts": 1
     },
     {
@@ -148201,17 +148264,17 @@
     }
   ],
   "meta": {
-    "total": 6503,
+    "total": 6506,
     "complete": true,
     "historyComplete": true,
     "scope": "full-history",
     "dateFrom": "2007-05-09",
     "dateTo": "2026-09-16",
     "dateLabel": "celá historie Registru smluv",
-    "knownValueCzk": 6871345846.369995,
-    "valuedContracts": 5742,
+    "knownValueCzk": 6871445841.379994,
+    "valuedContracts": 5743,
     "partners": 1680,
-    "updated": "2026-09-15T09:29:42.744Z",
+    "updated": "2026-09-16T09:22:36.297Z",
     "source": "https://data.smlouvy.gov.cz/index.xml",
     "method": "official-live-search-daily-overlap",
     "dumps": 124,

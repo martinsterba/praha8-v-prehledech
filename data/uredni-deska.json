@@ -1,5 +1,75 @@
 [
   {
+    "from": "2026-09-16",
+    "to": "2026-10-21",
+    "title": "Dražba nemovité věci - k.ú. Karlín, obec Praha, BJ č. 610/19, parc.č. 693/84,85,86",
+    "area": "Dražby",
+    "url": "https://www.praha8.cz/Drazba-nemovite-veci-k-u-Karlin-obec-Praha-BJ-c-610-19-parc-c-693-84-85-86.html"
+  },
+  {
+    "from": "2026-09-16",
+    "to": "2026-10-02",
+    "title": "JES ke stavebnímu záměru \"Místo prvního kontaktu (KAIUM)\"",
+    "area": "Odbor životního prostředí",
+    "url": "https://www.praha8.cz/JES-ke-stavebnimu-zameru-Misto-prvniho-kontaktu-KAIUM.html"
+  },
+  {
+    "from": "2026-09-16",
+    "to": "2026-10-05",
+    "title": "JES - BD Na Pěšinách",
+    "area": "Odbor životního prostředí",
+    "url": "https://www.praha8.cz/JES-BD-Na-Pesinach.html"
+  },
+  {
+    "from": "2026-09-15",
+    "to": "2026-10-12",
+    "title": "Volby do ZMČ Praha 8 a ZHMP 2026 - Svolání 1. zasedání okrskových volebních komisí v MČ Praha 8",
+    "area": "Odbor občansko-správní",
+    "url": "https://www.praha8.cz/Volby-do-ZMC-Praha-8-a-ZHMP-2026-Svolani-1-zasedani-okrskovych-volebnich-komisi-v-MC-Praha-8.html"
+  },
+  {
+    "from": "2026-09-15",
+    "to": "2026-09-30",
+    "title": "JES - Stavební úprava a částečné odstranění dvorních objektů, Sokolovská 15",
+    "area": "Odbor životního prostředí",
+    "url": "https://www.praha8.cz/JES-Stavebni-uprava-a-castecne-odstraneni-dvornich-objektu-Sokolovska-15.html"
+  },
+  {
+    "from": "2026-09-15",
+    "to": "2026-09-30",
+    "title": "Rozhodnutí - Sokolovská, Rohanské nábřeží, natáčení, NATOČTO s. r. o.",
+    "area": "Odbor dopravy",
+    "url": "https://www.praha8.cz/Rozhodnuti-Sokolovska-Rohanske-nabrezi-nataceni-NATOCTO-s-r-o.html"
+  },
+  {
+    "from": "2026-09-15",
+    "to": "2026-09-30",
+    "title": "závazné stanovisko JES: \"Polyfunkční objekt ve vnitrobloku Paláce Karlín\"",
+    "area": "Odbor územního rozvoje a výstavby",
+    "url": "https://www.praha8.cz/zavazne-stanovisko-JES-Polyfunkcni-objekt-ve-vnitrobloku-Palace-Karlin.html"
+  },
+  {
+    "from": "2026-09-15",
+    "to": "2026-09-30",
+    "title": "rozhodnutí - oprava zřejmých nesprávností: Fotovoltaická elektrárna na střeše budovy MŠ Krynická",
+    "area": "Odbor územního rozvoje a výstavby",
+    "url": "https://www.praha8.cz/rozhodnuti-oprava-zrejmych-nespravnosti-Fotovoltaicka-elektrarna-na-strese-budovy-MS-Krynicka.html"
+  },
+  {
+    "from": "2026-09-15",
+    "to": "2026-09-30",
+    "title": "Zřízení vyhrazeného parkovacího stání pro ZTP, Molákova, před č.p. 599/6",
+    "area": "Odbor dopravy",
+    "url": "https://www.praha8.cz/Zrizeni-vyhrazeneho-parkovaciho-stani-pro-ZTP-Molakova-pred-c-p-599-6.html"
+  },
+  {
+    "from": "2026-09-15",
+    "to": "2026-12-14",
+    "title": "Oznámení o možnosti vyzvednutí odstraněného vozidla Volvo, RZ: 1UJ 3958",
+    "area": "Správa služeb hlavního města Prahy",
+    "url": "https://www.praha8.cz/Oznameni-o-moznosti-vyzvednuti-odstraneneho-vozidla-Volvo-RZ-1UJ-3958.html"
+  },
+  {
     "from": "2026-09-15",
     "to": "2026-09-29",
     "title": "Rozhodnutí - Nad Hercovkou, obnova kabelového vedení NN, Energo Praha",
@@ -476,48 +546,6 @@
     "url": "https://www.praha8.cz/Rozhodnuti-Na-hranicich-vodovodni-a-kanalizacni-pripojka-PVK-a-s.html"
   },
   {
-    "from": "2026-09-01",
-    "to": "2026-09-15",
-    "title": "Rozhodnutí, zábor - cyklostezka A2, staveništní přejezd, Rohanský ostrov -Dopravní inženýring",
-    "area": "Odbor dopravy",
-    "url": "https://www.praha8.cz/Rozhodnuti-zabor-cyklostezka-A2-stavenistni-prejezd-Rohansky-ostrov-Dopravni-inzenyring.html"
-  },
-  {
-    "from": "2026-09-01",
-    "to": "2026-09-15",
-    "title": "Rozhodnutí - Feřtekova, Dolákova, Eledrova, natáčení, FILM HUNTERS s. r. o.",
-    "area": "Odbor dopravy",
-    "url": "https://www.praha8.cz/Rozhodnuti-Fertekova-Dolakova-Eledrova-nataceni-FILM-HUNTERS-s-r-o.html"
-  },
-  {
-    "from": "2026-09-01",
-    "to": "2026-09-15",
-    "title": "Rozhodnutí - Pernerova, Lyčkovo náměstí, Sovova, Karlínské nám., Kollárova, natáčení, 66 Location",
-    "area": "Odbor dopravy",
-    "url": "https://www.praha8.cz/Rozhodnuti-Pernerova-Lyckovo-namesti-Sovova-Karlinske-nam-Kollarova-nataceni-66-Location.html"
-  },
-  {
-    "from": "2026-08-31",
-    "to": "2026-09-15",
-    "title": "rozhodnutí - povolení změny stavby před jejím dokončením: \"Novostavba bytového domu v proluce; ul. S",
-    "area": "Odbor územního rozvoje a výstavby",
-    "url": "https://www.praha8.cz/rozhodnuti-povoleni-zmeny-stavby-pred-jejim-dokoncenim-Novostavba-bytoveho-domu-v-proluce-ul-S.html"
-  },
-  {
-    "from": "2026-08-31",
-    "to": "2026-09-15",
-    "title": "rozhodnutí - povolení stavby: Praha 8, Libeň, Čertův vršek, elektromobilita, kNN, S - 156 506",
-    "area": "Odbor územního rozvoje a výstavby",
-    "url": "https://www.praha8.cz/rozhodnuti-povoleni-stavby-Praha-8-Liben-Certuv-vrsek-elektromobilita-kNN-S-156-506.html"
-  },
-  {
-    "from": "2026-08-31",
-    "to": "2026-09-15",
-    "title": "Stamovení OOP - přech. úprava provozu, stav. vjezd - U školské zahrady - Ing. Vladimír Malý",
-    "area": "Odbor dopravy",
-    "url": "https://www.praha8.cz/Stamoveni-OOP-prech-uprava-provozu-stav-vjezd-U-skolske-zahrady-Ing-Vladimir-Maly.html"
-  },
-  {
     "from": "2026-08-28",
     "to": "2026-09-17",
     "title": "Oznámení o přerušení dodávky elektřiny v ul. Zenklova, Braunerova dne: 17. 9. 2026",
@@ -609,13 +637,6 @@
     "url": "https://www.praha8.cz/Oznameni-o-preruseni-dodavky-elektriny-v-ul-Pod-Kynclovkou-a-U-Detskeho-domova-dne-17-9-2026.html"
   },
   {
-    "from": "2026-08-27",
-    "to": "2026-09-15",
-    "title": "Výběrové řízení - referent/referentka v oddělení zón placeného stání OD ÚMČ Praha 8",
-    "area": "Volná pracovní místa",
-    "url": "https://www.praha8.cz/Vyberove-rizeni-referent-referentka-v-oddeleni-zon-placeneho-stani-OD-UMC-Praha-8-4.html"
-  },
-  {
     "from": "2026-08-26",
     "to": "2026-09-25",
     "title": "Záměr pronajmout restauraci, sklad, v ul. Sokolovská 240, o výměře 232,75 m2",
@@ -642,13 +663,6 @@
     "title": "Dražba nemovité věci - k.ú. Olešná nad Vltavou, obec Olešná, okres Písek, parc.č. 187/1, 187/2",
     "area": "Dražby",
     "url": "https://www.praha8.cz/Drazba-nemovite-veci-k-u-Olesna-nad-Vltavou-obec-Olesna-okres-Pisek-parc-c-187-1-187-2.html"
-  },
-  {
-    "from": "2026-08-25",
-    "to": "2026-09-15",
-    "title": "Oznámení o přerušení dodávky elektřiny v ul. Koláčkova a Na Slovance dne: 15. 9. 2026",
-    "area": "Přerušení dodávek energií",
-    "url": "https://www.praha8.cz/Oznameni-o-preruseni-dodavky-elektriny-v-ul-Kolackova-a-Na-Slovance-dne-15-9-2026.html"
   },
   {
     "from": "2026-08-24",
@@ -922,27 +936,6 @@
     "title": "Výzva k odstranění vozidla z pozemní komunikace Karlínské nám., Mazda, RZ: SMN38E",
     "area": "Správa služeb hlavního města Prahy",
     "url": "https://www.praha8.cz/Vyzva-k-odstraneni-vozidla-z-pozemni-komunikace-Karlinske-nam-Mazda-RZ-SMN38E-1.html"
-  },
-  {
-    "from": "2026-07-17",
-    "to": "2026-09-15",
-    "title": "Výzva k odstranění vozidla z pozemní komunikace Protilehlá, Iveco Daily, RZ: 5AS 1002",
-    "area": "Správa služeb hlavního města Prahy",
-    "url": "https://www.praha8.cz/Vyzva-k-odstraneni-vozidla-z-pozemni-komunikace-Protilehla-Iveco-Daily-RZ-5AS-1002-1.html"
-  },
-  {
-    "from": "2026-07-17",
-    "to": "2026-09-15",
-    "title": "Výzva k odstranění vozidla z pozemní komunikace K Ládví, Seat, RZ: BEJ 6183",
-    "area": "Správa služeb hlavního města Prahy",
-    "url": "https://www.praha8.cz/Vyzva-k-odstraneni-vozidla-z-pozemni-komunikace-K-Ladvi-Seat-RZ-BEJ-6183-1.html"
-  },
-  {
-    "from": "2026-07-17",
-    "to": "2026-09-15",
-    "title": "Výzva k odstranění vozidla z pozemní komunikace Lodžská, Citroën, RZ: 9A2 9329",
-    "area": "Správa služeb hlavního města Prahy",
-    "url": "https://www.praha8.cz/Vyzva-k-odstraneni-vozidla-z-pozemni-komunikace-Lodzska-Citroen-RZ-9A2-9329-1.html"
   },
   {
     "from": "2026-07-15",

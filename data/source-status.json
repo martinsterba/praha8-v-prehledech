@@ -65,26 +65,26 @@
   "resolutions": {
     "status": "data načtena",
     "count": 16011,
-    "updated": "2026-09-15T09:28:42.030Z",
+    "updated": "2026-09-16T09:22:06.958Z",
     "mode": "aktualizováno"
   },
   "voting": {
     "status": "data načtena",
     "count": 1207,
-    "updated": "2026-09-15T09:28:45.331Z",
+    "updated": "2026-09-16T09:22:10.033Z",
     "mode": "aktualizováno",
     "meetings": 53
   },
   "info106": {
     "status": "data načtena",
     "count": 1817,
-    "updated": "2026-09-15T09:28:42.030Z",
+    "updated": "2026-09-16T09:22:06.958Z",
     "mode": "aktualizováno"
   },
   "noticeboard": {
     "status": "data načtena",
-    "count": 147,
-    "updated": "2026-09-15T09:28:42.030Z",
+    "count": 146,
+    "updated": "2026-09-16T09:22:06.958Z",
     "mode": "aktualizováno"
   },
   "elections": {
@@ -102,19 +102,19 @@
   "news": {
     "status": "data načtena",
     "count": 7,
-    "updated": "2026-09-15T09:28:42.030Z",
+    "updated": "2026-09-16T09:22:06.958Z",
     "mode": "aktualizováno"
   },
   "contracts": {
     "status": "data načtena",
-    "count": 6503,
-    "updated": "2026-09-15T09:29:42.744Z",
+    "count": 6506,
+    "updated": "2026-09-16T09:22:36.297Z",
     "mode": "aktualizováno"
   },
   "contractEntities": {
     "status": "data načtena",
-    "count": 7368,
-    "updated": "2026-09-15T09:29:42.744Z",
+    "count": 7373,
+    "updated": "2026-09-16T09:22:36.297Z",
     "mode": "aktualizováno"
   },
   "grants": {
