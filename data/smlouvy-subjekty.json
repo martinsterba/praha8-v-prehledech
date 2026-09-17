@@ -1,14 +1,14 @@
 {
   "schema": 2,
-  "updated": "2026-09-16T09:22:36.297Z",
+  "updated": "2026-09-17T09:31:01.538Z",
   "source": "https://smlouvy.gov.cz/vyhledavani",
   "method": "official-live-search-daily-overlap",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7373,
-    "knownValueCzk": 5156310338.22,
+    "totalContracts": 7377,
+    "knownValueCzk": 5156599648.22,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
@@ -412,12 +412,12 @@
       "ownershipShare": "100 %",
       "source": "https://www.praha8.cz/Osma-sprava-majetku-a-sluzeb-a-s",
       "website": "https://www.osms.cz/",
-      "total": 1490,
+      "total": 1491,
       "partners": 234,
-      "knownValueCzk": 1444682236.3400004,
-      "valuedContracts": 1206,
+      "knownValueCzk": 1444768486.3400004,
+      "valuedContracts": 1207,
       "dateFrom": "1999-09-14",
-      "dateTo": "2026-09-15",
+      "dateTo": "2026-09-17",
       "partnerList": [
         {
           "name": "Wertstav s.r.o.",
@@ -611,9 +611,9 @@
         {
           "name": "SmartSystem Solutions s.r.o.",
           "ico": "06356494",
-          "contracts": 39,
-          "knownValueCzk": 7699630.95,
-          "valuedContracts": 35
+          "contracts": 40,
+          "knownValueCzk": 7785880.95,
+          "valuedContracts": 36
         },
         {
           "name": "MACON a.s.",
@@ -2059,6 +2059,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39565637",
+          "idContract": "37200057",
+          "url": "https://smlouvy.gov.cz/smlouva/39565637",
+          "subject": "SOD/052/2026 - Vypracování PD pro VZ: Rekonstrukce ordinace neurologie č.m. 434, 434A, 434B a 435 Poliklinika Mazurská na adrese Mazurská 484/2, 181 00 Praha 8 - Troja",
+          "published": "2026-09-17",
+          "signed": "2026-09-17",
+          "valueCzk": 86250,
+          "valueVatCzk": null,
+          "valueNoVatCzk": 86250,
+          "counterparties": [
+            {
+              "name": "SmartSystem Solutions s.r.o.",
+              "ico": "06356494",
+              "box": "utepp7f"
+            }
+          ],
+          "counterparty": "SmartSystem Solutions s.r.o.",
+          "publisher": "Osmá správa majetku a služeb a.s.",
+          "publisherIco": "04650522"
+        },
         {
           "id": "39528037",
           "idContract": "37163773",
@@ -116704,10 +116725,10 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Petra-Strozziho-Praha-8-Za-Invalidovnou-3.html",
       "website": "http://www.zs-strozziho.cz/",
-      "total": 230,
+      "total": 231,
       "partners": 80,
-      "knownValueCzk": 39372543.76,
-      "valuedContracts": 215,
+      "knownValueCzk": 39446393.76,
+      "valuedContracts": 216,
       "dateFrom": "2016-10-26",
       "dateTo": "2026-09-08",
       "partnerList": [
@@ -116782,6 +116803,13 @@
           "valuedContracts": 5
         },
         {
+          "name": "Dům dětí a mládeže hlavního města Prahy",
+          "ico": "00064289",
+          "contracts": 7,
+          "knownValueCzk": 883725,
+          "valuedContracts": 7
+        },
+        {
           "name": "Filip Rubínek",
           "ico": "76621723",
           "contracts": 11,
@@ -116801,13 +116829,6 @@
           "contracts": 1,
           "knownValueCzk": 830207.09,
           "valuedContracts": 1
-        },
-        {
-          "name": "Dům dětí a mládeže hlavního města Prahy",
-          "ico": "00064289",
-          "contracts": 6,
-          "knownValueCzk": 809875,
-          "valuedContracts": 6
         },
         {
           "name": "Sportovní klub Meteor Praha",
@@ -117273,6 +117294,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39556025",
+          "idContract": "37190745",
+          "url": "https://smlouvy.gov.cz/smlouva/39556025",
+          "subject": "Nájemní smlouva",
+          "published": "2026-09-16",
+          "signed": "2026-09-01",
+          "valueCzk": 73850,
+          "valueVatCzk": 73850,
+          "valueNoVatCzk": 73850,
+          "counterparties": [
+            {
+              "name": "Dům dětí a mládeže hlavního města Prahy",
+              "ico": "00064289",
+              "box": "37wavcb"
+            }
+          ],
+          "counterparty": "Dům dětí a mládeže hlavního města Prahy",
+          "publisher": "Základní škola a mateřská škola Petra Strozziho, Praha 8, Za Invalidovnou 3",
+          "publisherIco": "60461853"
+        },
         {
           "id": "39522689",
           "idContract": "37158605",
@@ -169389,12 +169431,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-Praha-8-Hovorcovicka-11.html",
       "website": "http://www.zshovorcovicka.cz/",
-      "total": 322,
-      "partners": 149,
-      "knownValueCzk": 45025443.519999996,
-      "valuedContracts": 250,
+      "total": 324,
+      "partners": 150,
+      "knownValueCzk": 45154653.519999996,
+      "valuedContracts": 252,
       "dateFrom": "2016-12-20",
-      "dateTo": "2026-08-18",
+      "dateTo": "2026-09-16",
       "partnerList": [
         {
           "name": "BREZKA interier s.r.o.",
@@ -169565,6 +169607,13 @@
           "valuedContracts": 1
         },
         {
+          "name": "R-SA, spol. s r.o.",
+          "ico": "60931019",
+          "contracts": 4,
+          "knownValueCzk": 439480,
+          "valuedContracts": 4
+        },
+        {
           "name": "AB Energy s.r.o.",
           "ico": "24672220",
           "contracts": 1,
@@ -169584,13 +169633,6 @@
           "contracts": 4,
           "knownValueCzk": 413100,
           "valuedContracts": 4
-        },
-        {
-          "name": "R-SA, spol. s r.o.",
-          "ico": "60931019",
-          "contracts": 3,
-          "knownValueCzk": 379000,
-          "valuedContracts": 3
         },
         {
           "name": "Easy Felix s.r.o.",
@@ -170034,6 +170076,13 @@
           "valuedContracts": 1
         },
         {
+          "name": "M.E estates s.r.o.",
+          "ico": "06349781",
+          "contracts": 1,
+          "knownValueCzk": 68730,
+          "valuedContracts": 1
+        },
+        {
           "name": "CONATEX-DIDACTIC Učební pomůcky,s.r.o.",
           "ico": "25783688",
           "contracts": 1,
@@ -170441,6 +170490,48 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39554997",
+          "idContract": "37189761",
+          "url": "https://smlouvy.gov.cz/smlouva/39554997",
+          "subject": "Dohoda o zabezpečení ubytování a stravování - Horní Bradlo 05/2027",
+          "published": "2026-09-16",
+          "signed": "2026-09-16",
+          "valueCzk": 60480,
+          "valueVatCzk": 60480,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "R-SA, spol. s r.o.",
+              "ico": "60931019",
+              "box": ""
+            }
+          ],
+          "counterparty": "R-SA, spol. s r.o.",
+          "publisher": "Základní škola, Praha 8, Hovorčovická 11",
+          "publisherIco": "60433299"
+        },
+        {
+          "id": "39554929",
+          "idContract": "37189693",
+          "url": "https://smlouvy.gov.cz/smlouva/39554929",
+          "subject": "Smlouva o ubytování a stravování - Hotel Berghof 04/2027",
+          "published": "2026-09-16",
+          "signed": "2026-09-12",
+          "valueCzk": 68730,
+          "valueVatCzk": 68730,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "M.E estates s.r.o.",
+              "ico": "06349781",
+              "box": "bc5pkmg"
+            }
+          ],
+          "counterparty": "M.E estates s.r.o.",
+          "publisher": "Základní škola, Praha 8, Hovorčovická 11",
+          "publisherIco": "60433299"
+        },
         {
           "entityIco": "60433299",
           "entityName": "Základní škola, Praha 8, Hovorčovická 11",

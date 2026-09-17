@@ -22,6 +22,27 @@
       "publisherIco": "00063797"
     },
     {
+      "id": "39552905",
+      "idContract": "37051309",
+      "url": "https://smlouvy.gov.cz/smlouva/39552905",
+      "subject": "Smlouva o nájmu prostoru sloužícího podnikání",
+      "published": "2026-09-16",
+      "signed": "2026-09-03",
+      "valueCzk": 60000,
+      "valueVatCzk": 60000,
+      "valueNoVatCzk": 49586.78,
+      "counterparties": [
+        {
+          "name": "Fresh Bistro s.r.o.",
+          "ico": "22569626",
+          "box": "iuwft3t"
+        }
+      ],
+      "counterparty": "Fresh Bistro s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
       "id": "39532393",
       "idContract": "37167985",
       "url": "https://smlouvy.gov.cz/smlouva/39532393",
@@ -249,27 +270,6 @@
         }
       ],
       "counterparty": "Milan HORA",
-      "publisher": "Městská část Praha 8",
-      "publisherIco": "00063797"
-    },
-    {
-      "id": "39410681",
-      "idContract": "37051309",
-      "url": "https://smlouvy.gov.cz/smlouva/39410681",
-      "subject": "Smlouva o nájmu prostoru sloužícího podnikání",
-      "published": "2026-09-07",
-      "signed": "2026-09-03",
-      "valueCzk": 60000,
-      "valueVatCzk": 60000,
-      "valueNoVatCzk": 49586.78,
-      "counterparties": [
-        {
-          "name": "Fresh Bistro s.r.o.",
-          "ico": "22569626",
-          "box": "iuwft3t"
-        }
-      ],
-      "counterparty": "Fresh Bistro s.r.o.",
       "publisher": "Městská část Praha 8",
       "publisherIco": "00063797"
     },
@@ -148274,7 +148274,7 @@
     "knownValueCzk": 6871445841.379994,
     "valuedContracts": 5743,
     "partners": 1680,
-    "updated": "2026-09-16T09:22:36.297Z",
+    "updated": "2026-09-17T09:31:01.538Z",
     "source": "https://data.smlouvy.gov.cz/index.xml",
     "method": "official-live-search-daily-overlap",
     "dumps": 124,
