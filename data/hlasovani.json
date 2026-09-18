@@ -1,5 +1,2933 @@
 [
   {
+    "titleLine": "Výsledek hlasování č. 1 - bod č. 0. - Zahájení, schválení programu",
+    "number": 1,
+    "item": "0.",
+    "title": "Zahájení, schválení programu",
+    "present": 35,
+    "for": 35,
+    "against": 0,
+    "abstained": 0,
+    "notVoting": 0,
+    "absent": 10,
+    "votes": [
+      {
+        "name": "Tomáš Bína",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Dana Blahunková",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Ondřej Buršík",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Martin Cibulka",
+        "vote": "NEPŘÍTOMEN",
+        "party": "ODS"
+      },
+      {
+        "name": "Jana Dvořáková",
+        "vote": "PRO",
+        "party": "SPD a Trikolora pro Osmičku"
+      },
+      {
+        "name": "Matěj Fichtner",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Michal Fišer",
+        "vote": "NEPŘÍTOMEN",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Pavel Franc",
+        "vote": "NEPŘÍTOMEN",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Bohumír Garlík",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Adam Gregor",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Ondřej Gros",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Hřebík",
+        "vote": "PRO",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Michal Janovský",
+        "vote": "PRO",
+        "party": "PATRIOTI PRO PRAHU 8"
+      },
+      {
+        "name": "Martin Jedlička",
+        "vote": "PRO",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Jakub Jiran",
+        "vote": "NEPŘÍTOMEN",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Jan Kolátor",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Jarmila Kotrbová",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Anna Kroutil",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Vladimíra Ludková",
+        "vote": "NEPŘÍTOMEN",
+        "party": "ODS"
+      },
+      {
+        "name": "Jitka Márová",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Mikulenka",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Mrázek",
+        "vote": "NEPŘÍTOMEN",
+        "party": "ODS"
+      },
+      {
+        "name": "Václav Musílek",
+        "vote": "PRO",
+        "party": "SPD a Trikolora pro Osmičku"
+      },
+      {
+        "name": "Barbora Musilová",
+        "vote": "NEPŘÍTOMEN",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Tomáš Němeček",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Radomír Nepil",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Michal Novák",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Vítězslav Novák",
+        "vote": "PRO",
+        "party": "SPD a Trikolora pro Osmičku"
+      },
+      {
+        "name": "Hana Novotná",
+        "vote": "PRO",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Libor Paulus",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Martin Roubíček",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Slabihoudek",
+        "vote": "NEPŘÍTOMEN",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Ivo Slávka",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Josef Slobodník",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Jana Solomonová",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Václav Stránský",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Jan Šimbera",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Martin Štěrba",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Jan Štorek",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Michal Švarc",
+        "vote": "PRO",
+        "party": "PATRIOTI PRO PRAHU 8"
+      },
+      {
+        "name": "Tomáš Tatranský",
+        "vote": "PRO",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Michal Trník",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Ilona Tůmová",
+        "vote": "NEPŘÍTOMEN",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Jiří Vítek",
+        "vote": "PRO",
+        "party": "PATRIOTI PRO PRAHU 8"
+      },
+      {
+        "name": "Vladislava Vojtíšková",
+        "vote": "NEPŘÍTOMEN",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      }
+    ],
+    "date": "2026-09-16",
+    "url": "https://praha8.cz/podklady_mc/ZMC20260916audiohlasovani/export/html/0001.html",
+    "sourceUrl": "https://praha8.cz/podklady_mc/ZMC20260916audiohlasovani/export/html/0001.html",
+    "exportUrl": "https://praha8.cz/podklady_mc/ZMC20260916audiohlasovani/export/html/index.html",
+    "meetingUrl": "https://www.praha8.cz/Prehled-hlasovani-zastupitelstva-16-09-2026.html"
+  },
+  {
+    "titleLine": "Výsledek hlasování č. 2 - bod č. 0. - Zahájení, schválení programu",
+    "number": 2,
+    "item": "0.",
+    "title": "Zahájení, schválení programu",
+    "present": 36,
+    "for": 10,
+    "against": 2,
+    "abstained": 2,
+    "notVoting": 22,
+    "absent": 9,
+    "votes": [
+      {
+        "name": "Tomáš Bína",
+        "vote": "NEHLASOVAL",
+        "party": "ODS"
+      },
+      {
+        "name": "Dana Blahunková",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Ondřej Buršík",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Martin Cibulka",
+        "vote": "NEPŘÍTOMEN",
+        "party": "ODS"
+      },
+      {
+        "name": "Jana Dvořáková",
+        "vote": "NEHLASOVAL",
+        "party": "SPD a Trikolora pro Osmičku"
+      },
+      {
+        "name": "Matěj Fichtner",
+        "vote": "ZDRŽEL SE",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Michal Fišer",
+        "vote": "NEPŘÍTOMEN",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Pavel Franc",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Bohumír Garlík",
+        "vote": "NEHLASOVAL",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Adam Gregor",
+        "vote": "NEHLASOVAL",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Ondřej Gros",
+        "vote": "NEHLASOVAL",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Hřebík",
+        "vote": "NEHLASOVAL",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Michal Janovský",
+        "vote": "NEHLASOVAL",
+        "party": "PATRIOTI PRO PRAHU 8"
+      },
+      {
+        "name": "Martin Jedlička",
+        "vote": "NEHLASOVAL",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Jakub Jiran",
+        "vote": "NEPŘÍTOMEN",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Jan Kolátor",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Jarmila Kotrbová",
+        "vote": "NEHLASOVAL",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Anna Kroutil",
+        "vote": "NEHLASOVAL",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Vladimíra Ludková",
+        "vote": "NEPŘÍTOMEN",
+        "party": "ODS"
+      },
+      {
+        "name": "Jitka Márová",
+        "vote": "NEHLASOVAL",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Mikulenka",
+        "vote": "ZDRŽEL SE",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Mrázek",
+        "vote": "NEPŘÍTOMEN",
+        "party": "ODS"
+      },
+      {
+        "name": "Václav Musílek",
+        "vote": "PROTI",
+        "party": "SPD a Trikolora pro Osmičku"
+      },
+      {
+        "name": "Barbora Musilová",
+        "vote": "NEPŘÍTOMEN",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Tomáš Němeček",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Radomír Nepil",
+        "vote": "NEHLASOVAL",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Michal Novák",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Vítězslav Novák",
+        "vote": "PROTI",
+        "party": "SPD a Trikolora pro Osmičku"
+      },
+      {
+        "name": "Hana Novotná",
+        "vote": "NEHLASOVAL",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Libor Paulus",
+        "vote": "NEHLASOVAL",
+        "party": "ODS"
+      },
+      {
+        "name": "Martin Roubíček",
+        "vote": "NEHLASOVAL",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Slabihoudek",
+        "vote": "NEPŘÍTOMEN",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Ivo Slávka",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Josef Slobodník",
+        "vote": "NEHLASOVAL",
+        "party": "ODS"
+      },
+      {
+        "name": "Jana Solomonová",
+        "vote": "NEHLASOVAL",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Václav Stránský",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Jan Šimbera",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Martin Štěrba",
+        "vote": "NEHLASOVAL",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Jan Štorek",
+        "vote": "NEHLASOVAL",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Michal Švarc",
+        "vote": "NEHLASOVAL",
+        "party": "PATRIOTI PRO PRAHU 8"
+      },
+      {
+        "name": "Tomáš Tatranský",
+        "vote": "NEHLASOVAL",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Michal Trník",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Ilona Tůmová",
+        "vote": "NEPŘÍTOMEN",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Jiří Vítek",
+        "vote": "NEHLASOVAL",
+        "party": "PATRIOTI PRO PRAHU 8"
+      },
+      {
+        "name": "Vladislava Vojtíšková",
+        "vote": "NEPŘÍTOMEN",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      }
+    ],
+    "date": "2026-09-16",
+    "url": "https://praha8.cz/podklady_mc/ZMC20260916audiohlasovani/export/html/0002.html",
+    "sourceUrl": "https://praha8.cz/podklady_mc/ZMC20260916audiohlasovani/export/html/0002.html",
+    "exportUrl": "https://praha8.cz/podklady_mc/ZMC20260916audiohlasovani/export/html/index.html",
+    "meetingUrl": "https://www.praha8.cz/Prehled-hlasovani-zastupitelstva-16-09-2026.html"
+  },
+  {
+    "titleLine": "Výsledek hlasování č. 3 - bod č. 0. - Zahájení, schválení programu",
+    "number": 3,
+    "item": "0.",
+    "title": "Zahájení, schválení programu",
+    "present": 37,
+    "for": 11,
+    "against": 1,
+    "abstained": 2,
+    "notVoting": 23,
+    "absent": 8,
+    "votes": [
+      {
+        "name": "Tomáš Bína",
+        "vote": "NEHLASOVAL",
+        "party": "ODS"
+      },
+      {
+        "name": "Dana Blahunková",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Ondřej Buršík",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Martin Cibulka",
+        "vote": "NEPŘÍTOMEN",
+        "party": "ODS"
+      },
+      {
+        "name": "Jana Dvořáková",
+        "vote": "NEHLASOVAL",
+        "party": "SPD a Trikolora pro Osmičku"
+      },
+      {
+        "name": "Matěj Fichtner",
+        "vote": "NEHLASOVAL",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Michal Fišer",
+        "vote": "NEPŘÍTOMEN",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Pavel Franc",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Bohumír Garlík",
+        "vote": "NEHLASOVAL",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Adam Gregor",
+        "vote": "NEHLASOVAL",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Ondřej Gros",
+        "vote": "NEHLASOVAL",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Hřebík",
+        "vote": "NEHLASOVAL",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Michal Janovský",
+        "vote": "NEHLASOVAL",
+        "party": "PATRIOTI PRO PRAHU 8"
+      },
+      {
+        "name": "Martin Jedlička",
+        "vote": "NEHLASOVAL",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Jakub Jiran",
+        "vote": "NEPŘÍTOMEN",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Jan Kolátor",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Jarmila Kotrbová",
+        "vote": "NEHLASOVAL",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Anna Kroutil",
+        "vote": "NEHLASOVAL",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Vladimíra Ludková",
+        "vote": "NEPŘÍTOMEN",
+        "party": "ODS"
+      },
+      {
+        "name": "Jitka Márová",
+        "vote": "NEHLASOVAL",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Mikulenka",
+        "vote": "NEHLASOVAL",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Mrázek",
+        "vote": "NEPŘÍTOMEN",
+        "party": "ODS"
+      },
+      {
+        "name": "Václav Musílek",
+        "vote": "PROTI",
+        "party": "SPD a Trikolora pro Osmičku"
+      },
+      {
+        "name": "Barbora Musilová",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Tomáš Němeček",
+        "vote": "NEHLASOVAL",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Radomír Nepil",
+        "vote": "NEHLASOVAL",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Michal Novák",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Vítězslav Novák",
+        "vote": "ZDRŽEL SE",
+        "party": "SPD a Trikolora pro Osmičku"
+      },
+      {
+        "name": "Hana Novotná",
+        "vote": "NEHLASOVAL",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Libor Paulus",
+        "vote": "NEHLASOVAL",
+        "party": "ODS"
+      },
+      {
+        "name": "Martin Roubíček",
+        "vote": "NEHLASOVAL",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Slabihoudek",
+        "vote": "NEPŘÍTOMEN",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Ivo Slávka",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Josef Slobodník",
+        "vote": "NEHLASOVAL",
+        "party": "ODS"
+      },
+      {
+        "name": "Jana Solomonová",
+        "vote": "NEHLASOVAL",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Václav Stránský",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Jan Šimbera",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Martin Štěrba",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Jan Štorek",
+        "vote": "NEHLASOVAL",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Michal Švarc",
+        "vote": "NEHLASOVAL",
+        "party": "PATRIOTI PRO PRAHU 8"
+      },
+      {
+        "name": "Tomáš Tatranský",
+        "vote": "NEHLASOVAL",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Michal Trník",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Ilona Tůmová",
+        "vote": "NEPŘÍTOMEN",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Jiří Vítek",
+        "vote": "ZDRŽEL SE",
+        "party": "PATRIOTI PRO PRAHU 8"
+      },
+      {
+        "name": "Vladislava Vojtíšková",
+        "vote": "NEPŘÍTOMEN",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      }
+    ],
+    "date": "2026-09-16",
+    "url": "https://praha8.cz/podklady_mc/ZMC20260916audiohlasovani/export/html/0003.html",
+    "sourceUrl": "https://praha8.cz/podklady_mc/ZMC20260916audiohlasovani/export/html/0003.html",
+    "exportUrl": "https://praha8.cz/podklady_mc/ZMC20260916audiohlasovani/export/html/index.html",
+    "meetingUrl": "https://www.praha8.cz/Prehled-hlasovani-zastupitelstva-16-09-2026.html"
+  },
+  {
+    "titleLine": "Výsledek hlasování č. 4 - bod č. 0. - Zahájení, schválení programu",
+    "number": 4,
+    "item": "0.",
+    "title": "Zahájení, schválení programu",
+    "present": 37,
+    "for": 35,
+    "against": 0,
+    "abstained": 1,
+    "notVoting": 1,
+    "absent": 8,
+    "votes": [
+      {
+        "name": "Tomáš Bína",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Dana Blahunková",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Ondřej Buršík",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Martin Cibulka",
+        "vote": "NEPŘÍTOMEN",
+        "party": "ODS"
+      },
+      {
+        "name": "Jana Dvořáková",
+        "vote": "PRO",
+        "party": "SPD a Trikolora pro Osmičku"
+      },
+      {
+        "name": "Matěj Fichtner",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Michal Fišer",
+        "vote": "NEPŘÍTOMEN",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Pavel Franc",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Bohumír Garlík",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Adam Gregor",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Ondřej Gros",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Hřebík",
+        "vote": "PRO",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Michal Janovský",
+        "vote": "PRO",
+        "party": "PATRIOTI PRO PRAHU 8"
+      },
+      {
+        "name": "Martin Jedlička",
+        "vote": "PRO",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Jakub Jiran",
+        "vote": "NEPŘÍTOMEN",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Jan Kolátor",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Jarmila Kotrbová",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Anna Kroutil",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Vladimíra Ludková",
+        "vote": "NEPŘÍTOMEN",
+        "party": "ODS"
+      },
+      {
+        "name": "Jitka Márová",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Mikulenka",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Mrázek",
+        "vote": "NEPŘÍTOMEN",
+        "party": "ODS"
+      },
+      {
+        "name": "Václav Musílek",
+        "vote": "PRO",
+        "party": "SPD a Trikolora pro Osmičku"
+      },
+      {
+        "name": "Barbora Musilová",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Tomáš Němeček",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Radomír Nepil",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Michal Novák",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Vítězslav Novák",
+        "vote": "PRO",
+        "party": "SPD a Trikolora pro Osmičku"
+      },
+      {
+        "name": "Hana Novotná",
+        "vote": "PRO",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Libor Paulus",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Martin Roubíček",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Slabihoudek",
+        "vote": "NEPŘÍTOMEN",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Ivo Slávka",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Josef Slobodník",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Jana Solomonová",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Václav Stránský",
+        "vote": "ZDRŽEL SE",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Jan Šimbera",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Martin Štěrba",
+        "vote": "NEHLASOVAL",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Jan Štorek",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Michal Švarc",
+        "vote": "PRO",
+        "party": "PATRIOTI PRO PRAHU 8"
+      },
+      {
+        "name": "Tomáš Tatranský",
+        "vote": "PRO",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Michal Trník",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Ilona Tůmová",
+        "vote": "NEPŘÍTOMEN",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Jiří Vítek",
+        "vote": "PRO",
+        "party": "PATRIOTI PRO PRAHU 8"
+      },
+      {
+        "name": "Vladislava Vojtíšková",
+        "vote": "NEPŘÍTOMEN",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      }
+    ],
+    "date": "2026-09-16",
+    "url": "https://praha8.cz/podklady_mc/ZMC20260916audiohlasovani/export/html/0004.html",
+    "sourceUrl": "https://praha8.cz/podklady_mc/ZMC20260916audiohlasovani/export/html/0004.html",
+    "exportUrl": "https://praha8.cz/podklady_mc/ZMC20260916audiohlasovani/export/html/index.html",
+    "meetingUrl": "https://www.praha8.cz/Prehled-hlasovani-zastupitelstva-16-09-2026.html"
+  },
+  {
+    "titleLine": "Výsledek hlasování č. 5 - bod č. 1. - Návrh přísedících Obvodního soudu pro Prahu 8 na přechodné období od roku 2026 (k usn. č. Usn RMC 0339/2026)",
+    "number": 5,
+    "item": "1.",
+    "title": "Návrh přísedících Obvodního soudu pro Prahu 8 na přechodné období od roku 2026 (k usn. č. Usn RMC 0339/2026)",
+    "present": 37,
+    "for": 37,
+    "against": 0,
+    "abstained": 0,
+    "notVoting": 0,
+    "absent": 8,
+    "votes": [
+      {
+        "name": "Tomáš Bína",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Dana Blahunková",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Ondřej Buršík",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Martin Cibulka",
+        "vote": "NEPŘÍTOMEN",
+        "party": "ODS"
+      },
+      {
+        "name": "Jana Dvořáková",
+        "vote": "PRO",
+        "party": "SPD a Trikolora pro Osmičku"
+      },
+      {
+        "name": "Matěj Fichtner",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Michal Fišer",
+        "vote": "NEPŘÍTOMEN",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Pavel Franc",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Bohumír Garlík",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Adam Gregor",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Ondřej Gros",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Hřebík",
+        "vote": "PRO",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Michal Janovský",
+        "vote": "PRO",
+        "party": "PATRIOTI PRO PRAHU 8"
+      },
+      {
+        "name": "Martin Jedlička",
+        "vote": "PRO",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Jakub Jiran",
+        "vote": "NEPŘÍTOMEN",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Jan Kolátor",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Jarmila Kotrbová",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Anna Kroutil",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Vladimíra Ludková",
+        "vote": "NEPŘÍTOMEN",
+        "party": "ODS"
+      },
+      {
+        "name": "Jitka Márová",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Mikulenka",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Mrázek",
+        "vote": "NEPŘÍTOMEN",
+        "party": "ODS"
+      },
+      {
+        "name": "Václav Musílek",
+        "vote": "PRO",
+        "party": "SPD a Trikolora pro Osmičku"
+      },
+      {
+        "name": "Barbora Musilová",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Tomáš Němeček",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Radomír Nepil",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Michal Novák",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Vítězslav Novák",
+        "vote": "PRO",
+        "party": "SPD a Trikolora pro Osmičku"
+      },
+      {
+        "name": "Hana Novotná",
+        "vote": "PRO",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Libor Paulus",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Martin Roubíček",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Slabihoudek",
+        "vote": "NEPŘÍTOMEN",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Ivo Slávka",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Josef Slobodník",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Jana Solomonová",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Václav Stránský",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Jan Šimbera",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Martin Štěrba",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Jan Štorek",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Michal Švarc",
+        "vote": "PRO",
+        "party": "PATRIOTI PRO PRAHU 8"
+      },
+      {
+        "name": "Tomáš Tatranský",
+        "vote": "PRO",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Michal Trník",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Ilona Tůmová",
+        "vote": "NEPŘÍTOMEN",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Jiří Vítek",
+        "vote": "PRO",
+        "party": "PATRIOTI PRO PRAHU 8"
+      },
+      {
+        "name": "Vladislava Vojtíšková",
+        "vote": "NEPŘÍTOMEN",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      }
+    ],
+    "date": "2026-09-16",
+    "url": "https://praha8.cz/podklady_mc/ZMC20260916audiohlasovani/export/html/0005.html",
+    "sourceUrl": "https://praha8.cz/podklady_mc/ZMC20260916audiohlasovani/export/html/0005.html",
+    "exportUrl": "https://praha8.cz/podklady_mc/ZMC20260916audiohlasovani/export/html/index.html",
+    "meetingUrl": "https://www.praha8.cz/Prehled-hlasovani-zastupitelstva-16-09-2026.html"
+  },
+  {
+    "titleLine": "Výsledek hlasování č. 6 - bod č. 2. - Návrh rozpočtových opatření městské části Praha 8 (k usn. č. Usn RMC 0340/2026)",
+    "number": 6,
+    "item": "2.",
+    "title": "Návrh rozpočtových opatření městské části Praha 8 (k usn. č. Usn RMC 0340/2026)",
+    "present": 37,
+    "for": 37,
+    "against": 0,
+    "abstained": 0,
+    "notVoting": 0,
+    "absent": 8,
+    "votes": [
+      {
+        "name": "Tomáš Bína",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Dana Blahunková",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Ondřej Buršík",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Martin Cibulka",
+        "vote": "NEPŘÍTOMEN",
+        "party": "ODS"
+      },
+      {
+        "name": "Jana Dvořáková",
+        "vote": "PRO",
+        "party": "SPD a Trikolora pro Osmičku"
+      },
+      {
+        "name": "Matěj Fichtner",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Michal Fišer",
+        "vote": "NEPŘÍTOMEN",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Pavel Franc",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Bohumír Garlík",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Adam Gregor",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Ondřej Gros",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Hřebík",
+        "vote": "PRO",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Michal Janovský",
+        "vote": "PRO",
+        "party": "PATRIOTI PRO PRAHU 8"
+      },
+      {
+        "name": "Martin Jedlička",
+        "vote": "PRO",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Jakub Jiran",
+        "vote": "NEPŘÍTOMEN",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Jan Kolátor",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Jarmila Kotrbová",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Anna Kroutil",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Vladimíra Ludková",
+        "vote": "NEPŘÍTOMEN",
+        "party": "ODS"
+      },
+      {
+        "name": "Jitka Márová",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Mikulenka",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Mrázek",
+        "vote": "NEPŘÍTOMEN",
+        "party": "ODS"
+      },
+      {
+        "name": "Václav Musílek",
+        "vote": "PRO",
+        "party": "SPD a Trikolora pro Osmičku"
+      },
+      {
+        "name": "Barbora Musilová",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Tomáš Němeček",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Radomír Nepil",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Michal Novák",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Vítězslav Novák",
+        "vote": "PRO",
+        "party": "SPD a Trikolora pro Osmičku"
+      },
+      {
+        "name": "Hana Novotná",
+        "vote": "PRO",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Libor Paulus",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Martin Roubíček",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Slabihoudek",
+        "vote": "NEPŘÍTOMEN",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Ivo Slávka",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Josef Slobodník",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Jana Solomonová",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Václav Stránský",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Jan Šimbera",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Martin Štěrba",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Jan Štorek",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Michal Švarc",
+        "vote": "PRO",
+        "party": "PATRIOTI PRO PRAHU 8"
+      },
+      {
+        "name": "Tomáš Tatranský",
+        "vote": "PRO",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Michal Trník",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Ilona Tůmová",
+        "vote": "NEPŘÍTOMEN",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Jiří Vítek",
+        "vote": "PRO",
+        "party": "PATRIOTI PRO PRAHU 8"
+      },
+      {
+        "name": "Vladislava Vojtíšková",
+        "vote": "NEPŘÍTOMEN",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      }
+    ],
+    "date": "2026-09-16",
+    "url": "https://praha8.cz/podklady_mc/ZMC20260916audiohlasovani/export/html/0006.html",
+    "sourceUrl": "https://praha8.cz/podklady_mc/ZMC20260916audiohlasovani/export/html/0006.html",
+    "exportUrl": "https://praha8.cz/podklady_mc/ZMC20260916audiohlasovani/export/html/index.html",
+    "meetingUrl": "https://www.praha8.cz/Prehled-hlasovani-zastupitelstva-16-09-2026.html"
+  },
+  {
+    "titleLine": "Výsledek hlasování č. 7 - bod č. 3. - Návrh rozpočtových opatření městské části Praha 8 (k usn. č. Usn RMC 00372/2026)",
+    "number": 7,
+    "item": "3.",
+    "title": "Návrh rozpočtových opatření městské části Praha 8 (k usn. č. Usn RMC 00372/2026)",
+    "present": 37,
+    "for": 30,
+    "against": 0,
+    "abstained": 1,
+    "notVoting": 6,
+    "absent": 8,
+    "votes": [
+      {
+        "name": "Tomáš Bína",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Dana Blahunková",
+        "vote": "NEHLASOVAL",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Ondřej Buršík",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Martin Cibulka",
+        "vote": "NEPŘÍTOMEN",
+        "party": "ODS"
+      },
+      {
+        "name": "Jana Dvořáková",
+        "vote": "PRO",
+        "party": "SPD a Trikolora pro Osmičku"
+      },
+      {
+        "name": "Matěj Fichtner",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Michal Fišer",
+        "vote": "NEPŘÍTOMEN",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Pavel Franc",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Bohumír Garlík",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Adam Gregor",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Ondřej Gros",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Hřebík",
+        "vote": "PRO",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Michal Janovský",
+        "vote": "PRO",
+        "party": "PATRIOTI PRO PRAHU 8"
+      },
+      {
+        "name": "Martin Jedlička",
+        "vote": "PRO",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Jakub Jiran",
+        "vote": "NEPŘÍTOMEN",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Jan Kolátor",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Jarmila Kotrbová",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Anna Kroutil",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Vladimíra Ludková",
+        "vote": "NEPŘÍTOMEN",
+        "party": "ODS"
+      },
+      {
+        "name": "Jitka Márová",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Mikulenka",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Mrázek",
+        "vote": "NEPŘÍTOMEN",
+        "party": "ODS"
+      },
+      {
+        "name": "Václav Musílek",
+        "vote": "PRO",
+        "party": "SPD a Trikolora pro Osmičku"
+      },
+      {
+        "name": "Barbora Musilová",
+        "vote": "NEHLASOVAL",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Tomáš Němeček",
+        "vote": "NEHLASOVAL",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Radomír Nepil",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Michal Novák",
+        "vote": "ZDRŽEL SE",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Vítězslav Novák",
+        "vote": "PRO",
+        "party": "SPD a Trikolora pro Osmičku"
+      },
+      {
+        "name": "Hana Novotná",
+        "vote": "PRO",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Libor Paulus",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Martin Roubíček",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Slabihoudek",
+        "vote": "NEPŘÍTOMEN",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Ivo Slávka",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Josef Slobodník",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Jana Solomonová",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Václav Stránský",
+        "vote": "NEHLASOVAL",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Jan Šimbera",
+        "vote": "NEHLASOVAL",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Martin Štěrba",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Jan Štorek",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Michal Švarc",
+        "vote": "PRO",
+        "party": "PATRIOTI PRO PRAHU 8"
+      },
+      {
+        "name": "Tomáš Tatranský",
+        "vote": "PRO",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Michal Trník",
+        "vote": "NEHLASOVAL",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Ilona Tůmová",
+        "vote": "NEPŘÍTOMEN",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Jiří Vítek",
+        "vote": "PRO",
+        "party": "PATRIOTI PRO PRAHU 8"
+      },
+      {
+        "name": "Vladislava Vojtíšková",
+        "vote": "NEPŘÍTOMEN",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      }
+    ],
+    "date": "2026-09-16",
+    "url": "https://praha8.cz/podklady_mc/ZMC20260916audiohlasovani/export/html/0007.html",
+    "sourceUrl": "https://praha8.cz/podklady_mc/ZMC20260916audiohlasovani/export/html/0007.html",
+    "exportUrl": "https://praha8.cz/podklady_mc/ZMC20260916audiohlasovani/export/html/index.html",
+    "meetingUrl": "https://www.praha8.cz/Prehled-hlasovani-zastupitelstva-16-09-2026.html"
+  },
+  {
+    "titleLine": "Výsledek hlasování č. 8 - bod č. 4. - Návrh změny Přílohy č. 1 \"Zřizovací listiny\" Servisního střediska pro správu svěřeného majetku (SeS) Městské části Praha 8, v platném znění (k usn. č. Usn RMC 0355/2026)",
+    "number": 8,
+    "item": "4.",
+    "title": "Návrh změny Přílohy č. 1 \"Zřizovací listiny\" Servisního střediska pro správu svěřeného majetku (SeS) Městské části Praha 8, v platném znění (k usn. č. Usn RMC 0355/2026)",
+    "present": 37,
+    "for": 37,
+    "against": 0,
+    "abstained": 0,
+    "notVoting": 0,
+    "absent": 8,
+    "votes": [
+      {
+        "name": "Tomáš Bína",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Dana Blahunková",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Ondřej Buršík",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Martin Cibulka",
+        "vote": "NEPŘÍTOMEN",
+        "party": "ODS"
+      },
+      {
+        "name": "Jana Dvořáková",
+        "vote": "PRO",
+        "party": "SPD a Trikolora pro Osmičku"
+      },
+      {
+        "name": "Matěj Fichtner",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Michal Fišer",
+        "vote": "NEPŘÍTOMEN",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Pavel Franc",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Bohumír Garlík",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Adam Gregor",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Ondřej Gros",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Hřebík",
+        "vote": "PRO",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Michal Janovský",
+        "vote": "PRO",
+        "party": "PATRIOTI PRO PRAHU 8"
+      },
+      {
+        "name": "Martin Jedlička",
+        "vote": "PRO",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Jakub Jiran",
+        "vote": "NEPŘÍTOMEN",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Jan Kolátor",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Jarmila Kotrbová",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Anna Kroutil",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Vladimíra Ludková",
+        "vote": "NEPŘÍTOMEN",
+        "party": "ODS"
+      },
+      {
+        "name": "Jitka Márová",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Mikulenka",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Mrázek",
+        "vote": "NEPŘÍTOMEN",
+        "party": "ODS"
+      },
+      {
+        "name": "Václav Musílek",
+        "vote": "PRO",
+        "party": "SPD a Trikolora pro Osmičku"
+      },
+      {
+        "name": "Barbora Musilová",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Tomáš Němeček",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Radomír Nepil",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Michal Novák",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Vítězslav Novák",
+        "vote": "PRO",
+        "party": "SPD a Trikolora pro Osmičku"
+      },
+      {
+        "name": "Hana Novotná",
+        "vote": "PRO",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Libor Paulus",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Martin Roubíček",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Slabihoudek",
+        "vote": "NEPŘÍTOMEN",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Ivo Slávka",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Josef Slobodník",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Jana Solomonová",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Václav Stránský",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Jan Šimbera",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Martin Štěrba",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Jan Štorek",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Michal Švarc",
+        "vote": "PRO",
+        "party": "PATRIOTI PRO PRAHU 8"
+      },
+      {
+        "name": "Tomáš Tatranský",
+        "vote": "PRO",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Michal Trník",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Ilona Tůmová",
+        "vote": "NEPŘÍTOMEN",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Jiří Vítek",
+        "vote": "PRO",
+        "party": "PATRIOTI PRO PRAHU 8"
+      },
+      {
+        "name": "Vladislava Vojtíšková",
+        "vote": "NEPŘÍTOMEN",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      }
+    ],
+    "date": "2026-09-16",
+    "url": "https://praha8.cz/podklady_mc/ZMC20260916audiohlasovani/export/html/0008.html",
+    "sourceUrl": "https://praha8.cz/podklady_mc/ZMC20260916audiohlasovani/export/html/0008.html",
+    "exportUrl": "https://praha8.cz/podklady_mc/ZMC20260916audiohlasovani/export/html/index.html",
+    "meetingUrl": "https://www.praha8.cz/Prehled-hlasovani-zastupitelstva-16-09-2026.html"
+  },
+  {
+    "titleLine": "Výsledek hlasování č. 9 - bod č. 5. - Návrh majetkového převodu městské části Praha 8 - úplatného převodu nemovitostí ve vlastnictví obce, tj. hlavního města Prahy, svěřených do správy městské části Praha 8, konkrétně pozemků parc. č. 1/1, parc. č. 1/2, parc. č. 2/1, parc. č. 2/2, parc. č. 5/1, parc. č. 5/2, parc. č. 5/3, parc. č. 5/4, parc. č. 6/1, parc. č. 7/8, na k. ú. Střížkov (k usn. č. Usn RMC 0304/2026)",
+    "number": 9,
+    "item": "5.",
+    "title": "Návrh majetkového převodu městské části Praha 8 - úplatného převodu nemovitostí ve vlastnictví obce, tj. hlavního města Prahy, svěřených do správy městské části Praha 8, konkrétně pozemků parc. č. 1/1, parc. č. 1/2, parc. č. 2/1, parc. č. 2/2, parc. č. 5/1, parc. č. 5/2, parc. č. 5/3, parc. č. 5/4, parc. č. 6/1, parc. č. 7/8, na k. ú. Střížkov (k usn. č. Usn RMC 0304/2026)",
+    "present": 37,
+    "for": 37,
+    "against": 0,
+    "abstained": 0,
+    "notVoting": 0,
+    "absent": 8,
+    "votes": [
+      {
+        "name": "Tomáš Bína",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Dana Blahunková",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Ondřej Buršík",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Martin Cibulka",
+        "vote": "NEPŘÍTOMEN",
+        "party": "ODS"
+      },
+      {
+        "name": "Jana Dvořáková",
+        "vote": "PRO",
+        "party": "SPD a Trikolora pro Osmičku"
+      },
+      {
+        "name": "Matěj Fichtner",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Michal Fišer",
+        "vote": "NEPŘÍTOMEN",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Pavel Franc",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Bohumír Garlík",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Adam Gregor",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Ondřej Gros",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Hřebík",
+        "vote": "PRO",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Michal Janovský",
+        "vote": "PRO",
+        "party": "PATRIOTI PRO PRAHU 8"
+      },
+      {
+        "name": "Martin Jedlička",
+        "vote": "PRO",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Jakub Jiran",
+        "vote": "NEPŘÍTOMEN",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Jan Kolátor",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Jarmila Kotrbová",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Anna Kroutil",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Vladimíra Ludková",
+        "vote": "NEPŘÍTOMEN",
+        "party": "ODS"
+      },
+      {
+        "name": "Jitka Márová",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Mikulenka",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Mrázek",
+        "vote": "NEPŘÍTOMEN",
+        "party": "ODS"
+      },
+      {
+        "name": "Václav Musílek",
+        "vote": "PRO",
+        "party": "SPD a Trikolora pro Osmičku"
+      },
+      {
+        "name": "Barbora Musilová",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Tomáš Němeček",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Radomír Nepil",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Michal Novák",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Vítězslav Novák",
+        "vote": "PRO",
+        "party": "SPD a Trikolora pro Osmičku"
+      },
+      {
+        "name": "Hana Novotná",
+        "vote": "PRO",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Libor Paulus",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Martin Roubíček",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Slabihoudek",
+        "vote": "NEPŘÍTOMEN",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Ivo Slávka",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Josef Slobodník",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Jana Solomonová",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Václav Stránský",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Jan Šimbera",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Martin Štěrba",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Jan Štorek",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Michal Švarc",
+        "vote": "PRO",
+        "party": "PATRIOTI PRO PRAHU 8"
+      },
+      {
+        "name": "Tomáš Tatranský",
+        "vote": "PRO",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Michal Trník",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Ilona Tůmová",
+        "vote": "NEPŘÍTOMEN",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Jiří Vítek",
+        "vote": "PRO",
+        "party": "PATRIOTI PRO PRAHU 8"
+      },
+      {
+        "name": "Vladislava Vojtíšková",
+        "vote": "NEPŘÍTOMEN",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      }
+    ],
+    "date": "2026-09-16",
+    "url": "https://praha8.cz/podklady_mc/ZMC20260916audiohlasovani/export/html/0009.html",
+    "sourceUrl": "https://praha8.cz/podklady_mc/ZMC20260916audiohlasovani/export/html/0009.html",
+    "exportUrl": "https://praha8.cz/podklady_mc/ZMC20260916audiohlasovani/export/html/index.html",
+    "meetingUrl": "https://www.praha8.cz/Prehled-hlasovani-zastupitelstva-16-09-2026.html"
+  },
+  {
+    "titleLine": "Výsledek hlasování č. 10 - bod č. 6. - Návrh majetkového převodu městské části Praha 8 - úplatného převodu nemovitostí ve vlastnictví obce, tj. Hlavního města Prahy, svěřených do správy městské části Praha 8 – pozemků parc. č.585/494, a parc. č. 585/487, oba na k. ú. Bohnice, obec Praha (k usn. č. Usn RMC 0356/2026)",
+    "number": 10,
+    "item": "6.",
+    "title": "Návrh majetkového převodu městské části Praha 8 - úplatného převodu nemovitostí ve vlastnictví obce, tj. Hlavního města Prahy, svěřených do správy městské části Praha 8 – pozemků parc. č.585/494, a parc. č. 585/487, oba na k. ú. Bohnice, obec Praha (k usn. č. Usn RMC 0356/2026)",
+    "present": 38,
+    "for": 38,
+    "against": 0,
+    "abstained": 0,
+    "notVoting": 0,
+    "absent": 7,
+    "votes": [
+      {
+        "name": "Tomáš Bína",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Dana Blahunková",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Ondřej Buršík",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Martin Cibulka",
+        "vote": "NEPŘÍTOMEN",
+        "party": "ODS"
+      },
+      {
+        "name": "Jana Dvořáková",
+        "vote": "PRO",
+        "party": "SPD a Trikolora pro Osmičku"
+      },
+      {
+        "name": "Matěj Fichtner",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Michal Fišer",
+        "vote": "NEPŘÍTOMEN",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Pavel Franc",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Bohumír Garlík",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Adam Gregor",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Ondřej Gros",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Hřebík",
+        "vote": "PRO",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Michal Janovský",
+        "vote": "PRO",
+        "party": "PATRIOTI PRO PRAHU 8"
+      },
+      {
+        "name": "Martin Jedlička",
+        "vote": "PRO",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Jakub Jiran",
+        "vote": "NEPŘÍTOMEN",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Jan Kolátor",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Jarmila Kotrbová",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Anna Kroutil",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Vladimíra Ludková",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Jitka Márová",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Mikulenka",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Mrázek",
+        "vote": "NEPŘÍTOMEN",
+        "party": "ODS"
+      },
+      {
+        "name": "Václav Musílek",
+        "vote": "PRO",
+        "party": "SPD a Trikolora pro Osmičku"
+      },
+      {
+        "name": "Barbora Musilová",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Tomáš Němeček",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Radomír Nepil",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Michal Novák",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Vítězslav Novák",
+        "vote": "PRO",
+        "party": "SPD a Trikolora pro Osmičku"
+      },
+      {
+        "name": "Hana Novotná",
+        "vote": "PRO",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Libor Paulus",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Martin Roubíček",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Slabihoudek",
+        "vote": "NEPŘÍTOMEN",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Ivo Slávka",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Josef Slobodník",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Jana Solomonová",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Václav Stránský",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Jan Šimbera",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Martin Štěrba",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Jan Štorek",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Michal Švarc",
+        "vote": "PRO",
+        "party": "PATRIOTI PRO PRAHU 8"
+      },
+      {
+        "name": "Tomáš Tatranský",
+        "vote": "PRO",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Michal Trník",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Ilona Tůmová",
+        "vote": "NEPŘÍTOMEN",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Jiří Vítek",
+        "vote": "PRO",
+        "party": "PATRIOTI PRO PRAHU 8"
+      },
+      {
+        "name": "Vladislava Vojtíšková",
+        "vote": "NEPŘÍTOMEN",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      }
+    ],
+    "date": "2026-09-16",
+    "url": "https://praha8.cz/podklady_mc/ZMC20260916audiohlasovani/export/html/0010.html",
+    "sourceUrl": "https://praha8.cz/podklady_mc/ZMC20260916audiohlasovani/export/html/0010.html",
+    "exportUrl": "https://praha8.cz/podklady_mc/ZMC20260916audiohlasovani/export/html/index.html",
+    "meetingUrl": "https://www.praha8.cz/Prehled-hlasovani-zastupitelstva-16-09-2026.html"
+  },
+  {
+    "titleLine": "Výsledek hlasování č. 11 - bod č. 7. - Návrh majetkového převodu městské části Praha 8 - úplatného převodu nemovitosti ve vlastnictví obce, tj. Hlavního města Prahy, svěřené do správy městské části Praha 8 – pozemku parc. č. 647/22, na k. ú. Kobylisy, obec Praha (k usn. č. Usn RMC 0357/2026)",
+    "number": 11,
+    "item": "7.",
+    "title": "Návrh majetkového převodu městské části Praha 8 - úplatného převodu nemovitosti ve vlastnictví obce, tj. Hlavního města Prahy, svěřené do správy městské části Praha 8 – pozemku parc. č. 647/22, na k. ú. Kobylisy, obec Praha (k usn. č. Usn RMC 0357/2026)",
+    "present": 38,
+    "for": 38,
+    "against": 0,
+    "abstained": 0,
+    "notVoting": 0,
+    "absent": 7,
+    "votes": [
+      {
+        "name": "Tomáš Bína",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Dana Blahunková",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Ondřej Buršík",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Martin Cibulka",
+        "vote": "NEPŘÍTOMEN",
+        "party": "ODS"
+      },
+      {
+        "name": "Jana Dvořáková",
+        "vote": "PRO",
+        "party": "SPD a Trikolora pro Osmičku"
+      },
+      {
+        "name": "Matěj Fichtner",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Michal Fišer",
+        "vote": "NEPŘÍTOMEN",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Pavel Franc",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Bohumír Garlík",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Adam Gregor",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Ondřej Gros",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Hřebík",
+        "vote": "PRO",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Michal Janovský",
+        "vote": "PRO",
+        "party": "PATRIOTI PRO PRAHU 8"
+      },
+      {
+        "name": "Martin Jedlička",
+        "vote": "PRO",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Jakub Jiran",
+        "vote": "NEPŘÍTOMEN",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Jan Kolátor",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Jarmila Kotrbová",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Anna Kroutil",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Vladimíra Ludková",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Jitka Márová",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Mikulenka",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Mrázek",
+        "vote": "NEPŘÍTOMEN",
+        "party": "ODS"
+      },
+      {
+        "name": "Václav Musílek",
+        "vote": "PRO",
+        "party": "SPD a Trikolora pro Osmičku"
+      },
+      {
+        "name": "Barbora Musilová",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Tomáš Němeček",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Radomír Nepil",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Michal Novák",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Vítězslav Novák",
+        "vote": "PRO",
+        "party": "SPD a Trikolora pro Osmičku"
+      },
+      {
+        "name": "Hana Novotná",
+        "vote": "PRO",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Libor Paulus",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Martin Roubíček",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Slabihoudek",
+        "vote": "NEPŘÍTOMEN",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Ivo Slávka",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Josef Slobodník",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Jana Solomonová",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Václav Stránský",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Jan Šimbera",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Martin Štěrba",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Jan Štorek",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Michal Švarc",
+        "vote": "PRO",
+        "party": "PATRIOTI PRO PRAHU 8"
+      },
+      {
+        "name": "Tomáš Tatranský",
+        "vote": "PRO",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Michal Trník",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Ilona Tůmová",
+        "vote": "NEPŘÍTOMEN",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Jiří Vítek",
+        "vote": "PRO",
+        "party": "PATRIOTI PRO PRAHU 8"
+      },
+      {
+        "name": "Vladislava Vojtíšková",
+        "vote": "NEPŘÍTOMEN",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      }
+    ],
+    "date": "2026-09-16",
+    "url": "https://praha8.cz/podklady_mc/ZMC20260916audiohlasovani/export/html/0011.html",
+    "sourceUrl": "https://praha8.cz/podklady_mc/ZMC20260916audiohlasovani/export/html/0011.html",
+    "exportUrl": "https://praha8.cz/podklady_mc/ZMC20260916audiohlasovani/export/html/index.html",
+    "meetingUrl": "https://www.praha8.cz/Prehled-hlasovani-zastupitelstva-16-09-2026.html"
+  },
+  {
+    "titleLine": "Výsledek hlasování č. 12 - bod č. 8. - Návrh nabytí nemovitého majetku - pozemku parc. č. 4071/26 na k. ú. Libeň (k usn. č. Usn RMC 0387/2026)",
+    "number": 12,
+    "item": "8.",
+    "title": "Návrh nabytí nemovitého majetku - pozemku parc. č. 4071/26 na k. ú. Libeň (k usn. č. Usn RMC 0387/2026)",
+    "present": 41,
+    "for": 40,
+    "against": 0,
+    "abstained": 0,
+    "notVoting": 1,
+    "absent": 4,
+    "votes": [
+      {
+        "name": "Tomáš Bína",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Dana Blahunková",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Ondřej Buršík",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Martin Cibulka",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Jana Dvořáková",
+        "vote": "PRO",
+        "party": "SPD a Trikolora pro Osmičku"
+      },
+      {
+        "name": "Matěj Fichtner",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Michal Fišer",
+        "vote": "NEPŘÍTOMEN",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Pavel Franc",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Bohumír Garlík",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Adam Gregor",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Ondřej Gros",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Hřebík",
+        "vote": "PRO",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Michal Janovský",
+        "vote": "PRO",
+        "party": "PATRIOTI PRO PRAHU 8"
+      },
+      {
+        "name": "Martin Jedlička",
+        "vote": "PRO",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Jakub Jiran",
+        "vote": "NEPŘÍTOMEN",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Jan Kolátor",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Jarmila Kotrbová",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Anna Kroutil",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Vladimíra Ludková",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Jitka Márová",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Mikulenka",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Mrázek",
+        "vote": "NEPŘÍTOMEN",
+        "party": "ODS"
+      },
+      {
+        "name": "Václav Musílek",
+        "vote": "PRO",
+        "party": "SPD a Trikolora pro Osmičku"
+      },
+      {
+        "name": "Barbora Musilová",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Tomáš Němeček",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Radomír Nepil",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Michal Novák",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Vítězslav Novák",
+        "vote": "NEHLASOVAL",
+        "party": "SPD a Trikolora pro Osmičku"
+      },
+      {
+        "name": "Hana Novotná",
+        "vote": "PRO",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Libor Paulus",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Martin Roubíček",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Tomáš Slabihoudek",
+        "vote": "PRO",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Ivo Slávka",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Josef Slobodník",
+        "vote": "PRO",
+        "party": "ODS"
+      },
+      {
+        "name": "Jana Solomonová",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Václav Stránský",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Jan Šimbera",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Martin Štěrba",
+        "vote": "PRO",
+        "party": "Česká pirátská strana"
+      },
+      {
+        "name": "Jan Štorek",
+        "vote": "PRO",
+        "party": "ANO 2011"
+      },
+      {
+        "name": "Michal Švarc",
+        "vote": "PRO",
+        "party": "PATRIOTI PRO PRAHU 8"
+      },
+      {
+        "name": "Tomáš Tatranský",
+        "vote": "PRO",
+        "party": "Společně pro Prahu 8"
+      },
+      {
+        "name": "Michal Trník",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Ilona Tůmová",
+        "vote": "PRO",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      },
+      {
+        "name": "Jiří Vítek",
+        "vote": "PRO",
+        "party": "PATRIOTI PRO PRAHU 8"
+      },
+      {
+        "name": "Vladislava Vojtíšková",
+        "vote": "NEPŘÍTOMEN",
+        "party": "8ŽIJE A PRAHA SOBĚ"
+      }
+    ],
+    "date": "2026-09-16",
+    "url": "https://praha8.cz/podklady_mc/ZMC20260916audiohlasovani/export/html/0012.html",
+    "sourceUrl": "https://praha8.cz/podklady_mc/ZMC20260916audiohlasovani/export/html/0012.html",
+    "exportUrl": "https://praha8.cz/podklady_mc/ZMC20260916audiohlasovani/export/html/index.html",
+    "meetingUrl": "https://www.praha8.cz/Prehled-hlasovani-zastupitelstva-16-09-2026.html"
+  },
+  {
     "titleLine": "Výsledek hlasování č. 1 - bod č. 0. - Zahájení, složení slibu zastupitele, schválení programu",
     "number": 1,
     "item": "0.",

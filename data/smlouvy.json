@@ -1,6 +1,90 @@
 {
   "contracts": [
     {
+      "id": "39580285",
+      "idContract": "37214057",
+      "url": "https://smlouvy.gov.cz/smlouva/39580285",
+      "subject": "Objednávka - dodávka UPS",
+      "published": "2026-09-18",
+      "signed": "2026-09-17",
+      "valueCzk": 440319,
+      "valueVatCzk": 440319,
+      "valueNoVatCzk": 363900,
+      "counterparties": [
+        {
+          "name": "SoftwareONE Czech Republic s.r.o.",
+          "ico": "24207519",
+          "box": "8fc9a92"
+        }
+      ],
+      "counterparty": "SoftwareONE Czech Republic s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39573189",
+      "idContract": "37207205",
+      "url": "https://smlouvy.gov.cz/smlouva/39573189",
+      "subject": "Objednáváme u vás realizaci akce Pohádkový rodinný karneval, který se koná dne 19.09.2026 v KD Krakov. Program zahrnuje přípravu, moderaci, soutěže a hry, 6 pohádkových stanovišť, kreativní aktivity, modelování balónků, obří bubliny, fotokoutek a závěrečn",
+      "published": "2026-09-17",
+      "signed": "2026-09-21",
+      "valueCzk": 49000,
+      "valueVatCzk": 49000,
+      "valueNoVatCzk": 49000,
+      "counterparties": [
+        {
+          "name": "Ing. Petr Bucek",
+          "ico": "23564598",
+          "box": "4jswg82"
+        }
+      ],
+      "counterparty": "Ing. Petr Bucek",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39573185",
+      "idContract": "37207201",
+      "url": "https://smlouvy.gov.cz/smlouva/39573185",
+      "subject": "Objednáváme u vás přípravu a produkční zajištění akce Pohádkový rodinný karneval, který se koná dne 19.09.2026 v KD Krakov.",
+      "published": "2026-09-17",
+      "signed": "2026-09-21",
+      "valueCzk": 37000,
+      "valueVatCzk": 37000,
+      "valueNoVatCzk": 37000,
+      "counterparties": [
+        {
+          "name": "Ing. Petr Bucek",
+          "ico": "23564598",
+          "box": "4jswg82"
+        }
+      ],
+      "counterparty": "Ing. Petr Bucek",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39569817",
+      "idContract": "37204005",
+      "url": "https://smlouvy.gov.cz/smlouva/39569817",
+      "subject": "780_61_123_Odstranění závad plynoucí z RZ č. 702/2026_    15013",
+      "published": "2026-09-17",
+      "signed": "2026-09-14",
+      "valueCzk": 98900,
+      "valueVatCzk": null,
+      "valueNoVatCzk": 98900,
+      "counterparties": [
+        {
+          "name": "Milan HORA",
+          "ico": "14961407",
+          "box": ""
+        }
+      ],
+      "counterparty": "Milan HORA",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
       "id": "39547061",
       "idContract": "37182081",
       "url": "https://smlouvy.gov.cz/smlouva/39547061",
@@ -136664,18 +136748,18 @@
       "valuedContracts": 1
     },
     {
+      "name": "SoftwareONE Czech Republic s.r.o.",
+      "ico": "24207519",
+      "contracts": 51,
+      "knownValueCzk": 34747186.33,
+      "valuedContracts": 50
+    },
+    {
       "name": "Byty Kobylisy s.r.o.",
       "ico": "09279784",
       "contracts": 1,
       "knownValueCzk": 34700000,
       "valuedContracts": 1
-    },
-    {
-      "name": "SoftwareONE Czech Republic s.r.o.",
-      "ico": "24207519",
-      "contracts": 50,
-      "knownValueCzk": 34306867.33,
-      "valuedContracts": 49
     },
     {
       "name": "BAB mont s.r.o.",
@@ -137462,18 +137546,18 @@
       "valuedContracts": 2
     },
     {
+      "name": "Milan HORA",
+      "ico": "14961407",
+      "contracts": 54,
+      "knownValueCzk": 6766315.45,
+      "valuedContracts": 54
+    },
+    {
       "name": "Atop-aqua s.r.o.",
       "ico": "07647743",
       "contracts": 18,
       "knownValueCzk": 6697550.49,
       "valuedContracts": 18
-    },
-    {
-      "name": "Milan HORA",
-      "ico": "14961407",
-      "contracts": 53,
-      "knownValueCzk": 6667415.45,
-      "valuedContracts": 53
     },
     {
       "name": "PREdistribuce, a.s.",
@@ -145498,6 +145582,13 @@
       "valuedContracts": 1
     },
     {
+      "name": "Ing. Petr Bucek",
+      "ico": "23564598",
+      "contracts": 2,
+      "knownValueCzk": 86000,
+      "valuedContracts": 2
+    },
+    {
       "name": "Drahoslav Chramosta",
       "ico": "",
       "contracts": 1,
@@ -148264,17 +148355,17 @@
     }
   ],
   "meta": {
-    "total": 6506,
+    "total": 6510,
     "complete": true,
     "historyComplete": true,
     "scope": "full-history",
     "dateFrom": "2007-05-09",
-    "dateTo": "2026-09-16",
+    "dateTo": "2026-09-21",
     "dateLabel": "celá historie Registru smluv",
-    "knownValueCzk": 6871445841.379994,
-    "valuedContracts": 5743,
-    "partners": 1680,
-    "updated": "2026-09-17T09:31:01.538Z",
+    "knownValueCzk": 6872071060.379994,
+    "valuedContracts": 5747,
+    "partners": 1681,
+    "updated": "2026-09-18T09:04:42.720Z",
     "source": "https://data.smlouvy.gov.cz/index.xml",
     "method": "official-live-search-daily-overlap",
     "dumps": 124,

@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-09-16",
+    "title": "Přehled hlasování zastupitelstva 16.09.2026",
+    "url": "https://www.praha8.cz/Prehled-hlasovani-zastupitelstva-16-09-2026.html",
+    "mode": "html",
+    "exportBase": "https://praha8.cz/podklady_mc/ZMC20260916audiohlasovani/export/html/"
+  },
+  {
     "date": "2026-06-17",
     "title": "Přehled hlasování zastupitelstva 17.06.2026",
     "url": "https://www.praha8.cz/Prehled-hlasovani-zastupitelstva-17-06-2026.html",

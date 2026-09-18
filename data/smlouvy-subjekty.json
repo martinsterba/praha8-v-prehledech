@@ -1,18 +1,18 @@
 {
   "schema": 2,
-  "updated": "2026-09-17T09:31:01.538Z",
+  "updated": "2026-09-18T09:04:42.720Z",
   "source": "https://smlouvy.gov.cz/vyhledavani",
   "method": "official-live-search-daily-overlap",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7377,
-    "knownValueCzk": 5156599648.22,
+    "totalContracts": 7379,
+    "knownValueCzk": 5156652866.22,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
-        "current": 6506
+        "current": 6510
       },
       "note": "Denní kontrola používá živé vyhledávání Registru smluv v okně 5 dní; historický základ se při denním běhu nestahuje."
     }
@@ -54880,6 +54880,27 @@
       ],
       "contracts": [
         {
+          "id": "39571789",
+          "idContract": "2779170",
+          "url": "https://smlouvy.gov.cz/smlouva/39571789",
+          "subject": "Dodatek č.6 ke smlouvě o zajištění stravování žáků",
+          "published": "2026-09-17",
+          "signed": "2017-08-25",
+          "valueCzk": null,
+          "valueVatCzk": null,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "Církevní základní škola logopedická Don Bosco a mateřská škola logopedická",
+              "ico": "45770301",
+              "box": "ua83cft"
+            }
+          ],
+          "counterparty": "Církevní základní škola logopedická Don Bosco a mateřská škola logopedická",
+          "publisher": "Mateřská škola, Praha 8, Poznaňská 32",
+          "publisherIco": "70919691"
+        },
+        {
           "entityIco": "70919691",
           "entityName": "Mateřská škola, Praha 8, Poznaňská 32",
           "entityKind": "organization",
@@ -55488,30 +55509,6 @@
             }
           ],
           "counterparty": "4soft, s.r.o.",
-          "publisher": "Mateřská škola, Praha 8, Poznaňská 32",
-          "publisherIco": "70919691"
-        },
-        {
-          "entityIco": "70919691",
-          "entityName": "Mateřská škola, Praha 8, Poznaňská 32",
-          "entityKind": "organization",
-          "id": "5880947",
-          "idContract": "2779170",
-          "url": "https://smlouvy.gov.cz/smlouva/5880947",
-          "subject": "Dodatek č.6 ke smlouvě o zajištění stravování žáků",
-          "published": "2018-06-15",
-          "signed": "2017-08-25",
-          "valueCzk": null,
-          "valueVatCzk": null,
-          "valueNoVatCzk": null,
-          "counterparties": [
-            {
-              "name": "Církevní základní škola logopedická Don Bosco a mateřská škola logopedická",
-              "ico": "45770301",
-              "box": "ua83cft"
-            }
-          ],
-          "counterparty": "Církevní základní škola logopedická Don Bosco a mateřská škola logopedická",
           "publisher": "Mateřská škola, Praha 8, Poznaňská 32",
           "publisherIco": "70919691"
         },
@@ -122827,7 +122824,7 @@
       "website": "http://www.zs-ustavni.cz/",
       "total": 227,
       "partners": 130,
-      "knownValueCzk": 41948809.17,
+      "knownValueCzk": 41950445.17,
       "valuedContracts": 205,
       "dateFrom": "2016-09-08",
       "dateTo": "2026-08-24",
@@ -123004,7 +123001,7 @@
           "name": "KOBERCE BRENO, spol. s r.o.",
           "ico": "25609866",
           "contracts": 4,
-          "knownValueCzk": 367720.44,
+          "knownValueCzk": 369356.44,
           "valuedContracts": 4
         },
         {
@@ -123745,6 +123742,27 @@
       ],
       "contracts": [
         {
+          "id": "39576025",
+          "idContract": "36594654",
+          "url": "https://smlouvy.gov.cz/smlouva/39576025",
+          "subject": "Objednávka - pokládka koberců",
+          "published": "2026-09-17",
+          "signed": "2026-08-17",
+          "valueCzk": 76153,
+          "valueVatCzk": 76153,
+          "valueNoVatCzk": 76153,
+          "counterparties": [
+            {
+              "name": "KOBERCE BRENO, spol. s r.o.",
+              "ico": "25609866",
+              "box": "gnbf38b"
+            }
+          ],
+          "counterparty": "KOBERCE BRENO, spol. s r.o.",
+          "publisher": "Základní škola a mateřská škola Ústavní, Praha 8, Hlivická 1",
+          "publisherIco": "60433337"
+        },
+        {
           "id": "39550625",
           "idContract": "36922010",
           "url": "https://smlouvy.gov.cz/smlouva/39550625",
@@ -123921,30 +123939,6 @@
             }
           ],
           "counterparty": "TANA school s.r.o.",
-          "publisher": "Základní škola a mateřská škola Ústavní, Praha 8, Hlivická 1",
-          "publisherIco": "60433337"
-        },
-        {
-          "entityIco": "60433337",
-          "entityName": "Základní škola a mateřská škola Ústavní, Praha 8, Hlivická 1",
-          "entityKind": "organization",
-          "id": "38936358",
-          "idContract": "36594654",
-          "url": "https://smlouvy.gov.cz/smlouva/38936358",
-          "subject": "Nákup koberců včetně pokládky do dvou kabinetů",
-          "published": "2026-07-29",
-          "signed": "2026-07-14",
-          "valueCzk": 74517,
-          "valueVatCzk": 74517,
-          "valueNoVatCzk": null,
-          "counterparties": [
-            {
-              "name": "KOBERCE BRENO, spol. s r.o.",
-              "ico": "25609866",
-              "box": "gnbf38b"
-            }
-          ],
-          "counterparty": "KOBERCE BRENO, spol. s r.o.",
           "publisher": "Základní škola a mateřská škola Ústavní, Praha 8, Hlivická 1",
           "publisherIco": "60433337"
         },
@@ -133243,10 +133237,10 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Praha-8-Lyckovo-namesti-6.html",
       "website": "http://www.smysluplnaskola.cz/",
-      "total": 331,
-      "partners": 164,
-      "knownValueCzk": 44760395.83,
-      "valuedContracts": 127,
+      "total": 332,
+      "partners": 165,
+      "knownValueCzk": 44811977.83,
+      "valuedContracts": 128,
       "dateFrom": "2016-12-09",
       "dateTo": "2026-09-15",
       "partnerList": [
@@ -133752,6 +133746,13 @@
           "ico": "10151796",
           "contracts": 1,
           "knownValueCzk": 53760,
+          "valuedContracts": 1
+        },
+        {
+          "name": "Petr Němeček",
+          "ico": "68373015",
+          "contracts": 1,
+          "knownValueCzk": 51582,
           "valuedContracts": 1
         },
         {
@@ -134400,6 +134401,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39576029",
+          "idContract": "37209881",
+          "url": "https://smlouvy.gov.cz/smlouva/39576029",
+          "subject": "Elektroinstalační práce - cvičná kuchyňka",
+          "published": "2026-09-17",
+          "signed": "2026-09-02",
+          "valueCzk": 51582,
+          "valueVatCzk": null,
+          "valueNoVatCzk": 51582,
+          "counterparties": [
+            {
+              "name": "Petr Němeček",
+              "ico": "68373015",
+              "box": ""
+            }
+          ],
+          "counterparty": "Petr Němeček",
+          "publisher": "Základní škola a mateřská škola, Praha 8, Lyčkovo náměstí 6",
+          "publisherIco": "60433230"
+        },
         {
           "id": "39531473",
           "idContract": "37167109",
@@ -169431,12 +169453,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-Praha-8-Hovorcovicka-11.html",
       "website": "http://www.zshovorcovicka.cz/",
-      "total": 324,
-      "partners": 150,
+      "total": 325,
+      "partners": 151,
       "knownValueCzk": 45154653.519999996,
       "valuedContracts": 252,
       "dateFrom": "2016-12-20",
-      "dateTo": "2026-09-16",
+      "dateTo": "2026-09-18",
       "partnerList": [
         {
           "name": "BREZKA interier s.r.o.",
@@ -170363,6 +170385,13 @@
           "valuedContracts": 0
         },
         {
+          "name": "Jaroslav Kostera, J.K.FOOD s.r.o.",
+          "ico": "27780384",
+          "contracts": 1,
+          "knownValueCzk": 0,
+          "valuedContracts": 0
+        },
+        {
           "name": "Jiří Pochobradský",
           "ico": "66878900",
           "contracts": 1,
@@ -170490,6 +170519,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39582233",
+          "idContract": "37215953",
+          "url": "https://smlouvy.gov.cz/smlouva/39582233",
+          "subject": "Rámcová kupní smlouva o prodeji zboží",
+          "published": "2026-09-18",
+          "signed": "2026-09-18",
+          "valueCzk": null,
+          "valueVatCzk": null,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "Jaroslav Kostera, J.K.FOOD s.r.o.",
+              "ico": "27780384",
+              "box": "h5sdjnm"
+            }
+          ],
+          "counterparty": "Jaroslav Kostera, J.K.FOOD s.r.o.",
+          "publisher": "Základní škola, Praha 8, Hovorčovická 11",
+          "publisherIco": "60433299"
+        },
         {
           "id": "39554997",
           "idContract": "37189761",
