@@ -1,11 +1,11 @@
 {
-  "updated": "2026-09-18T09:04:42.720Z",
+  "updated": "2026-09-19T08:55:01.046Z",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7379,
-    "knownValueCzk": 5156652866.22,
+    "totalContracts": 7382,
+    "knownValueCzk": 5157811066.220001,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
@@ -392,12 +392,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Servisni-stredisko-pro-spravu-svereneho-majetku-MC-Praha-8-prispevkova-organizace.html",
       "website": "https://www.praha8.cz/servisni-stredisko-pro-spravu-svereneho-majetku-mc-praha-8-prispevkova-organizace.html",
-      "total": 1781,
+      "total": 1782,
       "partners": 361,
-      "knownValueCzk": 2990015849.2900004,
-      "valuedContracts": 1704,
+      "knownValueCzk": 2990164049.290001,
+      "valuedContracts": 1705,
       "dateFrom": "1991-07-15",
-      "dateTo": "2026-09-11"
+      "dateTo": "2026-09-18"
     },
     {
       "name": "Sociální a ošetřovatelské služby Praha 8",
@@ -488,10 +488,10 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Praha-8-Lyckovo-namesti-6.html",
       "website": "http://www.smysluplnaskola.cz/",
-      "total": 332,
-      "partners": 165,
-      "knownValueCzk": 44811977.83,
-      "valuedContracts": 128,
+      "total": 334,
+      "partners": 166,
+      "knownValueCzk": 45821977.82999999,
+      "valuedContracts": 130,
       "dateFrom": "2016-12-09",
       "dateTo": "2026-09-15"
     },
