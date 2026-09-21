@@ -1,15 +1,15 @@
 {
-  "updated": "2026-09-20T09:21:11.085Z",
+  "updated": "2026-09-21T10:00:05.243Z",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7382,
-    "knownValueCzk": 5157811066.220001,
+    "totalContracts": 7383,
+    "knownValueCzk": 5158158946.220001,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
-        "current": 6510
+        "current": 6512
       },
       "note": "Denní kontrola používá živé vyhledávání Registru smluv v okně 5 dní; historický základ se při denním běhu nestahuje."
     }
@@ -456,12 +456,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Ustavni-Praha-8-Hlivicka-1.html",
       "website": "http://www.zs-ustavni.cz/",
-      "total": 227,
+      "total": 228,
       "partners": 130,
-      "knownValueCzk": 41950445.17,
-      "valuedContracts": 205,
+      "knownValueCzk": 42298325.17,
+      "valuedContracts": 206,
       "dateFrom": "2016-09-08",
-      "dateTo": "2026-08-24"
+      "dateTo": "2026-09-21"
     },
     {
       "name": "Základní škola a mateřská škola, Praha 8, Dolákova 1",
@@ -657,6 +657,6 @@
     }
   ],
   "p8": {
-    "total": 6510
+    "total": 6512
   }
 }

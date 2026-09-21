@@ -1,6 +1,69 @@
 {
   "contracts": [
     {
+      "id": "39603181",
+      "idContract": "19744231",
+      "url": "https://smlouvy.gov.cz/smlouva/39603181",
+      "subject": "Smlouva o spolupráci",
+      "published": "2026-09-21",
+      "signed": "2022-05-03",
+      "valueCzk": 3620500,
+      "valueVatCzk": 3620500,
+      "valueNoVatCzk": 3620500,
+      "counterparties": [
+        {
+          "name": "DEVELOPMENT ODRA BOHNICE s.r.o.",
+          "ico": "04207327",
+          "box": "4ed557q"
+        }
+      ],
+      "counterparty": "DEVELOPMENT ODRA BOHNICE s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39598685",
+      "idContract": "37231689",
+      "url": "https://smlouvy.gov.cz/smlouva/39598685",
+      "subject": "Oprava topných těles v objektu U Meteoru 10, P8 - v prostorách ordinací a přilehlých společných prostorách.",
+      "published": "2026-09-21",
+      "signed": "2026-09-16",
+      "valueCzk": 108059,
+      "valueVatCzk": 108059,
+      "valueNoVatCzk": 89304.96,
+      "counterparties": [
+        {
+          "name": "Dmytro Olefir",
+          "ico": "21022186",
+          "box": "yeeu7qa"
+        }
+      ],
+      "counterparty": "Dmytro Olefir",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39603861",
+      "idContract": "37236633",
+      "url": "https://smlouvy.gov.cz/smlouva/39603861",
+      "subject": "Smlouva o spolupráci, dodatek číslo 2",
+      "published": "2026-09-21",
+      "signed": "2026-09-02",
+      "valueCzk": null,
+      "valueVatCzk": null,
+      "valueNoVatCzk": null,
+      "counterparties": [
+        {
+          "name": "IMU s.r.o.",
+          "ico": "28190891",
+          "box": "uaweiec"
+        }
+      ],
+      "counterparty": "IMU s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
       "id": "39580285",
       "idContract": "37214057",
       "url": "https://smlouvy.gov.cz/smlouva/39580285",
@@ -53944,27 +54007,6 @@
         }
       ],
       "counterparty": "Spolek Velký mlýn",
-      "publisher": "Městská část Praha 8",
-      "publisherIco": "00063797"
-    },
-    {
-      "id": "21219979",
-      "idContract": "19744231",
-      "url": "https://smlouvy.gov.cz/smlouva/21219979",
-      "subject": "Smlouva o spolupráci",
-      "published": "2022-08-01",
-      "signed": "2022-05-03",
-      "valueCzk": 3620500,
-      "valueVatCzk": 3620500,
-      "valueNoVatCzk": 3620500,
-      "counterparties": [
-        {
-          "name": "DEVELOPMENT ODRA BOHNICE s.r.o.",
-          "ico": "04207327",
-          "box": "4ed557q"
-        }
-      ],
-      "counterparty": "DEVELOPMENT ODRA BOHNICE s.r.o.",
       "publisher": "Městská část Praha 8",
       "publisherIco": "00063797"
     },
@@ -141837,6 +141879,13 @@
       "valuedContracts": 5
     },
     {
+      "name": "Dmytro Olefir",
+      "ico": "21022186",
+      "contracts": 5,
+      "knownValueCzk": 527768,
+      "valuedContracts": 5
+    },
+    {
       "name": "PKF APOGEO Esteem, a.s.",
       "ico": "26103451",
       "contracts": 2,
@@ -142360,13 +142409,6 @@
       "contracts": 1,
       "knownValueCzk": 420000,
       "valuedContracts": 1
-    },
-    {
-      "name": "Dmytro Olefir",
-      "ico": "21022186",
-      "contracts": 4,
-      "knownValueCzk": 419709,
-      "valuedContracts": 4
     },
     {
       "name": "Ordinace klinického psychologa s.r.o.",
@@ -147213,6 +147255,13 @@
       "valuedContracts": 0
     },
     {
+      "name": "IMU s.r.o.",
+      "ico": "28190891",
+      "contracts": 2,
+      "knownValueCzk": 0,
+      "valuedContracts": 0
+    },
+    {
       "name": "Ing. Petr Damborský, 1954",
       "ico": "",
       "contracts": 2,
@@ -147691,13 +147740,6 @@
     {
       "name": "GREEN PROJECT s.r.o.",
       "ico": "27195783",
-      "contracts": 1,
-      "knownValueCzk": 0,
-      "valuedContracts": 0
-    },
-    {
-      "name": "IMU s.r.o.",
-      "ico": "28190891",
       "contracts": 1,
       "knownValueCzk": 0,
       "valuedContracts": 0
@@ -148355,17 +148397,17 @@
     }
   ],
   "meta": {
-    "total": 6510,
+    "total": 6512,
     "complete": true,
     "historyComplete": true,
     "scope": "full-history",
     "dateFrom": "2007-05-09",
     "dateTo": "2026-09-21",
     "dateLabel": "celá historie Registru smluv",
-    "knownValueCzk": 6872071060.379994,
-    "valuedContracts": 5747,
+    "knownValueCzk": 6872179119.379995,
+    "valuedContracts": 5748,
     "partners": 1681,
-    "updated": "2026-09-20T09:21:11.085Z",
+    "updated": "2026-09-21T10:00:05.243Z",
     "source": "https://data.smlouvy.gov.cz/index.xml",
     "method": "official-live-search-daily-overlap",
     "dumps": 124,

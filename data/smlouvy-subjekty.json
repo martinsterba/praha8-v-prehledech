@@ -1,18 +1,18 @@
 {
   "schema": 2,
-  "updated": "2026-09-20T09:21:11.085Z",
+  "updated": "2026-09-21T10:00:05.243Z",
   "source": "https://smlouvy.gov.cz/vyhledavani",
   "method": "official-live-search-daily-overlap",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7382,
-    "knownValueCzk": 5157811066.220001,
+    "totalContracts": 7383,
+    "knownValueCzk": 5158158946.220001,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
-        "current": 6510
+        "current": 6512
       },
       "note": "Denní kontrola používá živé vyhledávání Registru smluv v okně 5 dní; historický základ se při denním běhu nestahuje."
     }
@@ -122843,12 +122843,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Ustavni-Praha-8-Hlivicka-1.html",
       "website": "http://www.zs-ustavni.cz/",
-      "total": 227,
+      "total": 228,
       "partners": 130,
-      "knownValueCzk": 41950445.17,
-      "valuedContracts": 205,
+      "knownValueCzk": 42298325.17,
+      "valuedContracts": 206,
       "dateFrom": "2016-09-08",
-      "dateTo": "2026-08-24",
+      "dateTo": "2026-09-21",
       "partnerList": [
         {
           "name": "S com ENERGO s.r.o.",
@@ -122860,9 +122860,9 @@
         {
           "name": "Outdoor Aliance s.r.o.",
           "ico": "28594207",
-          "contracts": 5,
-          "knownValueCzk": 3226860,
-          "valuedContracts": 5
+          "contracts": 6,
+          "knownValueCzk": 3574740,
+          "valuedContracts": 6
         },
         {
           "name": "Ing. Petra Kopáčová",
@@ -123762,6 +123762,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39598461",
+          "idContract": "37231465",
+          "url": "https://smlouvy.gov.cz/smlouva/39598461",
+          "subject": "Smlouva o zajištění ubytování školní nebo jiné skupinové akce",
+          "published": "2026-09-21",
+          "signed": "2026-09-21",
+          "valueCzk": 347880,
+          "valueVatCzk": 347880,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "Outdoor Aliance s.r.o.",
+              "ico": "28594207",
+              "box": "acxi6hp"
+            }
+          ],
+          "counterparty": "Outdoor Aliance s.r.o.",
+          "publisher": "Základní škola a mateřská škola Ústavní, Praha 8, Hlivická 1",
+          "publisherIco": "60433337"
+        },
         {
           "id": "39576025",
           "idContract": "36594654",
