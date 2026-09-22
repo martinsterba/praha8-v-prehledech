@@ -1,11 +1,11 @@
 {
-  "updated": "2026-09-21T10:00:05.243Z",
+  "updated": "2026-09-22T09:24:20.901Z",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7383,
-    "knownValueCzk": 5158158946.220001,
+    "totalContracts": 7390,
+    "knownValueCzk": 5161173736.18,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
@@ -40,10 +40,10 @@
       "ownershipShare": "100 %",
       "source": "https://www.praha8.cz/Osma-sprava-majetku-a-sluzeb-a-s",
       "website": "https://www.osms.cz/",
-      "total": 1491,
+      "total": 1492,
       "partners": 234,
-      "knownValueCzk": 1444768486.3400004,
-      "valuedContracts": 1207,
+      "knownValueCzk": 1444961691.6600003,
+      "valuedContracts": 1208,
       "dateFrom": "1999-09-14",
       "dateTo": "2026-09-17"
     },
@@ -392,12 +392,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Servisni-stredisko-pro-spravu-svereneho-majetku-MC-Praha-8-prispevkova-organizace.html",
       "website": "https://www.praha8.cz/servisni-stredisko-pro-spravu-svereneho-majetku-mc-praha-8-prispevkova-organizace.html",
-      "total": 1782,
+      "total": 1787,
       "partners": 361,
-      "knownValueCzk": 2990164049.290001,
-      "valuedContracts": 1705,
+      "knownValueCzk": 2992697962.9300003,
+      "valuedContracts": 1710,
       "dateFrom": "1991-07-15",
-      "dateTo": "2026-09-18"
+      "dateTo": "2026-09-21"
     },
     {
       "name": "Sociální a ošetřovatelské služby Praha 8",
@@ -472,12 +472,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Praha-8-Dolakova-1.html",
       "website": "http://www.zsdolakova.cz/",
-      "total": 144,
+      "total": 145,
       "partners": 87,
-      "knownValueCzk": 34255486.96000001,
-      "valuedContracts": 136,
+      "knownValueCzk": 34543157.96000001,
+      "valuedContracts": 137,
       "dateFrom": "2016-12-05",
-      "dateTo": "2026-08-17"
+      "dateTo": "2026-09-21"
     },
     {
       "name": "Základní škola a mateřská škola, Praha 8, Lyčkovo náměstí 6",

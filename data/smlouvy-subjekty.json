@@ -1,14 +1,14 @@
 {
   "schema": 2,
-  "updated": "2026-09-21T10:00:05.243Z",
+  "updated": "2026-09-22T09:24:20.901Z",
   "source": "https://smlouvy.gov.cz/vyhledavani",
   "method": "official-live-search-daily-overlap",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7383,
-    "knownValueCzk": 5158158946.220001,
+    "totalContracts": 7390,
+    "knownValueCzk": 5161173736.18,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
@@ -412,10 +412,10 @@
       "ownershipShare": "100 %",
       "source": "https://www.praha8.cz/Osma-sprava-majetku-a-sluzeb-a-s",
       "website": "https://www.osms.cz/",
-      "total": 1491,
+      "total": 1492,
       "partners": 234,
-      "knownValueCzk": 1444768486.3400004,
-      "valuedContracts": 1207,
+      "knownValueCzk": 1444961691.6600003,
+      "valuedContracts": 1208,
       "dateFrom": "1999-09-14",
       "dateTo": "2026-09-17",
       "partnerList": [
@@ -492,9 +492,9 @@
         {
           "name": "ANBO SERVIS s.r.o.",
           "ico": "14383217",
-          "contracts": 14,
-          "knownValueCzk": 27530405.909999996,
-          "valuedContracts": 13
+          "contracts": 15,
+          "knownValueCzk": 27723611.229999997,
+          "valuedContracts": 14
         },
         {
           "name": "ARS BUILDING, s.r.o.",
@@ -2059,6 +2059,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39620089",
+          "idContract": "37252045",
+          "url": "https://smlouvy.gov.cz/smlouva/39620089",
+          "subject": "SOD/053/2026 - Zámková dlažba v zádní části zahrady na adrese Bohnická 3/32, 181 00 Praha 8 - Bohnice",
+          "published": "2026-09-22",
+          "signed": "2026-09-14",
+          "valueCzk": 193205.32,
+          "valueVatCzk": null,
+          "valueNoVatCzk": 193205.32,
+          "counterparties": [
+            {
+              "name": "ANBO SERVIS s.r.o.",
+              "ico": "14383217",
+              "box": "dq3sutu"
+            }
+          ],
+          "counterparty": "ANBO SERVIS s.r.o.",
+          "publisher": "Osmá správa majetku a služeb a.s.",
+          "publisherIco": "04650522"
+        },
         {
           "id": "39565637",
           "idContract": "37200057",
@@ -60655,12 +60676,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Servisni-stredisko-pro-spravu-svereneho-majetku-MC-Praha-8-prispevkova-organizace.html",
       "website": "https://www.praha8.cz/servisni-stredisko-pro-spravu-svereneho-majetku-mc-praha-8-prispevkova-organizace.html",
-      "total": 1782,
+      "total": 1787,
       "partners": 361,
-      "knownValueCzk": 2990164049.290001,
-      "valuedContracts": 1705,
+      "knownValueCzk": 2992697962.9300003,
+      "valuedContracts": 1710,
       "dateFrom": "1991-07-15",
-      "dateTo": "2026-09-18",
+      "dateTo": "2026-09-21",
       "partnerList": [
         {
           "name": "BAB mont s.r.o.",
@@ -60740,11 +60761,11 @@
           "valuedContracts": 22
         },
         {
-          "name": "ABCD STUDIO, s.r.o.",
+          "name": "ABCD Studio, s.r.o.",
           "ico": "22794107",
-          "contracts": 61,
-          "knownValueCzk": 55198431,
-          "valuedContracts": 61
+          "contracts": 63,
+          "knownValueCzk": 55519323,
+          "valuedContracts": 63
         },
         {
           "name": "Správa tepelného hospodářství MC Praha 8 s.r.o.",
@@ -61027,6 +61048,13 @@
           "valuedContracts": 1
         },
         {
+          "name": "Pešata & Šarmír arch4BIM s.r.o.",
+          "ico": "06915752",
+          "contracts": 9,
+          "knownValueCzk": 8408290,
+          "valuedContracts": 9
+        },
+        {
           "name": "VIADIMOS a.s.",
           "ico": "24172235",
           "contracts": 14,
@@ -61048,6 +61076,13 @@
           "valuedContracts": 1
         },
         {
+          "name": "KLIMA INTERIER s.r.o.",
+          "ico": "10978429",
+          "contracts": 13,
+          "knownValueCzk": 7785413.41,
+          "valuedContracts": 13
+        },
+        {
           "name": "Odborné učiliště a Praktická škola",
           "ico": "49626141",
           "contracts": 1,
@@ -61060,13 +61095,6 @@
           "contracts": 3,
           "knownValueCzk": 7549190,
           "valuedContracts": 3
-        },
-        {
-          "name": "KLIMA INTERIER s.r.o.",
-          "ico": "10978429",
-          "contracts": 11,
-          "knownValueCzk": 7508391.7700000005,
-          "valuedContracts": 11
         },
         {
           "name": "RHM a.s.",
@@ -61095,13 +61123,6 @@
           "contracts": 2,
           "knownValueCzk": 6920025.47,
           "valuedContracts": 2
-        },
-        {
-          "name": "Pešata & Šarmír arch4BIM s.r.o.",
-          "ico": "06915752",
-          "contracts": 8,
-          "knownValueCzk": 6472290,
-          "valuedContracts": 8
         },
         {
           "name": "PKF - Prague Philharmonia, o.p.s.",
@@ -63191,6 +63212,132 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39614565",
+          "idContract": "24484731",
+          "url": "https://smlouvy.gov.cz/smlouva/39614565",
+          "subject": "Fotovoltaická elektrárna - příprava projektové dokumentace MŠ Na Pěšinách, Na Pěšinách 13/1720, 182 00 Praha 8 - Kobylisy MŠ Na Přesypu, Na Přesypu 4/441, 182 00 Praha 8 - Troja",
+          "published": "2026-09-21",
+          "signed": "2023-10-02",
+          "valueCzk": 1968670,
+          "valueVatCzk": 1968670,
+          "valueNoVatCzk": 1627000,
+          "counterparties": [
+            {
+              "name": "Pešata & Šarmír arch4BIM s.r.o.",
+              "ico": "06915752",
+              "box": ""
+            }
+          ],
+          "counterparty": "Pešata & Šarmír arch4BIM s.r.o.",
+          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
+          "publisherIco": "00639524"
+        },
+        {
+          "id": "39614529",
+          "idContract": "37246837",
+          "url": "https://smlouvy.gov.cz/smlouva/39614529",
+          "subject": "ZŠ Hovorčovická, zkapacitnění - zajištění autorského dozoru,  ZŠ Hovorčovická, Hovorčovická 11/1281 182 00 Praha 8 - Kobylisy",
+          "published": "2026-09-21",
+          "signed": "2026-09-21",
+          "valueCzk": 94380,
+          "valueVatCzk": 94380,
+          "valueNoVatCzk": 78000,
+          "counterparties": [
+            {
+              "name": "ABCD Studio, s.r.o.",
+              "ico": "22794107",
+              "box": ""
+            }
+          ],
+          "counterparty": "ABCD Studio, s.r.o.",
+          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
+          "publisherIco": "00639524"
+        },
+        {
+          "id": "39614109",
+          "idContract": "37246429",
+          "url": "https://smlouvy.gov.cz/smlouva/39614109",
+          "subject": "Zajištění autorského dozoru na akci: Snížení energetické náročnosti objektu Svídnická, Svídnická 506/1, 181 00 Praha 8 - Troja",
+          "published": "2026-09-21",
+          "signed": "2026-09-21",
+          "valueCzk": 226512,
+          "valueVatCzk": 226512,
+          "valueNoVatCzk": 187200,
+          "counterparties": [
+            {
+              "name": "ABCD Studio, s.r.o.",
+              "ico": "22794107",
+              "box": ""
+            }
+          ],
+          "counterparty": "ABCD Studio, s.r.o.",
+          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
+          "publisherIco": "00639524"
+        },
+        {
+          "id": "39613977",
+          "idContract": "37246305",
+          "url": "https://smlouvy.gov.cz/smlouva/39613977",
+          "subject": "Havarijní oprava odvětrání prostoru lapolu , ZŠ Ústavní, Hlivická 1/400, 181 00, Praha 8",
+          "published": "2026-09-21",
+          "signed": "2026-09-21",
+          "valueCzk": 98324.6,
+          "valueVatCzk": 98324.6,
+          "valueNoVatCzk": 81260,
+          "counterparties": [
+            {
+              "name": "KLIMA INTERIER s.r.o.",
+              "ico": "10978429",
+              "box": ""
+            }
+          ],
+          "counterparty": "KLIMA INTERIER s.r.o.",
+          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
+          "publisherIco": "00639524"
+        },
+        {
+          "id": "39614549",
+          "idContract": "37246857",
+          "url": "https://smlouvy.gov.cz/smlouva/39614549",
+          "subject": "Havarijní oprava mrazícího okruhu , ZŠ Ústavní, Hlivická 1/400, 181 00, Praha 8",
+          "published": "2026-09-21",
+          "signed": "2026-09-21",
+          "valueCzk": 178697.04,
+          "valueVatCzk": 178697.04,
+          "valueNoVatCzk": 147683.5,
+          "counterparties": [
+            {
+              "name": "KLIMA INTERIER s.r.o.",
+              "ico": "10978429",
+              "box": ""
+            }
+          ],
+          "counterparty": "KLIMA INTERIER s.r.o.",
+          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
+          "publisherIco": "00639524"
+        },
+        {
+          "id": "39614649",
+          "idContract": "37246949",
+          "url": "https://smlouvy.gov.cz/smlouva/39614649",
+          "subject": "Dodatek č. 1 ke smlouvě Příprava PD FVE MŠ Na Pěšinách, Na Pěšinách 13/1720, 182 00 Praha 8 - Kobylisy, MŠ Na Přesypu, Na Přesypu 4/441, 182 00 Praha 8 - Troja",
+          "published": "2026-09-21",
+          "signed": "2026-09-21",
+          "valueCzk": 1936000,
+          "valueVatCzk": 1936000,
+          "valueNoVatCzk": 1600000,
+          "counterparties": [
+            {
+              "name": "Pešata & Šarmír arch4BIM s.r.o.",
+              "ico": "06915752",
+              "box": "5ht4i6s"
+            }
+          ],
+          "counterparty": "Pešata & Šarmír arch4BIM s.r.o.",
+          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
+          "publisherIco": "00639524"
+        },
         {
           "id": "39590489",
           "idContract": "37223705",
@@ -84044,30 +84191,6 @@
             }
           ],
           "counterparty": "PKF - Prague Philharmonia, o.p.s.",
-          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
-          "publisherIco": "00639524"
-        },
-        {
-          "entityIco": "00639524",
-          "entityName": "Servisní středisko pro správu svěřeného majetku MČ Praha 8",
-          "entityKind": "organization",
-          "id": "26213743",
-          "idContract": "24484731",
-          "url": "https://smlouvy.gov.cz/smlouva/26213743",
-          "subject": "Fotovoltaická elektrárna - příprava projektové dokumentace MŠ Na Pěšinách, Na Pěšinách 13/1720, 182 00 Praha 8 - Kobylisy MŠ Na Přesypu, Na Přesypu 4/441, 182 00 Praha 8 - Troja",
-          "published": "2023-10-24",
-          "signed": "2023-10-02",
-          "valueCzk": 1968670,
-          "valueVatCzk": 1968670,
-          "valueNoVatCzk": 1627000,
-          "counterparties": [
-            {
-              "name": "Pešata & Šarmír arch4BIM s.r.o.",
-              "ico": "06915752",
-              "box": ""
-            }
-          ],
-          "counterparty": "Pešata & Šarmír arch4BIM s.r.o.",
           "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
           "publisherIco": "00639524"
         },
@@ -129221,12 +129344,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Praha-8-Dolakova-1.html",
       "website": "http://www.zsdolakova.cz/",
-      "total": 144,
+      "total": 145,
       "partners": 87,
-      "knownValueCzk": 34255486.96000001,
-      "valuedContracts": 136,
+      "knownValueCzk": 34543157.96000001,
+      "valuedContracts": 137,
       "dateFrom": "2016-12-05",
-      "dateTo": "2026-08-17",
+      "dateTo": "2026-09-21",
       "partnerList": [
         {
           "name": "Austis stavební s.r.o.",
@@ -129320,6 +129443,13 @@
           "valuedContracts": 3
         },
         {
+          "name": "VIS Plzeň, s.r.o.",
+          "ico": "45330344",
+          "contracts": 4,
+          "knownValueCzk": 663671,
+          "valuedContracts": 4
+        },
+        {
           "name": "IN SPACE s.r.o.",
           "ico": "05529581",
           "contracts": 2,
@@ -129374,13 +129504,6 @@
           "contracts": 1,
           "knownValueCzk": 380240,
           "valuedContracts": 1
-        },
-        {
-          "name": "VIS Plzeň, s.r.o.",
-          "ico": "45330344",
-          "contracts": 3,
-          "knownValueCzk": 376000,
-          "valuedContracts": 3
         },
         {
           "name": "Věra Švarcová",
@@ -129839,6 +129962,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39616717",
+          "idContract": "37248829",
+          "url": "https://smlouvy.gov.cz/smlouva/39616717",
+          "subject": "Dodatek č.ke Smlouvě o poskytování licencí k užití software a souvisejících služeb",
+          "published": "2026-09-22",
+          "signed": "2026-09-21",
+          "valueCzk": 287671,
+          "valueVatCzk": 287671,
+          "valueNoVatCzk": 237745,
+          "counterparties": [
+            {
+              "name": "VIS Plzeň, s.r.o.",
+              "ico": "45330344",
+              "box": "3229ejj"
+            }
+          ],
+          "counterparty": "VIS Plzeň, s.r.o.",
+          "publisher": "Základní škola a mateřská škola, Praha 8, Dolákova 1",
+          "publisherIco": "60433281"
+        },
         {
           "id": "39391205",
           "idContract": "37032425",
