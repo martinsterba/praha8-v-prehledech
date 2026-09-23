@@ -1,5 +1,61 @@
 [
   {
+    "from": "2026-09-23",
+    "to": "2026-10-08",
+    "title": "Oznámení o přerušení dodávky elektřiny v ul. Na Dlážděnce 140,141,149,151-153... dne: 8.10.2026",
+    "area": "Přerušení dodávek energií",
+    "url": "https://www.praha8.cz/Oznameni-o-preruseni-dodavky-elektriny-v-ul-Na-Dlazdence-140-141-149-151-153-dne-8-10-2026.html"
+  },
+  {
+    "from": "2026-09-23",
+    "to": "2026-12-22",
+    "title": "Oznámení o možnosti vyzvednutí odstraněného vozidla Citroën, RZ: 3P6 8749",
+    "area": "Správa služeb hlavního města Prahy",
+    "url": "https://www.praha8.cz/Oznameni-o-moznosti-vyzvednuti-odstraneneho-vozidla-Citroen-RZ-3P6-8749.html"
+  },
+  {
+    "from": "2026-09-23",
+    "to": "2026-10-23",
+    "title": "Veřejná vyhláška - ul. V Mezihoří 1212/17 - V12a, V12c, přístup ke kontejnerům",
+    "area": "Odbor dopravy",
+    "url": "https://www.praha8.cz/Verejna-vyhlaska-ul-V-Mezihori-1212-17-V12a-V12c-pristup-ke-kontejnerum.html"
+  },
+  {
+    "from": "2026-09-23",
+    "to": "2026-10-07",
+    "title": "Rozhodnutí o povolení záboru - stav. sjezd - Nad Rokoskou pozemek 3769/1, Libeň - Ing. Josef Petrás",
+    "area": "Odbor dopravy",
+    "url": "https://www.praha8.cz/Rozhodnuti-o-povoleni-zaboru-stav-sjezd-Nad-Rokoskou-pozemek-3769-1-Liben-Ing-Josef-Petras.html"
+  },
+  {
+    "from": "2026-09-23",
+    "to": "2026-10-08",
+    "title": "Rozhodnutí - Vojenova, Tkalcovská, vodovod, kanalizace, VO, provizorní komunikace, Metrostav CZ",
+    "area": "Odbor dopravy",
+    "url": "https://www.praha8.cz/Rozhodnuti-Vojenova-Tkalcovska-vodovod-kanalizace-VO-provizorni-komunikace-Metrostav-CZ.html"
+  },
+  {
+    "from": "2026-09-23",
+    "to": "2026-10-08",
+    "title": "Rozhodnutí - Katovická, oprava povrchu komunikace, PROZNAK Praha",
+    "area": "Odbor dopravy",
+    "url": "https://www.praha8.cz/Rozhodnuti-Katovicka-oprava-povrchu-komunikace-PROZNAK-Praha.html"
+  },
+  {
+    "from": "2026-09-22",
+    "to": "2026-10-07",
+    "title": "OOP - ul. Čimická/Vánková - úprava přechodu pro chodce a řazení jízdních pruhů",
+    "area": "Odbor dopravy",
+    "url": "https://www.praha8.cz/OOP-ul-Cimicka-Vankova-uprava-prechodu-pro-chodce-a-razeni-jizdnich-pruhu.html"
+  },
+  {
+    "from": "2026-09-22",
+    "to": "2026-10-14",
+    "title": "Prodloužení VŘ - vedoucí/vedoucího oddělení veřejného zadavatele v OPS ÚMČ Praha 8 z 26. 8. 2026",
+    "area": "Volná pracovní místa",
+    "url": "https://www.praha8.cz/Prodlouzeni-VR-vedouci-vedouciho-oddeleni-verejneho-zadavatele-v-OPS-UMC-Praha-8-z-26-8-2026.html"
+  },
+  {
     "from": "2026-09-22",
     "to": "2026-10-09",
     "title": "Oznámení o přerušení dodávky elektřiny v ul. Na Přesypu 321, 312, 873 dne: 9. 10. 2026",
@@ -554,27 +610,6 @@
   },
   {
     "from": "2026-09-07",
-    "to": "2026-09-22",
-    "title": "Povolení záboru, Zažít město jinak, Auto*Mat, z.s.",
-    "area": "Odbor dopravy",
-    "url": "https://www.praha8.cz/Povoleni-zaboru-Zazit-mesto-jinak-Auto-Mat-z-s-1.html"
-  },
-  {
-    "from": "2026-09-07",
-    "to": "2026-09-22",
-    "title": "JES Rekonstrukce a dostavba multifunkčního objektu Křižíkova 213/44",
-    "area": "Odbor životního prostředí",
-    "url": "https://www.praha8.cz/JES-Rekonstrukce-a-dostavba-multifunkcniho-objektu-Krizikova-213-44.html"
-  },
-  {
-    "from": "2026-09-07",
-    "to": "2026-09-22",
-    "title": "JES - Welness, Pernerova 392/12",
-    "area": "Odbor životního prostředí",
-    "url": "https://www.praha8.cz/JES-Welness-Pernerova-392-12.html"
-  },
-  {
-    "from": "2026-09-07",
     "to": "2026-10-08",
     "title": "Dražba nemovité věci - k.ú. Uherský Brod, obec Uherský brod, JNP č. 993/9, parc.č. 1349",
     "area": "Dražby",
@@ -586,34 +621,6 @@
     "title": "Vyvěšení - 11A 31/2026-37 Vyrozum. o prob. řízení+ žádost o zveřejnění na ÚD 10/10,-38",
     "area": "Ostatní",
     "url": "https://www.praha8.cz/Vyveseni-11A-31-2026-37-Vyrozum-o-prob-rizeni-zadost-o-zverejneni-na-UD-10-10-38-1.html"
-  },
-  {
-    "from": "2026-09-07",
-    "to": "2026-09-22",
-    "title": "Rozhodnutí- Šenovská, pokládka kabelového vedení kNN, SEG, s. r. o.",
-    "area": "Odbor dopravy",
-    "url": "https://www.praha8.cz/Rozhodnuti-Senovska-pokladka-kabeloveho-vedeni-kNN-SEG-s-r-o-1.html"
-  },
-  {
-    "from": "2026-09-07",
-    "to": "2026-09-22",
-    "title": "Rozhodnutí - Na Dlážděnce, realizace vodovodní a plynovodní přípojky, GAD LINE",
-    "area": "Odbor dopravy",
-    "url": "https://www.praha8.cz/Rozhodnuti-Na-Dlazdence-realizace-vodovodni-a-plynovodni-pripojky-GAD-LINE-1.html"
-  },
-  {
-    "from": "2026-09-07",
-    "to": "2026-09-22",
-    "title": "ÚD oznámení o povolení prodeje silničního vozidla ve veřejné dražbě Toyota, RZ: 8P1 9851",
-    "area": "Odbor dopravy",
-    "url": "https://www.praha8.cz/UD-oznameni-o-povoleni-prodeje-silnicniho-vozidla-ve-verejne-drazbe-Toyota-RZ-8P1-9851-1.html"
-  },
-  {
-    "from": "2026-09-07",
-    "to": "2026-09-22",
-    "title": "VRAK PEUGEOT - OZN",
-    "area": "Magistrát hl. m. Prahy",
-    "url": "https://www.praha8.cz/VRAK-PEUGEOT-OZN.html"
   },
   {
     "from": "2026-09-04",
@@ -750,17 +757,17 @@
   },
   {
     "from": "2026-08-26",
-    "to": "2026-09-22",
-    "title": "Výběrové řízení - vedoucí/vedoucího oddělení veřejného zadavatele OPS ÚMČ Praha 8",
-    "area": "Volná pracovní místa",
-    "url": "https://www.praha8.cz/Vyberove-rizeni-vedouci-vedouciho-oddeleni-verejneho-zadavatele-OPS-UMC-Praha-8-8.html"
-  },
-  {
-    "from": "2026-08-26",
     "to": "2026-10-02",
     "title": "Dražba nemovité věci - k.ú. Olešná nad Vltavou, obec Olešná, okres Písek, parc.č. 187/1, 187/2",
     "area": "Dražby",
     "url": "https://www.praha8.cz/Drazba-nemovite-veci-k-u-Olesna-nad-Vltavou-obec-Olesna-okres-Pisek-parc-c-187-1-187-2.html"
+  },
+  {
+    "from": "2026-08-26",
+    "to": "2026-10-14",
+    "title": "Výběrové řízení - vedoucí/vedoucího oddělení veřejného zadavatele OPS ÚMČ Praha 8",
+    "area": "Volná pracovní místa",
+    "url": "https://www.praha8.cz/Vyberove-rizeni-vedouci-vedouciho-oddeleni-verejneho-zadavatele-OPS-UMC-Praha-8-10.html"
   },
   {
     "from": "2026-08-24",

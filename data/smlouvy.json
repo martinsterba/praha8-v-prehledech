@@ -1,6 +1,27 @@
 {
   "contracts": [
     {
+      "id": "39634997",
+      "idContract": "37266329",
+      "url": "https://smlouvy.gov.cz/smlouva/39634997",
+      "subject": "Objednáváme u vás 15 grafik pro knihu „125 let od narození Prahy 8“.",
+      "published": "2026-09-23",
+      "signed": "2026-09-30",
+      "valueCzk": 75000,
+      "valueVatCzk": 75000,
+      "valueNoVatCzk": 75000,
+      "counterparties": [
+        {
+          "name": "Mgr.A. Jakub Požár",
+          "ico": "68175868",
+          "box": "ybf4fi3"
+        }
+      ],
+      "counterparty": "Mgr.A. Jakub Požár",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
       "id": "39603181",
       "idContract": "19744231",
       "url": "https://smlouvy.gov.cz/smlouva/39603181",
@@ -145925,6 +145946,13 @@
       "valuedContracts": 1
     },
     {
+      "name": "Mgr.A. Jakub Požár",
+      "ico": "68175868",
+      "contracts": 1,
+      "knownValueCzk": 75000,
+      "valuedContracts": 1
+    },
+    {
       "name": "Trojské výhledy s.r.o.",
       "ico": "24720879",
       "contracts": 1,
@@ -148397,17 +148425,17 @@
     }
   ],
   "meta": {
-    "total": 6512,
+    "total": 6513,
     "complete": true,
     "historyComplete": true,
     "scope": "full-history",
     "dateFrom": "2007-05-09",
-    "dateTo": "2026-09-21",
+    "dateTo": "2026-09-30",
     "dateLabel": "celá historie Registru smluv",
-    "knownValueCzk": 6872179119.379995,
-    "valuedContracts": 5748,
-    "partners": 1681,
-    "updated": "2026-09-22T09:24:20.901Z",
+    "knownValueCzk": 6872254119.379995,
+    "valuedContracts": 5749,
+    "partners": 1682,
+    "updated": "2026-09-23T09:29:49.905Z",
     "source": "https://data.smlouvy.gov.cz/index.xml",
     "method": "official-live-search-daily-overlap",
     "dumps": 124,
