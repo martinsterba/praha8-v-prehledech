@@ -22,6 +22,27 @@
       "publisherIco": "00063797"
     },
     {
+      "id": "39646437",
+      "idContract": "37277145",
+      "url": "https://smlouvy.gov.cz/smlouva/39646437",
+      "subject": "Vyčištění mantinelů na sportovištích od graffiti",
+      "published": "2026-09-23",
+      "signed": "2026-09-23",
+      "valueCzk": 407770,
+      "valueVatCzk": 407770,
+      "valueNoVatCzk": 337000,
+      "counterparties": [
+        {
+          "name": "GREENROOT s.r.o.",
+          "ico": "07184697",
+          "box": "rfyaivc"
+        }
+      ],
+      "counterparty": "GREENROOT s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
       "id": "39603181",
       "idContract": "19744231",
       "url": "https://smlouvy.gov.cz/smlouva/39603181",
@@ -139835,6 +139856,13 @@
       "valuedContracts": 1
     },
     {
+      "name": "GREENROOT s.r.o.",
+      "ico": "07184697",
+      "contracts": 4,
+      "knownValueCzk": 1441594,
+      "valuedContracts": 4
+    },
+    {
       "name": "Black Bear, s.r.o.",
       "ico": "28173104",
       "contracts": 9,
@@ -140484,13 +140512,6 @@
       "contracts": 1,
       "knownValueCzk": 1044931.8,
       "valuedContracts": 1
-    },
-    {
-      "name": "GREENROOT s.r.o.",
-      "ico": "07184697",
-      "contracts": 3,
-      "knownValueCzk": 1033824,
-      "valuedContracts": 3
     },
     {
       "name": "Vendula Niklová",
@@ -148425,17 +148446,17 @@
     }
   ],
   "meta": {
-    "total": 6513,
+    "total": 6514,
     "complete": true,
     "historyComplete": true,
     "scope": "full-history",
     "dateFrom": "2007-05-09",
     "dateTo": "2026-09-30",
     "dateLabel": "celá historie Registru smluv",
-    "knownValueCzk": 6872254119.379995,
-    "valuedContracts": 5749,
+    "knownValueCzk": 6872661889.379995,
+    "valuedContracts": 5750,
     "partners": 1682,
-    "updated": "2026-09-23T09:29:49.905Z",
+    "updated": "2026-09-24T09:22:40.592Z",
     "source": "https://data.smlouvy.gov.cz/index.xml",
     "method": "official-live-search-daily-overlap",
     "dumps": 124,

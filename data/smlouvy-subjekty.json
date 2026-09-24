@@ -1,18 +1,18 @@
 {
   "schema": 2,
-  "updated": "2026-09-23T09:29:49.905Z",
+  "updated": "2026-09-24T09:22:40.592Z",
   "source": "https://smlouvy.gov.cz/vyhledavani",
   "method": "official-live-search-daily-overlap",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7395,
-    "knownValueCzk": 5161507956.18,
+    "totalContracts": 7398,
+    "knownValueCzk": 5161732213.68,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
-        "current": 6513
+        "current": 6514
       },
       "note": "Denní kontrola používá živé vyhledávání Registru smluv v okně 5 dní; historický základ se při denním běhu nestahuje."
     }
@@ -129344,12 +129344,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Praha-8-Dolakova-1.html",
       "website": "http://www.zsdolakova.cz/",
-      "total": 145,
-      "partners": 87,
-      "knownValueCzk": 34543157.96000001,
-      "valuedContracts": 137,
+      "total": 146,
+      "partners": 88,
+      "knownValueCzk": 34622257.96000001,
+      "valuedContracts": 138,
       "dateFrom": "2016-12-05",
-      "dateTo": "2026-09-21",
+      "dateTo": "2026-09-24",
       "partnerList": [
         {
           "name": "Austis stavební s.r.o.",
@@ -129870,6 +129870,13 @@
           "valuedContracts": 1
         },
         {
+          "name": "Ing. Jan Bažacký",
+          "ico": "87858258",
+          "contracts": 1,
+          "knownValueCzk": 79100,
+          "valuedContracts": 1
+        },
+        {
           "name": "Klub českých turistů Jiskra Nový Bydžov, z. s.",
           "ico": "15063461",
           "contracts": 1,
@@ -129962,6 +129969,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39656245",
+          "idContract": "37286737",
+          "url": "https://smlouvy.gov.cz/smlouva/39656245",
+          "subject": "Objednávka - souprava chemické pokusy pro ZŠ Start",
+          "published": "2026-09-24",
+          "signed": "2026-09-24",
+          "valueCzk": 79100,
+          "valueVatCzk": 79100,
+          "valueNoVatCzk": 65372,
+          "counterparties": [
+            {
+              "name": "Ing. Jan Bažacký",
+              "ico": "87858258",
+              "box": ""
+            }
+          ],
+          "counterparty": "Ing. Jan Bažacký",
+          "publisher": "Základní škola a mateřská škola, Praha 8, Dolákova 1",
+          "publisherIco": "60433281"
+        },
         {
           "id": "39616717",
           "idContract": "37248829",
@@ -133423,10 +133451,10 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Praha-8-Lyckovo-namesti-6.html",
       "website": "http://www.smysluplnaskola.cz/",
-      "total": 334,
+      "total": 336,
       "partners": 166,
-      "knownValueCzk": 45821977.82999999,
-      "valuedContracts": 130,
+      "knownValueCzk": 45967135.33,
+      "valuedContracts": 132,
       "dateFrom": "2016-12-09",
       "dateTo": "2026-09-15",
       "partnerList": [
@@ -133697,6 +133725,13 @@
           "valuedContracts": 1
         },
         {
+          "name": "TEREZA JIROVCOVÁ, DIS.",
+          "ico": "08214760",
+          "contracts": 5,
+          "knownValueCzk": 137900,
+          "valuedContracts": 2
+        },
+        {
           "name": "Sdružení Holubice",
           "ico": "26982382",
           "contracts": 1,
@@ -133844,6 +133879,13 @@
           "valuedContracts": 1
         },
         {
+          "name": "Dům dětí a mládeže hlavního města Prahy",
+          "ico": "00064289",
+          "contracts": 2,
+          "knownValueCzk": 76707.5,
+          "valuedContracts": 1
+        },
+        {
           "name": "Prague Tech Innovation s.r.o.",
           "ico": "07984219",
           "contracts": 1,
@@ -133869,13 +133911,6 @@
           "ico": "25963961",
           "contracts": 1,
           "knownValueCzk": 69696,
-          "valuedContracts": 1
-        },
-        {
-          "name": "TEREZA JIROVCOVÁ, DIS.",
-          "ico": "08214760",
-          "contracts": 4,
-          "knownValueCzk": 69450,
           "valuedContracts": 1
         },
         {
@@ -134175,13 +134210,6 @@
         {
           "name": "Daniel Šejbl",
           "ico": "08134383",
-          "contracts": 1,
-          "knownValueCzk": 0,
-          "valuedContracts": 0
-        },
-        {
-          "name": "Dům dětí a mládeže hlavního města Prahy",
-          "ico": "00064289",
           "contracts": 1,
           "knownValueCzk": 0,
           "valuedContracts": 0
@@ -134594,6 +134622,48 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39651265",
+          "idContract": "37281857",
+          "url": "https://smlouvy.gov.cz/smlouva/39651265",
+          "subject": "Nájemná smlouva - září - prosinec 26",
+          "published": "2026-09-23",
+          "signed": "2026-09-02",
+          "valueCzk": 68450,
+          "valueVatCzk": 68450,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "TEREZA JIROVCOVÁ, DIS.",
+              "ico": "08214760",
+              "box": ""
+            }
+          ],
+          "counterparty": "TEREZA JIROVCOVÁ, DIS.",
+          "publisher": "Základní škola a mateřská škola, Praha 8, Lyčkovo náměstí 6",
+          "publisherIco": "60433230"
+        },
+        {
+          "id": "39651245",
+          "idContract": "37281837",
+          "url": "https://smlouvy.gov.cz/smlouva/39651245",
+          "subject": "Nájemná smlouvy - kroužky DDM září - prosinec 26",
+          "published": "2026-09-23",
+          "signed": "2026-09-10",
+          "valueCzk": 76707.5,
+          "valueVatCzk": 76707.5,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "Dům dětí a mládeže hlavního města Prahy",
+              "ico": "00064289",
+              "box": "37wavcb"
+            }
+          ],
+          "counterparty": "Dům dětí a mládeže hlavního města Prahy",
+          "publisher": "Základní škola a mateřská škola, Praha 8, Lyčkovo náměstí 6",
+          "publisherIco": "60433230"
+        },
         {
           "id": "39593861",
           "idContract": "37226949",
