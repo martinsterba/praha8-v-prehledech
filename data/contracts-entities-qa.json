@@ -1,11 +1,11 @@
 {
-  "updated": "2026-09-24T09:22:40.592Z",
+  "updated": "2026-09-25T09:41:16.501Z",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7398,
-    "knownValueCzk": 5161732213.68,
+    "totalContracts": 7402,
+    "knownValueCzk": 5162550440.56,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
@@ -136,10 +136,10 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Materska-skola-Praha-8-Korycanska-14.html",
       "website": "http://www.mskorycanska.cz/",
-      "total": 38,
-      "partners": 27,
-      "knownValueCzk": 9215359.99,
-      "valuedContracts": 37,
+      "total": 39,
+      "partners": 28,
+      "knownValueCzk": 9305359.99,
+      "valuedContracts": 38,
       "dateFrom": "2017-07-02",
       "dateTo": "2026-08-05"
     },
@@ -392,12 +392,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Servisni-stredisko-pro-spravu-svereneho-majetku-MC-Praha-8-prispevkova-organizace.html",
       "website": "https://www.praha8.cz/servisni-stredisko-pro-spravu-svereneho-majetku-mc-praha-8-prispevkova-organizace.html",
-      "total": 1787,
+      "total": 1789,
       "partners": 361,
-      "knownValueCzk": 2992697962.9300003,
-      "valuedContracts": 1710,
+      "knownValueCzk": 2993258589.8100004,
+      "valuedContracts": 1712,
       "dateFrom": "1991-07-15",
-      "dateTo": "2026-09-21"
+      "dateTo": "2026-09-24"
     },
     {
       "name": "Sociální a ošetřovatelské služby Praha 8",
@@ -440,12 +440,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Petra-Strozziho-Praha-8-Za-Invalidovnou-3.html",
       "website": "http://www.zs-strozziho.cz/",
-      "total": 231,
+      "total": 232,
       "partners": 80,
-      "knownValueCzk": 39446393.76,
-      "valuedContracts": 216,
+      "knownValueCzk": 39613993.76,
+      "valuedContracts": 217,
       "dateFrom": "2016-10-26",
-      "dateTo": "2026-09-08"
+      "dateTo": "2026-09-24"
     },
     {
       "name": "Základní škola a mateřská škola Ústavní, Praha 8, Hlivická 1",

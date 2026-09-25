@@ -1,14 +1,14 @@
 {
   "schema": 2,
-  "updated": "2026-09-24T09:22:40.592Z",
+  "updated": "2026-09-25T09:41:16.501Z",
   "source": "https://smlouvy.gov.cz/vyhledavani",
   "method": "official-live-search-daily-overlap",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7398,
-    "knownValueCzk": 5161732213.68,
+    "totalContracts": 7402,
+    "knownValueCzk": 5162550440.56,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
@@ -48318,10 +48318,10 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Materska-skola-Praha-8-Korycanska-14.html",
       "website": "http://www.mskorycanska.cz/",
-      "total": 38,
-      "partners": 27,
-      "knownValueCzk": 9215359.99,
-      "valuedContracts": 37,
+      "total": 39,
+      "partners": 28,
+      "knownValueCzk": 9305359.99,
+      "valuedContracts": 38,
       "dateFrom": "2017-07-02",
       "dateTo": "2026-08-05",
       "partnerList": [
@@ -48452,6 +48452,13 @@
           "valuedContracts": 1
         },
         {
+          "name": "Tomáš Vostatek",
+          "ico": "02913011",
+          "contracts": 1,
+          "knownValueCzk": 90000,
+          "valuedContracts": 1
+        },
+        {
           "name": "Twigsee, s.r.o.",
           "ico": "05694655",
           "contracts": 1,
@@ -48516,6 +48523,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39676785",
+          "idContract": "37306697",
+          "url": "https://smlouvy.gov.cz/smlouva/39676785",
+          "subject": "Průběžný úklid zahrady (travnatých ploch), sekání a hrabání trávy.",
+          "published": "2026-09-25",
+          "signed": "2026-04-15",
+          "valueCzk": 90000,
+          "valueVatCzk": 90000,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "Tomáš Vostatek",
+              "ico": "02913011",
+              "box": ""
+            }
+          ],
+          "counterparty": "Tomáš Vostatek",
+          "publisher": "Mateřská škola, Praha 8, Korycanská 14",
+          "publisherIco": "60433361"
+        },
         {
           "entityIco": "60433361",
           "entityName": "Mateřská škola, Praha 8, Korycanská 14",
@@ -60676,19 +60704,19 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Servisni-stredisko-pro-spravu-svereneho-majetku-MC-Praha-8-prispevkova-organizace.html",
       "website": "https://www.praha8.cz/servisni-stredisko-pro-spravu-svereneho-majetku-mc-praha-8-prispevkova-organizace.html",
-      "total": 1787,
+      "total": 1789,
       "partners": 361,
-      "knownValueCzk": 2992697962.9300003,
-      "valuedContracts": 1710,
+      "knownValueCzk": 2993258589.8100004,
+      "valuedContracts": 1712,
       "dateFrom": "1991-07-15",
-      "dateTo": "2026-09-21",
+      "dateTo": "2026-09-24",
       "partnerList": [
         {
           "name": "BAB mont s.r.o.",
           "ico": "61498858",
-          "contracts": 68,
-          "knownValueCzk": 391902016.53000003,
-          "valuedContracts": 66
+          "contracts": 69,
+          "knownValueCzk": 392337602.01000005,
+          "valuedContracts": 67
         },
         {
           "name": "Zlínstav a.s.",
@@ -60742,9 +60770,9 @@
         {
           "name": "Petr Boubal",
           "ico": "11253029",
-          "contracts": 94,
-          "knownValueCzk": 81722414.91,
-          "valuedContracts": 93
+          "contracts": 95,
+          "knownValueCzk": 81847456.30999999,
+          "valuedContracts": 94
         },
         {
           "name": "FIRMA s.r.o.",
@@ -63213,6 +63241,69 @@
       ],
       "contracts": [
         {
+          "id": "39668365",
+          "idContract": "36546330",
+          "url": "https://smlouvy.gov.cz/smlouva/39668365",
+          "subject": "Výměna vnitřních vstupních dveří ZŠ Na Šutce 28/440, Praha 8 - Troja",
+          "published": "2026-09-24",
+          "signed": "2026-07-24",
+          "valueCzk": 585036.48,
+          "valueVatCzk": 585036.48,
+          "valueNoVatCzk": 483501.22,
+          "counterparties": [
+            {
+              "name": "AVK STAV s.r.o.",
+              "ico": "24787159",
+              "box": ""
+            }
+          ],
+          "counterparty": "AVK STAV s.r.o.",
+          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
+          "publisherIco": "00639524"
+        },
+        {
+          "id": "39668645",
+          "idContract": "37298741",
+          "url": "https://smlouvy.gov.cz/smlouva/39668645",
+          "subject": "Oprava stávajících kamer a kabelových tras pro CCTV, MŠ Poznaňská, Poznaňská 32/462, Praha 8 - Bohnice",
+          "published": "2026-09-24",
+          "signed": "2026-09-24",
+          "valueCzk": 435585.48,
+          "valueVatCzk": 435585.48,
+          "valueNoVatCzk": 359988,
+          "counterparties": [
+            {
+              "name": "BAB mont s.r.o.",
+              "ico": "61498858",
+              "box": ""
+            }
+          ],
+          "counterparty": "BAB mont s.r.o.",
+          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
+          "publisherIco": "00639524"
+        },
+        {
+          "id": "39668549",
+          "idContract": "37298649",
+          "url": "https://smlouvy.gov.cz/smlouva/39668549",
+          "subject": "Havarijní oprava - výměna vadného čerpadla na topení, Objekt Svídnická 506/1, 181 00 Praha 8 - Troja",
+          "published": "2026-09-24",
+          "signed": "2026-09-24",
+          "valueCzk": 125041.4,
+          "valueVatCzk": 125041.4,
+          "valueNoVatCzk": 103340,
+          "counterparties": [
+            {
+              "name": "Petr Boubal",
+              "ico": "11253029",
+              "box": ""
+            }
+          ],
+          "counterparty": "Petr Boubal",
+          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
+          "publisherIco": "00639524"
+        },
+        {
           "id": "39614565",
           "idContract": "24484731",
           "url": "https://smlouvy.gov.cz/smlouva/39614565",
@@ -64397,30 +64488,6 @@
             }
           ],
           "counterparty": "JH Construct Praha s.r.o.",
-          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
-          "publisherIco": "00639524"
-        },
-        {
-          "entityIco": "00639524",
-          "entityName": "Servisní středisko pro správu svěřeného majetku MČ Praha 8",
-          "entityKind": "organization",
-          "id": "38886066",
-          "idContract": "36546330",
-          "url": "https://smlouvy.gov.cz/smlouva/38886066",
-          "subject": "Výměna vnitřních vstupních dveří ZŠ Na Šutce 28/440, Praha 8 - Troja",
-          "published": "2026-07-24",
-          "signed": "2026-07-24",
-          "valueCzk": 585036.48,
-          "valueVatCzk": 585036.48,
-          "valueNoVatCzk": 483501.22,
-          "counterparties": [
-            {
-              "name": "AVK STAV s.r.o.",
-              "ico": "24787159",
-              "box": ""
-            }
-          ],
-          "counterparty": "AVK STAV s.r.o.",
           "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
           "publisherIco": "00639524"
         },
@@ -116866,19 +116933,19 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Petra-Strozziho-Praha-8-Za-Invalidovnou-3.html",
       "website": "http://www.zs-strozziho.cz/",
-      "total": 231,
+      "total": 232,
       "partners": 80,
-      "knownValueCzk": 39446393.76,
-      "valuedContracts": 216,
+      "knownValueCzk": 39613993.76,
+      "valuedContracts": 217,
       "dateFrom": "2016-10-26",
-      "dateTo": "2026-09-08",
+      "dateTo": "2026-09-24",
       "partnerList": [
         {
           "name": "AVA - agentura volnočasových aktivit pro děti a mládež, s.r.o.",
           "ico": "08552681",
-          "contracts": 17,
-          "knownValueCzk": 3717120,
-          "valuedContracts": 17
+          "contracts": 18,
+          "knownValueCzk": 3884720,
+          "valuedContracts": 18
         },
         {
           "name": "Josef Bláha",
@@ -117435,6 +117502,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39665293",
+          "idContract": "37295461",
+          "url": "https://smlouvy.gov.cz/smlouva/39665293",
+          "subject": "Smlouva o zajištění školního výletu",
+          "published": "2026-09-24",
+          "signed": "2026-09-24",
+          "valueCzk": 167600,
+          "valueVatCzk": 167600,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "AVA - agentura volnočasových aktivit pro děti a mládež, s.r.o.",
+              "ico": "08552681",
+              "box": "t6beuyq"
+            }
+          ],
+          "counterparty": "AVA - agentura volnočasových aktivit pro děti a mládež, s.r.o.",
+          "publisher": "Základní škola a mateřská škola Petra Strozziho, Praha 8, Za Invalidovnou 3",
+          "publisherIco": "60461853"
+        },
         {
           "id": "39556025",
           "idContract": "37190745",
