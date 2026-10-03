@@ -1,6 +1,13 @@
 [
   {
     "from": "2026-10-02",
+    "to": "2026-10-19",
+    "title": "JES - Rezidence nad Rokoskou",
+    "area": "Odbor životního prostředí",
+    "url": "https://www.praha8.cz/JES-Rezidence-nad-Rokoskou.html"
+  },
+  {
+    "from": "2026-10-02",
     "to": "2026-10-17",
     "title": "oznámení o zahájení řízení - stanoviska: Main Point Karlín II",
     "area": "Odbor územního rozvoje a výstavby",
@@ -490,20 +497,6 @@
     "url": "https://www.praha8.cz/Verejna-vyhlaska-zadost-o-stanoveni-MU-Na-Porici-odstav-BUS-MHD.html"
   },
   {
-    "from": "2026-09-18",
-    "to": "2026-10-02",
-    "title": "Rozhodnutí o povolení záboru + uzavírka - jeřáb - Prvního pluku - S u b t e r r a a.s.",
-    "area": "Odbor dopravy",
-    "url": "https://www.praha8.cz/Rozhodnuti-o-povoleni-zaboru-uzavirka-jerab-Prvniho-pluku-S-u-b-t-e-r-r-a-a-s.html"
-  },
-  {
-    "from": "2026-09-17",
-    "to": "2026-10-02",
-    "title": "JES DANUBE House, Karlín",
-    "area": "Odbor životního prostředí",
-    "url": "https://www.praha8.cz/JES-DANUBE-House-Karlin.html"
-  },
-  {
     "from": "2026-09-17",
     "to": "2026-10-16",
     "title": "Přerušení dodávky elektřiny v ul. Větrušická,Máslovická,Klapkova, Chaberská, Předbořská: 16.10.2026",
@@ -519,27 +512,6 @@
   },
   {
     "from": "2026-09-17",
-    "to": "2026-10-02",
-    "title": "Jednotné environmentální stanovisko - rekonstrukce bytu S. K. Neumanna",
-    "area": "Odbor životního prostředí",
-    "url": "https://www.praha8.cz/Jednotne-environmentalni-stanovisko-rekonstrukce-bytu-S-K-Neumanna.html"
-  },
-  {
-    "from": "2026-09-17",
-    "to": "2026-10-02",
-    "title": "rozhodnutí - dodatečné povolení stavby: \"Rekonstrukce, nástavba a přístavba OD Odra\"",
-    "area": "Odbor územního rozvoje a výstavby",
-    "url": "https://www.praha8.cz/rozhodnuti-dodatecne-povoleni-stavby-Rekonstrukce-nastavba-a-pristavba-OD-Odra.html"
-  },
-  {
-    "from": "2026-09-17",
-    "to": "2026-10-02",
-    "title": "ÚD oznámení o povolení prodeje silničního vozidla ve veřejné dražbě Dodge Magnum RZ: 1AC 8268",
-    "area": "Odbor dopravy",
-    "url": "https://www.praha8.cz/UD-oznameni-o-povoleni-prodeje-silnicniho-vozidla-ve-verejne-drazbe-Dodge-Magnum-RZ-1AC-8268.html"
-  },
-  {
-    "from": "2026-09-17",
     "to": "2026-10-20",
     "title": "Dražba movité věci - vozidlo Škoda Fabia, rok výroby 2004, RZ: 8S0 1782",
     "area": "Dražby",
@@ -551,13 +523,6 @@
     "title": "Dražba nemovité věci - k.ú. Mšeno, okres Mělník, Mšeno RD čp. 60, parc.č. 251",
     "area": "Dražby",
     "url": "https://www.praha8.cz/Drazba-nemovite-veci-k-u-Mseno-okres-Melnik-Mseno-RD-cp-60-parc-c-251.html"
-  },
-  {
-    "from": "2026-09-17",
-    "to": "2026-10-02",
-    "title": "Záměr pronajmout sklad v ul. Pobřežní čp. 97, o výměře 94,42 m2",
-    "area": "Odbor správy majetku",
-    "url": "https://www.praha8.cz/Zamer-pronajmout-sklad-v-ul-Pobrezni-cp-97-o-vymere-94-42-m2.html"
   },
   {
     "from": "2026-09-17",
@@ -579,13 +544,6 @@
     "title": "Dražba nemovité věci - k.ú. Karlín, obec Praha, BJ č. 610/19, parc.č. 693/84,85,86",
     "area": "Dražby",
     "url": "https://www.praha8.cz/Drazba-nemovite-veci-k-u-Karlin-obec-Praha-BJ-c-610-19-parc-c-693-84-85-86.html"
-  },
-  {
-    "from": "2026-09-16",
-    "to": "2026-10-02",
-    "title": "JES ke stavebnímu záměru \"Místo prvního kontaktu (KAIUM)\"",
-    "area": "Odbor životního prostředí",
-    "url": "https://www.praha8.cz/JES-ke-stavebnimu-zameru-Misto-prvniho-kontaktu-KAIUM.html"
   },
   {
     "from": "2026-09-16",
@@ -694,45 +652,10 @@
   },
   {
     "from": "2026-09-04",
-    "to": "2026-10-02",
-    "title": "Oznámení o přerušení dodávky elektřiny v ul. Nad Šetelkou a Nad odbočkou dne: 2. 10. 2026",
-    "area": "Přerušení dodávek energií",
-    "url": "https://www.praha8.cz/Oznameni-o-preruseni-dodavky-elektriny-v-ul-Nad-Setelkou-a-Nad-odbockou-dne-2-10-2026.html"
-  },
-  {
-    "from": "2026-09-04",
     "to": "2026-10-19",
     "title": "Veřejná vyhláška - Žádost o stanovení - ul. Nekvasilova, parkoviště ZPS",
     "area": "Odbor dopravy",
     "url": "https://www.praha8.cz/Verejna-vyhlaska-Zadost-o-stanoveni-ul-Nekvasilova-parkoviste-ZPS.html"
-  },
-  {
-    "from": "2026-09-03",
-    "to": "2026-10-02",
-    "title": "veřejná vyhláška - ul. Čimická/Žalovská - úprava křižovatkového prostoru",
-    "area": "Odbor dopravy",
-    "url": "https://www.praha8.cz/verejna-vyhlaska-ul-Cimicka-Zalovska-uprava-krizovatkoveho-prostoru-1.html"
-  },
-  {
-    "from": "2026-09-03",
-    "to": "2026-10-02",
-    "title": "Veřejná vyhláška - ul. Sokolovská/Za Invalidovnou, úprava křižovatky",
-    "area": "Odbor dopravy",
-    "url": "https://www.praha8.cz/Verejna-vyhlaska-ul-Sokolovska-Za-Invalidovnou-uprava-krizovatky-1.html"
-  },
-  {
-    "from": "2026-09-03",
-    "to": "2026-10-02",
-    "title": "veřejná vyhláška - ul. Vratislavská - úprava stávajícího parkovacího pruhu",
-    "area": "Odbor dopravy",
-    "url": "https://www.praha8.cz/verejna-vyhlaska-ul-Vratislavska-uprava-stavajiciho-parkovaciho-pruhu-1.html"
-  },
-  {
-    "from": "2026-09-03",
-    "to": "2026-10-02",
-    "title": "Veřejná vyhláška - ul. Davídkova - zřízení pěšího koridoru",
-    "area": "Odbor dopravy",
-    "url": "https://www.praha8.cz/Verejna-vyhlaska-ul-Davidkova-zrizeni-pesiho-koridoru-1.html"
   },
   {
     "from": "2026-08-28",
@@ -803,13 +726,6 @@
     "title": "Výzva k odstranění vozidla z pozemní komunikace Karlínské nám., Volkswagen, RZ: 3AR 3069",
     "area": "Správa služeb hlavního města Prahy",
     "url": "https://www.praha8.cz/Vyzva-k-odstraneni-vozidla-z-pozemni-komunikace-Karlinske-nam-Volkswagen-RZ-3AR-3069.html"
-  },
-  {
-    "from": "2026-08-26",
-    "to": "2026-10-02",
-    "title": "Dražba nemovité věci - k.ú. Olešná nad Vltavou, obec Olešná, okres Písek, parc.č. 187/1, 187/2",
-    "area": "Dražby",
-    "url": "https://www.praha8.cz/Drazba-nemovite-veci-k-u-Olesna-nad-Vltavou-obec-Olesna-okres-Pisek-parc-c-187-1-187-2.html"
   },
   {
     "from": "2026-08-26",
