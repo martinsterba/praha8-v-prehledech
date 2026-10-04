@@ -65,26 +65,26 @@
   "resolutions": {
     "status": "data načtena",
     "count": 16019,
-    "updated": "2026-10-03T09:55:05.537Z",
+    "updated": "2026-10-04T10:39:44.167Z",
     "mode": "aktualizováno"
   },
   "voting": {
     "status": "data načtena",
     "count": 1219,
-    "updated": "2026-10-03T09:55:08.458Z",
+    "updated": "2026-10-04T10:39:47.438Z",
     "mode": "aktualizováno",
     "meetings": 54
   },
   "info106": {
     "status": "data načtena",
     "count": 1817,
-    "updated": "2026-10-03T09:55:05.537Z",
+    "updated": "2026-10-04T10:39:44.167Z",
     "mode": "aktualizováno"
   },
   "noticeboard": {
     "status": "data načtena",
-    "count": 143,
-    "updated": "2026-10-03T09:55:05.537Z",
+    "count": 142,
+    "updated": "2026-10-04T10:39:44.167Z",
     "mode": "aktualizováno"
   },
   "elections": {
@@ -102,7 +102,7 @@
   "news": {
     "status": "data načtena",
     "count": 9,
-    "updated": "2026-10-03T09:55:05.537Z",
+    "updated": "2026-10-04T10:39:44.167Z",
     "mode": "aktualizováno"
   },
   "contracts": {
