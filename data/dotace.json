@@ -1,6 +1,6 @@
 {
   "schema": 24,
-  "updated": "2026-09-28T11:21:37.985079+00:00",
+  "updated": "2026-10-05T11:57:33.584433+00:00",
   "source": "https://www.praha8.cz/Granty-a-dotace.html",
   "meta": {
     "records": 2504,
@@ -50,7 +50,7 @@
       "Archiv kultura/volný čas 2014: nenalezen bezpečný výsledkový soubor",
       "Archiv kultura/volný čas 2018: nenalezen bezpečný výsledkový soubor",
       "Archiv kultura/volný čas 2018: nenalezen bezpečný výsledkový soubor",
-      "Mimořádné dotace 2015–2026: 14 darovacích smluv s MČ Praha 8 jako dárcem nebylo z textu usnesení možné bezpečně označit za peněžní dar; nejsou zahrnuty."
+      "Mimořádné dotace 2015–2026: 15 darovacích smluv s MČ Praha 8 jako dárcem nebylo z textu usnesení možné bezpečně označit za peněžní dar; nejsou zahrnuty."
     ],
     "ares": {
       "lookedUp": 0,
@@ -969,7 +969,7 @@
     "individualPolicy": "Jen výslovně označené individuální nebo mimořádné dotace s jednoznačným příjemcem a částkou; smluvní šablony, dodatky a dotace vlastním příspěvkovým organizacím se nepovažují za individuální dotace.",
     "extraordinaryRows": 49,
     "extraordinaryUnmatched": 0,
-    "extraordinaryUnprovenMoney": 14,
+    "extraordinaryUnprovenMoney": 15,
     "extraordinaryNoncash": 29,
     "extraordinaryYears": [
       2026,
@@ -993,10 +993,10 @@
     "recipientBrokenBoundaryRowsRemoved": 0,
     "recipientAggregateRowsRemoved": 3,
     "recipientLegacyRowsPreserved": 180,
-    "recipientIcoNormalizedAt": "2026-09-28T11:21:37.984781+00:00",
+    "recipientIcoNormalizedAt": "2026-10-05T11:57:33.583823+00:00",
     "extraordinaryRecipientNormalization": "Právní a gramatické obaly smluvních stran se odstraňují; známé historicky skloňované názvy se kanonizují explicitními pravidly.",
     "extraordinaryRecipientFormatNormalized": 34,
-    "extraordinaryRecipientFormatNormalizedAt": "2026-09-28T11:21:37.915484+00:00",
+    "extraordinaryRecipientFormatNormalizedAt": "2026-10-05T11:57:33.456787+00:00",
     "extraordinaryRecipientFormatPolicy": "U mimořádných dotací se odstraňují právní/gramatické obaly smluvních stran, lokalita Praha N za právní formou a text účelu projektu; zkratka z.s. se zapisuje jednotně."
   },
   "sources": [
