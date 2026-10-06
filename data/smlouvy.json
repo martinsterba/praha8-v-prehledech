@@ -1,6 +1,132 @@
 {
   "contracts": [
     {
+      "id": "39806089",
+      "idContract": "37430809",
+      "url": "https://smlouvy.gov.cz/smlouva/39806089",
+      "subject": "Objednávka - modernizace klimatizace Toshiba, U Meteoru 6",
+      "published": "2026-10-06",
+      "signed": "2026-10-06",
+      "valueCzk": 583114.75,
+      "valueVatCzk": 583114.75,
+      "valueNoVatCzk": 481913.02,
+      "counterparties": [
+        {
+          "name": "KLIFA s.r.o.",
+          "ico": "24792683",
+          "box": "757xuup"
+        }
+      ],
+      "counterparty": "KLIFA s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39765941",
+      "idContract": "37391737",
+      "url": "https://smlouvy.gov.cz/smlouva/39765941",
+      "subject": "Objednáváme u vás tisk 1 800 ks kalendářů na r.2027.",
+      "published": "2026-10-02",
+      "signed": "2026-10-30",
+      "valueCzk": 97015,
+      "valueVatCzk": 97015,
+      "valueNoVatCzk": 80177.69,
+      "counterparties": [
+        {
+          "name": "Roman Kliský",
+          "ico": "48043095",
+          "box": "p8jesus"
+        }
+      ],
+      "counterparty": "Roman Kliský",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39744613",
+      "idContract": "37371401",
+      "url": "https://smlouvy.gov.cz/smlouva/39744613",
+      "subject": "Dodávka a montáž 148 ks nábytku + likvidace odpadu, včetně dopravy.",
+      "published": "2026-10-01",
+      "signed": "2026-09-30",
+      "valueCzk": 580900,
+      "valueVatCzk": 580900,
+      "valueNoVatCzk": 480082.64,
+      "counterparties": [
+        {
+          "name": "ORSYM s.r.o.",
+          "ico": "60934603",
+          "box": "jfarr5j"
+        }
+      ],
+      "counterparty": "ORSYM s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39741921",
+      "idContract": "37368821",
+      "url": "https://smlouvy.gov.cz/smlouva/39741921",
+      "subject": "Smlouva o budoucím Dodatku č. 1",
+      "published": "2026-10-01",
+      "signed": "2026-09-24",
+      "valueCzk": 1599660,
+      "valueVatCzk": 1599660,
+      "valueNoVatCzk": 1599660,
+      "counterparties": [
+        {
+          "name": "Pneumo Praha s.r.o.",
+          "ico": "22257055",
+          "box": ""
+        }
+      ],
+      "counterparty": "Pneumo Praha s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39750313",
+      "idContract": "37376729",
+      "url": "https://smlouvy.gov.cz/smlouva/39750313",
+      "subject": "Objednáváme u vás montáž a demontáž osvětlení na vánoční stromy 2026:\n- KD Ládví (rostlý strom)\n  Termín instalace: 14.11.2026, deinstalace: 06.01.2027\n- Čimice (rostlý strom)\n  Termín instalace: 17.11.2026, deinstalace: 12.01.2027\n- Karlínské náměst",
+      "published": "2026-10-01",
+      "signed": "2026-09-30",
+      "valueCzk": 258698,
+      "valueVatCzk": 258698,
+      "valueNoVatCzk": 213800,
+      "counterparties": [
+        {
+          "name": "DECOLED s.r.o.",
+          "ico": "25683853",
+          "box": "fjtsd8z"
+        }
+      ],
+      "counterparty": "DECOLED s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39754385",
+      "idContract": "37380581",
+      "url": "https://smlouvy.gov.cz/smlouva/39754385",
+      "subject": "Pokrytí budovy signálem v objektu U Meteoru 6.",
+      "published": "2026-10-01",
+      "signed": "2026-09-30",
+      "valueCzk": 240439.1,
+      "valueVatCzk": 240439.1,
+      "valueNoVatCzk": 198710,
+      "counterparties": [
+        {
+          "name": "LaMa Operations s.r.o.",
+          "ico": "62577565",
+          "box": "evy5qb2"
+        }
+      ],
+      "counterparty": "LaMa Operations s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
       "id": "39634997",
       "idContract": "37266329",
       "url": "https://smlouvy.gov.cz/smlouva/39634997",
@@ -137301,6 +137427,13 @@
       "valuedContracts": 22
     },
     {
+      "name": "LaMa Operations s.r.o.",
+      "ico": "62577565",
+      "contracts": 25,
+      "knownValueCzk": 10438507.3,
+      "valuedContracts": 24
+    },
+    {
       "name": "Softballový klub Joudrs Praha",
       "ico": "67365582",
       "contracts": 18,
@@ -137320,13 +137453,6 @@
       "contracts": 1,
       "knownValueCzk": 10301940,
       "valuedContracts": 1
-    },
-    {
-      "name": "LaMa Operations s.r.o.",
-      "ico": "62577565",
-      "contracts": 24,
-      "knownValueCzk": 10198068.200000001,
-      "valuedContracts": 23
     },
     {
       "name": "Dencare s.r.o.",
@@ -138365,6 +138491,13 @@
       "valuedContracts": 3
     },
     {
+      "name": "Pneumo Praha s.r.o.",
+      "ico": "22257055",
+      "contracts": 2,
+      "knownValueCzk": 3199320,
+      "valuedContracts": 2
+    },
+    {
       "name": "Silesia WM s.r.o.",
       "ico": "26817837",
       "contracts": 4,
@@ -138433,6 +138566,13 @@
       "contracts": 2,
       "knownValueCzk": 3085500,
       "valuedContracts": 1
+    },
+    {
+      "name": "DECOLED s.r.o.",
+      "ico": "25683853",
+      "contracts": 13,
+      "knownValueCzk": 3069961,
+      "valuedContracts": 13
     },
     {
       "name": "BSL s.r.o.",
@@ -138524,13 +138664,6 @@
       "contracts": 2,
       "knownValueCzk": 2880050,
       "valuedContracts": 1
-    },
-    {
-      "name": "DECOLED s.r.o.",
-      "ico": "25683853",
-      "contracts": 12,
-      "knownValueCzk": 2811263,
-      "valuedContracts": 12
     },
     {
       "name": "Grant Thornton Advisory s.r.o.",
@@ -138804,6 +138937,13 @@
       "contracts": 7,
       "knownValueCzk": 2458603,
       "valuedContracts": 7
+    },
+    {
+      "name": "ORSYM s.r.o.",
+      "ico": "60934603",
+      "contracts": 5,
+      "knownValueCzk": 2456679.69,
+      "valuedContracts": 5
     },
     {
       "name": "AUSTIS správa s.r.o.",
@@ -139359,13 +139499,6 @@
       "valuedContracts": 1
     },
     {
-      "name": "ORSYM s.r.o.",
-      "ico": "60934603",
-      "contracts": 4,
-      "knownValueCzk": 1875779.69,
-      "valuedContracts": 4
-    },
-    {
       "name": "filmelement, s.r.o.",
       "ico": "07621701",
       "contracts": 1,
@@ -139602,13 +139735,6 @@
       "contracts": 3,
       "knownValueCzk": 1642891.92,
       "valuedContracts": 3
-    },
-    {
-      "name": "Pneumo Praha s.r.o.",
-      "ico": "22257055",
-      "contracts": 1,
-      "knownValueCzk": 1599660,
-      "valuedContracts": 1
     },
     {
       "name": "TIMO s.r.o.",
@@ -140969,6 +141095,13 @@
       "valuedContracts": 1
     },
     {
+      "name": "KLIFA s.r.o.",
+      "ico": "24792683",
+      "contracts": 4,
+      "knownValueCzk": 836505.9299999999,
+      "valuedContracts": 4
+    },
+    {
       "name": "TOMÁŠ KUČERA, 1970",
       "ico": "",
       "contracts": 1,
@@ -142236,6 +142369,13 @@
       "valuedContracts": 1
     },
     {
+      "name": "Roman Kliský",
+      "ico": "48043095",
+      "contracts": 5,
+      "knownValueCzk": 460174.88,
+      "valuedContracts": 5
+    },
+    {
       "name": "GT Legal, advokátní kancelář, s.r.o.",
       "ico": "08464715",
       "contracts": 1,
@@ -142724,13 +142864,6 @@
       "contracts": 2,
       "knownValueCzk": 363363,
       "valuedContracts": 1
-    },
-    {
-      "name": "Roman Kliský",
-      "ico": "48043095",
-      "contracts": 4,
-      "knownValueCzk": 363159.88,
-      "valuedContracts": 4
     },
     {
       "name": "ORACO - CZ s.r.o.",
@@ -143627,13 +143760,6 @@
       "contracts": 1,
       "knownValueCzk": 253915,
       "valuedContracts": 1
-    },
-    {
-      "name": "KLIFA s.r.o.",
-      "ico": "24792683",
-      "contracts": 3,
-      "knownValueCzk": 253391.18,
-      "valuedContracts": 3
     },
     {
       "name": "IT Innovation s.r.o.",
@@ -148446,17 +148572,17 @@
     }
   ],
   "meta": {
-    "total": 6514,
+    "total": 6520,
     "complete": true,
     "historyComplete": true,
     "scope": "full-history",
     "dateFrom": "2007-05-09",
-    "dateTo": "2026-09-30",
+    "dateTo": "2026-10-30",
     "dateLabel": "celá historie Registru smluv",
-    "knownValueCzk": 6872661889.379995,
-    "valuedContracts": 5750,
+    "knownValueCzk": 6876021716.229995,
+    "valuedContracts": 5756,
     "partners": 1682,
-    "updated": "2026-09-25T09:41:16.501Z",
+    "updated": "2026-10-06T11:24:34.183Z",
     "source": "https://data.smlouvy.gov.cz/index.xml",
     "method": "official-live-search-daily-overlap",
     "dumps": 124,

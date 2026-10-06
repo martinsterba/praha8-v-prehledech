@@ -1,18 +1,18 @@
 {
   "schema": 2,
-  "updated": "2026-09-25T09:41:16.501Z",
+  "updated": "2026-10-06T11:24:34.183Z",
   "source": "https://smlouvy.gov.cz/vyhledavani",
   "method": "official-live-search-daily-overlap",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7402,
-    "knownValueCzk": 5162550440.56,
+    "totalContracts": 7415,
+    "knownValueCzk": 5164354384.440001,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
-        "current": 6514
+        "current": 6520
       },
       "note": "Denní kontrola používá živé vyhledávání Registru smluv v okně 5 dní; historický základ se při denním běhu nestahuje."
     }
@@ -60704,12 +60704,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Servisni-stredisko-pro-spravu-svereneho-majetku-MC-Praha-8-prispevkova-organizace.html",
       "website": "https://www.praha8.cz/servisni-stredisko-pro-spravu-svereneho-majetku-mc-praha-8-prispevkova-organizace.html",
-      "total": 1789,
+      "total": 1790,
       "partners": 361,
-      "knownValueCzk": 2993258589.8100004,
-      "valuedContracts": 1712,
+      "knownValueCzk": 2993443269.6900005,
+      "valuedContracts": 1713,
       "dateFrom": "1991-07-15",
-      "dateTo": "2026-09-24",
+      "dateTo": "2026-10-01",
       "partnerList": [
         {
           "name": "BAB mont s.r.o.",
@@ -61356,6 +61356,13 @@
           "valuedContracts": 1
         },
         {
+          "name": "Schindler CZ, a.s.",
+          "ico": "27127010",
+          "contracts": 7,
+          "knownValueCzk": 2540765.65,
+          "valuedContracts": 7
+        },
+        {
           "name": "LaMa Operations spol.s.r.o.",
           "ico": "62577565",
           "contracts": 12,
@@ -61382,13 +61389,6 @@
           "contracts": 4,
           "knownValueCzk": 2379711.92,
           "valuedContracts": 4
-        },
-        {
-          "name": "Schindler CZ, a.s.",
-          "ico": "27127010",
-          "contracts": 6,
-          "knownValueCzk": 2356085.7699999996,
-          "valuedContracts": 6
         },
         {
           "name": "Finex Technology s.r.o.",
@@ -63240,6 +63240,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39756105",
+          "idContract": "37382237",
+          "url": "https://smlouvy.gov.cz/smlouva/39756105",
+          "subject": "Oprava jídelního výtahu - výměna rozvaděče, hlavního vypínače a přivolávače, MŠ Krynicka 490/2, 181 00 Praha 8 - Troja",
+          "published": "2026-10-01",
+          "signed": "2026-10-01",
+          "valueCzk": 184679.88,
+          "valueVatCzk": 184679.88,
+          "valueNoVatCzk": 152628,
+          "counterparties": [
+            {
+              "name": "Schindler CZ, a.s.",
+              "ico": "27127010",
+              "box": ""
+            }
+          ],
+          "counterparty": "Schindler CZ, a.s.",
+          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
+          "publisherIco": "00639524"
+        },
         {
           "id": "39668365",
           "idContract": "36546330",
@@ -111523,7 +111544,7 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Na-Slovance-Praha-8-Bedrichovska-1.html",
       "website": "http://www.zsnaslovance.cz/",
-      "total": 200,
+      "total": 201,
       "partners": 86,
       "knownValueCzk": 32811501.17,
       "valuedContracts": 109,
@@ -111561,7 +111582,7 @@
         {
           "name": "Basket Slovanka, z.s.",
           "ico": "48137171",
-          "contracts": 11,
+          "contracts": 12,
           "knownValueCzk": 1612337.5,
           "valuedContracts": 8
         },
@@ -112134,6 +112155,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39768445",
+          "idContract": "37394165",
+          "url": "https://smlouvy.gov.cz/smlouva/39768445",
+          "subject": "Smlouva o nájmu č. 4/2026",
+          "published": "2026-10-02",
+          "signed": "2026-09-07",
+          "valueCzk": null,
+          "valueVatCzk": null,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "Basket Slovanka, z.s.",
+              "ico": "48137171",
+              "box": "qenxenz"
+            }
+          ],
+          "counterparty": "Basket Slovanka, z.s.",
+          "publisher": "Základní škola a mateřská škola Na Slovance, Praha 8, Bedřichovská 1",
+          "publisherIco": "60433256"
+        },
         {
           "id": "39510405",
           "idContract": "37146833",
@@ -116933,10 +116975,10 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Petra-Strozziho-Praha-8-Za-Invalidovnou-3.html",
       "website": "http://www.zs-strozziho.cz/",
-      "total": 232,
+      "total": 233,
       "partners": 80,
-      "knownValueCzk": 39613993.76,
-      "valuedContracts": 217,
+      "knownValueCzk": 39781093.76,
+      "valuedContracts": 218,
       "dateFrom": "2016-10-26",
       "dateTo": "2026-09-24",
       "partnerList": [
@@ -117011,6 +117053,13 @@
           "valuedContracts": 5
         },
         {
+          "name": "Sportovní klub Meteor Praha",
+          "ico": "00538469",
+          "contracts": 10,
+          "knownValueCzk": 953250,
+          "valuedContracts": 10
+        },
+        {
           "name": "Dům dětí a mládeže hlavního města Prahy",
           "ico": "00064289",
           "contracts": 7,
@@ -117037,13 +117086,6 @@
           "contracts": 1,
           "knownValueCzk": 830207.09,
           "valuedContracts": 1
-        },
-        {
-          "name": "Sportovní klub Meteor Praha",
-          "ico": "00538469",
-          "contracts": 9,
-          "knownValueCzk": 786150,
-          "valuedContracts": 9
         },
         {
           "name": "AFI Karlin s.r.o.",
@@ -117502,6 +117544,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39770785",
+          "idContract": "37396441",
+          "url": "https://smlouvy.gov.cz/smlouva/39770785",
+          "subject": "Nájemní smlouva",
+          "published": "2026-10-02",
+          "signed": "2026-09-24",
+          "valueCzk": 167100,
+          "valueVatCzk": null,
+          "valueNoVatCzk": 167100,
+          "counterparties": [
+            {
+              "name": "Sportovní klub Meteor Praha",
+              "ico": "00538469",
+              "box": "8gdkuz8"
+            }
+          ],
+          "counterparty": "Sportovní klub Meteor Praha",
+          "publisher": "Základní škola a mateřská škola Petra Strozziho, Praha 8, Za Invalidovnou 3",
+          "publisherIco": "60461853"
+        },
         {
           "id": "39665293",
           "idContract": "37295461",
@@ -123054,12 +123117,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Ustavni-Praha-8-Hlivicka-1.html",
       "website": "http://www.zs-ustavni.cz/",
-      "total": 228,
-      "partners": 130,
-      "knownValueCzk": 42298325.17,
-      "valuedContracts": 206,
+      "total": 229,
+      "partners": 131,
+      "knownValueCzk": 42520239.169999994,
+      "valuedContracts": 207,
       "dateFrom": "2016-09-08",
-      "dateTo": "2026-09-21",
+      "dateTo": "2026-10-02",
       "partnerList": [
         {
           "name": "S com ENERGO s.r.o.",
@@ -123389,6 +123452,13 @@
           "contracts": 2,
           "knownValueCzk": 227841.31,
           "valuedContracts": 2
+        },
+        {
+          "name": "Martin malý",
+          "ico": "61367320",
+          "contracts": 1,
+          "knownValueCzk": 221914,
+          "valuedContracts": 1
         },
         {
           "name": "Sportlines a.s. - středisko volného času",
@@ -123973,6 +124043,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39766977",
+          "idContract": "37392733",
+          "url": "https://smlouvy.gov.cz/smlouva/39766977",
+          "subject": "Objednávka - mytí oken",
+          "published": "2026-10-02",
+          "signed": "2026-10-02",
+          "valueCzk": 221914,
+          "valueVatCzk": 221914,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "Martin malý",
+              "ico": "61367320",
+              "box": ""
+            }
+          ],
+          "counterparty": "Martin malý",
+          "publisher": "Základní škola a mateřská škola Ústavní, Praha 8, Hlivická 1",
+          "publisherIco": "60433337"
+        },
         {
           "id": "39598461",
           "idContract": "37231465",
@@ -145504,12 +145595,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-Bohumila-Hrabala-Praha-8-Zenklova-52.html",
       "website": "http://www.zs-bhrabala.cz/",
-      "total": 368,
+      "total": 373,
       "partners": 139,
-      "knownValueCzk": 49817212.580000006,
-      "valuedContracts": 260,
+      "knownValueCzk": 50361712.58,
+      "valuedContracts": 265,
       "dateFrom": "2014-10-02",
-      "dateTo": "2026-09-07",
+      "dateTo": "2026-09-22",
       "partnerList": [
         {
           "name": "Af Office, s.r.o.",
@@ -145521,9 +145612,9 @@
         {
           "name": "AVA - agentura volnočasových aktivit pro děti a mládež, s.r.o.",
           "ico": "08552681",
-          "contracts": 23,
-          "knownValueCzk": 5439986,
-          "valuedContracts": 22
+          "contracts": 28,
+          "knownValueCzk": 5984486,
+          "valuedContracts": 27
         },
         {
           "name": "S com ENERGO s.r.o.",
@@ -146486,6 +146577,111 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39813137",
+          "idContract": "37437657",
+          "url": "https://smlouvy.gov.cz/smlouva/39813137",
+          "subject": "smlouva o zajištění výletu",
+          "published": "2026-10-06",
+          "signed": "2026-09-22",
+          "valueCzk": 108900,
+          "valueVatCzk": 108900,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "AVA - agentura volnočasových aktivit pro děti a mládež, s.r.o.",
+              "ico": "08552681",
+              "box": "t6beuyq"
+            }
+          ],
+          "counterparty": "AVA - agentura volnočasových aktivit pro děti a mládež, s.r.o.",
+          "publisher": "Základní škola Bohumila Hrabala, Praha 8, Zenklova 52",
+          "publisherIco": "63113961"
+        },
+        {
+          "id": "39813077",
+          "idContract": "37437605",
+          "url": "https://smlouvy.gov.cz/smlouva/39813077",
+          "subject": "Smlouva o zajištění výletu",
+          "published": "2026-10-06",
+          "signed": "2026-09-22",
+          "valueCzk": 108900,
+          "valueVatCzk": 108900,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "AVA - agentura volnočasových aktivit pro děti a mládež, s.r.o.",
+              "ico": "08552681",
+              "box": "t6beuyq"
+            }
+          ],
+          "counterparty": "AVA - agentura volnočasových aktivit pro děti a mládež, s.r.o.",
+          "publisher": "Základní škola Bohumila Hrabala, Praha 8, Zenklova 52",
+          "publisherIco": "63113961"
+        },
+        {
+          "id": "39813033",
+          "idContract": "37437561",
+          "url": "https://smlouvy.gov.cz/smlouva/39813033",
+          "subject": "Smlouva o zajištění výletu",
+          "published": "2026-10-06",
+          "signed": "2026-09-22",
+          "valueCzk": 108900,
+          "valueVatCzk": 108900,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "AVA - agentura volnočasových aktivit pro děti a mládež, s.r.o.",
+              "ico": "08552681",
+              "box": "t6beuyq"
+            }
+          ],
+          "counterparty": "AVA - agentura volnočasových aktivit pro děti a mládež, s.r.o.",
+          "publisher": "Základní škola Bohumila Hrabala, Praha 8, Zenklova 52",
+          "publisherIco": "63113961"
+        },
+        {
+          "id": "39813005",
+          "idContract": "37437533",
+          "url": "https://smlouvy.gov.cz/smlouva/39813005",
+          "subject": "Smlouva o zajištění výletu",
+          "published": "2026-10-06",
+          "signed": "2026-09-22",
+          "valueCzk": 108900,
+          "valueVatCzk": 108900,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "AVA - agentura volnočasových aktivit pro děti a mládež, s.r.o.",
+              "ico": "08552681",
+              "box": "t6beuyq"
+            }
+          ],
+          "counterparty": "AVA - agentura volnočasových aktivit pro děti a mládež, s.r.o.",
+          "publisher": "Základní škola Bohumila Hrabala, Praha 8, Zenklova 52",
+          "publisherIco": "63113961"
+        },
+        {
+          "id": "39812993",
+          "idContract": "37437521",
+          "url": "https://smlouvy.gov.cz/smlouva/39812993",
+          "subject": "Smlouva o zajištění výletu",
+          "published": "2026-10-06",
+          "signed": "2026-09-22",
+          "valueCzk": 108900,
+          "valueVatCzk": 108900,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "AVA - agentura volnočasových aktivit pro děti a mládež, s.r.o.",
+              "ico": "08552681",
+              "box": "t6beuyq"
+            }
+          ],
+          "counterparty": "AVA - agentura volnočasových aktivit pro děti a mládež, s.r.o.",
+          "publisher": "Základní škola Bohumila Hrabala, Praha 8, Zenklova 52",
+          "publisherIco": "63113961"
+        },
         {
           "id": "39414477",
           "idContract": "37054961",
@@ -169916,12 +170112,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-Praha-8-Hovorcovicka-11.html",
       "website": "http://www.zshovorcovicka.cz/",
-      "total": 326,
-      "partners": 152,
+      "total": 327,
+      "partners": 153,
       "knownValueCzk": 45154653.519999996,
       "valuedContracts": 252,
       "dateFrom": "2016-12-20",
-      "dateTo": "2026-09-21",
+      "dateTo": "2026-10-01",
       "partnerList": [
         {
           "name": "BREZKA interier s.r.o.",
@@ -170778,6 +170974,13 @@
           "valuedContracts": 0
         },
         {
+          "name": "ELEPTYS s.r.o.",
+          "ico": "02038307",
+          "contracts": 1,
+          "knownValueCzk": 0,
+          "valuedContracts": 0
+        },
+        {
           "name": "EM DistriFood s.r.o.",
           "ico": "03673863",
           "contracts": 1,
@@ -170989,6 +171192,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39808865",
+          "idContract": "37433549",
+          "url": "https://smlouvy.gov.cz/smlouva/39808865",
+          "subject": "Kupní smlouva - Potraviny",
+          "published": "2026-10-06",
+          "signed": "2026-10-01",
+          "valueCzk": null,
+          "valueVatCzk": null,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "ELEPTYS s.r.o.",
+              "ico": "02038307",
+              "box": "y6bzd4j"
+            }
+          ],
+          "counterparty": "ELEPTYS s.r.o.",
+          "publisher": "Základní škola, Praha 8, Hovorčovická 11",
+          "publisherIco": "60433299"
+        },
         {
           "id": "39628017",
           "idContract": "37259601",
@@ -189341,12 +189565,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-Praha-8-Zernosecka-3.html",
       "website": "http://www.zernosecka.cz/",
-      "total": 259,
+      "total": 262,
       "partners": 104,
-      "knownValueCzk": 51010846.82,
-      "valuedContracts": 217,
+      "knownValueCzk": 51696596.82,
+      "valuedContracts": 220,
       "dateFrom": "2016-08-04",
-      "dateTo": "2026-08-26",
+      "dateTo": "2026-09-25",
       "partnerList": [
         {
           "name": "FIRMA s.r.o.",
@@ -189365,9 +189589,9 @@
         {
           "name": "Sportovní klub Meteor Praha",
           "ico": "00538469",
-          "contracts": 22,
-          "knownValueCzk": 3039400,
-          "valuedContracts": 22
+          "contracts": 25,
+          "knownValueCzk": 3725150,
+          "valuedContracts": 25
         },
         {
           "name": "Vladař a synové s.r.o.",
@@ -190078,6 +190302,69 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39740353",
+          "idContract": "37367317",
+          "url": "https://smlouvy.gov.cz/smlouva/39740353",
+          "subject": "pronájem tělocvičny",
+          "published": "2026-10-01",
+          "signed": "2026-09-25",
+          "valueCzk": 327600,
+          "valueVatCzk": 327600,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "Sportovní klub Meteor Praha",
+              "ico": "00538469",
+              "box": "8gdkuz8"
+            }
+          ],
+          "counterparty": "Sportovní klub Meteor Praha",
+          "publisher": "Základní škola, Praha 8, Žernosecká 3",
+          "publisherIco": "60433272"
+        },
+        {
+          "id": "39750945",
+          "idContract": "37377357",
+          "url": "https://smlouvy.gov.cz/smlouva/39750945",
+          "subject": "pronájem tělocvičny",
+          "published": "2026-10-01",
+          "signed": "2026-09-25",
+          "valueCzk": 111650,
+          "valueVatCzk": 111650,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "Sportovní klub Meteor Praha",
+              "ico": "00538469",
+              "box": "8gdkuz8"
+            }
+          ],
+          "counterparty": "Sportovní klub Meteor Praha",
+          "publisher": "Základní škola, Praha 8, Žernosecká 3",
+          "publisherIco": "60433272"
+        },
+        {
+          "id": "39750681",
+          "idContract": "37377093",
+          "url": "https://smlouvy.gov.cz/smlouva/39750681",
+          "subject": "pronájem tělocvičny",
+          "published": "2026-10-01",
+          "signed": "2026-09-25",
+          "valueCzk": 246500,
+          "valueVatCzk": 246500,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "Sportovní klub Meteor Praha",
+              "ico": "00538469",
+              "box": "8gdkuz8"
+            }
+          ],
+          "counterparty": "Sportovní klub Meteor Praha",
+          "publisher": "Základní škola, Praha 8, Žernosecká 3",
+          "publisherIco": "60433272"
+        },
         {
           "entityIco": "60433272",
           "entityName": "Základní škola, Praha 8, Žernosecká 3",
