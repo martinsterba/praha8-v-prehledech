@@ -1,6 +1,27 @@
 {
   "contracts": [
     {
+      "id": "39831089",
+      "idContract": "37455081",
+      "url": "https://smlouvy.gov.cz/smlouva/39831089",
+      "subject": "Smlouva o zajištění výuky",
+      "published": "2026-10-07",
+      "signed": "2026-10-05",
+      "valueCzk": 455000,
+      "valueVatCzk": 455000,
+      "valueNoVatCzk": 455000,
+      "counterparties": [
+        {
+          "name": "Beachklub Ládví z.s.",
+          "ico": "22735135",
+          "box": "udiv3pg"
+        }
+      ],
+      "counterparty": "Beachklub Ládví z.s.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
       "id": "39806089",
       "idContract": "37430809",
       "url": "https://smlouvy.gov.cz/smlouva/39806089",
@@ -138099,6 +138120,13 @@
       "valuedContracts": 1
     },
     {
+      "name": "Beachklub Ládví z.s.",
+      "ico": "22735135",
+      "contracts": 12,
+      "knownValueCzk": 4811000,
+      "valuedContracts": 12
+    },
+    {
       "name": "Pizzeria Rialto, s.r.o.",
       "ico": "28991010",
       "contracts": 1,
@@ -138188,13 +138216,6 @@
       "contracts": 4,
       "knownValueCzk": 4384023.6,
       "valuedContracts": 2
-    },
-    {
-      "name": "Beachklub Ládví z.s.",
-      "ico": "22735135",
-      "contracts": 11,
-      "knownValueCzk": 4356000,
-      "valuedContracts": 11
     },
     {
       "name": "AVE CZ odpadové hospodářství s.r.o.",
@@ -148572,17 +148593,17 @@
     }
   ],
   "meta": {
-    "total": 6520,
+    "total": 6521,
     "complete": true,
     "historyComplete": true,
     "scope": "full-history",
     "dateFrom": "2007-05-09",
     "dateTo": "2026-10-30",
     "dateLabel": "celá historie Registru smluv",
-    "knownValueCzk": 6876021716.229995,
-    "valuedContracts": 5756,
+    "knownValueCzk": 6876476716.229995,
+    "valuedContracts": 5757,
     "partners": 1682,
-    "updated": "2026-10-06T11:24:34.183Z",
+    "updated": "2026-10-07T11:08:37.054Z",
     "source": "https://data.smlouvy.gov.cz/index.xml",
     "method": "official-live-search-daily-overlap",
     "dumps": 124,

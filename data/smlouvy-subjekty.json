@@ -1,18 +1,18 @@
 {
   "schema": 2,
-  "updated": "2026-10-06T11:24:34.183Z",
+  "updated": "2026-10-07T11:08:37.054Z",
   "source": "https://smlouvy.gov.cz/vyhledavani",
   "method": "official-live-search-daily-overlap",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7415,
-    "knownValueCzk": 5164354384.440001,
+    "totalContracts": 7420,
+    "knownValueCzk": 5166633131.440001,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
-        "current": 6520
+        "current": 6521
       },
       "note": "Denní kontrola používá živé vyhledávání Registru smluv v okně 5 dní; historický základ se při denním běhu nestahuje."
     }
@@ -412,12 +412,12 @@
       "ownershipShare": "100 %",
       "source": "https://www.praha8.cz/Osma-sprava-majetku-a-sluzeb-a-s",
       "website": "https://www.osms.cz/",
-      "total": 1492,
+      "total": 1493,
       "partners": 234,
-      "knownValueCzk": 1444961691.6600003,
-      "valuedContracts": 1208,
+      "knownValueCzk": 1445025589.6600006,
+      "valuedContracts": 1209,
       "dateFrom": "1999-09-14",
-      "dateTo": "2026-09-17",
+      "dateTo": "2026-09-30",
       "partnerList": [
         {
           "name": "Wertstav s.r.o.",
@@ -1344,6 +1344,13 @@
           "valuedContracts": 1
         },
         {
+          "name": "MUDr. et MUDr. Jiří Skalický",
+          "ico": "01818431",
+          "contracts": 2,
+          "knownValueCzk": 157897,
+          "valuedContracts": 2
+        },
+        {
           "name": "Osmička pro rodinu",
           "ico": "04387031",
           "contracts": 1,
@@ -1439,13 +1446,6 @@
           "ico": "74574019",
           "contracts": 1,
           "knownValueCzk": 100000,
-          "valuedContracts": 1
-        },
-        {
-          "name": "MUDr. et MUDr. Jiří Skalický",
-          "ico": "01818431",
-          "contracts": 1,
-          "knownValueCzk": 93999,
           "valuedContracts": 1
         },
         {
@@ -2059,6 +2059,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39819717",
+          "idContract": "37443993",
+          "url": "https://smlouvy.gov.cz/smlouva/39819717",
+          "subject": "Uznání dluhu a dohoda o splátkách",
+          "published": "2026-10-06",
+          "signed": "2026-09-30",
+          "valueCzk": 63898,
+          "valueVatCzk": 63898,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "MUDr. et MUDr. Jiří Skalický",
+              "ico": "01818431",
+              "box": "au9gw6d"
+            }
+          ],
+          "counterparty": "MUDr. et MUDr. Jiří Skalický",
+          "publisher": "Osmá správa majetku a služeb a.s.",
+          "publisherIco": "04650522"
+        },
         {
           "id": "39620089",
           "idContract": "37252045",
@@ -60704,12 +60725,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Servisni-stredisko-pro-spravu-svereneho-majetku-MC-Praha-8-prispevkova-organizace.html",
       "website": "https://www.praha8.cz/servisni-stredisko-pro-spravu-svereneho-majetku-mc-praha-8-prispevkova-organizace.html",
-      "total": 1790,
+      "total": 1792,
       "partners": 361,
-      "knownValueCzk": 2993443269.6900005,
-      "valuedContracts": 1713,
+      "knownValueCzk": 2995544918.6900005,
+      "valuedContracts": 1715,
       "dateFrom": "1991-07-15",
-      "dateTo": "2026-10-01",
+      "dateTo": "2026-10-06",
       "partnerList": [
         {
           "name": "BAB mont s.r.o.",
@@ -60910,9 +60931,9 @@
         {
           "name": "VSP spol. s r.o.",
           "ico": "48392430",
-          "contracts": 75,
-          "knownValueCzk": 22783096.98,
-          "valuedContracts": 75
+          "contracts": 77,
+          "knownValueCzk": 24884745.98,
+          "valuedContracts": 77
         },
         {
           "name": "AGIOS s.r.o.",
@@ -63240,6 +63261,48 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39819949",
+          "idContract": "37361245",
+          "url": "https://smlouvy.gov.cz/smlouva/39819949",
+          "subject": "Smlouva o výkonu ТDО a Koordinátora BOZP při realizaci akce Základní škola U Školské zahrady Snížení energetické náročnosti objektu",
+          "published": "2026-10-06",
+          "signed": "2026-09-30",
+          "valueCzk": 1436149,
+          "valueVatCzk": 1436149,
+          "valueNoVatCzk": 1186900,
+          "counterparties": [
+            {
+              "name": "VSP spol. s r.o.",
+              "ico": "48392430",
+              "box": ""
+            }
+          ],
+          "counterparty": "VSP spol. s r.o.",
+          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
+          "publisherIco": "00639524"
+        },
+        {
+          "id": "39820209",
+          "idContract": "37444465",
+          "url": "https://smlouvy.gov.cz/smlouva/39820209",
+          "subject": "Dodatek č.1 ke Smlouvě o dílo o výkonu TDO a Koordinátora BOZP při realizaci akce ZŠ U Školské zahrady Snížení energetické náročnosti objektu",
+          "published": "2026-10-06",
+          "signed": "2026-10-06",
+          "valueCzk": 665500,
+          "valueVatCzk": 665500,
+          "valueNoVatCzk": 550000,
+          "counterparties": [
+            {
+              "name": "VSP spol. s r.o.",
+              "ico": "48392430",
+              "box": "5zabc8x"
+            }
+          ],
+          "counterparty": "VSP spol. s r.o.",
+          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
+          "publisherIco": "00639524"
+        },
         {
           "id": "39756105",
           "idContract": "37382237",
@@ -111544,12 +111607,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Na-Slovance-Praha-8-Bedrichovska-1.html",
       "website": "http://www.zsnaslovance.cz/",
-      "total": 201,
-      "partners": 86,
-      "knownValueCzk": 32811501.17,
-      "valuedContracts": 109,
+      "total": 202,
+      "partners": 87,
+      "knownValueCzk": 32861701.17,
+      "valuedContracts": 110,
       "dateFrom": "2016-11-14",
-      "dateTo": "2026-09-07",
+      "dateTo": "2026-09-23",
       "partnerList": [
         {
           "name": "Firma s.r.o.",
@@ -111895,6 +111958,13 @@
           "valuedContracts": 1
         },
         {
+          "name": "Audit Daně CZ s.r.o.",
+          "ico": "28416821",
+          "contracts": 1,
+          "knownValueCzk": 50200,
+          "valuedContracts": 1
+        },
+        {
           "name": "KULIČKA, z. s.",
           "ico": "64331652",
           "contracts": 3,
@@ -112155,6 +112225,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39816941",
+          "idContract": "37441333",
+          "url": "https://smlouvy.gov.cz/smlouva/39816941",
+          "subject": "Smlouva-ověření účetní závěrky 2026",
+          "published": "2026-10-06",
+          "signed": "2026-09-23",
+          "valueCzk": 50200,
+          "valueVatCzk": null,
+          "valueNoVatCzk": 50200,
+          "counterparties": [
+            {
+              "name": "Audit Daně CZ s.r.o.",
+              "ico": "28416821",
+              "box": ""
+            }
+          ],
+          "counterparty": "Audit Daně CZ s.r.o.",
+          "publisher": "Základní škola a mateřská škola Na Slovance, Praha 8, Bedřichovská 1",
+          "publisherIco": "60433256"
+        },
         {
           "id": "39768445",
           "idContract": "37394165",
@@ -123117,10 +123208,10 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Ustavni-Praha-8-Hlivicka-1.html",
       "website": "http://www.zs-ustavni.cz/",
-      "total": 229,
+      "total": 230,
       "partners": 131,
-      "knownValueCzk": 42520239.169999994,
-      "valuedContracts": 207,
+      "knownValueCzk": 42583239.169999994,
+      "valuedContracts": 208,
       "dateFrom": "2016-09-08",
       "dateTo": "2026-10-02",
       "partnerList": [
@@ -123176,9 +123267,9 @@
         {
           "name": "Radka Šťastná - Plavecká škola VODNÍK",
           "ico": "67902847",
-          "contracts": 7,
-          "knownValueCzk": 1134390,
-          "valuedContracts": 7
+          "contracts": 8,
+          "knownValueCzk": 1197390,
+          "valuedContracts": 8
         },
         {
           "name": "OMNILINK Services a.s.",
@@ -124043,6 +124134,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39832957",
+          "idContract": "37456917",
+          "url": "https://smlouvy.gov.cz/smlouva/39832957",
+          "subject": "Smlouva o provedení předplavecké výuky",
+          "published": "2026-10-07",
+          "signed": "2026-09-09",
+          "valueCzk": 63000,
+          "valueVatCzk": 63000,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "Radka Šťastná - Plavecká škola VODNÍK",
+              "ico": "67902847",
+              "box": ""
+            }
+          ],
+          "counterparty": "Radka Šťastná - Plavecká škola VODNÍK",
+          "publisher": "Základní škola a mateřská škola Ústavní, Praha 8, Hlivická 1",
+          "publisherIco": "60433337"
+        },
         {
           "id": "39766977",
           "idContract": "37392733",
