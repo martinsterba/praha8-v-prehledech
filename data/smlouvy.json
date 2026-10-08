@@ -22,6 +22,48 @@
       "publisherIco": "00063797"
     },
     {
+      "id": "39833813",
+      "idContract": "37457761",
+      "url": "https://smlouvy.gov.cz/smlouva/39833813",
+      "subject": "Objednávka - licence Veeam Backup for Microsoft 365",
+      "published": "2026-10-07",
+      "signed": "2026-10-07",
+      "valueCzk": 186267.4,
+      "valueVatCzk": 186267.4,
+      "valueNoVatCzk": 153940,
+      "counterparties": [
+        {
+          "name": "SoftwareONE Czech Republic s.r.o.",
+          "ico": "24207519",
+          "box": "8fc9a92"
+        }
+      ],
+      "counterparty": "SoftwareONE Czech Republic s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39838517",
+      "idContract": "37462249",
+      "url": "https://smlouvy.gov.cz/smlouva/39838517",
+      "subject": "Oprava kanceláře, WC a přilehlé chodby v objektu Na Košince 1, Praha 8, ve 2. NP.",
+      "published": "2026-10-07",
+      "signed": "2026-10-02",
+      "valueCzk": 155879,
+      "valueVatCzk": 155879,
+      "valueNoVatCzk": 128825.62,
+      "counterparties": [
+        {
+          "name": "Dmytro Olefir",
+          "ico": "21022186",
+          "box": "yeeu7qa"
+        }
+      ],
+      "counterparty": "Dmytro Olefir",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
       "id": "39806089",
       "idContract": "37430809",
       "url": "https://smlouvy.gov.cz/smlouva/39806089",
@@ -136981,9 +137023,9 @@
     {
       "name": "SoftwareONE Czech Republic s.r.o.",
       "ico": "24207519",
-      "contracts": 51,
-      "knownValueCzk": 34747186.33,
-      "valuedContracts": 50
+      "contracts": 52,
+      "knownValueCzk": 34933453.730000004,
+      "valuedContracts": 51
     },
     {
       "name": "Byty Kobylisy s.r.o.",
@@ -141501,6 +141543,13 @@
       "valuedContracts": 2
     },
     {
+      "name": "Dmytro Olefir",
+      "ico": "21022186",
+      "contracts": 6,
+      "knownValueCzk": 683647,
+      "valuedContracts": 6
+    },
+    {
       "name": "HŘIŠTĚ REJ HER, s.r.o.",
       "ico": "02447207",
       "contracts": 2,
@@ -142072,13 +142121,6 @@
       "ico": "49626493",
       "contracts": 5,
       "knownValueCzk": 528000,
-      "valuedContracts": 5
-    },
-    {
-      "name": "Dmytro Olefir",
-      "ico": "21022186",
-      "contracts": 5,
-      "knownValueCzk": 527768,
       "valuedContracts": 5
     },
     {
@@ -148593,17 +148635,17 @@
     }
   ],
   "meta": {
-    "total": 6521,
+    "total": 6523,
     "complete": true,
     "historyComplete": true,
     "scope": "full-history",
     "dateFrom": "2007-05-09",
     "dateTo": "2026-10-30",
     "dateLabel": "celá historie Registru smluv",
-    "knownValueCzk": 6876476716.229995,
-    "valuedContracts": 5757,
+    "knownValueCzk": 6876818862.629995,
+    "valuedContracts": 5759,
     "partners": 1682,
-    "updated": "2026-10-07T11:08:37.054Z",
+    "updated": "2026-10-08T11:27:08.304Z",
     "source": "https://data.smlouvy.gov.cz/index.xml",
     "method": "official-live-search-daily-overlap",
     "dumps": 124,

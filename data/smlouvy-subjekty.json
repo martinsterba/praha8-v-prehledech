@@ -1,18 +1,18 @@
 {
   "schema": 2,
-  "updated": "2026-10-07T11:08:37.054Z",
+  "updated": "2026-10-08T11:27:08.304Z",
   "source": "https://smlouvy.gov.cz/vyhledavani",
   "method": "official-live-search-daily-overlap",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7420,
-    "knownValueCzk": 5166633131.440001,
+    "totalContracts": 7427,
+    "knownValueCzk": 5167714847.89,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
-        "current": 6521
+        "current": 6523
       },
       "note": "Denní kontrola používá živé vyhledávání Registru smluv v okně 5 dní; historický základ se při denním běhu nestahuje."
     }
@@ -111607,12 +111607,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Na-Slovance-Praha-8-Bedrichovska-1.html",
       "website": "http://www.zsnaslovance.cz/",
-      "total": 202,
-      "partners": 87,
+      "total": 204,
+      "partners": 88,
       "knownValueCzk": 32861701.17,
       "valuedContracts": 110,
       "dateFrom": "2016-11-14",
-      "dateTo": "2026-09-23",
+      "dateTo": "2026-10-07",
       "partnerList": [
         {
           "name": "Firma s.r.o.",
@@ -111624,7 +111624,7 @@
         {
           "name": "AQUA HEALTH, s.r.o.",
           "ico": "26212528",
-          "contracts": 15,
+          "contracts": 16,
           "knownValueCzk": 4694961,
           "valuedContracts": 10
         },
@@ -112112,6 +112112,13 @@
           "valuedContracts": 0
         },
         {
+          "name": "maso – uzeniny Gaube Miloslav s.r.o.",
+          "ico": "02141990",
+          "contracts": 1,
+          "knownValueCzk": 0,
+          "valuedContracts": 0
+        },
+        {
           "name": "MERCURY STAR s.r.o.",
           "ico": "62300164",
           "contracts": 1,
@@ -112225,6 +112232,48 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39851673",
+          "idContract": "37474669",
+          "url": "https://smlouvy.gov.cz/smlouva/39851673",
+          "subject": "Objednávka-3 x PC; 1 x monitor s držákem; 1 x tiskárna",
+          "published": "2026-10-08",
+          "signed": "2026-09-25",
+          "valueCzk": null,
+          "valueVatCzk": null,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "AQUA HEALTH, s.r.o.",
+              "ico": "26212528",
+              "box": "gygnbny"
+            }
+          ],
+          "counterparty": "AQUA HEALTH, s.r.o.",
+          "publisher": "Základní škola a mateřská škola Na Slovance, Praha 8, Bedřichovská 1",
+          "publisherIco": "60433256"
+        },
+        {
+          "id": "39837281",
+          "idContract": "37461097",
+          "url": "https://smlouvy.gov.cz/smlouva/39837281",
+          "subject": "Rámcová kupní smlouva - maso - uzeniny Gaube Miloslav s.r.o.",
+          "published": "2026-10-07",
+          "signed": "2026-10-07",
+          "valueCzk": null,
+          "valueVatCzk": null,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "maso – uzeniny Gaube Miloslav s.r.o.",
+              "ico": "02141990",
+              "box": "hbx3yp9"
+            }
+          ],
+          "counterparty": "maso – uzeniny Gaube Miloslav s.r.o.",
+          "publisher": "Základní škola a mateřská škola Na Slovance, Praha 8, Bedřichovská 1",
+          "publisherIco": "60433256"
+        },
         {
           "id": "39816941",
           "idContract": "37441333",
@@ -129635,10 +129684,10 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Praha-8-Dolakova-1.html",
       "website": "http://www.zsdolakova.cz/",
-      "total": 146,
+      "total": 147,
       "partners": 88,
-      "knownValueCzk": 34622257.96000001,
-      "valuedContracts": 138,
+      "knownValueCzk": 34792257.96000001,
+      "valuedContracts": 139,
       "dateFrom": "2016-12-05",
       "dateTo": "2026-09-24",
       "partnerList": [
@@ -129671,18 +129720,18 @@
           "valuedContracts": 3
         },
         {
+          "name": "Radka Šťastná - Plavecká školy Vodník",
+          "ico": "67902847",
+          "contracts": 7,
+          "knownValueCzk": 1501250,
+          "valuedContracts": 7
+        },
+        {
           "name": "Jana Ondrušová, DiS.",
           "ico": "22459642",
           "contracts": 1,
           "knownValueCzk": 1500000,
           "valuedContracts": 1
-        },
-        {
-          "name": "Radka Šťastná - Plavecká škola VODNÍK",
-          "ico": "67902847",
-          "contracts": 6,
-          "knownValueCzk": 1331250,
-          "valuedContracts": 6
         },
         {
           "name": "Saryana s.r.o.",
@@ -130260,6 +130309,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39837417",
+          "idContract": "37461229",
+          "url": "https://smlouvy.gov.cz/smlouva/39837417",
+          "subject": "Smlouva o provedení plaveckého výcviku",
+          "published": "2026-10-07",
+          "signed": "2026-05-20",
+          "valueCzk": 170000,
+          "valueVatCzk": 170000,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "Radka Šťastná - Plavecká školy Vodník",
+              "ico": "67902847",
+              "box": ""
+            }
+          ],
+          "counterparty": "Radka Šťastná - Plavecká školy Vodník",
+          "publisher": "Základní škola a mateřská škola, Praha 8, Dolákova 1",
+          "publisherIco": "60433281"
+        },
         {
           "id": "39656245",
           "idContract": "37286737",
@@ -159956,12 +160026,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-Praha-8-Buresova-14.html",
       "website": "http://www.zsburesova.cz/",
-      "total": 213,
+      "total": 215,
       "partners": 95,
-      "knownValueCzk": 16815440.18,
-      "valuedContracts": 65,
+      "knownValueCzk": 17026827.18,
+      "valuedContracts": 66,
       "dateFrom": "2016-10-12",
-      "dateTo": "2026-09-09",
+      "dateTo": "2026-10-02",
       "partnerList": [
         {
           "name": "FRIGOSYSTEM, spol. s r.o.",
@@ -159978,18 +160048,18 @@
           "valuedContracts": 1
         },
         {
+          "name": "Jiří Švagr",
+          "ico": "71082581",
+          "contracts": 6,
+          "knownValueCzk": 1220139,
+          "valuedContracts": 6
+        },
+        {
           "name": "MERICK s.r.o.",
           "ico": "28892437",
           "contracts": 8,
           "knownValueCzk": 1200354.4,
           "valuedContracts": 7
-        },
-        {
-          "name": "Jiří Švagr",
-          "ico": "71082581",
-          "contracts": 5,
-          "knownValueCzk": 1008752,
-          "valuedContracts": 5
         },
         {
           "name": "PAS, s.r.o.",
@@ -160246,7 +160316,7 @@
         {
           "name": "CK2 s.r.o.",
           "ico": "07776241",
-          "contracts": 15,
+          "contracts": 16,
           "knownValueCzk": 0,
           "valuedContracts": 0
         },
@@ -160630,6 +160700,48 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39838225",
+          "idContract": "37461989",
+          "url": "https://smlouvy.gov.cz/smlouva/39838225",
+          "subject": "cestovní smlouva na zájezd do Legolandu",
+          "published": "2026-10-07",
+          "signed": "2026-09-18",
+          "valueCzk": null,
+          "valueVatCzk": null,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "CK2 s.r.o.",
+              "ico": "07776241",
+              "box": "evcskns"
+            }
+          ],
+          "counterparty": "CK2 s.r.o.",
+          "publisher": "Základní škola, Praha 8, Burešova 14",
+          "publisherIco": "60433345"
+        },
+        {
+          "id": "39838445",
+          "idContract": "37462181",
+          "url": "https://smlouvy.gov.cz/smlouva/39838445",
+          "subject": "Kupní smlouva na dodávku Serveru, příslušenství a instalaci",
+          "published": "2026-10-07",
+          "signed": "2026-10-02",
+          "valueCzk": 211387,
+          "valueVatCzk": 211387,
+          "valueNoVatCzk": 174700,
+          "counterparties": [
+            {
+              "name": "Jiří Švagr",
+              "ico": "71082581",
+              "box": ""
+            }
+          ],
+          "counterparty": "Jiří Švagr",
+          "publisher": "Základní škola, Praha 8, Burešova 14",
+          "publisherIco": "60433345"
+        },
         {
           "id": "39512273",
           "idContract": "37148633",
@@ -170224,12 +170336,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-Praha-8-Hovorcovicka-11.html",
       "website": "http://www.zshovorcovicka.cz/",
-      "total": 327,
+      "total": 328,
       "partners": 153,
-      "knownValueCzk": 45154653.519999996,
-      "valuedContracts": 252,
+      "knownValueCzk": 45690153.519999996,
+      "valuedContracts": 253,
       "dateFrom": "2016-12-20",
-      "dateTo": "2026-10-01",
+      "dateTo": "2026-10-06",
       "partnerList": [
         {
           "name": "BREZKA interier s.r.o.",
@@ -170253,6 +170365,13 @@
           "valuedContracts": 3
         },
         {
+          "name": "FliCom Travel s.r.o.",
+          "ico": "24287393",
+          "contracts": 5,
+          "knownValueCzk": 2079000,
+          "valuedContracts": 5
+        },
+        {
           "name": "AQUA HEALTH, s.r.o.",
           "ico": "26212528",
           "contracts": 15,
@@ -170265,13 +170384,6 @@
           "contracts": 13,
           "knownValueCzk": 1544097,
           "valuedContracts": 13
-        },
-        {
-          "name": "FliCom Travel s.r.o.",
-          "ico": "24287393",
-          "contracts": 4,
-          "knownValueCzk": 1543500,
-          "valuedContracts": 4
         },
         {
           "name": "AV MEDIA SYSTEMS, a.s.",
@@ -171304,6 +171416,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39835029",
+          "idContract": "37458937",
+          "url": "https://smlouvy.gov.cz/smlouva/39835029",
+          "subject": "Smlouva o zájezdu - Francie 05/2027",
+          "published": "2026-10-07",
+          "signed": "2026-10-06",
+          "valueCzk": 535500,
+          "valueVatCzk": 535500,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "FliCom Travel s.r.o.",
+              "ico": "24287393",
+              "box": ""
+            }
+          ],
+          "counterparty": "FliCom Travel s.r.o.",
+          "publisher": "Základní škola, Praha 8, Hovorčovická 11",
+          "publisherIco": "60433299"
+        },
         {
           "id": "39808865",
           "idContract": "37433549",
@@ -188114,12 +188247,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-Praha-8-Palmovka-8.html",
       "website": "http://www.zspalmovka.cz/",
-      "total": 57,
+      "total": 58,
       "partners": 25,
-      "knownValueCzk": 17197176.79,
-      "valuedContracts": 55,
+      "knownValueCzk": 17362006.240000002,
+      "valuedContracts": 56,
       "dateFrom": "2015-12-21",
-      "dateTo": "2026-05-26",
+      "dateTo": "2026-10-05",
       "partnerList": [
         {
           "name": "S com ENERGO s.r.o.",
@@ -188234,6 +188367,13 @@
           "valuedContracts": 2
         },
         {
+          "name": "Ing. Jan Waldhauser",
+          "ico": "06573428",
+          "contracts": 2,
+          "knownValueCzk": 233729.45,
+          "valuedContracts": 2
+        },
+        {
           "name": "Petr Picek",
           "ico": "49364669",
           "contracts": 2,
@@ -188276,13 +188416,6 @@
           "valuedContracts": 2
         },
         {
-          "name": "Ing. Jan Waldhauser",
-          "ico": "06573428",
-          "contracts": 1,
-          "knownValueCzk": 68900,
-          "valuedContracts": 1
-        },
-        {
           "name": "TOPMAPY, s.r.o.",
           "ico": "05114713",
           "contracts": 1,
@@ -188298,6 +188431,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39835225",
+          "idContract": "37459125",
+          "url": "https://smlouvy.gov.cz/smlouva/39835225",
+          "subject": "Smlouva o dílo",
+          "published": "2026-10-07",
+          "signed": "2026-10-05",
+          "valueCzk": 164829.45,
+          "valueVatCzk": 164829.45,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "Ing. Jan Waldhauser",
+              "ico": "06573428",
+              "box": ""
+            }
+          ],
+          "counterparty": "Ing. Jan Waldhauser",
+          "publisher": "Základní škola, Praha 8, Palmovka 8",
+          "publisherIco": "60433248"
+        },
         {
           "entityIco": "60433248",
           "entityName": "Základní škola, Praha 8, Palmovka 8",
