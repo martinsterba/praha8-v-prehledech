@@ -1,11 +1,11 @@
 {
-  "updated": "2026-10-08T11:27:08.304Z",
+  "updated": "2026-10-09T11:24:12.433Z",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7427,
-    "knownValueCzk": 5167714847.89,
+    "totalContracts": 7429,
+    "knownValueCzk": 5168304124.700001,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
@@ -392,12 +392,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Servisni-stredisko-pro-spravu-svereneho-majetku-MC-Praha-8-prispevkova-organizace.html",
       "website": "https://www.praha8.cz/servisni-stredisko-pro-spravu-svereneho-majetku-mc-praha-8-prispevkova-organizace.html",
-      "total": 1792,
+      "total": 1793,
       "partners": 361,
-      "knownValueCzk": 2995544918.6900005,
-      "valuedContracts": 1715,
+      "knownValueCzk": 2996034195.500001,
+      "valuedContracts": 1716,
       "dateFrom": "1991-07-15",
-      "dateTo": "2026-10-06"
+      "dateTo": "2026-10-08"
     },
     {
       "name": "Sociální a ošetřovatelské služby Praha 8",
@@ -568,12 +568,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-Praha-8-Glowackeho-6.html",
       "website": "http://www.glowackeho.eu/",
-      "total": 159,
-      "partners": 101,
-      "knownValueCzk": 33029250.879999995,
-      "valuedContracts": 126,
+      "total": 160,
+      "partners": 102,
+      "knownValueCzk": 33129250.879999995,
+      "valuedContracts": 127,
       "dateFrom": "2016-10-10",
-      "dateTo": "2026-09-14"
+      "dateTo": "2026-10-07"
     },
     {
       "name": "Základní škola, Praha 8, Hovorčovická 11",
