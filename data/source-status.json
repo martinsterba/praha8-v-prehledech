@@ -90,7 +90,7 @@
   "elections": {
     "status": "data načtena",
     "count": 8,
-    "updated": "2026-08-30T17:12:42.648Z",
+    "updated": "2026-10-11T06:39:47.715Z",
     "mode": "aktualizováno"
   },
   "census2021": {
@@ -109,18 +109,6 @@
     "status": "data načtena",
     "count": 6523,
     "updated": "2026-10-10T10:41:33.150Z",
-    "mode": "aktualizováno"
-  },
-  "contractEntities": {
-    "status": "data načtena",
-    "count": 7429,
-    "updated": "2026-10-10T10:41:33.150Z",
-    "mode": "aktualizováno"
-  },
-  "grants": {
-    "status": "data načtena",
-    "count": 2504,
-    "updated": "2026-10-05T11:57:33.584433+00:00",
     "mode": "aktualizováno"
   }
 }
