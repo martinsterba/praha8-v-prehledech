@@ -1,4 +1,5 @@
-name: "Kontrola týdenního syncu a voleb 2026"\n# retest po opravě endpointu ČSÚ
+name: "Kontrola týdenního syncu a voleb 2026"
+# retest po opravě endpointu ČSÚ
 
 on:
   push:
