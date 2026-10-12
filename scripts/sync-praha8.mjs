@@ -1441,7 +1441,9 @@ async function syncElections(browser){
       console.log(`      volby 1998: ${parties.filter(x=>x.seats>0).length} subjektů s mandátem, ${elected.length || 45} zvolených jmen ✓ [historický snapshot]`);
       continue;
     }
-    const xmlUrl=`https://www.volby.cz/pls/kv${endpointEdition(year)}/vysledky_obec?cislo_obce=500208&datumvoleb=${electionDates[year]}`;
+    const xmlUrl=year===2026
+      ? `https://volby.gov.cz/appdata/kv2026/${electionDates[year]}/odata/zastup/vysledky_obec_500208.xml`
+      : `https://www.volby.cz/pls/kv${endpointEdition(year)}/vysledky_obec?cislo_obce=500208&datumvoleb=${electionDates[year]}`;
     try{
       const xml=await get(xmlUrl,{accept:'application/xml,text/xml,*/*'});
       if(!xml || /<CHYBA\b/i.test(xml)) throw new Error('ČSÚ vrátilo chybové nebo prázdné XML');
@@ -1523,7 +1525,7 @@ async function syncElections(browser){
       // falešnou validaci 45/15 způsobenou historickými volebními obvody.
       if(electedUnique.length>=40) seats=electedUnique.length;
       parties=parties.map(({votes,...x})=>x);
-      result.push({year,source:resultUrl(year),xmlUrl,parties,turnout,seats,coalition:ELECTION_COALITIONS[year]||null});
+      result.push({year,source:year===2026?xmlUrl:resultUrl(year),xmlUrl,parties,turnout,seats,coalition:ELECTION_COALITIONS[year]||null});
       for(const name of electedUnique){
         const k=normName(name); if(!k)continue;
         const party=electedMap.get(k)?.party||'';
