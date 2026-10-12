@@ -1428,7 +1428,8 @@ async function syncElections(browser){
   const normName=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/\s+/g,' ').trim().toLowerCase();
   const parseAttrs=s=>Object.fromEntries([...String(s).matchAll(/([A-Za-z0-9_:-]+)=["']([^"']*)["']/g)].map(m=>[m[1].toUpperCase(),m[2]]));
   const num=v=>{const n=Number(String(v??'').replace(/\s/g,'').replace(',','.'));return Number.isFinite(n)?n:null};
-  const resultUrl=year=>`https://www.volby.cz/pls/kv${year}/kv1111?xjazyk=CZ&xid=1&xdz=5&xnumnuts=1100&xobec=500208&xstat=0&xvyber=0`;
+  const endpointEdition=year=>year>=2022?2022:year;
+  const resultUrl=year=>`https://www.volby.cz/pls/kv${endpointEdition(year)}/kv1111?xjazyk=CZ&xid=1&xdz=5&xnumnuts=1100&xobec=500208&xstat=0&xvyber=0${year>2022?`&datumvoleb=${electionDates[year]}`:''}`;
 
   for(const year of years){
     if(year===1998){
@@ -1440,7 +1441,7 @@ async function syncElections(browser){
       console.log(`      volby 1998: ${parties.filter(x=>x.seats>0).length} subjektů s mandátem, ${elected.length || 45} zvolených jmen ✓ [historický snapshot]`);
       continue;
     }
-    const xmlUrl=`https://www.volby.cz/pls/kv${year}/vysledky_obec?cislo_obce=500208&datumvoleb=${electionDates[year]}`;
+    const xmlUrl=`https://www.volby.cz/pls/kv${endpointEdition(year)}/vysledky_obec?cislo_obce=500208&datumvoleb=${electionDates[year]}`;
     try{
       const xml=await get(xmlUrl,{accept:'application/xml,text/xml,*/*'});
       if(!xml || /<CHYBA\b/i.test(xml)) throw new Error('ČSÚ vrátilo chybové nebo prázdné XML');
