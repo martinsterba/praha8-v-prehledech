@@ -1,6 +1,70 @@
 {
   "years": [
     {
+      "year": 2026,
+      "source": "https://volby.gov.cz/appdata/kv2026/20261009/odata/zastup/vysledky_obec_500208.xml",
+      "xmlUrl": "https://volby.gov.cz/appdata/kv2026/20261009/odata/zastup/vysledky_obec_500208.xml",
+      "parties": [
+        {
+          "id": "1586",
+          "name": "8žije, Praha sobě a Zelení",
+          "percent": "25.41",
+          "seats": 13
+        },
+        {
+          "id": "659",
+          "name": "STAROSTOVÉ A NEZÁVISLÍ + TOP 09 – Společně pro Prahu 8",
+          "percent": "18.04",
+          "seats": 9
+        },
+        {
+          "id": "210",
+          "name": "ODS s podporou KDU-ČSL",
+          "percent": "17.92",
+          "seats": 9
+        },
+        {
+          "id": "768",
+          "name": "ANO 2011",
+          "percent": "14.09",
+          "seats": 7
+        },
+        {
+          "id": "524",
+          "name": "PATRIOTI PRO PRAHU 8",
+          "percent": "8.95",
+          "seats": 4
+        },
+        {
+          "id": "720",
+          "name": "Česká pirátská strana",
+          "percent": "7.12",
+          "seats": 3
+        },
+        {
+          "id": "1305",
+          "name": "SPD pro Prahu 8 s podporou Česká párty, PRO a Svobodní",
+          "percent": "4.18",
+          "seats": 0
+        },
+        {
+          "id": "1844",
+          "name": "Mourek s podporou SEN PRO PRAHU s Václavem Láskou",
+          "percent": "2.98",
+          "seats": 0
+        },
+        {
+          "id": "1843",
+          "name": "Spojená levice pro Prahu (KSČM - ČSSD)",
+          "percent": "1.32",
+          "seats": 0
+        }
+      ],
+      "turnout": "43.09",
+      "seats": 45,
+      "coalition": null
+    },
+    {
       "year": 2022,
       "source": "https://www.volby.cz/pls/kv2022/kv1111?xjazyk=CZ&xid=1&xdz=5&xnumnuts=1100&xobec=500208&xstat=0&xvyber=0",
       "xmlUrl": "https://www.volby.cz/pls/kv2022/vysledky_obec?cislo_obce=500208&datumvoleb=20220923",
@@ -664,6 +728,7 @@
     {
       "name": "Martin Roubíček",
       "years": [
+        2026,
         2022,
         2018,
         2014,
@@ -679,12 +744,13 @@
       "parties": [
         "ODS"
       ],
-      "terms": 7,
-      "yearsServed": 28
+      "terms": 8,
+      "yearsServed": 32
     },
     {
       "name": "Ondřej Gros",
       "years": [
+        2026,
         2022,
         2018,
         2014,
@@ -700,12 +766,13 @@
       "parties": [
         "ODS"
       ],
-      "terms": 7,
-      "yearsServed": 28
+      "terms": 8,
+      "yearsServed": 32
     },
     {
       "name": "Josef Slobodník",
       "years": [
+        2026,
         2022,
         2018,
         2014,
@@ -716,6 +783,42 @@
       "partiesByYear": {},
       "parties": [
         "ODS"
+      ],
+      "terms": 6,
+      "yearsServed": 24
+    },
+    {
+      "name": "Vladimíra Ludková",
+      "years": [
+        2026,
+        2022,
+        2018,
+        2014,
+        2010,
+        2006
+      ],
+      "party": "ODS",
+      "partiesByYear": {},
+      "parties": [
+        "ODS"
+      ],
+      "terms": 6,
+      "yearsServed": 24
+    },
+    {
+      "name": "Matěj Fichtner",
+      "years": [
+        2026,
+        2022,
+        2018,
+        2014,
+        2010
+      ],
+      "party": "TOP 09",
+      "partiesByYear": {},
+      "parties": [
+        "ANO",
+        "TOP 09"
       ],
       "terms": 5,
       "yearsServed": 20
@@ -755,42 +858,9 @@
       "yearsServed": 20
     },
     {
-      "name": "Vladimíra Ludková",
-      "years": [
-        2022,
-        2018,
-        2014,
-        2010,
-        2006
-      ],
-      "party": "ODS",
-      "partiesByYear": {},
-      "parties": [
-        "ODS"
-      ],
-      "terms": 5,
-      "yearsServed": 20
-    },
-    {
-      "name": "Matěj Fichtner",
-      "years": [
-        2022,
-        2018,
-        2014,
-        2010
-      ],
-      "party": "TOP 09",
-      "partiesByYear": {},
-      "parties": [
-        "ANO",
-        "TOP 09"
-      ],
-      "terms": 4,
-      "yearsServed": 16
-    },
-    {
       "name": "Tomáš Slabihoudek",
       "years": [
+        2026,
         2022,
         2018,
         2014,
@@ -801,12 +871,13 @@
       "parties": [
         "TOP 09 + STAN"
       ],
-      "terms": 4,
-      "yearsServed": 16
+      "terms": 5,
+      "yearsServed": 20
     },
     {
       "name": "Anna Kroutil",
       "years": [
+        2026,
         2022,
         2018,
         2014
@@ -816,8 +887,120 @@
       "parties": [
         "ANO"
       ],
-      "terms": 3,
-      "yearsServed": 12
+      "terms": 4,
+      "yearsServed": 16
+    },
+    {
+      "name": "Dana Blahunková",
+      "years": [
+        2026,
+        2022,
+        2018,
+        2014
+      ],
+      "party": "8ŽIJE A PRAHA SOBĚ",
+      "partiesByYear": {},
+      "parties": [
+        "8ŽIJE A PRAHA SOBĚ"
+      ],
+      "terms": 4,
+      "yearsServed": 16
+    },
+    {
+      "name": "Jiří Vítek",
+      "years": [
+        2026,
+        2022,
+        2018,
+        2002
+      ],
+      "party": "Patrioti",
+      "partiesByYear": {},
+      "parties": [
+        "Patrioti"
+      ],
+      "terms": 4,
+      "yearsServed": 16
+    },
+    {
+      "name": "Michal Fišer",
+      "years": [
+        2026,
+        2022,
+        2018,
+        2014
+      ],
+      "party": "ANO",
+      "partiesByYear": {},
+      "parties": [
+        "ANO"
+      ],
+      "terms": 4,
+      "yearsServed": 16
+    },
+    {
+      "name": "Michal Švarc",
+      "years": [
+        2026,
+        2022,
+        2018,
+        2010
+      ],
+      "party": "Patrioti",
+      "partiesByYear": {},
+      "parties": [
+        "Patrioti"
+      ],
+      "terms": 4,
+      "yearsServed": 16
+    },
+    {
+      "name": "Radomír Nepil",
+      "years": [
+        2026,
+        2022,
+        2018,
+        2014
+      ],
+      "party": "ANO",
+      "partiesByYear": {},
+      "parties": [
+        "ANO"
+      ],
+      "terms": 4,
+      "yearsServed": 16
+    },
+    {
+      "name": "Tomáš Němeček",
+      "years": [
+        2026,
+        2022,
+        2018,
+        2014
+      ],
+      "party": "8ŽIJE A PRAHA SOBĚ",
+      "partiesByYear": {},
+      "parties": [
+        "8ŽIJE A PRAHA SOBĚ"
+      ],
+      "terms": 4,
+      "yearsServed": 16
+    },
+    {
+      "name": "Tomáš Tatranský",
+      "years": [
+        2026,
+        2022,
+        2018,
+        2014
+      ],
+      "party": "TOP 09 + STAN",
+      "partiesByYear": {},
+      "parties": [
+        "TOP 09 + STAN"
+      ],
+      "terms": 4,
+      "yearsServed": 16
     },
     {
       "name": "Bohumír Garlík",
@@ -835,11 +1018,11 @@
       "yearsServed": 12
     },
     {
-      "name": "Dana Blahunková",
+      "name": "Ilona Tůmová",
       "years": [
+        2026,
         2022,
-        2018,
-        2014
+        2018
       ],
       "party": "8ŽIJE A PRAHA SOBĚ",
       "partiesByYear": {},
@@ -850,26 +1033,11 @@
       "yearsServed": 12
     },
     {
-      "name": "Jiří Vítek",
+      "name": "Jana Solomonová",
       "years": [
+        2026,
         2022,
-        2018,
-        2002
-      ],
-      "party": "Patrioti",
-      "partiesByYear": {},
-      "parties": [
-        "Patrioti"
-      ],
-      "terms": 3,
-      "yearsServed": 12
-    },
-    {
-      "name": "Michal Fišer",
-      "years": [
-        2022,
-        2018,
-        2014
+        2018
       ],
       "party": "ANO",
       "partiesByYear": {},
@@ -880,56 +1048,11 @@
       "yearsServed": 12
     },
     {
-      "name": "Michal Švarc",
+      "name": "Martin Jedlička",
       "years": [
+        2026,
         2022,
-        2018,
-        2010
-      ],
-      "party": "Patrioti",
-      "partiesByYear": {},
-      "parties": [
-        "Patrioti"
-      ],
-      "terms": 3,
-      "yearsServed": 12
-    },
-    {
-      "name": "Radomír Nepil",
-      "years": [
-        2022,
-        2018,
-        2014
-      ],
-      "party": "ANO",
-      "partiesByYear": {},
-      "parties": [
-        "ANO"
-      ],
-      "terms": 3,
-      "yearsServed": 12
-    },
-    {
-      "name": "Tomáš Němeček",
-      "years": [
-        2022,
-        2018,
-        2014
-      ],
-      "party": "8ŽIJE A PRAHA SOBĚ",
-      "partiesByYear": {},
-      "parties": [
-        "8ŽIJE A PRAHA SOBĚ"
-      ],
-      "terms": 3,
-      "yearsServed": 12
-    },
-    {
-      "name": "Tomáš Tatranský",
-      "years": [
-        2022,
-        2018,
-        2014
+        2018
       ],
       "party": "TOP 09 + STAN",
       "partiesByYear": {},
@@ -938,49 +1061,6 @@
       ],
       "terms": 3,
       "yearsServed": 12
-    },
-    {
-      "name": "Václav Musílek",
-      "years": [
-        2022,
-        2006,
-        2002
-      ],
-      "party": "SPD",
-      "partiesByYear": {},
-      "parties": [
-        "SPD"
-      ],
-      "terms": 3,
-      "yearsServed": 12
-    },
-    {
-      "name": "Ilona Tůmová",
-      "years": [
-        2022,
-        2018
-      ],
-      "party": "8ŽIJE A PRAHA SOBĚ",
-      "partiesByYear": {},
-      "parties": [
-        "8ŽIJE A PRAHA SOBĚ"
-      ],
-      "terms": 2,
-      "yearsServed": 8
-    },
-    {
-      "name": "Ivo Slávka",
-      "years": [
-        2022,
-        2018
-      ],
-      "party": "Piráti",
-      "partiesByYear": {},
-      "parties": [
-        "Piráti"
-      ],
-      "terms": 2,
-      "yearsServed": 8
     }
   ]
 }
