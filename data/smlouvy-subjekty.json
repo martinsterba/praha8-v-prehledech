@@ -1,18 +1,18 @@
 {
   "schema": 2,
-  "updated": "2026-10-11T10:52:58.731Z",
+  "updated": "2026-10-12T12:02:39.367Z",
   "source": "https://smlouvy.gov.cz/vyhledavani",
   "method": "official-live-search-daily-overlap",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7429,
-    "knownValueCzk": 5168304124.700001,
+    "totalContracts": 7437,
+    "knownValueCzk": 5170111808.660001,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
-        "current": 6523
+        "current": 6525
       },
       "note": "Denní kontrola používá živé vyhledávání Registru smluv v okně 5 dní; historický základ se při denním běhu nestahuje."
     }
@@ -412,10 +412,10 @@
       "ownershipShare": "100 %",
       "source": "https://www.praha8.cz/Osma-sprava-majetku-a-sluzeb-a-s",
       "website": "https://www.osms.cz/",
-      "total": 1493,
+      "total": 1494,
       "partners": 234,
-      "knownValueCzk": 1445025589.6600006,
-      "valuedContracts": 1209,
+      "knownValueCzk": 1445569519.7200005,
+      "valuedContracts": 1210,
       "dateFrom": "1999-09-14",
       "dateTo": "2026-09-30",
       "partnerList": [
@@ -464,9 +464,9 @@
         {
           "name": "JOVIS STAVBY s.r.o.",
           "ico": "01390473",
-          "contracts": 30,
-          "knownValueCzk": 33830841.33,
-          "valuedContracts": 28
+          "contracts": 31,
+          "knownValueCzk": 34374771.39,
+          "valuedContracts": 29
         },
         {
           "name": "HONALSTAV s.r.o.",
@@ -2059,6 +2059,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39881049",
+          "idContract": "37503121",
+          "url": "https://smlouvy.gov.cz/smlouva/39881049",
+          "subject": "SOD č. 046/2026 - Oprava fasády na adrese U Drahaně 165/13, 181 00 Praha 8 - Bohnice",
+          "published": "2026-10-12",
+          "signed": "2026-09-21",
+          "valueCzk": 543930.06,
+          "valueVatCzk": 543930.06,
+          "valueNoVatCzk": 485651.84,
+          "counterparties": [
+            {
+              "name": "JOVIS STAVBY s.r.o.",
+              "ico": "01390473",
+              "box": "aqtri7u"
+            }
+          ],
+          "counterparty": "JOVIS STAVBY s.r.o.",
+          "publisher": "Osmá správa majetku a služeb a.s.",
+          "publisherIco": "04650522"
+        },
         {
           "id": "39819717",
           "idContract": "37443993",
@@ -123278,10 +123299,10 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Ustavni-Praha-8-Hlivicka-1.html",
       "website": "http://www.zs-ustavni.cz/",
-      "total": 230,
-      "partners": 131,
-      "knownValueCzk": 42583239.169999994,
-      "valuedContracts": 208,
+      "total": 231,
+      "partners": 132,
+      "knownValueCzk": 42639383.169999994,
+      "valuedContracts": 209,
       "dateFrom": "2016-09-08",
       "dateTo": "2026-10-02",
       "partnerList": [
@@ -124112,6 +124133,13 @@
           "valuedContracts": 1
         },
         {
+          "name": "WOMEN FOR WOMEN, o.p.s.",
+          "ico": "24231509",
+          "contracts": 1,
+          "knownValueCzk": 56144,
+          "valuedContracts": 1
+        },
+        {
           "name": "NOVÁ ŠKOLA, s.r.o.",
           "ico": "25501356",
           "contracts": 1,
@@ -124204,6 +124232,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39882301",
+          "idContract": "37504329",
+          "url": "https://smlouvy.gov.cz/smlouva/39882301",
+          "subject": "Darovací smlouva na finanční dar",
+          "published": "2026-10-12",
+          "signed": "2026-09-24",
+          "valueCzk": 56144,
+          "valueVatCzk": 56144,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "WOMEN FOR WOMEN, o.p.s.",
+              "ico": "24231509",
+              "box": "rtc24gx"
+            }
+          ],
+          "counterparty": "WOMEN FOR WOMEN, o.p.s.",
+          "publisher": "Základní škola a mateřská škola Ústavní, Praha 8, Hlivická 1",
+          "publisherIco": "60433337"
+        },
         {
           "id": "39832957",
           "idContract": "37456917",
@@ -129705,10 +129754,10 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Praha-8-Dolakova-1.html",
       "website": "http://www.zsdolakova.cz/",
-      "total": 147,
+      "total": 148,
       "partners": 88,
-      "knownValueCzk": 34792257.96000001,
-      "valuedContracts": 139,
+      "knownValueCzk": 34871757.86,
+      "valuedContracts": 140,
       "dateFrom": "2016-12-05",
       "dateTo": "2026-09-24",
       "partnerList": [
@@ -130042,6 +130091,13 @@
           "valuedContracts": 1
         },
         {
+          "name": "Ing. Jan Bažacký",
+          "ico": "87858258",
+          "contracts": 2,
+          "knownValueCzk": 158599.9,
+          "valuedContracts": 2
+        },
+        {
           "name": "KODREA s.r.o.",
           "ico": "63075938",
           "contracts": 2,
@@ -130231,13 +130287,6 @@
           "valuedContracts": 1
         },
         {
-          "name": "Ing. Jan Bažacký",
-          "ico": "87858258",
-          "contracts": 1,
-          "knownValueCzk": 79100,
-          "valuedContracts": 1
-        },
-        {
           "name": "Klub českých turistů Jiskra Nový Bydžov, z. s.",
           "ico": "15063461",
           "contracts": 1,
@@ -130330,6 +130379,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39881685",
+          "idContract": "37503721",
+          "url": "https://smlouvy.gov.cz/smlouva/39881685",
+          "subject": "Objednávka pomůcek k výuce chemie",
+          "published": "2026-10-12",
+          "signed": "2026-09-24",
+          "valueCzk": 79499.9,
+          "valueVatCzk": 79499.9,
+          "valueNoVatCzk": 65702.4,
+          "counterparties": [
+            {
+              "name": "Ing. Jan Bažacký",
+              "ico": "87858258",
+              "box": ""
+            }
+          ],
+          "counterparty": "Ing. Jan Bažacký",
+          "publisher": "Základní škola a mateřská škola, Praha 8, Dolákova 1",
+          "publisherIco": "60433281"
+        },
         {
           "id": "39837417",
           "idContract": "37461229",
@@ -145798,26 +145868,26 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-Bohumila-Hrabala-Praha-8-Zenklova-52.html",
       "website": "http://www.zs-bhrabala.cz/",
-      "total": 373,
+      "total": 377,
       "partners": 139,
-      "knownValueCzk": 50361712.58,
-      "valuedContracts": 265,
+      "knownValueCzk": 51293832.580000006,
+      "valuedContracts": 269,
       "dateFrom": "2014-10-02",
-      "dateTo": "2026-09-22",
+      "dateTo": "2026-10-12",
       "partnerList": [
+        {
+          "name": "AVA - agentura volnočasových aktivit pro děti a mládež, s.r.o.",
+          "ico": "08552681",
+          "contracts": 30,
+          "knownValueCzk": 6665086,
+          "valuedContracts": 29
+        },
         {
           "name": "Af Office, s.r.o.",
           "ico": "26768771",
           "contracts": 34,
           "knownValueCzk": 6107186.1,
           "valuedContracts": 34
-        },
-        {
-          "name": "AVA - agentura volnočasových aktivit pro děti a mládež, s.r.o.",
-          "ico": "08552681",
-          "contracts": 28,
-          "knownValueCzk": 5984486,
-          "valuedContracts": 27
         },
         {
           "name": "S com ENERGO s.r.o.",
@@ -145864,9 +145934,9 @@
         {
           "name": "Noxtr corporation s.r.o.",
           "ico": "06808751",
-          "contracts": 6,
-          "knownValueCzk": 1201624,
-          "valuedContracts": 6
+          "contracts": 8,
+          "knownValueCzk": 1453144,
+          "valuedContracts": 8
         },
         {
           "name": "Penzion Mileta s.r.o.",
@@ -146780,6 +146850,90 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39888457",
+          "idContract": "37510189",
+          "url": "https://smlouvy.gov.cz/smlouva/39888457",
+          "subject": "Nákup počítačů",
+          "published": "2026-10-12",
+          "signed": "2026-08-28",
+          "valueCzk": 125760,
+          "valueVatCzk": 125760,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "Noxtr corporation s.r.o.",
+              "ico": "06808751",
+              "box": "m9vz6p8"
+            }
+          ],
+          "counterparty": "Noxtr corporation s.r.o.",
+          "publisher": "Základní škola Bohumila Hrabala, Praha 8, Zenklova 52",
+          "publisherIco": "63113961"
+        },
+        {
+          "id": "39888433",
+          "idContract": "37510165",
+          "url": "https://smlouvy.gov.cz/smlouva/39888433",
+          "subject": "Nákup počítačů",
+          "published": "2026-10-12",
+          "signed": "2026-08-28",
+          "valueCzk": 125760,
+          "valueVatCzk": 125760,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "Noxtr corporation s.r.o.",
+              "ico": "06808751",
+              "box": "m9vz6p8"
+            }
+          ],
+          "counterparty": "Noxtr corporation s.r.o.",
+          "publisher": "Základní škola Bohumila Hrabala, Praha 8, Zenklova 52",
+          "publisherIco": "63113961"
+        },
+        {
+          "id": "39891709",
+          "idContract": "37513297",
+          "url": "https://smlouvy.gov.cz/smlouva/39891709",
+          "subject": "zajištění školy v přírodě",
+          "published": "2026-10-12",
+          "signed": "2026-10-12",
+          "valueCzk": 377200,
+          "valueVatCzk": 377200,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "AVA - agentura volnočasových aktivit pro děti a mládež, s.r.o.",
+              "ico": "08552681",
+              "box": "t6beuyq"
+            }
+          ],
+          "counterparty": "AVA - agentura volnočasových aktivit pro děti a mládež, s.r.o.",
+          "publisher": "Základní škola Bohumila Hrabala, Praha 8, Zenklova 52",
+          "publisherIco": "63113961"
+        },
+        {
+          "id": "39893353",
+          "idContract": "37514881",
+          "url": "https://smlouvy.gov.cz/smlouva/39893353",
+          "subject": "zajištění školy v přírodě",
+          "published": "2026-10-12",
+          "signed": "2026-10-12",
+          "valueCzk": 303400,
+          "valueVatCzk": 303400,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "AVA - agentura volnočasových aktivit pro děti a mládež, s.r.o.",
+              "ico": "08552681",
+              "box": "t6beuyq"
+            }
+          ],
+          "counterparty": "AVA - agentura volnočasových aktivit pro děti a mládež, s.r.o.",
+          "publisher": "Základní škola Bohumila Hrabala, Praha 8, Zenklova 52",
+          "publisherIco": "63113961"
+        },
         {
           "id": "39813137",
           "idContract": "37437657",
@@ -183966,12 +184120,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-Praha-8-Na-Sutce-28.html",
       "website": "http://www.zssutka.cz/",
-      "total": 159,
+      "total": 160,
       "partners": 71,
-      "knownValueCzk": 30776244.4,
-      "valuedContracts": 148,
+      "knownValueCzk": 30972234.4,
+      "valuedContracts": 149,
       "dateFrom": "2016-10-11",
-      "dateTo": "2026-08-19",
+      "dateTo": "2026-10-06",
       "partnerList": [
         {
           "name": "ACTIVE GUIDE, s.r.o.",
@@ -184023,6 +184177,13 @@
           "valuedContracts": 9
         },
         {
+          "name": "Outdoor Aliance s.r.o.",
+          "ico": "28594207",
+          "contracts": 6,
+          "knownValueCzk": 775910,
+          "valuedContracts": 6
+        },
+        {
           "name": "Petr Pospíšil",
           "ico": "70337713",
           "contracts": 5,
@@ -184042,13 +184203,6 @@
           "contracts": 2,
           "knownValueCzk": 582899,
           "valuedContracts": 2
-        },
-        {
-          "name": "Outdoor Aliance s.r.o.",
-          "ico": "28594207",
-          "contracts": 5,
-          "knownValueCzk": 579920,
-          "valuedContracts": 5
         },
         {
           "name": "Martin BŘEZINA",
@@ -184472,6 +184626,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39882305",
+          "idContract": "37504333",
+          "url": "https://smlouvy.gov.cz/smlouva/39882305",
+          "subject": "Zajištění školní akce",
+          "published": "2026-10-12",
+          "signed": "2026-10-06",
+          "valueCzk": 195990,
+          "valueVatCzk": 195990,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "Outdoor Aliance s.r.o.",
+              "ico": "28594207",
+              "box": "acxi6hp"
+            }
+          ],
+          "counterparty": "Outdoor Aliance s.r.o.",
+          "publisher": "Základní škola, Praha 8, Na Šutce 28",
+          "publisherIco": "60461845"
+        },
         {
           "id": "39398781",
           "idContract": "37039669",

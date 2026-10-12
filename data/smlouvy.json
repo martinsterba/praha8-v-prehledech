@@ -1,6 +1,48 @@
 {
   "contracts": [
     {
+      "id": "39882237",
+      "idContract": "37504269",
+      "url": "https://smlouvy.gov.cz/smlouva/39882237",
+      "subject": "3_32_revitalizaci dvorku Kolpingův dům_  15210",
+      "published": "2026-10-12",
+      "signed": "2026-10-12",
+      "valueCzk": 188543.64,
+      "valueVatCzk": null,
+      "valueNoVatCzk": 188543.64,
+      "counterparties": [
+        {
+          "name": "RUBIKON Centrum, z.ú.",
+          "ico": "60446871",
+          "box": ""
+        }
+      ],
+      "counterparty": "RUBIKON Centrum, z.ú.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39882229",
+      "idContract": "37504261",
+      "url": "https://smlouvy.gov.cz/smlouva/39882229",
+      "subject": "222_6_Havarie odpadního potrubí_   15213",
+      "published": "2026-10-12",
+      "signed": "2026-10-11",
+      "valueCzk": 110000,
+      "valueVatCzk": null,
+      "valueNoVatCzk": 110000,
+      "counterparties": [
+        {
+          "name": "INSTALACE Šubrt, spol. s r.o.",
+          "ico": "26175827",
+          "box": ""
+        }
+      ],
+      "counterparty": "INSTALACE Šubrt, spol. s r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
       "id": "39831089",
       "idContract": "37455081",
       "url": "https://smlouvy.gov.cz/smlouva/39831089",
@@ -137184,9 +137226,9 @@
     {
       "name": "INSTALACE Šubrt, spol. s r.o.",
       "ico": "26175827",
-      "contracts": 69,
-      "knownValueCzk": 20571609.029999997,
-      "valuedContracts": 69
+      "contracts": 70,
+      "knownValueCzk": 20681609.029999997,
+      "valuedContracts": 70
     },
     {
       "name": "BAZAS s.r.o.",
@@ -141739,6 +141781,13 @@
       "valuedContracts": 2
     },
     {
+      "name": "RUBIKON Centrum, z.ú.",
+      "ico": "60446871",
+      "contracts": 3,
+      "knownValueCzk": 624143.64,
+      "valuedContracts": 2
+    },
+    {
       "name": "CityTraffic, s.r.o.",
       "ico": "46345761",
       "contracts": 1,
@@ -142583,13 +142632,6 @@
       "ico": "04510704",
       "contracts": 1,
       "knownValueCzk": 435660,
-      "valuedContracts": 1
-    },
-    {
-      "name": "RUBIKON Centrum, z.ú.",
-      "ico": "60446871",
-      "contracts": 2,
-      "knownValueCzk": 435600,
       "valuedContracts": 1
     },
     {
@@ -148635,17 +148677,17 @@
     }
   ],
   "meta": {
-    "total": 6523,
+    "total": 6525,
     "complete": true,
     "historyComplete": true,
     "scope": "full-history",
     "dateFrom": "2007-05-09",
     "dateTo": "2026-10-30",
     "dateLabel": "celá historie Registru smluv",
-    "knownValueCzk": 6876818862.629995,
-    "valuedContracts": 5759,
+    "knownValueCzk": 6877117406.269996,
+    "valuedContracts": 5761,
     "partners": 1682,
-    "updated": "2026-10-11T10:52:58.731Z",
+    "updated": "2026-10-12T12:02:39.367Z",
     "source": "https://data.smlouvy.gov.cz/index.xml",
     "method": "official-live-search-daily-overlap",
     "dumps": 124,
