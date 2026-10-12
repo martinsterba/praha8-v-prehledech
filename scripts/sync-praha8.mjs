@@ -1422,8 +1422,8 @@ async function syncElections(browser){
   // ČSÚ zveřejňuje komunální výsledky v některých letech po volebních obvodech.
   // Proto stejnou volební stranu NEPOČÍTÁME několikrát: mandáty za jednotlivé
   // obvody agregujeme podle interního kódu strany / názvu strany.
-  const years=[2022,2018,2014,2010,2006,2002,1998,1994];
-  const electionDates={2022:'20220923',2018:'20181005',2014:'20141010',2010:'20101015',2006:'20061020',2002:'20021101',1998:'19981113',1994:'19941118'};
+  const years=[2026,2022,2018,2014,2010,2006,2002,1998,1994];
+  const electionDates={2026:'20261009',2022:'20220923',2018:'20181005',2014:'20141010',2010:'20101015',2006:'20061020',2002:'20021101',1998:'19981113',1994:'19941118'};
   const result=[]; const electedByName=new Map();
   const normName=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/\s+/g,' ').trim().toLowerCase();
   const parseAttrs=s=>Object.fromEntries([...String(s).matchAll(/([A-Za-z0-9_:-]+)=["']([^"']*)["']/g)].map(m=>[m[1].toUpperCase(),m[2]]));
