@@ -2,11 +2,6 @@ name: "📅 Týdenní aktualizace"
 
 on:
   workflow_dispatch:
-  # Dočasný jednorázový retest po opravě zvláštních orgánů; po zeleném běhu odstraníme.
-  push:
-    branches: [main]
-    paths:
-      - ".github/workflows/weekly-sync.yml"
   schedule:
     # GitHub Actions plánuje v UTC. V létě je pondělí 04:37 UTC = 06:37 v Praze.
     # Po přechodu na zimní čas posuneme cron na 05:37 UTC.
