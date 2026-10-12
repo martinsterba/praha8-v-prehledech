@@ -43,6 +43,7 @@ async function goto(page,url,attempts=3){
 }
 
 const people=await readJson(peoplePath,[]);
+const previousBodies=await readJson(bodiesPath,[]);
 if(!Array.isArray(people)||!people.length)throw new Error('Chybí data/lide.json. Nejprve načtěte zastupitelstvo.');
 const affiliation=new Map(people.map(p=>[personKey(p.name),p.club||'']));
 const annotate=name=>({name,club:affiliation.get(personKey(name))||''});
@@ -181,8 +182,32 @@ try{
     }
     return out;
   });
-  const uniqueSpecials=[...new Map(specials.map(x=>[x.name,x])).values()];
-  if(uniqueSpecials.length!==2)throw new Error(`Zvláštní orgány nejsou kompletní (${uniqueSpecials.length}/2). Dataset nepřepisuji.`);
+  let uniqueSpecials=[...new Map(specials.map(x=>[x.name,x])).values()];
+  let preservedSpecialBodies=false;
+  if(uniqueSpecials.length!==2){
+    const previousSpecials=Array.isArray(previousBodies)?previousBodies.filter(x=>x?.type==='Zvláštní orgán'):[];
+    const previousByName=new Map(previousSpecials.map(x=>[x.name,x]));
+    const currentByName=new Map(uniqueSpecials.map(x=>[x.name,x]));
+    for(const expected of ['Povodňová komise','Komise pro sociálně-právní ochranu dětí']){
+      if(!currentByName.has(expected)&&previousByName.has(expected)){
+        const old=previousByName.get(expected);
+        uniqueSpecials.push({
+          name:old.name,
+          chair:old.chair?.name||'',
+          viceChair:'',
+          members:(old.members||[]).map(m=>m?.name||m).filter(Boolean),
+          citizens:(old.citizens||[]).map(m=>m?.name||m).filter(Boolean),
+          secretary:old.secretary||'',
+          _preserved:true
+        });
+        currentByName.set(expected,old);
+        preservedSpecialBodies=true;
+        console.warn(`   ⚠️ ${expected}: aktuální zdroj ji neposkytl; zachovávám poslední validní zveřejněná data.`);
+      }
+    }
+    uniqueSpecials=[...new Map(uniqueSpecials.map(x=>[x.name,x])).values()];
+    if(uniqueSpecials.length!==2)throw new Error(`Zvláštní orgány nejsou kompletní (${uniqueSpecials.length}/2) a není k dispozici úplný předchozí snapshot. Dataset nepřepisuji.`);
+  }
   for(const x of uniqueSpecials){
     const memberNames=[...(x.members||[])],citizens=[];
     for(const name of (x.citizens||[])){
@@ -205,7 +230,7 @@ try{
   await writeFile(bodiesPath,JSON.stringify(bodies,null,2)+'\n');
 
   const status=await readJson(statusPath,{});
-  status.bodies={status:'data načtena',count:bodies.length,updated:new Date().toISOString(),mode:'aktualizováno',commissions:commissions.length,committees:committees.length,specialBodies:specialBodies.length};
+  status.bodies={status:'data načtena',count:bodies.length,updated:new Date().toISOString(),mode:'aktualizováno',commissions:commissions.length,committees:committees.length,specialBodies:specialBodies.length,specialBodiesPreserved:preservedSpecialBodies};
   await writeFile(statusPath,JSON.stringify(status,null,2)+'\n');
 
   console.log(`\n✅ Uloženo: ${commissions.length} komisí · ${committees.length} výbory · ${specialBodies.length} zvláštní orgány = ${bodies.length} orgánů.`);
