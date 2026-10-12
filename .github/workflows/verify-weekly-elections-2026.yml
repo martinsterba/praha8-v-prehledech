@@ -1,0 +1,63 @@
+name: "Kontrola týdenního syncu a voleb 2026"
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/verify-weekly-elections-2026.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scheduled-data-sync
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - id: chrome
+        uses: browser-actions/setup-chrome@v2
+      - name: Ověřit týdenní synchronizaci
+        env:
+          PUPPETEER_EXECUTABLE_PATH: ${{ steps.chrome.outputs.chrome-path }}
+        run: npm run sync:weekly
+      - name: Načíst komunální volby 2026
+        env:
+          PUPPETEER_EXECUTABLE_PATH: ${{ steps.chrome.outputs.chrome-path }}
+        run: |
+          npm run sync:elections
+          node scripts/repair-source-status.mjs elections
+      - name: Ověřit rok 2026
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const d=JSON.parse(fs.readFileSync('data/volby.json','utf8'));
+          const y=(d.years||[]).find(x=>Number(x.year)===2026);
+          if(!y) throw new Error('Rok 2026 v data/volby.json chybí.');
+          if(y.error) throw new Error('Import 2026 skončil chybou: '+y.error);
+          const parties=(y.parties||[]).filter(x=>Number(x.seats||0)>0);
+          const seats=parties.reduce((n,x)=>n+Number(x.seats||0),0);
+          if(!parties.length||seats<40) throw new Error(`Rok 2026 není kompletní: ${parties.length} subjektů, ${seats} mandátů.`);
+          console.log(`Volby 2026: ${parties.length} subjektů s mandátem, ${seats} mandátů.`);
+          NODE
+      - name: Uložit ověřená data
+        run: |
+          set -euo pipefail
+          git config user.name "Praha 8 v přehledech – automat"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Aktualizovat volby 2026 a týdenní data"
+          git pull --rebase origin main
+          git push origin HEAD:main
