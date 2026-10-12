@@ -1,5 +1,5 @@
 name: "Kontrola týdenního syncu a voleb 2026"
-# retest po opravě endpointu ČSÚ
+# finální retest voleb 2026; týdenní sync už prošel
 
 on:
   push:
@@ -29,10 +29,6 @@ jobs:
       - run: npm ci
       - id: chrome
         uses: browser-actions/setup-chrome@v2
-      - name: Ověřit týdenní synchronizaci
-        env:
-          PUPPETEER_EXECUTABLE_PATH: ${{ steps.chrome.outputs.chrome-path }}
-        run: npm run sync:weekly
       - name: Načíst komunální volby 2026
         env:
           PUPPETEER_EXECUTABLE_PATH: ${{ steps.chrome.outputs.chrome-path }}
