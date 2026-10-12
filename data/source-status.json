@@ -2,43 +2,43 @@
   "people": {
     "status": "data načtena",
     "count": 45,
-    "updated": "2026-10-05T11:52:05.707Z",
+    "updated": "2026-10-12T13:56:50.604Z",
     "mode": "aktualizováno"
   },
   "hmpFunctions": {
     "status": "data načtena",
-    "count": 16,
-    "updated": "2026-10-05T11:53:54.483Z",
+    "count": 11,
+    "updated": "2026-10-12T13:58:36.675Z",
     "mode": "aktualizováno"
   },
   "hmpCompanies": {
     "status": "data načtena",
     "count": 5,
-    "updated": "2026-10-05T11:53:54.483Z",
+    "updated": "2026-10-12T13:58:36.675Z",
     "mode": "aktualizováno"
   },
   "nationalRoles": {
     "status": "data načtena",
     "count": 1,
-    "updated": "2026-10-05T11:52:05.707Z",
+    "updated": "2026-10-12T13:56:50.604Z",
     "mode": "aktualizováno"
   },
   "p8Companies": {
     "status": "data načtena",
     "count": 4,
-    "updated": "2026-10-05T11:53:23.571Z",
+    "updated": "2026-10-12T13:58:03.327Z",
     "mode": "aktualizováno"
   },
   "organizations": {
     "status": "data načtena",
     "count": 41,
-    "updated": "2026-10-05T11:53:23.571Z",
+    "updated": "2026-10-12T13:58:03.327Z",
     "mode": "aktualizováno"
   },
   "schoolOpenData": {
     "status": "data načtena",
     "count": 2,
-    "updated": "2026-10-05T11:53:23.571Z",
+    "updated": "2026-10-12T13:58:03.327Z",
     "mode": "aktualizováno"
   },
   "budgetOpenData": {
@@ -56,11 +56,12 @@
   "bodies": {
     "status": "data načtena",
     "count": 18,
-    "updated": "2026-10-05T11:52:15.113Z",
+    "updated": "2026-10-12T13:57:01.011Z",
     "mode": "aktualizováno",
     "commissions": 14,
     "committees": 2,
-    "specialBodies": 2
+    "specialBodies": 2,
+    "specialBodiesPreserved": true
   },
   "resolutions": {
     "status": "data načtena",
@@ -109,6 +110,12 @@
     "status": "data načtena",
     "count": 6525,
     "updated": "2026-10-12T12:02:39.367Z",
+    "mode": "aktualizováno"
+  },
+  "grants": {
+    "status": "data načtena",
+    "count": 2504,
+    "updated": "2026-10-12T14:03:09.572353+00:00",
     "mode": "aktualizováno"
   }
 }
