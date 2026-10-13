@@ -1,6 +1,69 @@
 {
   "contracts": [
     {
+      "id": "39912797",
+      "idContract": "37533281",
+      "url": "https://smlouvy.gov.cz/smlouva/39912797",
+      "subject": "Objednáváme u vás včetně předtiskové přípravy a dopravy, cena – bez DPH (s DPH): \n\n- 2x Rapid Extréme 4x8m v E1 bílá, potisk všech límců, příslušenství – 91 668,- (110 918,30)\n- 1x Rapid Extréme SET S2 4x6m v E1 bílá, 3x bočnice v E1, 1x bočnice 6m pot",
+      "published": "2026-10-13",
+      "signed": "2026-10-02",
+      "valueCzk": 387346,
+      "valueVatCzk": 387346,
+      "valueNoVatCzk": 320120.66,
+      "counterparties": [
+        {
+          "name": "TKF, spol. s r.o.",
+          "ico": "25132644",
+          "box": "7hz7ghr"
+        }
+      ],
+      "counterparty": "TKF, spol. s r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39912793",
+      "idContract": "37533277",
+      "url": "https://smlouvy.gov.cz/smlouva/39912793",
+      "subject": "Objednáváme u vás včetně předtiskové přípravy a dopravy, cena – bez DPH (s DPH): \n\n- 2x Rapid Extréme 4x8m v E1 bílá, potisk všech límců, příslušenství – 91 668,- (110 918,30)\n- 1x Rapid Extréme SET S2 4x6m v E1 bílá, 3x bočnice v E1, 1x bočnice 6m pot",
+      "published": "2026-10-13",
+      "signed": "2026-10-02",
+      "valueCzk": 387346,
+      "valueVatCzk": 387346,
+      "valueNoVatCzk": 320120.66,
+      "counterparties": [
+        {
+          "name": "TKF, spol. s r.o.",
+          "ico": "25132644",
+          "box": "7hz7ghr"
+        }
+      ],
+      "counterparty": "TKF, spol. s r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39909365",
+      "idContract": "37530037",
+      "url": "https://smlouvy.gov.cz/smlouva/39909365",
+      "subject": "Objednávka - servisní podpora produktu Kenun UTM cluster",
+      "published": "2026-10-13",
+      "signed": "2026-10-13",
+      "valueCzk": 81780.27,
+      "valueVatCzk": 81780.27,
+      "valueNoVatCzk": 67587,
+      "counterparties": [
+        {
+          "name": "KERNUN, a.s.",
+          "ico": "26239701",
+          "box": "ge9grzj"
+        }
+      ],
+      "counterparty": "KERNUN, a.s.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
       "id": "39882237",
       "idContract": "37504269",
       "url": "https://smlouvy.gov.cz/smlouva/39882237",
@@ -139709,6 +139772,13 @@
       "valuedContracts": 2
     },
     {
+      "name": "KERNUN, a.s.",
+      "ico": "26239701",
+      "contracts": 4,
+      "knownValueCzk": 1748021.3800000001,
+      "valuedContracts": 4
+    },
+    {
       "name": "Solutia s.r.o.",
       "ico": "27127982",
       "contracts": 6,
@@ -139805,13 +139875,6 @@
       "contracts": 6,
       "knownValueCzk": 1667080,
       "valuedContracts": 6
-    },
-    {
-      "name": "Trusted Network Solutions,a.s.",
-      "ico": "26239701",
-      "contracts": 3,
-      "knownValueCzk": 1666241.11,
-      "valuedContracts": 3
     },
     {
       "name": "EQUITA Consulting s.r.o.",
@@ -140757,6 +140820,13 @@
       "contracts": 1,
       "knownValueCzk": 1020000,
       "valuedContracts": 1
+    },
+    {
+      "name": "TKF, spol. s r.o.",
+      "ico": "25132644",
+      "contracts": 5,
+      "knownValueCzk": 1016591,
+      "valuedContracts": 5
     },
     {
       "name": "GUILD PRINT, s.r.o.",
@@ -143977,13 +144047,6 @@
       "contracts": 1,
       "knownValueCzk": 242000,
       "valuedContracts": 1
-    },
-    {
-      "name": "TKF, spol. s r.o.",
-      "ico": "25132644",
-      "contracts": 3,
-      "knownValueCzk": 241899,
-      "valuedContracts": 3
     },
     {
       "name": "Novit s.r.o.",
@@ -148677,17 +148740,17 @@
     }
   ],
   "meta": {
-    "total": 6525,
+    "total": 6528,
     "complete": true,
     "historyComplete": true,
     "scope": "full-history",
     "dateFrom": "2007-05-09",
     "dateTo": "2026-10-30",
     "dateLabel": "celá historie Registru smluv",
-    "knownValueCzk": 6877117406.269996,
-    "valuedContracts": 5761,
+    "knownValueCzk": 6877973878.539996,
+    "valuedContracts": 5764,
     "partners": 1682,
-    "updated": "2026-10-12T12:02:39.367Z",
+    "updated": "2026-10-13T11:49:20.016Z",
     "source": "https://data.smlouvy.gov.cz/index.xml",
     "method": "official-live-search-daily-overlap",
     "dumps": 124,

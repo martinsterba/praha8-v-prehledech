@@ -1,18 +1,18 @@
 {
   "schema": 2,
-  "updated": "2026-10-12T12:02:39.367Z",
+  "updated": "2026-10-13T11:49:20.016Z",
   "source": "https://smlouvy.gov.cz/vyhledavani",
   "method": "official-live-search-daily-overlap",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7437,
-    "knownValueCzk": 5170111808.660001,
+    "totalContracts": 7442,
+    "knownValueCzk": 5170327970.660001,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
-        "current": 6525
+        "current": 6528
       },
       "note": "Denní kontrola používá živé vyhledávání Registru smluv v okně 5 dní; historický základ se při denním běhu nestahuje."
     }
@@ -52189,12 +52189,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Materska-skola-Praha-8-Libcicka-6.html",
       "website": "http://www.mslibcicka.cz/",
-      "total": 37,
-      "partners": 23,
-      "knownValueCzk": 3929097.64,
-      "valuedContracts": 35,
+      "total": 40,
+      "partners": 25,
+      "knownValueCzk": 4145259.64,
+      "valuedContracts": 38,
       "dateFrom": "2017-09-19",
-      "dateTo": "2026-06-29",
+      "dateTo": "2026-07-22",
       "partnerList": [
         {
           "name": "Jan Berger",
@@ -52281,6 +52281,13 @@
           "valuedContracts": 1
         },
         {
+          "name": "Radka Šťastná - Pl a ve c k á šk o l a V O D N Í K",
+          "ico": "67902847",
+          "contracts": 1,
+          "knownValueCzk": 95760,
+          "valuedContracts": 1
+        },
+        {
           "name": "Michal Kašpárek",
           "ico": "76283020",
           "contracts": 1,
@@ -52316,10 +52323,24 @@
           "valuedContracts": 1
         },
         {
+          "name": "Jindřich Rydval",
+          "ico": "64906132",
+          "contracts": 2,
+          "knownValueCzk": 60500,
+          "valuedContracts": 1
+        },
+        {
           "name": "MIMATRONIC spol. s r.o.",
           "ico": "61855251",
           "contracts": 1,
           "knownValueCzk": 59907.1,
+          "valuedContracts": 1
+        },
+        {
+          "name": "CLARINO, s.r.o.",
+          "ico": "48119083",
+          "contracts": 1,
+          "knownValueCzk": 59902,
           "valuedContracts": 1
         },
         {
@@ -52344,13 +52365,6 @@
           "valuedContracts": 1
         },
         {
-          "name": "Jindřich Rydval",
-          "ico": "64906132",
-          "contracts": 1,
-          "knownValueCzk": 0,
-          "valuedContracts": 0
-        },
-        {
           "name": "MultiSport Benefit, s.r.o.",
           "ico": "24715298",
           "contracts": 1,
@@ -52359,6 +52373,69 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39913081",
+          "idContract": "37533549",
+          "url": "https://smlouvy.gov.cz/smlouva/39913081",
+          "subject": "Předplavecká výuka plavání dětí.",
+          "published": "2026-10-13",
+          "signed": "2026-05-29",
+          "valueCzk": 95760,
+          "valueVatCzk": 95760,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "Radka Šťastná - Pl a ve c k á šk o l a V O D N Í K",
+              "ico": "67902847",
+              "box": ""
+            }
+          ],
+          "counterparty": "Radka Šťastná - Pl a ve c k á šk o l a V O D N Í K",
+          "publisher": "Mateřská škola, Praha 8, Libčická 6",
+          "publisherIco": "70919721"
+        },
+        {
+          "id": "39913613",
+          "idContract": "37534057",
+          "url": "https://smlouvy.gov.cz/smlouva/39913613",
+          "subject": "generální úklid mš",
+          "published": "2026-10-13",
+          "signed": "2026-04-16",
+          "valueCzk": 59902,
+          "valueVatCzk": null,
+          "valueNoVatCzk": 59902,
+          "counterparties": [
+            {
+              "name": "CLARINO, s.r.o.",
+              "ico": "48119083",
+              "box": "6fav2b3"
+            }
+          ],
+          "counterparty": "CLARINO, s.r.o.",
+          "publisher": "Mateřská škola, Praha 8, Libčická 6",
+          "publisherIco": "70919721"
+        },
+        {
+          "id": "39913289",
+          "idContract": "37533753",
+          "url": "https://smlouvy.gov.cz/smlouva/39913289",
+          "subject": "opravy a rekonstrukce zahradních prvků",
+          "published": "2026-10-13",
+          "signed": "2026-07-22",
+          "valueCzk": 60500,
+          "valueVatCzk": 60500,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "Jindřich Rydval",
+              "ico": "64906132",
+              "box": ""
+            }
+          ],
+          "counterparty": "Jindřich Rydval",
+          "publisher": "Mateřská škola, Praha 8, Libčická 6",
+          "publisherIco": "70919721"
+        },
         {
           "entityIco": "70919721",
           "entityName": "Mateřská škola, Praha 8, Libčická 6",
@@ -60831,7 +60908,7 @@
           "valuedContracts": 22
         },
         {
-          "name": "ABCD Studio, s.r.o.",
+          "name": "ABCD STUDIO, s.r.o.",
           "ico": "22794107",
           "contracts": 63,
           "knownValueCzk": 55519323,
@@ -63283,6 +63360,69 @@
       ],
       "contracts": [
         {
+          "id": "39914969",
+          "idContract": "35115649",
+          "url": "https://smlouvy.gov.cz/smlouva/39914969",
+          "subject": "Rekonstrukce elektroinstalace I. etapa ZŠ Hovorčovická, Hovorčovická 11/1281, 182 00 Praha 8 - Kobylisy",
+          "published": "2026-10-13",
+          "signed": "2026-03-30",
+          "valueCzk": 10358482.77,
+          "valueVatCzk": 10358482.77,
+          "valueNoVatCzk": 8560729.56,
+          "counterparties": [
+            {
+              "name": "Omega facilities s.r.o.",
+              "ico": "05292921",
+              "box": ""
+            }
+          ],
+          "counterparty": "Omega facilities s.r.o.",
+          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
+          "publisherIco": "00639524"
+        },
+        {
+          "id": "39898345",
+          "idContract": "36713338",
+          "url": "https://smlouvy.gov.cz/smlouva/39898345",
+          "subject": "Zhotovení projektové dokumentace - Rekonstrukce el. rozvodů + rozvodových skříní KD Ládví, Burešova 1661/2, Praha 8 - Kobylisy",
+          "published": "2026-10-12",
+          "signed": "2026-08-10",
+          "valueCzk": 287980,
+          "valueVatCzk": 287980,
+          "valueNoVatCzk": 238000,
+          "counterparties": [
+            {
+              "name": "ABCD STUDIO, s.r.o.",
+              "ico": "22794107",
+              "box": ""
+            }
+          ],
+          "counterparty": "ABCD STUDIO, s.r.o.",
+          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
+          "publisherIco": "00639524"
+        },
+        {
+          "id": "39898253",
+          "idContract": "36024868",
+          "url": "https://smlouvy.gov.cz/smlouva/39898253",
+          "subject": "Zhotovení projektové dokumentace - Přístřešek pro dětské dopravní prostředky ZŠ Libčická, Libčická 658 , 181 00 , Praha 8",
+          "published": "2026-10-12",
+          "signed": "2026-06-11",
+          "valueCzk": 285560,
+          "valueVatCzk": 285560,
+          "valueNoVatCzk": 236000,
+          "counterparties": [
+            {
+              "name": "ABCD STUDIO, s.r.o.",
+              "ico": "22794107",
+              "box": ""
+            }
+          ],
+          "counterparty": "ABCD STUDIO, s.r.o.",
+          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
+          "publisherIco": "00639524"
+        },
+        {
           "id": "39869697",
           "idContract": "37491957",
           "url": "https://smlouvy.gov.cz/smlouva/39869697",
@@ -64260,30 +64400,6 @@
             }
           ],
           "counterparty": "CZ/SK Brunies z. s.",
-          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
-          "publisherIco": "00639524"
-        },
-        {
-          "entityIco": "00639524",
-          "entityName": "Servisní středisko pro správu svěřeného majetku MČ Praha 8",
-          "entityKind": "organization",
-          "id": "39060410",
-          "idContract": "36713338",
-          "url": "https://smlouvy.gov.cz/smlouva/39060410",
-          "subject": "Zhotovení projektové dokumentace - Rekonstrukce el. rozvodů + rozvodových skříní KD Ládví, Burešova 1661/2, Praha 8 - Kobylisy",
-          "published": "2026-08-10",
-          "signed": "2026-08-10",
-          "valueCzk": 287980,
-          "valueVatCzk": 287980,
-          "valueNoVatCzk": 238000,
-          "counterparties": [
-            {
-              "name": "ABCD STUDIO, s.r.o.",
-              "ico": "22794107",
-              "box": ""
-            }
-          ],
-          "counterparty": "ABCD STUDIO, s.r.o.",
           "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
           "publisherIco": "00639524"
         },
@@ -65483,30 +65599,6 @@
             }
           ],
           "counterparty": "AVK STAV s.r.o.",
-          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
-          "publisherIco": "00639524"
-        },
-        {
-          "entityIco": "00639524",
-          "entityName": "Servisní středisko pro správu svěřeného majetku MČ Praha 8",
-          "entityKind": "organization",
-          "id": "38343943",
-          "idContract": "36024868",
-          "url": "https://smlouvy.gov.cz/smlouva/38343943",
-          "subject": "Zhotovení projektové dokumentace - Přístřešek pro dětské dopravní prostředky ZŠ Libčická, Libčická 658 , 181 00 , Praha 8",
-          "published": "2026-06-11",
-          "signed": "2026-06-11",
-          "valueCzk": 285560,
-          "valueVatCzk": 285560,
-          "valueNoVatCzk": 236000,
-          "counterparties": [
-            {
-              "name": "ABCD STUDIO, s.r.o.",
-              "ico": "22794107",
-              "box": ""
-            }
-          ],
-          "counterparty": "ABCD STUDIO, s.r.o.",
           "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
           "publisherIco": "00639524"
         },
@@ -67133,30 +67225,6 @@
             }
           ],
           "counterparty": "Péče o zelen s.r.o.",
-          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
-          "publisherIco": "00639524"
-        },
-        {
-          "entityIco": "00639524",
-          "entityName": "Servisní středisko pro správu svěřeného majetku MČ Praha 8",
-          "entityKind": "organization",
-          "id": "37397001",
-          "idContract": "35115649",
-          "url": "https://smlouvy.gov.cz/smlouva/37397001",
-          "subject": "Rekonstrukce elektroinstalace I. etapa ZŠ Hovorčovická, Hovorčovická 11/1281, 182 00 Praha 8 - Kobylisy",
-          "published": "2026-03-31",
-          "signed": "2026-03-30",
-          "valueCzk": 10358482.77,
-          "valueVatCzk": 10358482.77,
-          "valueNoVatCzk": 8560729.56,
-          "counterparties": [
-            {
-              "name": "Omega facilities s.r.o.",
-              "ico": "05292921",
-              "box": ""
-            }
-          ],
-          "counterparty": "Omega facilities s.r.o.",
           "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
           "publisherIco": "00639524"
         },
@@ -111649,12 +111717,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Na-Slovance-Praha-8-Bedrichovska-1.html",
       "website": "http://www.zsnaslovance.cz/",
-      "total": 204,
+      "total": 206,
       "partners": 88,
       "knownValueCzk": 32861701.17,
       "valuedContracts": 110,
       "dateFrom": "2016-11-14",
-      "dateTo": "2026-10-07",
+      "dateTo": "2026-10-09",
       "partnerList": [
         {
           "name": "Firma s.r.o.",
@@ -111813,7 +111881,7 @@
         {
           "name": "SoftwareONE Czech Republic s.r.o.",
           "ico": "24207519",
-          "contracts": 5,
+          "contracts": 6,
           "knownValueCzk": 192813.5,
           "valuedContracts": 2
         },
@@ -112014,6 +112082,13 @@
           "valuedContracts": 0
         },
         {
+          "name": "CK2 s.r.o.",
+          "ico": "07776241",
+          "contracts": 2,
+          "knownValueCzk": 0,
+          "valuedContracts": 0
+        },
+        {
           "name": "DSD PROFI s.r.o.",
           "ico": "49196448",
           "contracts": 2,
@@ -112079,13 +112154,6 @@
         {
           "name": "CK KALOUSEK & WILLIAMS a.s.",
           "ico": "06293514",
-          "contracts": 1,
-          "knownValueCzk": 0,
-          "valuedContracts": 0
-        },
-        {
-          "name": "CK2 s.r.o.",
-          "ico": "07776241",
           "contracts": 1,
           "knownValueCzk": 0,
           "valuedContracts": 0
@@ -112274,6 +112342,48 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39905317",
+          "idContract": "37526149",
+          "url": "https://smlouvy.gov.cz/smlouva/39905317",
+          "subject": "Cestovní smlouva č. 5620041",
+          "published": "2026-10-13",
+          "signed": "2026-10-09",
+          "valueCzk": null,
+          "valueVatCzk": null,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "CK2 s.r.o.",
+              "ico": "07776241",
+              "box": "evcskns"
+            }
+          ],
+          "counterparty": "CK2 s.r.o.",
+          "publisher": "Základní škola a mateřská škola Na Slovance, Praha 8, Bedřichovská 1",
+          "publisherIco": "60433256"
+        },
+        {
+          "id": "39905153",
+          "idContract": "37525989",
+          "url": "https://smlouvy.gov.cz/smlouva/39905153",
+          "subject": "Prodloužení licence Microsoft - 1.10.2026-30.9.2027",
+          "published": "2026-10-13",
+          "signed": "2026-10-01",
+          "valueCzk": null,
+          "valueVatCzk": null,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "SoftwareONE Czech Republic s.r.o.",
+              "ico": "24207519",
+              "box": ""
+            }
+          ],
+          "counterparty": "SoftwareONE Czech Republic s.r.o.",
+          "publisher": "Základní škola a mateřská škola Na Slovance, Praha 8, Bedřichovská 1",
+          "publisherIco": "60433256"
+        },
         {
           "id": "39851673",
           "idContract": "37474669",
