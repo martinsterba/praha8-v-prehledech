@@ -1,6 +1,27 @@
 {
   "contracts": [
     {
+      "id": "39930153",
+      "idContract": "37549937",
+      "url": "https://smlouvy.gov.cz/smlouva/39930153",
+      "subject": "Smlouva o zřízení věcného břemena",
+      "published": "2026-10-14",
+      "signed": "2026-09-03",
+      "valueCzk": 229464,
+      "valueVatCzk": 229464,
+      "valueNoVatCzk": 189640,
+      "counterparties": [
+        {
+          "name": "PREdistribuce, a.s.",
+          "ico": "27376516",
+          "box": "vgsfsr3"
+        }
+      ],
+      "counterparty": "PREdistribuce, a.s.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
       "id": "39912797",
       "idContract": "37533281",
       "url": "https://smlouvy.gov.cz/smlouva/39912797",
@@ -137917,6 +137938,13 @@
       "valuedContracts": 22
     },
     {
+      "name": "PREdistribuce, a.s.",
+      "ico": "27376516",
+      "contracts": 48,
+      "knownValueCzk": 6842738.35,
+      "valuedContracts": 27
+    },
+    {
       "name": "PIREXT PRO s.r.o.",
       "ico": "02692333",
       "contracts": 3,
@@ -137936,13 +137964,6 @@
       "contracts": 18,
       "knownValueCzk": 6697550.49,
       "valuedContracts": 18
-    },
-    {
-      "name": "PREdistribuce, a.s.",
-      "ico": "27376516",
-      "contracts": 47,
-      "knownValueCzk": 6613274.35,
-      "valuedContracts": 26
     },
     {
       "name": "Tělovýchovná jednota Slovan Bohnice - Praha 8 z.s.",
@@ -148740,17 +148761,17 @@
     }
   ],
   "meta": {
-    "total": 6528,
+    "total": 6529,
     "complete": true,
     "historyComplete": true,
     "scope": "full-history",
     "dateFrom": "2007-05-09",
     "dateTo": "2026-10-30",
     "dateLabel": "celá historie Registru smluv",
-    "knownValueCzk": 6877973878.539996,
-    "valuedContracts": 5764,
+    "knownValueCzk": 6878203342.539996,
+    "valuedContracts": 5765,
     "partners": 1682,
-    "updated": "2026-10-13T11:49:20.016Z",
+    "updated": "2026-10-14T09:36:15.793Z",
     "source": "https://data.smlouvy.gov.cz/index.xml",
     "method": "official-live-search-daily-overlap",
     "dumps": 124,

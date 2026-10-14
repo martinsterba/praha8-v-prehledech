@@ -1,18 +1,18 @@
 {
   "schema": 2,
-  "updated": "2026-10-13T11:49:20.016Z",
+  "updated": "2026-10-14T09:36:15.793Z",
   "source": "https://smlouvy.gov.cz/vyhledavani",
   "method": "official-live-search-daily-overlap",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7442,
-    "knownValueCzk": 5170327970.660001,
+    "totalContracts": 7444,
+    "knownValueCzk": 5171104506.4800005,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
-        "current": 6528
+        "current": 6529
       },
       "note": "Denní kontrola používá živé vyhledávání Registru smluv v okně 5 dní; historický základ se při denním běhu nestahuje."
     }
@@ -60823,10 +60823,10 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Servisni-stredisko-pro-spravu-svereneho-majetku-MC-Praha-8-prispevkova-organizace.html",
       "website": "https://www.praha8.cz/servisni-stredisko-pro-spravu-svereneho-majetku-mc-praha-8-prispevkova-organizace.html",
-      "total": 1793,
+      "total": 1794,
       "partners": 361,
-      "knownValueCzk": 2996034195.500001,
-      "valuedContracts": 1716,
+      "knownValueCzk": 2996562411.3200006,
+      "valuedContracts": 1717,
       "dateFrom": "1991-07-15",
       "dateTo": "2026-10-08",
       "partnerList": [
@@ -60875,9 +60875,9 @@
         {
           "name": "Omega facilities s.r.o.",
           "ico": "05292921",
-          "contracts": 29,
-          "knownValueCzk": 106741475.67,
-          "valuedContracts": 28
+          "contracts": 30,
+          "knownValueCzk": 107269691.49,
+          "valuedContracts": 29
         },
         {
           "name": "WORKER BAU s.r.o.",
@@ -63374,6 +63374,27 @@
               "name": "Omega facilities s.r.o.",
               "ico": "05292921",
               "box": ""
+            }
+          ],
+          "counterparty": "Omega facilities s.r.o.",
+          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
+          "publisherIco": "00639524"
+        },
+        {
+          "id": "39917765",
+          "idContract": "37538041",
+          "url": "https://smlouvy.gov.cz/smlouva/39917765",
+          "subject": "Dodatek č. 1 ke smlouvě o dílo Rekonstrukce elektroinstalace 1.etapa ZŠ Hovorčovická, Hovorčovická 11/1281, 182 00 Praha 8 - Kobylisy",
+          "published": "2026-10-13",
+          "signed": "2026-10-07",
+          "valueCzk": 528215.82,
+          "valueVatCzk": 528215.82,
+          "valueNoVatCzk": 436542,
+          "counterparties": [
+            {
+              "name": "Omega facilities s.r.o.",
+              "ico": "05292921",
+              "box": "pxizh6t"
             }
           ],
           "counterparty": "Omega facilities s.r.o.",
@@ -170649,10 +170670,10 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-Praha-8-Hovorcovicka-11.html",
       "website": "http://www.zshovorcovicka.cz/",
-      "total": 328,
-      "partners": 153,
-      "knownValueCzk": 45690153.519999996,
-      "valuedContracts": 253,
+      "total": 329,
+      "partners": 154,
+      "knownValueCzk": 45938473.519999996,
+      "valuedContracts": 254,
       "dateFrom": "2016-12-20",
       "dateTo": "2026-10-06",
       "partnerList": [
@@ -170942,6 +170963,13 @@
           "contracts": 2,
           "knownValueCzk": 283350,
           "valuedContracts": 2
+        },
+        {
+          "name": "Sirena Services s.r.o.",
+          "ico": "07319371",
+          "contracts": 1,
+          "knownValueCzk": 248320,
+          "valuedContracts": 1
         },
         {
           "name": "FAST ČR, a.s.",
@@ -171729,6 +171757,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39927185",
+          "idContract": "37547081",
+          "url": "https://smlouvy.gov.cz/smlouva/39927185",
+          "subject": "Smlouva o poskytnutí ubytovacích a stravovacích služeb - Hotel Prostřední mlýn 04/2027",
+          "published": "2026-10-14",
+          "signed": "2026-10-06",
+          "valueCzk": 248320,
+          "valueVatCzk": 248320,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "Sirena Services s.r.o.",
+              "ico": "07319371",
+              "box": ""
+            }
+          ],
+          "counterparty": "Sirena Services s.r.o.",
+          "publisher": "Základní škola, Praha 8, Hovorčovická 11",
+          "publisherIco": "60433299"
+        },
         {
           "id": "39835029",
           "idContract": "37458937",
