@@ -1,15 +1,15 @@
 {
-  "updated": "2026-10-14T09:36:15.793Z",
+  "updated": "2026-10-15T09:13:15.042Z",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7444,
-    "knownValueCzk": 5171104506.4800005,
+    "totalContracts": 7451,
+    "knownValueCzk": 5176807901.88,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
-        "current": 6529
+        "current": 6532
       },
       "note": "Denní kontrola používá živé vyhledávání Registru smluv v okně 5 dní; historický základ se při denním běhu nestahuje."
     }
@@ -40,12 +40,12 @@
       "ownershipShare": "100 %",
       "source": "https://www.praha8.cz/Osma-sprava-majetku-a-sluzeb-a-s",
       "website": "https://www.osms.cz/",
-      "total": 1494,
-      "partners": 234,
-      "knownValueCzk": 1445569519.7200005,
-      "valuedContracts": 1210,
+      "total": 1499,
+      "partners": 235,
+      "knownValueCzk": 1450574065.1200004,
+      "valuedContracts": 1212,
       "dateFrom": "1999-09-14",
-      "dateTo": "2026-09-30"
+      "dateTo": "2026-10-14"
     },
     {
       "name": "Správa tepelného hospodářství MČ Praha 8 s.r.o.",
@@ -440,12 +440,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Petra-Strozziho-Praha-8-Za-Invalidovnou-3.html",
       "website": "http://www.zs-strozziho.cz/",
-      "total": 233,
+      "total": 234,
       "partners": 80,
-      "knownValueCzk": 39781093.76,
-      "valuedContracts": 218,
+      "knownValueCzk": 40160143.76,
+      "valuedContracts": 219,
       "dateFrom": "2016-10-26",
-      "dateTo": "2026-09-24"
+      "dateTo": "2026-10-14"
     },
     {
       "name": "Základní škola a mateřská škola Ústavní, Praha 8, Hlivická 1",
@@ -520,12 +520,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-Bohumila-Hrabala-Praha-8-Zenklova-52.html",
       "website": "http://www.zs-bhrabala.cz/",
-      "total": 377,
+      "total": 378,
       "partners": 139,
-      "knownValueCzk": 51293832.580000006,
-      "valuedContracts": 269,
+      "knownValueCzk": 51613632.580000006,
+      "valuedContracts": 270,
       "dateFrom": "2014-10-02",
-      "dateTo": "2026-10-12"
+      "dateTo": "2026-10-15"
     },
     {
       "name": "Základní škola Mazurská, Praha 8, Svídnická 1a",
@@ -657,6 +657,6 @@
     }
   ],
   "p8": {
-    "total": 6529
+    "total": 6532
   }
 }

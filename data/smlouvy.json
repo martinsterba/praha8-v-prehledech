@@ -1,6 +1,69 @@
 {
   "contracts": [
     {
+      "id": "39946925",
+      "idContract": "37566005",
+      "url": "https://smlouvy.gov.cz/smlouva/39946925",
+      "subject": "Dodávka a montáž systému klimatizace Samsung Wind Free v objektu U Meteoru 6 - místnost vedle čekárny.",
+      "published": "2026-10-15",
+      "signed": "2026-10-13",
+      "valueCzk": 100347.72,
+      "valueVatCzk": 100347.72,
+      "valueNoVatCzk": 82932,
+      "counterparties": [
+        {
+          "name": "KLIFA s.r.o.",
+          "ico": "24792683",
+          "box": "757xuup"
+        }
+      ],
+      "counterparty": "KLIFA s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39946905",
+      "idContract": "37565985",
+      "url": "https://smlouvy.gov.cz/smlouva/39946905",
+      "subject": "Výměna podstropní klimatizace LG v objektu U Meteoru 6 - místnost čekárny.",
+      "published": "2026-10-15",
+      "signed": "2026-10-13",
+      "valueCzk": 113147.1,
+      "valueVatCzk": 113147.1,
+      "valueNoVatCzk": 93510,
+      "counterparties": [
+        {
+          "name": "KLIFA s.r.o.",
+          "ico": "24792683",
+          "box": "757xuup"
+        }
+      ],
+      "counterparty": "KLIFA s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39947989",
+      "idContract": "37567013",
+      "url": "https://smlouvy.gov.cz/smlouva/39947989",
+      "subject": "Aktualizace telekomunikačních zařízení v rámci ÚMČ P8.",
+      "published": "2026-10-15",
+      "signed": "2026-10-07",
+      "valueCzk": 402431.48,
+      "valueVatCzk": 402431.48,
+      "valueNoVatCzk": 332588,
+      "counterparties": [
+        {
+          "name": "LaMa Operations s.r.o.",
+          "ico": "62577565",
+          "box": "evy5qb2"
+        }
+      ],
+      "counterparty": "LaMa Operations s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
       "id": "39930153",
       "idContract": "37549937",
       "url": "https://smlouvy.gov.cz/smlouva/39930153",
@@ -137595,6 +137658,13 @@
       "valuedContracts": 45
     },
     {
+      "name": "LaMa Operations s.r.o.",
+      "ico": "62577565",
+      "contracts": 26,
+      "knownValueCzk": 10840938.780000001,
+      "valuedContracts": 25
+    },
+    {
       "name": "Wertstav s.r.o.",
       "ico": "09415840",
       "contracts": 80,
@@ -137614,13 +137684,6 @@
       "contracts": 24,
       "knownValueCzk": 10463825,
       "valuedContracts": 22
-    },
-    {
-      "name": "LaMa Operations s.r.o.",
-      "ico": "62577565",
-      "contracts": 25,
-      "knownValueCzk": 10438507.3,
-      "valuedContracts": 24
     },
     {
       "name": "Softballový klub Joudrs Praha",
@@ -140801,6 +140864,13 @@
       "valuedContracts": 11
     },
     {
+      "name": "KLIFA s.r.o.",
+      "ico": "24792683",
+      "contracts": 6,
+      "knownValueCzk": 1050000.75,
+      "valuedContracts": 6
+    },
+    {
       "name": "Pavel Jindrák",
       "ico": "64921581",
       "contracts": 5,
@@ -141289,13 +141359,6 @@
       "contracts": 1,
       "knownValueCzk": 838380,
       "valuedContracts": 1
-    },
-    {
-      "name": "KLIFA s.r.o.",
-      "ico": "24792683",
-      "contracts": 4,
-      "knownValueCzk": 836505.9299999999,
-      "valuedContracts": 4
     },
     {
       "name": "TOMÁŠ KUČERA, 1970",
@@ -148761,17 +148824,17 @@
     }
   ],
   "meta": {
-    "total": 6529,
+    "total": 6532,
     "complete": true,
     "historyComplete": true,
     "scope": "full-history",
     "dateFrom": "2007-05-09",
     "dateTo": "2026-10-30",
     "dateLabel": "celá historie Registru smluv",
-    "knownValueCzk": 6878203342.539996,
-    "valuedContracts": 5765,
+    "knownValueCzk": 6878819268.839995,
+    "valuedContracts": 5768,
     "partners": 1682,
-    "updated": "2026-10-14T09:36:15.793Z",
+    "updated": "2026-10-15T09:13:15.042Z",
     "source": "https://data.smlouvy.gov.cz/index.xml",
     "method": "official-live-search-daily-overlap",
     "dumps": 124,

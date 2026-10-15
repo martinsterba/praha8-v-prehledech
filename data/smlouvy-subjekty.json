@@ -1,18 +1,18 @@
 {
   "schema": 2,
-  "updated": "2026-10-14T09:36:15.793Z",
+  "updated": "2026-10-15T09:13:15.042Z",
   "source": "https://smlouvy.gov.cz/vyhledavani",
   "method": "official-live-search-daily-overlap",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7444,
-    "knownValueCzk": 5171104506.4800005,
+    "totalContracts": 7451,
+    "knownValueCzk": 5176807901.88,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
-        "current": 6529
+        "current": 6532
       },
       "note": "Denní kontrola používá živé vyhledávání Registru smluv v okně 5 dní; historický základ se při denním běhu nestahuje."
     }
@@ -412,12 +412,12 @@
       "ownershipShare": "100 %",
       "source": "https://www.praha8.cz/Osma-sprava-majetku-a-sluzeb-a-s",
       "website": "https://www.osms.cz/",
-      "total": 1494,
-      "partners": 234,
-      "knownValueCzk": 1445569519.7200005,
-      "valuedContracts": 1210,
+      "total": 1499,
+      "partners": 235,
+      "knownValueCzk": 1450574065.1200004,
+      "valuedContracts": 1212,
       "dateFrom": "1999-09-14",
-      "dateTo": "2026-09-30",
+      "dateTo": "2026-10-14",
       "partnerList": [
         {
           "name": "Wertstav s.r.o.",
@@ -450,9 +450,9 @@
         {
           "name": "BAU Pro CZ s.r.o.",
           "ico": "03772543",
-          "contracts": 80,
-          "knownValueCzk": 51344208.81,
-          "valuedContracts": 73
+          "contracts": 81,
+          "knownValueCzk": 55790262.330000006,
+          "valuedContracts": 74
         },
         {
           "name": "DEKO MONT, s.r.o.",
@@ -464,9 +464,9 @@
         {
           "name": "JOVIS STAVBY s.r.o.",
           "ico": "01390473",
-          "contracts": 31,
-          "knownValueCzk": 34374771.39,
-          "valuedContracts": 29
+          "contracts": 32,
+          "knownValueCzk": 34933263.269999996,
+          "valuedContracts": 30
         },
         {
           "name": "HONALSTAV s.r.o.",
@@ -478,7 +478,7 @@
         {
           "name": "KVS - Projekt s.r.o.",
           "ico": "26476568",
-          "contracts": 129,
+          "contracts": 130,
           "knownValueCzk": 28479762.9,
           "valuedContracts": 46
         },
@@ -723,7 +723,7 @@
         {
           "name": "AXON CONSULTING s.r.o.",
           "ico": "28906926",
-          "contracts": 23,
+          "contracts": 24,
           "knownValueCzk": 4057925.95,
           "valuedContracts": 4
         },
@@ -1946,6 +1946,13 @@
           "valuedContracts": 0
         },
         {
+          "name": "MUDr. Petr Holý",
+          "ico": "68400519",
+          "contracts": 1,
+          "knownValueCzk": 0,
+          "valuedContracts": 0
+        },
+        {
           "name": "Natálie Cibulková",
           "ico": "01416618",
           "contracts": 1,
@@ -2059,6 +2066,111 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39937125",
+          "idContract": "37556493",
+          "url": "https://smlouvy.gov.cz/smlouva/39937125",
+          "subject": "Dohoda o ukončení Smlouvy o nájmu prostoru sloužícího podnikání č. 2021/3061/OSM.DOBCH",
+          "published": "2026-10-14",
+          "signed": "2026-09-28",
+          "valueCzk": null,
+          "valueVatCzk": null,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "MUDr. Petr Holý",
+              "ico": "68400519",
+              "box": ""
+            }
+          ],
+          "counterparty": "MUDr. Petr Holý",
+          "publisher": "Osmá správa majetku a služeb a.s.",
+          "publisherIco": "04650522"
+        },
+        {
+          "id": "39938265",
+          "idContract": "37557581",
+          "url": "https://smlouvy.gov.cz/smlouva/39938265",
+          "subject": "VZMR/20/2026 - Rekonstrukce bytů s bezbariérovou úpravou, Praha 8",
+          "published": "2026-10-14",
+          "signed": "2026-10-14",
+          "valueCzk": 4446053.52,
+          "valueVatCzk": null,
+          "valueNoVatCzk": 4446053.52,
+          "counterparties": [
+            {
+              "name": "BAU Pro CZ s.r.o.",
+              "ico": "03772543",
+              "box": "c73wvvh"
+            }
+          ],
+          "counterparty": "BAU Pro CZ s.r.o.",
+          "publisher": "Osmá správa majetku a služeb a.s.",
+          "publisherIco": "04650522"
+        },
+        {
+          "id": "39934061",
+          "idContract": "37553645",
+          "url": "https://smlouvy.gov.cz/smlouva/39934061",
+          "subject": "Dodatek č. 1 ke smlouvě o dílo č. VZMR/03/2026 - Rekonstrukce objektu BD U Draháně 165/13 - vícepráce a méněpráce",
+          "published": "2026-10-14",
+          "signed": "2026-10-13",
+          "valueCzk": 558491.88,
+          "valueVatCzk": null,
+          "valueNoVatCzk": 558491.88,
+          "counterparties": [
+            {
+              "name": "JOVIS STAVBY s.r.o.",
+              "ico": "01390473",
+              "box": "aqtri7u"
+            }
+          ],
+          "counterparty": "JOVIS STAVBY s.r.o.",
+          "publisher": "Osmá správa majetku a služeb a.s.",
+          "publisherIco": "04650522"
+        },
+        {
+          "id": "39938617",
+          "idContract": "37557905",
+          "url": "https://smlouvy.gov.cz/smlouva/39938617",
+          "subject": "Dílčí objednávka č. 021/2026 k VZMR 023/2025 - Rekonstrukce bytů s bezbariérovou úpravou, Praha 8",
+          "published": "2026-10-14",
+          "signed": "2026-10-14",
+          "valueCzk": null,
+          "valueVatCzk": null,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "KVS - Projekt s.r.o.",
+              "ico": "26476568",
+              "box": "x2dqy9g"
+            }
+          ],
+          "counterparty": "KVS - Projekt s.r.o.",
+          "publisher": "Osmá správa majetku a služeb a.s.",
+          "publisherIco": "04650522"
+        },
+        {
+          "id": "39938581",
+          "idContract": "37557869",
+          "url": "https://smlouvy.gov.cz/smlouva/39938581",
+          "subject": "Dílčí objednávka č. 021/2026 k VZMR 022/2025 - Rekonstrukce bytů s bezbariérovou úpravou, Praha 8",
+          "published": "2026-10-14",
+          "signed": "2026-10-14",
+          "valueCzk": null,
+          "valueVatCzk": null,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "AXON CONSULTING s.r.o.",
+              "ico": "28906926",
+              "box": "483p4dy"
+            }
+          ],
+          "counterparty": "AXON CONSULTING s.r.o.",
+          "publisher": "Osmá správa majetku a služeb a.s.",
+          "publisherIco": "04650522"
+        },
         {
           "id": "39881049",
           "idContract": "37503121",
@@ -117288,19 +117400,19 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Petra-Strozziho-Praha-8-Za-Invalidovnou-3.html",
       "website": "http://www.zs-strozziho.cz/",
-      "total": 233,
+      "total": 234,
       "partners": 80,
-      "knownValueCzk": 39781093.76,
-      "valuedContracts": 218,
+      "knownValueCzk": 40160143.76,
+      "valuedContracts": 219,
       "dateFrom": "2016-10-26",
-      "dateTo": "2026-09-24",
+      "dateTo": "2026-10-14",
       "partnerList": [
         {
           "name": "AVA - agentura volnočasových aktivit pro děti a mládež, s.r.o.",
           "ico": "08552681",
-          "contracts": 18,
-          "knownValueCzk": 3884720,
-          "valuedContracts": 18
+          "contracts": 19,
+          "knownValueCzk": 4263770,
+          "valuedContracts": 19
         },
         {
           "name": "Josef Bláha",
@@ -117857,6 +117969,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39938073",
+          "idContract": "37557397",
+          "url": "https://smlouvy.gov.cz/smlouva/39938073",
+          "subject": "Smlouva o zajištění školy v přírodě",
+          "published": "2026-10-14",
+          "signed": "2026-10-14",
+          "valueCzk": 379050,
+          "valueVatCzk": 379050,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "AVA - agentura volnočasových aktivit pro děti a mládež, s.r.o.",
+              "ico": "08552681",
+              "box": "t6beuyq"
+            }
+          ],
+          "counterparty": "AVA - agentura volnočasových aktivit pro děti a mládež, s.r.o.",
+          "publisher": "Základní škola a mateřská škola Petra Strozziho, Praha 8, Za Invalidovnou 3",
+          "publisherIco": "60461853"
+        },
         {
           "id": "39770785",
           "idContract": "37396441",
@@ -145999,19 +146132,19 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-Bohumila-Hrabala-Praha-8-Zenklova-52.html",
       "website": "http://www.zs-bhrabala.cz/",
-      "total": 377,
+      "total": 378,
       "partners": 139,
-      "knownValueCzk": 51293832.580000006,
-      "valuedContracts": 269,
+      "knownValueCzk": 51613632.580000006,
+      "valuedContracts": 270,
       "dateFrom": "2014-10-02",
-      "dateTo": "2026-10-12",
+      "dateTo": "2026-10-15",
       "partnerList": [
         {
           "name": "AVA - agentura volnočasových aktivit pro děti a mládež, s.r.o.",
           "ico": "08552681",
-          "contracts": 30,
-          "knownValueCzk": 6665086,
-          "valuedContracts": 29
+          "contracts": 31,
+          "knownValueCzk": 6984886,
+          "valuedContracts": 30
         },
         {
           "name": "Af Office, s.r.o.",
@@ -146981,6 +147114,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39945313",
+          "idContract": "37564461",
+          "url": "https://smlouvy.gov.cz/smlouva/39945313",
+          "subject": "zajištění školy v přírodě s plaveckým výcvikem",
+          "published": "2026-10-15",
+          "signed": "2026-10-15",
+          "valueCzk": 319800,
+          "valueVatCzk": 319800,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "AVA - agentura volnočasových aktivit pro děti a mládež, s.r.o.",
+              "ico": "08552681",
+              "box": "t6beuyq"
+            }
+          ],
+          "counterparty": "AVA - agentura volnočasových aktivit pro děti a mládež, s.r.o.",
+          "publisher": "Základní škola Bohumila Hrabala, Praha 8, Zenklova 52",
+          "publisherIco": "63113961"
+        },
         {
           "id": "39888457",
           "idContract": "37510189",
