@@ -96,7 +96,13 @@
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Fiser-Michal.html",
     "isClubChair": false,
-    "magistrateRoles": [],
+    "magistrateRoles": [
+      {
+        "role": "člen",
+        "body": "Komise pro elektromobilitu",
+        "url": "https://praha.eu/komise_rady_hmp#/detail/100221?periodId=-36525&year=2026&showAll=true"
+      }
+    ],
     "hmpCompanyRoles": [
       {
         "role": "člen představenstva",
@@ -212,7 +218,18 @@
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Jedlicka-Martin.html",
     "isClubChair": true,
-    "magistrateRoles": [],
+    "magistrateRoles": [
+      {
+        "role": "člen",
+        "body": "Komise pro parkování a silniční dopravu",
+        "url": "https://praha.eu/komise_rady_hmp#/detail/-38705?periodId=-36525&year=2026&showAll=true"
+      },
+      {
+        "role": "člen",
+        "body": "Komise pro vodní dopravu",
+        "url": "https://praha.eu/komise_rady_hmp#/detail/100044?periodId=-36525&year=2026&showAll=true"
+      }
+    ],
     "hmpCompanyRoles": [
       {
         "role": "místopředseda dozorčí rada",
@@ -231,7 +248,13 @@
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Jiran-Jakub.html",
     "isClubChair": false,
-    "magistrateRoles": [],
+    "magistrateRoles": [
+      {
+        "role": "člen",
+        "body": "Komise pro parkování a silniční dopravu",
+        "url": "https://praha.eu/komise_rady_hmp#/detail/-38705?periodId=-36525&year=2026&showAll=true"
+      }
+    ],
     "hmpCompanyRoles": [
       {
         "role": "místopředseda dozorčí rady",
@@ -428,6 +451,11 @@
         "role": "člen",
         "body": "Komise pro nový územní plán",
         "url": "https://praha.eu/komise_rady_hmp"
+      },
+      {
+        "role": "člen",
+        "body": "Komise pro Fond spoluúčasti investorů na rozvoji území",
+        "url": "https://praha.eu/komise_rady_hmp#/detail/-38065?periodId=-36525&year=2026&showAll=true"
       }
     ],
     "hmpCompanyRoles": [
@@ -554,6 +582,11 @@
         "role": "člen",
         "body": "Povodňová komise hl. m. Prahy",
         "url": "https://praha.eu"
+      },
+      {
+        "role": "člen",
+        "body": "Komise pro oblast cestovního ruchu",
+        "url": "https://praha.eu/komise_rady_hmp#/detail/-38579?periodId=-36525&year=2026&showAll=true"
       }
     ],
     "hmpCompanyRoles": [],
@@ -622,6 +655,11 @@
         "role": "člen",
         "body": "Výbor pro územní rozvoj",
         "url": "https://praha.eu/vybory"
+      },
+      {
+        "role": "člen",
+        "body": "Komise pro pěší a bezbariérovost",
+        "url": "https://praha.eu/komise_rady_hmp#/detail/-38631?periodId=-36525&year=2026&showAll=true"
       }
     ],
     "hmpCompanyRoles": [],
@@ -674,7 +712,13 @@
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Storek-Jan.html",
     "isClubChair": false,
-    "magistrateRoles": [],
+    "magistrateRoles": [
+      {
+        "role": "člen",
+        "body": "Komise pro sport",
+        "url": "https://praha.eu/komise_rady_hmp#/detail/-38207?periodId=-36525&year=2026&showAll=true"
+      }
+    ],
     "hmpCompanyRoles": [],
     "otherRoles": []
   },
