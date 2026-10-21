@@ -1,6 +1,216 @@
 {
   "contracts": [
     {
+      "id": "40026685",
+      "idContract": "37642533",
+      "url": "https://smlouvy.gov.cz/smlouva/40026685",
+      "subject": "Vybudování zpevněné pochozí plochy v ul. Feřtekova",
+      "published": "2026-10-21",
+      "signed": "2026-10-21",
+      "valueCzk": 234591.17,
+      "valueVatCzk": 234591.17,
+      "valueNoVatCzk": 193877,
+      "counterparties": [
+        {
+          "name": "PILUM s.r.o.",
+          "ico": "27385396",
+          "box": "3zxtdb5"
+        }
+      ],
+      "counterparty": "PILUM s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "40026661",
+      "idContract": "37642509",
+      "url": "https://smlouvy.gov.cz/smlouva/40026661",
+      "subject": "Objednáváme u Vás zkrácení habrů u pomníku Barikádníků. \n\nTermín dokončení: listopad 2026",
+      "published": "2026-10-21",
+      "signed": "2026-10-21",
+      "valueCzk": 55350,
+      "valueVatCzk": 55350,
+      "valueNoVatCzk": 55350,
+      "counterparties": [
+        {
+          "name": "Svoboda pro stromy s.r.o.",
+          "ico": "17748127",
+          "box": "zpmebuy"
+        }
+      ],
+      "counterparty": "Svoboda pro stromy s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "40026657",
+      "idContract": "37642505",
+      "url": "https://smlouvy.gov.cz/smlouva/40026657",
+      "subject": "Objednáváme u Vás 5 autobusů na exkurzi žáků 9. tříd základních škol do Mauthausenu a zpět, která se bude konat dne 23.10.2026.",
+      "published": "2026-10-21",
+      "signed": "2026-10-21",
+      "valueCzk": 149500,
+      "valueVatCzk": 149500,
+      "valueNoVatCzk": 149500,
+      "counterparties": [
+        {
+          "name": "EichlerBUS s.r.o.",
+          "ico": "27442667",
+          "box": "a2h27a4"
+        }
+      ],
+      "counterparty": "EichlerBUS s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "40028585",
+      "idContract": "37644337",
+      "url": "https://smlouvy.gov.cz/smlouva/40028585",
+      "subject": "Papír A4 - 1200 ks a papír A3 - 100 ks.",
+      "published": "2026-10-21",
+      "signed": "2026-10-20",
+      "valueCzk": 145079,
+      "valueVatCzk": 145079,
+      "valueNoVatCzk": 119900,
+      "counterparties": [
+        {
+          "name": "VDC kancelářská technika s.r.o.",
+          "ico": "25607201",
+          "box": "b6u9xxx"
+        }
+      ],
+      "counterparty": "VDC kancelářská technika s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "40012773",
+      "idContract": "37629333",
+      "url": "https://smlouvy.gov.cz/smlouva/40012773",
+      "subject": "1462_10_Oprava stropu a zdiva po vytopení Klubovny SOS_  15083",
+      "published": "2026-10-20",
+      "signed": "2026-09-29",
+      "valueCzk": 79125.67,
+      "valueVatCzk": null,
+      "valueNoVatCzk": 79125.67,
+      "counterparties": [
+        {
+          "name": "Guerdo, s.r.o.",
+          "ico": "24662437",
+          "box": ""
+        }
+      ],
+      "counterparty": "Guerdo, s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39991005",
+      "idContract": "33552521",
+      "url": "https://smlouvy.gov.cz/smlouva/39991005",
+      "subject": "Pojištění majetku",
+      "published": "2026-10-19",
+      "signed": "2025-11-12",
+      "valueCzk": 64570,
+      "valueVatCzk": 64570,
+      "valueNoVatCzk": null,
+      "counterparties": [
+        {
+          "name": "Kooperativa pojišťovna, a.s., Vienna Insurance Group",
+          "ico": "47116617",
+          "box": "n6tetn3"
+        }
+      ],
+      "counterparty": "Kooperativa pojišťovna, a.s., Vienna Insurance Group",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39993709",
+      "idContract": "37611021",
+      "url": "https://smlouvy.gov.cz/smlouva/39993709",
+      "subject": "Objednáváme u vás technické zajištění a podporu akce \"Dušičkový večer na zámku 2026\", která se koná dne 7.11.2026. \nObjednávka je ke smlouvě 2024/0510/OPS.DVZ (21/3224/2024)\nKontakt: Zdeněk Šír - 603 522 073",
+      "published": "2026-10-19",
+      "signed": "2026-10-07",
+      "valueCzk": 80000,
+      "valueVatCzk": 80000,
+      "valueNoVatCzk": 80000,
+      "counterparties": [
+        {
+          "name": "Tomáš Valenčík",
+          "ico": "71642099",
+          "box": "knh8quh"
+        }
+      ],
+      "counterparty": "Tomáš Valenčík",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39996013",
+      "idContract": "37613213",
+      "url": "https://smlouvy.gov.cz/smlouva/39996013",
+      "subject": "Dodání výtvarného a malířského materiálu a technické zajištění přípravy stěny a realizace muralové výmalby v areálu betonárky na Rohanském ostrově. Součástí plnění budou spreje, barvy, zakrývací koberce, pásky a související malířský sortiment, penetrace a",
+      "published": "2026-10-19",
+      "signed": "2026-10-06",
+      "valueCzk": 73205,
+      "valueVatCzk": 73205,
+      "valueNoVatCzk": 60500,
+      "counterparties": [
+        {
+          "name": "The Chemistry Production, s.r.o.",
+          "ico": "28466691",
+          "box": "crh66hy"
+        }
+      ],
+      "counterparty": "The Chemistry Production, s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39963573",
+      "idContract": "37581969",
+      "url": "https://smlouvy.gov.cz/smlouva/39963573",
+      "subject": "3_26_1_havarihní oprava podlah a výměna PVC_  15073",
+      "published": "2026-10-16",
+      "signed": "2026-10-16",
+      "valueCzk": 83176.9,
+      "valueVatCzk": null,
+      "valueNoVatCzk": 83176.9,
+      "counterparties": [
+        {
+          "name": "HONALSTAV s.r.o.",
+          "ico": "02215586",
+          "box": ""
+        }
+      ],
+      "counterparty": "HONALSTAV s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "39963973",
+      "idContract": "37582341",
+      "url": "https://smlouvy.gov.cz/smlouva/39963973",
+      "subject": "Objednáváme u vás tisk knihy „Dialog času a prostoru v Praze 8 aneb 125 let od připojení Libně ke královskému hlavnímu městu Praze“, náklad 500 ks.",
+      "published": "2026-10-16",
+      "signed": "2026-10-30",
+      "valueCzk": 199650,
+      "valueVatCzk": 199650,
+      "valueNoVatCzk": 165000,
+      "counterparties": [
+        {
+          "name": "Roman Kliský",
+          "ico": "48043095",
+          "box": "p8jesus"
+        }
+      ],
+      "counterparty": "Roman Kliský",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
       "id": "39946925",
       "idContract": "37566005",
       "url": "https://smlouvy.gov.cz/smlouva/39946925",
@@ -11837,27 +12047,6 @@
         }
       ],
       "counterparty": "FK Trhy.cz s.r.o.",
-      "publisher": "Městská část Praha 8",
-      "publisherIco": "00063797"
-    },
-    {
-      "id": "35763093",
-      "idContract": "33552521",
-      "url": "https://smlouvy.gov.cz/smlouva/35763093",
-      "subject": "Pojištění majetku",
-      "published": "2025-11-26",
-      "signed": "2025-11-12",
-      "valueCzk": 64570,
-      "valueVatCzk": 64570,
-      "valueNoVatCzk": null,
-      "counterparties": [
-        {
-          "name": "Kooperativa pojišťovna, a.s., Vienna Insurance Group",
-          "ico": "47116617",
-          "box": "n6tetn3"
-        }
-      ],
-      "counterparty": "Kooperativa pojišťovna, a.s., Vienna Insurance Group",
       "publisher": "Městská část Praha 8",
       "publisherIco": "00063797"
     },
@@ -137177,9 +137366,9 @@
     {
       "name": "PILUM s.r.o.",
       "ico": "27385396",
-      "contracts": 137,
-      "knownValueCzk": 42950656.179999985,
-      "valuedContracts": 137
+      "contracts": 138,
+      "knownValueCzk": 43185247.34999999,
+      "valuedContracts": 138
     },
     {
       "name": "RTD servis, s.r.o.",
@@ -137331,9 +137520,9 @@
     {
       "name": "VDC kancelářská technika s.r.o.",
       "ico": "25607201",
-      "contracts": 46,
-      "knownValueCzk": 23995405.24,
-      "valuedContracts": 44
+      "contracts": 47,
+      "knownValueCzk": 24140484.24,
+      "valuedContracts": 45
     },
     {
       "name": "SJOT s.r.o.",
@@ -137560,18 +137749,18 @@
       "valuedContracts": 3
     },
     {
+      "name": "Guerdo, s.r.o.",
+      "ico": "24662437",
+      "contracts": 82,
+      "knownValueCzk": 12700461.450000003,
+      "valuedContracts": 82
+    },
+    {
       "name": "MC Invest Czech s.r.o.",
       "ico": "03813622",
       "contracts": 2,
       "knownValueCzk": 12680999.63,
       "valuedContracts": 1
-    },
-    {
-      "name": "Guerdo, s.r.o.",
-      "ico": "24662437",
-      "contracts": 81,
-      "knownValueCzk": 12621335.780000001,
-      "valuedContracts": 81
     },
     {
       "name": "VERTIX s.r.o.",
@@ -138071,6 +138260,13 @@
       "valuedContracts": 11
     },
     {
+      "name": "Tomáš Valenčík",
+      "ico": "71642099",
+      "contracts": 25,
+      "knownValueCzk": 6044000,
+      "valuedContracts": 25
+    },
+    {
       "name": "HANSA 2, s.r.o.",
       "ico": "25096702",
       "contracts": 6,
@@ -138083,13 +138279,6 @@
       "contracts": 5,
       "knownValueCzk": 5969100,
       "valuedContracts": 5
-    },
-    {
-      "name": "Tomáš Valenčík",
-      "ico": "71642099",
-      "contracts": 24,
-      "knownValueCzk": 5964000,
-      "valuedContracts": 24
     },
     {
       "name": "O2 Czech Republic a.s.",
@@ -138540,6 +138729,13 @@
       "valuedContracts": 11
     },
     {
+      "name": "HONALSTAV s.r.o.",
+      "ico": "02215586",
+      "contracts": 11,
+      "knownValueCzk": 3852907.2399999998,
+      "valuedContracts": 10
+    },
+    {
       "name": "tat coffee s.r.o.",
       "ico": "28402839",
       "contracts": 1,
@@ -138573,13 +138769,6 @@
       "contracts": 12,
       "knownValueCzk": 3770696.3800000004,
       "valuedContracts": 12
-    },
-    {
-      "name": "HONALSTAV s.r.o.",
-      "ico": "02215586",
-      "contracts": 10,
-      "knownValueCzk": 3769730.34,
-      "valuedContracts": 9
     },
     {
       "name": "Česká zemědělská univerzita v Praze",
@@ -141536,6 +141725,13 @@
       "valuedContracts": 13
     },
     {
+      "name": "EichlerBUS s.r.o.",
+      "ico": "27442667",
+      "contracts": 7,
+      "knownValueCzk": 770600,
+      "valuedContracts": 7
+    },
+    {
       "name": "OK GARDEN s.r.o.",
       "ico": "27571297",
       "contracts": 2,
@@ -141830,6 +142026,13 @@
       "valuedContracts": 2
     },
     {
+      "name": "Roman Kliský",
+      "ico": "48043095",
+      "contracts": 6,
+      "knownValueCzk": 659824.88,
+      "valuedContracts": 6
+    },
+    {
       "name": "TUkas ČSAO a.s.",
       "ico": "25614304",
       "contracts": 1,
@@ -141947,13 +142150,6 @@
       "contracts": 1,
       "knownValueCzk": 623150,
       "valuedContracts": 1
-    },
-    {
-      "name": "EichlerBUS s.r.o.",
-      "ico": "27442667",
-      "contracts": 6,
-      "knownValueCzk": 621100,
-      "valuedContracts": 6
     },
     {
       "name": "PKF APOGEO Advisory, s.r.o.",
@@ -142633,13 +142829,6 @@
       "contracts": 1,
       "knownValueCzk": 462220,
       "valuedContracts": 1
-    },
-    {
-      "name": "Roman Kliský",
-      "ico": "48043095",
-      "contracts": 5,
-      "knownValueCzk": 460174.88,
-      "valuedContracts": 5
     },
     {
       "name": "GT Legal, advokátní kancelář, s.r.o.",
@@ -146366,6 +146555,13 @@
       "valuedContracts": 1
     },
     {
+      "name": "The Chemistry Production, s.r.o.",
+      "ico": "28466691",
+      "contracts": 1,
+      "knownValueCzk": 73205,
+      "valuedContracts": 1
+    },
+    {
       "name": "Medialogue, s.r.o.",
       "ico": "27459870",
       "contracts": 1,
@@ -146916,6 +147112,13 @@
       "ico": "08984263",
       "contracts": 1,
       "knownValueCzk": 55500,
+      "valuedContracts": 1
+    },
+    {
+      "name": "Svoboda pro stromy s.r.o.",
+      "ico": "17748127",
+      "contracts": 1,
+      "knownValueCzk": 55350,
       "valuedContracts": 1
     },
     {
@@ -148824,17 +149027,17 @@
     }
   ],
   "meta": {
-    "total": 6532,
+    "total": 6541,
     "complete": true,
     "historyComplete": true,
     "scope": "full-history",
     "dateFrom": "2007-05-09",
     "dateTo": "2026-10-30",
     "dateLabel": "celá historie Registru smluv",
-    "knownValueCzk": 6878819268.839995,
-    "valuedContracts": 5768,
-    "partners": 1682,
-    "updated": "2026-10-15T09:13:15.042Z",
+    "knownValueCzk": 6879918946.579995,
+    "valuedContracts": 5777,
+    "partners": 1684,
+    "updated": "2026-10-21T09:26:47.417Z",
     "source": "https://data.smlouvy.gov.cz/index.xml",
     "method": "official-live-search-daily-overlap",
     "dumps": 124,

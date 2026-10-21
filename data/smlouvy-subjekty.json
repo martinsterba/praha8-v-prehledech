@@ -1,18 +1,18 @@
 {
   "schema": 2,
-  "updated": "2026-10-15T09:13:15.042Z",
+  "updated": "2026-10-21T09:26:47.417Z",
   "source": "https://smlouvy.gov.cz/vyhledavani",
   "method": "official-live-search-daily-overlap",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7451,
-    "knownValueCzk": 5176807901.88,
+    "totalContracts": 7461,
+    "knownValueCzk": 5181768741.18,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
-        "current": 6532
+        "current": 6541
       },
       "note": "Denní kontrola používá živé vyhledávání Registru smluv v okně 5 dní; historický základ se při denním běhu nestahuje."
     }
@@ -412,12 +412,12 @@
       "ownershipShare": "100 %",
       "source": "https://www.praha8.cz/Osma-sprava-majetku-a-sluzeb-a-s",
       "website": "https://www.osms.cz/",
-      "total": 1499,
-      "partners": 235,
+      "total": 1501,
+      "partners": 236,
       "knownValueCzk": 1450574065.1200004,
       "valuedContracts": 1212,
       "dateFrom": "1999-09-14",
-      "dateTo": "2026-10-14",
+      "dateTo": "2026-10-16",
       "partnerList": [
         {
           "name": "Wertstav s.r.o.",
@@ -513,7 +513,7 @@
         {
           "name": "IT Innovation s.r.o.",
           "ico": "29042691",
-          "contracts": 8,
+          "contracts": 9,
           "knownValueCzk": 23816173.270000003,
           "valuedContracts": 8
         },
@@ -1862,6 +1862,13 @@
           "valuedContracts": 0
         },
         {
+          "name": "IMMUNIA spol. s.r.o.",
+          "ico": "27906264",
+          "contracts": 1,
+          "knownValueCzk": 0,
+          "valuedContracts": 0
+        },
+        {
           "name": "In-eSystems s.r.o.",
           "ico": "10944109",
           "contracts": 1,
@@ -2066,6 +2073,48 @@
         }
       ],
       "contracts": [
+        {
+          "id": "40000389",
+          "idContract": "37617433",
+          "url": "https://smlouvy.gov.cz/smlouva/40000389",
+          "subject": "Dodatek č.01 k VZMR 09/2026 - \"Zateplení štítové jižní strany bytového domu Taussigova 1172/1, 182 00 Praha 8 - Kobylisy",
+          "published": "2026-10-20",
+          "signed": "2026-10-08",
+          "valueCzk": null,
+          "valueVatCzk": null,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "IT Innovation s.r.o.",
+              "ico": "29042691",
+              "box": "5gzkus5"
+            }
+          ],
+          "counterparty": "IT Innovation s.r.o.",
+          "publisher": "Osmá správa majetku a služeb a.s.",
+          "publisherIco": "04650522"
+        },
+        {
+          "id": "39971349",
+          "idContract": "37589413",
+          "url": "https://smlouvy.gov.cz/smlouva/39971349",
+          "subject": "Dohoda o ukončení Smlouvy o nájmu prostoru sloužícího podnikání",
+          "published": "2026-10-16",
+          "signed": "2026-10-16",
+          "valueCzk": null,
+          "valueVatCzk": null,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "IMMUNIA spol. s.r.o.",
+              "ico": "27906264",
+              "box": "itjbqgs"
+            }
+          ],
+          "counterparty": "IMMUNIA spol. s.r.o.",
+          "publisher": "Osmá správa majetku a služeb a.s.",
+          "publisherIco": "04650522"
+        },
         {
           "id": "39937125",
           "idContract": "37556493",
@@ -60935,12 +60984,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Servisni-stredisko-pro-spravu-svereneho-majetku-MC-Praha-8-prispevkova-organizace.html",
       "website": "https://www.praha8.cz/servisni-stredisko-pro-spravu-svereneho-majetku-mc-praha-8-prispevkova-organizace.html",
-      "total": 1794,
+      "total": 1795,
       "partners": 361,
-      "knownValueCzk": 2996562411.3200006,
-      "valuedContracts": 1717,
+      "knownValueCzk": 3000525756.3200006,
+      "valuedContracts": 1718,
       "dateFrom": "1991-07-15",
-      "dateTo": "2026-10-08",
+      "dateTo": "2026-10-14",
       "partnerList": [
         {
           "name": "BAB mont s.r.o.",
@@ -61230,6 +61279,13 @@
           "valuedContracts": 4
         },
         {
+          "name": "PKF - Prague Philharmonia, o.p.s.",
+          "ico": "64947602",
+          "contracts": 4,
+          "knownValueCzk": 10344728.8,
+          "valuedContracts": 4
+        },
+        {
           "name": "Krytiny RS s.r.o.",
           "ico": "26170906",
           "contracts": 1,
@@ -61382,13 +61438,6 @@
           "contracts": 2,
           "knownValueCzk": 6920025.47,
           "valuedContracts": 2
-        },
-        {
-          "name": "PKF - Prague Philharmonia, o.p.s.",
-          "ico": "64947602",
-          "contracts": 3,
-          "knownValueCzk": 6381383.8,
-          "valuedContracts": 3
         },
         {
           "name": "ATELIER TECL, s.r.o.",
@@ -63472,6 +63521,48 @@
       ],
       "contracts": [
         {
+          "id": "40026773",
+          "idContract": "36428348",
+          "url": "https://smlouvy.gov.cz/smlouva/40026773",
+          "subject": "Rekonstrukce elektroinstalace a podhledů ZŠ Žernosecká 3/1597, Praha 8 - Kobylisy",
+          "published": "2026-10-21",
+          "signed": "2026-07-14",
+          "valueCzk": 6113014.49,
+          "valueVatCzk": 6113014.49,
+          "valueNoVatCzk": 5052078.09,
+          "counterparties": [
+            {
+              "name": "Omega facilities s.r.o.",
+              "ico": "05292921",
+              "box": ""
+            }
+          ],
+          "counterparty": "Omega facilities s.r.o.",
+          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
+          "publisherIco": "00639524"
+        },
+        {
+          "id": "39994509",
+          "idContract": "37611801",
+          "url": "https://smlouvy.gov.cz/smlouva/39994509",
+          "subject": "SMLOUVA O SMLOUVĚ BUDOUCÍ NÁJEMNÍ",
+          "published": "2026-10-19",
+          "signed": "2026-10-14",
+          "valueCzk": 3963345,
+          "valueVatCzk": 3963345,
+          "valueNoVatCzk": 3963345,
+          "counterparties": [
+            {
+              "name": "PKF - Prague Philharmonia, o.p.s.",
+              "ico": "64947602",
+              "box": ""
+            }
+          ],
+          "counterparty": "PKF - Prague Philharmonia, o.p.s.",
+          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
+          "publisherIco": "00639524"
+        },
+        {
           "id": "39914969",
           "idContract": "35115649",
           "url": "https://smlouvy.gov.cz/smlouva/39914969",
@@ -65055,30 +65146,6 @@
             }
           ],
           "counterparty": "ČNSO & Prague Proms, o. p. s.",
-          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
-          "publisherIco": "00639524"
-        },
-        {
-          "entityIco": "00639524",
-          "entityName": "Servisní středisko pro správu svěřeného majetku MČ Praha 8",
-          "entityKind": "organization",
-          "id": "38763072",
-          "idContract": "36428348",
-          "url": "https://smlouvy.gov.cz/smlouva/38763072",
-          "subject": "Rekonstrukce elektroinstalace a podhledů ZŠ Žernosecká 3/1597, Praha 8 - Kobylisy",
-          "published": "2026-07-14",
-          "signed": "2026-07-14",
-          "valueCzk": 6113014.49,
-          "valueVatCzk": 6113014.49,
-          "valueNoVatCzk": 5052078.09,
-          "counterparties": [
-            {
-              "name": "Omega facilities s.r.o.",
-              "ico": "05292921",
-              "box": ""
-            }
-          ],
-          "counterparty": "Omega facilities s.r.o.",
           "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
           "publisherIco": "00639524"
         },
@@ -134167,12 +134234,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Praha-8-Lyckovo-namesti-6.html",
       "website": "http://www.smysluplnaskola.cz/",
-      "total": 336,
+      "total": 337,
       "partners": 166,
-      "knownValueCzk": 45967135.33,
-      "valuedContracts": 132,
+      "knownValueCzk": 46155885.33,
+      "valuedContracts": 133,
       "dateFrom": "2016-12-09",
-      "dateTo": "2026-09-15",
+      "dateTo": "2026-10-16",
       "partnerList": [
         {
           "name": "FIRMA s.r.o.",
@@ -134184,9 +134251,9 @@
         {
           "name": "Flashtones, s.r.o.",
           "ico": "04275764",
-          "contracts": 15,
-          "knownValueCzk": 2202800,
-          "valuedContracts": 11
+          "contracts": 16,
+          "knownValueCzk": 2391550,
+          "valuedContracts": 12
         },
         {
           "name": "Ondřej Černý - Oddechový čas",
@@ -135338,6 +135405,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39972153",
+          "idContract": "37590161",
+          "url": "https://smlouvy.gov.cz/smlouva/39972153",
+          "subject": "Smlouva o zajištění kurzu 2.S",
+          "published": "2026-10-16",
+          "signed": "2026-10-16",
+          "valueCzk": 188750,
+          "valueVatCzk": 188750,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "Flashtones, s.r.o.",
+              "ico": "04275764",
+              "box": "4gm6687"
+            }
+          ],
+          "counterparty": "Flashtones, s.r.o.",
+          "publisher": "Základní škola a mateřská škola, Praha 8, Lyčkovo náměstí 6",
+          "publisherIco": "60433230"
+        },
         {
           "id": "39651265",
           "idContract": "37281857",
@@ -143383,12 +143471,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Praha-8-U-Skolske-zahrady-4.html",
       "website": "http://www.uskolskezahrady.cz/",
-      "total": 99,
-      "partners": 51,
-      "knownValueCzk": 28050941.659999996,
-      "valuedContracts": 89,
+      "total": 100,
+      "partners": 52,
+      "knownValueCzk": 28101341.659999996,
+      "valuedContracts": 90,
       "dateFrom": "2016-08-15",
-      "dateTo": "2026-09-02",
+      "dateTo": "2026-10-15",
       "partnerList": [
         {
           "name": "FIRMA s.r.o.",
@@ -143699,6 +143787,13 @@
           "valuedContracts": 1
         },
         {
+          "name": "Cestovní kancelář Star Line, s.r.o.",
+          "ico": "28524888",
+          "contracts": 1,
+          "knownValueCzk": 50400,
+          "valuedContracts": 1
+        },
+        {
           "name": "ALBRA, spol. s r.o.",
           "ico": "25141732",
           "contracts": 1,
@@ -143749,6 +143844,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39989861",
+          "idContract": "37607353",
+          "url": "https://smlouvy.gov.cz/smlouva/39989861",
+          "subject": "Smlouva o zajištění ubytování a stravy",
+          "published": "2026-10-19",
+          "signed": "2026-10-15",
+          "valueCzk": 50400,
+          "valueVatCzk": null,
+          "valueNoVatCzk": 50400,
+          "counterparties": [
+            {
+              "name": "Cestovní kancelář Star Line, s.r.o.",
+              "ico": "28524888",
+              "box": "r5yviq3"
+            }
+          ],
+          "counterparty": "Cestovní kancelář Star Line, s.r.o.",
+          "publisher": "Základní škola a mateřská škola, Praha 8, U Školské zahrady 4",
+          "publisherIco": "60461837"
+        },
         {
           "id": "39400313",
           "idContract": "37041129",
@@ -146132,12 +146248,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-Bohumila-Hrabala-Praha-8-Zenklova-52.html",
       "website": "http://www.zs-bhrabala.cz/",
-      "total": 378,
+      "total": 381,
       "partners": 139,
-      "knownValueCzk": 51613632.580000006,
-      "valuedContracts": 270,
+      "knownValueCzk": 51847484.88,
+      "valuedContracts": 272,
       "dateFrom": "2014-10-02",
-      "dateTo": "2026-10-15",
+      "dateTo": "2026-10-20",
       "partnerList": [
         {
           "name": "AVA - agentura volnočasových aktivit pro děti a mládež, s.r.o.",
@@ -146170,9 +146286,9 @@
         {
           "name": "GAMA HOLDING Praha a.s.",
           "ico": "26467259",
-          "contracts": 6,
-          "knownValueCzk": 2438750.77,
-          "valuedContracts": 6
+          "contracts": 7,
+          "knownValueCzk": 2588066.42,
+          "valuedContracts": 7
         },
         {
           "name": "Firma s.r.o.",
@@ -146219,7 +146335,7 @@
         {
           "name": "PRO TRAVEL CK, s.r.o.",
           "ico": "26355353",
-          "contracts": 6,
+          "contracts": 7,
           "knownValueCzk": 895650,
           "valuedContracts": 3
         },
@@ -146455,6 +146571,13 @@
           "valuedContracts": 3
         },
         {
+          "name": "SECTEL servis s.r.o.",
+          "ico": "49549464",
+          "contracts": 2,
+          "knownValueCzk": 190452.78999999998,
+          "valuedContracts": 2
+        },
+        {
           "name": "Akce pro školy, z.s.",
           "ico": "22820825",
           "contracts": 3,
@@ -146606,13 +146729,6 @@
           "ico": "45330344",
           "contracts": 1,
           "knownValueCzk": 110836,
-          "valuedContracts": 1
-        },
-        {
-          "name": "SECTEL servis s.r.o.",
-          "ico": "49549464",
-          "contracts": 1,
-          "knownValueCzk": 105916.14,
           "valuedContracts": 1
         },
         {
@@ -147114,6 +147230,69 @@
         }
       ],
       "contracts": [
+        {
+          "id": "40012209",
+          "idContract": "37628781",
+          "url": "https://smlouvy.gov.cz/smlouva/40012209",
+          "subject": "zajištění zájezdu do Francie",
+          "published": "2026-10-20",
+          "signed": "2026-10-20",
+          "valueCzk": null,
+          "valueVatCzk": null,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "PRO TRAVEL CK, s.r.o.",
+              "ico": "26355353",
+              "box": "cq4uuat"
+            }
+          ],
+          "counterparty": "PRO TRAVEL CK, s.r.o.",
+          "publisher": "Základní škola Bohumila Hrabala, Praha 8, Zenklova 52",
+          "publisherIco": "63113961"
+        },
+        {
+          "id": "39994221",
+          "idContract": "37611513",
+          "url": "https://smlouvy.gov.cz/smlouva/39994221",
+          "subject": "Instalace kamerového systému",
+          "published": "2026-10-19",
+          "signed": "2026-08-20",
+          "valueCzk": 84536.65,
+          "valueVatCzk": 84536.65,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "SECTEL servis s.r.o.",
+              "ico": "49549464",
+              "box": "b8ezmsd"
+            }
+          ],
+          "counterparty": "SECTEL servis s.r.o.",
+          "publisher": "Základní škola Bohumila Hrabala, Praha 8, Zenklova 52",
+          "publisherIco": "63113961"
+        },
+        {
+          "id": "39968869",
+          "idContract": "37587029",
+          "url": "https://smlouvy.gov.cz/smlouva/39968869",
+          "subject": "nákup elektrického sporáku",
+          "published": "2026-10-16",
+          "signed": "2026-07-22",
+          "valueCzk": 149315.65,
+          "valueVatCzk": 149315.65,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "GAMA HOLDING Praha a.s.",
+              "ico": "26467259",
+              "box": "4d7d7yv"
+            }
+          ],
+          "counterparty": "GAMA HOLDING Praha a.s.",
+          "publisher": "Základní škola Bohumila Hrabala, Praha 8, Zenklova 52",
+          "publisherIco": "63113961"
+        },
         {
           "id": "39945313",
           "idContract": "37564461",
@@ -166301,10 +166480,10 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-Praha-8-Glowackeho-6.html",
       "website": "http://www.glowackeho.eu/",
-      "total": 160,
+      "total": 161,
       "partners": 102,
-      "knownValueCzk": 33129250.879999995,
-      "valuedContracts": 127,
+      "knownValueCzk": 33380850.879999995,
+      "valuedContracts": 128,
       "dateFrom": "2016-10-10",
       "dateTo": "2026-10-07",
       "partnerList": [
@@ -166414,6 +166593,13 @@
           "valuedContracts": 4
         },
         {
+          "name": "Outdoor Aliance s.r.o.",
+          "ico": "28594207",
+          "contracts": 2,
+          "knownValueCzk": 491200,
+          "valuedContracts": 2
+        },
+        {
           "name": "BAB mont s.r.o.",
           "ico": "61498858",
           "contracts": 1,
@@ -166496,13 +166682,6 @@
           "contracts": 3,
           "knownValueCzk": 247570,
           "valuedContracts": 2
-        },
-        {
-          "name": "Outdoor Aliance s.r.o.",
-          "ico": "28594207",
-          "contracts": 1,
-          "knownValueCzk": 239600,
-          "valuedContracts": 1
         },
         {
           "name": "CK Victoria",
@@ -167024,6 +167203,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39965857",
+          "idContract": "37584125",
+          "url": "https://smlouvy.gov.cz/smlouva/39965857",
+          "subject": "Smlouva o zajištění ubytování školní nebo jiné skupinové akce dle rezervace ID118669",
+          "published": "2026-10-16",
+          "signed": "2026-10-05",
+          "valueCzk": 251600,
+          "valueVatCzk": 251600,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "Outdoor Aliance s.r.o.",
+              "ico": "28594207",
+              "box": "acxi6hp"
+            }
+          ],
+          "counterparty": "Outdoor Aliance s.r.o.",
+          "publisher": "Základní škola, Praha 8, Glowackého 6",
+          "publisherIco": "60433302"
+        },
         {
           "id": "39865809",
           "idContract": "37488265",
@@ -170824,10 +171024,10 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-Praha-8-Hovorcovicka-11.html",
       "website": "http://www.zshovorcovicka.cz/",
-      "total": 329,
+      "total": 330,
       "partners": 154,
-      "knownValueCzk": 45938473.519999996,
-      "valuedContracts": 254,
+      "knownValueCzk": 46211365.519999996,
+      "valuedContracts": 255,
       "dateFrom": "2016-12-20",
       "dateTo": "2026-10-06",
       "partnerList": [
@@ -170853,18 +171053,18 @@
           "valuedContracts": 3
         },
         {
+          "name": "AQUA HEALTH, s.r.o.",
+          "ico": "26212528",
+          "contracts": 16,
+          "knownValueCzk": 2342819,
+          "valuedContracts": 12
+        },
+        {
           "name": "FliCom Travel s.r.o.",
           "ico": "24287393",
           "contracts": 5,
           "knownValueCzk": 2079000,
           "valuedContracts": 5
-        },
-        {
-          "name": "AQUA HEALTH, s.r.o.",
-          "ico": "26212528",
-          "contracts": 15,
-          "knownValueCzk": 2069927,
-          "valuedContracts": 11
         },
         {
           "name": "Martin BŘEZINA",
@@ -171911,6 +172111,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "39966365",
+          "idContract": "37584625",
+          "url": "https://smlouvy.gov.cz/smlouva/39966365",
+          "subject": "Kupní smlouva - 12x stolní PC",
+          "published": "2026-10-16",
+          "signed": "2026-10-05",
+          "valueCzk": 272892,
+          "valueVatCzk": 272892,
+          "valueNoVatCzk": 225530.58,
+          "counterparties": [
+            {
+              "name": "AQUA HEALTH, s.r.o.",
+              "ico": "26212528",
+              "box": "gygnbny"
+            }
+          ],
+          "counterparty": "AQUA HEALTH, s.r.o.",
+          "publisher": "Základní škola, Praha 8, Hovorčovická 11",
+          "publisherIco": "60433299"
+        },
         {
           "id": "39927185",
           "idContract": "37547081",
