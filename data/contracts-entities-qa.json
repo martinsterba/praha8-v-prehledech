@@ -1,15 +1,15 @@
 {
-  "updated": "2026-10-21T09:26:47.417Z",
+  "updated": "2026-10-22T09:28:19.723Z",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7461,
-    "knownValueCzk": 5181768741.18,
+    "totalContracts": 7465,
+    "knownValueCzk": 5182363485.18,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
-        "current": 6541
+        "current": 6543
       },
       "note": "Denní kontrola používá živé vyhledávání Registru smluv v okně 5 dní; historický základ se při denním běhu nestahuje."
     }
@@ -40,7 +40,7 @@
       "ownershipShare": "100 %",
       "source": "https://www.praha8.cz/Osma-sprava-majetku-a-sluzeb-a-s",
       "website": "https://www.osms.cz/",
-      "total": 1501,
+      "total": 1503,
       "partners": 236,
       "knownValueCzk": 1450574065.1200004,
       "valuedContracts": 1212,
@@ -584,12 +584,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-Praha-8-Hovorcovicka-11.html",
       "website": "http://www.zshovorcovicka.cz/",
-      "total": 330,
-      "partners": 154,
-      "knownValueCzk": 46211365.519999996,
-      "valuedContracts": 255,
+      "total": 331,
+      "partners": 155,
+      "knownValueCzk": 46322109.519999996,
+      "valuedContracts": 256,
       "dateFrom": "2016-12-20",
-      "dateTo": "2026-10-06"
+      "dateTo": "2026-10-22"
     },
     {
       "name": "Základní škola, Praha 8, Libčická 10",
@@ -648,15 +648,15 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-Praha-8-Zernosecka-3.html",
       "website": "http://www.zernosecka.cz/",
-      "total": 262,
+      "total": 263,
       "partners": 104,
-      "knownValueCzk": 51696596.82,
-      "valuedContracts": 220,
+      "knownValueCzk": 52180596.82,
+      "valuedContracts": 221,
       "dateFrom": "2016-08-04",
-      "dateTo": "2026-09-25"
+      "dateTo": "2026-10-08"
     }
   ],
   "p8": {
-    "total": 6541
+    "total": 6543
   }
 }

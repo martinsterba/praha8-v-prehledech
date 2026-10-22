@@ -1,18 +1,18 @@
 {
   "schema": 2,
-  "updated": "2026-10-21T09:26:47.417Z",
+  "updated": "2026-10-22T09:28:19.723Z",
   "source": "https://smlouvy.gov.cz/vyhledavani",
   "method": "official-live-search-daily-overlap",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7461,
-    "knownValueCzk": 5181768741.18,
+    "totalContracts": 7465,
+    "knownValueCzk": 5182363485.18,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
-        "current": 6541
+        "current": 6543
       },
       "note": "Denní kontrola používá živé vyhledávání Registru smluv v okně 5 dní; historický základ se při denním běhu nestahuje."
     }
@@ -412,7 +412,7 @@
       "ownershipShare": "100 %",
       "source": "https://www.praha8.cz/Osma-sprava-majetku-a-sluzeb-a-s",
       "website": "https://www.osms.cz/",
-      "total": 1501,
+      "total": 1503,
       "partners": 236,
       "knownValueCzk": 1450574065.1200004,
       "valuedContracts": 1212,
@@ -478,7 +478,7 @@
         {
           "name": "KVS - Projekt s.r.o.",
           "ico": "26476568",
-          "contracts": 130,
+          "contracts": 131,
           "knownValueCzk": 28479762.9,
           "valuedContracts": 46
         },
@@ -723,7 +723,7 @@
         {
           "name": "AXON CONSULTING s.r.o.",
           "ico": "28906926",
-          "contracts": 24,
+          "contracts": 25,
           "knownValueCzk": 4057925.95,
           "valuedContracts": 4
         },
@@ -2073,6 +2073,48 @@
         }
       ],
       "contracts": [
+        {
+          "id": "40036869",
+          "idContract": "37652181",
+          "url": "https://smlouvy.gov.cz/smlouva/40036869",
+          "subject": "Dílčí objednávka č. 22 k VZMR/22/2025 - Rekonstrukce objektu BD U Draháně 144/15, 181 00 Praha 8 - Bohnice",
+          "published": "2026-10-21",
+          "signed": "2026-08-17",
+          "valueCzk": null,
+          "valueVatCzk": null,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "AXON CONSULTING s.r.o.",
+              "ico": "28906926",
+              "box": "483p4dy"
+            }
+          ],
+          "counterparty": "AXON CONSULTING s.r.o.",
+          "publisher": "Osmá správa majetku a služeb a.s.",
+          "publisherIco": "04650522"
+        },
+        {
+          "id": "40036773",
+          "idContract": "37652085",
+          "url": "https://smlouvy.gov.cz/smlouva/40036773",
+          "subject": "Dílčí objednávka č. 22 k VZMR/23/2025 - Rekonstrukce objektu BD U Draháně 144/15, 181 00 Praha 8 - Bohnice",
+          "published": "2026-10-21",
+          "signed": "2026-08-17",
+          "valueCzk": null,
+          "valueVatCzk": null,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "KVS - Projekt s.r.o.",
+              "ico": "26476568",
+              "box": "x2dqy9g"
+            }
+          ],
+          "counterparty": "KVS - Projekt s.r.o.",
+          "publisher": "Osmá správa majetku a služeb a.s.",
+          "publisherIco": "04650522"
+        },
         {
           "id": "40000389",
           "idContract": "37617433",
@@ -171024,12 +171066,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-Praha-8-Hovorcovicka-11.html",
       "website": "http://www.zshovorcovicka.cz/",
-      "total": 330,
-      "partners": 154,
-      "knownValueCzk": 46211365.519999996,
-      "valuedContracts": 255,
+      "total": 331,
+      "partners": 155,
+      "knownValueCzk": 46322109.519999996,
+      "valuedContracts": 256,
       "dateFrom": "2016-12-20",
-      "dateTo": "2026-10-06",
+      "dateTo": "2026-10-22",
       "partnerList": [
         {
           "name": "BREZKA interier s.r.o.",
@@ -171547,6 +171589,13 @@
           "ico": "05328993",
           "contracts": 2,
           "knownValueCzk": 113043,
+          "valuedContracts": 1
+        },
+        {
+          "name": "DigiDay Group s.r.o.",
+          "ico": "09859268",
+          "contracts": 1,
+          "knownValueCzk": 110744,
           "valuedContracts": 1
         },
         {
@@ -172111,6 +172160,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "40043422",
+          "idContract": "37658570",
+          "url": "https://smlouvy.gov.cz/smlouva/40043422",
+          "subject": "Objednávka - školní nábytek (8 stolů, 32 židlí)",
+          "published": "2026-10-22",
+          "signed": "2026-10-22",
+          "valueCzk": 110744,
+          "valueVatCzk": 110744,
+          "valueNoVatCzk": 91523.97,
+          "counterparties": [
+            {
+              "name": "DigiDay Group s.r.o.",
+              "ico": "09859268",
+              "box": "gkj3wma"
+            }
+          ],
+          "counterparty": "DigiDay Group s.r.o.",
+          "publisher": "Základní škola, Praha 8, Hovorčovická 11",
+          "publisherIco": "60433299"
+        },
         {
           "id": "39966365",
           "idContract": "37584625",
@@ -190589,12 +190659,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-Praha-8-Zernosecka-3.html",
       "website": "http://www.zernosecka.cz/",
-      "total": 262,
+      "total": 263,
       "partners": 104,
-      "knownValueCzk": 51696596.82,
-      "valuedContracts": 220,
+      "knownValueCzk": 52180596.82,
+      "valuedContracts": 221,
       "dateFrom": "2016-08-04",
-      "dateTo": "2026-09-25",
+      "dateTo": "2026-10-08",
       "partnerList": [
         {
           "name": "FIRMA s.r.o.",
@@ -190646,6 +190716,13 @@
           "valuedContracts": 5
         },
         {
+          "name": "PRO TRAVEL CK, s.r.o.",
+          "ico": "26355353",
+          "contracts": 4,
+          "knownValueCzk": 1900000,
+          "valuedContracts": 4
+        },
+        {
           "name": "Evžen Procházka",
           "ico": "49381288",
           "contracts": 5,
@@ -190658,13 +190735,6 @@
           "contracts": 15,
           "knownValueCzk": 1669240.01,
           "valuedContracts": 14
-        },
-        {
-          "name": "PRO TRAVEL CK, s.r.o.",
-          "ico": "26355353",
-          "contracts": 3,
-          "knownValueCzk": 1416000,
-          "valuedContracts": 3
         },
         {
           "name": "Ski Fanatic s.r.o.",
@@ -191326,6 +191396,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "40042641",
+          "idContract": "37657841",
+          "url": "https://smlouvy.gov.cz/smlouva/40042641",
+          "subject": "zájezd",
+          "published": "2026-10-22",
+          "signed": "2026-10-08",
+          "valueCzk": 484000,
+          "valueVatCzk": 484000,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "PRO TRAVEL CK, s.r.o.",
+              "ico": "26355353",
+              "box": "cq4uuat"
+            }
+          ],
+          "counterparty": "PRO TRAVEL CK, s.r.o.",
+          "publisher": "Základní škola, Praha 8, Žernosecká 3",
+          "publisherIco": "60433272"
+        },
         {
           "id": "39740353",
           "idContract": "37367317",

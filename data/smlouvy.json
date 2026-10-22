@@ -85,6 +85,48 @@
       "publisherIco": "00063797"
     },
     {
+      "id": "40031125",
+      "idContract": "37646805",
+      "url": "https://smlouvy.gov.cz/smlouva/40031125",
+      "subject": "Kupní smlouva",
+      "published": "2026-10-21",
+      "signed": "2026-10-20",
+      "valueCzk": 295000,
+      "valueVatCzk": null,
+      "valueNoVatCzk": 295000,
+      "counterparties": [
+        {
+          "name": "Společenství vlastníků jednotek v budově čp. 339-349, Štětínská ul., Praha 8",
+          "ico": "28414233",
+          "box": "cyipa9s"
+        }
+      ],
+      "counterparty": "Společenství vlastníků jednotek v budově čp. 339-349, Štětínská ul., Praha 8",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "40034113",
+      "idContract": "37649585",
+      "url": "https://smlouvy.gov.cz/smlouva/40034113",
+      "subject": "Smlouva o nájmu prostoru sloužícímu podnikání (a o poskytování speciálních služeb)",
+      "published": "2026-10-21",
+      "signed": "2026-10-29",
+      "valueCzk": 446580,
+      "valueVatCzk": 446580,
+      "valueNoVatCzk": 446580,
+      "counterparties": [
+        {
+          "name": "Lesia Sherstiuk",
+          "ico": "23423374",
+          "box": ""
+        }
+      ],
+      "counterparty": "Lesia Sherstiuk",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
       "id": "40012773",
       "idContract": "37629333",
       "url": "https://smlouvy.gov.cz/smlouva/40012773",
@@ -142922,6 +142964,13 @@
       "valuedContracts": 1
     },
     {
+      "name": "Lesia Sherstiuk",
+      "ico": "23423374",
+      "contracts": 1,
+      "knownValueCzk": 446580,
+      "valuedContracts": 1
+    },
+    {
       "name": "Kardiologie pro děti a dorost, s.r.o.",
       "ico": "24843067",
       "contracts": 2,
@@ -143927,6 +143976,13 @@
       "ico": "65415043",
       "contracts": 1,
       "knownValueCzk": 295240,
+      "valuedContracts": 1
+    },
+    {
+      "name": "Společenství vlastníků jednotek v budově čp. 339-349, Štětínská ul., Praha 8",
+      "ico": "28414233",
+      "contracts": 1,
+      "knownValueCzk": 295000,
       "valuedContracts": 1
     },
     {
@@ -149027,17 +149083,17 @@
     }
   ],
   "meta": {
-    "total": 6541,
+    "total": 6543,
     "complete": true,
     "historyComplete": true,
     "scope": "full-history",
     "dateFrom": "2007-05-09",
     "dateTo": "2026-10-30",
     "dateLabel": "celá historie Registru smluv",
-    "knownValueCzk": 6879918946.579995,
-    "valuedContracts": 5777,
-    "partners": 1684,
-    "updated": "2026-10-21T09:26:47.417Z",
+    "knownValueCzk": 6880660526.579995,
+    "valuedContracts": 5779,
+    "partners": 1686,
+    "updated": "2026-10-22T09:28:19.723Z",
     "source": "https://data.smlouvy.gov.cz/index.xml",
     "method": "official-live-search-daily-overlap",
     "dumps": 124,
