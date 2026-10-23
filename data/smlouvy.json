@@ -1,6 +1,27 @@
 {
   "contracts": [
     {
+      "id": "40065097",
+      "idContract": "37679209",
+      "url": "https://smlouvy.gov.cz/smlouva/40065097",
+      "subject": "Dodávka a montáž systému klimatizace Samsung Wind Free v objektu U Meteoru 6 - místnost vedle čekárny.",
+      "published": "2026-10-23",
+      "signed": "2026-10-23",
+      "valueCzk": 106844.21,
+      "valueVatCzk": 106844.21,
+      "valueNoVatCzk": 88301,
+      "counterparties": [
+        {
+          "name": "KLIFA s.r.o.",
+          "ico": "24792683",
+          "box": "757xuup"
+        }
+      ],
+      "counterparty": "KLIFA s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
       "id": "40026685",
       "idContract": "37642533",
       "url": "https://smlouvy.gov.cz/smlouva/40026685",
@@ -140857,6 +140878,13 @@
       "valuedContracts": 2
     },
     {
+      "name": "KLIFA s.r.o.",
+      "ico": "24792683",
+      "contracts": 7,
+      "knownValueCzk": 1156844.96,
+      "valuedContracts": 7
+    },
+    {
       "name": "IS4 security s.r.o.",
       "ico": "62418271",
       "contracts": 1,
@@ -141093,13 +141121,6 @@
       "contracts": 19,
       "knownValueCzk": 1054733,
       "valuedContracts": 11
-    },
-    {
-      "name": "KLIFA s.r.o.",
-      "ico": "24792683",
-      "contracts": 6,
-      "knownValueCzk": 1050000.75,
-      "valuedContracts": 6
     },
     {
       "name": "Pavel Jindrák",
@@ -149083,17 +149104,17 @@
     }
   ],
   "meta": {
-    "total": 6543,
+    "total": 6544,
     "complete": true,
     "historyComplete": true,
     "scope": "full-history",
     "dateFrom": "2007-05-09",
     "dateTo": "2026-10-30",
     "dateLabel": "celá historie Registru smluv",
-    "knownValueCzk": 6880660526.579995,
-    "valuedContracts": 5779,
+    "knownValueCzk": 6880767370.789996,
+    "valuedContracts": 5780,
     "partners": 1686,
-    "updated": "2026-10-22T09:28:19.723Z",
+    "updated": "2026-10-23T09:25:16.918Z",
     "source": "https://data.smlouvy.gov.cz/index.xml",
     "method": "official-live-search-daily-overlap",
     "dumps": 124,

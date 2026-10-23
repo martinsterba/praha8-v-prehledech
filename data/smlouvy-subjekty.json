@@ -1,18 +1,18 @@
 {
   "schema": 2,
-  "updated": "2026-10-22T09:28:19.723Z",
+  "updated": "2026-10-23T09:25:16.918Z",
   "source": "https://smlouvy.gov.cz/vyhledavani",
   "method": "official-live-search-daily-overlap",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7465,
-    "knownValueCzk": 5182363485.18,
+    "totalContracts": 7470,
+    "knownValueCzk": 5182532075.18,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
-        "current": 6543
+        "current": 6544
       },
       "note": "Denní kontrola používá živé vyhledávání Registru smluv v okně 5 dní; historický základ se při denním běhu nestahuje."
     }
@@ -48197,10 +48197,10 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Materska-skola-Praha-8-Klicanska-20.html",
       "website": "http://www.ms-klicanska.cz/",
-      "total": 12,
-      "partners": 10,
-      "knownValueCzk": 876821.87,
-      "valuedContracts": 6,
+      "total": 14,
+      "partners": 12,
+      "knownValueCzk": 886821.87,
+      "valuedContracts": 7,
       "dateFrom": "2016-05-19",
       "dateTo": "2026-04-20",
       "partnerList": [
@@ -48233,8 +48233,22 @@
           "valuedContracts": 1
         },
         {
+          "name": "Jiří Pochobradský",
+          "ico": "66878900",
+          "contracts": 1,
+          "knownValueCzk": 10000,
+          "valuedContracts": 1
+        },
+        {
           "name": "AG FOODS Group a.s.",
           "ico": "05651531",
+          "contracts": 1,
+          "knownValueCzk": 0,
+          "valuedContracts": 0
+        },
+        {
+          "name": "Agentura EM-BOZPaPO",
+          "ico": "40638987",
           "contracts": 1,
           "knownValueCzk": 0,
           "valuedContracts": 0
@@ -48277,6 +48291,69 @@
       ],
       "contracts": [
         {
+          "id": "40048650",
+          "idContract": "33797569",
+          "url": "https://smlouvy.gov.cz/smlouva/40048650",
+          "subject": "Dodávka a montáž herních prvků",
+          "published": "2026-10-22",
+          "signed": "2025-12-02",
+          "valueCzk": 159490.1,
+          "valueVatCzk": 159490.1,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "Bonita Group Service s.r.o.",
+              "ico": "27738795",
+              "box": "ka3sfn9"
+            }
+          ],
+          "counterparty": "Bonita Group Service s.r.o.",
+          "publisher": "Mateřská škola, Praha 8, Klíčanská 20",
+          "publisherIco": "70919674"
+        },
+        {
+          "id": "40049302",
+          "idContract": "37664110",
+          "url": "https://smlouvy.gov.cz/smlouva/40049302",
+          "subject": "Servisní činnosti k SW a HW",
+          "published": "2026-10-22",
+          "signed": "2024-12-02",
+          "valueCzk": 10000,
+          "valueVatCzk": 10000,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "Jiří Pochobradský",
+              "ico": "66878900",
+              "box": ""
+            }
+          ],
+          "counterparty": "Jiří Pochobradský",
+          "publisher": "Mateřská škola, Praha 8, Klíčanská 20",
+          "publisherIco": "70919674"
+        },
+        {
+          "id": "40051537",
+          "idContract": "37666185",
+          "url": "https://smlouvy.gov.cz/smlouva/40051537",
+          "subject": "Zajištění činnosti a výkon funkce v oblasti prevence rizik",
+          "published": "2026-10-22",
+          "signed": "2025-12-15",
+          "valueCzk": null,
+          "valueVatCzk": null,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "Agentura EM-BOZPaPO",
+              "ico": "40638987",
+              "box": ""
+            }
+          ],
+          "counterparty": "Agentura EM-BOZPaPO",
+          "publisher": "Mateřská škola, Praha 8, Klíčanská 20",
+          "publisherIco": "70919674"
+        },
+        {
           "entityIco": "70919674",
           "entityName": "Mateřská škola, Praha 8, Klíčanská 20",
           "entityKind": "organization",
@@ -48297,30 +48374,6 @@
             }
           ],
           "counterparty": "BENJAMÍN s.r.o.",
-          "publisher": "Mateřská škola, Praha 8, Klíčanská 20",
-          "publisherIco": "70919674"
-        },
-        {
-          "entityIco": "70919674",
-          "entityName": "Mateřská škola, Praha 8, Klíčanská 20",
-          "entityKind": "organization",
-          "id": "36019741",
-          "idContract": "33797569",
-          "url": "https://smlouvy.gov.cz/smlouva/36019741",
-          "subject": "Dodávka a montáž herních prvků",
-          "published": "2025-12-12",
-          "signed": "2025-12-02",
-          "valueCzk": 159490.1,
-          "valueVatCzk": 159490.1,
-          "valueNoVatCzk": null,
-          "counterparties": [
-            {
-              "name": "Bonita Group Service s.r.o.",
-              "ico": "27738795",
-              "box": "ka3sfn9"
-            }
-          ],
-          "counterparty": "Bonita Group Service s.r.o.",
           "publisher": "Mateřská škola, Praha 8, Klíčanská 20",
           "publisherIco": "70919674"
         },
@@ -130127,12 +130180,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Praha-8-Dolakova-1.html",
       "website": "http://www.zsdolakova.cz/",
-      "total": 148,
+      "total": 149,
       "partners": 88,
-      "knownValueCzk": 34871757.86,
-      "valuedContracts": 140,
+      "knownValueCzk": 34950747.86,
+      "valuedContracts": 141,
       "dateFrom": "2016-12-05",
-      "dateTo": "2026-09-24",
+      "dateTo": "2026-10-21",
       "partnerList": [
         {
           "name": "Austis stavební s.r.o.",
@@ -130366,6 +130419,13 @@
           "valuedContracts": 1
         },
         {
+          "name": "Růžovka.cz a.s.",
+          "ico": "09253904",
+          "contracts": 2,
+          "knownValueCzk": 238990,
+          "valuedContracts": 2
+        },
+        {
           "name": "H-Level, group s.r.o.",
           "ico": "05089573",
           "contracts": 1,
@@ -130452,13 +130512,6 @@
         {
           "name": "EtuGate s.r.o.",
           "ico": "09426779",
-          "contracts": 1,
-          "knownValueCzk": 160000,
-          "valuedContracts": 1
-        },
-        {
-          "name": "Růžovka.cz a.s.",
-          "ico": "09253904",
           "contracts": 1,
           "knownValueCzk": 160000,
           "valuedContracts": 1
@@ -130752,6 +130805,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "40050722",
+          "idContract": "37665422",
+          "url": "https://smlouvy.gov.cz/smlouva/40050722",
+          "subject": "Objednávka pomůcek k výuce - Lego Education 45521Computer Science &amp; AI",
+          "published": "2026-10-22",
+          "signed": "2026-10-21",
+          "valueCzk": 78990,
+          "valueVatCzk": 78990,
+          "valueNoVatCzk": 65280.99,
+          "counterparties": [
+            {
+              "name": "Růžovka.cz a.s.",
+              "ico": "09253904",
+              "box": "9ueakuj"
+            }
+          ],
+          "counterparty": "Růžovka.cz a.s.",
+          "publisher": "Základní škola a mateřská škola, Praha 8, Dolákova 1",
+          "publisherIco": "60433281"
+        },
         {
           "id": "39881685",
           "idContract": "37503721",
@@ -143513,10 +143587,10 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Praha-8-U-Skolske-zahrady-4.html",
       "website": "http://www.uskolskezahrady.cz/",
-      "total": 100,
-      "partners": 52,
-      "knownValueCzk": 28101341.659999996,
-      "valuedContracts": 90,
+      "total": 101,
+      "partners": 53,
+      "knownValueCzk": 28180941.659999996,
+      "valuedContracts": 91,
       "dateFrom": "2016-08-15",
       "dateTo": "2026-10-15",
       "partnerList": [
@@ -143773,6 +143847,13 @@
           "valuedContracts": 1
         },
         {
+          "name": "CK Sport - Semerink s.r.o.",
+          "ico": "22394133",
+          "contracts": 1,
+          "knownValueCzk": 79600,
+          "valuedContracts": 1
+        },
+        {
           "name": "YMCA Setkání",
           "ico": "26531135",
           "contracts": 1,
@@ -143886,6 +143967,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "40050585",
+          "idContract": "37665297",
+          "url": "https://smlouvy.gov.cz/smlouva/40050585",
+          "subject": "Smlouva na ubytování a dopravu na školní výjezd",
+          "published": "2026-10-22",
+          "signed": "2026-10-01",
+          "valueCzk": 79600,
+          "valueVatCzk": null,
+          "valueNoVatCzk": 79600,
+          "counterparties": [
+            {
+              "name": "CK Sport - Semerink s.r.o.",
+              "ico": "22394133",
+              "box": "abg3ffy"
+            }
+          ],
+          "counterparty": "CK Sport - Semerink s.r.o.",
+          "publisher": "Základní škola a mateřská škola, Praha 8, U Školské zahrady 4",
+          "publisherIco": "60461837"
+        },
         {
           "id": "39989861",
           "idContract": "37607353",
@@ -146290,7 +146392,7 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-Bohumila-Hrabala-Praha-8-Zenklova-52.html",
       "website": "http://www.zs-bhrabala.cz/",
-      "total": 381,
+      "total": 382,
       "partners": 139,
       "knownValueCzk": 51847484.88,
       "valuedContracts": 272,
@@ -146342,7 +146444,7 @@
         {
           "name": "PROFIMEDIA s.r.o.",
           "ico": "41032098",
-          "contracts": 15,
+          "contracts": 16,
           "knownValueCzk": 2179505.85,
           "valuedContracts": 13
         },
@@ -147272,6 +147374,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "40048533",
+          "idContract": "37663389",
+          "url": "https://smlouvy.gov.cz/smlouva/40048533",
+          "subject": "Dodávka dotykových panelů",
+          "published": "2026-10-22",
+          "signed": "2026-03-16",
+          "valueCzk": null,
+          "valueVatCzk": null,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "PROFIMEDIA s.r.o.",
+              "ico": "41032098",
+              "box": "pt9u2jc"
+            }
+          ],
+          "counterparty": "PROFIMEDIA s.r.o.",
+          "publisher": "Základní škola Bohumila Hrabala, Praha 8, Zenklova 52",
+          "publisherIco": "63113961"
+        },
         {
           "id": "40012209",
           "idContract": "37628781",
