@@ -1,14 +1,14 @@
 {
   "schema": 2,
-  "updated": "2026-10-23T09:25:16.918Z",
+  "updated": "2026-10-24T08:56:31.338Z",
   "source": "https://smlouvy.gov.cz/vyhledavani",
   "method": "official-live-search-daily-overlap",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7470,
-    "knownValueCzk": 5182532075.18,
+    "totalContracts": 7473,
+    "knownValueCzk": 5183582316.4800005,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
@@ -143587,12 +143587,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Praha-8-U-Skolske-zahrady-4.html",
       "website": "http://www.uskolskezahrady.cz/",
-      "total": 101,
+      "total": 102,
       "partners": 53,
-      "knownValueCzk": 28180941.659999996,
-      "valuedContracts": 91,
+      "knownValueCzk": 28286741.659999996,
+      "valuedContracts": 92,
       "dateFrom": "2016-08-15",
-      "dateTo": "2026-10-15",
+      "dateTo": "2026-10-16",
       "partnerList": [
         {
           "name": "FIRMA s.r.o.",
@@ -143749,6 +143749,13 @@
           "valuedContracts": 1
         },
         {
+          "name": "MARJIR s.r.o.",
+          "ico": "08417091",
+          "contracts": 2,
+          "knownValueCzk": 211600,
+          "valuedContracts": 2
+        },
+        {
           "name": "CK Sport - Semerink s.r.o.",
           "ico": "24746410",
           "contracts": 2,
@@ -143824,13 +143831,6 @@
           "contracts": 2,
           "knownValueCzk": 110600,
           "valuedContracts": 2
-        },
-        {
-          "name": "MARJIR s.r.o.",
-          "ico": "08417091",
-          "contracts": 1,
-          "knownValueCzk": 105800,
-          "valuedContracts": 1
         },
         {
           "name": "Veřejná informační služba, spol. s r.o.",
@@ -143967,6 +143967,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "40070477",
+          "idContract": "37684377",
+          "url": "https://smlouvy.gov.cz/smlouva/40070477",
+          "subject": "Smlouva o ubytování",
+          "published": "2026-10-23",
+          "signed": "2026-10-16",
+          "valueCzk": 105800,
+          "valueVatCzk": null,
+          "valueNoVatCzk": 105800,
+          "counterparties": [
+            {
+              "name": "MARJIR s.r.o.",
+              "ico": "08417091",
+              "box": "298bdcc"
+            }
+          ],
+          "counterparty": "MARJIR s.r.o.",
+          "publisher": "Základní škola a mateřská škola, Praha 8, U Školské zahrady 4",
+          "publisherIco": "60461837"
+        },
         {
           "id": "40050585",
           "idContract": "37665297",
@@ -146392,10 +146413,10 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-Bohumila-Hrabala-Praha-8-Zenklova-52.html",
       "website": "http://www.zs-bhrabala.cz/",
-      "total": 382,
+      "total": 384,
       "partners": 139,
-      "knownValueCzk": 51847484.88,
-      "valuedContracts": 272,
+      "knownValueCzk": 52791926.18000001,
+      "valuedContracts": 274,
       "dateFrom": "2014-10-02",
       "dateTo": "2026-10-20",
       "partnerList": [
@@ -146421,6 +146442,13 @@
           "valuedContracts": 1
         },
         {
+          "name": "PROFIMEDIA s.r.o.",
+          "ico": "41032098",
+          "contracts": 18,
+          "knownValueCzk": 3123947.1500000004,
+          "valuedContracts": 15
+        },
+        {
           "name": "GASTROART CZ, spol. s r.o.",
           "ico": "27148378",
           "contracts": 5,
@@ -146440,13 +146468,6 @@
           "contracts": 1,
           "knownValueCzk": 2311197.43,
           "valuedContracts": 1
-        },
-        {
-          "name": "PROFIMEDIA s.r.o.",
-          "ico": "41032098",
-          "contracts": 16,
-          "knownValueCzk": 2179505.85,
-          "valuedContracts": 13
         },
         {
           "name": "Austis stavební s.r.o.",
@@ -147383,6 +147404,48 @@
           "signed": "2026-03-16",
           "valueCzk": null,
           "valueVatCzk": null,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "PROFIMEDIA s.r.o.",
+              "ico": "41032098",
+              "box": "pt9u2jc"
+            }
+          ],
+          "counterparty": "PROFIMEDIA s.r.o.",
+          "publisher": "Základní škola Bohumila Hrabala, Praha 8, Zenklova 52",
+          "publisherIco": "63113961"
+        },
+        {
+          "id": "40076569",
+          "idContract": "37690165",
+          "url": "https://smlouvy.gov.cz/smlouva/40076569",
+          "subject": "Dodávka dotykových panelů",
+          "published": "2026-10-22",
+          "signed": "2026-03-16",
+          "valueCzk": 472220.65,
+          "valueVatCzk": 472220.65,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "PROFIMEDIA s.r.o.",
+              "ico": "41032098",
+              "box": "pt9u2jc"
+            }
+          ],
+          "counterparty": "PROFIMEDIA s.r.o.",
+          "publisher": "Základní škola Bohumila Hrabala, Praha 8, Zenklova 52",
+          "publisherIco": "63113961"
+        },
+        {
+          "id": "40076537",
+          "idContract": "37690133",
+          "url": "https://smlouvy.gov.cz/smlouva/40076537",
+          "subject": "dodávka dotykových obrazovek včetně příslušenství",
+          "published": "2026-10-22",
+          "signed": "2026-03-16",
+          "valueCzk": 472220.65,
+          "valueVatCzk": 472220.65,
           "valueNoVatCzk": null,
           "counterparties": [
             {
