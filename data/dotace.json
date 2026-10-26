@@ -1,6 +1,6 @@
 {
   "schema": 24,
-  "updated": "2026-10-19T10:21:33.336036+00:00",
+  "updated": "2026-10-26T10:35:37.485271+00:00",
   "source": "https://www.praha8.cz/Granty-a-dotace.html",
   "meta": {
     "records": 2504,
@@ -993,10 +993,10 @@
     "recipientBrokenBoundaryRowsRemoved": 0,
     "recipientAggregateRowsRemoved": 3,
     "recipientLegacyRowsPreserved": 180,
-    "recipientIcoNormalizedAt": "2026-10-19T10:21:33.335450+00:00",
+    "recipientIcoNormalizedAt": "2026-10-26T10:35:37.484655+00:00",
     "extraordinaryRecipientNormalization": "Právní a gramatické obaly smluvních stran se odstraňují; známé historicky skloňované názvy se kanonizují explicitními pravidly.",
     "extraordinaryRecipientFormatNormalized": 34,
-    "extraordinaryRecipientFormatNormalizedAt": "2026-10-19T10:21:33.236025+00:00",
+    "extraordinaryRecipientFormatNormalizedAt": "2026-10-26T10:35:37.358588+00:00",
     "extraordinaryRecipientFormatPolicy": "U mimořádných dotací se odstraňují právní/gramatické obaly smluvních stran, lokalita Praha N za právní formou a text účelu projektu; zkratka z.s. se zapisuje jednotně."
   },
   "sources": [

@@ -185,13 +185,7 @@
     "url": "https://www.praha8.cz/appo/card/74/Hrebik-Tomas.html",
     "isClubChair": false,
     "magistrateRoles": [],
-    "hmpCompanyRoles": [
-      {
-        "role": "člen dozorčí rada",
-        "body": "Pražská plynárenská a.s.",
-        "url": "https://praha.eu/prazska-plynarenska-a-s"
-      }
-    ],
+    "hmpCompanyRoles": [],
     "otherRoles": []
   },
   {
@@ -230,13 +224,7 @@
         "url": "https://praha.eu/komise_rady_hmp#/detail/100044?periodId=-36525&year=2026&showAll=true"
       }
     ],
-    "hmpCompanyRoles": [
-      {
-        "role": "místopředseda dozorčí rada",
-        "body": "Technická správa komunikací hl. m. Prahy, a.s.",
-        "url": "https://praha.eu/technicka-sprava-komunikaci-hl-m-prahy-a-s"
-      }
-    ],
+    "hmpCompanyRoles": [],
     "otherRoles": []
   },
   {
