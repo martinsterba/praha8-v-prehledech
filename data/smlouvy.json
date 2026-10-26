@@ -1,6 +1,27 @@
 {
   "contracts": [
     {
+      "id": "40088761",
+      "idContract": "37702053",
+      "url": "https://smlouvy.gov.cz/smlouva/40088761",
+      "subject": "Smlouva o převodu správy majetku hlavního města Prahy",
+      "published": "2026-10-26",
+      "signed": "2026-10-12",
+      "valueCzk": 141899.74,
+      "valueVatCzk": 141899.74,
+      "valueNoVatCzk": 117272.51,
+      "counterparties": [
+        {
+          "name": "HLAVNÍ MĚSTO PRAHA",
+          "ico": "00064581",
+          "box": "48ia97h"
+        }
+      ],
+      "counterparty": "HLAVNÍ MĚSTO PRAHA",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
       "id": "40065097",
       "idContract": "37679209",
       "url": "https://smlouvy.gov.cz/smlouva/40065097",
@@ -138624,6 +138645,13 @@
       "valuedContracts": 1
     },
     {
+      "name": "HLAVNÍ MĚSTO PRAHA",
+      "ico": "00064581",
+      "contracts": 9,
+      "knownValueCzk": 4758904.74,
+      "valuedContracts": 3
+    },
+    {
       "name": "DEVELOPMENT ODRA BOHNICE s.r.o.",
       "ico": "04207327",
       "contracts": 7,
@@ -138636,13 +138664,6 @@
       "contracts": 9,
       "knownValueCzk": 4632422.69,
       "valuedContracts": 9
-    },
-    {
-      "name": "HLAVNÍ MĚSTO PRAHA",
-      "ico": "00064581",
-      "contracts": 8,
-      "knownValueCzk": 4617005,
-      "valuedContracts": 2
     },
     {
       "name": "Spolek Fitness-center Báry a Hanky Šulcové",
@@ -149104,17 +149125,17 @@
     }
   ],
   "meta": {
-    "total": 6544,
+    "total": 6545,
     "complete": true,
     "historyComplete": true,
     "scope": "full-history",
     "dateFrom": "2007-05-09",
     "dateTo": "2026-10-30",
     "dateLabel": "celá historie Registru smluv",
-    "knownValueCzk": 6880767370.789996,
-    "valuedContracts": 5780,
+    "knownValueCzk": 6880909270.529996,
+    "valuedContracts": 5781,
     "partners": 1686,
-    "updated": "2026-10-25T09:13:45.806Z",
+    "updated": "2026-10-26T10:09:34.034Z",
     "source": "https://data.smlouvy.gov.cz/index.xml",
     "method": "official-live-search-daily-overlap",
     "dumps": 124,
