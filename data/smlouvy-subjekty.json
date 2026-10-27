@@ -1,18 +1,18 @@
 {
   "schema": 2,
-  "updated": "2026-10-26T10:09:34.034Z",
+  "updated": "2026-10-27T09:53:06.436Z",
   "source": "https://smlouvy.gov.cz/vyhledavani",
   "method": "official-live-search-daily-overlap",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7473,
-    "knownValueCzk": 5183582316.4800005,
+    "totalContracts": 7479,
+    "knownValueCzk": 5183767315.790001,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
-        "current": 6545
+        "current": 6546
       },
       "note": "Denní kontrola používá živé vyhledávání Registru smluv v okně 5 dní; historický základ se při denním běhu nestahuje."
     }
@@ -412,10 +412,10 @@
       "ownershipShare": "100 %",
       "source": "https://www.praha8.cz/Osma-sprava-majetku-a-sluzeb-a-s",
       "website": "https://www.osms.cz/",
-      "total": 1503,
+      "total": 1504,
       "partners": 236,
-      "knownValueCzk": 1450574065.1200004,
-      "valuedContracts": 1212,
+      "knownValueCzk": 1450638054.4300005,
+      "valuedContracts": 1213,
       "dateFrom": "1999-09-14",
       "dateTo": "2026-10-16",
       "partnerList": [
@@ -464,9 +464,9 @@
         {
           "name": "JOVIS STAVBY s.r.o.",
           "ico": "01390473",
-          "contracts": 32,
-          "knownValueCzk": 34933263.269999996,
-          "valuedContracts": 30
+          "contracts": 33,
+          "knownValueCzk": 34997252.58,
+          "valuedContracts": 31
         },
         {
           "name": "HONALSTAV s.r.o.",
@@ -2074,6 +2074,48 @@
       ],
       "contracts": [
         {
+          "id": "40102937",
+          "idContract": "37715553",
+          "url": "https://smlouvy.gov.cz/smlouva/40102937",
+          "subject": "Dodatek č. 1(vícepráce x méněpráce) k VZMR/03/2026 - Rekonstrukce objektu BD U Drahaně 165/13, 181 00 Praha 8 - Bohnice",
+          "published": "2026-10-27",
+          "signed": "2026-10-13",
+          "valueCzk": 64049.31,
+          "valueVatCzk": 64049.31,
+          "valueNoVatCzk": 57186.88,
+          "counterparties": [
+            {
+              "name": "JOVIS STAVBY s.r.o.",
+              "ico": "01390473",
+              "box": "aqtri7u"
+            }
+          ],
+          "counterparty": "JOVIS STAVBY s.r.o.",
+          "publisher": "Osmá správa majetku a služeb a.s.",
+          "publisherIco": "04650522"
+        },
+        {
+          "id": "40092697",
+          "idContract": "37553645",
+          "url": "https://smlouvy.gov.cz/smlouva/40092697",
+          "subject": "Dodatek č. 1 k VZMR/03/2026 - Rekonstrukce objektu BD U Drahaně 165/13 - vícepráce a méněpráce",
+          "published": "2026-10-26",
+          "signed": "2026-10-13",
+          "valueCzk": 558431.88,
+          "valueVatCzk": null,
+          "valueNoVatCzk": 558431.88,
+          "counterparties": [
+            {
+              "name": "JOVIS STAVBY s.r.o.",
+              "ico": "01390473",
+              "box": "aqtri7u"
+            }
+          ],
+          "counterparty": "JOVIS STAVBY s.r.o.",
+          "publisher": "Osmá správa majetku a služeb a.s.",
+          "publisherIco": "04650522"
+        },
+        {
           "id": "40036869",
           "idContract": "37652181",
           "url": "https://smlouvy.gov.cz/smlouva/40036869",
@@ -2196,27 +2238,6 @@
             }
           ],
           "counterparty": "BAU Pro CZ s.r.o.",
-          "publisher": "Osmá správa majetku a služeb a.s.",
-          "publisherIco": "04650522"
-        },
-        {
-          "id": "39934061",
-          "idContract": "37553645",
-          "url": "https://smlouvy.gov.cz/smlouva/39934061",
-          "subject": "Dodatek č. 1 ke smlouvě o dílo č. VZMR/03/2026 - Rekonstrukce objektu BD U Draháně 165/13 - vícepráce a méněpráce",
-          "published": "2026-10-14",
-          "signed": "2026-10-13",
-          "valueCzk": 558491.88,
-          "valueVatCzk": null,
-          "valueNoVatCzk": 558491.88,
-          "counterparties": [
-            {
-              "name": "JOVIS STAVBY s.r.o.",
-              "ico": "01390473",
-              "box": "aqtri7u"
-            }
-          ],
-          "counterparty": "JOVIS STAVBY s.r.o.",
           "publisher": "Osmá správa majetku a služeb a.s.",
           "publisherIco": "04650522"
         },
@@ -48197,12 +48218,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Materska-skola-Praha-8-Klicanska-20.html",
       "website": "http://www.ms-klicanska.cz/",
-      "total": 14,
-      "partners": 12,
+      "total": 17,
+      "partners": 14,
       "knownValueCzk": 886821.87,
       "valuedContracts": 7,
       "dateFrom": "2016-05-19",
-      "dateTo": "2026-04-20",
+      "dateTo": "2026-06-01",
       "partnerList": [
         {
           "name": "BENJAMÍN s.r.o.",
@@ -48240,6 +48261,13 @@
           "valuedContracts": 1
         },
         {
+          "name": "Správa MŠ software, s.r.o.",
+          "ico": "04871103",
+          "contracts": 2,
+          "knownValueCzk": 0,
+          "valuedContracts": 0
+        },
+        {
           "name": "AG FOODS Group a.s.",
           "ico": "05651531",
           "contracts": 1,
@@ -48275,6 +48303,13 @@
           "valuedContracts": 0
         },
         {
+          "name": "HAVLSERVICE s.r.o.",
+          "ico": "24302091",
+          "contracts": 1,
+          "knownValueCzk": 0,
+          "valuedContracts": 0
+        },
+        {
           "name": "Pekařství u Píchů, s.r.o.",
           "ico": "26193680",
           "contracts": 1,
@@ -48290,6 +48325,69 @@
         }
       ],
       "contracts": [
+        {
+          "id": "40096029",
+          "idContract": "37709005",
+          "url": "https://smlouvy.gov.cz/smlouva/40096029",
+          "subject": "praní prádla",
+          "published": "2026-10-26",
+          "signed": "2026-06-01",
+          "valueCzk": null,
+          "valueVatCzk": null,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "HAVLSERVICE s.r.o.",
+              "ico": "24302091",
+              "box": "4xrc6wd"
+            }
+          ],
+          "counterparty": "HAVLSERVICE s.r.o.",
+          "publisher": "Mateřská škola, Praha 8, Klíčanská 20",
+          "publisherIco": "70919674"
+        },
+        {
+          "id": "40096573",
+          "idContract": "37709533",
+          "url": "https://smlouvy.gov.cz/smlouva/40096573",
+          "subject": "licence k programu Správa MŠ",
+          "published": "2026-10-26",
+          "signed": "2024-11-12",
+          "valueCzk": null,
+          "valueVatCzk": null,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "Správa MŠ software, s.r.o.",
+              "ico": "04871103",
+              "box": "5d5rkjk"
+            }
+          ],
+          "counterparty": "Správa MŠ software, s.r.o.",
+          "publisher": "Mateřská škola, Praha 8, Klíčanská 20",
+          "publisherIco": "70919674"
+        },
+        {
+          "id": "40096401",
+          "idContract": "37709365",
+          "url": "https://smlouvy.gov.cz/smlouva/40096401",
+          "subject": "přístup do webové aplikace Správa MŠ - školní jídelna",
+          "published": "2026-10-26",
+          "signed": "2025-10-31",
+          "valueCzk": null,
+          "valueVatCzk": null,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "Správa MŠ software, s.r.o.",
+              "ico": "04871103",
+              "box": "5d5rkjk"
+            }
+          ],
+          "counterparty": "Správa MŠ software, s.r.o.",
+          "publisher": "Mateřská škola, Praha 8, Klíčanská 20",
+          "publisherIco": "70919674"
+        },
         {
           "id": "40048650",
           "idContract": "33797569",
@@ -63616,6 +63714,48 @@
       ],
       "contracts": [
         {
+          "id": "40100449",
+          "idContract": "35115649",
+          "url": "https://smlouvy.gov.cz/smlouva/40100449",
+          "subject": "Rekonstrukce elektroinstalace I. etapa ZŠ Hovorčovická, Hovorčovická 11/1281, 182 00 Praha 8 - Kobylisy",
+          "published": "2026-10-26",
+          "signed": "2026-03-30",
+          "valueCzk": 10358482.77,
+          "valueVatCzk": 10358482.77,
+          "valueNoVatCzk": 8560729.56,
+          "counterparties": [
+            {
+              "name": "Omega facilities s.r.o.",
+              "ico": "05292921",
+              "box": ""
+            }
+          ],
+          "counterparty": "Omega facilities s.r.o.",
+          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
+          "publisherIco": "00639524"
+        },
+        {
+          "id": "40100409",
+          "idContract": "37538041",
+          "url": "https://smlouvy.gov.cz/smlouva/40100409",
+          "subject": "Dodatek č. 1 ke smlouvě o dílo Rekonstrukce elektroinstalace 1.etapa ZŠ Hovorčovická, Hovorčovická 11/1281, 182 00 Praha 8 - Kobylisy",
+          "published": "2026-10-26",
+          "signed": "2026-10-07",
+          "valueCzk": 528215.82,
+          "valueVatCzk": 528215.82,
+          "valueNoVatCzk": 436542,
+          "counterparties": [
+            {
+              "name": "Omega facilities s.r.o.",
+              "ico": "05292921",
+              "box": "pxizh6t"
+            }
+          ],
+          "counterparty": "Omega facilities s.r.o.",
+          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
+          "publisherIco": "00639524"
+        },
+        {
           "id": "40026773",
           "idContract": "36428348",
           "url": "https://smlouvy.gov.cz/smlouva/40026773",
@@ -63654,48 +63794,6 @@
             }
           ],
           "counterparty": "PKF - Prague Philharmonia, o.p.s.",
-          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
-          "publisherIco": "00639524"
-        },
-        {
-          "id": "39914969",
-          "idContract": "35115649",
-          "url": "https://smlouvy.gov.cz/smlouva/39914969",
-          "subject": "Rekonstrukce elektroinstalace I. etapa ZŠ Hovorčovická, Hovorčovická 11/1281, 182 00 Praha 8 - Kobylisy",
-          "published": "2026-10-13",
-          "signed": "2026-03-30",
-          "valueCzk": 10358482.77,
-          "valueVatCzk": 10358482.77,
-          "valueNoVatCzk": 8560729.56,
-          "counterparties": [
-            {
-              "name": "Omega facilities s.r.o.",
-              "ico": "05292921",
-              "box": ""
-            }
-          ],
-          "counterparty": "Omega facilities s.r.o.",
-          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
-          "publisherIco": "00639524"
-        },
-        {
-          "id": "39917765",
-          "idContract": "37538041",
-          "url": "https://smlouvy.gov.cz/smlouva/39917765",
-          "subject": "Dodatek č. 1 ke smlouvě o dílo Rekonstrukce elektroinstalace 1.etapa ZŠ Hovorčovická, Hovorčovická 11/1281, 182 00 Praha 8 - Kobylisy",
-          "published": "2026-10-13",
-          "signed": "2026-10-07",
-          "valueCzk": 528215.82,
-          "valueVatCzk": 528215.82,
-          "valueNoVatCzk": 436542,
-          "counterparties": [
-            {
-              "name": "Omega facilities s.r.o.",
-              "ico": "05292921",
-              "box": "pxizh6t"
-            }
-          ],
-          "counterparty": "Omega facilities s.r.o.",
           "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
           "publisherIco": "00639524"
         },
@@ -143587,12 +143685,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Praha-8-U-Skolske-zahrady-4.html",
       "website": "http://www.uskolskezahrady.cz/",
-      "total": 102,
-      "partners": 53,
-      "knownValueCzk": 28286741.659999996,
-      "valuedContracts": 92,
+      "total": 103,
+      "partners": 54,
+      "knownValueCzk": 28407751.659999996,
+      "valuedContracts": 93,
       "dateFrom": "2016-08-15",
-      "dateTo": "2026-10-16",
+      "dateTo": "2026-10-26",
       "partnerList": [
         {
           "name": "FIRMA s.r.o.",
@@ -143826,6 +143924,13 @@
           "valuedContracts": 1
         },
         {
+          "name": "ESO R-MARKET spol. s r.o.",
+          "ico": "49966626",
+          "contracts": 1,
+          "knownValueCzk": 121010,
+          "valuedContracts": 1
+        },
+        {
           "name": "PENZION KAMÍNEK s.r.o.",
           "ico": "22364617",
           "contracts": 2,
@@ -143967,6 +144072,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "40093105",
+          "idContract": "37706197",
+          "url": "https://smlouvy.gov.cz/smlouva/40093105",
+          "subject": "Nákup školního nábytku",
+          "published": "2026-10-26",
+          "signed": "2026-10-26",
+          "valueCzk": 121010,
+          "valueVatCzk": 121010,
+          "valueNoVatCzk": 100008.26,
+          "counterparties": [
+            {
+              "name": "ESO R-MARKET spol. s r.o.",
+              "ico": "49966626",
+              "box": "pvtpvi8"
+            }
+          ],
+          "counterparty": "ESO R-MARKET spol. s r.o.",
+          "publisher": "Základní škola a mateřská škola, Praha 8, U Školské zahrady 4",
+          "publisherIco": "60461837"
+        },
         {
           "id": "40070477",
           "idContract": "37684377",
@@ -160893,12 +161019,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-Praha-8-Buresova-14.html",
       "website": "http://www.zsburesova.cz/",
-      "total": 215,
+      "total": 216,
       "partners": 95,
       "knownValueCzk": 17026827.18,
       "valuedContracts": 66,
       "dateFrom": "2016-10-12",
-      "dateTo": "2026-10-02",
+      "dateTo": "2026-10-21",
       "partnerList": [
         {
           "name": "FRIGOSYSTEM, spol. s r.o.",
@@ -161216,6 +161342,13 @@
           "valuedContracts": 0
         },
         {
+          "name": "PRO TRAVEL CK, s.r.o.",
+          "ico": "26355353",
+          "contracts": 6,
+          "knownValueCzk": 0,
+          "valuedContracts": 0
+        },
+        {
           "name": "Cestovní kancelář Star Line, s.r.o.",
           "ico": "28524888",
           "contracts": 5,
@@ -161225,13 +161358,6 @@
         {
           "name": "Karol Banda Křešice",
           "ico": "76215971",
-          "contracts": 5,
-          "knownValueCzk": 0,
-          "valuedContracts": 0
-        },
-        {
-          "name": "PRO TRAVEL CK, s.r.o.",
-          "ico": "26355353",
           "contracts": 5,
           "knownValueCzk": 0,
           "valuedContracts": 0
@@ -161567,6 +161693,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "40101797",
+          "idContract": "37714461",
+          "url": "https://smlouvy.gov.cz/smlouva/40101797",
+          "subject": "smlouva o zajištění zájezdu do Anglie",
+          "published": "2026-10-26",
+          "signed": "2026-10-21",
+          "valueCzk": null,
+          "valueVatCzk": null,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "PRO TRAVEL CK, s.r.o.",
+              "ico": "26355353",
+              "box": "cq4uuat"
+            }
+          ],
+          "counterparty": "PRO TRAVEL CK, s.r.o.",
+          "publisher": "Základní škola, Praha 8, Burešova 14",
+          "publisherIco": "60433345"
+        },
         {
           "id": "39838225",
           "idContract": "37461989",

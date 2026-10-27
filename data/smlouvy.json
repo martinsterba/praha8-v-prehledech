@@ -22,6 +22,27 @@
       "publisherIco": "00063797"
     },
     {
+      "id": "40092829",
+      "idContract": "37705929",
+      "url": "https://smlouvy.gov.cz/smlouva/40092829",
+      "subject": "Smlouva o podmínkách udělení souhlasu s umístěním stavby v ochranném pásmu rozvodného tepelného zařízení",
+      "published": "2026-10-26",
+      "signed": "2026-09-14",
+      "valueCzk": null,
+      "valueVatCzk": null,
+      "valueNoVatCzk": null,
+      "counterparties": [
+        {
+          "name": "Pražská teplárenská a.s.",
+          "ico": "45273600",
+          "box": "jngcgsq"
+        }
+      ],
+      "counterparty": "Pražská teplárenská a.s.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
       "id": "40065097",
       "idContract": "37679209",
       "url": "https://smlouvy.gov.cz/smlouva/40065097",
@@ -142882,7 +142903,7 @@
     {
       "name": "Pražská teplárenská a.s.",
       "ico": "45273600",
-      "contracts": 12,
+      "contracts": 13,
       "knownValueCzk": 465495,
       "valuedContracts": 5
     },
@@ -149125,7 +149146,7 @@
     }
   ],
   "meta": {
-    "total": 6545,
+    "total": 6546,
     "complete": true,
     "historyComplete": true,
     "scope": "full-history",
@@ -149135,7 +149156,7 @@
     "knownValueCzk": 6880909270.529996,
     "valuedContracts": 5781,
     "partners": 1686,
-    "updated": "2026-10-26T10:09:34.034Z",
+    "updated": "2026-10-27T09:53:06.436Z",
     "source": "https://data.smlouvy.gov.cz/index.xml",
     "method": "official-live-search-daily-overlap",
     "dumps": 124,
