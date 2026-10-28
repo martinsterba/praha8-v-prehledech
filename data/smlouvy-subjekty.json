@@ -1,18 +1,18 @@
 {
   "schema": 2,
-  "updated": "2026-10-27T09:53:06.436Z",
+  "updated": "2026-10-28T10:38:39.852Z",
   "source": "https://smlouvy.gov.cz/vyhledavani",
   "method": "official-live-search-daily-overlap",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7479,
-    "knownValueCzk": 5183767315.790001,
+    "totalContracts": 7496,
+    "knownValueCzk": 5187023839.1,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
-        "current": 6546
+        "current": 6548
       },
       "note": "Denní kontrola používá živé vyhledávání Registru smluv v okně 5 dní; historický základ se při denním běhu nestahuje."
     }
@@ -412,12 +412,12 @@
       "ownershipShare": "100 %",
       "source": "https://www.praha8.cz/Osma-sprava-majetku-a-sluzeb-a-s",
       "website": "https://www.osms.cz/",
-      "total": 1504,
+      "total": 1506,
       "partners": 236,
-      "knownValueCzk": 1450638054.4300005,
-      "valuedContracts": 1213,
+      "knownValueCzk": 1452623778.7400005,
+      "valuedContracts": 1215,
       "dateFrom": "1999-09-14",
-      "dateTo": "2026-10-16",
+      "dateTo": "2026-10-26",
       "partnerList": [
         {
           "name": "Wertstav s.r.o.",
@@ -429,16 +429,16 @@
         {
           "name": "Guerdo, s.r.o.",
           "ico": "24662437",
-          "contracts": 83,
-          "knownValueCzk": 88148137.95000002,
-          "valuedContracts": 62
+          "contracts": 84,
+          "knownValueCzk": 89976792.02000001,
+          "valuedContracts": 63
         },
         {
           "name": "Bau Franz s.r.o.",
           "ico": "03664881",
-          "contracts": 52,
-          "knownValueCzk": 67845427.17,
-          "valuedContracts": 42
+          "contracts": 53,
+          "knownValueCzk": 68002497.41,
+          "valuedContracts": 43
         },
         {
           "name": "AG-REAL s.r.o.",
@@ -2091,6 +2091,48 @@
             }
           ],
           "counterparty": "JOVIS STAVBY s.r.o.",
+          "publisher": "Osmá správa majetku a služeb a.s.",
+          "publisherIco": "04650522"
+        },
+        {
+          "id": "40117973",
+          "idContract": "37729885",
+          "url": "https://smlouvy.gov.cz/smlouva/40117973",
+          "subject": "VZMR/21/2026 - Oprava havarijního stavu fasády - Sokolovská 264/121, Praha 8",
+          "published": "2026-10-27",
+          "signed": "2026-10-26",
+          "valueCzk": 1828654.07,
+          "valueVatCzk": null,
+          "valueNoVatCzk": 1828654.07,
+          "counterparties": [
+            {
+              "name": "Guerdo, s.r.o.",
+              "ico": "24662437",
+              "box": "ugxpqnp"
+            }
+          ],
+          "counterparty": "Guerdo, s.r.o.",
+          "publisher": "Osmá správa majetku a služeb a.s.",
+          "publisherIco": "04650522"
+        },
+        {
+          "id": "40117821",
+          "idContract": "37729737",
+          "url": "https://smlouvy.gov.cz/smlouva/40117821",
+          "subject": "SOD/056/2026 - Oprava zdiva pro osazení bezpečnostních dveří u bč. 4 na adrese Kollárova 405/1, 186 00 Praha 8 - Karlín",
+          "published": "2026-10-27",
+          "signed": "2026-10-26",
+          "valueCzk": 157070.24,
+          "valueVatCzk": null,
+          "valueNoVatCzk": 157070.24,
+          "counterparties": [
+            {
+              "name": "Bau Franz s.r.o.",
+              "ico": "03664881",
+              "box": "p8nt7uf"
+            }
+          ],
+          "counterparty": "Bau Franz s.r.o.",
           "publisher": "Osmá správa majetku a služeb a.s.",
           "publisherIco": "04650522"
         },
@@ -40644,26 +40686,26 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Organizace-zdravotnickych-a-socialne-zdravotnickych-sluzeb",
       "website": "https://www.gerontocentrum.cz/",
-      "total": 210,
-      "partners": 76,
-      "knownValueCzk": 23103304.73,
-      "valuedContracts": 182,
+      "total": 220,
+      "partners": 78,
+      "knownValueCzk": 23838190.73,
+      "valuedContracts": 192,
       "dateFrom": "2005-10-31",
-      "dateTo": "2026-08-27",
+      "dateTo": "2026-09-01",
       "partnerList": [
         {
           "name": "Fakultní nemocnice Bulovka",
           "ico": "00064211",
-          "contracts": 32,
-          "knownValueCzk": 4190669.03,
-          "valuedContracts": 31
+          "contracts": 35,
+          "knownValueCzk": 4394864.03,
+          "valuedContracts": 34
         },
         {
           "name": "Tomáš Homolka",
           "ico": "14911159",
-          "contracts": 51,
-          "knownValueCzk": 3500073.5300000003,
-          "valuedContracts": 51
+          "contracts": 54,
+          "knownValueCzk": 3715512.5300000003,
+          "valuedContracts": 54
         },
         {
           "name": "Hyundai Praha Domanský s.r.o.",
@@ -40710,9 +40752,9 @@
         {
           "name": "Malby Nátěry Štukování David Pavlík",
           "ico": "47128739",
-          "contracts": 3,
-          "knownValueCzk": 553026,
-          "valuedContracts": 3
+          "contracts": 4,
+          "knownValueCzk": 666519,
+          "valuedContracts": 4
         },
         {
           "name": "Pluxee Česká republika a.s.",
@@ -40869,6 +40911,13 @@
           "valuedContracts": 1
         },
         {
+          "name": "IPODEC - ČISTÉ MĚSTO a.s.",
+          "ico": "40764877",
+          "contracts": 2,
+          "knownValueCzk": 122148,
+          "valuedContracts": 2
+        },
+        {
           "name": "Roman RICHTERA",
           "ico": "15279201",
           "contracts": 1,
@@ -40904,6 +40953,13 @@
           "valuedContracts": 1
         },
         {
+          "name": "Roman Mikeš",
+          "ico": "71782052",
+          "contracts": 1,
+          "knownValueCzk": 82896,
+          "valuedContracts": 1
+        },
+        {
           "name": "Allianz pojišťovna, a.s.",
           "ico": "47115971",
           "contracts": 1,
@@ -40925,17 +40981,17 @@
           "valuedContracts": 1
         },
         {
-          "name": "IPODEC - ČISTÉ MĚSTO a.s.",
-          "ico": "40764877",
-          "contracts": 1,
-          "knownValueCzk": 70010,
-          "valuedContracts": 1
-        },
-        {
           "name": "Ing. Bibiana Gregorová",
           "ico": "65226445",
           "contracts": 1,
           "knownValueCzk": 67215,
+          "valuedContracts": 1
+        },
+        {
+          "name": "DMA Praha s.r.o.",
+          "ico": "25689495",
+          "contracts": 1,
+          "knownValueCzk": 66725,
           "valuedContracts": 1
         },
         {
@@ -41185,6 +41241,216 @@
         }
       ],
       "contracts": [
+        {
+          "id": "40113021",
+          "idContract": "37725153",
+          "url": "https://smlouvy.gov.cz/smlouva/40113021",
+          "subject": "Úklid objektu Benákova",
+          "published": "2026-10-27",
+          "signed": "2026-07-01",
+          "valueCzk": 69407,
+          "valueVatCzk": 69407,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "Tomáš Homolka",
+              "ico": "14911159",
+              "box": ""
+            }
+          ],
+          "counterparty": "Tomáš Homolka",
+          "publisher": "Gerontologické centrum",
+          "publisherIco": "45250022"
+        },
+        {
+          "id": "40112897",
+          "idContract": "37725033",
+          "url": "https://smlouvy.gov.cz/smlouva/40112897",
+          "subject": "Malování přízemí lůžkového oddělení Benákova",
+          "published": "2026-10-27",
+          "signed": "2026-07-01",
+          "valueCzk": 113493,
+          "valueVatCzk": 113493,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "Malby Nátěry Štukování David Pavlík",
+              "ico": "47128739",
+              "box": ""
+            }
+          ],
+          "counterparty": "Malby Nátěry Štukování David Pavlík",
+          "publisher": "Gerontologické centrum",
+          "publisherIco": "45250022"
+        },
+        {
+          "id": "40111961",
+          "idContract": "37724141",
+          "url": "https://smlouvy.gov.cz/smlouva/40111961",
+          "subject": "Úklid objektu Benákova",
+          "published": "2026-10-27",
+          "signed": "2026-06-01",
+          "valueCzk": 73016,
+          "valueVatCzk": 73016,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "Tomáš Homolka",
+              "ico": "14911159",
+              "box": ""
+            }
+          ],
+          "counterparty": "Tomáš Homolka",
+          "publisher": "Gerontologické centrum",
+          "publisherIco": "45250022"
+        },
+        {
+          "id": "40111849",
+          "idContract": "37724033",
+          "url": "https://smlouvy.gov.cz/smlouva/40111849",
+          "subject": "Likvidace směsného odpadu",
+          "published": "2026-10-27",
+          "signed": "2026-06-01",
+          "valueCzk": 52138,
+          "valueVatCzk": 52138,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "IPODEC - ČISTÉ MĚSTO a.s.",
+              "ico": "40764877",
+              "box": "9baekya"
+            }
+          ],
+          "counterparty": "IPODEC - ČISTÉ MĚSTO a.s.",
+          "publisher": "Gerontologické centrum",
+          "publisherIco": "45250022"
+        },
+        {
+          "id": "40112365",
+          "idContract": "37724525",
+          "url": "https://smlouvy.gov.cz/smlouva/40112365",
+          "subject": "Dodání léků a léčivých přípravků",
+          "published": "2026-10-27",
+          "signed": "2026-07-01",
+          "valueCzk": 77889,
+          "valueVatCzk": 77889,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "Fakultní nemocnice Bulovka",
+              "ico": "00064211",
+              "box": "n9hiezm"
+            }
+          ],
+          "counterparty": "Fakultní nemocnice Bulovka",
+          "publisher": "Gerontologické centrum",
+          "publisherIco": "45250022"
+        },
+        {
+          "id": "40112261",
+          "idContract": "37724433",
+          "url": "https://smlouvy.gov.cz/smlouva/40112261",
+          "subject": "Dodání léků a léčivých přípravků",
+          "published": "2026-10-27",
+          "signed": "2026-06-01",
+          "valueCzk": 64702,
+          "valueVatCzk": 64702,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "Fakultní nemocnice Bulovka",
+              "ico": "00064211",
+              "box": "n9hiezm"
+            }
+          ],
+          "counterparty": "Fakultní nemocnice Bulovka",
+          "publisher": "Gerontologické centrum",
+          "publisherIco": "45250022"
+        },
+        {
+          "id": "40112665",
+          "idContract": "37724801",
+          "url": "https://smlouvy.gov.cz/smlouva/40112665",
+          "subject": "Zahradnické práce v objektu Šimůnkova 1600",
+          "published": "2026-10-27",
+          "signed": "2026-07-01",
+          "valueCzk": 82896,
+          "valueVatCzk": 82896,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "Roman Mikeš",
+              "ico": "71782052",
+              "box": ""
+            }
+          ],
+          "counterparty": "Roman Mikeš",
+          "publisher": "Gerontologické centrum",
+          "publisherIco": "45250022"
+        },
+        {
+          "id": "40114445",
+          "idContract": "37726513",
+          "url": "https://smlouvy.gov.cz/smlouva/40114445",
+          "subject": "Dodání léků a léčivých přípravků",
+          "published": "2026-10-27",
+          "signed": "2026-08-03",
+          "valueCzk": 61604,
+          "valueVatCzk": 61604,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "Fakultní nemocnice Bulovka",
+              "ico": "00064211",
+              "box": "n9hiezm"
+            }
+          ],
+          "counterparty": "Fakultní nemocnice Bulovka",
+          "publisher": "Gerontologické centrum",
+          "publisherIco": "45250022"
+        },
+        {
+          "id": "40114729",
+          "idContract": "37726781",
+          "url": "https://smlouvy.gov.cz/smlouva/40114729",
+          "subject": "Dodání 5 ks nočních stolků",
+          "published": "2026-10-27",
+          "signed": "2026-09-01",
+          "valueCzk": 66725,
+          "valueVatCzk": 66725,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "DMA Praha s.r.o.",
+              "ico": "25689495",
+              "box": "9f3zaj7"
+            }
+          ],
+          "counterparty": "DMA Praha s.r.o.",
+          "publisher": "Gerontologické centrum",
+          "publisherIco": "45250022"
+        },
+        {
+          "id": "40114605",
+          "idContract": "37726669",
+          "url": "https://smlouvy.gov.cz/smlouva/40114605",
+          "subject": "Úklid objektu Benákova",
+          "published": "2026-10-27",
+          "signed": "2026-08-03",
+          "valueCzk": 73016,
+          "valueVatCzk": 73016,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "Tomáš Homolka",
+              "ico": "14911159",
+              "box": ""
+            }
+          ],
+          "counterparty": "Tomáš Homolka",
+          "publisher": "Gerontologické centrum",
+          "publisherIco": "45250022"
+        },
         {
           "entityIco": "45250022",
           "entityName": "Gerontologické centrum",
@@ -52543,12 +52809,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Materska-skola-Praha-8-Libcicka-6.html",
       "website": "http://www.mslibcicka.cz/",
-      "total": 40,
-      "partners": 25,
-      "knownValueCzk": 4145259.64,
-      "valuedContracts": 38,
+      "total": 42,
+      "partners": 26,
+      "knownValueCzk": 4247789.640000001,
+      "valuedContracts": 40,
       "dateFrom": "2017-09-19",
-      "dateTo": "2026-07-22",
+      "dateTo": "2026-09-29",
       "partnerList": [
         {
           "name": "Jan Berger",
@@ -52572,11 +52838,11 @@
           "valuedContracts": 3
         },
         {
-          "name": "Milan Řehák",
+          "name": "Truhlářství Milan Řehák",
           "ico": "41966384",
-          "contracts": 4,
-          "knownValueCzk": 391455,
-          "valuedContracts": 4
+          "contracts": 5,
+          "knownValueCzk": 441955,
+          "valuedContracts": 5
         },
         {
           "name": "DŘEVOARTIKL, spol. s r.o.",
@@ -52719,6 +52985,13 @@
           "valuedContracts": 1
         },
         {
+          "name": "ATLAS consulting spol. s r.o.",
+          "ico": "46578706",
+          "contracts": 1,
+          "knownValueCzk": 52030,
+          "valuedContracts": 1
+        },
+        {
           "name": "MultiSport Benefit, s.r.o.",
           "ico": "24715298",
           "contracts": 1,
@@ -52727,6 +53000,48 @@
         }
       ],
       "contracts": [
+        {
+          "id": "40112057",
+          "idContract": "37724237",
+          "url": "https://smlouvy.gov.cz/smlouva/40112057",
+          "subject": "\tVýroba a montáž krytů na radiátory v dekoru buk",
+          "published": "2026-10-27",
+          "signed": "2026-08-13",
+          "valueCzk": 50500,
+          "valueVatCzk": 50500,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "Truhlářství Milan Řehák",
+              "ico": "41966384",
+              "box": ""
+            }
+          ],
+          "counterparty": "Truhlářství Milan Řehák",
+          "publisher": "Mateřská škola, Praha 8, Libčická 6",
+          "publisherIco": "70919721"
+        },
+        {
+          "id": "40112301",
+          "idContract": "37724469",
+          "url": "https://smlouvy.gov.cz/smlouva/40112301",
+          "subject": "Přístup (licence k užití) do internetové aplikace právního informačního systému CODEXIS®",
+          "published": "2026-10-27",
+          "signed": "2026-09-29",
+          "valueCzk": 52030,
+          "valueVatCzk": 52030,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "ATLAS consulting spol. s r.o.",
+              "ico": "46578706",
+              "box": "p8yn2sr"
+            }
+          ],
+          "counterparty": "ATLAS consulting spol. s r.o.",
+          "publisher": "Mateřská škola, Praha 8, Libčická 6",
+          "publisherIco": "70919721"
+        },
         {
           "id": "39913081",
           "idContract": "37533549",
@@ -58657,12 +58972,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Materska-skola-Praha-8-Stepnicna-1.html",
       "website": "http://www.msstepnicna.cz/",
-      "total": 39,
+      "total": 41,
       "partners": 25,
-      "knownValueCzk": 3928873.78,
-      "valuedContracts": 29,
+      "knownValueCzk": 4249039.779999999,
+      "valuedContracts": 30,
       "dateFrom": "2018-02-01",
-      "dateTo": "2026-09-09",
+      "dateTo": "2026-10-20",
       "partnerList": [
         {
           "name": "koncept344 s.r.o.",
@@ -58677,6 +58992,13 @@
           "contracts": 1,
           "knownValueCzk": 752939.44,
           "valuedContracts": 1
+        },
+        {
+          "name": "dvě dílny s.r.o.",
+          "ico": "21013195",
+          "contracts": 2,
+          "knownValueCzk": 395566,
+          "valuedContracts": 2
         },
         {
           "name": "DŘEVOARTIKL, spol. s r.o.",
@@ -58725,13 +59047,6 @@
           "ico": "27243842",
           "contracts": 1,
           "knownValueCzk": 79990,
-          "valuedContracts": 1
-        },
-        {
-          "name": "dvě dílny s.r.o.",
-          "ico": "21013195",
-          "contracts": 1,
-          "knownValueCzk": 75400,
           "valuedContracts": 1
         },
         {
@@ -58841,6 +59156,42 @@
         }
       ],
       "contracts": [
+        {
+          "id": "40117725",
+          "idContract": "37729641",
+          "url": "https://smlouvy.gov.cz/smlouva/40117725",
+          "subject": "Dodávky a činnosti spočívající v revitalizaci části zahrady v mateřské škole",
+          "published": "2026-10-27",
+          "signed": "2026-09-01",
+          "valueCzk": 320166,
+          "valueVatCzk": 320166,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "dvě dílny s.r.o.",
+              "ico": "21013195",
+              "box": "2w5x6r9"
+            }
+          ],
+          "counterparty": "dvě dílny s.r.o.",
+          "publisher": "Mateřská škola, Praha 8, Štěpničná 1",
+          "publisherIco": "70919615"
+        },
+        {
+          "id": "40117601",
+          "idContract": "37729533",
+          "url": "https://smlouvy.gov.cz/smlouva/40117601",
+          "subject": "Sestavení rozpočtu na základě finančních prostředků přidělených MHMP a MČ Praha 8",
+          "published": "2026-10-27",
+          "signed": "2026-10-20",
+          "valueCzk": null,
+          "valueVatCzk": null,
+          "valueNoVatCzk": null,
+          "counterparties": [],
+          "counterparty": "",
+          "publisher": "Mateřská škola, Praha 8, Štěpničná 1",
+          "publisherIco": "70919615"
+        },
         {
           "id": "39496117",
           "idContract": "37132869",
@@ -143685,10 +144036,10 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Praha-8-U-Skolske-zahrady-4.html",
       "website": "http://www.uskolskezahrady.cz/",
-      "total": 103,
+      "total": 104,
       "partners": 54,
-      "knownValueCzk": 28407751.659999996,
-      "valuedContracts": 93,
+      "knownValueCzk": 28520968.659999996,
+      "valuedContracts": 94,
       "dateFrom": "2016-08-15",
       "dateTo": "2026-10-26",
       "partnerList": [
@@ -143709,9 +144060,9 @@
         {
           "name": "Počítačová společnost, s.r.o.",
           "ico": "60463082",
-          "contracts": 9,
-          "knownValueCzk": 3725108,
-          "valuedContracts": 9
+          "contracts": 10,
+          "knownValueCzk": 3838325,
+          "valuedContracts": 10
         },
         {
           "name": "Carepa Invest s.r.o.",
@@ -144072,6 +144423,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "40109233",
+          "idContract": "37721553",
+          "url": "https://smlouvy.gov.cz/smlouva/40109233",
+          "subject": "Kupní smlouva na LCD panel",
+          "published": "2026-10-27",
+          "signed": "2026-10-21",
+          "valueCzk": 113217,
+          "valueVatCzk": 113217,
+          "valueNoVatCzk": 93568,
+          "counterparties": [
+            {
+              "name": "Počítačová společnost, s.r.o.",
+              "ico": "60463082",
+              "box": "g5drwny"
+            }
+          ],
+          "counterparty": "Počítačová společnost, s.r.o.",
+          "publisher": "Základní škola a mateřská škola, Praha 8, U Školské zahrady 4",
+          "publisherIco": "60461837"
+        },
         {
           "id": "40093105",
           "idContract": "37706197",

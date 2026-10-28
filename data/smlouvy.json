@@ -1,6 +1,69 @@
 {
   "contracts": [
     {
+      "id": "40114653",
+      "idContract": "2137246",
+      "url": "https://smlouvy.gov.cz/smlouva/40114653",
+      "subject": "Dodatek č. 5 ke Smlouvě o nájmu nebytových prostor",
+      "published": "2026-10-27",
+      "signed": "2017-04-25",
+      "valueCzk": 741780,
+      "valueVatCzk": null,
+      "valueNoVatCzk": 741780,
+      "counterparties": [
+        {
+          "name": "SQUASH SPORT s.r.o.",
+          "ico": "25116576",
+          "box": "y5d3xf8"
+        }
+      ],
+      "counterparty": "SQUASH SPORT s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "40110129",
+      "idContract": "37722393",
+      "url": "https://smlouvy.gov.cz/smlouva/40110129",
+      "subject": "1282_6_Oprava zábradlí v havarijním stavu._  15159",
+      "published": "2026-10-27",
+      "signed": "2026-10-27",
+      "valueCzk": 91193.31,
+      "valueVatCzk": null,
+      "valueNoVatCzk": 91193.31,
+      "counterparties": [
+        {
+          "name": "ANBO SERVIS s.r.o.",
+          "ico": "14383217",
+          "box": ""
+        }
+      ],
+      "counterparty": "ANBO SERVIS s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "40112573",
+      "idContract": "37724717",
+      "url": "https://smlouvy.gov.cz/smlouva/40112573",
+      "subject": "484_2_Mazurská_havárie prasklé kanalizačního potrubí_15009",
+      "published": "2026-10-27",
+      "signed": "2026-09-24",
+      "valueCzk": 80000,
+      "valueVatCzk": null,
+      "valueNoVatCzk": 80000,
+      "counterparties": [
+        {
+          "name": "Roman Pavlíček",
+          "ico": "71590820",
+          "box": ""
+        }
+      ],
+      "counterparty": "Roman Pavlíček",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
       "id": "40088761",
       "idContract": "37702053",
       "url": "https://smlouvy.gov.cz/smlouva/40088761",
@@ -5958,27 +6021,6 @@
         }
       ],
       "counterparty": "BD Sokolovská 454/126, družstvo",
-      "publisher": "Městská část Praha 8",
-      "publisherIco": "00063797"
-    },
-    {
-      "id": "38231265",
-      "idContract": "2137246",
-      "url": "https://smlouvy.gov.cz/smlouva/38231265",
-      "subject": "Dodatek č. 5 ke Smlouvě o nájmu nebytových prostor",
-      "published": "2026-06-02",
-      "signed": "2017-04-25",
-      "valueCzk": 741780,
-      "valueVatCzk": null,
-      "valueNoVatCzk": 741780,
-      "counterparties": [
-        {
-          "name": "SQUASH SPORT s.r.o.",
-          "ico": "25116576",
-          "box": "y5d3xf8"
-        }
-      ],
-      "counterparty": "SQUASH SPORT s.r.o.",
       "publisher": "Městská část Praha 8",
       "publisherIco": "00063797"
     },
@@ -138498,6 +138540,13 @@
       "valuedContracts": 31
     },
     {
+      "name": "Roman Pavlíček",
+      "ico": "71590820",
+      "contracts": 43,
+      "knownValueCzk": 5528851.45,
+      "valuedContracts": 43
+    },
+    {
       "name": "ROSSY service a.s.",
       "ico": "01880802",
       "contracts": 6,
@@ -138510,13 +138559,6 @@
       "contracts": 13,
       "knownValueCzk": 5470898.260000001,
       "valuedContracts": 10
-    },
-    {
-      "name": "Roman Pavlíček",
-      "ico": "71590820",
-      "contracts": 42,
-      "knownValueCzk": 5448851.45,
-      "valuedContracts": 42
     },
     {
       "name": "PEGAS CZ s.r.o.",
@@ -139247,6 +139289,13 @@
       "valuedContracts": 3
     },
     {
+      "name": "ANBO SERVIS s.r.o.",
+      "ico": "14383217",
+      "contracts": 19,
+      "knownValueCzk": 2734769.2399999993,
+      "valuedContracts": 19
+    },
+    {
       "name": "PERFECT ICE s.r.o.",
       "ico": "27860221",
       "contracts": 2,
@@ -139329,13 +139378,6 @@
       "contracts": 2,
       "knownValueCzk": 2654740,
       "valuedContracts": 1
-    },
-    {
-      "name": "ANBO SERVIS s.r.o.",
-      "ico": "14383217",
-      "contracts": 18,
-      "knownValueCzk": 2643575.9299999997,
-      "valuedContracts": 18
     },
     {
       "name": "Marek Sedlář",
@@ -149146,17 +149188,17 @@
     }
   ],
   "meta": {
-    "total": 6546,
+    "total": 6548,
     "complete": true,
     "historyComplete": true,
     "scope": "full-history",
     "dateFrom": "2007-05-09",
     "dateTo": "2026-10-30",
     "dateLabel": "celá historie Registru smluv",
-    "knownValueCzk": 6880909270.529996,
-    "valuedContracts": 5781,
+    "knownValueCzk": 6881080463.839995,
+    "valuedContracts": 5783,
     "partners": 1686,
-    "updated": "2026-10-27T09:53:06.436Z",
+    "updated": "2026-10-28T10:38:39.852Z",
     "source": "https://data.smlouvy.gov.cz/index.xml",
     "method": "official-live-search-daily-overlap",
     "dumps": 124,
