@@ -1,11 +1,11 @@
 {
-  "updated": "2026-10-28T10:38:39.852Z",
+  "updated": "2026-10-29T10:57:28.454Z",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7496,
-    "knownValueCzk": 5187023839.1,
+    "totalContracts": 7499,
+    "knownValueCzk": 5187638839.1,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
@@ -40,10 +40,10 @@
       "ownershipShare": "100 %",
       "source": "https://www.praha8.cz/Osma-sprava-majetku-a-sluzeb-a-s",
       "website": "https://www.osms.cz/",
-      "total": 1506,
+      "total": 1508,
       "partners": 236,
-      "knownValueCzk": 1452623778.7400005,
-      "valuedContracts": 1215,
+      "knownValueCzk": 1453138778.7400005,
+      "valuedContracts": 1217,
       "dateFrom": "1999-09-14",
       "dateTo": "2026-10-26"
     },
@@ -88,12 +88,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Materska-skola-Praha-8-Bojasova-1.html",
       "website": "http://www.msbojasova.cz/",
-      "total": 56,
+      "total": 57,
       "partners": 25,
-      "knownValueCzk": 9814892.68,
-      "valuedContracts": 55,
+      "knownValueCzk": 9914892.68,
+      "valuedContracts": 56,
       "dateFrom": "2017-07-21",
-      "dateTo": "2026-06-05"
+      "dateTo": "2026-10-27"
     },
     {
       "name": "Mateřská škola, Praha 8, Chabařovická 2",

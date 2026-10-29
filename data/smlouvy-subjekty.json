@@ -1,14 +1,14 @@
 {
   "schema": 2,
-  "updated": "2026-10-28T10:38:39.852Z",
+  "updated": "2026-10-29T10:57:28.454Z",
   "source": "https://smlouvy.gov.cz/vyhledavani",
   "method": "official-live-search-daily-overlap",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7496,
-    "knownValueCzk": 5187023839.1,
+    "totalContracts": 7499,
+    "knownValueCzk": 5187638839.1,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
@@ -412,10 +412,10 @@
       "ownershipShare": "100 %",
       "source": "https://www.praha8.cz/Osma-sprava-majetku-a-sluzeb-a-s",
       "website": "https://www.osms.cz/",
-      "total": 1506,
+      "total": 1508,
       "partners": 236,
-      "knownValueCzk": 1452623778.7400005,
-      "valuedContracts": 1215,
+      "knownValueCzk": 1453138778.7400005,
+      "valuedContracts": 1217,
       "dateFrom": "1999-09-14",
       "dateTo": "2026-10-26",
       "partnerList": [
@@ -611,9 +611,9 @@
         {
           "name": "SmartSystem Solutions s.r.o.",
           "ico": "06356494",
-          "contracts": 40,
-          "knownValueCzk": 7785880.95,
-          "valuedContracts": 36
+          "contracts": 41,
+          "knownValueCzk": 8021180.95,
+          "valuedContracts": 37
         },
         {
           "name": "MACON a.s.",
@@ -770,18 +770,18 @@
           "valuedContracts": 1
         },
         {
+          "name": "Václav Sommer",
+          "ico": "76496406",
+          "contracts": 12,
+          "knownValueCzk": 2842131,
+          "valuedContracts": 11
+        },
+        {
           "name": "Wojnarowski Vladislav",
           "ico": "68430221",
           "contracts": 24,
           "knownValueCzk": 2778371,
           "valuedContracts": 11
-        },
-        {
-          "name": "Václav Sommer",
-          "ico": "76496406",
-          "contracts": 11,
-          "knownValueCzk": 2562431,
-          "valuedContracts": 10
         },
         {
           "name": "TCON stavební s.r.o.",
@@ -2073,6 +2073,48 @@
         }
       ],
       "contracts": [
+        {
+          "id": "40126497",
+          "idContract": "37738189",
+          "url": "https://smlouvy.gov.cz/smlouva/40126497",
+          "subject": "SOD/043/2026 - Vypracování PD pro výběr zhotovitele - Přestavba a stavební úpravy části objektu (Ďáblík) na adrese Taussigova 1172/1, Praha 8 - Kobylisy",
+          "published": "2026-10-29",
+          "signed": "2026-10-26",
+          "valueCzk": 235300,
+          "valueVatCzk": null,
+          "valueNoVatCzk": 235300,
+          "counterparties": [
+            {
+              "name": "SmartSystem Solutions s.r.o.",
+              "ico": "06356494",
+              "box": "utepp7f"
+            }
+          ],
+          "counterparty": "SmartSystem Solutions s.r.o.",
+          "publisher": "Osmá správa majetku a služeb a.s.",
+          "publisherIco": "04650522"
+        },
+        {
+          "id": "40126777",
+          "idContract": "37738461",
+          "url": "https://smlouvy.gov.cz/smlouva/40126777",
+          "subject": "SOD/057/2026 - Výměna výlohy a vstupních dveří v NP č. 503 na adrese Křižíkova 459/72, 186 00 Praha 8 - Karlín",
+          "published": "2026-10-29",
+          "signed": "2026-10-15",
+          "valueCzk": 279700,
+          "valueVatCzk": null,
+          "valueNoVatCzk": 279700,
+          "counterparties": [
+            {
+              "name": "Václav Sommer",
+              "ico": "76496406",
+              "box": ""
+            }
+          ],
+          "counterparty": "Václav Sommer",
+          "publisher": "Osmá správa majetku a služeb a.s.",
+          "publisherIco": "04650522"
+        },
         {
           "id": "40102937",
           "idContract": "37715553",
@@ -46487,12 +46529,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Materska-skola-Praha-8-Bojasova-1.html",
       "website": "http://www.msbojasova.cz/",
-      "total": 56,
+      "total": 57,
       "partners": 25,
-      "knownValueCzk": 9814892.68,
-      "valuedContracts": 55,
+      "knownValueCzk": 9914892.68,
+      "valuedContracts": 56,
       "dateFrom": "2017-07-21",
-      "dateTo": "2026-06-05",
+      "dateTo": "2026-10-27",
       "partnerList": [
         {
           "name": "GASTRO POTRAVINY s.r.o.",
@@ -46525,9 +46567,9 @@
         {
           "name": "PVJ GROUP, spol. s r.o.",
           "ico": "24175315",
-          "contracts": 7,
-          "knownValueCzk": 536000,
-          "valuedContracts": 7
+          "contracts": 8,
+          "knownValueCzk": 636000,
+          "valuedContracts": 8
         },
         {
           "name": "Petr Malknecht",
@@ -46671,6 +46713,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "40124437",
+          "idContract": "37736201",
+          "url": "https://smlouvy.gov.cz/smlouva/40124437",
+          "subject": "Předmětem smlouvy je závazek zhotovitele provádět pro objednatele odklízení sněhu a aplikaci posypových materiálů v zimním období.",
+          "published": "2026-10-29",
+          "signed": "2026-10-27",
+          "valueCzk": 100000,
+          "valueVatCzk": 100000,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "PVJ GROUP, spol. s r.o.",
+              "ico": "24175315",
+              "box": "vip675d"
+            }
+          ],
+          "counterparty": "PVJ GROUP, spol. s r.o.",
+          "publisher": "Mateřská škola, Praha 8, Bojasova 1",
+          "publisherIco": "68402112"
+        },
         {
           "entityIco": "68402112",
           "entityName": "Mateřská škola, Praha 8, Bojasova 1",
