@@ -1,6 +1,27 @@
 {
   "contracts": [
     {
+      "id": "40140689",
+      "idContract": "37751745",
+      "url": "https://smlouvy.gov.cz/smlouva/40140689",
+      "subject": "3_26_602_Oprava opadávající omítky v prostoru kavárny_  15143",
+      "published": "2026-10-30",
+      "signed": "2026-10-30",
+      "valueCzk": 75370.96,
+      "valueVatCzk": null,
+      "valueNoVatCzk": 75370.96,
+      "counterparties": [
+        {
+          "name": "FOCAVO s.r.o.",
+          "ico": "21944733",
+          "box": ""
+        }
+      ],
+      "counterparty": "FOCAVO s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
       "id": "40114653",
       "idContract": "2137246",
       "url": "https://smlouvy.gov.cz/smlouva/40114653",
@@ -143230,6 +143251,13 @@
       "valuedContracts": 2
     },
     {
+      "name": "FOCAVO s.r.o.",
+      "ico": "21944733",
+      "contracts": 5,
+      "knownValueCzk": 412448.13,
+      "valuedContracts": 5
+    },
+    {
       "name": "Finanční poradenství, s.r.o.",
       "ico": "26500086",
       "contracts": 2,
@@ -143753,13 +143781,6 @@
       "contracts": 1,
       "knownValueCzk": 337214.9,
       "valuedContracts": 1
-    },
-    {
-      "name": "FOCAVO s.r.o.",
-      "ico": "21944733",
-      "contracts": 4,
-      "knownValueCzk": 337077.17,
-      "valuedContracts": 4
     },
     {
       "name": "MUDr. Jindřich LAHOVSKÝ",
@@ -149188,17 +149209,17 @@
     }
   ],
   "meta": {
-    "total": 6548,
+    "total": 6549,
     "complete": true,
     "historyComplete": true,
     "scope": "full-history",
     "dateFrom": "2007-05-09",
     "dateTo": "2026-10-30",
     "dateLabel": "celá historie Registru smluv",
-    "knownValueCzk": 6881080463.839995,
-    "valuedContracts": 5783,
+    "knownValueCzk": 6881155834.799995,
+    "valuedContracts": 5784,
     "partners": 1686,
-    "updated": "2026-10-29T10:57:28.454Z",
+    "updated": "2026-10-30T10:55:50.729Z",
     "source": "https://data.smlouvy.gov.cz/index.xml",
     "method": "official-live-search-daily-overlap",
     "dumps": 124,

@@ -1,15 +1,15 @@
 {
-  "updated": "2026-10-29T10:57:28.454Z",
+  "updated": "2026-10-30T10:55:50.729Z",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7499,
-    "knownValueCzk": 5187638839.1,
+    "totalContracts": 7504,
+    "knownValueCzk": 5190516899.500001,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
-        "current": 6548
+        "current": 6549
       },
       "note": "Denní kontrola používá živé vyhledávání Registru smluv v okně 5 dní; historický základ se při denním běhu nestahuje."
     }
@@ -40,12 +40,12 @@
       "ownershipShare": "100 %",
       "source": "https://www.praha8.cz/Osma-sprava-majetku-a-sluzeb-a-s",
       "website": "https://www.osms.cz/",
-      "total": 1508,
+      "total": 1510,
       "partners": 236,
-      "knownValueCzk": 1453138778.7400005,
-      "valuedContracts": 1217,
+      "knownValueCzk": 1453526208.7400005,
+      "valuedContracts": 1219,
       "dateFrom": "1999-09-14",
-      "dateTo": "2026-10-26"
+      "dateTo": "2026-10-29"
     },
     {
       "name": "Správa tepelného hospodářství MČ Praha 8 s.r.o.",
@@ -328,12 +328,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Materska-skola-Praha-8-Siskova-2.html",
       "website": "http://www.mssiskova.cz/",
-      "total": 21,
-      "partners": 13,
-      "knownValueCzk": 4071248.9799999995,
-      "valuedContracts": 21,
+      "total": 22,
+      "partners": 14,
+      "knownValueCzk": 4197248.9799999995,
+      "valuedContracts": 22,
       "dateFrom": "2015-01-22",
-      "dateTo": "2026-06-30"
+      "dateTo": "2026-09-01"
     },
     {
       "name": "Mateřská škola, Praha 8, Štěpničná 1",
@@ -392,12 +392,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Servisni-stredisko-pro-spravu-svereneho-majetku-MC-Praha-8-prispevkova-organizace.html",
       "website": "https://www.praha8.cz/servisni-stredisko-pro-spravu-svereneho-majetku-mc-praha-8-prispevkova-organizace.html",
-      "total": 1795,
+      "total": 1797,
       "partners": 361,
-      "knownValueCzk": 3000525756.3200006,
-      "valuedContracts": 1718,
+      "knownValueCzk": 3002890386.7200007,
+      "valuedContracts": 1720,
       "dateFrom": "1991-07-15",
-      "dateTo": "2026-10-14"
+      "dateTo": "2026-10-29"
     },
     {
       "name": "Sociální a ošetřovatelské služby Praha 8",
@@ -657,6 +657,6 @@
     }
   ],
   "p8": {
-    "total": 6548
+    "total": 6549
   }
 }
