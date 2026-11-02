@@ -1,14 +1,14 @@
 {
   "schema": 2,
-  "updated": "2026-11-01T11:20:15.766Z",
+  "updated": "2026-11-02T12:26:58.350Z",
   "source": "https://smlouvy.gov.cz/vyhledavani",
   "method": "official-live-search-daily-overlap",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7504,
-    "knownValueCzk": 5190516899.500001,
+    "totalContracts": 7505,
+    "knownValueCzk": 5191016899.500001,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
@@ -2074,6 +2074,27 @@
       ],
       "contracts": [
         {
+          "id": "40164949",
+          "idContract": "37617433",
+          "url": "https://smlouvy.gov.cz/smlouva/40164949",
+          "subject": "Dodatek č. 01 k VZMR/09/2026 - Zateplení štítové jižní strany bytového domu Taussigova 1172/1, 182 00 Praha 8 - Kobylisy",
+          "published": "2026-11-02",
+          "signed": "2026-10-08",
+          "valueCzk": null,
+          "valueVatCzk": null,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "IT Innovation s.r.o.",
+              "ico": "29042691",
+              "box": "5gzkus5"
+            }
+          ],
+          "counterparty": "IT Innovation s.r.o.",
+          "publisher": "Osmá správa majetku a služeb a.s.",
+          "publisherIco": "04650522"
+        },
+        {
           "id": "40139385",
           "idContract": "37750497",
           "url": "https://smlouvy.gov.cz/smlouva/40139385",
@@ -2280,27 +2301,6 @@
             }
           ],
           "counterparty": "KVS - Projekt s.r.o.",
-          "publisher": "Osmá správa majetku a služeb a.s.",
-          "publisherIco": "04650522"
-        },
-        {
-          "id": "40000389",
-          "idContract": "37617433",
-          "url": "https://smlouvy.gov.cz/smlouva/40000389",
-          "subject": "Dodatek č.01 k VZMR 09/2026 - \"Zateplení štítové jižní strany bytového domu Taussigova 1172/1, 182 00 Praha 8 - Kobylisy",
-          "published": "2026-10-20",
-          "signed": "2026-10-08",
-          "valueCzk": null,
-          "valueVatCzk": null,
-          "valueNoVatCzk": null,
-          "counterparties": [
-            {
-              "name": "IT Innovation s.r.o.",
-              "ico": "29042691",
-              "box": "5gzkus5"
-            }
-          ],
-          "counterparty": "IT Innovation s.r.o.",
           "publisher": "Osmá správa majetku a služeb a.s.",
           "publisherIco": "04650522"
         },
@@ -51851,12 +51851,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Materska-skola-Praha-8-Lesenska-2.html",
       "website": "http://www.mslesenska.cz/",
-      "total": 36,
-      "partners": 26,
-      "knownValueCzk": 10321128.84,
-      "valuedContracts": 36,
+      "total": 37,
+      "partners": 27,
+      "knownValueCzk": 10821128.84,
+      "valuedContracts": 37,
       "dateFrom": "2018-01-19",
-      "dateTo": "2026-07-16",
+      "dateTo": "2026-08-10",
       "partnerList": [
         {
           "name": "Církevní základní škola logopedická Don Bosco a mateřská škola logopedická",
@@ -51878,6 +51878,13 @@
           "contracts": 6,
           "knownValueCzk": 632230,
           "valuedContracts": 6
+        },
+        {
+          "name": "REPACO services s.r.o.",
+          "ico": "28424867",
+          "contracts": 1,
+          "knownValueCzk": 500000,
+          "valuedContracts": 1
         },
         {
           "name": "koncept344 s.r.o.",
@@ -52042,6 +52049,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "40164753",
+          "idContract": "37775113",
+          "url": "https://smlouvy.gov.cz/smlouva/40164753",
+          "subject": "Předmětem plnění smlouvy jsou úklidové práce specifikované v jednotlivých objednávkách dle požadavků objednatele.",
+          "published": "2026-11-02",
+          "signed": "2026-08-10",
+          "valueCzk": 500000,
+          "valueVatCzk": 500000,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "REPACO services s.r.o.",
+              "ico": "28424867",
+              "box": "hspxbc5"
+            }
+          ],
+          "counterparty": "REPACO services s.r.o.",
+          "publisher": "Mateřská škola, Praha 8, Lešenská 2",
+          "publisherIco": "70919704"
+        },
         {
           "id": "39539897",
           "idContract": "37175145",

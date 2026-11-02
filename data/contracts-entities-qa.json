@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-01T11:20:15.766Z",
+  "updated": "2026-11-02T12:26:58.350Z",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7504,
-    "knownValueCzk": 5190516899.500001,
+    "totalContracts": 7505,
+    "knownValueCzk": 5191016899.500001,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
@@ -184,12 +184,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Materska-skola-Praha-8-Lesenska-2.html",
       "website": "http://www.mslesenska.cz/",
-      "total": 36,
-      "partners": 26,
-      "knownValueCzk": 10321128.84,
-      "valuedContracts": 36,
+      "total": 37,
+      "partners": 27,
+      "knownValueCzk": 10821128.84,
+      "valuedContracts": 37,
       "dateFrom": "2018-01-19",
-      "dateTo": "2026-07-16"
+      "dateTo": "2026-08-10"
     },
     {
       "name": "Mateřská škola, Praha 8, Libčická 6",
