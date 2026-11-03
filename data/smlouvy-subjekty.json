@@ -1,18 +1,18 @@
 {
   "schema": 2,
-  "updated": "2026-11-02T12:26:58.350Z",
+  "updated": "2026-11-03T11:59:01.869Z",
   "source": "https://smlouvy.gov.cz/vyhledavani",
   "method": "official-live-search-daily-overlap",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7505,
-    "knownValueCzk": 5191016899.500001,
+    "totalContracts": 7509,
+    "knownValueCzk": 5191868608.700001,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
-        "current": 6549
+        "current": 6553
       },
       "note": "Denní kontrola používá živé vyhledávání Registru smluv v okně 5 dní; historický základ se při denním běhu nestahuje."
     }
@@ -412,7 +412,7 @@
       "ownershipShare": "100 %",
       "source": "https://www.praha8.cz/Osma-sprava-majetku-a-sluzeb-a-s",
       "website": "https://www.osms.cz/",
-      "total": 1510,
+      "total": 1511,
       "partners": 236,
       "knownValueCzk": 1453526208.7400005,
       "valuedContracts": 1219,
@@ -513,7 +513,7 @@
         {
           "name": "IT Innovation s.r.o.",
           "ico": "29042691",
-          "contracts": 9,
+          "contracts": 10,
           "knownValueCzk": 23816173.270000003,
           "valuedContracts": 8
         },
@@ -2078,6 +2078,27 @@
           "idContract": "37617433",
           "url": "https://smlouvy.gov.cz/smlouva/40164949",
           "subject": "Dodatek č. 01 k VZMR/09/2026 - Zateplení štítové jižní strany bytového domu Taussigova 1172/1, 182 00 Praha 8 - Kobylisy",
+          "published": "2026-11-02",
+          "signed": "2026-10-08",
+          "valueCzk": null,
+          "valueVatCzk": null,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "IT Innovation s.r.o.",
+              "ico": "29042691",
+              "box": "5gzkus5"
+            }
+          ],
+          "counterparty": "IT Innovation s.r.o.",
+          "publisher": "Osmá správa majetku a služeb a.s.",
+          "publisherIco": "04650522"
+        },
+        {
+          "id": "40165157",
+          "idContract": "37775481",
+          "url": "https://smlouvy.gov.cz/smlouva/40165157",
+          "subject": "Dodatek č. 1 ke smlouvě VZMR/09/2026 - Zateplení štítové jižní strany bytového domu Taussigova 1172/1, 182 00 Praha 8 - Kobylisy",
           "published": "2026-11-02",
           "signed": "2026-10-08",
           "valueCzk": null,
@@ -61689,10 +61710,10 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Servisni-stredisko-pro-spravu-svereneho-majetku-MC-Praha-8-prispevkova-organizace.html",
       "website": "https://www.praha8.cz/servisni-stredisko-pro-spravu-svereneho-majetku-mc-praha-8-prispevkova-organizace.html",
-      "total": 1797,
+      "total": 1798,
       "partners": 361,
-      "knownValueCzk": 3002890386.7200007,
-      "valuedContracts": 1720,
+      "knownValueCzk": 3003118495.9200006,
+      "valuedContracts": 1721,
       "dateFrom": "1991-07-15",
       "dateTo": "2026-10-29",
       "partnerList": [
@@ -61713,9 +61734,9 @@
         {
           "name": "FRIGOSYSTEM, spol. s r.o.",
           "ico": "18608426",
-          "contracts": 99,
-          "knownValueCzk": 169940788.19000003,
-          "valuedContracts": 96
+          "contracts": 100,
+          "knownValueCzk": 170168897.39000002,
+          "valuedContracts": 97
         },
         {
           "name": "GEOSAN GROUP a. s.",
@@ -64225,6 +64246,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "40171425",
+          "idContract": "37781513",
+          "url": "https://smlouvy.gov.cz/smlouva/40171425",
+          "subject": "ZŠ Bohumila Hrabala, Na Korábě 2/350, Praha 8 - Libeň Havarijní oprava topení",
+          "published": "2026-11-02",
+          "signed": "2026-10-29",
+          "valueCzk": 228109.2,
+          "valueVatCzk": 228109.2,
+          "valueNoVatCzk": 188520,
+          "counterparties": [
+            {
+              "name": "FRIGOSYSTEM, spol. s r.o.",
+              "ico": "18608426",
+              "box": ""
+            }
+          ],
+          "counterparty": "FRIGOSYSTEM, spol. s r.o.",
+          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
+          "publisherIco": "00639524"
+        },
         {
           "id": "40141033",
           "idContract": "37752073",
@@ -130832,10 +130874,10 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Praha-8-Dolakova-1.html",
       "website": "http://www.zsdolakova.cz/",
-      "total": 149,
-      "partners": 88,
-      "knownValueCzk": 34950747.86,
-      "valuedContracts": 141,
+      "total": 150,
+      "partners": 89,
+      "knownValueCzk": 35300747.86,
+      "valuedContracts": 142,
       "dateFrom": "2016-12-05",
       "dateTo": "2026-10-21",
       "partnerList": [
@@ -130997,6 +131039,13 @@
           "name": "Věra Švarcová",
           "ico": "70087041",
           "contracts": 2,
+          "knownValueCzk": 350000,
+          "valuedContracts": 1
+        },
+        {
+          "name": "BFC & log., s.r.o.",
+          "ico": "03186172",
+          "contracts": 1,
           "knownValueCzk": 350000,
           "valuedContracts": 1
         },
@@ -131457,6 +131506,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "40177605",
+          "idContract": "37787505",
+          "url": "https://smlouvy.gov.cz/smlouva/40177605",
+          "subject": "Smlouva o dílo - Realizace projektu \"Základní škola a mateřská škola Dolákova - přírodní zahrada\"",
+          "published": "2026-11-03",
+          "signed": "2026-10-12",
+          "valueCzk": 350000,
+          "valueVatCzk": 350000,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "BFC & log., s.r.o.",
+              "ico": "03186172",
+              "box": "wppkhnu"
+            }
+          ],
+          "counterparty": "BFC & log., s.r.o.",
+          "publisher": "Základní škola a mateřská škola, Praha 8, Dolákova 1",
+          "publisherIco": "60433281"
+        },
         {
           "id": "40050722",
           "idContract": "37665422",
@@ -144239,12 +144309,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Praha-8-U-Skolske-zahrady-4.html",
       "website": "http://www.uskolskezahrady.cz/",
-      "total": 104,
+      "total": 105,
       "partners": 54,
-      "knownValueCzk": 28520968.659999996,
-      "valuedContracts": 94,
+      "knownValueCzk": 28794568.659999996,
+      "valuedContracts": 95,
       "dateFrom": "2016-08-15",
-      "dateTo": "2026-10-26",
+      "dateTo": "2026-11-23",
       "partnerList": [
         {
           "name": "FIRMA s.r.o.",
@@ -144282,18 +144352,18 @@
           "valuedContracts": 7
         },
         {
+          "name": "Bílé Hory s.r.o.",
+          "ico": "05504228",
+          "contracts": 5,
+          "knownValueCzk": 1268700,
+          "valuedContracts": 5
+        },
+        {
           "name": "Interiér Pavel Vácha",
           "ico": "75571404",
           "contracts": 7,
           "knownValueCzk": 1200829.58,
           "valuedContracts": 7
-        },
-        {
-          "name": "Bílé Hory s.r.o.",
-          "ico": "05504228",
-          "contracts": 4,
-          "knownValueCzk": 995100,
-          "valuedContracts": 4
         },
         {
           "name": "Sportlines a.s. - středisko volného času",
@@ -144626,6 +144696,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "40169137",
+          "idContract": "37779305",
+          "url": "https://smlouvy.gov.cz/smlouva/40169137",
+          "subject": "Smlouva o ubytování - LVK",
+          "published": "2026-11-02",
+          "signed": "2026-11-23",
+          "valueCzk": 273600,
+          "valueVatCzk": null,
+          "valueNoVatCzk": 273600,
+          "counterparties": [
+            {
+              "name": "Bílé Hory s.r.o.",
+              "ico": "05504228",
+              "box": "zb549ke"
+            }
+          ],
+          "counterparty": "Bílé Hory s.r.o.",
+          "publisher": "Základní škola a mateřská škola, Praha 8, U Školské zahrady 4",
+          "publisherIco": "60461837"
+        },
         {
           "id": "40109233",
           "idContract": "37721553",

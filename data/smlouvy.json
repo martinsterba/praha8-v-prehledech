@@ -1,6 +1,90 @@
 {
   "contracts": [
     {
+      "id": "40176601",
+      "idContract": "37786545",
+      "url": "https://smlouvy.gov.cz/smlouva/40176601",
+      "subject": "Smlouva o nájmu prostoru sloužícímu podnikání (a o poskytování speciálních služeb)",
+      "published": "2026-11-03",
+      "signed": "2026-10-30",
+      "valueCzk": 1461060,
+      "valueVatCzk": 1461060,
+      "valueNoVatCzk": 1461060,
+      "counterparties": [
+        {
+          "name": "KlinEslav, s.r.o.",
+          "ico": "24180602",
+          "box": ""
+        }
+      ],
+      "counterparty": "KlinEslav, s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "40182805",
+      "idContract": "37792465",
+      "url": "https://smlouvy.gov.cz/smlouva/40182805",
+      "subject": "Objednáváme u vás instalaci a likvidaci vánočních stromů 2026 dle harmonogramu zaslaného emailem. Zajištění jeřábu, přistavení auta, pokácení a doprava stromů, následné odstranění vánočních stromů. \nJedná se o:\nVánoční strom na Karlínské náměstí, z adre",
+      "published": "2026-11-03",
+      "signed": "2026-10-23",
+      "valueCzk": 200000,
+      "valueVatCzk": 200000,
+      "valueNoVatCzk": 165289.26,
+      "counterparties": [
+        {
+          "name": "GARPEN ZAHRADNICKÁ spol. s r.o.",
+          "ico": "01381407",
+          "box": "r8eqyzr"
+        }
+      ],
+      "counterparty": "GARPEN ZAHRADNICKÁ spol. s r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "40182801",
+      "idContract": "37792461",
+      "url": "https://smlouvy.gov.cz/smlouva/40182801",
+      "subject": "Objednáváme u vás pronájem chladicího agregátu na kluziště Krakov na zimní sezonu 2026 / 2027 včetně dopravy a zapojení. \nKontakt: Zdeněk Šír - 603 522 073",
+      "published": "2026-11-03",
+      "signed": "2026-10-29",
+      "valueCzk": 279752,
+      "valueVatCzk": 279752,
+      "valueNoVatCzk": 231200,
+      "counterparties": [
+        {
+          "name": "V.L.2001, s.r.o.",
+          "ico": "28191048",
+          "box": "2t9a2uj"
+        }
+      ],
+      "counterparty": "V.L.2001, s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "40182793",
+      "idContract": "37792453",
+      "url": "https://smlouvy.gov.cz/smlouva/40182793",
+      "subject": "Objednáváme u vás technickou podporu na akce \"Rozsvěcení vánočních stromů 2026\" na termín 23.11. – 27.11.2026. Natažení kabelů pro osvětlení vánočních stromů v areálu Čimice - Draháň, Podzámčí - Löwitův mlýn, Ládví, Karlínské náměstí a Krakov. P",
+      "published": "2026-11-03",
+      "signed": "2026-10-30",
+      "valueCzk": 95000,
+      "valueVatCzk": 95000,
+      "valueNoVatCzk": 95000,
+      "counterparties": [
+        {
+          "name": "Tomáš Valenčík",
+          "ico": "71642099",
+          "box": "knh8quh"
+        }
+      ],
+      "counterparty": "Tomáš Valenčík",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
       "id": "40140689",
       "idContract": "37751745",
       "url": "https://smlouvy.gov.cz/smlouva/40140689",
@@ -138001,18 +138085,18 @@
       "valuedContracts": 25
     },
     {
+      "name": "GARPEN ZAHRADNICKÁ spol. s r.o.",
+      "ico": "01381407",
+      "contracts": 46,
+      "knownValueCzk": 11134302.790000001,
+      "valuedContracts": 46
+    },
+    {
       "name": "Akvo Praha s.r.o.",
       "ico": "26202093",
       "contracts": 1,
       "knownValueCzk": 11000000,
       "valuedContracts": 1
-    },
-    {
-      "name": "GARPEN ZAHRADNICKÁ spol. s r.o.",
-      "ico": "01381407",
-      "contracts": 45,
-      "knownValueCzk": 10934302.790000001,
-      "valuedContracts": 45
     },
     {
       "name": "LaMa Operations s.r.o.",
@@ -138414,6 +138498,13 @@
       "valuedContracts": 1
     },
     {
+      "name": "Tomáš Valenčík",
+      "ico": "71642099",
+      "contracts": 26,
+      "knownValueCzk": 6139000,
+      "valuedContracts": 26
+    },
+    {
       "name": "PRAŽSKÉ TECHNICKÉ SLUŽBY, s.r.o.",
       "ico": "28494547",
       "contracts": 2,
@@ -138426,13 +138517,6 @@
       "contracts": 11,
       "knownValueCzk": 6053000,
       "valuedContracts": 11
-    },
-    {
-      "name": "Tomáš Valenčík",
-      "ico": "71642099",
-      "contracts": 25,
-      "knownValueCzk": 6044000,
-      "valuedContracts": 25
     },
     {
       "name": "HANSA 2, s.r.o.",
@@ -139093,6 +139177,13 @@
       "valuedContracts": 3
     },
     {
+      "name": "V.L.2001, s.r.o.",
+      "ico": "28191048",
+      "contracts": 11,
+      "knownValueCzk": 3230325,
+      "valuedContracts": 11
+    },
+    {
       "name": "Fandament Architects s.r.o.",
       "ico": "29196205",
       "contracts": 5,
@@ -139238,13 +139329,6 @@
       "contracts": 3,
       "knownValueCzk": 2957288.4,
       "valuedContracts": 1
-    },
-    {
-      "name": "V.L.2001, s.r.o.",
-      "ico": "28191048",
-      "contracts": 10,
-      "knownValueCzk": 2950573,
-      "valuedContracts": 10
     },
     {
       "name": "QI investiční společnost, a.s.",
@@ -140546,6 +140630,13 @@
       "ico": "71044914",
       "contracts": 1,
       "knownValueCzk": 1462454.4,
+      "valuedContracts": 1
+    },
+    {
+      "name": "KlinEslav, s.r.o.",
+      "ico": "24180602",
+      "contracts": 1,
+      "knownValueCzk": 1461060,
       "valuedContracts": 1
     },
     {
@@ -149209,17 +149300,17 @@
     }
   ],
   "meta": {
-    "total": 6549,
+    "total": 6553,
     "complete": true,
     "historyComplete": true,
     "scope": "full-history",
     "dateFrom": "2007-05-09",
     "dateTo": "2026-10-30",
     "dateLabel": "celá historie Registru smluv",
-    "knownValueCzk": 6881155834.799995,
-    "valuedContracts": 5784,
-    "partners": 1686,
-    "updated": "2026-11-02T12:26:58.350Z",
+    "knownValueCzk": 6883191646.799995,
+    "valuedContracts": 5788,
+    "partners": 1687,
+    "updated": "2026-11-03T11:59:01.869Z",
     "source": "https://data.smlouvy.gov.cz/index.xml",
     "method": "official-live-search-daily-overlap",
     "dumps": 124,
