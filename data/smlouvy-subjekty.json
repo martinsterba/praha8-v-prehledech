@@ -1,18 +1,18 @@
 {
   "schema": 2,
-  "updated": "2026-11-03T11:59:01.869Z",
+  "updated": "2026-11-04T12:10:42.516Z",
   "source": "https://smlouvy.gov.cz/vyhledavani",
   "method": "official-live-search-daily-overlap",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7509,
-    "knownValueCzk": 5191868608.700001,
+    "totalContracts": 7514,
+    "knownValueCzk": 5192695698.700001,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
-        "current": 6553
+        "current": 6556
       },
       "note": "Denní kontrola používá živé vyhledávání Registru smluv v okně 5 dní; historický základ se při denním běhu nestahuje."
     }
@@ -412,7 +412,7 @@
       "ownershipShare": "100 %",
       "source": "https://www.praha8.cz/Osma-sprava-majetku-a-sluzeb-a-s",
       "website": "https://www.osms.cz/",
-      "total": 1511,
+      "total": 1512,
       "partners": 236,
       "knownValueCzk": 1453526208.7400005,
       "valuedContracts": 1219,
@@ -723,7 +723,7 @@
         {
           "name": "AXON CONSULTING s.r.o.",
           "ico": "28906926",
-          "contracts": 25,
+          "contracts": 26,
           "knownValueCzk": 4057925.95,
           "valuedContracts": 4
         },
@@ -2073,6 +2073,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "40187985",
+          "idContract": "37797337",
+          "url": "https://smlouvy.gov.cz/smlouva/40187985",
+          "subject": "Dílčí objednávka č. 23 k VZMR/22/2025 - Oprava havarijního stavu fasády objektu Sokolovská 264/121, 180 00 Praha 8 - Libeň",
+          "published": "2026-11-03",
+          "signed": "2026-08-12",
+          "valueCzk": null,
+          "valueVatCzk": null,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "AXON CONSULTING s.r.o.",
+              "ico": "28906926",
+              "box": "483p4dy"
+            }
+          ],
+          "counterparty": "AXON CONSULTING s.r.o.",
+          "publisher": "Osmá správa majetku a služeb a.s.",
+          "publisherIco": "04650522"
+        },
         {
           "id": "40164949",
           "idContract": "37617433",
@@ -61710,10 +61731,10 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Servisni-stredisko-pro-spravu-svereneho-majetku-MC-Praha-8-prispevkova-organizace.html",
       "website": "https://www.praha8.cz/servisni-stredisko-pro-spravu-svereneho-majetku-mc-praha-8-prispevkova-organizace.html",
-      "total": 1798,
+      "total": 1799,
       "partners": 361,
-      "knownValueCzk": 3003118495.9200006,
-      "valuedContracts": 1721,
+      "knownValueCzk": 3003347185.9200006,
+      "valuedContracts": 1722,
       "dateFrom": "1991-07-15",
       "dateTo": "2026-10-29",
       "partnerList": [
@@ -61916,9 +61937,9 @@
         {
           "name": "VSP spol. s r.o.",
           "ico": "48392430",
-          "contracts": 77,
-          "knownValueCzk": 24884745.98,
-          "valuedContracts": 77
+          "contracts": 78,
+          "knownValueCzk": 25113435.98,
+          "valuedContracts": 78
         },
         {
           "name": "AGIOS s.r.o.",
@@ -64246,6 +64267,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "40191637",
+          "idContract": "37800801",
+          "url": "https://smlouvy.gov.cz/smlouva/40191637",
+          "subject": "Výkon TDO a BOZP na akci Rekonstrukce - Renovace venkovního schodiště ZŠ Ústavní, Hlivická 400, 181 00 Praha 8",
+          "published": "2026-11-03",
+          "signed": "2026-10-12",
+          "valueCzk": 228690,
+          "valueVatCzk": 228690,
+          "valueNoVatCzk": 189000,
+          "counterparties": [
+            {
+              "name": "VSP spol. s r.o.",
+              "ico": "48392430",
+              "box": ""
+            }
+          ],
+          "counterparty": "VSP spol. s r.o.",
+          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
+          "publisherIco": "00639524"
+        },
         {
           "id": "40171425",
           "idContract": "37781513",
@@ -124419,12 +124461,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Ustavni-Praha-8-Hlivicka-1.html",
       "website": "http://www.zs-ustavni.cz/",
-      "total": 231,
-      "partners": 132,
-      "knownValueCzk": 42639383.169999994,
-      "valuedContracts": 209,
+      "total": 232,
+      "partners": 133,
+      "knownValueCzk": 42712183.169999994,
+      "valuedContracts": 210,
       "dateFrom": "2016-09-08",
-      "dateTo": "2026-10-02",
+      "dateTo": "2026-10-29",
       "partnerList": [
         {
           "name": "S com ENERGO s.r.o.",
@@ -125218,6 +125260,13 @@
           "valuedContracts": 1
         },
         {
+          "name": "HOSPENORA s.r.o.",
+          "ico": "29922143",
+          "contracts": 1,
+          "knownValueCzk": 72800,
+          "valuedContracts": 1
+        },
+        {
           "name": "Stará Živohošť s.r.o.",
           "ico": "02265923",
           "contracts": 1,
@@ -125352,6 +125401,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "40191269",
+          "idContract": "37800449",
+          "url": "https://smlouvy.gov.cz/smlouva/40191269",
+          "subject": "Smlouva o zajištění stáží",
+          "published": "2026-11-03",
+          "signed": "2026-10-29",
+          "valueCzk": 72800,
+          "valueVatCzk": 72800,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "HOSPENORA s.r.o.",
+              "ico": "29922143",
+              "box": "aevi8az"
+            }
+          ],
+          "counterparty": "HOSPENORA s.r.o.",
+          "publisher": "Základní škola a mateřská škola Ústavní, Praha 8, Hlivická 1",
+          "publisherIco": "60433337"
+        },
         {
           "id": "39882301",
           "idContract": "37504329",
@@ -147205,19 +147275,19 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-Bohumila-Hrabala-Praha-8-Zenklova-52.html",
       "website": "http://www.zs-bhrabala.cz/",
-      "total": 384,
+      "total": 386,
       "partners": 139,
-      "knownValueCzk": 52791926.18000001,
-      "valuedContracts": 274,
+      "knownValueCzk": 53317526.18000001,
+      "valuedContracts": 276,
       "dateFrom": "2014-10-02",
-      "dateTo": "2026-10-20",
+      "dateTo": "2026-11-03",
       "partnerList": [
         {
           "name": "AVA - agentura volnočasových aktivit pro děti a mládež, s.r.o.",
           "ico": "08552681",
-          "contracts": 31,
-          "knownValueCzk": 6984886,
-          "valuedContracts": 30
+          "contracts": 32,
+          "knownValueCzk": 7251286,
+          "valuedContracts": 31
         },
         {
           "name": "Af Office, s.r.o.",
@@ -148187,6 +148257,42 @@
         }
       ],
       "contracts": [
+        {
+          "id": "40188009",
+          "idContract": "37797361",
+          "url": "https://smlouvy.gov.cz/smlouva/40188009",
+          "subject": "zajištění lyžařského kurzu",
+          "published": "2026-11-03",
+          "signed": "2026-11-03",
+          "valueCzk": 259200,
+          "valueVatCzk": 259200,
+          "valueNoVatCzk": null,
+          "counterparties": [],
+          "counterparty": "",
+          "publisher": "Základní škola Bohumila Hrabala, Praha 8, Zenklova 52",
+          "publisherIco": "63113961"
+        },
+        {
+          "id": "40188325",
+          "idContract": "37797669",
+          "url": "https://smlouvy.gov.cz/smlouva/40188325",
+          "subject": "zajištění lyžařského kurzu",
+          "published": "2026-11-03",
+          "signed": "2026-11-03",
+          "valueCzk": 266400,
+          "valueVatCzk": 266400,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "AVA - agentura volnočasových aktivit pro děti a mládež, s.r.o.",
+              "ico": "08552681",
+              "box": "t6beuyq"
+            }
+          ],
+          "counterparty": "AVA - agentura volnočasových aktivit pro děti a mládež, s.r.o.",
+          "publisher": "Základní škola Bohumila Hrabala, Praha 8, Zenklova 52",
+          "publisherIco": "63113961"
+        },
         {
           "id": "40048533",
           "idContract": "37663389",

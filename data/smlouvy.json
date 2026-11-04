@@ -1,6 +1,48 @@
 {
   "contracts": [
     {
+      "id": "40204545",
+      "idContract": "37813257",
+      "url": "https://smlouvy.gov.cz/smlouva/40204545",
+      "subject": "Výměna nosných lan ve výtahu v objektu U Meteoru 6.",
+      "published": "2026-11-04",
+      "signed": "2026-10-23",
+      "valueCzk": 242000,
+      "valueVatCzk": 242000,
+      "valueNoVatCzk": 200000,
+      "counterparties": [
+        {
+          "name": "Schindler CZ, a.s.",
+          "ico": "27127010",
+          "box": "wtzf732"
+        }
+      ],
+      "counterparty": "Schindler CZ, a.s.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "40201213",
+      "idContract": "37810085",
+      "url": "https://smlouvy.gov.cz/smlouva/40201213",
+      "subject": "3_26_601,602_Oprava výměnou nefunkčního plynového kotle_   15334",
+      "published": "2026-11-04",
+      "signed": "2026-11-04",
+      "valueCzk": 82148,
+      "valueVatCzk": null,
+      "valueNoVatCzk": 82148,
+      "counterparties": [
+        {
+          "name": "Kominický servis 24 s.r.o.",
+          "ico": "27874061",
+          "box": ""
+        }
+      ],
+      "counterparty": "Kominický servis 24 s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
       "id": "40176601",
       "idContract": "37786545",
       "url": "https://smlouvy.gov.cz/smlouva/40176601",
@@ -81,6 +123,27 @@
         }
       ],
       "counterparty": "Tomáš Valenčík",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "40190377",
+      "idContract": "37799585",
+      "url": "https://smlouvy.gov.cz/smlouva/40190377",
+      "subject": "Dodávka licencí VMware pro virtualizační infrastrukturu zadavatele",
+      "published": "2026-11-03",
+      "signed": "2026-11-03",
+      "valueCzk": 1806288,
+      "valueVatCzk": 1806288,
+      "valueNoVatCzk": 1492800,
+      "counterparties": [
+        {
+          "name": "SoftwareONE Czech Republic s.r.o.",
+          "ico": "24207519",
+          "box": "8fc9a92"
+        }
+      ],
+      "counterparty": "SoftwareONE Czech Republic s.r.o.",
       "publisher": "Městská část Praha 8",
       "publisherIco": "00063797"
     },
@@ -137644,18 +137707,18 @@
       "valuedContracts": 1
     },
     {
+      "name": "SoftwareONE Czech Republic s.r.o.",
+      "ico": "24207519",
+      "contracts": 53,
+      "knownValueCzk": 36739741.730000004,
+      "valuedContracts": 52
+    },
+    {
       "name": "TK Lokomotiva Praha, s.r.o.",
       "ico": "27793176",
       "contracts": 1,
       "knownValueCzk": 35015040,
       "valuedContracts": 1
-    },
-    {
-      "name": "SoftwareONE Czech Republic s.r.o.",
-      "ico": "24207519",
-      "contracts": 52,
-      "knownValueCzk": 34933453.730000004,
-      "valuedContracts": 51
     },
     {
       "name": "Byty Kobylisy s.r.o.",
@@ -140941,6 +141004,13 @@
       "valuedContracts": 8
     },
     {
+      "name": "Kominický servis 24 s.r.o.",
+      "ico": "27874061",
+      "contracts": 12,
+      "knownValueCzk": 1257591.68,
+      "valuedContracts": 12
+    },
+    {
       "name": "GORDIC spol. s r.o.",
       "ico": "47903783",
       "contracts": 5,
@@ -141039,13 +141109,6 @@
       "valuedContracts": 5
     },
     {
-      "name": "Kominický servis 24 s.r.o.",
-      "ico": "27874061",
-      "contracts": 11,
-      "knownValueCzk": 1175443.68,
-      "valuedContracts": 11
-    },
-    {
       "name": "WeWood s.r.o.",
       "ico": "03956563",
       "contracts": 4,
@@ -141072,6 +141135,13 @@
       "contracts": 2,
       "knownValueCzk": 1162536.28,
       "valuedContracts": 2
+    },
+    {
+      "name": "Schindler CZ, a.s.",
+      "ico": "27127010",
+      "contracts": 7,
+      "knownValueCzk": 1159224.6199999999,
+      "valuedContracts": 6
     },
     {
       "name": "KLIFA s.r.o.",
@@ -141597,13 +141667,6 @@
       "contracts": 1,
       "knownValueCzk": 917550,
       "valuedContracts": 1
-    },
-    {
-      "name": "Schindler CZ, a.s.",
-      "ico": "27127010",
-      "contracts": 6,
-      "knownValueCzk": 917224.62,
-      "valuedContracts": 5
     },
     {
       "name": "J&PKra s.r.o.",
@@ -149300,17 +149363,17 @@
     }
   ],
   "meta": {
-    "total": 6553,
+    "total": 6556,
     "complete": true,
     "historyComplete": true,
     "scope": "full-history",
     "dateFrom": "2007-05-09",
-    "dateTo": "2026-10-30",
+    "dateTo": "2026-11-04",
     "dateLabel": "celá historie Registru smluv",
-    "knownValueCzk": 6883191646.799995,
-    "valuedContracts": 5788,
+    "knownValueCzk": 6885322082.799995,
+    "valuedContracts": 5791,
     "partners": 1687,
-    "updated": "2026-11-03T11:59:01.869Z",
+    "updated": "2026-11-04T12:10:42.516Z",
     "source": "https://data.smlouvy.gov.cz/index.xml",
     "method": "official-live-search-daily-overlap",
     "dumps": 124,

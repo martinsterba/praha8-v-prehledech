@@ -1,15 +1,15 @@
 {
-  "updated": "2026-11-03T11:59:01.869Z",
+  "updated": "2026-11-04T12:10:42.516Z",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7509,
-    "knownValueCzk": 5191868608.700001,
+    "totalContracts": 7514,
+    "knownValueCzk": 5192695698.700001,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
-        "current": 6553
+        "current": 6556
       },
       "note": "Denní kontrola používá živé vyhledávání Registru smluv v okně 5 dní; historický základ se při denním běhu nestahuje."
     }
@@ -40,7 +40,7 @@
       "ownershipShare": "100 %",
       "source": "https://www.praha8.cz/Osma-sprava-majetku-a-sluzeb-a-s",
       "website": "https://www.osms.cz/",
-      "total": 1511,
+      "total": 1512,
       "partners": 236,
       "knownValueCzk": 1453526208.7400005,
       "valuedContracts": 1219,
@@ -392,10 +392,10 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Servisni-stredisko-pro-spravu-svereneho-majetku-MC-Praha-8-prispevkova-organizace.html",
       "website": "https://www.praha8.cz/servisni-stredisko-pro-spravu-svereneho-majetku-mc-praha-8-prispevkova-organizace.html",
-      "total": 1798,
+      "total": 1799,
       "partners": 361,
-      "knownValueCzk": 3003118495.9200006,
-      "valuedContracts": 1721,
+      "knownValueCzk": 3003347185.9200006,
+      "valuedContracts": 1722,
       "dateFrom": "1991-07-15",
       "dateTo": "2026-10-29"
     },
@@ -456,12 +456,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Ustavni-Praha-8-Hlivicka-1.html",
       "website": "http://www.zs-ustavni.cz/",
-      "total": 231,
-      "partners": 132,
-      "knownValueCzk": 42639383.169999994,
-      "valuedContracts": 209,
+      "total": 232,
+      "partners": 133,
+      "knownValueCzk": 42712183.169999994,
+      "valuedContracts": 210,
       "dateFrom": "2016-09-08",
-      "dateTo": "2026-10-02"
+      "dateTo": "2026-10-29"
     },
     {
       "name": "Základní škola a mateřská škola, Praha 8, Dolákova 1",
@@ -520,12 +520,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-Bohumila-Hrabala-Praha-8-Zenklova-52.html",
       "website": "http://www.zs-bhrabala.cz/",
-      "total": 384,
+      "total": 386,
       "partners": 139,
-      "knownValueCzk": 52791926.18000001,
-      "valuedContracts": 274,
+      "knownValueCzk": 53317526.18000001,
+      "valuedContracts": 276,
       "dateFrom": "2014-10-02",
-      "dateTo": "2026-10-20"
+      "dateTo": "2026-11-03"
     },
     {
       "name": "Základní škola Mazurská, Praha 8, Svídnická 1a",
@@ -657,6 +657,6 @@
     }
   ],
   "p8": {
-    "total": 6553
+    "total": 6556
   }
 }
