@@ -1,18 +1,18 @@
 {
   "schema": 2,
-  "updated": "2026-11-04T12:10:42.516Z",
+  "updated": "2026-11-05T12:22:46.331Z",
   "source": "https://smlouvy.gov.cz/vyhledavani",
   "method": "official-live-search-daily-overlap",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7514,
-    "knownValueCzk": 5192695698.700001,
+    "totalContracts": 7519,
+    "knownValueCzk": 5193621287.700001,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
-        "current": 6556
+        "current": 6558
       },
       "note": "Denní kontrola používá živé vyhledávání Registru smluv v okně 5 dní; historický základ se při denním běhu nestahuje."
     }
@@ -412,12 +412,12 @@
       "ownershipShare": "100 %",
       "source": "https://www.praha8.cz/Osma-sprava-majetku-a-sluzeb-a-s",
       "website": "https://www.osms.cz/",
-      "total": 1512,
+      "total": 1513,
       "partners": 236,
-      "knownValueCzk": 1453526208.7400005,
-      "valuedContracts": 1219,
+      "knownValueCzk": 1453586208.7400005,
+      "valuedContracts": 1220,
       "dateFrom": "1999-09-14",
-      "dateTo": "2026-10-29",
+      "dateTo": "2026-11-04",
       "partnerList": [
         {
           "name": "Wertstav s.r.o.",
@@ -861,18 +861,18 @@
           "valuedContracts": 9
         },
         {
+          "name": "KFJ project s.r.o.",
+          "ico": "14075245",
+          "contracts": 14,
+          "knownValueCzk": 1845200,
+          "valuedContracts": 14
+        },
+        {
           "name": "BESY - CZ SECURITY, s.r.o.",
           "ico": "25614592",
           "contracts": 5,
           "knownValueCzk": 1811160,
           "valuedContracts": 3
-        },
-        {
-          "name": "KFJ project s.r.o.",
-          "ico": "14075245",
-          "contracts": 13,
-          "knownValueCzk": 1785200,
-          "valuedContracts": 13
         },
         {
           "name": "TARLOT s.r.o.",
@@ -2073,6 +2073,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "40214261",
+          "idContract": "37822501",
+          "url": "https://smlouvy.gov.cz/smlouva/40214261",
+          "subject": "OBJD/2026-097 - Projektová dokumentace pro VZ na akci: Decentralizace ohřevu TÚV za účelem energetické náročnosti objektu Čimická 780/61",
+          "published": "2026-11-04",
+          "signed": "2026-11-04",
+          "valueCzk": 60000,
+          "valueVatCzk": null,
+          "valueNoVatCzk": 60000,
+          "counterparties": [
+            {
+              "name": "KFJ project s.r.o.",
+              "ico": "14075245",
+              "box": "9upzimc"
+            }
+          ],
+          "counterparty": "KFJ project s.r.o.",
+          "publisher": "Osmá správa majetku a služeb a.s.",
+          "publisherIco": "04650522"
+        },
         {
           "id": "40187985",
           "idContract": "37797337",
@@ -147275,19 +147296,19 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-Bohumila-Hrabala-Praha-8-Zenklova-52.html",
       "website": "http://www.zs-bhrabala.cz/",
-      "total": 386,
+      "total": 387,
       "partners": 139,
-      "knownValueCzk": 53317526.18000001,
-      "valuedContracts": 276,
+      "knownValueCzk": 53550426.18000001,
+      "valuedContracts": 277,
       "dateFrom": "2014-10-02",
-      "dateTo": "2026-11-03",
+      "dateTo": "2026-11-04",
       "partnerList": [
         {
           "name": "AVA - agentura volnočasových aktivit pro děti a mládež, s.r.o.",
           "ico": "08552681",
-          "contracts": 32,
-          "knownValueCzk": 7251286,
-          "valuedContracts": 31
+          "contracts": 33,
+          "knownValueCzk": 7484186,
+          "valuedContracts": 32
         },
         {
           "name": "Af Office, s.r.o.",
@@ -148257,6 +148278,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "40209897",
+          "idContract": "37818309",
+          "url": "https://smlouvy.gov.cz/smlouva/40209897",
+          "subject": "zajištění školy v přírodě",
+          "published": "2026-11-04",
+          "signed": "2026-11-04",
+          "valueCzk": 232900,
+          "valueVatCzk": 232900,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "AVA - agentura volnočasových aktivit pro děti a mládež, s.r.o.",
+              "ico": "08552681",
+              "box": "t6beuyq"
+            }
+          ],
+          "counterparty": "AVA - agentura volnočasových aktivit pro děti a mládež, s.r.o.",
+          "publisher": "Základní škola Bohumila Hrabala, Praha 8, Zenklova 52",
+          "publisherIco": "63113961"
+        },
         {
           "id": "40188009",
           "idContract": "37797361",
@@ -185829,10 +185871,10 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-Praha-8-Na-Sutce-28.html",
       "website": "http://www.zssutka.cz/",
-      "total": 160,
+      "total": 162,
       "partners": 71,
-      "knownValueCzk": 30972234.4,
-      "valuedContracts": 149,
+      "knownValueCzk": 31525959.4,
+      "valuedContracts": 151,
       "dateFrom": "2016-10-11",
       "dateTo": "2026-10-06",
       "partnerList": [
@@ -185860,9 +185902,9 @@
         {
           "name": "SK Kometa Praha, z.s.",
           "ico": "69780790",
-          "contracts": 9,
-          "knownValueCzk": 2235775,
-          "valuedContracts": 8
+          "contracts": 10,
+          "knownValueCzk": 2714500,
+          "valuedContracts": 9
         },
         {
           "name": "AUSTIS stavební s.r.o.",
@@ -185998,6 +186040,13 @@
           "valuedContracts": 1
         },
         {
+          "name": "PPC s.r.o.",
+          "ico": "26398435",
+          "contracts": 3,
+          "knownValueCzk": 302601,
+          "valuedContracts": 3
+        },
+        {
           "name": "IN SPACE s.r.o.",
           "ico": "05529581",
           "contracts": 2,
@@ -186045,13 +186094,6 @@
           "contracts": 1,
           "knownValueCzk": 235800,
           "valuedContracts": 1
-        },
-        {
-          "name": "PPC s.r.o.",
-          "ico": "26398435",
-          "contracts": 2,
-          "knownValueCzk": 227601,
-          "valuedContracts": 2
         },
         {
           "name": "Mironet.cz a.s.",
@@ -186335,6 +186377,48 @@
         }
       ],
       "contracts": [
+        {
+          "id": "40228345",
+          "idContract": "37835993",
+          "url": "https://smlouvy.gov.cz/smlouva/40228345",
+          "subject": "Dotykový displej",
+          "published": "2026-11-05",
+          "signed": "2026-09-29",
+          "valueCzk": 75000,
+          "valueVatCzk": 75000,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "PPC s.r.o.",
+              "ico": "26398435",
+              "box": "3iduapx"
+            }
+          ],
+          "counterparty": "PPC s.r.o.",
+          "publisher": "Základní škola, Praha 8, Na Šutce 28",
+          "publisherIco": "60461845"
+        },
+        {
+          "id": "40212477",
+          "idContract": "37820797",
+          "url": "https://smlouvy.gov.cz/smlouva/40212477",
+          "subject": "Nájemní smlouva",
+          "published": "2026-11-04",
+          "signed": "2026-08-31",
+          "valueCzk": 478725,
+          "valueVatCzk": 478725,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "SK Kometa Praha, z.s.",
+              "ico": "69780790",
+              "box": "624qd5d"
+            }
+          ],
+          "counterparty": "SK Kometa Praha, z.s.",
+          "publisher": "Základní škola, Praha 8, Na Šutce 28",
+          "publisherIco": "60461845"
+        },
         {
           "id": "39882305",
           "idContract": "37504333",
@@ -190180,10 +190264,10 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-Praha-8-Palmovka-8.html",
       "website": "http://www.zspalmovka.cz/",
-      "total": 58,
-      "partners": 25,
-      "knownValueCzk": 17362006.240000002,
-      "valuedContracts": 56,
+      "total": 59,
+      "partners": 26,
+      "knownValueCzk": 17440970.240000002,
+      "valuedContracts": 57,
       "dateFrom": "2015-12-21",
       "dateTo": "2026-10-05",
       "partnerList": [
@@ -190349,6 +190433,13 @@
           "valuedContracts": 2
         },
         {
+          "name": "WOMEN FOR WOMEN, o.p.s.",
+          "ico": "24231509",
+          "contracts": 1,
+          "knownValueCzk": 78964,
+          "valuedContracts": 1
+        },
+        {
           "name": "TOPMAPY, s.r.o.",
           "ico": "05114713",
           "contracts": 1,
@@ -190364,6 +190455,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "40228953",
+          "idContract": "37836553",
+          "url": "https://smlouvy.gov.cz/smlouva/40228953",
+          "subject": "DAROVACÍ SMLOUVA NA FINANČNÍ DAR",
+          "published": "2026-11-05",
+          "signed": "2026-10-01",
+          "valueCzk": 78964,
+          "valueVatCzk": 78964,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "WOMEN FOR WOMEN, o.p.s.",
+              "ico": "24231509",
+              "box": "rtc24gx"
+            }
+          ],
+          "counterparty": "WOMEN FOR WOMEN, o.p.s.",
+          "publisher": "Základní škola, Praha 8, Palmovka 8",
+          "publisherIco": "60433248"
+        },
         {
           "id": "39835225",
           "idContract": "37459125",

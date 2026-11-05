@@ -1,6 +1,27 @@
 {
   "contracts": [
     {
+      "id": "40225061",
+      "idContract": "37832897",
+      "url": "https://smlouvy.gov.cz/smlouva/40225061",
+      "subject": "Výkon TDS a BOZP při realizaci akce \"Stavební úpravy kaple Bohnického ústavního hřbitova, Praha 8 - Bohnice\" - prodloužení stavby",
+      "published": "2026-11-05",
+      "signed": "2026-09-11",
+      "valueCzk": 157300,
+      "valueVatCzk": 157300,
+      "valueNoVatCzk": 130000,
+      "counterparties": [
+        {
+          "name": "VSP spol. s r.o.",
+          "ico": "48392430",
+          "box": "5zabc8x"
+        }
+      ],
+      "counterparty": "VSP spol. s r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
       "id": "40204545",
       "idContract": "37813257",
       "url": "https://smlouvy.gov.cz/smlouva/40204545",
@@ -39,6 +60,27 @@
         }
       ],
       "counterparty": "Kominický servis 24 s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "40215353",
+      "idContract": "37823557",
+      "url": "https://smlouvy.gov.cz/smlouva/40215353",
+      "subject": "Smlouva o nájmu, dodatek číslo 2",
+      "published": "2026-11-04",
+      "signed": "2026-10-27",
+      "valueCzk": 98550,
+      "valueVatCzk": null,
+      "valueNoVatCzk": 98550,
+      "counterparties": [
+        {
+          "name": "HEKO group a.s.",
+          "ico": "04939492",
+          "box": "j75r8w6"
+        }
+      ],
+      "counterparty": "HEKO group a.s.",
       "publisher": "Městská část Praha 8",
       "publisherIco": "00063797"
     },
@@ -139905,6 +139947,13 @@
       "valuedContracts": 7
     },
     {
+      "name": "VSP spol. s r.o.",
+      "ico": "48392430",
+      "contracts": 5,
+      "knownValueCzk": 2228820,
+      "valuedContracts": 5
+    },
+    {
       "name": "CHOZE s.r.o.",
       "ico": "28818172",
       "contracts": 4,
@@ -140078,13 +140127,6 @@
       "contracts": 6,
       "knownValueCzk": 2071520,
       "valuedContracts": 6
-    },
-    {
-      "name": "VSP spol. s r.o.",
-      "ico": "48392430",
-      "contracts": 4,
-      "knownValueCzk": 2071520,
-      "valuedContracts": 4
     },
     {
       "name": "Jaroslav Svoboda",
@@ -141536,6 +141578,13 @@
       "valuedContracts": 1
     },
     {
+      "name": "HEKO group a.s.",
+      "ico": "04939492",
+      "contracts": 3,
+      "knownValueCzk": 960300,
+      "valuedContracts": 3
+    },
+    {
       "name": "ART REAL ESTATE s.r.o.",
       "ico": "27426785",
       "contracts": 1,
@@ -141814,13 +141863,6 @@
       "contracts": 5,
       "knownValueCzk": 866555.2,
       "valuedContracts": 5
-    },
-    {
-      "name": "HEKO group a.s.",
-      "ico": "04939492",
-      "contracts": 2,
-      "knownValueCzk": 861750,
-      "valuedContracts": 2
     },
     {
       "name": "XANADU a.s.",
@@ -149363,17 +149405,17 @@
     }
   ],
   "meta": {
-    "total": 6556,
+    "total": 6558,
     "complete": true,
     "historyComplete": true,
     "scope": "full-history",
     "dateFrom": "2007-05-09",
     "dateTo": "2026-11-04",
     "dateLabel": "celá historie Registru smluv",
-    "knownValueCzk": 6885322082.799995,
-    "valuedContracts": 5791,
+    "knownValueCzk": 6885577932.799995,
+    "valuedContracts": 5793,
     "partners": 1687,
-    "updated": "2026-11-04T12:10:42.516Z",
+    "updated": "2026-11-05T12:22:46.331Z",
     "source": "https://data.smlouvy.gov.cz/index.xml",
     "method": "official-live-search-daily-overlap",
     "dumps": 124,
