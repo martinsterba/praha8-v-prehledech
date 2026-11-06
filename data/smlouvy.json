@@ -22,6 +22,27 @@
       "publisherIco": "00063797"
     },
     {
+      "id": "40233429",
+      "idContract": "37840845",
+      "url": "https://smlouvy.gov.cz/smlouva/40233429",
+      "subject": "Objednáváme u vás zánovní lodní kontejner 20´tmavě šedý PSXU 270970-2 (6x2m) včetně přepravy do skladu U Meteoru 8, Libeň, Praha 8 (Tesco baráky).\nKontejner - 78 650,- Kč vč. DPH\nPřeprava -   5 000,- Kč vč. DPH\nKontakt: Zdeněk Šír - 603 522 073",
+      "published": "2026-11-05",
+      "signed": "2026-10-19",
+      "valueCzk": 84000,
+      "valueVatCzk": 84000,
+      "valueNoVatCzk": 69421.49,
+      "counterparties": [
+        {
+          "name": "V.L.2001, s.r.o.",
+          "ico": "28191048",
+          "box": "2t9a2uj"
+        }
+      ],
+      "counterparty": "V.L.2001, s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
       "id": "40204545",
       "idContract": "37813257",
       "url": "https://smlouvy.gov.cz/smlouva/40204545",
@@ -139261,6 +139282,13 @@
       "valuedContracts": 3
     },
     {
+      "name": "V.L.2001, s.r.o.",
+      "ico": "28191048",
+      "contracts": 12,
+      "knownValueCzk": 3314325,
+      "valuedContracts": 12
+    },
+    {
       "name": "Bytové družstvo Sokolovská 68/381",
       "ico": "03008355",
       "contracts": 2,
@@ -139280,13 +139308,6 @@
       "contracts": 3,
       "knownValueCzk": 3255660,
       "valuedContracts": 3
-    },
-    {
-      "name": "V.L.2001, s.r.o.",
-      "ico": "28191048",
-      "contracts": 11,
-      "knownValueCzk": 3230325,
-      "valuedContracts": 11
     },
     {
       "name": "Fandament Architects s.r.o.",
@@ -149405,17 +149426,17 @@
     }
   ],
   "meta": {
-    "total": 6558,
+    "total": 6559,
     "complete": true,
     "historyComplete": true,
     "scope": "full-history",
     "dateFrom": "2007-05-09",
     "dateTo": "2026-11-04",
     "dateLabel": "celá historie Registru smluv",
-    "knownValueCzk": 6885577932.799995,
-    "valuedContracts": 5793,
+    "knownValueCzk": 6885661932.799995,
+    "valuedContracts": 5794,
     "partners": 1687,
-    "updated": "2026-11-05T12:22:46.331Z",
+    "updated": "2026-11-06T12:09:19.877Z",
     "source": "https://data.smlouvy.gov.cz/index.xml",
     "method": "official-live-search-daily-overlap",
     "dumps": 124,

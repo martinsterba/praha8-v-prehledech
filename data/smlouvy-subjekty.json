@@ -1,18 +1,18 @@
 {
   "schema": 2,
-  "updated": "2026-11-05T12:22:46.331Z",
+  "updated": "2026-11-06T12:09:19.877Z",
   "source": "https://smlouvy.gov.cz/vyhledavani",
   "method": "official-live-search-daily-overlap",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7519,
-    "knownValueCzk": 5193621287.700001,
+    "totalContracts": 7522,
+    "knownValueCzk": 5194121087.700001,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
-        "current": 6558
+        "current": 6559
       },
       "note": "Denní kontrola používá živé vyhledávání Registru smluv v okně 5 dní; historický základ se při denním běhu nestahuje."
     }
@@ -112769,12 +112769,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Na-Slovance-Praha-8-Bedrichovska-1.html",
       "website": "http://www.zsnaslovance.cz/",
-      "total": 206,
-      "partners": 88,
+      "total": 208,
+      "partners": 90,
       "knownValueCzk": 32861701.17,
       "valuedContracts": 110,
       "dateFrom": "2016-11-14",
-      "dateTo": "2026-10-09",
+      "dateTo": "2026-11-05",
       "partnerList": [
         {
           "name": "Firma s.r.o.",
@@ -113218,6 +113218,13 @@
           "valuedContracts": 0
         },
         {
+          "name": "Gardado plus s.r.o.",
+          "ico": "06026427",
+          "contracts": 1,
+          "knownValueCzk": 0,
+          "valuedContracts": 0
+        },
+        {
           "name": "Ing. Milan Mandlík",
           "ico": "10527435",
           "contracts": 1,
@@ -113344,6 +113351,13 @@
           "valuedContracts": 0
         },
         {
+          "name": "SPLENDOR CZ s.r.o.",
+          "ico": "19978219",
+          "contracts": 1,
+          "knownValueCzk": 0,
+          "valuedContracts": 0
+        },
+        {
           "name": "Školní zájezdy, s.r.o.",
           "ico": "05594766",
           "contracts": 1,
@@ -113394,6 +113408,48 @@
         }
       ],
       "contracts": [
+        {
+          "id": "40242037",
+          "idContract": "37848949",
+          "url": "https://smlouvy.gov.cz/smlouva/40242037",
+          "subject": "Smlouva o poskytnutí služeb-ŠvP-Hotel Bára, Benecko, 14.-18.6.2027",
+          "published": "2026-11-06",
+          "signed": "2026-11-05",
+          "valueCzk": null,
+          "valueVatCzk": null,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "Gardado plus s.r.o.",
+              "ico": "06026427",
+              "box": ""
+            }
+          ],
+          "counterparty": "Gardado plus s.r.o.",
+          "publisher": "Základní škola a mateřská škola Na Slovance, Praha 8, Bedřichovská 1",
+          "publisherIco": "60433256"
+        },
+        {
+          "id": "40241957",
+          "idContract": "37848873",
+          "url": "https://smlouvy.gov.cz/smlouva/40241957",
+          "subject": "Smlouva o poskytnutí služeb-ŠvP-Penzion Metuje 5.-11.6.2027",
+          "published": "2026-11-06",
+          "signed": "2026-11-03",
+          "valueCzk": null,
+          "valueVatCzk": null,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "SPLENDOR CZ s.r.o.",
+              "ico": "19978219",
+              "box": ""
+            }
+          ],
+          "counterparty": "SPLENDOR CZ s.r.o.",
+          "publisher": "Základní škola a mateřská škola Na Slovance, Praha 8, Bedřichovská 1",
+          "publisherIco": "60433256"
+        },
         {
           "id": "39905317",
           "idContract": "37526149",
@@ -135163,12 +135219,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Praha-8-Lyckovo-namesti-6.html",
       "website": "http://www.smysluplnaskola.cz/",
-      "total": 337,
+      "total": 338,
       "partners": 166,
-      "knownValueCzk": 46155885.33,
-      "valuedContracts": 133,
+      "knownValueCzk": 46655685.33,
+      "valuedContracts": 134,
       "dateFrom": "2016-12-09",
-      "dateTo": "2026-10-16",
+      "dateTo": "2026-11-04",
       "partnerList": [
         {
           "name": "FIRMA s.r.o.",
@@ -135238,6 +135294,13 @@
           "ico": "26198258",
           "contracts": 1,
           "knownValueCzk": 626101,
+          "valuedContracts": 1
+        },
+        {
+          "name": "ACTIVE GUIDE, s.r.o.",
+          "ico": "27490653",
+          "contracts": 2,
+          "knownValueCzk": 499800,
           "valuedContracts": 1
         },
         {
@@ -135822,13 +135885,6 @@
           "valuedContracts": 0
         },
         {
-          "name": "ACTIVE GUIDE, s.r.o.",
-          "ico": "27490653",
-          "contracts": 1,
-          "knownValueCzk": 0,
-          "valuedContracts": 0
-        },
-        {
           "name": "AHREC Hotels s.r.o.",
           "ico": "21174831",
           "contracts": 1,
@@ -136334,6 +136390,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "40239105",
+          "idContract": "37846221",
+          "url": "https://smlouvy.gov.cz/smlouva/40239105",
+          "subject": "Smlouva o zájezdu LVVZ Rakouskou březen 27",
+          "published": "2026-11-06",
+          "signed": "2026-11-04",
+          "valueCzk": 499800,
+          "valueVatCzk": 499800,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "ACTIVE GUIDE, s.r.o.",
+              "ico": "27490653",
+              "box": "8jvi5p2"
+            }
+          ],
+          "counterparty": "ACTIVE GUIDE, s.r.o.",
+          "publisher": "Základní škola a mateřská škola, Praha 8, Lyčkovo náměstí 6",
+          "publisherIco": "60433230"
+        },
         {
           "id": "39972153",
           "idContract": "37590161",
