@@ -1,6 +1,20 @@
 [
   {
     "from": "2026-11-06",
+    "to": "2026-12-17",
+    "title": "Dražba movité věci - vozidlo Škoda Octavia, rok výroby: 2015, RZ: 4AV 5896, bez TP",
+    "area": "Dražby",
+    "url": "https://www.praha8.cz/Drazba-movite-veci-vozidlo-Skoda-Octavia-rok-vyroby-2015-RZ-4AV-5896-bez-TP.html"
+  },
+  {
+    "from": "2026-11-06",
+    "to": "2026-12-01",
+    "title": "Oznámení o přerušení dodávky elektřiny v ul. Lhotákova čp. 2299,2326,2329,2330,2331 dne: 1.12.2026",
+    "area": "Přerušení dodávek energií",
+    "url": "https://www.praha8.cz/Oznameni-o-preruseni-dodavky-elektriny-v-ul-Lhotakova-cp-2299-2326-2329-2330-2331-dne-1-12-2026.html"
+  },
+  {
+    "from": "2026-11-06",
     "to": "2026-11-20",
     "title": "Rozhodnutí o povolení záboru - ZS - Sokolovská, zastávka TRAM Florenc - Dopravní podnik hl.m.Prahy",
     "area": "Odbor dopravy",
@@ -176,41 +190,6 @@
   },
   {
     "from": "2026-10-29",
-    "to": "2026-11-06",
-    "title": "Informace o ohledání vozidla Smart, barva černo-stříbrná, V Nových Bohnicích",
-    "area": "Odbor dopravy",
-    "url": "https://www.praha8.cz/Informace-o-ohledani-vozidla-Smart-barva-cerno-stribrna-V-Novych-Bohnicich.html"
-  },
-  {
-    "from": "2026-10-29",
-    "to": "2026-11-06",
-    "title": "Informace o ohledání vozidla Smart, barva černá, V Nových Bohnicích",
-    "area": "Odbor dopravy",
-    "url": "https://www.praha8.cz/Informace-o-ohledani-vozidla-Smart-barva-cerna-V-Novych-Bohnicich.html"
-  },
-  {
-    "from": "2026-10-29",
-    "to": "2026-11-06",
-    "title": "Informace o ohledání vozidla Smart, barva stříbrná, V Nových Bohnicích",
-    "area": "Odbor dopravy",
-    "url": "https://www.praha8.cz/Informace-o-ohledani-vozidla-Smart-barva-stribrna-V-Novych-Bohnicich.html"
-  },
-  {
-    "from": "2026-10-29",
-    "to": "2026-11-06",
-    "title": "Informace o ohledání vozidla Toyota, barva červená, U větrolamu",
-    "area": "Odbor dopravy",
-    "url": "https://www.praha8.cz/Informace-o-ohledani-vozidla-Toyota-barva-cervena-U-vetrolamu.html"
-  },
-  {
-    "from": "2026-10-29",
-    "to": "2026-11-06",
-    "title": "Informace o ohledání vozidla Audi, barva modrá, Nad Kundratkou",
-    "area": "Odbor dopravy",
-    "url": "https://www.praha8.cz/Informace-o-ohledani-vozidla-Audi-barva-modra-Nad-Kundratkou.html"
-  },
-  {
-    "from": "2026-10-29",
     "to": "2026-11-13",
     "title": "ÚD rozhodnutí o povolení prodeje silničního vozidla ve veřejné dražbě Volkswagen Golf, RZ: 1AD V859",
     "area": "Odbor dopravy",
@@ -292,69 +271,6 @@
     "title": "JES k záměru Stavební úpravy a nástavba BD Zenklova 27",
     "area": "Odbor životního prostředí",
     "url": "https://www.praha8.cz/JES-k-zameru-Stavebni-upravy-a-nastavba-BD-Zenklova-27.html"
-  },
-  {
-    "from": "2026-10-22",
-    "to": "2026-11-06",
-    "title": "Rozhodnutí - Na Pěšinách, Střelničná, NN2188, Křižíkova, natáčení, Movie House s. r. o.",
-    "area": "Odbor dopravy",
-    "url": "https://www.praha8.cz/Rozhodnuti-Na-Pesinach-Strelnicna-NN2188-Krizikova-nataceni-Movie-House-s-r-o.html"
-  },
-  {
-    "from": "2026-10-22",
-    "to": "2026-11-06",
-    "title": "JES - Long island Libeň - stavební úpravy kotelny na bytový dům - změna před dokončením",
-    "area": "Odbor životního prostředí",
-    "url": "https://www.praha8.cz/JES-Long-island-Liben-stavebni-upravy-kotelny-na-bytovy-dum-zmena-pred-dokoncenim.html"
-  },
-  {
-    "from": "2026-10-22",
-    "to": "2026-11-06",
-    "title": "JES - Zastřešení bytového domu Šimůnkova",
-    "area": "Odbor životního prostředí",
-    "url": "https://www.praha8.cz/JES-Zastreseni-bytoveho-domu-Simunkova.html"
-  },
-  {
-    "from": "2026-10-22",
-    "to": "2026-11-06",
-    "title": "M - rozhodnutí o odvolání - rozhodnutí potvrzeno: \"Novostavba polyfunkčního objektu Pod Bání\"",
-    "area": "Magistrát hl. m. Prahy",
-    "url": "https://www.praha8.cz/M-rozhodnuti-o-odvolani-rozhodnuti-potvrzeno-Novostavba-polyfunkcniho-objektu-Pod-Bani.html"
-  },
-  {
-    "from": "2026-10-22",
-    "to": "2026-11-06",
-    "title": "rozhodnutí - dodatečné povolení: Autoservis a STK pro osobní automobily,",
-    "area": "Odbor územního rozvoje a výstavby",
-    "url": "https://www.praha8.cz/rozhodnuti-dodatecne-povoleni-Autoservis-a-STK-pro-osobni-automobily.html"
-  },
-  {
-    "from": "2026-10-22",
-    "to": "2026-11-06",
-    "title": "závazné stanovisko JES: \"BD Zdibská\" Praha 8 Kobylisy",
-    "area": "Odbor územního rozvoje a výstavby",
-    "url": "https://www.praha8.cz/zavazne-stanovisko-JES-BD-Zdibska-Praha-8-Kobylisy.html"
-  },
-  {
-    "from": "2026-10-22",
-    "to": "2026-11-06",
-    "title": "Zřízení vyhrazeného parkovacího stání pro ZTP, Okořská, před č.p. 347/5",
-    "area": "Odbor dopravy",
-    "url": "https://www.praha8.cz/Zrizeni-vyhrazeneho-parkovaciho-stani-pro-ZTP-Okorska-pred-c-p-347-5.html"
-  },
-  {
-    "from": "2026-10-22",
-    "to": "2026-11-06",
-    "title": "Závěr zjišťovacího řízení",
-    "area": "Magistrát hl. m. Prahy",
-    "url": "https://www.praha8.cz/Zaver-zjistovaciho-rizeni-7.html"
-  },
-  {
-    "from": "2026-10-22",
-    "to": "2026-11-06",
-    "title": "Jednotné environmentální stanovisko - Viladomy Kubišova",
-    "area": "Odbor životního prostředí",
-    "url": "https://www.praha8.cz/Jednotne-environmentalni-stanovisko-Viladomy-Kubisova.html"
   },
   {
     "from": "2026-10-21",

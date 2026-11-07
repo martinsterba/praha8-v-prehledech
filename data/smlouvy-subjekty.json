@@ -1,14 +1,14 @@
 {
   "schema": 2,
-  "updated": "2026-11-06T12:09:19.877Z",
+  "updated": "2026-11-07T11:07:02.407Z",
   "source": "https://smlouvy.gov.cz/vyhledavani",
   "method": "official-live-search-daily-overlap",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7522,
-    "knownValueCzk": 5194121087.700001,
+    "totalContracts": 7523,
+    "knownValueCzk": 5194274614.2300005,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
@@ -118375,12 +118375,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Petra-Strozziho-Praha-8-Za-Invalidovnou-3.html",
       "website": "http://www.zs-strozziho.cz/",
-      "total": 234,
+      "total": 235,
       "partners": 80,
-      "knownValueCzk": 40160143.76,
-      "valuedContracts": 219,
+      "knownValueCzk": 40313670.29,
+      "valuedContracts": 220,
       "dateFrom": "2016-10-26",
-      "dateTo": "2026-10-14",
+      "dateTo": "2026-10-19",
       "partnerList": [
         {
           "name": "AVA - agentura volnočasových aktivit pro děti a mládež, s.r.o.",
@@ -118406,9 +118406,9 @@
         {
           "name": "VEGANET, spol. s r.o.",
           "ico": "25061844",
-          "contracts": 13,
-          "knownValueCzk": 2175532.19,
-          "valuedContracts": 13
+          "contracts": 14,
+          "knownValueCzk": 2329058.7199999997,
+          "valuedContracts": 14
         },
         {
           "name": "Vladař a synové s.r.o.",
@@ -118944,6 +118944,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "40253953",
+          "idContract": "37860325",
+          "url": "https://smlouvy.gov.cz/smlouva/40253953",
+          "subject": "Objednávka",
+          "published": "2026-11-06",
+          "signed": "2026-10-19",
+          "valueCzk": 153526.53,
+          "valueVatCzk": null,
+          "valueNoVatCzk": 153526.53,
+          "counterparties": [
+            {
+              "name": "VEGANET, spol. s r.o.",
+              "ico": "25061844",
+              "box": "s4is6zh"
+            }
+          ],
+          "counterparty": "VEGANET, spol. s r.o.",
+          "publisher": "Základní škola a mateřská škola Petra Strozziho, Praha 8, Za Invalidovnou 3",
+          "publisherIco": "60461853"
+        },
         {
           "id": "39938073",
           "idContract": "37557397",
