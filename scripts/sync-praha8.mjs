@@ -242,47 +242,80 @@ async function pagerDiagnostic(page,nextNum){
       .slice(0,40);
   },nextNum);
 }
-async function clickNextPage(page,currentPage){
+async function clickNextPage(page,currentPage,attempt=1){
   const nextNum=currentPage+1;
-  const before=await page.evaluate(()=>[...document.body.innerText.matchAll(/Usn\s+(?:RMC|ZMC)\s+\d+\/\d{4}/g)].map(m=>m[0]).join('|'));
+  const transient=/Execution context was destroyed|Cannot find context|Target closed/i;
+  const recover=async(error)=>{
+    if(!transient.test(String(error?.message||error))||attempt>=3)return false;
+    await page.waitForNavigation({waitUntil:'domcontentloaded',timeout:5000}).catch(()=>null);
+    await sleep(750);
+    return true;
+  };
+
+  let before='';
+  try{
+    before=await page.evaluate(()=>[...document.body.innerText.matchAll(/Usn\s+(?:RMC|ZMC)\s+\d+\/\d{4}/g)].map(m=>m[0]).join('|'));
+  }catch(e){
+    if(await recover(e))return clickNextPage(page,currentPage,attempt+1);
+    throw e;
+  }
 
   // Praha 8 používá ASP.NET WebForms pager ve tvaru
   // javascript:__doPostBack('ctl09$gvUsn','Page$2'). Funkce __doPostBack ale
   // nemusí být v headless Chrome globálně dostupná. Emulujeme proto přesně to,
   // co WebForms dělá: nastavíme __EVENTTARGET + __EVENTARGUMENT a odešleme form.
-  const pager=await page.evaluate((nextNum)=>{
-    const wanted='Page$'+nextNum;
-    for(const a of document.querySelectorAll('a[href*="__doPostBack"]')){
-      const href=a.getAttribute('href')||'';
-      const m=href.match(/__doPostBack\(['\"]([^'\"]+)['\"],['\"]([^'\"]+)['\"]\)/);
-      if(m && m[2]===wanted)return {target:m[1],argument:m[2],text:(a.textContent||'').trim(),href};
-    }
-    return null;
-  },nextNum);
+  let pager;
+  try{
+    pager=await page.evaluate((nextNum)=>{
+      const wanted='Page$'+nextNum;
+      for(const a of document.querySelectorAll('a[href*="__doPostBack"]')){
+        const href=a.getAttribute('href')||'';
+        const m=href.match(/__doPostBack\(['"]([^'"]+)['"],['"]([^'"]+)['"]\)/);
+        if(m && m[2]===wanted)return {target:m[1],argument:m[2],text:(a.textContent||'').trim(),href};
+      }
+      return null;
+    },nextNum);
+  }catch(e){
+    if(await recover(e))return clickNextPage(page,currentPage,attempt+1);
+    throw e;
+  }
   if(!pager)return false;
 
   const navPromise=page.waitForNavigation({waitUntil:'domcontentloaded',timeout:20000}).catch(()=>null);
-  const submitted=await page.evaluate(({target,argument})=>{
-    const form=document.querySelector('form');
-    if(!form)return {ok:false,reason:'form nenalezen'};
-    const ensure=(name)=>{
-      let el=form.querySelector(`input[name="${name}"]`);
-      if(!el){el=document.createElement('input');el.type='hidden';el.name=name;form.appendChild(el);}
-      return el;
-    };
-    ensure('__EVENTTARGET').value=target;
-    ensure('__EVENTARGUMENT').value=argument;
-    // WebForms postback nemá posílat hodnotu běžného submit buttonu.
-    try{HTMLFormElement.prototype.submit.call(form);return {ok:true};}
-    catch(e){return {ok:false,reason:String(e)}}
-  },pager);
+  let submitted;
+  try{
+    submitted=await page.evaluate(({target,argument})=>{
+      const form=document.querySelector('form');
+      if(!form)return {ok:false,reason:'form nenalezen'};
+      const ensure=(name)=>{
+        let el=form.querySelector(`input[name="${name}"]`);
+        if(!el){el=document.createElement('input');el.type='hidden';el.name=name;form.appendChild(el);}
+        return el;
+      };
+      ensure('__EVENTTARGET').value=target;
+      ensure('__EVENTARGUMENT').value=argument;
+      try{HTMLFormElement.prototype.submit.call(form);return {ok:true};}
+      catch(e){return {ok:false,reason:String(e)}}
+    },pager);
+  }catch(e){
+    if(await recover(e))return clickNextPage(page,currentPage,attempt+1);
+    throw e;
+  }
   if(!submitted?.ok){
     if(currentPage===1)console.log('      ⚠️ Pager: WebForms POST se nepodařil.',JSON.stringify({pager,submitted}));
     return false;
   }
+
   await navPromise;
   await sleep(500);
-  const after=await page.evaluate(()=>[...document.body.innerText.matchAll(/Usn\s+(?:RMC|ZMC)\s+\d+\/\d{4}/g)].map(m=>m[0]).join('|'));
+
+  let after='';
+  try{
+    after=await page.evaluate(()=>[...document.body.innerText.matchAll(/Usn\s+(?:RMC|ZMC)\s+\d+\/\d{4}/g)].map(m=>m[0]).join('|'));
+  }catch(e){
+    if(await recover(e))return clickNextPage(page,currentPage,attempt+1);
+    throw e;
+  }
   if(after && after!==before)return true;
   if(currentPage===1)console.log(`      ⚠️ WebForms POST Page$${nextNum} proběhl, ale seznam se nezměnil.`,JSON.stringify(pager));
   return false;
