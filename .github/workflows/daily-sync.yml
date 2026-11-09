@@ -2,6 +2,11 @@ name: "🌙 Denní aktualizace"
 
 on:
   workflow_dispatch:
+  # Dočasný retest po opravě denního syncu; po zeleném běhu odstraníme.
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/daily-sync.yml"
   schedule:
     # GitHub Actions plánuje v UTC. V létě je 04:17 UTC = 06:17 v Praze.
     # Po přechodu na zimní čas posuneme cron na 05:17 UTC.
