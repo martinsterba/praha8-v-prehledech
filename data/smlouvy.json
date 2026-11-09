@@ -1,6 +1,111 @@
 {
   "contracts": [
     {
+      "id": "40258057",
+      "idContract": "37864333",
+      "url": "https://smlouvy.gov.cz/smlouva/40258057",
+      "subject": "Papírové ručníky primaSOFT 72 balení a toaletní papír Harmony 420 balení.",
+      "published": "2026-11-09",
+      "signed": "2026-11-05",
+      "valueCzk": 105565,
+      "valueVatCzk": 105565,
+      "valueNoVatCzk": 87243.8,
+      "counterparties": [
+        {
+          "name": "ACTIVA spol. s r.o.",
+          "ico": "48111198",
+          "box": "dhxi5k5"
+        }
+      ],
+      "counterparty": "ACTIVA spol. s r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "40272497",
+      "idContract": "37878257",
+      "url": "https://smlouvy.gov.cz/smlouva/40272497",
+      "subject": "Havárie - oprava dešťového svodu v objektu U Meteoru 8.",
+      "published": "2026-11-09",
+      "signed": "2026-11-09",
+      "valueCzk": 57793.23,
+      "valueVatCzk": 57793.23,
+      "valueNoVatCzk": 47763,
+      "counterparties": [
+        {
+          "name": "VASUK stavební s.r.o.",
+          "ico": "06017703",
+          "box": "9ayhazq"
+        }
+      ],
+      "counterparty": "VASUK stavební s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "40272489",
+      "idContract": "37878253",
+      "url": "https://smlouvy.gov.cz/smlouva/40272489",
+      "subject": "Objednáváme u vás pronájem, montáž a demontáž vánočních 3D dekorů -3x jelen a 3x laň.",
+      "published": "2026-11-09",
+      "signed": "2026-12-31",
+      "valueCzk": 86805.4,
+      "valueVatCzk": 86805.4,
+      "valueNoVatCzk": 71740,
+      "counterparties": [
+        {
+          "name": "Technologie hlavního města Prahy, a.s.",
+          "ico": "25672541",
+          "box": "u5hgkji"
+        }
+      ],
+      "counterparty": "Technologie hlavního města Prahy, a.s.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "40272485",
+      "idContract": "37878249",
+      "url": "https://smlouvy.gov.cz/smlouva/40272485",
+      "subject": "Objednáváme u vás pronájem 3 ks andělských křídel se svatozáří a 3 ks dětských křídel.",
+      "published": "2026-11-09",
+      "signed": "2026-12-31",
+      "valueCzk": 99000,
+      "valueVatCzk": 99000,
+      "valueNoVatCzk": 99000,
+      "counterparties": [
+        {
+          "name": "MK-mont vánoční výzdoba s.r.o.",
+          "ico": "23442492",
+          "box": "9ujnt3z"
+        }
+      ],
+      "counterparty": "MK-mont vánoční výzdoba s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "40274137",
+      "idContract": "37879813",
+      "url": "https://smlouvy.gov.cz/smlouva/40274137",
+      "subject": "Smlouva o nájmu prostoru sloužícího podnikání",
+      "published": "2026-11-09",
+      "signed": "2026-11-04",
+      "valueCzk": 1314060,
+      "valueVatCzk": 1314060,
+      "valueNoVatCzk": 1086000,
+      "counterparties": [
+        {
+          "name": "Kulturní propagace s.r.o.",
+          "ico": "23509147",
+          "box": "swqsnj4"
+        }
+      ],
+      "counterparty": "Kulturní propagace s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
       "id": "40225061",
       "idContract": "37832897",
       "url": "https://smlouvy.gov.cz/smlouva/40225061",
@@ -138008,18 +138113,18 @@
       "valuedContracts": 1
     },
     {
+      "name": "Technologie hlavního města Prahy, a.s.",
+      "ico": "25672541",
+      "contracts": 22,
+      "knownValueCzk": 15980905.319999998,
+      "valuedContracts": 20
+    },
+    {
       "name": "CETIN a.s.",
       "ico": "04084063",
       "contracts": 24,
       "knownValueCzk": 15976125,
       "valuedContracts": 3
-    },
-    {
-      "name": "Technologie hlavního města Prahy, a.s.",
-      "ico": "25672541",
-      "contracts": 21,
-      "knownValueCzk": 15894099.919999998,
-      "valuedContracts": 19
     },
     {
       "name": "Bytové družstvo Křižíkova 3",
@@ -139527,6 +139632,13 @@
       "valuedContracts": 19
     },
     {
+      "name": "ACTIVA spol. s r.o.",
+      "ico": "48111198",
+      "contracts": 4,
+      "knownValueCzk": 2720751.95,
+      "valuedContracts": 4
+    },
+    {
       "name": "PERFECT ICE s.r.o.",
       "ico": "27860221",
       "contracts": 2,
@@ -139651,13 +139763,6 @@
       "contracts": 13,
       "knownValueCzk": 2619343.1800000006,
       "valuedContracts": 13
-    },
-    {
-      "name": "ACTIVA spol. s r.o.",
-      "ico": "48111198",
-      "contracts": 3,
-      "knownValueCzk": 2615186.95,
-      "valuedContracts": 3
     },
     {
       "name": "Vladislav Wojnarowski",
@@ -140979,6 +141084,13 @@
       "name": "SOUP OPERA s.r.o.",
       "ico": "28933265",
       "contracts": 2,
+      "knownValueCzk": 1314060,
+      "valuedContracts": 1
+    },
+    {
+      "name": "Kulturní propagace s.r.o.",
+      "ico": "23509147",
+      "contracts": 1,
       "knownValueCzk": 1314060,
       "valuedContracts": 1
     },
@@ -143146,6 +143258,13 @@
       "valuedContracts": 2
     },
     {
+      "name": "VASUK stavební s.r.o.",
+      "ico": "06017703",
+      "contracts": 3,
+      "knownValueCzk": 472944.23,
+      "valuedContracts": 3
+    },
+    {
       "name": "Junák - český skaut, Skautský institut, z. s.",
       "ico": "70802327",
       "contracts": 1,
@@ -143445,13 +143564,6 @@
       "contracts": 4,
       "knownValueCzk": 417300,
       "valuedContracts": 4
-    },
-    {
-      "name": "VASUK stavební s.r.o.",
-      "ico": "06017703",
-      "contracts": 2,
-      "knownValueCzk": 415151,
-      "valuedContracts": 2
     },
     {
       "name": "Vladimir Vasiljevič Leň",
@@ -145071,6 +145183,13 @@
       "valuedContracts": 1
     },
     {
+      "name": "MK-mont vánoční výzdoba s.r.o.",
+      "ico": "23442492",
+      "contracts": 2,
+      "knownValueCzk": 198000,
+      "valuedContracts": 2
+    },
+    {
       "name": "BAZENSERVIS, s.r.o.",
       "ico": "64791661",
       "contracts": 3,
@@ -146377,13 +146496,6 @@
       "ico": "29027527",
       "contracts": 1,
       "knownValueCzk": 100000,
-      "valuedContracts": 1
-    },
-    {
-      "name": "MK-mont vánoční výzdoba s.r.o.",
-      "ico": "23442492",
-      "contracts": 1,
-      "knownValueCzk": 99000,
       "valuedContracts": 1
     },
     {
@@ -149426,17 +149538,17 @@
     }
   ],
   "meta": {
-    "total": 6559,
+    "total": 6564,
     "complete": true,
     "historyComplete": true,
     "scope": "full-history",
     "dateFrom": "2007-05-09",
-    "dateTo": "2026-11-04",
+    "dateTo": "2026-12-31",
     "dateLabel": "celá historie Registru smluv",
-    "knownValueCzk": 6885661932.799995,
-    "valuedContracts": 5794,
-    "partners": 1687,
-    "updated": "2026-11-08T11:20:02.113Z",
+    "knownValueCzk": 6887325156.429996,
+    "valuedContracts": 5799,
+    "partners": 1688,
+    "updated": "2026-11-09T21:28:54.950Z",
     "source": "https://data.smlouvy.gov.cz/index.xml",
     "method": "official-live-search-daily-overlap",
     "dumps": 124,
