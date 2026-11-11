@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-10",
+  "updated": "2026-11-11",
   "mode": "synced",
-  "resolutions": 16105,
-  "resolutionsRada": 14826,
+  "resolutions": 16108,
+  "resolutionsRada": 14829,
   "resolutionsZastupitelstvo": 1279,
   "tasks": 0,
   "people": 45,
@@ -10,9 +10,9 @@
   "organizationsWithIco": 41,
   "bodies": 18,
   "info106": 1817,
-  "noticeBoard": 80,
+  "noticeBoard": 76,
   "contracts": 6564,
   "contractsValidation": "open-data-complete",
-  "detailRemaining": 16105,
+  "detailRemaining": 16108,
   "note": "Výchozí synchronizace načítá ostré sady: Praha 8 (zastupitelstvo, komise a výbory), HMP (zastupitelstvo/výbory/komise a firmy), Parlament ČR, organizace a firmy Prahy 8, volby a Registr smluv. Ostatní zdroje se spouštějí samostatně."
 }
