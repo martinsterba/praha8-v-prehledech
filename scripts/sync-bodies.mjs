@@ -119,20 +119,24 @@ try{
     console.log(`   ✓ ${c.name}`);
   }
 
-  // Výbory zastupitelstva.
-  const committeesUrl='https://www.praha8.cz/vybory-zastupitelstva-mestske-casti-praha-8.html';
+  // Výbory zastupitelstva. Po volbách 2026 vznikl vedle povinného
+  // finančního a kontrolního výboru také Výbor pro rozpočtové a dotační vztahy s MHMP.
+  // Seznam proto objevujeme dynamicky podle nadpisu následovaného položkou „Předseda“.
+  const committeesUrl='https://www.praha8.cz/Vybory-zastupitelstva-Mestske-casti-Praha-8.html';
   await goto(page,committeesUrl);
   const committeeData=await page.evaluate(()=>{
-    const text=(document.querySelector('main')||document.body).innerText||'';
-    const names=['Finanční výbor','Kontrolní výbor'];
-    return names.map((name,idx)=>{
-      const start=text.indexOf(name);
-      if(start<0)return null;
-      const next=idx+1<names.length?text.indexOf(names[idx+1],start+name.length):-1;
-      const end=next>start?next:text.indexOf('Mohlo by vás',start);
-      const lines=text.slice(start,end>start?end:undefined).split('\n').map(x=>x.replace(/\s+/g,' ').trim()).filter(Boolean);
-      const out={name,chair:'',members:[],citizens:[],secretary:''};let mode='';
-      for(const line of lines.slice(1)){
+    const lines=((document.querySelector('main')||document.body).innerText||'')
+      .split('\n').map(x=>x.replace(/\s+/g,' ').trim()).filter(Boolean);
+    const starts=[];
+    for(let i=0;i<lines.length-1;i++){
+      if(/výbor/i.test(lines[i]) && /^Předseda:?$/i.test(lines[i+1]) && lines[i].length<140) starts.push(i);
+    }
+    const endOfSection=lines.findIndex((x,i)=>i>(starts.at(-1)??0)&&/^Mohlo by vás/i.test(x));
+    return starts.map((start,idx)=>{
+      const end=starts[idx+1]??(endOfSection>start?endOfSection:lines.length);
+      const chunk=lines.slice(start,end);
+      const out={name:chunk[0]||'',chair:'',members:[],citizens:[],secretary:''};let mode='';
+      for(const line of chunk.slice(1)){
         if(/^Předseda:?$/i.test(line)||/^Předsedkyně:?$/i.test(line)){mode='chair';continue}
         if(/^Členové z řad členů ZMČ:?$/i.test(line)||/^Členové z řad zastupitelů:?$/i.test(line)){mode='members';continue}
         if(/^Členové z řad občanů:?$/i.test(line)){mode='citizens';continue}
@@ -144,14 +148,17 @@ try{
         if(mode==='secretary'&&!out.secretary&&line.length<120){out.secretary=line;mode='';continue}
       }
       return out;
-    }).filter(Boolean);
+    }).filter(x=>x.name&&x.chair);
   });
-  if(committeeData.length!==2||committeeData.some(x=>!x.chair&&!x.members.length))throw new Error(`Výbory nejsou kompletní (${committeeData.length}/2). Dataset nepřepisuji.`);
+  const committeeNames=new Set(committeeData.map(x=>x.name.toLowerCase()));
+  if(![...committeeNames].some(x=>x.includes('finanční výbor')) || ![...committeeNames].some(x=>x.includes('kontrolní výbor'))){
+    throw new Error(`Výbory nejsou kompletní: nalezeno ${committeeData.length}, chybí finanční nebo kontrolní výbor. Dataset nepřepisuji.`);
+  }
   for(const x of committeeData){
-    const materialsUrl=/kontrolní/i.test(x.name)?'https://www.praha8.cz/Materialy-KV':'https://www.praha8.cz/Materialy-Financniho-vyboru';
+    const materialsUrl=/kontrolní/i.test(x.name)?'https://www.praha8.cz/Materialy-KV':/finanční/i.test(x.name)?'https://www.praha8.cz/Materialy-Financniho-vyboru':'';
     bodies.push({type:'Výbor zastupitelstva',name:x.name,url:committeesUrl,materialsUrl,chair:x.chair?annotate(x.chair):null,members:x.members.map(annotate),citizens:x.citizens.map(name=>({name,club:''})),secretary:x.secretary||''});
   }
-  console.log('   ✓ Výbory: 2/2');
+  console.log(`   ✓ Výbory: ${committeeData.length}`);
 
   // Zvláštní orgány – bez statického snapshotu. Po volbách chceme raději bezpečně selhat
   // a ponechat poslední validní dataset, než zapsat staré složení jako nové.
@@ -229,7 +236,7 @@ try{
   const committees=bodies.filter(x=>x.type==='Výbor zastupitelstva');
   const specialBodies=bodies.filter(x=>x.type==='Zvláštní orgán');
   if(commissions.length!==commissionLinks.length)throw new Error(`Komise: načteno ${commissions.length}/${commissionLinks.length}. Dataset nepřepisuji.`);
-  if(committees.length!==2||specialBodies.length!==2)throw new Error('Kontrola úplnosti orgánů neprošla. Dataset nepřepisuji.');
+  if(committees.length<2||specialBodies.length!==2)throw new Error('Kontrola úplnosti orgánů neprošla. Dataset nepřepisuji.');
 
   bodies.sort((a,b)=>a.type.localeCompare(b.type,'cs')||a.name.localeCompare(b.name,'cs'));
   await writeFile(bodiesPath,JSON.stringify(bodies,null,2)+'\n');
