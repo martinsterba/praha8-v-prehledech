@@ -1,4 +1,5 @@
 name: "Ověřit povolební role 2026"
+# retest po opravě párování ZHMP
 
 on:
   push:
