@@ -78,18 +78,13 @@ try{
     }
   }
   const commissionLinks=[...byName.values()].sort((a,b)=>a.name.localeCompare(b.name,'cs'));
-  if(commissionLinks.length<14){
-    const prevCommissions=Array.isArray(previousBodies)?previousBodies.filter(x=>x?.type==='Komise rady'):[];
-    const prevCommittees=Array.isArray(previousBodies)?previousBodies.filter(x=>x?.type==='Výbor zastupitelstva'):[];
-    const prevSpecials=Array.isArray(previousBodies)?previousBodies.filter(x=>x?.type==='Zvláštní orgán'):[];
-    if(prevCommissions.length>=14 && prevCommittees.length===2 && prevSpecials.length===2){
-      console.warn(`   ⚠️ Oficiální seznam komisí je nyní neúplný (${commissionLinks.length}/14). Zachovávám poslední kompletní validní dataset ${previousBodies.length} orgánů a týdenní synchronizace může pokračovat.`);
-      await browser.close().catch(()=>{});
-      process.exit(0);
-    }
-    throw new Error(`Seznam komisí je neúplný: nalezeno jen ${commissionLinks.length} a není k dispozici kompletní předchozí dataset. Dataset nepřepisuji.`);
+  if(commissionLinks.length===0){
+    console.log('   ℹ️ Komise Rady MČ nejsou na oficiálním webu aktuálně ustavené/zveřejněné. Publikuji proto aktuální stav bez komisí.');
+  }else if(commissionLinks.length<14){
+    throw new Error(`Seznam komisí je jen částečný: nalezeno ${commissionLinks.length}/14. Dataset nepřepisuji, dokud nebude oficiální seznam kompletní.`);
+  }else{
+    console.log(`   Seznam komisí: ${commissionLinks.length} položek.`);
   }
-  console.log(`   Seznam komisí: ${commissionLinks.length} položek.`);
 
   for(const c of commissionLinks){
     await goto(page,c.url);
