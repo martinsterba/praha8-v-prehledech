@@ -1,4 +1,5 @@
-name: "Jednorázová aktualizace orgánů po volbách 2026"\n# retest dynamického parseru 3 výborů
+name: "Jednorázová aktualizace orgánů po volbách 2026"
+# retest dynamického parseru 3 výborů
 
 on:
   push:
