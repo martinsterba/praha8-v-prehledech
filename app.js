@@ -281,23 +281,26 @@ function personCard(p,{council=false,showAreas=false}={}){
  const shownName=displayPersonName(p.name); const np=personNameParts(p.name); const initials=`${np.given?.[0]||''}${np.surname?.[0]||''}`;
  return `<div class="card person-card"><div class="person"><div class="avatar">${escapeHtml(initials)}</div><div><h3>${escapeHtml(shownName)}</h3><div class="person-badges">${role}${chair}<span class="club-label">${escapeHtml(p.club)}</span></div></div></div>${areas.length?`<div class="areas areas-visual"><span class="areas-label">Gesce</span><ul class="area-list council-areas-list">${areas.map(a=>`<li class="area-line">${escapeHtml(a)}</li>`).join('')}</ul></div>`:''}${details}${contact}</div>`}
 const clubColors={
- 'ODS':'#0057b8','ANO':'#00a6d6','Piráti':'#111111','8ŽIJE A PRAHA SOBĚ':'#6f2c91','SPD a Trikolora pro Osmičku':'#d71920','Společně pro Prahu 8':'#7d3c98','Patrioti':'#c72c41','Bez klubu':'#8b8c85'
+ 'ODS':'#0057b8','ODS s podporou KDU-ČSL':'#0057b8','ANO':'#00a6d6','Piráti':'#111111',
+ '8ŽIJE A PRAHA SOBĚ':'#6f2c91','8žije, Praha sobě a Zelení':'#6f2c91',
+ 'SPD a Trikolora pro Osmičku':'#d71920','Společně pro Prahu 8':'#7d3c98',
+ 'STAN + TOP 09 - Společně pro Prahu 8':'#7d3c98','Patrioti':'#c72c41','Bez klubu':'#8b8c85'
 };
 function clubColor(c){return clubColors[c]||'#8b8c85'}
-function clubDisplayName(c){const names={'Společně pro Prahu 8':'Společně pro Prahu 8 - TOP 09 a Starostové a nezávislí','Patrioti':'Patrioti pro Prahu 8','Piráti':'Česká pirátská strana'};return names[c]||c}
+function clubDisplayName(c){const names={'Společně pro Prahu 8':'Společně pro Prahu 8 - TOP 09 a Starostové a nezávislí','STAN + TOP 09 - Společně pro Prahu 8':'Starostové a TOP 09','Patrioti':'Patrioti pro Prahu 8','Piráti':'Česká pirátská strana'};return names[c]||c}
 function lide(){
  const roleRank={starosta:0,místostarosta:1,místostarostka:1,radní:2};
  const council=data.lide.filter(p=>p.role in roleRank).sort((a,b)=>roleRank[a.role]-roleRank[b.role]||comparePersonSurname(a,b));
  const clubMap=new Map();for(const p of data.lide){const c=p.club||'Bez klubu';if(!clubMap.has(c))clubMap.set(c,[]);clubMap.get(c).push(p)}
- const clubElectionOrder=['ODS','ANO','8ŽIJE A PRAHA SOBĚ','Piráti','Společně pro Prahu 8','Patrioti','SPD a Trikolora pro Osmičku'];
+ const clubElectionOrder=['8žije, Praha sobě a Zelení','STAN + TOP 09 - Společně pro Prahu 8','ODS s podporou KDU-ČSL','ANO','Patrioti','Piráti'];
  const clubRank=new Map(clubElectionOrder.map((c,i)=>[c,i]));
  const clubs=[...clubMap.entries()].sort((a,b)=>(clubRank.get(a[0])??999)-(clubRank.get(b[0])??999)||a[0].localeCompare(b[0],'cs'));
- const coalitionClubs=new Set(['ODS','ANO','Společně pro Prahu 8','Patrioti']);
+ const coalitionClubs=new Set(['STAN + TOP 09 - Společně pro Prahu 8','ODS s podporou KDU-ČSL']);
  const coalitionClubsRows=clubs.filter(([c])=>coalitionClubs.has(c)), oppositionClubsRows=clubs.filter(([c])=>!coalitionClubs.has(c));
  const coalition=coalitionClubsRows.reduce((n,[,a])=>n+a.length,0),opposition=oppositionClubsRows.reduce((n,[,a])=>n+a.length,0),total=data.lide.length||45;
  const stack=clubs.map(([club,arr])=>`<span class="seat-segment" style="width:${arr.length/total*100}%;background:${clubColor(club)}" title="${escapeHtml(club)}: ${arr.length}"></span>`).join('');
  const legend=rows=>rows.map(([club,arr])=>`<span class="party-legend"><i style="background:${clubColor(club)}"></i><span class="party-name">${escapeHtml(clubDisplayName(club))}</span><span class="party-count">${arr.length}</span></span>`).join('');
- shell(`<div class="page-head"><div class="kicker">Zastupitelstvo</div><h1>Kdo rozhoduje na Praze 8</h1><p>Rada městské části a všech 45 zastupitelů. Politické kluby jsou řazené podle výsledku komunálních voleb 2022.</p></div>
+ shell(`<div class="page-head"><div class="kicker">Zastupitelstvo</div><h1>Kdo rozhoduje na Praze 8</h1><p>Rada městské části a všech 45 zastupitelů. Politické kluby jsou řazené podle výsledku komunálních voleb 2026.</p></div>
  <section class="section council-balance"><div class="section-head"><div><div class="kicker">Zastupitelstvo</div><h2>Koalice a opozice</h2></div><p>45 křesel celkem</p></div><div class="balance-grid"><div><strong>${coalition}</strong><span>koalice</span><div class="party-list">${legend(coalitionClubsRows)}</div></div><div><strong>${opposition}</strong><span>opozice</span><div class="party-list">${legend(oppositionClubsRows)}</div></div></div><div class="seat-stack" aria-label="Rozdělení 45 křesel podle politických klubů">${stack}</div><div class="seat-stack-caption">Barva = politický klub · šířka = počet křesel</div></section>
  <section class="section people-section"><div class="section-head"><div><div class="kicker">Výkonné vedení</div><h2>Rada městské části</h2></div><p>${council.length} členů rady</p></div><div class="cards people-cards">${council.map(p=>personCard(p,{council:true,showAreas:true})).join('')}</div></section>
  <section class="section people-section"><div class="section-head"><div><div class="kicker">Zastupitelstvo</div><h2>Politické kluby</h2></div><p>${data.lide.length} zastupitelů celkem</p></div>${clubs.map(([club,arr])=>{let members=[...arr];members.sort((a,b)=>(b.isClubChair?1:0)-(a.isClubChair?1:0)||comparePersonSurname(a,b));return `<div class="club-block"><div class="club-head"><div class="club-title"><i style="background:${clubColor(club)}"></i><h3>${escapeHtml(clubDisplayName(club))}</h3></div><span>${members.length} ${members.length===1?'křeslo':'křesel'}</span></div><div class="cards people-cards">${members.map(p=>personCard(p)).join('')}</div></div>`}).join('')}</section>`)
