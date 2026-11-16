@@ -919,7 +919,7 @@ async function syncMagistrateRoles(browser,people,{includeFunctions=true,include
    try{
      const xml=await get('https://volby.gov.cz/appdata/kv2026/20261009/odata/zastup/vysledky_obec_554782.xml',{accept:'application/xml,text/xml,*/*'});
      const electedKeys=new Set();
-     for(const m of xml.matchAll(/<ZASTUPITEL\\b([^>]*)>/g)){
+     for(const m of xml.matchAll(/<ZASTUPITEL\b([^>]*)>/g)){
        const attrs=Object.fromEntries([...m[1].matchAll(/([A-Za-z0-9_:-]+)=["']([^"']*)["']/g)].map(x=>[x[1].toUpperCase(),x[2]]));
        const name=`${attrs.JMENO||''} ${attrs.PRIJMENI||''}`.trim();
        if(name)electedKeys.add(personKey(name));
