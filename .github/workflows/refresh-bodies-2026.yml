@@ -1,4 +1,4 @@
-name: "Jednorázová aktualizace orgánů po volbách 2026"
+name: "Jednorázová aktualizace orgánů po volbách 2026"\n# retest dynamického parseru 3 výborů
 
 on:
   push:
@@ -37,12 +37,14 @@ jobs:
           const committees=rows.filter(x=>x.type==='Výbor zastupitelstva');
           const specials=rows.filter(x=>x.type==='Zvláštní orgán');
           if(commissions.length!==0) throw new Error('Komise mají být do ustavení prázdné, načteno: '+commissions.length);
-          if(committees.length!==2) throw new Error('Výbory nejsou kompletní: '+committees.length+'/2');
+          if(committees.length!==3) throw new Error('Výbory nejsou kompletní: '+committees.length+'/3');
+          const expected=['Kontrolní výbor','Finanční výbor','Výbor pro rozpočtové a dotační vztahy s MHMP'];
+          for(const name of expected) if(!committees.some(x=>x.name===name)) throw new Error('Chybí '+name);
           for(const x of committees){
             if(!x.chair) throw new Error(x.name+' nemá předsedu.');
             console.log(x.name+': '+x.chair.name+' · členů '+(x.members||[]).length+' · občanů '+(x.citizens||[]).length);
           }
-          console.log('OK: 0 komisí · 2 výbory · '+specials.length+' zvláštní orgány');
+          console.log('OK: 0 komisí · 3 výbory · '+specials.length+' zvláštní orgány');
           NODE
       - name: Uložit data
         run: |
