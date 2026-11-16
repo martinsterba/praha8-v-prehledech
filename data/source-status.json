@@ -55,11 +55,11 @@
   },
   "bodies": {
     "status": "data načtena",
-    "count": 4,
-    "updated": "2026-11-16T13:41:18.081Z",
+    "count": 5,
+    "updated": "2026-11-16T13:45:10.303Z",
     "mode": "aktualizováno",
     "commissions": 0,
-    "committees": 2,
+    "committees": 3,
     "specialBodies": 2,
     "specialBodiesPreserved": true
   },

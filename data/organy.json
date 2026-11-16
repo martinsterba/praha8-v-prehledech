@@ -2,7 +2,7 @@
   {
     "type": "Výbor zastupitelstva",
     "name": "Finanční výbor",
-    "url": "https://www.praha8.cz/vybory-zastupitelstva-mestske-casti-praha-8.html",
+    "url": "https://www.praha8.cz/Vybory-zastupitelstva-Mestske-casti-Praha-8.html",
     "materialsUrl": "https://www.praha8.cz/Materialy-Financniho-vyboru",
     "chair": {
       "name": "Mgr. Martin Štěrba",
@@ -36,43 +36,11 @@
       {
         "name": "Mgr. Tomáš Tatranský",
         "club": "STAN + TOP 09 - Společně pro Prahu 8"
-      },
-      {
-        "name": "Jan Horn",
-        "club": "Patrioti"
-      },
-      {
-        "name": "MVDr. Bc. Vladislava Vojtíšková",
-        "club": "8žije, Praha sobě a Zelení"
-      },
-      {
-        "name": "Ing. Tomáš Slabihoudek",
-        "club": "STAN + TOP 09 - Společně pro Prahu 8"
-      },
-      {
-        "name": "Mgr. Jan Vocel",
-        "club": "STAN + TOP 09 - Společně pro Prahu 8"
-      },
-      {
-        "name": "Mgr. Vladimíra Ludková",
-        "club": "ODS s podporou KDU-ČSL"
-      },
-      {
-        "name": "Radomír Nepil",
-        "club": "ANO"
-      },
-      {
-        "name": "PhDr. Ing. Matěj Fichtner, MBA",
-        "club": "ANO"
       }
     ],
     "citizens": [
       {
         "name": "Bc. Ondřej Jakš",
-        "club": ""
-      },
-      {
-        "name": "Jan Borovička",
         "club": ""
       }
     ],
@@ -81,7 +49,7 @@
   {
     "type": "Výbor zastupitelstva",
     "name": "Kontrolní výbor",
-    "url": "https://www.praha8.cz/vybory-zastupitelstva-mestske-casti-praha-8.html",
+    "url": "https://www.praha8.cz/Vybory-zastupitelstva-Mestske-casti-Praha-8.html",
     "materialsUrl": "https://www.praha8.cz/Materialy-KV",
     "chair": {
       "name": "Jiří Vítek",
@@ -115,35 +83,26 @@
       {
         "name": "Bc. Miroslav Telecký",
         "club": "STAN + TOP 09 - Společně pro Prahu 8"
-      },
+      }
+    ],
+    "citizens": [
       {
-        "name": "Mgr. Martin Roubíček",
-        "club": "ODS s podporou KDU-ČSL"
-      },
-      {
-        "name": "Mgr. Tomáš Pavlů",
-        "club": "ODS s podporou KDU-ČSL"
-      },
-      {
-        "name": "Michal Fišer, MBA",
-        "club": "ANO"
-      },
-      {
-        "name": "PhDr. Ing. Matěj Fichtner, MBA",
-        "club": "ANO"
-      },
-      {
-        "name": "Bc. Michal Švarc",
-        "club": "Patrioti"
-      },
-      {
-        "name": "Michal Trník, M.A.",
-        "club": "8žije, Praha sobě a Zelení"
-      },
-      {
-        "name": "Mgr. Tomáš Tatranský",
-        "club": "STAN + TOP 09 - Společně pro Prahu 8"
-      },
+        "name": "Mgr, Jakub Jiran",
+        "club": ""
+      }
+    ],
+    "secretary": "Ing. Romana Sojáková"
+  },
+  {
+    "type": "Výbor zastupitelstva",
+    "name": "Výbor pro rozpočtové a dotační vztahy s MHMP",
+    "url": "https://www.praha8.cz/Vybory-zastupitelstva-Mestske-casti-Praha-8.html",
+    "materialsUrl": "",
+    "chair": {
+      "name": "Ondřej Gros",
+      "club": "ODS s podporou KDU-ČSL"
+    },
+    "members": [
       {
         "name": "Jan Horn",
         "club": "Patrioti"
@@ -175,19 +134,11 @@
     ],
     "citizens": [
       {
-        "name": "Mgr, Jakub Jiran",
-        "club": ""
-      },
-      {
-        "name": "Bc. Ondřej Jakš",
-        "club": ""
-      },
-      {
         "name": "Jan Borovička",
         "club": ""
       }
     ],
-    "secretary": "Ing. Romana Sojáková"
+    "secretary": "Bc. Pavla Řechtáčková"
   },
   {
     "type": "Zvláštní orgán",
