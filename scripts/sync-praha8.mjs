@@ -901,54 +901,34 @@ async function syncMagistrateRoles(browser,people,{includeFunctions=true,include
  // Statická mapa níže obsahuje jen role, které se podařilo jednoznačně potvrdit.
  // Nejednoznačné shody (např. shodná jména bez jisté identity) se sem záměrně nepřidávají.
  const verifiedHmpRoles=new Map(Object.entries({
-   'Ondřej Buršík':[
-     {role:'člen',body:'Výbor pro bezpečnost a pro prevenci kriminality ZHMP',url:'https://praha.eu/vybory'}
-   ],
+   // Po komunálních volbách 2026 zatím držíme jen aktuálně potvrzené členství v Radě HMP.
+   // Zastupitelé HMP se níže načítají automaticky z oficiálního volebního XML.
    'Tomáš Slabihoudek':[
-     {role:'radní hl. města Prahy',body:'',url:'https://praha.eu/rada'},
-     {role:'zastupitel hl. města Prahy',body:'',url:'https://praha.eu/zastupitelstvo'},
-     {role:'člen',body:'Výbor pro dopravu ZHMP',url:'https://praha.eu/vybory'},
-     {role:'člen',body:'Výbor pro dotační vztahy a vztahy k městským částem ZHMP',url:'https://praha.eu/vybory'},
-     {role:'člen',body:'Výbor finanční ZHMP',url:'https://praha.eu/vybory'},
-     {role:'člen',body:'Výbor kontrolní ZHMP',url:'https://praha.eu/vybory'},
-     {role:'člen',body:'Povodňová komise hl. m. Prahy',url:'https://praha.eu'}
-   ],
-   'Tomáš Němeček':[
-     {role:'člen',body:'Výbor pro dotační vztahy a vztahy k městským částem ZHMP',url:'https://praha.eu/vybory'}
-   ],
-   'Jan Šimbera':[
-     {role:'člen',body:'Výbor pro energetiku ZHMP',url:'https://praha.eu/vybory'}
-   ],
-   'Vítězslav Novák':[
-     {role:'člen',body:'Výbor finanční ZHMP',url:'https://praha.eu/vybory'}
-   ],
-   'Vladimíra Ludková':[
-     {role:'členka',body:'Výbor pro rodinnou politiku a sociální oblast ZHMP',url:'https://praha.eu/vybory'}
-   ],
-   'Radomír Nepil':[
-     {role:'zastupitel hl. města Prahy',body:'',url:'https://praha.eu/zastupitelstvo'},
-     {role:'člen',body:'Výbor pro dotační vztahy a vztahy k městským částem ZHMP',url:'https://praha.eu/vybory'},
-     {role:'člen',body:'Výbor pro územní rozvoj ZHMP',url:'https://praha.eu/vybory'},
-     {role:'člen',body:'Komise Rady hl. m. Prahy pro nový územní plán',url:'https://praha.eu/komise_rady_hmp'}
-   ],
-   'Michal Trník':[
-     {role:'člen',body:'Výbor pro strategické investice ZHMP',url:'https://praha.eu/vybory'}
-   ],
-   'Václav Stránský':[
-     {role:'člen',body:'Výbor pro územní rozvoj ZHMP',url:'https://praha.eu/vybory'}
-   ],
-   'Vladislava Vojtíšková':[
-     {role:'členka',body:'Výbor pro strategický a hospodářský rozvoj a podporu podnikání a inovací ZHMP',url:'https://praha.eu/vybory'},
-     {role:'členka',body:'Výbor pro zahraniční vztahy a EU fondy ZHMP',url:'https://praha.eu/vybory'}
-   ],
-   'Martin Štěrba':[
-     {role:'předseda',body:'Komise pro veřejnou dopravu RHMP',url:'https://praha.eu/komise_rady_hmp'}
+     {role:'radní hl. města Prahy',body:'',url:'https://praha.eu/rada'}
    ]
  }).map(([name,items])=>[personKey(name),items]));
  if(includeFunctions){
    for(const p of people){
      const key=personKey(p.name);
      for(const r of (verifiedHmpRoles.get(key)||[]))addRole(p,r);
+   }
+
+   // Zastupitelé HMP: autoritativně z výsledkového XML komunálních voleb 2026.
+   // Tím nejsme závislí na dynamickém portálu praha.eu, který se v headless režimu
+   // po volbách nenačítá spolehlivě.
+   try{
+     const xml=await get('https://volby.gov.cz/appdata/kv2026/20261009/odata/zastup/vysledky_obec_554782.xml',{accept:'application/xml,text/xml,*/*'});
+     const electedKeys=new Set();
+     for(const m of xml.matchAll(/<ZASTUPITEL\\b([^>]*)>/g)){
+       const attrs=Object.fromEntries([...m[1].matchAll(/([A-Za-z0-9_:-]+)=["']([^"']*)["']/g)].map(x=>[x[1].toUpperCase(),x[2]]));
+       const name=`${attrs.JMENO||''} ${attrs.PRIJMENI||''}`.trim();
+       if(name)electedKeys.add(personKey(name));
+     }
+     for(const p of people){
+       if(electedKeys.has(personKey(p.name)))addRole(p,{role:'zastupitel hl. města Prahy',body:'',url:'https://praha.eu/zastupitelstvo'});
+     }
+   }catch(e){
+     console.warn(`   Zastupitelé HMP 2026: volební XML se nepodařilo načíst (${e.message}).`);
    }
  }
  // Ověřená současná funkce v městské společnosti HMP.
@@ -1068,11 +1048,8 @@ async function syncMagistrateRoles(browser,people,{includeFunctions=true,include
    await page.goto('https://praha.eu/rada',{waitUntil:'domcontentloaded',timeout:30000});await waitForPortal();
    const rtext=await page.evaluate(()=>(document.querySelector('main')||document.body).innerText);
    for(const p of people)if(textHasPerson(rtext,p))addRole(p,{role:'radní hl. města Prahy',body:'',url:'https://praha.eu/rada'});
-   await scanPage('https://praha.eu/vybory#/?periodId=-36525&year=2026&month=8','Výbor ZHMP');
-   await scanPage('https://praha.eu/komise_rady_hmp#/?periodId=-36525&showAll=true','Komise RHMP');
-   // Druhý průchod: otevře každý dohledaný orgán zvlášť a zkontroluje všech 45 zastupitelů Prahy 8.
-   await scanBodyDirectory('https://praha.eu/vybory#/?periodId=-36525&year=2026&month=8','Výbor ZHMP');
-   await scanBodyDirectory('https://praha.eu/komise_rady_hmp#/?periodId=-36525&showAll=true','Komise RHMP');
+   // Výbory ZHMP a komise RHMP po volbách 2026 zatím nejsou ustavené.
+   // Dokud nejsou oficiálně zveřejněné pro nové období, staré role nepřenášíme.
  }catch(e){console.warn(`   Hlavní město Praha – funkce: doplnění se nepodařilo (${e.message}).`)} }
  if(includeCompanies){try{
    await page.goto('https://praha.eu/mestske-spolecnosti',{waitUntil:'domcontentloaded',timeout:30000});await waitForPortal();
