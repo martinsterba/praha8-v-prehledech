@@ -2,43 +2,43 @@
   "people": {
     "status": "data načtena",
     "count": 45,
-    "updated": "2026-11-09T13:18:14.443Z",
+    "updated": "2026-11-16T13:22:34.634Z",
     "mode": "aktualizováno"
   },
   "hmpFunctions": {
     "status": "data načtena",
-    "count": 11,
-    "updated": "2026-11-09T13:20:06.606Z",
+    "count": 9,
+    "updated": "2026-11-16T13:24:05.573Z",
     "mode": "aktualizováno"
   },
   "hmpCompanies": {
     "status": "data načtena",
-    "count": 5,
-    "updated": "2026-11-09T13:20:06.606Z",
+    "count": 4,
+    "updated": "2026-11-16T13:24:05.573Z",
     "mode": "aktualizováno"
   },
   "nationalRoles": {
     "status": "data načtena",
     "count": 1,
-    "updated": "2026-11-09T13:18:14.444Z",
+    "updated": "2026-11-16T13:22:34.634Z",
     "mode": "aktualizováno"
   },
   "p8Companies": {
     "status": "data načtena",
     "count": 4,
-    "updated": "2026-11-09T13:19:32.164Z",
+    "updated": "2026-11-16T13:23:39.413Z",
     "mode": "aktualizováno"
   },
   "organizations": {
     "status": "data načtena",
     "count": 41,
-    "updated": "2026-11-09T13:19:32.164Z",
+    "updated": "2026-11-16T13:23:39.413Z",
     "mode": "aktualizováno"
   },
   "schoolOpenData": {
     "status": "data načtena",
     "count": 2,
-    "updated": "2026-11-09T13:19:32.164Z",
+    "updated": "2026-11-16T13:23:39.413Z",
     "mode": "aktualizováno"
   },
   "budgetOpenData": {
@@ -112,16 +112,10 @@
     "updated": "2026-11-16T12:47:20.149Z",
     "mode": "aktualizováno"
   },
-  "contractEntities": {
-    "status": "data načtena",
-    "count": 7538,
-    "updated": "2026-11-16T12:47:20.149Z",
-    "mode": "aktualizováno"
-  },
   "grants": {
     "status": "data načtena",
     "count": 2504,
-    "updated": "2026-11-09T13:24:54.950313+00:00",
+    "updated": "2026-11-16T13:27:18.305708+00:00",
     "mode": "aktualizováno"
   }
 }
