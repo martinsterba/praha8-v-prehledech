@@ -1,6 +1,48 @@
 {
   "contracts": [
     {
+      "id": "40301257",
+      "idContract": "37905861",
+      "url": "https://smlouvy.gov.cz/smlouva/40301257",
+      "subject": "Monitoring hluku a vibrací",
+      "published": "2026-11-11",
+      "signed": "2026-11-10",
+      "valueCzk": 66187,
+      "valueVatCzk": 66187,
+      "valueNoVatCzk": 54700,
+      "counterparties": [
+        {
+          "name": "Dr.Decibel s.r.o.",
+          "ico": "10908196",
+          "box": "f54zapb"
+        }
+      ],
+      "counterparty": "Dr.Decibel s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "40303121",
+      "idContract": "37907677",
+      "url": "https://smlouvy.gov.cz/smlouva/40303121",
+      "subject": "Oprava poškozené dlažby",
+      "published": "2026-11-11",
+      "signed": "2026-11-10",
+      "valueCzk": 79189.06,
+      "valueVatCzk": 79189.06,
+      "valueNoVatCzk": 65445.5,
+      "counterparties": [
+        {
+          "name": "REVITAL - VRBČANY, spol. s r.o.",
+          "ico": "64582400",
+          "box": "wx5xhwm"
+        }
+      ],
+      "counterparty": "REVITAL - VRBČANY, spol. s r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
       "id": "40258057",
       "idContract": "37864333",
       "url": "https://smlouvy.gov.cz/smlouva/40258057",
@@ -137765,9 +137807,9 @@
     {
       "name": "REVITAL - VRBČANY, spol. s r.o.",
       "ico": "64582400",
-      "contracts": 306,
-      "knownValueCzk": 77861683.53000003,
-      "valuedContracts": 305
+      "contracts": 307,
+      "knownValueCzk": 77940872.59000003,
+      "valuedContracts": 306
     },
     {
       "name": "IGLOO ARCHITEKTI, s.r.o.",
@@ -147269,6 +147311,13 @@
       "valuedContracts": 1
     },
     {
+      "name": "Dr.Decibel s.r.o.",
+      "ico": "10908196",
+      "contracts": 1,
+      "knownValueCzk": 66187,
+      "valuedContracts": 1
+    },
+    {
       "name": "SCANLOCK CZ, spol. s r.o.",
       "ico": "03233341",
       "contracts": 1,
@@ -149538,17 +149587,17 @@
     }
   ],
   "meta": {
-    "total": 6564,
+    "total": 6566,
     "complete": true,
     "historyComplete": true,
     "scope": "full-history",
     "dateFrom": "2007-05-09",
     "dateTo": "2026-12-31",
     "dateLabel": "celá historie Registru smluv",
-    "knownValueCzk": 6887325156.429996,
-    "valuedContracts": 5799,
-    "partners": 1688,
-    "updated": "2026-11-09T21:28:54.950Z",
+    "knownValueCzk": 6887470532.489995,
+    "valuedContracts": 5801,
+    "partners": 1689,
+    "updated": "2026-11-16T12:47:20.149Z",
     "source": "https://data.smlouvy.gov.cz/index.xml",
     "method": "official-live-search-daily-overlap",
     "dumps": 124,
