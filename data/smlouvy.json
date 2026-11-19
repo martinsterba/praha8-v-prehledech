@@ -1,6 +1,27 @@
 {
   "contracts": [
     {
+      "id": "40404481",
+      "idContract": "38005541",
+      "url": "https://smlouvy.gov.cz/smlouva/40404481",
+      "subject": "484_2_Mazurská_havárie přečerpávajícího zařízení_15426",
+      "published": "2026-11-19",
+      "signed": "2026-11-16",
+      "valueCzk": 50000,
+      "valueVatCzk": null,
+      "valueNoVatCzk": 50000,
+      "counterparties": [
+        {
+          "name": "Roman Pavlíček",
+          "ico": "71590820",
+          "box": ""
+        }
+      ],
+      "counterparty": "Roman Pavlíček",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
       "id": "40301257",
       "idContract": "37905861",
       "url": "https://smlouvy.gov.cz/smlouva/40301257",
@@ -138911,18 +138932,18 @@
       "valuedContracts": 5
     },
     {
+      "name": "Roman Pavlíček",
+      "ico": "71590820",
+      "contracts": 44,
+      "knownValueCzk": 5578851.45,
+      "valuedContracts": 44
+    },
+    {
       "name": "Bau Franz s.r.o.",
       "ico": "03664881",
       "contracts": 32,
       "knownValueCzk": 5572209.83,
       "valuedContracts": 31
-    },
-    {
-      "name": "Roman Pavlíček",
-      "ico": "71590820",
-      "contracts": 43,
-      "knownValueCzk": 5528851.45,
-      "valuedContracts": 43
     },
     {
       "name": "ROSSY service a.s.",
@@ -149587,17 +149608,17 @@
     }
   ],
   "meta": {
-    "total": 6566,
+    "total": 6567,
     "complete": true,
     "historyComplete": true,
     "scope": "full-history",
     "dateFrom": "2007-05-09",
     "dateTo": "2026-12-31",
     "dateLabel": "celá historie Registru smluv",
-    "knownValueCzk": 6887470532.489995,
-    "valuedContracts": 5801,
+    "knownValueCzk": 6887520532.489995,
+    "valuedContracts": 5802,
     "partners": 1689,
-    "updated": "2026-11-18T13:05:20.751Z",
+    "updated": "2026-11-19T13:04:53.147Z",
     "source": "https://data.smlouvy.gov.cz/index.xml",
     "method": "official-live-search-daily-overlap",
     "dumps": 124,
