@@ -22,6 +22,27 @@
       "publisherIco": "00063797"
     },
     {
+      "id": "40412301",
+      "idContract": "38012945",
+      "url": "https://smlouvy.gov.cz/smlouva/40412301",
+      "subject": "Objednáváme u vás pro 85. výročí operace Anthropoid: zhotovení pamětních listů ve formě bankovky v limitovaném počtu 1942 ks. Grafický návrh, přípravu, tisk, číslování, ražbu a knihařské zpracování:\nFormát: 170 x 76 mm (formát bankovky 5000 Kč)\nBarevnos",
+      "published": "2026-11-19",
+      "signed": "2026-10-19",
+      "valueCzk": 452778.37,
+      "valueVatCzk": 452778.37,
+      "valueNoVatCzk": 374197,
+      "counterparties": [
+        {
+          "name": "Státní tiskárna cenin, s. p.",
+          "ico": "00001279",
+          "box": "hqe39ah"
+        }
+      ],
+      "counterparty": "Státní tiskárna cenin, s. p.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
       "id": "40301257",
       "idContract": "37905861",
       "url": "https://smlouvy.gov.cz/smlouva/40301257",
@@ -139023,6 +139044,13 @@
       "valuedContracts": 4
     },
     {
+      "name": "Státní tiskárna cenin, s. p.",
+      "ico": "00001279",
+      "contracts": 4,
+      "knownValueCzk": 4977883.08,
+      "valuedContracts": 4
+    },
+    {
       "name": "AUSTIS stavební s.r.o.",
       "ico": "28184343",
       "contracts": 2,
@@ -139147,13 +139175,6 @@
       "contracts": 11,
       "knownValueCzk": 4544760,
       "valuedContracts": 11
-    },
-    {
-      "name": "Státní tiskárna cenin, s. p.",
-      "ico": "00001279",
-      "contracts": 3,
-      "knownValueCzk": 4525104.71,
-      "valuedContracts": 3
     },
     {
       "name": "Karini s.r.o.",
@@ -149608,17 +149629,17 @@
     }
   ],
   "meta": {
-    "total": 6567,
+    "total": 6568,
     "complete": true,
     "historyComplete": true,
     "scope": "full-history",
     "dateFrom": "2007-05-09",
     "dateTo": "2026-12-31",
     "dateLabel": "celá historie Registru smluv",
-    "knownValueCzk": 6887520532.489995,
-    "valuedContracts": 5802,
+    "knownValueCzk": 6887973310.859996,
+    "valuedContracts": 5803,
     "partners": 1689,
-    "updated": "2026-11-19T13:04:53.147Z",
+    "updated": "2026-11-20T12:55:43.381Z",
     "source": "https://data.smlouvy.gov.cz/index.xml",
     "method": "official-live-search-daily-overlap",
     "dumps": 124,

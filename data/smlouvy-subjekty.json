@@ -1,18 +1,18 @@
 {
   "schema": 2,
-  "updated": "2026-11-19T13:04:53.147Z",
+  "updated": "2026-11-20T12:55:43.381Z",
   "source": "https://smlouvy.gov.cz/vyhledavani",
   "method": "official-live-search-daily-overlap",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7542,
-    "knownValueCzk": 5204275268.570001,
+    "totalContracts": 7545,
+    "knownValueCzk": 5204814758.570001,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
-        "current": 6567
+        "current": 6568
       },
       "note": "Denní kontrola používá živé vyhledávání Registru smluv v okně 5 dní; historický základ se při denním běhu nestahuje."
     }
@@ -124664,12 +124664,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Ustavni-Praha-8-Hlivicka-1.html",
       "website": "http://www.zs-ustavni.cz/",
-      "total": 234,
+      "total": 235,
       "partners": 134,
-      "knownValueCzk": 43212373.17,
-      "valuedContracts": 212,
+      "knownValueCzk": 43627853.169999994,
+      "valuedContracts": 213,
       "dateFrom": "2016-09-08",
-      "dateTo": "2026-11-11",
+      "dateTo": "2026-11-20",
       "partnerList": [
         {
           "name": "S com ENERGO s.r.o.",
@@ -124782,6 +124782,13 @@
           "contracts": 1,
           "knownValueCzk": 528956.35,
           "valuedContracts": 1
+        },
+        {
+          "name": "Zahradní realizace s.r.o.",
+          "ico": "18024084",
+          "contracts": 2,
+          "knownValueCzk": 511480,
+          "valuedContracts": 2
         },
         {
           "name": "MASO-PROFIT s.r.o.",
@@ -125323,13 +125330,6 @@
           "valuedContracts": 1
         },
         {
-          "name": "Zahradní realizace s.r.o.",
-          "ico": "18024084",
-          "contracts": 1,
-          "knownValueCzk": 96000,
-          "valuedContracts": 1
-        },
-        {
           "name": "Honey, s.r.o.",
           "ico": "26749131",
           "contracts": 1,
@@ -125611,6 +125611,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "40429189",
+          "idContract": "38029089",
+          "url": "https://smlouvy.gov.cz/smlouva/40429189",
+          "subject": "Smlouva o dílo - revitalizace zahrady MŠ a ZŠ Ústavní",
+          "published": "2026-11-20",
+          "signed": "2026-11-20",
+          "valueCzk": 415480,
+          "valueVatCzk": null,
+          "valueNoVatCzk": 415480,
+          "counterparties": [
+            {
+              "name": "Zahradní realizace s.r.o.",
+              "ico": "18024084",
+              "box": "n4wwa8f"
+            }
+          ],
+          "counterparty": "Zahradní realizace s.r.o.",
+          "publisher": "Základní škola a mateřská škola Ústavní, Praha 8, Hlivická 1",
+          "publisherIco": "60433337"
+        },
         {
           "id": "40337677",
           "idContract": "37940901",
@@ -135394,12 +135415,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Praha-8-Lyckovo-namesti-6.html",
       "website": "http://www.smysluplnaskola.cz/",
-      "total": 340,
-      "partners": 166,
-      "knownValueCzk": 47441057.33,
-      "valuedContracts": 136,
+      "total": 341,
+      "partners": 167,
+      "knownValueCzk": 47524217.33,
+      "valuedContracts": 137,
       "dateFrom": "2016-12-09",
-      "dateTo": "2026-11-11",
+      "dateTo": "2026-11-20",
       "partnerList": [
         {
           "name": "FIRMA s.r.o.",
@@ -135784,6 +135805,13 @@
           "ico": "23078081",
           "contracts": 1,
           "knownValueCzk": 84240,
+          "valuedContracts": 1
+        },
+        {
+          "name": "Vladimíra Baerová",
+          "ico": "65701593",
+          "contracts": 1,
+          "knownValueCzk": 83160,
           "valuedContracts": 1
         },
         {
@@ -136565,6 +136593,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "40428981",
+          "idContract": "38028889",
+          "url": "https://smlouvy.gov.cz/smlouva/40428981",
+          "subject": "Smlouva ŠvP 5.V květen 2027",
+          "published": "2026-11-20",
+          "signed": "2026-11-20",
+          "valueCzk": 83160,
+          "valueVatCzk": 83160,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "Vladimíra Baerová",
+              "ico": "65701593",
+              "box": ""
+            }
+          ],
+          "counterparty": "Vladimíra Baerová",
+          "publisher": "Základní škola a mateřská škola, Praha 8, Lyčkovo náměstí 6",
+          "publisherIco": "60433230"
+        },
         {
           "id": "40364953",
           "idContract": "37967245",
@@ -167984,10 +168033,10 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-Praha-8-Glowackeho-6.html",
       "website": "http://www.glowackeho.eu/",
-      "total": 162,
+      "total": 163,
       "partners": 103,
-      "knownValueCzk": 33440650.879999995,
-      "valuedContracts": 129,
+      "knownValueCzk": 33481500.879999995,
+      "valuedContracts": 130,
       "dateFrom": "2016-10-10",
       "dateTo": "2026-11-10",
       "partnerList": [
@@ -168279,6 +168328,13 @@
           "valuedContracts": 1
         },
         {
+          "name": "FK Admira Praha z.s.",
+          "ico": "47607122",
+          "contracts": 2,
+          "knownValueCzk": 140850,
+          "valuedContracts": 2
+        },
+        {
           "name": "Holiday Pro, s.r.o.",
           "ico": "06286763",
           "contracts": 1,
@@ -168297,13 +168353,6 @@
           "ico": "28499883",
           "contracts": 1,
           "knownValueCzk": 108000,
-          "valuedContracts": 1
-        },
-        {
-          "name": "FK Admira Praha z.s.",
-          "ico": "47607122",
-          "contracts": 1,
-          "knownValueCzk": 100000,
           "valuedContracts": 1
         },
         {
@@ -168714,6 +168763,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "40420689",
+          "idContract": "38021077",
+          "url": "https://smlouvy.gov.cz/smlouva/40420689",
+          "subject": "Dodatek ke smlouvě 28/2026 č.1",
+          "published": "2026-11-20",
+          "signed": "2026-11-09",
+          "valueCzk": 40850,
+          "valueVatCzk": 40850,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "FK Admira Praha z.s.",
+              "ico": "47607122",
+              "box": "qkjppha"
+            }
+          ],
+          "counterparty": "FK Admira Praha z.s.",
+          "publisher": "Základní škola, Praha 8, Glowackého 6",
+          "publisherIco": "60433302"
+        },
         {
           "id": "40364109",
           "idContract": "37966441",
