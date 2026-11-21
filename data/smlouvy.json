@@ -1,6 +1,27 @@
 {
   "contracts": [
     {
+      "id": "40429653",
+      "idContract": "38029537",
+      "url": "https://smlouvy.gov.cz/smlouva/40429653",
+      "subject": "Sml. o nájmu pozemku - Kobylisy, vánoční trhy + vánoční strom od 28.11 do 28.12.2026",
+      "published": "2026-11-20",
+      "signed": "2026-12-29",
+      "valueCzk": 67717.65,
+      "valueVatCzk": 67717.65,
+      "valueNoVatCzk": 55965,
+      "counterparties": [
+        {
+          "name": "ACTON s.r.o.",
+          "ico": "49679279",
+          "box": "j7jy425"
+        }
+      ],
+      "counterparty": "ACTON s.r.o.",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
       "id": "40404481",
       "idContract": "38005541",
       "url": "https://smlouvy.gov.cz/smlouva/40404481",
@@ -146016,6 +146037,13 @@
       "valuedContracts": 1
     },
     {
+      "name": "ACTON s.r.o.",
+      "ico": "49679279",
+      "contracts": 2,
+      "knownValueCzk": 135435.3,
+      "valuedContracts": 2
+    },
+    {
       "name": "Libor Suldovský",
       "ico": "10217924",
       "contracts": 1,
@@ -147315,13 +147343,6 @@
       "ico": "02210622",
       "contracts": 1,
       "knownValueCzk": 67760,
-      "valuedContracts": 1
-    },
-    {
-      "name": "ACTON s.r.o.",
-      "ico": "49679279",
-      "contracts": 1,
-      "knownValueCzk": 67717.65,
       "valuedContracts": 1
     },
     {
@@ -149629,17 +149650,17 @@
     }
   ],
   "meta": {
-    "total": 6568,
+    "total": 6569,
     "complete": true,
     "historyComplete": true,
     "scope": "full-history",
     "dateFrom": "2007-05-09",
     "dateTo": "2026-12-31",
     "dateLabel": "celá historie Registru smluv",
-    "knownValueCzk": 6887973310.859996,
-    "valuedContracts": 5803,
+    "knownValueCzk": 6888041028.509995,
+    "valuedContracts": 5804,
     "partners": 1689,
-    "updated": "2026-11-20T12:55:43.381Z",
+    "updated": "2026-11-21T12:41:30.149Z",
     "source": "https://data.smlouvy.gov.cz/index.xml",
     "method": "official-live-search-daily-overlap",
     "dumps": 124,

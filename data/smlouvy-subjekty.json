@@ -1,18 +1,18 @@
 {
   "schema": 2,
-  "updated": "2026-11-20T12:55:43.381Z",
+  "updated": "2026-11-21T12:41:30.149Z",
   "source": "https://smlouvy.gov.cz/vyhledavani",
   "method": "official-live-search-daily-overlap",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7545,
-    "knownValueCzk": 5204814758.570001,
+    "totalContracts": 7546,
+    "knownValueCzk": 5205014358.570001,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
-        "current": 6568
+        "current": 6569
       },
       "note": "Denní kontrola používá živé vyhledávání Registru smluv v okně 5 dní; historický základ se při denním běhu nestahuje."
     }
@@ -48715,19 +48715,19 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Materska-skola-Praha-8-Klicanska-20.html",
       "website": "http://www.ms-klicanska.cz/",
-      "total": 17,
+      "total": 18,
       "partners": 14,
-      "knownValueCzk": 886821.87,
-      "valuedContracts": 7,
+      "knownValueCzk": 1086421.87,
+      "valuedContracts": 8,
       "dateFrom": "2016-05-19",
-      "dateTo": "2026-06-01",
+      "dateTo": "2026-11-20",
       "partnerList": [
         {
           "name": "BENJAMÍN s.r.o.",
           "ico": "25523414",
-          "contracts": 1,
-          "knownValueCzk": 199599.98,
-          "valuedContracts": 1
+          "contracts": 2,
+          "knownValueCzk": 399199.98,
+          "valuedContracts": 2
         },
         {
           "name": "Bonita Group Service s.r.o.",
@@ -48822,6 +48822,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "40431081",
+          "idContract": "38030905",
+          "url": "https://smlouvy.gov.cz/smlouva/40431081",
+          "subject": "výroba, dodávka a montáž nábytku",
+          "published": "2026-11-20",
+          "signed": "2026-11-20",
+          "valueCzk": 199600,
+          "valueVatCzk": 199600,
+          "valueNoVatCzk": 164958.66,
+          "counterparties": [
+            {
+              "name": "BENJAMÍN s.r.o.",
+              "ico": "25523414",
+              "box": "ftsrauf"
+            }
+          ],
+          "counterparty": "BENJAMÍN s.r.o.",
+          "publisher": "Mateřská škola, Praha 8, Klíčanská 20",
+          "publisherIco": "70919674"
+        },
         {
           "id": "40096029",
           "idContract": "37709005",
