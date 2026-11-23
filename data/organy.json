@@ -1,5 +1,591 @@
 [
   {
+    "type": "Komise rady",
+    "name": "Komise pro bezpečnost",
+    "url": "https://m.praha8.cz/Komise-pro-bezpecnost.html",
+    "materialsUrl": "",
+    "chair": {
+      "name": "Jana Křivonosková",
+      "club": "ODS s podporou KDU-ČSL"
+    },
+    "members": [
+      {
+        "name": "Bc. David Straka",
+        "club": "ODS s podporou KDU-ČSL"
+      },
+      {
+        "name": "Bc. Josef Slobodník",
+        "club": "ODS s podporou KDU-ČSL"
+      },
+      {
+        "name": "Mgr. Adam Gregor",
+        "club": "ANO"
+      }
+    ],
+    "citizens": [
+      {
+        "name": "Bc. Ondřej Jakš",
+        "club": ""
+      },
+      {
+        "name": "Mgr. Karolína Vítková, LL.M.",
+        "club": ""
+      },
+      {
+        "name": "Vojtěch Bican",
+        "club": ""
+      }
+    ],
+    "secretary": "Bc. Martin Karásek"
+  },
+  {
+    "type": "Komise rady",
+    "name": "Komise pro digitální komunikaci",
+    "url": "https://m.praha8.cz/Komise-pro-digitalni-komunikaci.html",
+    "materialsUrl": "",
+    "chair": {
+      "name": "Ing. Roman Faltýn",
+      "club": "STAN + TOP 09 - Společně pro Prahu 8"
+    },
+    "members": [
+      {
+        "name": "Pavel Kotrba",
+        "club": "STAN + TOP 09 - Společně pro Prahu 8"
+      },
+      {
+        "name": "Bc. Josef Slobodník",
+        "club": "ODS s podporou KDU-ČSL"
+      },
+      {
+        "name": "Mgr. et Mgr. BcA Jana Solomonová",
+        "club": "ANO"
+      },
+      {
+        "name": "Mgr. Martin Štěrba",
+        "club": "Piráti"
+      },
+      {
+        "name": "Mgr. Adam Gregor",
+        "club": "ANO"
+      }
+    ],
+    "citizens": [],
+    "secretary": "Bc. Simona Hejná"
+  },
+  {
+    "type": "Komise rady",
+    "name": "Komise pro dopravu",
+    "url": "https://m.praha8.cz/Komise-pro-dopravu.html",
+    "materialsUrl": "",
+    "chair": {
+      "name": "Ing. Roman Faltýn",
+      "club": "STAN + TOP 09 - Společně pro Prahu 8"
+    },
+    "members": [
+      {
+        "name": "Ing. Martin Jedlička, DiS.",
+        "club": "STAN + TOP 09 - Společně pro Prahu 8"
+      },
+      {
+        "name": "Mgr. Tomáš Pavlů",
+        "club": "ODS s podporou KDU-ČSL"
+      },
+      {
+        "name": "Jan Štorek",
+        "club": "ANO"
+      },
+      {
+        "name": "Jan Horn",
+        "club": "Patrioti"
+      }
+    ],
+    "citizens": [
+      {
+        "name": "Adam Růžička",
+        "club": ""
+      }
+    ],
+    "secretary": "Marek Černý"
+  },
+  {
+    "type": "Komise rady",
+    "name": "Komise pro informatiku",
+    "url": "https://m.praha8.cz/Komise-pro-informatiku.html",
+    "materialsUrl": "",
+    "chair": {
+      "name": "Bc. Josef Slobodník",
+      "club": "ODS s podporou KDU-ČSL"
+    },
+    "members": [
+      {
+        "name": "Bc. David Straka",
+        "club": "ODS s podporou KDU-ČSL"
+      },
+      {
+        "name": "Mgr. Michal Janovský",
+        "club": "Patrioti"
+      },
+      {
+        "name": "Ing. Roman Faltýn",
+        "club": "STAN + TOP 09 - Společně pro Prahu 8"
+      }
+    ],
+    "citizens": [
+      {
+        "name": "Zdeněk Beran",
+        "club": ""
+      },
+      {
+        "name": "Bc. Ondřej Jakš",
+        "club": ""
+      },
+      {
+        "name": "prof. Ing. Bohumír Garlík. CSc., DBA",
+        "club": ""
+      }
+    ],
+    "secretary": "Bc. Simona Hejná"
+  },
+  {
+    "type": "Komise rady",
+    "name": "Komise pro kulturu",
+    "url": "https://m.praha8.cz/Komise-pro-kulturu.html",
+    "materialsUrl": "",
+    "chair": {
+      "name": "Mgr. et Mgr. BcA. Jana Solomonová",
+      "club": "ANO"
+    },
+    "members": [
+      {
+        "name": "Bc. Jitka Márová, DiS.",
+        "club": "ODS s podporou KDU-ČSL"
+      },
+      {
+        "name": "Mgr. Aneta Ženíšková",
+        "club": "ODS s podporou KDU-ČSL"
+      },
+      {
+        "name": "Bc. Michal Švarc",
+        "club": "Patrioti"
+      },
+      {
+        "name": "MgA. Karolína Gattermayerová",
+        "club": ""
+      }
+    ],
+    "citizens": [
+      {
+        "name": "Kateřina Stránská",
+        "club": ""
+      },
+      {
+        "name": "Ester Šimíčková",
+        "club": ""
+      }
+    ],
+    "secretary": "Mgr. Vladimír Slabý"
+  },
+  {
+    "type": "Komise rady",
+    "name": "Komise pro obecní byty",
+    "url": "https://m.praha8.cz/Komise-pro-obecni-byty.html",
+    "materialsUrl": "",
+    "chair": {
+      "name": "Ing. Anna Kroutil",
+      "club": "ANO"
+    },
+    "members": [
+      {
+        "name": "Ondřej Gros",
+        "club": "ODS s podporou KDU-ČSL"
+      }
+    ],
+    "citizens": [
+      {
+        "name": "Bc. Kamila Bartoňová",
+        "club": ""
+      },
+      {
+        "name": "Martina Křížková",
+        "club": ""
+      },
+      {
+        "name": "Patra Koštová",
+        "club": ""
+      }
+    ],
+    "secretary": "Bc. Gabriela Císařová"
+  },
+  {
+    "type": "Komise rady",
+    "name": "Komise pro obecní majetek",
+    "url": "https://m.praha8.cz/Komise-pro-obecni-majetek.html",
+    "materialsUrl": "",
+    "chair": {
+      "name": "Michal Fišer, MBA",
+      "club": "ANO"
+    },
+    "members": [
+      {
+        "name": "Ing. Tomáš Hřebík",
+        "club": "STAN + TOP 09 - Společně pro Prahu 8"
+      },
+      {
+        "name": "Radomír Nepil",
+        "club": "ANO"
+      },
+      {
+        "name": "Ondřej Gros",
+        "club": "ODS s podporou KDU-ČSL"
+      },
+      {
+        "name": "Ing. Tomáš Slabihoudek",
+        "club": "STAN + TOP 09 - Společně pro Prahu 8"
+      },
+      {
+        "name": "Mgr. Aneta Ženíšková",
+        "club": "ODS s podporou KDU-ČSL"
+      }
+    ],
+    "citizens": [
+      {
+        "name": "Marie Andel",
+        "club": ""
+      }
+    ],
+    "secretary": "Lenka Víšková"
+  },
+  {
+    "type": "Komise rady",
+    "name": "Komise pro sociální věci a zdravotnictví",
+    "url": "https://m.praha8.cz/Komise-pro-socialni-veci-a-zdravotnictvi.html",
+    "materialsUrl": "",
+    "chair": {
+      "name": "Mgr. Aneta Ženíšková",
+      "club": "ODS s podporou KDU-ČSL"
+    },
+    "members": [
+      {
+        "name": "Mgr. Vladimíra Ludková",
+        "club": "ODS s podporou KDU-ČSL"
+      },
+      {
+        "name": "Bc. Jitka Márová, DiS.",
+        "club": "ODS s podporou KDU-ČSL"
+      },
+      {
+        "name": "Mgr. Tomáš Tatranský",
+        "club": "STAN + TOP 09 - Společně pro Prahu 8"
+      },
+      {
+        "name": "Jana Křivonosková",
+        "club": "ODS s podporou KDU-ČSL"
+      }
+    ],
+    "citizens": [],
+    "secretary": "Mgr. Zuzana Demlová"
+  },
+  {
+    "type": "Komise rady",
+    "name": "Komise pro sport",
+    "url": "https://m.praha8.cz/Komise-pro-sport.html",
+    "materialsUrl": "",
+    "chair": {
+      "name": "Bc. Miroslav Telecký",
+      "club": "STAN + TOP 09 - Společně pro Prahu 8"
+    },
+    "members": [
+      {
+        "name": "Jan Štorek",
+        "club": "ANO"
+      },
+      {
+        "name": "Jiří Vítek",
+        "club": "Patrioti"
+      }
+    ],
+    "citizens": [
+      {
+        "name": "Robin Baudyš",
+        "club": ""
+      },
+      {
+        "name": "Adam Růžička",
+        "club": ""
+      }
+    ],
+    "secretary": "Mgr. Vladimír Slabý"
+  },
+  {
+    "type": "Komise rady",
+    "name": "Komise pro sportovní granty, podporu mládeže a volnočasových aktivit",
+    "url": "https://m.praha8.cz/Komise-pro-sportovni-granty-podporu-mladeze-a-volnocasovych-aktivit.html",
+    "materialsUrl": "",
+    "chair": {
+      "name": "Jan Štorek",
+      "club": "ANO"
+    },
+    "members": [
+      {
+        "name": "Jiří Vítek",
+        "club": "Patrioti"
+      },
+      {
+        "name": "Bc. Miroslav Telecký",
+        "club": "STAN + TOP 09 - Společně pro Prahu 8"
+      },
+      {
+        "name": "Mgr. Adam Gregor",
+        "club": "ANO"
+      }
+    ],
+    "citizens": [
+      {
+        "name": "Martina Křížková",
+        "club": ""
+      }
+    ],
+    "secretary": "Mgr. Vladimír Slabý"
+  },
+  {
+    "type": "Komise rady",
+    "name": "Komise pro školství",
+    "url": "https://m.praha8.cz/Komise-pro-skolstvi.html",
+    "materialsUrl": "",
+    "chair": {
+      "name": "PhDr. Ing. Matěj Fichtner, MBA",
+      "club": "ANO"
+    },
+    "members": [
+      {
+        "name": "Pavel Kotrba",
+        "club": "STAN + TOP 09 - Společně pro Prahu 8"
+      },
+      {
+        "name": "Mgr. Tomáš Tatranský",
+        "club": "STAN + TOP 09 - Společně pro Prahu 8"
+      },
+      {
+        "name": "Mgr. Vladimíra Ludková",
+        "club": "ODS s podporou KDU-ČSL"
+      },
+      {
+        "name": "Mgr. Michal Janovský",
+        "club": "Patrioti"
+      },
+      {
+        "name": "Mgr. Andrea Vildová",
+        "club": "Piráti"
+      }
+    ],
+    "citizens": [
+      {
+        "name": "Kateřina Pechová",
+        "club": ""
+      },
+      {
+        "name": "Markéta Švanfrlíková",
+        "club": ""
+      }
+    ],
+    "secretary": "Mgr. Petr Svoboda"
+  },
+  {
+    "type": "Komise rady",
+    "name": "Komise pro umění ve veřejném prostoru",
+    "url": "https://m.praha8.cz/Komise-pro-umeni-ve-verejnem-prostoru.html",
+    "materialsUrl": "",
+    "chair": {
+      "name": "MgA. Karolína Gattermayerová",
+      "club": ""
+    },
+    "members": [],
+    "citizens": [],
+    "secretary": ""
+  },
+  {
+    "type": "Komise rady",
+    "name": "Komise pro územní rozvoj",
+    "url": "https://m.praha8.cz/Komise-pro-uzemni-rozvoj.html",
+    "materialsUrl": "",
+    "chair": {
+      "name": "Radomír Nepil",
+      "club": "ANO"
+    },
+    "members": [
+      {
+        "name": "Ing. Tomáš Hřebík, Ph.D.",
+        "club": "STAN + TOP 09 - Společně pro Prahu 8"
+      },
+      {
+        "name": "Ing. Martin Jedlička, DiS.",
+        "club": "STAN + TOP 09 - Společně pro Prahu 8"
+      },
+      {
+        "name": "Jiří Vítek",
+        "club": "Patrioti"
+      }
+    ],
+    "citizens": [
+      {
+        "name": "Petr Zeman",
+        "club": ""
+      },
+      {
+        "name": "prof. Ing. Bohumír garlík, CSc., BDA",
+        "club": ""
+      }
+    ],
+    "secretary": "Ing. Iveta Zikmundová"
+  },
+  {
+    "type": "Komise rady",
+    "name": "Komise pro veřejný prostor, sousedské vztahy a spolupráci s SVJ a BD",
+    "url": "https://m.praha8.cz/Komise-pro-verejny-prostor-sousedske-vztahy-a-spolupraci-s-SVJ-a-BD.html",
+    "materialsUrl": "",
+    "chair": {
+      "name": "Mgr. Jan Vocel",
+      "club": "STAN + TOP 09 - Společně pro Prahu 8"
+    },
+    "members": [
+      {
+        "name": "Mgr. Hana Novotná",
+        "club": "STAN + TOP 09 - Společně pro Prahu 8"
+      },
+      {
+        "name": "Bc. Jitka Márová, DiS.",
+        "club": "ODS s podporou KDU-ČSL"
+      },
+      {
+        "name": "Mgr. Tomáš Pavlů",
+        "club": "ODS s podporou KDU-ČSL"
+      },
+      {
+        "name": "Mgr. et Mgr. Jana Solomonové",
+        "club": ""
+      },
+      {
+        "name": "Mgr. Michal Janovský",
+        "club": "Patrioti"
+      }
+    ],
+    "citizens": [
+      {
+        "name": "Kateřina Stránská",
+        "club": ""
+      }
+    ],
+    "secretary": "Lenka Víšková"
+  },
+  {
+    "type": "Komise rady",
+    "name": "Komise pro výstavbu ZŠ Rohan",
+    "url": "https://m.praha8.cz/Komise-pro-vystavbu-ZS-Rohan.html",
+    "materialsUrl": "",
+    "chair": {
+      "name": "Mgr. Andrea Vildová",
+      "club": "Piráti"
+    },
+    "members": [
+      {
+        "name": "Ing. Roman Faltýn",
+        "club": "STAN + TOP 09 - Společně pro Prahu 8"
+      },
+      {
+        "name": "Mgr. Hana Novotná",
+        "club": "STAN + TOP 09 - Společně pro Prahu 8"
+      },
+      {
+        "name": "Jan Horn",
+        "club": "Patrioti"
+      }
+    ],
+    "citizens": [
+      {
+        "name": "Hynek Mazanec",
+        "club": ""
+      },
+      {
+        "name": "Markéta Švandrlíková",
+        "club": ""
+      }
+    ],
+    "secretary": "Olga Otavová"
+  },
+  {
+    "type": "Komise rady",
+    "name": "Komise pro životní prostředí",
+    "url": "https://m.praha8.cz/Komise-pro-zivotni-prostredi.html",
+    "materialsUrl": "",
+    "chair": {
+      "name": "Mgr. Tomáš Pavlů",
+      "club": "ODS s podporou KDU-ČSL"
+    },
+    "members": [
+      {
+        "name": "Mgr. Jan Vocel",
+        "club": "STAN + TOP 09 - Společně pro Prahu 8"
+      },
+      {
+        "name": "Mgr. Hana Novotná",
+        "club": "STAN + TOP 09 - Společně pro Prahu 8"
+      },
+      {
+        "name": "Jana Křivonosková",
+        "club": "ODS s podporou KDU-ČSL"
+      },
+      {
+        "name": "Bc. Michal Švarc",
+        "club": "Patrioti"
+      }
+    ],
+    "citizens": [
+      {
+        "name": "Iveta Voborníková",
+        "club": ""
+      }
+    ],
+    "secretary": "Bc. Pavlína Orlová"
+  },
+  {
+    "type": "Komise rady",
+    "name": "Redakční rada časopisu Osmička",
+    "url": "https://m.praha8.cz/Komise-Redakcni-rada-casopisu-Osmicka.html",
+    "materialsUrl": "",
+    "chair": {
+      "name": "Mgr. Tomáš Tatranský",
+      "club": "STAN + TOP 09 - Společně pro Prahu 8"
+    },
+    "members": [
+      {
+        "name": "Pavel Kotrba",
+        "club": "STAN + TOP 09 - Společně pro Prahu 8"
+      },
+      {
+        "name": "Mgr. Martin Roubíček",
+        "club": "ODS s podporou KDU-ČSL"
+      },
+      {
+        "name": "Ondřej Gros",
+        "club": "ODS s podporou KDU-ČSL"
+      },
+      {
+        "name": "Mgr. et Mgr. Jana Solomonová",
+        "club": "ANO"
+      },
+      {
+        "name": "Ing. Anna Kroutil",
+        "club": "ANO"
+      },
+      {
+        "name": "Jiří Vítek",
+        "club": "Patrioti"
+      }
+    ],
+    "citizens": [],
+    "secretary": "Mgr. Vladimír Slabý"
+  },
+  {
     "type": "Výbor zastupitelstva",
     "name": "Finanční výbor",
     "url": "https://www.praha8.cz/Vybory-zastupitelstva-Mestske-casti-Praha-8.html",
@@ -139,5 +725,65 @@
       }
     ],
     "secretary": "Bc. Pavla Řechtáčková"
+  },
+  {
+    "type": "Zvláštní orgán",
+    "name": "Povodňová komise",
+    "url": "https://www.praha8.cz/zvlastni-organy-mc",
+    "materialsUrl": "",
+    "chair": {
+      "name": "Ondřej Gros",
+      "club": "ODS s podporou KDU-ČSL"
+    },
+    "members": [
+      {
+        "name": "Jiří Vítek",
+        "club": "Patrioti",
+        "role": "místopředseda/místopředsedkyně"
+      },
+      {
+        "name": "Bc. Josef Slobodník",
+        "club": "ODS s podporou KDU-ČSL"
+      }
+    ],
+    "citizens": [
+      {
+        "name": "JUDr. Josef Rambousek",
+        "club": ""
+      },
+      {
+        "name": "MuDr. Věra Hájíčková",
+        "club": ""
+      },
+      {
+        "name": "Petr Tesař",
+        "club": ""
+      },
+      {
+        "name": "Ing. Richard Beneš",
+        "club": ""
+      },
+      {
+        "name": "Mgr. Luděk Vaníček",
+        "club": ""
+      },
+      {
+        "name": "nprap. Hošková Dana",
+        "club": ""
+      },
+      {
+        "name": "Jan Sigmund",
+        "club": ""
+      },
+      {
+        "name": "plk. Mgr. Bc. Aleš Toman",
+        "club": ""
+      },
+      {
+        "name": "Bc. Pavla Řechtáčková",
+        "club": ""
+      }
+    ],
+    "secretary": "Bc. David Straka"
   }
 ]

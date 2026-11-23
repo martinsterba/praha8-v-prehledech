@@ -145,7 +145,20 @@
     "name": "Hřebík Tomáš Ing., Ph.D.",
     "role": "starosta",
     "club": "STAN + TOP 09 - Společně pro Prahu 8",
-    "areas": [],
+    "areas": [
+      "Audit",
+      "Architekt MČ",
+      "Strategický rozvoj",
+      "Organizace zřízené MČ",
+      "Majetek",
+      "Územní rozvoj a výstavba",
+      "Fond rozvoje MČ Praha 8",
+      "Výstavba ZŠ Rohan",
+      "OSMS a.s.",
+      "Správa tepelného hospodářství MČ Praha 8",
+      "Optimalizace chodu MČ Praha 8",
+      "Vnější vztahy a komunikace"
+    ],
     "email": "tomas.hrebik@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Hrebik-Tomas.html",
@@ -193,10 +206,15 @@
     "otherRoles": []
   },
   {
-    "name": "Jedlička Martin Ing.",
+    "name": "Jedlička Martin Ing., DiS.",
     "role": "místostarosta",
     "club": "STAN + TOP 09 - Společně pro Prahu 8",
-    "areas": [],
+    "areas": [
+      "Školství",
+      "Dotační projekty a čerpání dotací",
+      "Servisní středisko pro správu svěřeného majetku MČ Praha 8",
+      "Doprava"
+    ],
     "email": "martin.jedlicka@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Jedlicka-Martin.html",
@@ -254,7 +272,11 @@
     "name": "Ludková Vladimíra Mgr.",
     "role": "radní",
     "club": "ODS s podporou KDU-ČSL",
-    "areas": [],
+    "areas": [
+      "Zdravotnictví a sociální služby",
+      "Sociální a ošetřovatelské služby Praha 8 (SOS)",
+      "Gerontologické centrum"
+    ],
     "email": "vladimira.ludkova@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Ludkova-Vladimira.html",
@@ -407,7 +429,19 @@
     "name": "Slabihoudek Tomáš Ing.",
     "role": "místostarosta",
     "club": "STAN + TOP 09 - Společně pro Prahu 8",
-    "areas": [],
+    "areas": [
+      "Finance",
+      "Životní prostředí",
+      "Osmá servisní a.s.",
+      "Grantová politika pro sport",
+      "Sportovní investice",
+      "Kultura, mládež a volný čas",
+      "Sportovní akce a projekty",
+      "Granty v oblasti kultury a volnočasových aktivit",
+      "Památková péče",
+      "Rodinná politika",
+      "Osmička pro rodin"
+    ],
     "email": "tomas.slabihoudek@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Slabihoudek-Tomas.html",
@@ -457,7 +491,12 @@
     "name": "Straka David Bc.",
     "role": "místostarosta",
     "club": "ODS s podporou KDU-ČSL",
-    "areas": [],
+    "areas": [
+      "Informatika",
+      "IPODEC - ČISTÉ MĚSTO a.s.",
+      "Bezpečnost",
+      "Hospodářská správa"
+    ],
     "email": "david.straka@praha8.cz",
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Straka-David.html",
@@ -480,7 +519,7 @@
     "otherRoles": []
   },
   {
-    "name": "Strnad Matěj",
+    "name": "Strnad Matěj MgA.",
     "role": "zastupitel",
     "club": "8žije, Praha sobě a Zelení",
     "areas": [],
