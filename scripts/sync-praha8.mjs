@@ -840,7 +840,7 @@ function personVariants(name=''){
 }
 // Některá jména nejsou mezi veřejnými orgány jednoznačná. V takovém případě
 // je bezpečnější automatické párování vypnout a použít jen ručně ověřenou roli.
-const ambiguousExternalNames=new Set(['michal novak']);
+const ambiguousExternalNames=new Set(['michal novak','jana solomonova']);
 function canonicalPersonName(name=''){
  const v=personVariants(name);return v.length?v[0].split(' ').sort().join(' '):'';
 }
@@ -1103,6 +1103,11 @@ async function syncMagistrateRoles(browser,people,{includeFunctions=true,include
    let mr=includeFunctions?mergeHmpRoles(roles.get(key),verified):[];
    if(mr.some(v=>/primátor|náměst/i.test(v.role||''))){
      mr=mr.filter(v=>!/^(radní hl\. města Prahy|radní)$/i.test(String(v.role||'').trim()) || String(v.body||'').trim());
+   }
+   // Na detailu výborů HMP se funkce uvádí přímo u člena. Pokud parser u Matouše
+   // Bičáka zachytí "předsedu" z nadpisu/okolního textu, je to falešná shoda.
+   if(canonicalPersonName(p.name)==='bicak matous'){
+     mr=mr.map(v=>/výbor/i.test(v.body||'')?{...v,role:'člen'}:v);
    }
    // Explicitně známé falešné předsednické shody z dynamického portálu.
    if(['bursik ondrej','dvorakova jana'].includes(canonicalPersonName(p.name))){
