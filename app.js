@@ -235,6 +235,7 @@ function personFunctions(p){
    const typeRank=o.type==='Výbor zastupitelstva'?0:1;
    if(o.chair&&personNorm(o.chair.name)===key)groups.bodies.push({label:`${shortBodyRole(p,true)} · ${o.name}`,rank:typeRank});
    for(const m of (o.members||[]))if(personNorm(m.name)===key)groups.bodies.push({label:`${shortBodyRole(p,false)} · ${o.name}`,rank:10+typeRank});
+   for(const m of (o.citizens||[]))if(personNorm(m.name)===key)groups.bodies.push({label:`${shortBodyRole(p,false)} · ${o.name}`,rank:10+typeRank});
  }
  groups.bodies.sort((a,b)=>a.rank-b.rank||a.label.localeCompare(b.label,'cs'));
  groups.bodies=groups.bodies.map(x=>({...x,label:x.label.replace(/^(předseda|předsedkyně|člen|členka) (výboru|komise) · /i,'$1 · ')}));
