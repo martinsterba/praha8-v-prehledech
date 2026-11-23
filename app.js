@@ -268,12 +268,13 @@ function functionGroup(title,items,cls='',{links=true}={}){
  if(!items?.length)return '';
  return `<div class="function-group ${cls}"><span class="areas-label">${escapeHtml(title)}</span>${items.map(m=>`<div class="membership-row">${links&&m.url?`<a href="${escapeHtml(m.url)}" target="_blank" rel="noreferrer">${escapeHtml(m.label)} ↗</a>`:escapeHtml(m.label)}</div>`).join('')}</div>`;
 }
-function splitAreas(areas=[]){return areas.flatMap(a=>String(a||'').split(/\s*[,;•]\s*/)).map(x=>x.trim()).filter(Boolean)}
+function splitAreas(areas=[]){
+ return areas.flatMap(a=>String(a||'').split(/\s*(?:[;•]|\n)\s*/)).map(x=>x.trim()).filter(Boolean)
+}
 function personCard(p,{council=false,showAreas=false}={}){
  const chair=(!council&&p.isClubChair)?`<span class="role-badge chair-badge">${chairLabel(p)}</span>`:'';
  const role=council?`<span class="role-badge">${escapeHtml(lowerRoleInitial(localRoleLabel(p)||p.role))}</span>`:'';
  let areas=(showAreas&&sourceComplete('people'))?splitAreas(p.areas||[]):[];
- if(showAreas && /solomon/i.test(p.name||'')){areas=areas.filter(a=>!/^(kultura|mládež|volný čas)$/i.test(a));areas.push('Kultura, mládež a volný čas')}
  areas=[...new Set(areas)].sort((a,b)=>a.localeCompare(b,'cs'));
  const f=personFunctions(p);
  const contact=(p.email||p.phone)?`<div class="function-group contact-group"><span class="areas-label">Kontakt</span>${p.email?`<div class="membership-row"><a href="mailto:${escapeHtml(p.email)}">${escapeHtml(p.email)}</a></div>`:''}${p.phone?`<div class="membership-row"><a href="tel:${escapeHtml(String(p.phone).replace(/\s+/g,''))}">${escapeHtml(p.phone)}</a></div>`:''}</div>`:'';
