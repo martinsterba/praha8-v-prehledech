@@ -161,63 +161,17 @@ try{
   }
   console.log(`   ✓ Výbory: ${committeeData.length}`);
 
-  // Zvláštní orgány. V povolebním přechodu, kdy ještě nejsou ustavené ani
-  // komise Rady MČ, staré zvláštní orgány z minulého období nepovažujeme za aktuální.
-  let preservedSpecialBodies=false;
-  if(postElectionTransition){
-    console.log('   ℹ️ Zvláštní orgány MČ nejsou v aktuálním povolebním období zveřejněné. Publikuji stav bez zvláštních orgánů.');
-  }else{
-    const specialsUrl='https://www.praha8.cz/zvlastni-organy-mc';
-    await goto(page,specialsUrl);
-    const specials=await page.evaluate(()=>{
-      const main=document.querySelector('main')||document.querySelector('article')||document.body;
-      const lines=(main.innerText||'').split('\n').map(x=>x.replace(/\s+/g,' ').trim()).filter(Boolean);
-      const starts=[];
-      for(let i=0;i<lines.length;i++){
-        if(/^Komise\s+povodňová$/i.test(lines[i])||/^Povodňová komise/i.test(lines[i])||/^Komise\s+pro\s+sociálně-právní ochranu\s+dětí/i.test(lines[i]))starts.push(i);
-      }
-      const out=[];
-      for(let si=0;si<starts.length;si++){
-        const chunk=lines.slice(starts[si],starts[si+1]??lines.length);
-        const rawName=chunk[0]||'';
-        const item={name:/povodň/i.test(rawName)?'Povodňová komise':'Komise pro sociálně-právní ochranu dětí',chair:'',viceChair:'',members:[],citizens:[],secretary:''};
-        let mode='';
-        for(const line of chunk.slice(1)){
-          if(/^Předseda:?$/i.test(line)||/^Předsedkyně:?$/i.test(line)){mode='chair';continue}
-          if(/^Zástupce předsedy:?$/i.test(line)||/^Zástupkyně předsedy:?$/i.test(line)||/^Místopředseda:?$/i.test(line)||/^Místopředsedkyně:?$/i.test(line)){mode='vice';continue}
-          if(/^Členové komise z řad zastupitelstva MČ:?$/i.test(line)||/^Členové z řad zastupitelstva MČ:?$/i.test(line)){mode='members';continue}
-          if(/^Členové komise:?$/i.test(line)||/^Členové:?$/i.test(line)||/^Členové komise z fyzických osob/i.test(line)){mode='citizens';continue}
-          if(/^Tajemník komise:?$/i.test(line)||/^Tajemnice komise:?$/i.test(line)||/^Tajemník:?$/i.test(line)||/^Tajemnice:?$/i.test(line)){mode='secretary';continue}
-          if(/^(Aktualizováno|Související odkazy|Mohlo by vás)/i.test(line)){mode='';continue}
-          if(mode==='chair'&&!item.chair&&line.length<160){item.chair=line;mode='';continue}
-          if(mode==='vice'&&!item.viceChair&&line.length<160){item.viceChair=line;mode='';continue}
-          if(mode==='members'&&line.length<160){item.members.push(line);continue}
-          if(mode==='citizens'&&line.length<180){item.citizens.push(line);continue}
-          if(mode==='secretary'&&!item.secretary&&line.length<160){item.secretary=line;mode='';continue}
-        }
-        if(item.chair||item.members.length||item.citizens.length)out.push(item);
-      }
-      return out;
-    });
-    const uniqueSpecials=[...new Map(specials.map(x=>[x.name,x])).values()];
-    for(const x of uniqueSpecials){
-      const memberNames=[...(x.members||[])],citizens=[];
-      for(const name of (x.citizens||[])){
-        if(affiliation.has(personKey(name)))memberNames.push(name);else citizens.push(name);
-      }
-      const members=memberNames.map(annotate);
-      if(x.viceChair){const vp=annotate(x.viceChair);vp.role='místopředseda/místopředsedkyně';members.unshift(vp)}
-      bodies.push({type:'Zvláštní orgán',name:x.name,url:specialsUrl,materialsUrl:'',chair:x.chair?annotate(x.chair):null,members,citizens:citizens.map(name=>({name,club:''})),secretary:x.secretary||''});
-    }
-    console.log(`   ✓ Zvláštní orgány: ${uniqueSpecials.length}`);
-  }
+  // Zvláštní orgány MČ Praha 8 zatím nepovažujeme za aktuální pro nové volební období.
+  // Staré složení z období 2022–2026 proto do aktuálního datasetu nepřenášíme.
+  const preservedSpecialBodies=false;
+  console.log('   ℹ️ Zvláštní orgány MČ nejsou pro nové období aktuálně vedené. Publikuji stav bez zvláštních orgánů.');
 
   // Atomická kontrola kompletnosti: počet komisí musí odpovídat discovery seznamu.
   const commissions=bodies.filter(x=>x.type==='Komise rady');
   const committees=bodies.filter(x=>x.type==='Výbor zastupitelstva');
   const specialBodies=bodies.filter(x=>x.type==='Zvláštní orgán');
   if(commissions.length!==commissionLinks.length)throw new Error(`Komise: načteno ${commissions.length}/${commissionLinks.length}. Dataset nepřepisuji.`);
-  if(committees.length<2||(!postElectionTransition && specialBodies.length===0))throw new Error('Kontrola úplnosti orgánů neprošla. Dataset nepřepisuji.');
+  if(committees.length<2)throw new Error('Kontrola úplnosti orgánů neprošla. Dataset nepřepisuji.');
 
   bodies.sort((a,b)=>a.type.localeCompare(b.type,'cs')||a.name.localeCompare(b.name,'cs'));
   await writeFile(bodiesPath,JSON.stringify(bodies,null,2)+'\n');
