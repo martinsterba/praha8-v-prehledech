@@ -1076,9 +1076,9 @@ async function syncMagistrateRoles(browser,people,{includeFunctions=true,include
    await page.goto('https://praha.eu/zastupitelstvo',{waitUntil:'domcontentloaded',timeout:30000});await waitForPortal();
    const zhmpText=await page.evaluate(()=>(document.querySelector('main')||document.body).innerText);
    for(const p of people)if(textHasPerson(zhmpText,p))addRole(p,{role:'zastupitel hl. města Prahy',body:'',url:'https://praha.eu/zastupitelstvo'});
-   await page.goto('https://praha.eu/rada',{waitUntil:'domcontentloaded',timeout:30000});await waitForPortal();
+   await page.goto('https://praha.eu/slozeni-rady',{waitUntil:'domcontentloaded',timeout:30000});await waitForPortal();
    const rtext=await page.evaluate(()=>(document.querySelector('main')||document.body).innerText);
-   for(const p of people)if(textHasPerson(rtext,p))addRole(p,{role:'radní hl. města Prahy',body:'',url:'https://praha.eu/rada'});
+   for(const p of people)if(textHasPerson(rtext,p))addRole(p,{role:'radní hl. města Prahy',body:'',url:'https://praha.eu/slozeni-rady'});
    // Výbory ZHMP: zkoušíme živý veřejný portál. Pokud WAF vrátí CAPTCHA,
    // zůstanou bezpečně zachované výše uvedené ověřené fallback role.
    await scanPage('https://praha.eu/vybory','Výbor ZHMP');
