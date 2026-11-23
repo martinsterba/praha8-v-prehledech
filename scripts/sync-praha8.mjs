@@ -1048,11 +1048,10 @@ async function syncMagistrateRoles(browser,people,{includeFunctions=true,include
    await page.goto('https://praha.eu/zastupitelstvo',{waitUntil:'domcontentloaded',timeout:30000});await waitForPortal();
    const zhmpText=await page.evaluate(()=>(document.querySelector('main')||document.body).innerText);
    for(const p of people)if(textHasPerson(zhmpText,p))addRole(p,{role:'zastupitel hl. města Prahy',body:'',url:'https://praha.eu/zastupitelstvo'});
-   await page.goto('https://praha.eu/slozeni-rady',{waitUntil:'domcontentloaded',timeout:30000});await waitForPortal();
-   const rtext=await page.evaluate(()=>(document.querySelector('main')||document.body).innerText);
-   for(const p of people)if(textHasPerson(rtext,p))addRole(p,{role:'radní hl. města Prahy',body:'',url:'https://praha.eu/slozeni-rady'});
-   // Výbory ZHMP: zkoušíme živý veřejný portál. Pokud WAF vrátí CAPTCHA,
-   // zůstanou bezpečně zachované výše uvedené ověřené fallback role.
+   // Radu HMP nepřidáváme obecným textovým skenem. Aktuální členové Rady
+   // a jejich přesné funkce jsou výše v verifiedHmpRoles. Tím se po změně
+   // volebního období nemůže vracet stará/obecná role „radní“ bez gesce.
+   // Výbory ZHMP načítáme živě z aktuálního přehledu.
    await scanPage('https://praha.eu/vybory','Výbor ZHMP');
    await scanBodyDirectory('https://praha.eu/vybory','Výbor ZHMP');
  }catch(e){console.warn(`   Hlavní město Praha – funkce: doplnění se nepodařilo (${e.message}).`)} }
@@ -1102,6 +1101,10 @@ async function syncMagistrateRoles(browser,people,{includeFunctions=true,include
    const verified=includeFunctions?(verifiedHmpRoles.get(key)||[]):[];
    let mr=includeFunctions?mergeHmpRoles(roles.get(key),verified):[];
    if(mr.some(v=>/primátor|náměst/i.test(v.role||''))){
+     mr=mr.filter(v=>!/^(radní hl\. města Prahy|radní)$/i.test(String(v.role||'').trim()) || String(v.body||'').trim());
+   }
+   // Pokud existuje přesná role radního s gescí, obecnou duplicitní roli bez gesce zahodíme.
+   if(mr.some(v=>/^(radní hl\. města Prahy|radní)$/i.test(String(v.role||'').trim()) && String(v.body||'').trim())){
      mr=mr.filter(v=>!/^(radní hl\. města Prahy|radní)$/i.test(String(v.role||'').trim()) || String(v.body||'').trim());
    }
    // Na detailu výborů HMP se funkce uvádí přímo u člena. Pokud parser u Matouše
