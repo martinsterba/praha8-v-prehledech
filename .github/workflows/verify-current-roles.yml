@@ -1,0 +1,69 @@
+name: "Ověřit aktuální komise a funkce"
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/verify-current-roles.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - id: chrome
+        uses: browser-actions/setup-chrome@v2
+      - name: Aktualizovat komise a výbory Prahy 8
+        env:
+          PUPPETEER_EXECUTABLE_PATH: ${{ steps.chrome.outputs.chrome-path }}
+        run: npm run sync:bodies
+      - name: Aktualizovat funkce HMP
+        env:
+          PUPPETEER_EXECUTABLE_PATH: ${{ steps.chrome.outputs.chrome-path }}
+        run: npm run sync:hmp-functions
+      - name: Ověřit Karolínu a Radu HMP
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const people=JSON.parse(fs.readFileSync('data/lide.json','utf8'));
+          const bodies=JSON.parse(fs.readFileSync('data/organy.json','utf8'));
+          const commissions=bodies.filter(x=>x.type==='Komise rady');
+          const specials=bodies.filter(x=>x.type==='Zvláštní orgán');
+          if(commissions.length<14) throw new Error('Komise Praha 8 nejsou kompletní: '+commissions.length);
+          if(specials.length!==0) throw new Error('Zvláštní orgány Praha 8 mají být 0, je '+specials.length);
+          const culture=commissions.find(x=>/kulturu/i.test(x.name));
+          if(!culture) throw new Error('Chybí Komise pro kulturu.');
+          const karolina=[...(culture.members||[]),...(culture.citizens||[])].find(x=>/Gattermayer/i.test(x.name||''));
+          if(!karolina) throw new Error('Karolína Gattermayerová chybí v Komisi pro kulturu.');
+          const hana=people.find(x=>/Novotná Hana/i.test(x.name||''));
+          if(!(hana?.magistrateRoles||[]).some(x=>/náměstkyně primátora/i.test(x.role||''))) throw new Error('Haně Novotné chybí funkce náměstkyně primátora HMP.');
+          const slab=people.find(x=>/Slabihoudek Tomáš/i.test(x.name||''));
+          if(!(slab?.magistrateRoles||[]).some(x=>/radní hl\. města Prahy/i.test(x.role||''))) throw new Error('Tomáši Slabihoudkovi chybí funkce radního HMP.');
+          const committeeRoles=people.flatMap(p=>(p.magistrateRoles||[]).filter(r=>/Výbor/i.test(r.body||'')).map(r=>({name:p.name,...r})));
+          if(!committeeRoles.length) throw new Error('Nenačetlo se žádné výborové členství HMP.');
+          console.log('Komise P8:',commissions.length,'· Karolína:',culture.name);
+          console.log('Hana:',hana.magistrateRoles);
+          console.log('Výborové role HMP:',committeeRoles.length);
+          for(const r of committeeRoles) console.log(r.name,'|',r.role,'|',r.body);
+          NODE
+      - name: Uložit ověřená data
+        run: |
+          set -euo pipefail
+          git config user.name "Praha 8 v přehledech – automat"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/lide.json data/organy.json data/source-status.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Aktualizovat komise a funkce HMP"
+          git pull --rebase --autostash origin main
+          git push origin HEAD:main
