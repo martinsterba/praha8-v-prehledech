@@ -459,7 +459,7 @@ async function syncPeople(browser){
 }
 
 function personKey(name=''){
-  const drop=new Set(['mgr','bc','ing','phdr','judr','rndr','mvdr','doc','prof','phd','mba','mpa','ma','dis','csc','dba','bca','et']);
+  const drop=new Set(['mgr','bc','ing','phdr','judr','rndr','mvdr','mga','doc','prof','phd','mba','mpa','ma','dis','csc','dba','bca','et']);
   const toks=String(name).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9 ]/g,' ').split(/\s+/).filter(Boolean).filter(x=>!drop.has(x)&&x.length>1);
   return toks.slice(0,2).sort().join(' ');
 }
@@ -901,41 +901,13 @@ async function syncMagistrateRoles(browser,people,{includeFunctions=true,include
  // Statická mapa níže obsahuje jen role, které se podařilo jednoznačně potvrdit.
  // Nejednoznačné shody (např. shodná jména bez jisté identity) se sem záměrně nepřidávají.
  const verifiedHmpRoles=new Map(Object.entries({
-   // Rada HMP zvolená 19. 11. 2026.
+   // Aktuální Rada HMP po volbách 2026. Výborová členství se načítají výhradně
+   // z aktuálního přehledu https://praha.eu/vybory, aby se nemíchala období.
    'Hana Novotná':[
      {role:'náměstkyně primátora hl. města Prahy',body:'životní prostředí a veřejný prostor',url:'https://praha.eu/slozeni-rady'}
    ],
    'Tomáš Slabihoudek':[
-     {role:'radní hl. města Prahy',body:'kultura, cestovní ruch, památková péče, výstavnictví a péče o zvířata',url:'https://praha.eu/slozeni-rady'},
-     {role:'člen',body:'Výbor pro dopravu ZHMP',url:'https://praha.eu/vybory'},
-     {role:'člen',body:'Výbor pro dotační vztahy a vztahy k městským částem ZHMP',url:'https://praha.eu/vybory'},
-     {role:'člen',body:'Výbor finanční ZHMP',url:'https://praha.eu/vybory'},
-     {role:'člen',body:'Výbor kontrolní ZHMP',url:'https://praha.eu/vybory'}
-   ],
-   // Výborová členství jsou fallback pro případ, že praha.eu vrátí automatizaci CAPTCHA.
-   // Živý parser níže je dál zkouší načíst a stejné orgány bezpečně deduplikuje.
-   'Ondřej Buršík':[
-     {role:'člen',body:'Výbor pro bezpečnost a pro prevenci kriminality ZHMP',url:'https://praha.eu/vybory'}
-   ],
-   'Tomáš Němeček':[
-     {role:'člen',body:'Výbor pro dotační vztahy a vztahy k městským částem ZHMP',url:'https://praha.eu/vybory'}
-   ],
-   'Vladimíra Ludková':[
-     {role:'členka',body:'Výbor pro rodinnou politiku a sociální oblast ZHMP',url:'https://praha.eu/vybory'}
-   ],
-   'Radomír Nepil':[
-     {role:'člen',body:'Výbor pro dotační vztahy a vztahy k městským částem ZHMP',url:'https://praha.eu/vybory'},
-     {role:'člen',body:'Výbor pro územní rozvoj ZHMP',url:'https://praha.eu/vybory'}
-   ],
-   'Michal Trník':[
-     {role:'člen',body:'Výbor pro strategické investice ZHMP',url:'https://praha.eu/vybory'}
-   ],
-   'Václav Stránský':[
-     {role:'člen',body:'Výbor pro územní rozvoj ZHMP',url:'https://praha.eu/vybory'}
-   ],
-   'Vladislava Vojtíšková':[
-     {role:'členka',body:'Výbor pro strategický a hospodářský rozvoj a podporu podnikání a inovací ZHMP',url:'https://praha.eu/vybory'},
-     {role:'členka',body:'Výbor pro zahraniční vztahy a EU fondy ZHMP',url:'https://praha.eu/vybory'}
+     {role:'radní hl. města Prahy',body:'kultura, cestovní ruch, památková péče, výstavnictví a péče o zvířata',url:'https://praha.eu/slozeni-rady'}
    ]
  }).map(([name,items])=>[personKey(name),items]));
  if(includeFunctions){
