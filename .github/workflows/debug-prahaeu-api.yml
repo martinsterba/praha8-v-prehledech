@@ -1,0 +1,56 @@
+name: "Diagnostika API Praha.eu"
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/debug-prahaeu-api.yml"
+
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - id: chrome
+        uses: browser-actions/setup-chrome@v2
+      - name: Zachytit zdroje Rady a výborů HMP
+        env:
+          PUPPETEER_EXECUTABLE_PATH: ${{ steps.chrome.outputs.chrome-path }}
+        run: |
+          node --input-type=module <<'NODE'
+          import puppeteer from 'puppeteer-core';
+          const browser=await puppeteer.launch({headless:true,executablePath:process.env.PUPPETEER_EXECUTABLE_PATH,args:['--no-sandbox']});
+          const page=await browser.newPage();
+          page.on('response',async r=>{
+            const url=r.url();
+            if(!/praha\.eu/i.test(url))return;
+            const ct=r.headers()['content-type']||'';
+            if(!/json|text|javascript/i.test(ct))return;
+            try{
+              const t=await r.text();
+              if(/Hana Novotn|Tomáš Slabihoudek|Vybor|Výbor|Rada hlavního/i.test(t)){
+                console.log('RESP',r.status(),url,'CT',ct,'LEN',t.length);
+                console.log(t.slice(0,5000).replace(/\n/g,' '));
+              }
+            }catch{}
+          });
+          for(const url of [
+            'https://praha.eu/slozeni-rady',
+            'https://praha.eu/vybory#/?periodId=-36525&year=2026&month=11'
+          ]){
+            console.log('NAV',url);
+            await page.goto(url,{waitUntil:'domcontentloaded',timeout:30000});
+            await new Promise(r=>setTimeout(r,12000));
+            await page.evaluate(()=>window.scrollTo(0,document.body.scrollHeight)).catch(()=>{});
+            await new Promise(r=>setTimeout(r,5000));
+            const txt=await page.evaluate(()=>document.body.innerText).catch(()=> '');
+            console.log('BODY',txt.slice(0,8000).replace(/\n/g,' | '));
+          }
+          await browser.close();
+          NODE
