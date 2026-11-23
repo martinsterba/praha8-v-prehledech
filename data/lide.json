@@ -40,13 +40,7 @@
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Bursik-Ondrej.html",
     "isClubChair": false,
-    "magistrateRoles": [
-      {
-        "role": "člen",
-        "body": "Výbor pro bezpečnost a pro prevenci kriminality",
-        "url": "https://praha.eu/vybory"
-      }
-    ],
+    "magistrateRoles": [],
     "hmpCompanyRoles": [],
     "otherRoles": []
   },
@@ -311,13 +305,7 @@
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Ludkova-Vladimira.html",
     "isClubChair": false,
-    "magistrateRoles": [
-      {
-        "role": "členka",
-        "body": "Výbor pro rodinnou politiku a sociální oblast",
-        "url": "https://praha.eu/vybory"
-      }
-    ],
+    "magistrateRoles": [],
     "hmpCompanyRoles": [],
     "otherRoles": [
       {
@@ -375,13 +363,7 @@
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Nemecek-Tomas.html",
     "isClubChair": false,
-    "magistrateRoles": [
-      {
-        "role": "člen",
-        "body": "Výbor pro dotační vztahy a vztahy k městským částem",
-        "url": "https://praha.eu/vybory"
-      }
-    ],
+    "magistrateRoles": [],
     "hmpCompanyRoles": [],
     "otherRoles": []
   },
@@ -396,19 +378,14 @@
     "isClubChair": false,
     "magistrateRoles": [
       {
-        "role": "člen",
-        "body": "Výbor pro dotační vztahy a vztahy k městským částem",
-        "url": "https://praha.eu/vybory"
+        "role": "zastupitel hl. města Prahy",
+        "body": "",
+        "url": "https://praha.eu/zastupitelstvo"
       },
       {
         "role": "člen",
         "body": "Výbor pro územní rozvoj",
-        "url": "https://praha.eu/vybory"
-      },
-      {
-        "role": "zastupitel hl. města Prahy",
-        "body": "",
-        "url": "https://praha.eu/zastupitelstvo"
+        "url": "https://praha.eu/vybory#/detail/102194?periodId=101881&year=2026&showAll=true"
       },
       {
         "role": "člen",
@@ -443,6 +420,11 @@
         "role": "zastupitel hl. města Prahy",
         "body": "",
         "url": "https://praha.eu/zastupitelstvo"
+      },
+      {
+        "role": "radní hl. města Prahy",
+        "body": "",
+        "url": "https://praha.eu/slozeni-rady"
       }
     ],
     "hmpCompanyRoles": [],
@@ -515,29 +497,14 @@
         "url": "https://praha.eu/slozeni-rady"
       },
       {
-        "role": "člen",
-        "body": "Výbor pro dopravu",
-        "url": "https://praha.eu/vybory"
-      },
-      {
-        "role": "člen",
-        "body": "Výbor pro dotační vztahy a vztahy k městským částem",
-        "url": "https://praha.eu/vybory"
-      },
-      {
-        "role": "člen",
-        "body": "Výbor finanční",
-        "url": "https://praha.eu/vybory"
-      },
-      {
-        "role": "člen",
-        "body": "Výbor kontrolní",
-        "url": "https://praha.eu/vybory"
-      },
-      {
         "role": "zastupitel hl. města Prahy",
         "body": "",
         "url": "https://praha.eu/zastupitelstvo"
+      },
+      {
+        "role": "radní hl. města Prahy",
+        "body": "",
+        "url": "https://praha.eu/slozeni-rady"
       }
     ],
     "hmpCompanyRoles": [],
@@ -596,13 +563,7 @@
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Stransky-Vaclav.html",
     "isClubChair": false,
-    "magistrateRoles": [
-      {
-        "role": "člen",
-        "body": "Výbor pro územní rozvoj",
-        "url": "https://praha.eu/vybory"
-      }
-    ],
+    "magistrateRoles": [],
     "hmpCompanyRoles": [],
     "otherRoles": []
   },
@@ -693,13 +654,7 @@
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Trnik-Michal.html",
     "isClubChair": false,
-    "magistrateRoles": [
-      {
-        "role": "člen",
-        "body": "Výbor pro strategické investice",
-        "url": "https://praha.eu/vybory"
-      }
-    ],
+    "magistrateRoles": [],
     "hmpCompanyRoles": [],
     "otherRoles": []
   },
@@ -764,18 +719,7 @@
     "phone": "",
     "url": "https://www.praha8.cz/appo/card/74/Vojtiskova-Vladislava.html",
     "isClubChair": false,
-    "magistrateRoles": [
-      {
-        "role": "členka",
-        "body": "Výbor pro strategický a hospodářský rozvoj a podporu podnikání a inovací",
-        "url": "https://praha.eu/vybory"
-      },
-      {
-        "role": "členka",
-        "body": "Výbor pro zahraniční vztahy a EU fondy",
-        "url": "https://praha.eu/vybory"
-      }
-    ],
+    "magistrateRoles": [],
     "hmpCompanyRoles": [],
     "otherRoles": []
   },
