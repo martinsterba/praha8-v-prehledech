@@ -901,10 +901,41 @@ async function syncMagistrateRoles(browser,people,{includeFunctions=true,include
  // Statická mapa níže obsahuje jen role, které se podařilo jednoznačně potvrdit.
  // Nejednoznačné shody (např. shodná jména bez jisté identity) se sem záměrně nepřidávají.
  const verifiedHmpRoles=new Map(Object.entries({
-   // Po komunálních volbách 2026 zatím držíme jen aktuálně potvrzené členství v Radě HMP.
-   // Zastupitelé HMP se níže načítají automaticky z oficiálního volebního XML.
+   // Rada HMP zvolená 19. 11. 2026.
+   'Hana Novotná':[
+     {role:'náměstkyně primátora hl. města Prahy',body:'životní prostředí a veřejný prostor',url:'https://praha.eu/slozeni-rady'}
+   ],
    'Tomáš Slabihoudek':[
-     {role:'radní hl. města Prahy',body:'',url:'https://praha.eu/rada'}
+     {role:'radní hl. města Prahy',body:'kultura, cestovní ruch, památková péče, výstavnictví a péče o zvířata',url:'https://praha.eu/slozeni-rady'},
+     {role:'člen',body:'Výbor pro dopravu ZHMP',url:'https://praha.eu/vybory'},
+     {role:'člen',body:'Výbor pro dotační vztahy a vztahy k městským částem ZHMP',url:'https://praha.eu/vybory'},
+     {role:'člen',body:'Výbor finanční ZHMP',url:'https://praha.eu/vybory'},
+     {role:'člen',body:'Výbor kontrolní ZHMP',url:'https://praha.eu/vybory'}
+   ],
+   // Výborová členství jsou fallback pro případ, že praha.eu vrátí automatizaci CAPTCHA.
+   // Živý parser níže je dál zkouší načíst a stejné orgány bezpečně deduplikuje.
+   'Ondřej Buršík':[
+     {role:'člen',body:'Výbor pro bezpečnost a pro prevenci kriminality ZHMP',url:'https://praha.eu/vybory'}
+   ],
+   'Tomáš Němeček':[
+     {role:'člen',body:'Výbor pro dotační vztahy a vztahy k městským částem ZHMP',url:'https://praha.eu/vybory'}
+   ],
+   'Vladimíra Ludková':[
+     {role:'členka',body:'Výbor pro rodinnou politiku a sociální oblast ZHMP',url:'https://praha.eu/vybory'}
+   ],
+   'Radomír Nepil':[
+     {role:'člen',body:'Výbor pro dotační vztahy a vztahy k městským částem ZHMP',url:'https://praha.eu/vybory'},
+     {role:'člen',body:'Výbor pro územní rozvoj ZHMP',url:'https://praha.eu/vybory'}
+   ],
+   'Michal Trník':[
+     {role:'člen',body:'Výbor pro strategické investice ZHMP',url:'https://praha.eu/vybory'}
+   ],
+   'Václav Stránský':[
+     {role:'člen',body:'Výbor pro územní rozvoj ZHMP',url:'https://praha.eu/vybory'}
+   ],
+   'Vladislava Vojtíšková':[
+     {role:'členka',body:'Výbor pro strategický a hospodářský rozvoj a podporu podnikání a inovací ZHMP',url:'https://praha.eu/vybory'},
+     {role:'členka',body:'Výbor pro zahraniční vztahy a EU fondy ZHMP',url:'https://praha.eu/vybory'}
    ]
  }).map(([name,items])=>[personKey(name),items]));
  if(includeFunctions){
@@ -1048,8 +1079,10 @@ async function syncMagistrateRoles(browser,people,{includeFunctions=true,include
    await page.goto('https://praha.eu/rada',{waitUntil:'domcontentloaded',timeout:30000});await waitForPortal();
    const rtext=await page.evaluate(()=>(document.querySelector('main')||document.body).innerText);
    for(const p of people)if(textHasPerson(rtext,p))addRole(p,{role:'radní hl. města Prahy',body:'',url:'https://praha.eu/rada'});
-   // Výbory ZHMP a komise RHMP po volbách 2026 zatím nejsou ustavené.
-   // Dokud nejsou oficiálně zveřejněné pro nové období, staré role nepřenášíme.
+   // Výbory ZHMP: zkoušíme živý veřejný portál. Pokud WAF vrátí CAPTCHA,
+   // zůstanou bezpečně zachované výše uvedené ověřené fallback role.
+   await scanPage('https://praha.eu/vybory','Výbor ZHMP');
+   await scanBodyDirectory('https://praha.eu/vybory','Výbor ZHMP');
  }catch(e){console.warn(`   Hlavní město Praha – funkce: doplnění se nepodařilo (${e.message}).`)} }
  if(includeCompanies){try{
    await page.goto('https://praha.eu/mestske-spolecnosti',{waitUntil:'domcontentloaded',timeout:30000});await waitForPortal();
