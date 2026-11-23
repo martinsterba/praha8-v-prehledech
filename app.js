@@ -129,7 +129,7 @@ function penize(){
  host.innerHTML=`<div id="countBudget" class="updated"></div><div id="rowsBudget" class="list"></div><div id="pagerBudget" class="pagination"></div>`;let page=1;const perPage=10;const draw=()=>{const pages=Math.max(1,Math.ceil(budgetRows.length/perPage));page=Math.min(page,pages);const shown=budgetRows.slice((page-1)*perPage,page*perPage);$('#countBudget').textContent=`Nalezeno ${budgetRows.length.toLocaleString('cs-CZ')} rozpočtových usnesení · stránka ${page} z ${pages}`;$('#rowsBudget').innerHTML=shown.map(x=>`<article class="item"><div class="meta"><b>${escapeHtml(x.organ||'')}</b><br>${x.date?fmtDate(x.date):'datum neuvedeno'}<br>${escapeHtml(x.id||'')}</div><div><h3>${escapeHtml(x.title)}</h3></div><a class="source" target="_blank" rel="noreferrer" href="${x.url}">Originál ↗</a></article>`).join('')||'<div class="empty">V načtených usneseních jsme zatím žádné rozpočtové usnesení nerozpoznali.</div>';$('#pagerBudget').innerHTML=pagerMarkup(page,pages);$$('#pagerBudget button[data-page]').forEach(b=>b.onclick=()=>{page=Number(b.dataset.page);draw();$('#countBudget').scrollIntoView({behavior:'smooth',block:'center'})})};draw();
 }
 function personNorm(name=''){
- const drop=new Set(['mgr','bc','ing','phdr','judr','rndr','mvdr','doc','prof','phd','mba','mpa','ma','dis','csc','dba','bca','et']);
+ const drop=new Set(['mgr','bc','ing','phdr','judr','rndr','mvdr','mga','doc','prof','phd','mba','mpa','ma','dis','csc','dba','bca','et']);
  const toks=String(name).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9 ]/g,' ').split(/\s+/).filter(Boolean).filter(x=>!drop.has(x)&&x.length>1);
  return toks.slice(0,2).sort().join(' ')
 }
@@ -201,8 +201,8 @@ function cleanMagistrateBody(body=''){
 function magistrateLabel(p,x){
  const raw=String(x?.role||'').toLocaleLowerCase('cs-CZ');
  if(raw.includes('zastupitel'))return femalePerson(p)?'zastupitelka hl. města Prahy':'zastupitel hl. města Prahy';
- if(raw.includes('primátor'))return femalePerson(p)?'primátorka hl. města Prahy':'primátor hl. města Prahy';
  if(raw.includes('náměst'))return femalePerson(p)?'náměstkyně primátora hl. města Prahy':'náměstek primátora hl. města Prahy';
+ if(raw.includes('primátor'))return femalePerson(p)?'primátorka hl. města Prahy':'primátor hl. města Prahy';
  if(raw.includes('radní'))return 'radní hl. města Prahy';
  if(raw.includes('místopředs')||raw.includes('mistopředs')||raw.includes('mistopredsed'))return femalePerson(p)?'místopředsedkyně':'místopředseda';
  if(raw.includes('předs')||raw.includes('predsed'))return femalePerson(p)?'předsedkyně':'předseda';
