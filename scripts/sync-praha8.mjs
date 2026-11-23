@@ -1101,6 +1101,9 @@ async function syncMagistrateRoles(browser,people,{includeFunctions=true,include
    const key=personKey(p.name);
    const verified=includeFunctions?(verifiedHmpRoles.get(key)||[]):[];
    let mr=includeFunctions?mergeHmpRoles(roles.get(key),verified):[];
+   if(mr.some(v=>/primátor|náměst/i.test(v.role||''))){
+     mr=mr.filter(v=>!/^(radní hl\. města Prahy|radní)$/i.test(String(v.role||'').trim()) || String(v.body||'').trim());
+   }
    // Explicitně známé falešné předsednické shody z dynamického portálu.
    if(['bursik ondrej','dvorakova jana'].includes(canonicalPersonName(p.name))){
      mr=mr.map(v=>verified.some(x=>normBody(x.body)===normBody(v.body))?v:{...v,role:/místopředs|předs/i.test(v.role)?(canonicalPersonName(p.name)==='dvorakova jana'?'členka':'člen'):v.role});
