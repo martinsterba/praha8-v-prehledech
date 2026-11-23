@@ -1,14 +1,14 @@
 {
   "schema": 2,
-  "updated": "2026-11-22T12:39:08.250Z",
+  "updated": "2026-11-23T14:39:54.178Z",
   "source": "https://smlouvy.gov.cz/vyhledavani",
   "method": "official-live-search-daily-overlap",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7546,
-    "knownValueCzk": 5205014358.570001,
+    "totalContracts": 7548,
+    "knownValueCzk": 5205208890.020001,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
@@ -50381,12 +50381,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Materska-skola-Praha-8-Kotlaska-3.html",
       "website": "http://www.mskotlaska.cz/",
-      "total": 18,
-      "partners": 12,
-      "knownValueCzk": 2114328.44,
-      "valuedContracts": 17,
+      "total": 19,
+      "partners": 13,
+      "knownValueCzk": 2186099.8899999997,
+      "valuedContracts": 18,
       "dateFrom": "2016-08-01",
-      "dateTo": "2026-07-17",
+      "dateTo": "2026-11-19",
       "partnerList": [
         {
           "name": "Michal Paulovič",
@@ -50466,6 +50466,13 @@
           "valuedContracts": 1
         },
         {
+          "name": "Služby školkám s.r.o.",
+          "ico": "24966738",
+          "contracts": 1,
+          "knownValueCzk": 71771.45,
+          "valuedContracts": 1
+        },
+        {
           "name": "Petr Charvát",
           "ico": "71767738",
           "contracts": 1,
@@ -50474,6 +50481,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "40453345",
+          "idContract": "38052513",
+          "url": "https://smlouvy.gov.cz/smlouva/40453345",
+          "subject": "Dodávka a montáž herních prvků na zahradu mateřské školy",
+          "published": "2026-11-23",
+          "signed": "2026-11-19",
+          "valueCzk": 71771.45,
+          "valueVatCzk": 71771.45,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "Služby školkám s.r.o.",
+              "ico": "24966738",
+              "box": "494fsgh"
+            }
+          ],
+          "counterparty": "Služby školkám s.r.o.",
+          "publisher": "Mateřská škola, Praha 8, Kotlaska 3",
+          "publisherIco": "70919623"
+        },
         {
           "entityIco": "70919623",
           "entityName": "Mateřská škola, Praha 8, Kotlaska 3",
@@ -124685,10 +124713,10 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Ustavni-Praha-8-Hlivicka-1.html",
       "website": "http://www.zs-ustavni.cz/",
-      "total": 235,
+      "total": 236,
       "partners": 134,
-      "knownValueCzk": 43627853.169999994,
-      "valuedContracts": 213,
+      "knownValueCzk": 43750613.169999994,
+      "valuedContracts": 214,
       "dateFrom": "2016-09-08",
       "dateTo": "2026-11-20",
       "partnerList": [
@@ -124798,6 +124826,13 @@
           "valuedContracts": 5
         },
         {
+          "name": "JEŠTĚD, spol. s r.o.",
+          "ico": "25008552",
+          "contracts": 5,
+          "knownValueCzk": 602020,
+          "valuedContracts": 5
+        },
+        {
           "name": "AVE Pražské komunální služby a.s.",
           "ico": "07725680",
           "contracts": 1,
@@ -124824,13 +124859,6 @@
           "contracts": 2,
           "knownValueCzk": 499050,
           "valuedContracts": 2
-        },
-        {
-          "name": "JEŠTĚD, spol. s r.o.",
-          "ico": "25008552",
-          "contracts": 4,
-          "knownValueCzk": 479260,
-          "valuedContracts": 4
         },
         {
           "name": "SM - PROJEKT spol. s r.o.",
@@ -125632,6 +125660,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "40456373",
+          "idContract": "38055457",
+          "url": "https://smlouvy.gov.cz/smlouva/40456373",
+          "subject": "Smlouva o zajištění ubytování",
+          "published": "2026-11-23",
+          "signed": "2026-11-19",
+          "valueCzk": 122760,
+          "valueVatCzk": 122760,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "JEŠTĚD, spol. s r.o.",
+              "ico": "25008552",
+              "box": "ngzux3e"
+            }
+          ],
+          "counterparty": "JEŠTĚD, spol. s r.o.",
+          "publisher": "Základní škola a mateřská škola Ústavní, Praha 8, Hlivická 1",
+          "publisherIco": "60433337"
+        },
         {
           "id": "40429189",
           "idContract": "38029089",

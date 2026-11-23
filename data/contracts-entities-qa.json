@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-22T12:39:08.250Z",
+  "updated": "2026-11-23T14:39:54.178Z",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7546,
-    "knownValueCzk": 5205014358.570001,
+    "totalContracts": 7548,
+    "knownValueCzk": 5205208890.020001,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
@@ -152,12 +152,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Materska-skola-Praha-8-Kotlaska-3.html",
       "website": "http://www.mskotlaska.cz/",
-      "total": 18,
-      "partners": 12,
-      "knownValueCzk": 2114328.44,
-      "valuedContracts": 17,
+      "total": 19,
+      "partners": 13,
+      "knownValueCzk": 2186099.8899999997,
+      "valuedContracts": 18,
       "dateFrom": "2016-08-01",
-      "dateTo": "2026-07-17"
+      "dateTo": "2026-11-19"
     },
     {
       "name": "Mateřská škola, Praha 8, Krynická 2",
@@ -456,10 +456,10 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Ustavni-Praha-8-Hlivicka-1.html",
       "website": "http://www.zs-ustavni.cz/",
-      "total": 235,
+      "total": 236,
       "partners": 134,
-      "knownValueCzk": 43627853.169999994,
-      "valuedContracts": 213,
+      "knownValueCzk": 43750613.169999994,
+      "valuedContracts": 214,
       "dateFrom": "2016-09-08",
       "dateTo": "2026-11-20"
     },
