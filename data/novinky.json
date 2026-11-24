@@ -1,5 +1,40 @@
 [
   {
+    "title": "Uzavírka ulice K Olympiku",
+    "url": "https://www.praha8.cz/Uzavirka-ulice-K-Olympiku.html",
+    "date": "2026-11-24",
+    "description": "Zábor v ulicích K Olympiku a Rohanské nábřeží dne 28. listopadu 2026 od 07.00 do 19.00 hodin v důsledku přistavení autojeřábu. Uzavírka komunikace Sovova 24.11.2026 Od 01.12.2026 do 22.12.2026 bude uzavřena komunikace Sovova z důvodu přistavení mobilního jeřábu a vozidel stavby v souvislosti s přístavbou tělocvičny, školní jídelny a kuchyně v ZŠ Lyčkovo náměstí.",
+    "channel": "Doprava"
+  },
+  {
+    "title": "Uzavírka komunikace Sovova",
+    "url": "https://www.praha8.cz/Uzavirka-komunikace-Sovova.html",
+    "date": "2026-11-24",
+    "description": "Od 01.12.2026 do 22.12.2026 bude uzavřena komunikace Sovova z důvodu přistavení mobilního jeřábu a vozidel stavby v souvislosti s přístavbou tělocvičny, školní jídelny a kuchyně v ZŠ Lyčkovo náměstí. Křižovatka Hlaváčova x Taussigova bude bezpečnější, začíná stavba akce BESIP 24.11.2026 Cesta přes sídliště Ďábl",
+    "channel": "Doprava"
+  },
+  {
+    "title": "Stěhování neurologické ambulance na Polikliniku Mazurská",
+    "url": "https://www.praha8.cz/Stehovani-neurologicke-ambulance-na-Polikliniku-Mazurska.html",
+    "date": "2026-11-24",
+    "description": "Neurologická ambulance MUDr. Jitky Smelíkové bude od 1. ledna 2027 přestěhována na Polikliniku Mazurská, Mazurská 484/2, Praha 8 (3. patro).",
+    "channel": "Sociální oblast a zdravotnictví"
+  },
+  {
+    "title": "Křižovatka Hlaváčova x Taussigova bude bezpečnější, začíná stavba akce BESIP",
+    "url": "https://www.praha8.cz/Krizovatka-Hlavacova-x-Taussigova-bude-bezpecnejsi-zacina-stavba-akce-BESIP.html",
+    "date": "2026-11-24",
+    "description": "Cesta přes sídliště Ďáblice bude bezpečnější pro žáky ZŠ Burešova i další chodce. V pondělí 23. listopadu 2026 byly zahájeny stavební práce v rámci programu BESIP na křižovatce ulic Hlaváčova a Taussigova. Touto trasou vede jedna z hlavních pěších cest ke školám a ke stanici metra Ládví. Křižovatka Pernerova x Kollárova bude bezpečnější, začíná stavba akce BESIP 23.11.2026",
+    "channel": "Doprava"
+  },
+  {
+    "title": "Charitativní stánek Prahy 8 na vánočních trzích u KD Ládví",
+    "url": "https://www.praha8.cz/Charitativni-stanek-Prahy-8-na-vanocnich-trzich-u-KD-Ladvi.html",
+    "date": "2026-11-24",
+    "description": "Máte vlastní výrobky a chcete jimi potěšit ostatní? Využijte příležitost k jejich prodeji zdarma na vánočních trzích!",
+    "channel": "Kultura a volný čas"
+  },
+  {
     "title": "Křižovatka Pernerova x Kollárova bude bezpečnější, začíná stavba akce BESIP",
     "url": "https://www.praha8.cz/Krizovatka-Pernerova-x-Kollarova-bude-bezpecnejsi-zacina-stavba-akce-BESIP.html",
     "date": "2026-11-23",
@@ -40,12 +75,5 @@
     "date": "2026-11-18",
     "description": "Na sídlišti Ďáblice u koupaliště Ládví je oficiálně zpřístupněn nově zrevitalizovaný odpočinkový prostor spolu s obnoveným vodním prvkem a bronzovou plastikou Žabáka. Oblíbený symbol místních obyvatel, který ze sídliště zmizel téměř před dvaceti lety, se tak po dlouhé přípravě i náročné rekonstrukci vrací na své původní místo. Informace o plánovaných výlukách pitné vody 19.11.2026 V ú",
     "channel": "Aktuality z městské části"
-  },
-  {
-    "title": "Úprava dopravního režimu v souvislosti s rekonstrukcí Cínovecké: Rampa z Ďáblické ulice směrem do centra se od středy uzavře",
-    "url": "https://www.praha8.cz/Uprava-dopravniho-rezimu-v-souvislosti-s-rekonstrukci-Cinovecke-Rampa-z-Dablicke-ulice-smerem-do-centra-se-od-stredy-uzavre.html",
-    "date": "2026-11-17",
-    "description": "V návaznosti na dlouhodobé sledování a vyhodnocování dopravní situace při probíhající rekonstrukci komunikace Cínovecká dochází k další úpravě dopravního opatření. Na základě rozhodnutí silničního správního úřadu (PKD MHMP) bude od středy 18. listopadu 2026 uzavřena nájezdová rampa z ulice Ďáblická ve směru do centra. Opatření potrvá do ukončení aktuální etapy prací, nejpozději do 4. prosince 2026. Zábor ulice Heydukova 16.11.2026 Ve dnech 5. a 19. prosince 2026 bude uzav",
-    "channel": "Doprava"
   }
 ]
