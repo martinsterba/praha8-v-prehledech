@@ -69,7 +69,7 @@ async function renderInfo106Page(page=info106CurrentPage){
     middle.append(title);
     const link=document.createElement('a');
     link.className='source info106-answer';
-    link.href=x.url||'#';
+    try{const u=new URL(String(x.url||'#'),location.href);link.href=['https:','http:'].includes(u.protocol)&&!u.username&&!u.password?u.href:'#'}catch{link.href='#'}
     link.target='_blank';
     link.rel='noreferrer';
     link.textContent='Odpověď ↗';
