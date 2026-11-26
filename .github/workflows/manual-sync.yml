@@ -28,18 +28,18 @@ jobs:
 
     steps:
       - name: Stáhnout projekt
-        uses: actions/checkout@v5
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
         with:
           fetch-depth: 0
 
       - name: Nastavit Node.js
-        uses: actions/setup-node@v5
+        uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
         with:
           node-version: 24
           cache: npm
 
       - name: Nainstalovat závislosti
-        run: npm ci
+        run: npm ci --ignore-scripts
 
       - name: Najít Chrome
         shell: bash
@@ -56,9 +56,11 @@ jobs:
 
       - name: Spustit aktualizaci
         shell: bash
+        env:
+          DATASET: ${{ inputs.dataset }}
         run: |
           set -euo pipefail
-          case "${{ inputs.dataset }}" in
+          case "$DATASET" in
             volby)
               npm run sync:elections
               node scripts/repair-source-status.mjs elections
@@ -75,7 +77,7 @@ jobs:
               node scripts/repair-source-status.mjs census
               ;;
             *)
-              echo "Neznámý dataset: ${{ inputs.dataset }}"
+              echo "Neznámý dataset: $DATASET"
               exit 1
               ;;
           esac
@@ -110,12 +112,14 @@ jobs:
       - name: Uložit změny do GitHubu
         if: steps.changes.outputs.changed == 'true'
         shell: bash
+        env:
+          DATASET: ${{ inputs.dataset }}
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/
-          git commit -m "Data: ruční aktualizace ${{ inputs.dataset }}"
+          git commit -m "Data: ruční aktualizace $DATASET"
           for attempt in 1 2 3; do
             git pull --rebase origin main
             if git push origin HEAD:main; then exit 0; fi
@@ -125,11 +129,13 @@ jobs:
 
       - name: Výsledek
         shell: bash
+        env:
+          DATASET: ${{ inputs.dataset }}
         run: |
           if [ "${{ steps.changes.outputs.changed }}" = "true" ]; then
             echo "### ✅ Ruční aktualizace dokončena" >> "$GITHUB_STEP_SUMMARY"
-            echo "Dataset **${{ inputs.dataset }}** byl aktualizován a změny byly uloženy do větve \`main\`." >> "$GITHUB_STEP_SUMMARY"
+            echo "Dataset **$DATASET** byl aktualizován a změny byly uloženy do větve \`main\`." >> "$GITHUB_STEP_SUMMARY"
           else
             echo "### ✅ Ruční kontrola dokončena" >> "$GITHUB_STEP_SUMMARY"
-            echo "Dataset **${{ inputs.dataset }}** neobsahoval žádné změny. Repozitář zůstal beze změny." >> "$GITHUB_STEP_SUMMARY"
+            echo "Dataset **$DATASET** neobsahoval žádné změny. Repozitář zůstal beze změny." >> "$GITHUB_STEP_SUMMARY"
           fi
