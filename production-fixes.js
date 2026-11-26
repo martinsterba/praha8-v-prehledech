@@ -156,7 +156,7 @@ async function polishHomeNews(app){
 
     grid.replaceChildren(...rows.map(x=>{
       const a=document.createElement('a');
-      a.href=x.url||'#';
+      try{const u=new URL(String(x.url||'#'),location.href);a.href=['https:','http:'].includes(u.protocol)&&!u.username&&!u.password?u.href:'#'}catch{a.href='#'}
       a.target='_blank';
       a.rel='noreferrer';
       const small=document.createElement('small');
