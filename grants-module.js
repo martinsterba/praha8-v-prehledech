@@ -5,6 +5,11 @@
   let grantsPromise=null;
 
   const esc=s=>String(s??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
+  const safeHref=value=>{
+    const raw=String(value??'').trim();
+    if(!raw||/[\u0000-\u001f\u007f]/.test(raw))return '#';
+    try{const u=new URL(raw,location.href);return ['https:','http:'].includes(u.protocol)&&!u.username&&!u.password?esc(u.href):'#'}catch{return '#'}
+  };
   const money=n=>Number(n||0).toLocaleString('cs-CZ',{maximumFractionDigits:0})+' Kč';
   const normalize=s=>String(s||'').toLocaleLowerCase('cs-CZ').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/\s+/g,' ').trim();
   const digits=s=>String(s||'').replace(/\D/g,'');
@@ -57,7 +62,7 @@
       <div class="grant-area"><span>${esc(grantCategoryLabel(g.area,g.type))}</span></div>
       <div class="grant-year">${esc(g.year||'—')}</div>
       <div class="grant-amount"><strong>${money(g.approvedCzk)}</strong></div>
-      <div class="grant-source"><a href="${esc(g.resolutionUrl||g.sourcePage||g.sourceFile||'#')}" target="_blank" rel="noreferrer">Zdroj ↗</a></div>
+      <div class="grant-source"><a href="${safeHref(g.resolutionUrl||g.sourcePage||g.sourceFile||'#')}" target="_blank" rel="noreferrer">Zdroj ↗</a></div>
     </article>`).join('');
   }
 
