@@ -1,10 +1,16 @@
 name: "Bezpečnostní a provozní kontrola"
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '43 8 * * 1'
+      timezone: Europe/Prague
   push:
     branches: [main]
     paths:
       - 'package.json'
+      - 'index.html'
+      - '_headers'
+      - 'wrangler.scheduler.toml'
       - 'package-lock.json'
       - '*.js'
       - 'scripts/**'
@@ -12,6 +18,9 @@ on:
   pull_request:
     paths:
       - 'package.json'
+      - 'index.html'
+      - '_headers'
+      - 'wrangler.scheduler.toml'
       - 'package-lock.json'
       - '*.js'
       - 'scripts/**'
@@ -21,7 +30,7 @@ permissions:
 jobs:
   audit:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
         with:
@@ -35,6 +44,8 @@ jobs:
           python3 -m compileall -q scripts
       - name: Kontrola závislostí
         run: npm audit --audit-level=high
+      - name: Ověřit časová pásma a chování externího plánovače
+        run: node scripts/test-external-scheduler.mjs
       - name: Ověřit produkční JSON
         if: always()
         run: |
@@ -44,3 +55,17 @@ jobs:
           for(const f of files) JSON.parse(fs.readFileSync('data/'+f,'utf8'));
           console.log('JSON: '+files.length+' souborů OK');
           NODE
+
+      - name: Nainstalovat závislosti pro test webu
+        run: npm ci --ignore-scripts
+      - name: Nainstalovat Chrome
+        id: chrome
+        uses: browser-actions/setup-chrome@48ad923757ca74d66703209fe939badbdf80f2f4 # v2
+      - name: Ověřit hlavní části webu v prohlížeči
+        env:
+          PUPPETEER_EXECUTABLE_PATH: ${{ steps.chrome.outputs.chrome-path }}
+        run: node scripts/smoke-web.mjs
+      - name: Ověřit dostupnost veřejného webu a hlavičky
+        if: github.event_name != 'pull_request'
+        continue-on-error: true
+        run: curl -fsSLI --max-time 30 https://praha8vprehledech.cz/
