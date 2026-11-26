@@ -20,7 +20,7 @@ export async function runScheduler(now,env,request=fetch){
  const result=[];
  for(const workflow of due){
   const url=API+'/actions/workflows/'+workflow;
-  const response=await request(url+'/runs?branch=main&per_page=20',{headers});
+  const response=await request(url+'/runs?branch=main&per_page=20',{headers,redirect:'error',signal:AbortSignal.timeout(15000)});
   if(!response.ok)throw new Error(workflow+': GitHub API HTTP '+response.status);
   const data=await response.json();
   if(!Array.isArray(data.workflow_runs))throw new Error(workflow+': neplatná odpověď GitHub API');
@@ -29,7 +29,7 @@ export async function runScheduler(now,env,request=fetch){
    result.push({workflow,status:'already-running-or-successful'});continue;
   }
   if(today.length>=2){result.push({workflow,status:'retry-limit'});console.warn(workflow+': limit dvou pokusů pro dnešek');continue}
-  const dispatch=await request(url+'/dispatches',{method:'POST',headers,body:JSON.stringify({ref:'main'})});
+  const dispatch=await request(url+'/dispatches',{method:'POST',headers,redirect:'error',signal:AbortSignal.timeout(15000),body:JSON.stringify({ref:'main'})});
   if(!dispatch.ok)throw new Error(workflow+': dispatch HTTP '+dispatch.status);
   result.push({workflow,status:'dispatched'});
  }
