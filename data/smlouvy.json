@@ -1,6 +1,42 @@
 {
   "contracts": [
     {
+      "id": "40470281",
+      "idContract": "8813051",
+      "url": "https://smlouvy.gov.cz/smlouva/40470281",
+      "subject": "Smlouva o spolupráci a poskytování služeb (in-house)",
+      "published": "2026-11-24",
+      "signed": "2019-06-27",
+      "valueCzk": 920000,
+      "valueVatCzk": null,
+      "valueNoVatCzk": 920000,
+      "counterparties": [],
+      "counterparty": "",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
+      "id": "40470277",
+      "idContract": "38068997",
+      "url": "https://smlouvy.gov.cz/smlouva/40470277",
+      "subject": "Kupní smlouva",
+      "published": "2026-11-24",
+      "signed": "2026-11-20",
+      "valueCzk": 4990000,
+      "valueVatCzk": null,
+      "valueNoVatCzk": 4990000,
+      "counterparties": [
+        {
+          "name": "Bytové družstvo Služská 1416",
+          "ico": "28511069",
+          "box": "grhua9t"
+        }
+      ],
+      "counterparty": "Bytové družstvo Služská 1416",
+      "publisher": "Městská část Praha 8",
+      "publisherIco": "00063797"
+    },
+    {
       "id": "40429653",
       "idContract": "38029537",
       "url": "https://smlouvy.gov.cz/smlouva/40429653",
@@ -4227,21 +4263,6 @@
         }
       ],
       "counterparty": "KROKEM s.r.o.",
-      "publisher": "Městská část Praha 8",
-      "publisherIco": "00063797"
-    },
-    {
-      "id": "38679108",
-      "idContract": "8813051",
-      "url": "https://smlouvy.gov.cz/smlouva/38679108",
-      "subject": "Smlouva o spolupráci a poskytování služeb (in-house)",
-      "published": "2026-07-08",
-      "signed": "2019-06-27",
-      "valueCzk": 920000,
-      "valueVatCzk": null,
-      "valueNoVatCzk": 920000,
-      "counterparties": [],
-      "counterparty": "",
       "publisher": "Městská část Praha 8",
       "publisherIco": "00063797"
     },
@@ -139065,6 +139086,13 @@
       "valuedContracts": 4
     },
     {
+      "name": "Bytové družstvo Služská 1416",
+      "ico": "28511069",
+      "contracts": 1,
+      "knownValueCzk": 4990000,
+      "valuedContracts": 1
+    },
+    {
       "name": "Státní tiskárna cenin, s. p.",
       "ico": "00001279",
       "contracts": 4,
@@ -149650,17 +149678,17 @@
     }
   ],
   "meta": {
-    "total": 6569,
+    "total": 6570,
     "complete": true,
     "historyComplete": true,
     "scope": "full-history",
     "dateFrom": "2007-05-09",
     "dateTo": "2026-12-31",
     "dateLabel": "celá historie Registru smluv",
-    "knownValueCzk": 6888041028.509995,
-    "valuedContracts": 5804,
-    "partners": 1689,
-    "updated": "2026-11-23T14:39:54.178Z",
+    "knownValueCzk": 6893031028.509995,
+    "valuedContracts": 5805,
+    "partners": 1690,
+    "updated": "2026-11-26T14:52:51.038Z",
     "source": "https://data.smlouvy.gov.cz/index.xml",
     "method": "official-live-search-daily-overlap",
     "dumps": 124,

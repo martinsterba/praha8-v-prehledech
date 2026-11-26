@@ -1,18 +1,18 @@
 {
   "schema": 2,
-  "updated": "2026-11-23T14:39:54.178Z",
+  "updated": "2026-11-26T14:52:51.038Z",
   "source": "https://smlouvy.gov.cz/vyhledavani",
   "method": "official-live-search-daily-overlap",
   "meta": {
     "entities": 40,
     "organizations": 37,
     "companies": 3,
-    "totalContracts": 7548,
-    "knownValueCzk": 5205208890.020001,
+    "totalContracts": 7560,
+    "knownValueCzk": 5221462308.650001,
     "validation": {
       "status": "open-data-complete",
       "p8Control": {
-        "current": 6569
+        "current": 6570
       },
       "note": "Denní kontrola používá živé vyhledávání Registru smluv v okně 5 dní; historický základ se při denním běhu nestahuje."
     }
@@ -412,19 +412,19 @@
       "ownershipShare": "100 %",
       "source": "https://www.praha8.cz/Osma-sprava-majetku-a-sluzeb-a-s",
       "website": "https://www.osms.cz/",
-      "total": 1516,
+      "total": 1519,
       "partners": 236,
-      "knownValueCzk": 1454076208.7400005,
-      "valuedContracts": 1221,
+      "knownValueCzk": 1462396454.4900005,
+      "valuedContracts": 1224,
       "dateFrom": "1999-09-14",
-      "dateTo": "2026-11-16",
+      "dateTo": "2026-11-25",
       "partnerList": [
         {
           "name": "Wertstav s.r.o.",
           "ico": "09415840",
-          "contracts": 59,
-          "knownValueCzk": 499732318.33,
-          "valuedContracts": 51
+          "contracts": 60,
+          "knownValueCzk": 504451462.82,
+          "valuedContracts": 52
         },
         {
           "name": "Guerdo, s.r.o.",
@@ -434,18 +434,18 @@
           "valuedContracts": 63
         },
         {
+          "name": "AG-REAL s.r.o.",
+          "ico": "60198770",
+          "contracts": 26,
+          "knownValueCzk": 68082990.73,
+          "valuedContracts": 21
+        },
+        {
           "name": "Bau Franz s.r.o.",
           "ico": "03664881",
           "contracts": 53,
           "knownValueCzk": 68002497.41,
           "valuedContracts": 43
-        },
-        {
-          "name": "AG-REAL s.r.o.",
-          "ico": "60198770",
-          "contracts": 25,
-          "knownValueCzk": 66297221.64,
-          "valuedContracts": 20
         },
         {
           "name": "BAU Pro CZ s.r.o.",
@@ -560,18 +560,18 @@
           "valuedContracts": 16
         },
         {
+          "name": "JAKR BuildInvest s.r.o.",
+          "ico": "19935013",
+          "contracts": 8,
+          "knownValueCzk": 11893337.54,
+          "valuedContracts": 8
+        },
+        {
           "name": "Roman Pavlíček",
           "ico": "71590820",
           "contracts": 33,
           "knownValueCzk": 10949413.69,
           "valuedContracts": 12
-        },
-        {
-          "name": "JAKR BuildInvest s.r.o.",
-          "ico": "19935013",
-          "contracts": 7,
-          "knownValueCzk": 10078005.370000001,
-          "valuedContracts": 7
         },
         {
           "name": "SONEKO s.r.o.",
@@ -2073,6 +2073,69 @@
         }
       ],
       "contracts": [
+        {
+          "id": "40494214",
+          "idContract": "38092174",
+          "url": "https://smlouvy.gov.cz/smlouva/40494214",
+          "subject": "VZMR/25/2026 - Rekonstrukce ordinace ve 3. NP (neurologie) na adrese Mazurská 484/2, 181 00 Praha 8 – Troja",
+          "published": "2026-11-25",
+          "signed": "2026-11-25",
+          "valueCzk": 1815332.17,
+          "valueVatCzk": null,
+          "valueNoVatCzk": 1815332.17,
+          "counterparties": [
+            {
+              "name": "JAKR BuildInvest s.r.o.",
+              "ico": "19935013",
+              "box": "tt3pxzx"
+            }
+          ],
+          "counterparty": "JAKR BuildInvest s.r.o.",
+          "publisher": "Osmá správa majetku a služeb a.s.",
+          "publisherIco": "04650522"
+        },
+        {
+          "id": "40494118",
+          "idContract": "38092082",
+          "url": "https://smlouvy.gov.cz/smlouva/40494118",
+          "subject": "VZMR/26/2026 - Přístavba a stavební úprava ordinace dětské psychologie, Mazurská 484/2, 181 00 Praha 8 – Troja",
+          "published": "2026-11-25",
+          "signed": "2026-11-25",
+          "valueCzk": 4719144.49,
+          "valueVatCzk": null,
+          "valueNoVatCzk": 4719144.49,
+          "counterparties": [
+            {
+              "name": "Wertstav s.r.o.",
+              "ico": "09415840",
+              "box": "nxagqeh"
+            }
+          ],
+          "counterparty": "Wertstav s.r.o.",
+          "publisher": "Osmá správa majetku a služeb a.s.",
+          "publisherIco": "04650522"
+        },
+        {
+          "id": "40471481",
+          "idContract": "38070149",
+          "url": "https://smlouvy.gov.cz/smlouva/40471481",
+          "subject": "Dodatek č. 1 ke smlouvě o dílo č. VZMR/04/2026 - Revitalizace okolí fontány Žabák na sídlišti Ďáblice, 182 00 Praha 8 - vícepráce",
+          "published": "2026-11-24",
+          "signed": "2026-11-19",
+          "valueCzk": 1785769.09,
+          "valueVatCzk": null,
+          "valueNoVatCzk": 1785769.09,
+          "counterparties": [
+            {
+              "name": "AG-REAL s.r.o.",
+              "ico": "60198770",
+              "box": "e7ajswy"
+            }
+          ],
+          "counterparty": "AG-REAL s.r.o.",
+          "publisher": "Osmá správa majetku a služeb a.s.",
+          "publisherIco": "04650522"
+        },
         {
           "id": "40368997",
           "idContract": "37971145",
@@ -55607,12 +55670,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Materska-skola-Praha-8-Na-Presypu-4.html",
       "website": "http://www.msnapresypu.cz/",
-      "total": 8,
-      "partners": 7,
-      "knownValueCzk": 987297,
-      "valuedContracts": 8,
+      "total": 11,
+      "partners": 10,
+      "knownValueCzk": 1304362,
+      "valuedContracts": 11,
       "dateFrom": "2019-08-07",
-      "dateTo": "2025-12-20",
+      "dateTo": "2026-11-19",
       "partnerList": [
         {
           "name": "Tomáš Žitný",
@@ -55643,6 +55706,13 @@
           "valuedContracts": 2
         },
         {
+          "name": "Advokátní kancelář Voldřich & Nekvasilová",
+          "ico": "",
+          "contracts": 1,
+          "knownValueCzk": 150000,
+          "valuedContracts": 1
+        },
+        {
           "name": "Pavel Janeš",
           "ico": "72105224",
           "contracts": 1,
@@ -55650,10 +55720,24 @@
           "valuedContracts": 1
         },
         {
+          "name": "dvě dílny s.r.o.",
+          "ico": "21013195",
+          "contracts": 1,
+          "knownValueCzk": 94380,
+          "valuedContracts": 1
+        },
+        {
           "name": "FAST ČR, a.s.",
           "ico": "26726548",
           "contracts": 1,
           "knownValueCzk": 87417,
+          "valuedContracts": 1
+        },
+        {
+          "name": "DŘEVOARTIKL, spol. s r.o.",
+          "ico": "26306921",
+          "contracts": 1,
+          "knownValueCzk": 72685,
           "valuedContracts": 1
         },
         {
@@ -55665,6 +55749,69 @@
         }
       ],
       "contracts": [
+        {
+          "id": "40496758",
+          "idContract": "38094646",
+          "url": "https://smlouvy.gov.cz/smlouva/40496758",
+          "subject": "Právní služby poskytované advokátem ve prospěch klienta.",
+          "published": "2026-11-25",
+          "signed": "2026-11-19",
+          "valueCzk": 150000,
+          "valueVatCzk": 150000,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "Advokátní kancelář Voldřich & Nekvasilová",
+              "ico": "",
+              "box": ""
+            }
+          ],
+          "counterparty": "Advokátní kancelář Voldřich & Nekvasilová",
+          "publisher": "Mateřská škola, Praha 8, Na Přesypu 4",
+          "publisherIco": "70919666"
+        },
+        {
+          "id": "40495926",
+          "idContract": "38093834",
+          "url": "https://smlouvy.gov.cz/smlouva/40495926",
+          "subject": "realizace zakázky „Dodávka a montáž zařízení dětského hřiště“",
+          "published": "2026-11-25",
+          "signed": "2026-05-29",
+          "valueCzk": 72685,
+          "valueVatCzk": 72685,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "DŘEVOARTIKL, spol. s r.o.",
+              "ico": "26306921",
+              "box": "3bg2ars"
+            }
+          ],
+          "counterparty": "DŘEVOARTIKL, spol. s r.o.",
+          "publisher": "Mateřská škola, Praha 8, Na Přesypu 4",
+          "publisherIco": "70919666"
+        },
+        {
+          "id": "40495666",
+          "idContract": "38093574",
+          "url": "https://smlouvy.gov.cz/smlouva/40495666",
+          "subject": "Kompletní provedení díla “Domek na hračky a nářadí”",
+          "published": "2026-11-25",
+          "signed": "2026-09-02",
+          "valueCzk": 94380,
+          "valueVatCzk": 94380,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "dvě dílny s.r.o.",
+              "ico": "21013195",
+              "box": "2w5x6r9"
+            }
+          ],
+          "counterparty": "dvě dílny s.r.o.",
+          "publisher": "Mateřská škola, Praha 8, Na Přesypu 4",
+          "publisherIco": "70919666"
+        },
         {
           "entityIco": "70919666",
           "entityName": "Mateřská škola, Praha 8, Na Přesypu 4",
@@ -61864,12 +62011,12 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Servisni-stredisko-pro-spravu-svereneho-majetku-MC-Praha-8-prispevkova-organizace.html",
       "website": "https://www.praha8.cz/servisni-stredisko-pro-spravu-svereneho-majetku-mc-praha-8-prispevkova-organizace.html",
-      "total": 1801,
+      "total": 1804,
       "partners": 361,
-      "knownValueCzk": 3009489591.120001,
-      "valuedContracts": 1724,
+      "knownValueCzk": 3016298854.200001,
+      "valuedContracts": 1727,
       "dateFrom": "1991-07-15",
-      "dateTo": "2026-11-18",
+      "dateTo": "2026-11-23",
       "partnerList": [
         {
           "name": "BAB mont s.r.o.",
@@ -61921,25 +62068,25 @@
           "valuedContracts": 29
         },
         {
-          "name": "WORKER BAU s.r.o.",
+          "name": "WORKER BAU s. r. о.",
           "ico": "05872103",
-          "contracts": 66,
-          "knownValueCzk": 92636548.25000001,
-          "valuedContracts": 64
+          "contracts": 67,
+          "knownValueCzk": 99027062.4,
+          "valuedContracts": 65
         },
         {
           "name": "Petr Boubal",
           "ico": "11253029",
-          "contracts": 95,
-          "knownValueCzk": 81847456.30999999,
-          "valuedContracts": 94
+          "contracts": 96,
+          "knownValueCzk": 81980662.78999999,
+          "valuedContracts": 95
         },
         {
-          "name": "FIRMA s.r.o.",
+          "name": "Firma s.r.o.",
           "ico": "62412272",
-          "contracts": 101,
-          "knownValueCzk": 80639276.69000003,
-          "valuedContracts": 101
+          "contracts": 102,
+          "knownValueCzk": 80924819.14000002,
+          "valuedContracts": 102
         },
         {
           "name": "Tomáš Sobotka",
@@ -64400,6 +64547,69 @@
         }
       ],
       "contracts": [
+        {
+          "id": "40480341",
+          "idContract": "38078793",
+          "url": "https://smlouvy.gov.cz/smlouva/40480341",
+          "subject": "Havarijní oprava topného systému - hlavní rozvod, MŠ Krynická 490/2, 181 00 Praha 8 - Troja",
+          "published": "2026-11-24",
+          "signed": "2026-11-20",
+          "valueCzk": 6390514.15,
+          "valueVatCzk": 6390514.15,
+          "valueNoVatCzk": 5281416.65,
+          "counterparties": [
+            {
+              "name": "WORKER BAU s. r. о.",
+              "ico": "05872103",
+              "box": ""
+            }
+          ],
+          "counterparty": "WORKER BAU s. r. о.",
+          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
+          "publisherIco": "00639524"
+        },
+        {
+          "id": "40460793",
+          "idContract": "38059721",
+          "url": "https://smlouvy.gov.cz/smlouva/40460793",
+          "subject": "Havarijní oprava kanalizace, Objekt Chabařovická 1125/4, 182 00 Praha 8 - Kobylisy",
+          "published": "2026-11-23",
+          "signed": "2026-11-23",
+          "valueCzk": 133206.48,
+          "valueVatCzk": 133206.48,
+          "valueNoVatCzk": 110088,
+          "counterparties": [
+            {
+              "name": "Petr Boubal",
+              "ico": "11253029",
+              "box": ""
+            }
+          ],
+          "counterparty": "Petr Boubal",
+          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
+          "publisherIco": "00639524"
+        },
+        {
+          "id": "40460865",
+          "idContract": "38059793",
+          "url": "https://smlouvy.gov.cz/smlouva/40460865",
+          "subject": "Havarijní oprava poškozených a odpadávajícich obkladů dámských WC v knihovně objektu, KD Krakov - Těšínská 600/4, 181 00 Praha 8 - Bohnice",
+          "published": "2026-11-23",
+          "signed": "2026-11-23",
+          "valueCzk": 285542.45,
+          "valueVatCzk": 285542.45,
+          "valueNoVatCzk": 235985.5,
+          "counterparties": [
+            {
+              "name": "Firma s.r.o.",
+              "ico": "62412272",
+              "box": ""
+            }
+          ],
+          "counterparty": "Firma s.r.o.",
+          "publisher": "Servisní středisko pro správu svěřeného majetku Městské části Praha 8, příspěvková organizace",
+          "publisherIco": "00639524"
+        },
         {
           "id": "40394013",
           "idContract": "37995445",
@@ -135485,10 +135695,10 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-a-materska-skola-Praha-8-Lyckovo-namesti-6.html",
       "website": "http://www.smysluplnaskola.cz/",
-      "total": 341,
-      "partners": 167,
-      "knownValueCzk": 47524217.33,
-      "valuedContracts": 137,
+      "total": 343,
+      "partners": 168,
+      "knownValueCzk": 48235012.32999999,
+      "valuedContracts": 139,
       "dateFrom": "2016-12-09",
       "dateTo": "2026-11-20",
       "partnerList": [
@@ -135556,6 +135766,13 @@
           "valuedContracts": 5
         },
         {
+          "name": "PRO TRAVEL CK, s.r.o.",
+          "ico": "26355353",
+          "contracts": 6,
+          "knownValueCzk": 662900,
+          "valuedContracts": 2
+        },
+        {
           "name": "Servis CZ, s.r.o.",
           "ico": "26198258",
           "contracts": 1,
@@ -135605,6 +135822,13 @@
           "valuedContracts": 3
         },
         {
+          "name": "Cestovní kancelář Londonway s.r.o.",
+          "ico": "23979038",
+          "contracts": 1,
+          "knownValueCzk": 354795,
+          "valuedContracts": 1
+        },
+        {
           "name": "PRH Mont s.r.o.",
           "ico": "10855653",
           "contracts": 3,
@@ -135624,13 +135848,6 @@
           "contracts": 3,
           "knownValueCzk": 308970,
           "valuedContracts": 2
-        },
-        {
-          "name": "PRO TRAVEL CK, s.r.o.",
-          "ico": "26355353",
-          "contracts": 5,
-          "knownValueCzk": 306900,
-          "valuedContracts": 1
         },
         {
           "name": "SM - PROJEKT spol. s r.o.",
@@ -136663,6 +136880,48 @@
         }
       ],
       "contracts": [
+        {
+          "id": "40492326",
+          "idContract": "38090354",
+          "url": "https://smlouvy.gov.cz/smlouva/40492326",
+          "subject": "Cestovní smlouva - Španělsko červen 27",
+          "published": "2026-11-25",
+          "signed": "2026-10-26",
+          "valueCzk": 354795,
+          "valueVatCzk": 354795,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "Cestovní kancelář Londonway s.r.o.",
+              "ico": "23979038",
+              "box": "yv23a69"
+            }
+          ],
+          "counterparty": "Cestovní kancelář Londonway s.r.o.",
+          "publisher": "Základní škola a mateřská škola, Praha 8, Lyčkovo náměstí 6",
+          "publisherIco": "60433230"
+        },
+        {
+          "id": "40492066",
+          "idContract": "38090102",
+          "url": "https://smlouvy.gov.cz/smlouva/40492066",
+          "subject": "Smlouva o zajištění zájezdu - Francie květen 27",
+          "published": "2026-11-25",
+          "signed": "2026-11-19",
+          "valueCzk": 356000,
+          "valueVatCzk": 356000,
+          "valueNoVatCzk": null,
+          "counterparties": [
+            {
+              "name": "PRO TRAVEL CK, s.r.o.",
+              "ico": "26355353",
+              "box": "cq4uuat"
+            }
+          ],
+          "counterparty": "PRO TRAVEL CK, s.r.o.",
+          "publisher": "Základní škola a mateřská škola, Praha 8, Lyčkovo náměstí 6",
+          "publisherIco": "60433230"
+        },
         {
           "id": "40428981",
           "idContract": "38028889",
@@ -172696,10 +172955,10 @@
       "ownershipShare": "",
       "source": "https://www.praha8.cz/Zakladni-skola-Praha-8-Hovorcovicka-11.html",
       "website": "http://www.zshovorcovicka.cz/",
-      "total": 332,
-      "partners": 156,
-      "knownValueCzk": 46560609.519999996,
-      "valuedContracts": 257,
+      "total": 333,
+      "partners": 157,
+      "knownValueCzk": 46656659.32,
+      "valuedContracts": 258,
       "dateFrom": "2016-12-20",
       "dateTo": "2026-11-13",
       "partnerList": [
@@ -173278,6 +173537,13 @@
           "valuedContracts": 2
         },
         {
+          "name": "BAKALÁŘI software s.r.o.",
+          "ico": "27483045",
+          "contracts": 1,
+          "knownValueCzk": 96049.8,
+          "valuedContracts": 1
+        },
+        {
           "name": "Milan Houžvička",
           "ico": "16897455",
           "contracts": 1,
@@ -173797,6 +174063,27 @@
         }
       ],
       "contracts": [
+        {
+          "id": "40464733",
+          "idContract": "38063597",
+          "url": "https://smlouvy.gov.cz/smlouva/40464733",
+          "subject": "Objednávka - Licence software Bakaláři 2027-2029",
+          "published": "2026-11-24",
+          "signed": "2026-11-12",
+          "valueCzk": 96049.8,
+          "valueVatCzk": 96049.8,
+          "valueNoVatCzk": 79380,
+          "counterparties": [
+            {
+              "name": "BAKALÁŘI software s.r.o.",
+              "ico": "27483045",
+              "box": ""
+            }
+          ],
+          "counterparty": "BAKALÁŘI software s.r.o.",
+          "publisher": "Základní škola, Praha 8, Hovorčovická 11",
+          "publisherIco": "60433299"
+        },
         {
           "id": "40348209",
           "idContract": "37951005",
