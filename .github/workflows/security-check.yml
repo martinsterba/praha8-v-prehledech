@@ -1,0 +1,46 @@
+name: "Bezpečnostní a provozní kontrola"
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'package.json'
+      - 'package-lock.json'
+      - '*.js'
+      - 'scripts/**'
+      - '.github/workflows/security-check.yml'
+  pull_request:
+    paths:
+      - 'package.json'
+      - 'package-lock.json'
+      - '*.js'
+      - 'scripts/**'
+      - '.github/workflows/security-check.yml'
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+      - name: Syntaktická kontrola
+        run: |
+          for f in *.js scripts/*.mjs; do node --check "$f" || exit 1; done
+          python3 -m compileall -q scripts
+      - name: Kontrola závislostí
+        run: npm audit --audit-level=high
+      - name: Ověřit produkční JSON
+        if: always()
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const files=fs.readdirSync('data').filter(f=>f.endsWith('.json'));
+          for(const f of files) JSON.parse(fs.readFileSync('data/'+f,'utf8'));
+          console.log('JSON: '+files.length+' souborů OK');
+          NODE
