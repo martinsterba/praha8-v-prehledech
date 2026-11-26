@@ -321,7 +321,17 @@ async function clickNextPage(page,currentPage,attempt=1){
   return false;
 }
 async function crawlYear(page,start,year,label){
-  await page.goto(start,{waitUntil:'domcontentloaded',timeout:30000});
+  // Pomalá odezva zdroje nesmí ukončit import po jediném pokusu.
+  for(let attempt=1;attempt<=3;attempt++){
+    try{
+      await page.goto(start,{waitUntil:'domcontentloaded',timeout:45000});
+      break;
+    }catch(e){
+      if(attempt===3||!(/timeout|net::ERR_(?:TIMED_OUT|CONNECTION_RESET|CONNECTION_CLOSED|CONNECTION_REFUSED|EMPTY_RESPONSE|NETWORK_CHANGED)/i.test(String(e?.message||e))))throw e;
+      console.warn(`   ${label} ${year}: načtení ${start} selhalo (${e.message}); opakuji ${attempt+1}/3.`);
+      await sleep(attempt*3000);
+    }
+  }
   await applyYear(page,year);
   const byId=new Map(); let pageNo=1;
   while(true){
